@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBubling in js</title>
+    <style>
+        #parent {
+            border: 2px solid black;
+            background-color: orange;
+            padding: 20px;
+
+        }
+
+        #child {
+            background-color: rebeccapurple;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        #grandChild {
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="parent">Parent
+        <div id="child">Child
+            <div id="grandChild">GrandChild
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('#grandChild').addEventListener('click', () => {
+            console.log("this is grandChild!!!");
+        },false);
+
+        document.querySelector('#child').addEventListener('click', () => {
+            console.log("this is child");
+        },false);
+
+        document.querySelector('#parent').addEventListener('click', () => {
+            console.log('this is parent!!');
+        }, true);
+    </script>
+</body>
+
+</html>

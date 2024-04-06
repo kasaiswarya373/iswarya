@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Dependent Form</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+      <div class="title">User Details</div>
+      <div id="successMsg">Saved Successfully</div>
+      <div class="userForm">
+      <div>
+         <label>Name</label>
+         <input type="text" id="name" placeholder="Enter your Name">
+      </div>
+      <div>
+         <label>Age</label>
+         <input type="number" id="age" placeholder="Enter your Age">
+      </div>
+      <div>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gen" id="gender">Female
+        <input type="radio" name="gen"  id="gender">Male
+    </div>
+    <div>
+      <label>Country</label>
+     <select id="countryList" onchange="stateListGeneration()">
+        <option>select</option>
+        <option>India</option>
+        <option>Switzerland</option>
+        <option>Saudi Arabia</option>
+      </select>
+    </div>
+    <div>
+        <label>State</label>
+        <select id="stateList" onchange="districtListGeneration()">
+            <option>select</option>
+        </select>
+    </div>
+    <div>
+        <label>District</label>
+        <select id="districtList">
+            <option>select</option>
+        </select>
+    </div>
+    <div>
+        <input type="button" value="Done" id="doneBtn" onclick="success()">
+    </div>
+    </div>
+    <script src="app.js">
+    </script>
+</body>
+</html>

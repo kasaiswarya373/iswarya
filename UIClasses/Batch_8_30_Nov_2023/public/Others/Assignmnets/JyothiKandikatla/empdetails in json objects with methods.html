@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>empdetails with josn object with methods</title>
+    </head>
+    <body>
+       <script>
+        var empdetails = {
+            readEmpDetails() {
+                empdetails.name = prompt('Enter name');
+                empdetails.age = prompt('Enter  age');
+                empdetails.gender = prompt('Enter gender');
+                empdetails.deparment = prompt('Enter department');
+                empdetails.basicsal =parseInt(prompt('Enter  basicsalary'));
+                empdetails.pf = parseInt(prompt('Enter pf'));
+                empdetails.hra = parseInt(prompt('Enter hra'));
+                empdetails.totalsal();
+            }, 
+            totalsal () {
+                empdetails.totalsal = empdetails.basicsal + (empdetails.basicsal * empdetails.pf /100) + (empdetails.basicsal * empdetails.hra /100);
+                empdetails.tax();
+            },
+            tax (){
+                if( (empdetails.gender =='male') || (empdetails.gender =='m')){
+                    if(empdetails.totalsal >= 200000){
+                        empdetails.tax = 15;
+                    }else if(empdetails.totalsal >= 100000){
+                        empdetails.tax = 10;
+                    }else if(empdetails.totalsal >= 50000){
+                        empdetails.tax = 5;
+                    }else{
+                        empdetails.tax = 0;
+                    }
+                }else{
+                    if(empdetails.totalsal >= 200000){
+                        empdetails.tax = 10;
+                    }else  if(empdetails.totalsal >= 100000){
+                        empdetails.tax = 5;
+                    }else  if(empdetails.totalsal >= 50000){
+                        empdetails.tax = 0;
+                    }
+                }
+                empdetails.taxamount();
+            },
+            taxamount(){
+                empdetails.taxamount = (empdetails.totalsal * empdetails.tax ) / 100;
+                empdetails.taxreductionAmount();
+            },
+            taxreductionAmount(){
+                empdetails.taxreductionAmount = empdetails.totalsal - empdetails.taxamount;
+
+            },
+            employeeInfo () {
+                empdetails.readEmpDetails();
+                console.log(`.....Employee Details.....`);
+                console.log(`Name: ${empdetails.name}`);
+                console.log(`Age: ${empdetails.age}`);
+                console.log(`Gender: ${empdetails.gender}`);
+                console.log(`Department: ${empdetails.deparment}`);
+                console.log(`basicSalary: ${empdetails.basicsal}`);
+                console.log(`Pf: ${empdetails.pf}%`);
+                console.log(`hra: ${empdetails.hra}%`);
+                console.log(`totalsal: ${empdetails.totalsal}`);
+                console.log(`tax: ${empdetails.tax}%`);
+                console.log(`taxamount: ${empdetails.taxamount}`);
+                console.log(`taxreductiontotalsal: ${empdetails.taxreductionAmount}`);
+            }
+        }
+       empdetails.employeeInfo();
+        //console.log(empdetails);
+       </script> 
+    </body>
+</html>

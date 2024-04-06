@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mean and Median values From an Array</title>
+</head>
+
+<body>
+    <script>
+
+        var meanAndMedianValues = () => {
+
+            var data = [23, 45, 67, 34, 78, 12, 90, 100];
+
+            for (i = 0; i < data.length; i++) {
+                console.log(data);
+                var mean = getMeanValue(data);
+                console.log("The mean value is: " + mean);
+                var median = getMedianValue(data);
+                console.log("The median value is: " + median);
+            }
+        }
+
+        // calculating mean value
+
+        var getMeanValue = (data) => {
+
+            var sum = 0;
+            var n = data.length;
+            for (i = 0; i < n; i++) {
+                sum += data[i];
+            }
+            console.log("The sum : " + sum);
+            var mean = parseInt(sum / n);
+            return mean;
+        }
+
+        // calculating the median value
+
+        var getMedianValue = (data) => {
+
+            var temp;
+            var median = 0;
+            var n = data.length;
+            for (i = 0; i < n; i++) {
+                for (j = i + 1; j <= n; j++) {
+                    if (data[i] > data[j]) {
+                        temp = data[i];
+                        data[i] = data[j];
+                        data[j] = temp;
+                    }
+                }
+            }
+            console.log(data);
+
+            if (n % 2 == 0) {// if n is even
+                median = (data[n / 2 - 1] + data[n / 2]) / 2;
+            }
+            else {//if n is odd
+                median = data[(n - 1) / 2];
+            }
+            return median;
+        }
+        meanAndMedianValues();
+        
+    </script>
+
+</body>
+
+</html>

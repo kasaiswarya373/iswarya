@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 
+        Css z-index property
+    </title>
+    <style>
+        .header{
+            border: 1px solid;
+            margin: 10px;
+            text-align: center;
+            background-color: rgb(53,88,32);
+            color: rgb(237, 19, 19);
+        }
+        .block{
+            border: 1px solid;
+            width: 120px;
+            height: 120px;
+            text-align: center;
+        }
+        .block1{
+            background-color: rgb(321,54,12);
+            position: absolute;
+            left: 254px;
+            top: 67px;
+        }
+        .block2{
+            background-color: blueviolet;
+            position: relative;
+            left: 32px;
+            top: 65px;
+            opacity: 0.4;
+            z-index: 43;
+            
+        }
+        .block3{
+            background-color: goldenrod;
+            z-index: 654;
+        }
+        .block4{
+            background-color: aquamarine;
+            position: relative;
+            left: 234px;
+            top: 65px;
+        }
+        .block5{
+            background-color: fuchsia;
+            position: absolute;
+            left: 147px;
+            opacity: 0.32;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="header"> css z-index property</h3>
+    <div class="block block1">block1</div>
+    <div class="block block2">block2</div>
+    <div class="block block3">block3</div>
+    <div class="block block4">block4</div>
+    <div class="block block5">block5</div>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> armStrong</title>
+  </head>
+  <body>
+    <h3>WAP to listout all the armstrong number between 1 to 1000</h3>
+    <script>
+        var n =prompt("Enter a number");
+        var totalNum = n.length;
+        n=parseInt(n);
+        var temp=n;
+        var armStrong =0;
+
+        for(var i = 1; i <= 1000; i++ ){
+         while(n > 0) {
+            var rem =n % 10;
+            armStrong += rem **totalNum;
+            n =n/10;
+            n=parseInt(n);
+          }
+        } 
+
+       /* if(n == 0) {
+            console.log( "Its a armStrong")
+        } else {
+            console.log(" Not armStrong")
+        } */
+
+        console.log(armStrong)
+    </script>
+    
+  </body>
+</html>

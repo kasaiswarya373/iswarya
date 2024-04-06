@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map ds</title>
+</head>
+<body>
+    <script>
+      /*  var o = {
+            "name" : "jyothi",
+            1 : 20,
+            true : "hyd",
+            NaN : 'null',
+            undefined : 'not exixist',
+           
+        }
+   
+       console.log(o["name"]);
+       console.log(o[1]);
+       console.log(o[true]);
+       console.log(o[NaN]);
+       console.log(o[undefined]);
+       console.log(o);*/
+      var m = new Map();
+        m = m.set('name','jyo');
+        m.set('age',30).set("jo",123).set(NaN,'null').set(true,"valid").set(undefined,'jo');
+        m.set( {name:"jyothi"},"kandikatla" );
+        for (var [key ,value] of m.entries()){
+            console.log(key);
+            console.log(value);
+        }
+m.delete('age');
+m. clear();
+m.entries();
+        console.log("--------------------------------------------------------------");
+        m.forEach((value,key) => {
+            console.log(key)
+            console.log(value);
+          
+        })
+        console.log(m.size);
+
+    </script>
+</body>
+</html>

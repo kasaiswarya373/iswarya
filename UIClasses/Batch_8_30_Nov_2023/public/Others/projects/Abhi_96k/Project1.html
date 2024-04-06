@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple loginPage</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: #232121; 
+    }
+    .box{
+        width: 300px;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%,-50%);
+        background: #191919;
+        text-align: center;
+        border-radius: 14em;
+        box-shadow: 5px 5px 50px 50px rgba(252,5,5,0.699);
+        animation: animate 5s linear infinite;
+
+    }
+    .box input{
+        border:0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 3px solid #0399fd;
+        padding:14px 10px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+    }
+</style>
+<body>
+   <form class="box" >
+      <h1>login</h1>
+    <input type="text" name=" " placeholder="Username">
+    <input type="password" name=" " placeholder="password">
+    <input type="submit" name=" " value="login">
+   </form>
+</body>
+</html>

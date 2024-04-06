@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //objects inside methods
+            var empDetails={
+                name:'khyathi',
+                age:23,
+                gender:'female',
+                department:'it',
+            //we use this propetry the latest varsion to use function in shortcut way is directname
+                // empSalaryCal:()=>{
+                    empSalaryCal:function(){
+                // empSalaryCal(){  // function calling
+                  empDetails.basicSalary=50000;
+                    empDetails.pf=(empDetails.basicSalary*12)/100;
+                    empDetails.hra=(empDetails.basicSalary*15)/100; //this property indicates current object
+                    empDetails.totalSalary=this.basicSalary+this.pf+this.hra;
+                    this.onHandAmount=(this.totalSalary*30)/100;
+
+                },
+                displayInfo(){
+                    empDetails.empSalaryCal();
+                    console.log(empDetails);
+                }
+
+            }
+            empDetails.displayInfo(); // function invoked
+        </script>
+    </body>
+</html>

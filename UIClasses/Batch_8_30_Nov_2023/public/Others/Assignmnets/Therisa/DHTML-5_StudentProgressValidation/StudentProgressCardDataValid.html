@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Progress Card with Data Validation</title>
+        <link rel="stylesheet" href="sdata.css">
+        <script src="sdata.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <h3>
+                    Student Progress Card
+                </h3>
+            </li>
+            <li>
+                <label for="name">Name of the Student :</label>
+                <input type="text" id="Sname" onkeypress="return validData(event)" maxlength="15">
+                <div id="error1">*Required Field</div>
+            </li>
+            <li>
+                <label for="age">Age :</label>
+                <input type="text" id="age" onkeypress="return validNum(event)" maxlength="2">
+                <div id="error2">*required Field</div>
+            </li>
+            <li>
+                <label for="gender">Gender :</label>
+                Male <input type="radio" name="gender" value="male" >
+                Female <input type="radio" name="gender" value="female">
+            </li>
+            <li>
+                <label>Class :</label>
+                <select name="class" id="standard">
+                    <option value="class I" selected>Class I</option>
+                    <option value="class II">Class II</option>
+                    <option value="class III">Class III</option>
+                    <option value="class IV">Class IV</option>
+                    <option value="class V">Class V</option>
+                    <option value="class VI">Class VI</option>
+                    <option value="class VII">Class VII</option>
+                    <option value="class VIII">Class VIII</option>
+                    <option value="class IX">Class IX</option>
+                    <option value="class X">Class X</option>
+                </select>
+            </li>
+            <li class="marks">
+                <label for="Sub">Marks :</label><br>
+                <div>
+                    <input type="text" id="m1" placeholder="Telugu" onkeypress="return validValue(event)" maxlength="2">
+                    <input type="text" id="m2" placeholder="Hindi" onkeypress="return validValue(event)" maxlength="2">
+                    <input type="text" id="m3" placeholder="English" onkeypress="return validValue(event)" maxlength="2">
+                    <input type="text" id="m4" placeholder="Maths" onkeypress="return validValue(event)" maxlength="2">
+                    <input type="text" id="m5" placeholder="Science" onkeypress="return validValue(event)" maxlength="2">
+                    <input type="text" id="m6" placeholder="Social" onkeypress="return validValue(event)" maxlength="2">
+                </div>        
+            </li>
+            <li>
+                <input type="button" value="Generate Progress Card" onclick="DisplayData(event)">
+                <input type="reset" value="Refresh" onclick="reset()">
+            </li>
+        </ul>
+        <div class="progressCardHolder"></div>
+        <ul id="displayBlock">
+            <li>
+                Student Name: <span id="d_name"></span>
+            </li>
+            <li>
+                Student Age: <span id="d_age"></span>
+            </li>
+            <li>
+                Gender: <span id="d_gender"></span>
+            </li>
+            <li>
+                Total: <span id="d_total"></span>
+            </li>
+            <li>
+                Avg: <span id="d_avg"></span>
+            </li>
+            <li>
+                Grade: <span id="d_grade"></span>
+            </li>
+        </ul>   
+    </body>
+</html>

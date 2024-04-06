@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Finding Sum of values in an array
+        </title>
+    </head>
+    <body>
+        <script>
+            // var data = [34, 56, 7, 90];
+            var n = 5;
+            var data = [];
+            /*data[0] = prompt("enter value at 1st position");
+            data[0] = parseInt(data[0]);
+
+            data[1] = prompt("enter value at 2 position");
+            data[1] = parseInt(data[1]);
+
+            data[2] = prompt("enter value at 1st position");
+            data[2] = parseInt(data[2]);
+
+            data[3] = prompt("enter value at 1st position");
+            data[3] = parseInt(data[3]);
+
+            data[4] = prompt("enter value at 1st position");
+            data[4] = parseInt(data[4]);*/
+            
+            for (var i = 0; i < n; i++) {
+                data[i] = prompt(`enter value at ${i+1} position`);
+                data[i] = parseInt(data[i]);
+            }
+
+            console.log(data.indexOf(60));
+
+            var sum = 0;
+
+            for (var i = 0; i <= data.length - 1; i++ ) {
+                sum += data[i];
+            }
+            console.log(`Sum is  ${sum}`)
+        </script>
+    </body>
+</html>

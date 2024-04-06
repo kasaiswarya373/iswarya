@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Login </title>
+        <style>
+            body{
+                background-color: olive;
+            }
+            h1{
+                text-align: center;
+                color: rgb(55, 5, 5);
+            }
+            li{
+                list-style: none;
+                margin: 20px;
+                padding: 10px;
+            }
+            ul{
+                width: 500px;
+                margin : 50px auto;
+                background-color: oldlace;
+                padding: 20px;
+                text-align: center;
+            }
+            input{
+                background: transparent;
+                border: 2px transparent;
+                border-bottom:3px solid rgb(0, 1, 18) ;
+                color: navy;
+                outline: none;
+            }
+ 
+        </style>
+    </head>
+    <body>
+        <div class="registerbox">
+        <ul>
+            <li>
+                <h1> Login Here !!!</h1>
+            </li>
+            <li>
+                <label for="username"> <b> UserName: </b></label>
+                <input type="text" id="username" value="username" placeholder="Enter your username">
+            </li>
+
+            <li>
+                <label for="password"> <b>Password:</b></label>
+                <input type="password" id="password" value="password" placeholder="Enter password">
+            </li>
+            
+            <li>
+                <label for="Remember"></label>
+                <input type="checkbox" id="rememberMe"  value="rememberMe">  Remember me
+            </li>
+
+            <li>
+                <label for="login"></label>
+                <button style="background-color: rgb(242, 107, 4); width: 100px; height: 50px;
+                 border-radius: 50px; color: aliceblue; border:1px solid; font-weight: bolder;cursor: pointer; " value="Login"   onclick="loginUser()"> Login</button>
+            </li>
+        </ul>
+    </div>
+
+     
+        <script>
+                var rememberCheck = document.querySelector("#rememberMe");
+                var userInput = document.querySelector("#username");
+                var passInput = document.querySelector("#password");
+              
+
+                if (localStorage.checkbox && localStorage.checkbox !== "") {
+                    
+                    rememberCheck.checked = true
+                    userInput.value = localStorage.username;
+                    passInput.value = localStorage.password;
+                  
+                } else {
+                  
+                  rememberCheck.checked = false
+                    userInput.value = "";
+                    passInput.value = "";
+
+                    loginUser();
+                   
+                }
+
+                var loginUser = () => {
+                    if (rememberCheck.checked && userInput.value !== "" && passInput.value !== "") {
+
+                        localStorage.username = userInput.value;
+                        console.log(localStorage.username);
+
+                        localStorage.password = passInput.value;
+                        console.log(localStorage.password); 
+
+                        localStorage.checkbox = rememberCheck.checked; 
+                    } else {
+                        localStorage.username = "";
+                        localStorage.password = ""; 
+                        localStorage.checkbox = "";
+                        console.log(localStorage.password); 
+                    }
+                };
+
+
+        </script>
+    </body>
+</html>

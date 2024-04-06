@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array Short method</title>
+    </head>
+    <body>
+        Ascending Order
+        <script>
+            var data = [25, 72, 94, 15, 12, 64, 5, 95] 
+            /*for (var i = 0; i < data.length; i++) {
+                for (var j = i + 1; j < data.length; j++) {
+                    if (data[i] > data[j]) {
+                        tem = data[i];
+                        data[i] = data[j];
+                        data[j] = tem;
+                    }
+                }
+            } 
+            console.log(data); */
+            data = data.sort ((a,b) => {
+                if (a > b) {
+                    return true;
+                } else {
+                    return -1;
+                }
+            });
+            console.log(data);
+        </script>
+    </body>
+</html>

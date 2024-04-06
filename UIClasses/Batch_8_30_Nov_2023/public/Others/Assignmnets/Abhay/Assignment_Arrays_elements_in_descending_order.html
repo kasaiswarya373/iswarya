@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = parseInt(prompt("Enter length of the string"));
+        var arr = [num];
+        for (var i = 0; i < num; i++) {
+            arr[i] = parseInt(prompt("Enter values"));
+        }
+        var descendingOrder = (arr) => {
+            for (var i = 0; i < num; i++) {
+                for (var j = 0; j < num; j++) {
+                    if (arr[i] > arr[j]) {
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            return arr;
+        }
+        console.log("the array after sorting in descending order is :" + descendingOrder(arr));
+    </script>
+
+</body>
+
+</html>

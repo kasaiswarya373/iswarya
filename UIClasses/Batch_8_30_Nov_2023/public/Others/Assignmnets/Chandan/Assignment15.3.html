@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //WAP to find out second largest value from the given array.
+
+         function findSecondLargest(numbers){
+            if (numbers.length < 2) {
+                return "Array should have at least two elements";
+            }
+
+            var largest = Math.max(numbers[0], numbers[1]);
+
+            for (var i =2; i< numbers.length;i++){
+                if (numbers[i] > largest) {
+                    secondLargest = largest;
+                    largest = numbers[i];
+                } else if (numbers[i] > secondLargest && numbers[i] !== largest) {
+                    secondLargest = numbers[i];
+                }
+            }
+
+            return secondLargest;
+         }
+
+         // example use:
+         var numbers = [10,5,20,15];
+         var  secondLargestValue = findSecondLargest(numbers);
+         console.log("The second largest value is:" , secondLargestValue);
+    </script>
+</body>
+</html>

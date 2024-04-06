@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        students registration form
+
+    </title>
+    <style>
+        h3{
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            text-decoration: solid;
+            background-color: mediumorchid;
+        }
+        ul{
+            width: 500px;
+            border: 2px solid;
+            margin: 20px auto ;
+            padding: 10px;
+            background-color: #ccc;
+        }
+        li{
+            list-style: none;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+
+        }
+    </style>
+</head>
+<body>
+    <h3>students registration form</h3>
+    <ul>
+        <li>
+            <label for="userName">Enter the username: </label>
+            <input type="text" name="username" maxlength="12">
+
+        </li>
+        <li>
+            <label for="acntpswd">Enter account password: </label>
+            <input type="password" name="acntpswd" maxlength="8">
+        </li>
+        <li>
+            <label for="date"> Enter the date of birth: </label>
+            <input type="date" name="date">
+        </li>
+        <li>
+            <label for="gender"> select gender: </label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> female
+
+        </li>
+        <li>
+            <label>country:</label>
+            <select>
+                <option>India</option>
+                <option>japan</option>
+                <option>Nepal</option>
+                <option>Usa</option>
+                <option>Australia</option>
+            </select>
+        </li>
+        <li>
+            <label for="text"> About yourself: </label>
+            <textarea name="text" rows="6" cols="45"></textarea>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+       <script>
+            var t = [10, 80, 60];
+            var largest = t[0];
+            var second = 0; 
+            for( var i = 1; i < t.length; i++){
+                if( largest < t[i]){
+                    largest = t[i];
+                }
+                else if( t[i] > second){
+                second = t[i];
+                }
+            }
+            console.log(second);
+       </script> 
+    </body>
+</html>

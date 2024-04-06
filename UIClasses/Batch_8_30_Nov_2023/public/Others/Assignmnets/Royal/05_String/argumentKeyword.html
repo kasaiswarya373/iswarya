@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argument keyword & Rest Parameter</title>
+</head>
+<body>
+    <h3>use of Argument Keyword, which is NOT recommending in ECMA-6</h3>
+    <script>
+        function addValues (){
+            //Above funtion creation is not recommented in latest ECMA-6, if we use then argument feature will throw some expections.error
+
+            // console.log(arguments);
+            // var result = a + b;
+            var result = 0;
+            for(var i = 0; i < arguments.length; i++){
+                result += arguments[i];
+                //argument keyword is use to create a function without providing any parameters, we could able to creat an fucntion without providing any params (refer line #11), but we can run that funtion by providing any params (refer line #23, 24, 25). This is done bcz of argument keyword
+            }
+            console.log('The Sum is : '+result);
+        }
+        addValues(5, 5);
+        addValues(10, 5, 5);
+        addValues(5, 5, 5, 10);
+    </script>
+    
+</body>
+</html>

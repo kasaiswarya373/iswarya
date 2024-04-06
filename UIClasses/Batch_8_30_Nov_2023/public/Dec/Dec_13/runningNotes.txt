@@ -1,0 +1,15 @@
+Position Sticky
+
+z-index
+
+opacity
+    
+    we can control the zaxis value, by using css property 'z-index' 
+
+    opacity : 0 to 1
+
+    -------------------------
+
+
+HTML Input Elements:
+    

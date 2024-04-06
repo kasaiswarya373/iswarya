@@ -1,0 +1,31 @@
+
+    h1{
+        width: auto;
+        height: 50px;
+        border: 2px solid;
+        text-align: center;
+        background-color: lightslategray;
+    }
+    li{
+        list-style: none;
+        margin: 3px;
+        padding: 5px;
+    }
+    ul{
+        width: 600px;
+        height: 300px;
+        border: 1px solid;
+        margin: 20px;
+        padding: 20px;
+        color: rgb(1, 11, 12);
+        background-color: lightskyblue;
+        position : relative;
+        left: 350px;
+    }
+    label{
+        width: 120px;
+        display: inline-block;
+    }
+    .marks > input {
+        width: 50px;
+    }

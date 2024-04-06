@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var reverseFunction = () => {
+            var str = prompt("Enter a string");
+            var strLength = str.length;
+            var temp="";
+            for (var i = 0; i <= str.length; i++) {
+                temp += str.charAt(strLength - i);
+            }
+            console.log(temp);
+        }
+        reverseFunction();
+    </script>
+</body>
+
+</html>

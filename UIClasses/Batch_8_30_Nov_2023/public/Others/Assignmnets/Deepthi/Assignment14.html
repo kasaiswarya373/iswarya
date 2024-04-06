@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Details Using Functions</title>
+    </head>
+
+    <body>
+        <script>
+        
+                var readEmployeeDetails = () => {
+                var ename, age, gender, basicsal;
+
+                ename = prompt("enter the employee name:");
+                age = prompt("enter the employee age:");
+                gender = prompt("enter the employee gender:");
+                basicsal = prompt("enter the basic salary");
+                basicsal = parseInt(basicsal);
+
+                var Pf = getPf(basicsal);
+                var Hra = getHra(basicsal);
+                var Totalsal = getTotalSal(basicsal,Pf,Hra);
+                var Totaltax = getTotaltax(gender,Totalsal);
+
+                displayEmployeeDetails(ename,age,gender,Pf,Hra,Totalsal,Totaltax);
+            }
+
+            var getPf = (basicsalary) => {
+
+                var pf = (14 * basicsalary) / 100;
+                return pf;
+            }
+
+            var getHra = (basicsalary) => {
+
+            var hra = (25 * basicsalary) / 100;
+                return hra;
+            }
+
+            var getTotalSal = (basicsalary,pf,hra) => {
+
+            var totalsalary = basicsalary + pf + hra;
+                return totalsalary;
+            }
+            var getTotaltax = (gender,totalsal) => {
+                var taxpercent;
+
+                if (gender == 'male') {
+                    if (totalsal >= 200000) {
+                        taxpercent = (totalsal * 15) / 100;
+                        return taxpercent;
+                    }
+                    else if (totalsal >= 100000) {
+                        taxpercent = (totalsal * 10) / 100;
+                        return taxpercent;
+                        
+                    }
+                    if (totalsal >= 50000) {
+                        taxpercent = (totalsal * 5) / 100;
+                        return taxpercent;
+                    }
+                    else {
+                        taxpercent = totalsal;
+                        return taxpercent;
+                    }
+
+                }
+                else {
+                    if (totalsal >= 200000) {
+                        taxpercent = (totalsal * 10) / 100;
+                        return taxpercent;
+                    }
+                    else if (totalsal >= 100000) {
+                        taxpercent = (totalsal * 5) / 100;
+                        return taxpercent;
+                    }
+                    else {
+                        taxpercent = totalsal;
+                        return taxpercent;
+                    }
+
+                }
+            }
+            var displayEmployeeDetails = (ename,age,gender,Pf,Hra,Totalsal,Totaltax) => {
+
+                console.log("Employee details:")
+                console.log(`The name of the employee is ${ename}`);
+                console.log(`The age of the employee is ${age}`);
+                console.log(`The gender of the employee is ${gender}`);
+                console.log(`The pf of the employee is ${Pf}`);
+                console.log(`The hra of the employee is ${Hra}`);
+                console.log(`The total salary of the employee is ${Totalsal}`);
+                console.log(`The total tax of the employee is ${Totaltax}`);
+                
+            }
+
+            readEmployeeDetails();
+
+        </script>
+
+    </body>
+
+</html>

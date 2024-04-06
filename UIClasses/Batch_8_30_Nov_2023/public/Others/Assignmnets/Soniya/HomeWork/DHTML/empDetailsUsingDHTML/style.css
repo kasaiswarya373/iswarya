@@ -1,0 +1,36 @@
+h2
+{
+        border: 1px solid black;
+        width: auto;
+        text-align: center;
+        padding: 10px;
+        color: rgb(251 250 246);
+        background-color: burlywood;
+
+}
+img
+{
+    width:30%;
+    height:10%;
+}
+ul
+{
+    border:1px solid black;
+    width:300px;
+    text-align: center;
+    list-style-type: none;
+    height: 560px;
+    font-size: 20px;
+    background-color: burlywood;
+    padding:20px;
+    color: rgb(253, 255, 255);
+    float : left;
+    margin : 10px;
+
+}
+li
+{
+    border : 1px solid rgb(254, 253, 253);
+    margin : 10px;
+    padding:5px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha image with canvas tag</title>
+</head>
+<style>
+    .canvasblock{
+        border: 2px solid;
+        width: 150px;
+        height: 40px;
+        background-color: rgb(241, 232, 232);
+    }
+</style>
+<body>
+    <div onclick="captcha()">Generate captcha</div>
+    <canvas class="canvasblock"></canvas>
+    <script>
+        var ctx = document.querySelector(".canvasblock").getContext("2d");
+        ctx.moveTo(0, 0);
+            ctx.lineTo(400, 200);
+            ctx.stroke();
+            ctx.moveTo(0, 150);
+            ctx.lineTo(400, -50);
+            ctx.stroke();
+            ctx.font = "60px Arial";
+           //
+var captcha = () => {
+    minnumber = 65;
+    maxnumber = 90;
+   
+    var text1 = Math.round(Math.random()*(maxnumber - minnumber)+minnumber);
+    text1=String.fromCharCode(text1);
+    var text2 = Math.round(Math.random()*(maxnumber - minnumber)+minnumber); 
+    text2= String.fromCharCode(text2);
+    var text3 = Math.round(Math.random()*(maxnumber - minnumber)+minnumber); 
+    text3=String.fromCharCode(text3);
+    var text4 = Math.round(Math.random()*(maxnumber - minnumber)+minnumber);
+    text4=String.fromCharCode(text4);
+    var text5 = Math.round(Math.random()*(maxnumber - minnumber)+minnumber);
+    text5=String.fromCharCode(text5);
+    ctx.fillText(text1, 10, 70);
+            ctx.fillText(text2, 70, 130);
+            ctx.fillText(text3, 140, 70);
+            ctx.fillText(text4, 200, 130);
+            ctx.fillText(text5, 250, 50);
+            
+console.log(text1,text2,text3,text4,text5);
+//document.querySelector('.canvas').innerText='';
+
+            
+    }
+captcha();
+
+    </script>
+</body>
+</html>

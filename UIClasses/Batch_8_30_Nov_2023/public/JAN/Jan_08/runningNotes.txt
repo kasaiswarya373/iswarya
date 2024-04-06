@@ -1,0 +1,52 @@
+contactDetails:
+    fname - SV 
+    lname  - SV 
+    petname - SV 
+    mailId 
+        office
+            SV  
+        prsnl 
+            MV
+    address: 
+        office:
+            buldingNo
+            country
+                name 
+                code 
+            floorno
+            pincode 
+        
+        prsnl 
+            sateInfo    
+                details 
+                    sid 
+                    scod 
+                    pincode
+            countryname 
+            dno 
+            streetname 
+            
+    phoneno 
+        office 
+            sV
+        prsnl
+            MV
+        emrgncy SV 
+    socialNtwkId
+        linkedin - SV
+        twitter: SV 
+        fb : SV 
+    image: 'url / path',
+    gender: SV 
+    mstatus 
+
+--------------------
+
+var data = [34, 56]
+var data1 = {name: 'age'}
+
+if ((typeof(data) == 'object') && !Array.isArray(data)) { 
+
+}
+    
+    

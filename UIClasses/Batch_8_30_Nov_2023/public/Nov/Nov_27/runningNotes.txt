@@ -1,0 +1,6 @@
+CRUD 
+
+Create 
+Read 
+Update / Edit
+Delete

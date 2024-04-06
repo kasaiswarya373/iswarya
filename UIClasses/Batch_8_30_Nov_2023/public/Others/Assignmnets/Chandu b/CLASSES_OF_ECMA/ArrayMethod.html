@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array Methods</title>
+    </head>
+    <body>
+        <script>
+            var data = [34, 52, 18, 5, 19, 25]
+            var caming = data.find((value) => {
+                if (value == 8) {
+                    return true;
+                } 
+            })
+            console.log("found is " + caming);
+
+            /*var isexisting = false;
+            for (var i = 0; i < data.length; i++) {
+                if (data[i] == 18) {
+                    isexisting = true;
+                }
+            } 
+            console.log("found is " + isexisting); */
+        </script>
+    </body>
+</html>

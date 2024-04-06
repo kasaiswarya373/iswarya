@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        .box{
+            border: 1px solid none;
+            width: 600px;
+            height: 600px;
+            position: relative;
+            margin: 30px auto;
+        }
+        .box1{
+            border: 1px solid;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            transition: 2s;
+            animation: something 5s infinite;
+            background-color: greenyellow;
+        }
+        @keyframes something {
+            0%{
+                top: 0%;
+                left: 40%;
+                background-color: red;
+            }
+            25%{
+                left: 83%;
+                top: 40%;
+                background-color: blue;
+                border-radius: 100%;
+            }
+            50%{
+                left: 40%;
+                top: 83%;
+                background-color: pink;
+                border-radius: 0%;
+            }
+            75%{
+                left: 0%;
+                top: 40%;
+                border-radius: 100%;
+            }
+            100%{
+                top: 0%;
+                left: 40%;
+                background-color: red;
+            }
+        }
+    </style>
+    <body>
+        <div class="box">
+            <div class="box1"></div>
+        </div>
+    </body>
+</html>

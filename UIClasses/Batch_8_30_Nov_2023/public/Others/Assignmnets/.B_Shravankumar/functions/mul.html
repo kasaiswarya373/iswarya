@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mul</title>
+</head>
+<body>
+    <h2>Check in console</h2>
+    <script>
+        var num = () => {
+            var t,c;
+
+            t = prompt("enter a first value");
+            c = prompt("enter a second value");
+            t = parseInt(t);
+            c = parseInt(c);
+
+            getmul(t,c);
+            console.log("-----/////------")
+        }
+
+        /**
+         * finding a multiplication
+         */
+
+         var getmul = (t,c) => {
+            var result = t * c;
+            console.log(`the mul is ${result}`);
+         }
+
+         num();
+    </script>
+    
+</body>
+</html>

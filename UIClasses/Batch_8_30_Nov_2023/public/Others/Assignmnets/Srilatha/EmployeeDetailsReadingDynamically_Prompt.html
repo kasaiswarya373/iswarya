@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Emp Details Reading Dynamically</title>
+</head>
+
+<body>
+    <h3>Emp Details</h3>
+    <script>
+
+        var empName = prompt("Enter Emp Name");
+        var empAge = prompt("Enter Emp Age");
+        var empGender = prompt("Enter Emp Gender");
+        var empDepart = prompt("Enter Emp Depart");
+        var empSalary = prompt("Enter Emp Salary");
+        // var TotalSalary;
+        console.log("Emp name:" + empName);
+        console.log("Emp Age:" + empAge);
+        console.log("Emp Gender:" + empGender);
+        console.log("Emp Depart:" + empDepart);
+        console.log("Emp Basic salary:" + empSalary);
+        var hra = (10 * empSalary) / 100;
+        var pf = (10 * empSalary) / 100;
+        var TotalSalary = parseInt(empSalary) + parseInt(hra) + parseInt(pf);
+        //TotalSalary=parseInt(TotalSalary);
+        console.log("Total Salary after hra+ pf:"+TotalSalary);
+
+
+        if (empGender == "male") {
+            if (TotalSalary > 200000) {
+                TaxPercent = (15 * TotalSalary) / 100;
+                finalsalary = parseInt(TotalSalary) - parseInt(TaxPercent);
+                console.log("finalsalary after Tax deduction:" + finalsalary);
+            }
+            else if (TotalSalary > 100000) {
+                TaxPercent = (10 * TotalSalary) / 100;
+                finalsalary = parseInt(TotalSalary) - parseInt(TaxPercent);
+                console.log("finalsalary after Tax deduction:" + finalsalary);
+            }
+            else if (TotalSalary > 50000) {
+                TaxPercent = (5 * TotalSalary) / 100;
+                finalsalary = parseInt(TotalSalary) - parseInt(TaxPercent);
+                console.log("finalsalary after Tax deduction:" + finalsalary);
+            }
+            else if (TotalSalary < 50000) {
+                TaxPercent = TotalSalary;
+                finalsalary = parseInt(TotalSalary) - parseInt(TaxPercent);
+                console.log("finalsalary after Tax deduction:" + finalsalary);
+            }
+
+        }
+        else {
+
+            if (TotalSalary > 200000) {
+                TaxPercent = (10 * TotalSalary) / 100;
+                finalsalary = parseInt(TotalSalary) - parseInt(TaxPercent);
+                console.log("finalsalary after Tax deduction:" + finalsalary);
+            }
+            else if (TotalSalary > 100000) {
+                TaxPercent = (5 * TotalSalary) / 100;
+                finalsalary = parseInt(TotalSalary) - parseInt(TaxPercent);
+                console.log("ffinalsalary after Tax deduction:" + finalsalary);
+            }
+
+            else if (TotalSalary > 50000) {
+                TaxPercent = (5 * TotalSalary) / 100;
+                finalsalary = parseInt(TotalSalary) - parseInt(TaxPercent);
+                console.log("ffinalsalary after Tax deduction:" + finalsalary);
+            }
+            else if (TotalSalary < 50000) {
+                TaxPercent = TotalSalary - 0;
+                finalsalary = parseInt(TotalSalary) - parseInt(TaxPercent);
+                console.log("finalsalary after Tax deduction:" + finalsalary);
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

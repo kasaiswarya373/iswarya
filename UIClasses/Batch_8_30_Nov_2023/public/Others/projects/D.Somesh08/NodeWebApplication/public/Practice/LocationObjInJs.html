@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Obj In Js</title>
+</head>
+
+<body>
+    <h5>Location Obj demo</h5>
+    <h4>It is used to get the info of the URL bar of the browser. Like query params, host, port, etc....</h4>
+    <h3>It has mainly 3 methods to work with, we can find them in google.</h3>
+    <a href="/?name=something" target="_blank">google</a>
+    <a href="https://google.com" target="_blank">google</a>
+    <script>
+        document.write(`${location} <br>`);
+        document.write(`${location.search} <br>`);
+        document.write(`hash value : ${location.hash} <br>`);
+        location.hash='login';
+        document.write(`${location.hash} <br>`);
+        document.write(`href : ${location.href}`)
+
+        
+
+
+</script>
+</body>
+
+</html>

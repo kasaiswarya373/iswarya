@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*  var  empdeatails = {
+            name : "raj",
+            age : 25,
+            gender : "male",
+            department: "IT",
+            pf : 14/100,
+            hra : 12/100,
+            bassal: 25000,
+            totalsal:" " ,
+            totaltax : "10",
+        };*/
+       var employeDetails = {
+        Totalsal : " ",
+        Totaltax : " ",
+       };
+       var readEmpDetails = () =>{
+        employeDetails.Name = prompt("enter a name");
+        employeDetails.Age = prompt("enter a Age");
+        employeDetails.Department = prompt("enter a Department");
+        employeDetails.Basicsal = parseInt (prompt("enter a Basicsal"));
+        employeDetails.Pf = parseInt(prompt("enter a Pf"));
+        employeDetails.Hra =  parseInt( prompt("enter a Hra"));
+        employeDetails.Per =14;
+       }
+      var calToalSal = () =>{
+            employeDetails.totalsal = employeDetails.Basicsal + (employeDetails.Pf*employeDetails.Basicsal)/100 + (employeDetails.Hra *employeDetails.Basicsal)/100;
+            console.log( "Total      " + employeDetails.totalsal);
+        }
+        var calTotalTax= () =>{
+            calToalSal();
+            employeDetails.totltax =  employeDetails.totalsal - ( employeDetails.totalsal*employeDetails.Per )/100;
+            console.log( "Tax        " + employeDetails.totltax);
+          
+        }
+        var displayDetails = () =>{
+            readEmpDetails(); 
+            calTotalTax();
+            console.log("Name        " + employeDetails.Name);
+            console.log("Age         " +  employeDetails.Age);
+            console.log("Department  " +  employeDetails.Department );
+            console.log("Basicsal    " + employeDetails.Basicsal); 
+        }
+        displayDetails();
+    </script>
+</body>
+</html>

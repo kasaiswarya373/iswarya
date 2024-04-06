@@ -1,0 +1,88 @@
+
+addValues(); // no error
+function addValues() {
+
+}
+
+
+addValues(); // Error
+var addValues = function() {
+
+}
+addValues();// no error
+
+
+// Arrow functions 
+var addValues = () => {
+
+}
+
+funname(a, b, cb ,);
+
+
+var getSum = (int a1, int p2) => { // p1 -> 10, p2- 20  called function , formal parms
+                var result = a1 + p2;
+                console.log("The sum is " + result);
+            }
+
+        ------------------------
+calling function 
+called fun 
+actual params 
+formal params
+
+
+var test = (p1) => { // called func , p1, p2, p3 foraml params 
+
+}
+
+var sample = () => { // calling func 
+
+    ... 
+    test(a, b, c); // a, b, c -> actual params
+}
+
+
+=-------------------
+JAva 
+
+addValues(int a, int b) {
+
+}
+
+addValues (float a, float b) {
+
+}
+
+addValues (int a, float b) {
+
+}
+
+addValues(10, 20)
+
+addValues(10.4, 20.6)
+
+addValues(10, 20.7)
+
+addValues(30.5, 60);
+
+-------------
+
+Jvascript
+
+addValues (a, b) {
+    FIRST
+}
+
+addValues(a, b, c) {
+    SECOND
+}
+
+addValues(a) {
+    THIRD
+}
+
+
+addValues(10) - Third
+addValues(20, 40) - First 
+addValues(10, 5, 5) - 

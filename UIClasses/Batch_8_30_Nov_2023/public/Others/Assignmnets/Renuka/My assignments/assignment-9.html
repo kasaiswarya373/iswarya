@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+     
+    </style>
+</head>
+<body> 
+    <h2>employe-details</h2>
+    <script>
+          var Empname = prompt("Name");
+        var Age = prompt("Age");
+        var Dep = prompt("Dep");
+        var basicSal = prompt("BasicSal");
+        var pf = prompt("percentage of pf " ) * basicSal / 100;
+        var hra = prompt("percentage of hra ") * basicSal / 100;
+        basicSal = parseInt(basicSal);
+        pf = parseInt(pf);
+        hra = parseInt(hra);
+        var totalsal = basicSal + pf + hra;
+         
+
+
+
+        console.log("name " + Empname);
+        console.log("age " + Age);
+        console.log("dep " + Dep);
+        console.log("basicSal " + basicSal);
+        console.log("pf " + pf);
+        console.log("hra " + hra);
+        console.log("totalsal " + totalsal)
+      
+    </script>
+     
+</body>
+      
+</html>

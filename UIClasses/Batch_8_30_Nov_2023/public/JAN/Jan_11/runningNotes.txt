@@ -1,0 +1,35 @@
+html 4 
+css 2 
+core/basics JS 
+Json
+Json obj with methods
+
+DHTML 
+
+    take two values - DHTML
+
+    thgourh modularity 
+
+    do the parseint 
+
+    do the sum of values 
+
+    show the data back to user - DHTML 
+    \
+-----------------
+
+document.getElementById('container') -> document.querySelector('#container)
+
+document.getElementByClassname() -> document.querySelector('.abc);
+
+document.getelementByTagname() -> document.querySelector('div)
+
+-----------------------------
+
+document.querySelector()
+
+1. 
+2. 
+3. 
+
+external css and js 

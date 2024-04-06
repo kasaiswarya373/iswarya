@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClasses_eShoppingPage</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .header{
+            background-color: black;
+            color: white;
+            border: 1px solid;
+            margin-top: 0px;
+            width: auto;
+            height: 80px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .navBar li img{
+            width: 130px;
+            height: 40px;
+            margin-top: -30px; 
+            margin-left: -50px;
+        }
+        .navBar li{
+            width: auto;
+            list-style: none;
+            float: left;
+            border: 1px solid transparent;
+            margin: 5px;
+            padding: 10px;
+            font-size: larger;
+            color: white;
+        }
+        .navBar a:hover{
+            border: 2px solid white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: underline;
+            color: yellow;
+        }
+        .search{
+            width: 250px;
+            margin: auto;
+            height: 30px;
+            padding-left: 5px;
+            border: 1px;
+            float: left;
+            margin: 13px -30px 0px 285px;
+        }
+        input{
+            width: 300px;
+            height: 30px;
+            border-radius: 15px;
+        }
+        .login{
+            text-align: right;
+            border: 2px;
+            margin: 5px;
+            width: auto;
+        }
+        .login a{
+            width: auto;
+            border: 1px solid white;
+            border-radius: 15px;
+            background-color: blue;
+            margin: 5px;
+            position: relative;
+            top: -21px;
+            right: -2px;
+            padding: 10px;
+            font-size: larger;
+        }
+        .login a:hover{
+            text-decoration: underline;
+            text-align: center;
+            color: maroon;
+            padding: 10px;
+            font-weight: bold;
+            background-color: tomato;
+            color: blue;
+        }
+        .header img:hover{
+            cursor: pointer;
+        }
+        .block1{
+            max-width: 1350px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .slider img{
+            width: 100%;
+            margin: 2px auto;
+            vertical-align: middle;
+        }
+        .content{
+            height: 600px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .cat{
+            width: 33.3333%;
+            float: left; 
+        }
+        .cat img{
+            width: 400px;
+            height: 150px;
+            margin: 5px;
+            border: 1px;
+            border-radius: 15px;
+        }
+        .cat img:hover{
+            border-radius: 0;   
+        }
+        .slide{
+            clear: both;
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 220px;
+        }
+        .slide a img{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 8px;
+        }
+        .slpic{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul class="navBar">
+            <li><img src="logo.png" alt="#"></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="search">
+           <input type="text" placeholder="Search...">
+        </div>
+        <div class="login">
+            <span><a href="$">Login</a></span>
+            <span><a href="$">Signup</a></span>
+            <span><img src="kart.png" alt="#"></span>
+        </div>
+    </div>
+    <div class="block1">
+        <div class="slider">
+            <a href=""><img src="images/slider/one.webp" alt=""></a>
+        </div>
+        <div class="content">
+            <div class="category">
+                <div class="cat">
+                    <a href=""><img src="images/one.webp" alt=""></a>
+                </div>
+                <div class="cat">
+                    <a href=""><img src="images/two.webp" alt=""></a>
+                </div>
+                <div class="cat">
+                    <a href=""><img src="images/three.webp" alt=""></a>
+                </div>
+                <div class="cat">
+                    <a href=""><img src="images/four.webp" alt=""></a>
+                </div>
+                <div class="cat">
+                    <a href=""><img src="images/five.webp" alt=""></a>
+                </div>
+                <div class="cat">
+                    <a href=""><img src="images/six.webp" alt=""></a>
+                </div>
+            </div>
+            <div class="slide">
+                <a href=""><div class="slpic"><img src="images/1.jpg" alt=""></div></a>
+                <a href=""><div class="slpic"><img src="images/2.jpg" alt=""></div></a>
+                <a href=""><div class="slpic"><img src="images/3.jpg" alt=""></div></a>
+                <a href=""><div class="slpic"><img src="images/4.jpg" alt=""></div></a>
+                <a href=""><div class="slpic"><img src="images/5.jpg" alt=""></div></a>
+                <a href=""><div class="slpic"><img src="images/6.jpg" alt=""></div></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading data from user</title>
+    <style>
+        .title{
+            text-align: center;
+            font-weight: bold;
+            color: green;
+        }
+        ul{
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #ccc;
+        }
+        li{
+            border: 1px;
+            padding: 10px;
+            margin: 10px;
+            list-style: none;
+            background-color: #fff;
+        }
+        .rblock{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="title">
+            Finding Sum of values
+        </li>
+        <li>
+            <label for="fval">Enter 1st value</label>
+            <input type="text" name="a1value" id="fval">
+        </li>
+        <li>
+            <label for="a2value">Enter 2nd value</label>
+            <input type="text" name="a2value" id="sval">
+        </li>
+        <li class="rblock">The sum of value is : 
+            <span id="resultValue"></span>
+        </li>
+
+        <li><input type="button" value="Get Sum" onclick="getValues()"></li>
+    </ul>
+
+    <script>
+        var getValues = () => {
+            var a1 = document.querySelector('#fval').value;
+            a1 = parseInt(a1);
+            var a2 = document.querySelector('#sval').value;
+            a2 = parseInt(a2);
+            var result = a1 + a2;
+            // console.log(result)
+
+            document.querySelector("#resultValue").innerText = result;
+
+            document.querySelector(".rblock").style.display = 'block';
+
+            resetFieldValues();
+        }
+
+        var resetFieldValues = () => {
+                document.querySelector("#fval").value = '';
+                document.querySelector("#sval").value = '';
+            }
+
+    </script>
+    
+</body>
+</html>

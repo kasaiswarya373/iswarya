@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Half diamond star pattern</title>
+</head>
+<body>
+    <script>
+        var a = prompt('Enter digit to print Vertical Half Diamond Shape');
+        a = parseInt(a);
+        var msg = '';
+
+        for(var i = 1; i <= a; i++){
+            
+            for(var j = i; j<=i; j++){
+                 msg += '* ';
+            }
+            console.log(msg);
+        }
+
+        for(var i = a; i >= 1; i--){
+            var msg = '';
+            for(var j = 1; j<=i; j++){
+                 msg += '* ';
+            }
+            console.log(msg);
+        }
+    </script>
+    
+</body>
+</html>

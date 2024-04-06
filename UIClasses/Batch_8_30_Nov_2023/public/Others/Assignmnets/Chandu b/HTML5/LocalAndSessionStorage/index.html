@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="ThemeBlock">
+            Choose Theeme:<input type="color" id="ThemeSelector" onchange="getSelectedTheme()">
+        </div>
+        <div class="MainContainer">
+            <div class="SubContainer">
+                <form action="#">
+                    <input type="text" id="user_name" placeholder="Enter User Name" /><br/>
+                    <input type="text" id="pass_word" placeholder="Enter User password" /><br/>
+                    <button onclick="saveUserDetails()">Save User Details</button>
+                </form>
+            </div>
+        </div>
+        <div class="WelcomeBlock">
+            Thanks for visiting my page Mr. <span id="login_name"></span>
+        </div>
+        <script>
+            var username = "";
+
+            var applyTheme = (colorName) => {
+                document.querySelector("body").style.background = colorName;
+            };
+            document.addEventListener("DOMContentLoaded", () => {
+                if (localStorage.getItem("userSelectedTheme") != null) {
+                    applyTheme(localStorage.getItem("userSelectedTheme"));
+                } 
+                if (localStorage.getItem("login_name") != null) {
+                    showWelcomeBlock(localStorage.getItem("login_name"));
+                }
+            });
+
+            var getSelectedTheme = () => {
+                var selectedTheme = document.querySelector("#ThemeSelector").value;
+                console.log(selectedTheme);
+
+                localStorage.setItem("userSelectedTheme", selectedTheme);
+
+                applyTheme(selectedTheme);
+            };
+
+            var saveUserDetails = () => {
+                var username = document.querySelector("#user_name").value;
+                localStorage.setItem("#login_name", username)
+                document.querySelector("#user_name").value = '';
+                console.log(username);
+                var password = document.querySelector("#pass_word").value;
+                document.querySelector("#pass_word").value = '';
+                console.log(password);
+                showWelcomeBlock(username);
+            };
+
+            var showWelcomeBlock = (username) => {
+                document.querySelector("#login_name").innerHTML = username;
+
+                document.querySelector(".WelcomeBlock").style.display = "block";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="auto.css">
+    <script src="action.js"></script>
+</head>
+<body >
+    <div>
+        <h1>
+            Book Details
+        </h1>
+    </div>
+    <div>
+        <input type="text" list="topic" id="userinput" onkeyup="suggest(this.value)">
+        
+        <input type="button" value="Load" onclick="showBookDetail()">
+    </div>
+    <div id="dropdowndiv">
+
+    </div>
+    <div id="mainContainer">
+        <div id="bookDetail">
+            <div class="imgContainer">
+                <img  alt="" id="imgcontent">
+            </div>
+            <div class="detailContainer">
+                <ul>
+                    <li>
+                        <label for="">Book Name :</label>
+                        <span id="bookName"></span>
+                    </li>
+                    <li>
+                        <label for="">Author Name :</label>
+                        <span id="bookAuthor"></span>
+                    </li>
+                    <li>
+                        <label for="">Published :</label>
+                        <span id="publiceDate"></span>
+                    </li>
+                    <li>
+                        <label for="" style="margin-bottom: 10px;">Referance Link :</label>
+                       <span id="bookReferance"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

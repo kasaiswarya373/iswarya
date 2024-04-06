@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetriveCountriesNStates</title>
+    <link rel="stylesheet" href="App.css">
+    <script src="App.js"></script>
+</head>
+
+<body onload="showCountries()">
+
+
+    <ul class="container" id="parent">
+        <h3>User Registration Page</h3>
+        <li>
+            <label for="username">username</label><input type="text" id="username">
+        </li>
+        <li>
+            <label for="age">age</label><input type="text" id="age">
+        </li>
+        <li>
+            <label for="Countries">Countries</label>
+            <select  id="countrySelect" onchange="OnChangeOfCountry(this.value)">
+
+            </select>
+        </li>
+        <li>
+            <label for="states">states</label>
+            <select name="" id="stateSelect" onchange="onChagneOfState()">
+
+            </select>
+        </li>
+        <li>
+            <label for="districts">districts</label>
+            <select name="" id="districts">
+
+            </select>
+        </li>
+        <li>
+
+            <button>Register</button>
+        </li>
+    </ul>
+
+    <!-- <script defer>
+        // Your script code goes here
+        let onloadSlct = document.querySelector('#Countries');
+
+        // This event listener will be triggered when the entire document has finished loading
+        window.addEventListener('load', () => {
+            let optionEl1 = document.createElement('option');
+            optionEl1.innerText = 'Select Country';
+            optionEl1.setAttribute('value', 'select country');
+            onloadSlct.appendChild(optionEl1);
+        });
+
+        // Your script code goes here
+        let onloadSlctForstates = document.querySelector('#states');
+
+        // This event listener will be triggered when the entire document has finished loading
+        window.addEventListener('load', () => {
+            let optionEl2 = document.createElement('option');
+            optionEl2.innerText = 'Select State';
+            optionEl2.setAttribute('value', 'select State');
+            onloadSlctForstates.appendChild(optionEl2);
+        });
+
+        // Your script code goes here
+        let onloadSlctForDistricts = document.querySelector('#states');
+
+        // This event listener will be triggered when the entire document has finished loading
+        window.addEventListener('load', () => {
+            let optionEl3 = document.createElement('option');
+            optionEl3.innerText = 'Select District';
+            optionEl3.setAttribute('value', 'select District');
+            onloadSlctForDistricts.appendChild(optionEl3);
+        });
+
+
+
+    </script> -->
+
+</body>
+
+</html>

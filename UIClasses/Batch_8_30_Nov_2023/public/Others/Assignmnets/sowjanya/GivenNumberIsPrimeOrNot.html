@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checking whether the Given Number is Prime Number or Not</title>
+</head>
+<body>
+  <script>
+    var Num = prompt("enter a number");
+    Num = parseInt(Num);
+    var count = 0;
+    for ( var i = 2; i < Num; i++){
+      if ( Num % i == 0){
+        count++;
+        break;
+      }
+    }
+    if(count == 0)
+    {
+       console.log("Given number " + Num + " is Prime Number");
+    }else {
+       console.log("Given number " + Num + " is not a Prime Number");
+    }
+  </script>
+</body>
+</html>

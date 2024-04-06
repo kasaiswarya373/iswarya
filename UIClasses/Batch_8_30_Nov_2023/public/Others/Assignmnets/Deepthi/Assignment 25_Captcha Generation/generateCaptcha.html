@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generating the Captcha Value</title>
+
+    <script src="captcha.js"></script>
+
+    <link rel="stylesheet" href="captcha.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title"> Login Form </div>
+        <div>
+            <label for="uname">Username</label>
+            <input type="text" name="uname" id="u_name" size="20">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="pswd">
+        </div>
+        <div>
+            <label for="captcha-input">Enter Captcha</label>
+            <div id="box"> </div>
+            <input type="text" name="captcha-input" id="cpt" placeholder="Enter captcha text">
+            <input type="button" value="Generate" onclick="getCaptcha()">
+
+        </div>
+        <div class="button">
+            <input type="button" value="LOGIN">
+        </div>
+    </div>
+
+<script>getCaptcha()</script>
+</body>
+
+</html>

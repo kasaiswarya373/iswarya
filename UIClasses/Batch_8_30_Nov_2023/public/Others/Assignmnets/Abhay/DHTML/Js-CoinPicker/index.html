@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Picker</title>
+    <style>
+        .title {
+            font-size: 3rem;
+            margin-left: 195px;
+            font-weight: 700;
+            background-color: papayawhip;
+            width: 250px;
+            text-align: center;
+            padding: 7px;
+            border-radius: 5px;
+
+        }
+
+        #next {
+            width: 200px;
+            height: 50px;
+            background-color: olive;
+            font-family: cursive;
+            font-size: large;
+            position: absolute;
+            right: 400px;
+            top: 300px;
+        }
+
+        #next:hover {
+            background-color: brown;
+        }
+
+        #num {
+            width: 100px;
+            height: 40px;
+            background-color: yellowgreen;
+            border: 2px solid;
+            font-size: xx-large;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            position: absolute;
+            left: 810px;
+            top: 200px;
+            border-radius: 50px;
+        }
+
+        .coin {
+            width: 650px;
+            height: 500px;
+            padding: 20px;
+        }
+
+        button {
+            width: 60px;
+            height: 55px;
+            border-radius: 10px;
+            gap: 20px;
+            color: white;
+            background-color: #FF5E2B;
+            font-size: 1rem;
+            font-weight: bold;
+            border: 1px solid;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: brown;
+        }
+
+        footer {
+            position: absolute;
+            right: 951px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">Coin Picker</div>
+    <div id="num">0</div>
+    <button id="next" onclick="start()">Play</button>
+    <div id="buttons" class="coin"></div>
+    <div class="container"></div>
+    <footer>
+        Made With ♥ By Abhay
+    </footer>
+    <script>
+        var box = [];
+
+        var chart = () => {
+            var buttons = "";
+            for (var a = 1; a <= 90; a++) {
+                buttons += "<button id=" + a + ">" + a + "</button>";
+            }
+            return buttons;
+        }
+
+        var start = () => {
+            var number = Math.floor((Math.random() * 90));
+            for (var i = 0; i < box.length; i++) {
+                if (number == box[i]) {
+                    number = Math.floor((Math.random() * 90) + 1);
+                    i = -1; // Reset loop to check from the beginning
+                }
+            }
+
+            document.getElementById("num").innerHTML = number;
+            document.getElementById(number).style.backgroundColor = "black";
+
+            if (box.length >= 90) {
+                alert("Game is over");
+            }
+
+            box.push(number);
+        }
+
+
+        document.getElementById("buttons").innerHTML = chart();
+    </script>
+</body>
+
+</html>

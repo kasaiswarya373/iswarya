@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var empdata = {
+            readValues: () => {
+                empdata.name = prompt("Enter Name");
+                empdata.age = parseInt(prompt("Enter Your Age"));
+                empdata.basicSal = parseFloat(prompt("Enter Basic Salary"));
+                empdata.pfPer = parseFloat(prompt("Enter PF Percentage"));
+                empdata.hraPer = parseFloat(prompt("Enter HRA Percentage"));
+            }
+        };
+        empdata.getPf = () => {
+            empdata.pf = (empdata.basicSal * empdata.pfPer) / 100;
+            console.log("Your PF is " + empdata.pf);
+        };
+        empdata.gethra = () => {
+            empdata.hra = (empdata.basicSal * empdata.hraPer) / 100;
+            console.log("Your HRA is " + empdata.hra);
+        };
+        empdata.getTotal = () => {
+            empdata.totalsal = empdata.basicSal + empdata.pf + empdata.hra;
+            console.log("Your Total Salary is " + empdata.totalsal + " Rs");
+        }
+        console.log(empdata);
+        empdata.readValues();
+        empdata.getPf();
+        empdata.gethra();
+        empdata.getTotal();
+    </script>
+</body>
+
+</html>

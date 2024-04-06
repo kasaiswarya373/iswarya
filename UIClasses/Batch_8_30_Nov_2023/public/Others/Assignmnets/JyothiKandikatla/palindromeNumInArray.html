@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>palindrome No in array</title>
+    </head>
+    <body>
+        <script>
+            var palindrome = (p) => {
+                for(var i = 0; i < p.length; i++){
+                var palindromenumber = 0, rem;
+                var temp = p[i];
+                while(p[i] > 0){
+                    rem = p[i] % 10;
+                    palindromenumber =palindromenumber *10 + rem;
+                    p[i] = parseInt(p[i] / 10);
+                }
+                if(temp == palindromenumber){
+                    console.log(`The palindrome num in a given array ${temp} `);
+                }
+            }
+            }
+            var array = () => {
+            var p = [10, 21, 121, 55, 88,101];
+            palindrome (p);
+            }
+            array();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport
+    6]" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var d = new Date();
+       /* console.log(d);
+        console.log(d.getDate());
+        var day = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+        console.log(day[d.getDay()]);
+        var shortCutYear = d.getFullYear();
+        var syear = shortCutYear % 100;
+        console.log(syear);*/
+       var n = "";
+        if(d.getDate() == 1 || d.getDate() == 21 ||d.getDate() == 31){
+            n += 'st';
+        }else if(d.getDate() == 2 || d.getDate() == 22){
+        
+            n += 'nd';
+         }else if(d.getDate() == 3 || d.getDate() == 23){
+            n += 'rd';
+            
+         }else{
+            n += 'th';
+            
+         }
+        console.log(`${d.getDate()}${n}`);
+    
+        var z = () => {
+            var z1 = 0;
+            if(d.getDate < 10 || d.getHours < 10 || d.getDay < 10 || d.getMinutes < 10 || d.getSeconds < 10 || d.getMonth < 10){
+                  z1 = z1;
+                   return z1;
+                }
+                console.log(`${z1}${d.getDate()}`);
+        }
+
+        z();
+        
+       /* var n = 100;
+        if(n % 2 == 0){
+            n = n;
+                }
+        console.log(`The even no is ${n}`);*/
+        console.log(d.getMonth());
+        </script>
+</body>
+</html>

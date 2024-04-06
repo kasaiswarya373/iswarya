@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // WAP to find sum and average of numbers in the given range
+            var num = prompt("enter number: ");
+            num = parseInt(num);
+            var sum =0,avg=0;
+            for(var i=1;i<=num;i++){
+                sum+=i;
+            }
+            avg = sum/num;
+            console.log("sum of numbers in the given range is : " + sum);
+            console.log("Average of numbers in the given range is: " + avg);
+
+            // Write a program in JS to display the cube of the number up to an integer.
+            var a = prompt("enter number: ");
+            a = parseInt(a);
+            for(var i=1;i<=a;i++){
+                var cube = i*i*i;
+                console.log("Cube of numbers in the given range are: " + cube);
+            }
+
+
+            // Write a program in JS to display the multiplication table for a given integer.
+            var b = prompt("enter number: ");
+            b = parseInt(b);
+            for(var i=1;i<=10;i++){
+               // console.log("Multiplication of the given table: ");
+                console.log( b*i);
+                
+            }
+            //WAP to display odd numbers in the given range and their sum
+            var c = prompt("enter number: ");
+            c = parseInt(c);
+            sum=0;
+            for(var i=1;i<=c;i++){
+                if(i%2!=0){
+                    console.log(i);
+                    sum+=i;
+                }
+            }
+            console.log("sum of odd numbers in the given range is: " + sum);
+
+            // WAP to display right angle triangle 
+            var rows = prompt("enter number of rows: ");
+            rows = parseInt(rows);
+            var right = "";
+            for(var i=1;i<=rows;i++){
+                for(var j=1;j<=i;j++){
+                    right+="*";
+                }
+                right+="\n";
+            }
+            console.log(right);
+
+
+            // Write a program in JS to make such a pattern like a right angle triangle with a number which will repeat a number in a row.
+            var n = prompt("enter number of rows: ");
+            n = parseInt(n);
+            var number ="";
+            for(var i=1;i<=n;i++){
+                for(var j=1;j<=i;j++){
+                    number+=i;
+                }
+                number+="\n";
+            }
+            console.log(number);
+        </script>
+    </body>
+</html>

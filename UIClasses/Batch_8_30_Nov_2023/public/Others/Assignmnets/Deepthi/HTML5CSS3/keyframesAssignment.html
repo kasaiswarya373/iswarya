@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrames</title>
+    <style>
+        .container {
+            width: 100px;
+            height:100px;
+            border: 1px solid;
+            border-radius: 10%;
+            padding: 20px;
+            background-color: orangered;
+            animation: content 10s infinite;
+            position: relative;
+            transition:border-radius 5s;
+        }
+
+         @keyframes content {
+            0% {
+                top: 0px;
+                left: 0px;
+                background-color: red;
+            }
+
+            25% {
+                top: 0px;
+                left: 1250px;
+                width:150px;
+                border-radius: 25%;
+                background-color: blue;
+                transform: rotate(120deg);
+             }
+
+            50% {
+                top: 530px;
+                left: 1250px;
+                width:200px;
+                border-radius: 5%;
+                background-color: yellow;
+            }
+
+            75% {
+                top: 530px;
+                left: 0px;
+                border-radius: 50%;
+                background-color: green;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+                background-color: aqua;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+</body>
+
+</html>

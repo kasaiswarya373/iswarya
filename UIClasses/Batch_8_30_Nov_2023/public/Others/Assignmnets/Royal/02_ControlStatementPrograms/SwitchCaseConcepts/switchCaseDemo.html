@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <h4>Demonstrating Switch Case</h4>
+    <script>
+        var p1 = parseInt(prompt("Enter First  Value"));
+        var p2 = parseInt(prompt("Enter Second Value"));
+        var userOption = prompt("Choose from add/sub/mul/div");
+
+        switch(userOption){
+            case 'add':
+                var add = p1+p2;
+                console.log(add);
+                break;
+
+            case 'sub':
+                var sub = p1-p2;
+                console.log(sub);
+                break;
+
+            case 'mul':
+                var mul = p1*p2;
+                console.log(mul);
+                break;
+
+            case 'div':
+                var div = p1/p2;
+                console.log(div);
+                break;
+
+            default:
+                console.log("Please Enter Valid Input")    
+        }
+
+    </script>
+    
+</body>
+</html>

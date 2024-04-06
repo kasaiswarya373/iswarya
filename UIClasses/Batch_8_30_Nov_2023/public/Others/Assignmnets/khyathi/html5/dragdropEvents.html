@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cartBlock{
+        width: 700px;
+        height: 400px;
+        margin: 10px auto;
+        border: 1PX solid;
+        overflow: auto;
+
+    }
+    h3{
+        border: 1px solid;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+        
+    }
+   .subBlock,numOfProduct{
+       /* float: left; */
+       display: inline-block;
+    }
+    
+   
+
+
+    
+
+</style>
+<body>
+    <h3>Add to cart
+        
+    </h3>
+<div class="cartBlock" ondrop="produtDrop(event)" ondragover="productDragOver(event)">
+    
+
+</div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6XzeMmSZOXGGC1Vuqkm-ZPnMw_ZPoDDG34w&usqp=CAU" alt="" ondragstart="productDragStart(event)">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo50r6l3ihfW4YMiVz748X80scWloJr1uf2thWtkH2iiqzBtnZpl4iXcaKguPAN9ewA4s&usqp=CAU" alt=""ondragstart="productDragStart(event)">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlszz3l9a81tuWNycubjrvbvvuKSVlr5ZxGw&usqp=CAU" alt=""ondragstart="productDragStart(event)">
+    
+</body>
+<script>
+    var producturl;
+    var isRepete=false;
+    var array=[];
+    var count=1;
+
+
+    var productDragStart=(event)=>{
+        console.log("start")
+      producturl=event.target.getAttribute("src")
+
+    }
+    var productDragOver=(event)=>{
+        event.preventDefault();
+        console.log("drag")
+
+    }
+    var produtDrop=(event)=>{
+       
+        var isFound=array.find((item)=>item.img===producturl);
+
+            event.preventDefault();
+      
+        if(!isFound){
+            array.push({img:producturl,count:1});
+    
+        }else{
+          array.map((item)=>{
+            if(item.img===producturl){
+                item.count= item.count+1;
+            }
+          }) 
+        }
+    
+
+     console.log(array)
+
+        addHTML();
+    }
+
+    function addHTML(){
+            document.querySelector(".cartBlock").innerHTML='';
+     array.forEach((item)=>{
+            var divTag= document.createElement("div")
+            divTag.classList.add("subBlock")
+            
+            var productimg=document.createElement("img")
+            productimg.setAttribute("src",item.img)
+            
+            divTag.append(productimg)
+            document.querySelector(".cartBlock").append(divTag);
+
+            var spantag=   document.createElement("span")
+            
+            spantag.innerText= "Num Of Products:"+item.count
+            spantag.classList.add("numOfProduct")
+            document.querySelector(".cartBlock").append(spantag);
+        
+
+
+  
+            //   var deleteProduct=document.createElement("button")
+            //      deleteProduct.innerText="remove"
+            //      deleteProduct.addEventListener( 'click',(event)=>{
+            //     event.target.parentElement.remove();
+                
+            //     })
+            //     divTag.append(deleteProduct);
+        })
+    }
+        
+
+
+
+
+
+    
+</script>
+</html>

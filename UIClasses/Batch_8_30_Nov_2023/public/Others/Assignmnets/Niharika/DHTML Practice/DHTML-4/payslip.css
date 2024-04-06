@@ -1,0 +1,47 @@
+h3 {
+    border: 1px solid;
+    background-color: palegoldenrod;
+    color: hsl(0, 59%, 41%);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.container {
+    margin: 30px auto;
+    border: 1px solid;
+    width: 50%;
+    background-color: hsla(0, 0%, 80%, 0.431);
+}
+.newcontainer {
+    display: none;
+    margin: 30px auto;
+    border: 1px solid;
+    width: 50%;
+    background-color: hsla(0, 0%, 80%, 0.431);
+}
+#empname #fage #male #female #empsal #payslip {
+    margin: 5px;
+    display: inline-block;
+}
+.emname{
+    width: 80%;
+    border: 1px solid;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+}
+.em1name {
+    display: none;
+}
+.submit {
+    text-align: center;
+}
+label {
+    display: inline-block;
+}
+.payslip {
+    background-color: green;
+    color: aliceblue;
+    text-align: center;
+    margin: 20px auto;
+}

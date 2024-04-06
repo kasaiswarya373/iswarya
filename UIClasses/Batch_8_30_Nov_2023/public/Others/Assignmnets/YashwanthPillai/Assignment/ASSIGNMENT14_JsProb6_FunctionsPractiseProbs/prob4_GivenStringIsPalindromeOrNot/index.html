@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Given String is palindrome </title>
+</head>
+<body>
+    <h2>WAP To Display Given String is palindrome or not</h2>
+
+    <script>
+        let checkStringIsPalindrome = () =>{
+let stringToCheck = prompt("Enter A word To Check is it palindrome")
+
+ let palindromeStringOrNot = getStringChecked(stringToCheck);
+       console.log(palindromeStringOrNot);
+        }
+
+        let getStringChecked = (stringToCheck) =>{
+            let revAstring = stringToCheck.split("").reverse().join("")
+            if(revAstring == stringToCheck){
+                return (`${revAstring} is a palindrome`)
+            }else{
+                return ("Given String is not a palindrome")
+            }
+        }
+        checkStringIsPalindrome()
+
+    </script>
+</body>
+</html>

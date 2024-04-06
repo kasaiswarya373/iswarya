@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse of a given Number</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        var no = 1234, reverse = 0, remainder = 0;
+
+        while (no >= 1) {
+            remainder = no % 10;
+            reverse = reverse * 10 + remainder;
+            no = parseInt(no / 10);
+        }
+
+        document.write("Reverse of a Number : " + reverse);
+        console.log("Reverse of a Number : " + reverse);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+    "details" : [{
+        "image": "https://img.global.news.samsung.com/in/wp-content/uploads/2023/07/001-galaxy-zflip5-zfold5-press-release.jpg",
+        "name": "Samsung galaxy z fold 5",
+        "price": "164999 rs",
+        "manufacturer": "Samsung",
+        "ratings": "4.5"
+    },
+    {
+        "image": "https://www.digitaltrends.com/wp-content/uploads/2023/02/samsung-galaxy-s23-ultra-green-back-6.jpg?fit=2000%2C1333&p=1",
+        "name": "Samsung galaxy S23 Ultra",
+        "price": "154999 rs",
+        "manufacturer": "Samsung",
+        "ratings": "4.8"
+    }, {
+        "image": "https://asset.kompas.com/crops/WmL9QcYVgfxqw5bKmv4ZWNxWQXI=/0x0:7893x5262/750x500/data/photo/2023/10/04/651d1fdad24f2.jpg",
+        "name": "Samsung galaxy S23 FE",
+        "price": "134999 rs",
+        "manufacturer": "Samsung",
+        "ratings": "4.6"
+    }]
+}

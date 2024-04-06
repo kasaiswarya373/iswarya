@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+           /* var data = {
+                "name": 'Raj',
+                1: 20,
+                true: 'krish',
+                undefined: 'sample',
+                NaN: 'testing',
+                {name:"sample"}: 'new one'
+            }
+            console.log(data[1])
+            console.log(data[true])
+            console.log(data[undefined])
+            console.log(data);
+            console.log(data[NaN]); */ 
+
+            var m1 = new Map();
+
+            m1 = m1.set("a", 20)
+
+            m1.set("name", "Raj").set("age", 20).set("location", "Hyd");
+
+            m1.set(true, "Sample");
+            m1.set(NaN, "Testing");
+            m1.set({age:20}, "Sample1");
+            console.log(m1.get("name"));
+            console.log(m1);
+
+            console.log(m1.keys())
+            console.log(m1.values())
+
+            for (var [key, value] of m1) {
+                console.log(key)
+                console.log(value)
+            }
+
+            m1.forEach((key, value) => {
+                console.log(key)
+                console.log(value)
+            });
+
+            console.log(m1.size)
+
+        </script>
+    </body>
+</html>

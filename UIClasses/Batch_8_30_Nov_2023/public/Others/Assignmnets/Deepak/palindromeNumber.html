@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PalindromeNumber</title>
+</head>
+<body>
+    <script>
+        var userInputNumber = prompt('enter a number')
+        let requiredString ='';
+        var usernumber = userInputNumber;
+        userInputNumber = parseInt(userInputNumber);
+        while(userInputNumber > 0){
+            var moduleNumber = userInputNumber % 10;
+            moduleNumber = moduleNumber.toString();
+            requiredString = requiredString + moduleNumber ;
+            userInputNumber = userInputNumber / 10;
+            userInputNumber = parseInt(userInputNumber);
+        }
+        usernumber = usernumber.toString();
+        if(requiredString == usernumber){
+            document.write("Given number is a palindrome");
+        }else{
+            document.write("Given number is not a palindrome");
+        }
+    </script>
+</body>
+</html>

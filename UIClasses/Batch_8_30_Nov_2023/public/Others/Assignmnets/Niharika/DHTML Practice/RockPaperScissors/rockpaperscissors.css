@@ -1,0 +1,83 @@
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+body {
+    background-color: lightskyblue;
+}
+#startbutton {
+    width: 150px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    outline: none;
+    border: none;
+    position: relative;
+    top: 20px;
+    left: 435px;
+}
+.maindiv {
+    width: 450px;
+    height: 300px;
+    margin: 20px auto;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: plum;
+}
+.container1{
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    float: left;
+    margin: 30px;
+}
+.container2 {
+    margin: 30px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    float: left;
+    position: relative;
+    top: -17px;
+}
+.subdiv {
+    margin: 30px auto;
+}
+.s1 {
+    position: relative;
+    top: -1px;
+    left: -140px;
+}
+.s2 {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+#button1 {
+    position: absolute;
+    bottom: 117px;
+    left: 350px;
+}
+#button2 {
+    position: absolute;
+    bottom: 117px;
+    right: 350px;
+}
+.img {
+    width: 150px;
+    height: 150px;
+}
+.resultsBox {
+    width: 300px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    left: 61px;
+    text-align: center;
+    color: gold;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}

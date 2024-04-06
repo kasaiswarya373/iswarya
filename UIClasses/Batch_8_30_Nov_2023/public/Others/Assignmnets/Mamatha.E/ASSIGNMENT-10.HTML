@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var e_name=prompt("enter employaee name");
+        var e_age=prompt("enter employee age");
+        var e_gender=prompt("enter employee gender");
+        var e_basicsalary=prompt("enter employee basic salary");
+        var e_pfpercentage=prompt("employee pfpercentage");
+        var e_pf=(e_pfpercentage*e_basicsalary)/100;
+        var e_hrapercentage=prompt("enter employee har percentage");
+        var e_hra=(e_basicsalary*e_hrapercentage)/100;
+        
+        e_basicsalary=parseInt(e_basicsalary);
+        e_pf=parseInt(e_pf);
+        e_hra=parseInt(e_hra);
+        e_pfpercentage=parseInt(e_pfpercentage);
+        e_hrapercentage=parseInt(e_hrapercentage);
+        var totalsalary=e_basicsalary+e_pf+ e_hra;
+        console.log("e_name" + e_name);
+        console.log("e_age ia" + e_age);
+        console.log("e_gender is" + e_gender);
+        console.log("e_basicsalary is" + e_basicsalary);
+        console.log("e_pf percentage" + e_pfpercentage);
+        console.log("e_pf is" + e_pf);
+        console.log("e_hrapercentage is" + e_hrapercentage);
+        console.log("e_hra" + e_hra);
+        console.log("e_totalsalary is" + totalsalary);
+        var tax=totalsalary*15/100, tax=totalsalary*10/100,tax=totalsalary*5/100;
+        var byhand=totalsalary-tax;
+        console.log("total salary by hand" + byhand);
+        if(e_gender == "male"){
+        if(totalsalary>=200000){
+            console.log("tax is 15percentage" + tax);
+        }
+        else if(totalsalary>=100000){
+            console.log("tax is 10 percent" + tax);
+        }
+        else if(totalsalary>=50000){
+            console.log("tax is 5 percent" + tax);
+        }
+    }else{
+        if(totalsalary>=200000){
+            console.log("tax is 10percentage" + tax);
+    }else if(totalsalary>=100000){
+            console.log("tax is 5 percent" + tax);
+        }
+
+}   
+console.log("end")
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar Example</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            width: 500px;
+        
+        }
+
+        #searchbar {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        #list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+        }
+
+        .animals {
+            font-size: 1.2em;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+
+        }
+
+        li {
+            border: 1px solid;
+            text-align: left;
+            padding: 5px;
+            margin: 0;
+        }
+        li:hover {
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+        ul {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="Start Typing">
+
+        <ul id='list'>
+            <li class="words">Apple</li>
+            <li class="words">Apricot</li>
+            <li class="words">Banana</li>
+            <li class="words">Blueberry</li>
+            <li class="words">Cherry</li>
+            <li class="words">Cranberry</li>
+            <li class="words">Dolphin</li>
+            <li class="words">Dragonfly</li>
+            <li class="words">Eagle</li>
+            <li class="words">Elephant</li>
+            <li class="words">Frog</li>
+            <li class="words">Flamingo</li>
+            <li class="words">Giraffe</li>
+            <li class="words">Grapes</li>
+            <li class="words">Hyena</li>
+            <li class="words">Hippopotamus</li>
+            <li class="words">Ice cream</li>
+            <li class="words">Island</li>
+            <li class="words">Jaguar</li>
+            <li class="words">Jellyfish</li>
+            <li class="words">Kangaroo</li>
+            <li class="words">Kiwi</li>
+            <li class="words">Lion</li>
+            <li class="words">Lemon</li>
+            <li class="words">Mango</li>
+            <li class="words">Monkey</li>
+            <li class="words">Night</li>
+            <li class="words">Nose</li>
+            <li class="words">Orange</li>
+            <li class="words">Octopus</li>
+            <li class="words">Parrot</li>
+            <li class="words">Pineapple</li>
+            <li class="words">Zebra</li>
+            <li class="words">Zoom</li>
+        </ul>
+    </div>
+    <script>
+        var search_animal = () => {
+            var input = document.querySelector("#searchbar").value
+            document.querySelector("#list").style.display = "block";
+            input = input.toLowerCase();
+            var x = document.getElementsByClassName('words');
+
+            for (i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "none";
+                }
+                else {
+                    x[i].style.display = "block";
+                }
+            }
+            
+        }
+
+    </script>
+</body>
+
+</html>

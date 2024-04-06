@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="parent">
+
+    </div>
+
+    <script>
+
+        // let c1 = document.createElement('div').setAttribute('id', 'c1');
+        // let c2 = document.createElement('div');
+        // c2.setAttribute('id', 'c2')
+        // document.querySelector('#parent').append(c1, c2);
+
+       let c = document.querySelector('#parent').append(document.createElement('div'));
+       console.log(c); //This does'nt return newly added child.
+
+       let c1 = document.querySelector('#parent').appendChild(document.createElement('div'));
+       c1.setAttribute('id', 'tId');
+       console.log(c1); //This returns newly added child.
+       c1.append('this is test!!!');
+       console.log('data', c1.textContent);
+
+       console.log(document.querySelector('#tId').textContent);
+        
+       // document.body
+        //     .appendChild(document.createElement("p"))
+        //     .appendChild(document.createElement("p"))
+        //     .appendChild(document.createElement("p"));
+
+        document.body.appendChild('text');
+
+    </script>
+</body>
+
+</html>

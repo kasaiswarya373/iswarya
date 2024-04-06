@@ -1,0 +1,93 @@
+main {
+    min-height: 400px;
+    margin: 20px;
+}
+
+#HeaderLogo {
+    width: 100px;
+    position: relative;
+    right: 15px;
+}
+
+.categoryFilterBlock img {
+    width: 90%;
+    height: 150px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#metaContentBlock .col-md-4 {
+    transition: all ease 1s;
+}
+
+#metaContentBlock .col-md-4:hover {
+    scale: 1.1;
+}
+
+.carousel-inner img {
+    width: 90%;
+    cursor: pointer;
+}
+
+.autoplay img {
+    width: 280px;
+    height: 100px;
+}
+
+#openEye {
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
+}
+
+#closedEye {
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
+    display: none;
+}
+
+.container li a {
+    margin-left: 20px;
+    font-weight: 700;
+    transition: all ease-out 1s;
+}
+
+.container li a:hover {
+    color: gold !important;
+    scale: 1.1;
+    border: 2px solid white;
+}
+
+#LoginForgotPassword {
+    position: absolute;
+    right: 18px;
+    bottom: 16px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.responseMessageBlock {
+    text-align: center;
+    color: rebeccapurple;
+}
+
+#Headerlogout,
+.accountUserNameDisplay {
+    display: none;
+}
+
+#Headerlogout {
+    margin-left: 8px;
+}
+
+#alertMessageBlock {
+    display: none;
+    /* z-index: 1; */
+    position: absolute;
+    width: 204px;
+    text-align: center;
+    right: 598px;
+}

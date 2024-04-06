@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Armstrong Number In A given Array</title>
+</head>
+
+<body>
+    <script>
+
+        var getArmstrongNumber = (n) => {
+
+            var temp = n;
+            var variableLength = n.toString().length;
+            var sum = 0;
+            var rem;
+            while (n > 0) {
+                rem = n % 10;
+                sum = sum + (rem ** variableLength);
+                n = n / 10;
+                n = parseInt(n);
+            }
+            if (temp == sum) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var checkArmstrongNumbers = () => {
+
+            var armstrong = [2, 78, 153, 56, 407, 3, 59];
+            for (var i = 0; i < armstrong.length; i++) {
+                var result = getArmstrongNumber(armstrong[i]);
+                console.log(`${armstrong[i]} is armstrong number - ${result}`);
+            }
+
+        }
+        checkArmstrongNumbers();
+    </script>
+</body>
+
+</html>

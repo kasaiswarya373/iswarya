@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details with Functions</title>
+</head>
+<body>
+    <script>
+        
+        function readempdata () {
+            empname=prompt("Enter Employee Name")
+            empage=prompt("Enter Employee Age")
+            empgender=prompt("Enter Employee Gneder")
+            empdprt=prompt("Department")
+            empbascsal=prompt("Enter Basic Salary")
+            empbascsal=parseInt(empbascsal)
+            getpfandhra();
+          
+        }
+
+        function getpfandhra () {
+            
+            pf= empbascsal * parseInt( prompt('Pf %')) /100
+            pf=parseInt(pf)
+            hra= empbascsal * parseInt(prompt('Hra %'))/100 
+            hra=parseInt(hra)
+            gettotalsal();
+        }
+        function gettotalsal (){
+            totalsal= empbascsal + pf + hra
+            
+        }
+        function totaltax () {
+            var taxparsent=0
+            if (empgender == 'Male') {
+               if(totalsal > 100000){
+                taxparsent=10
+               }
+               else{
+                taxparsent=5
+               }
+            }else{ 
+                totaltax=0
+
+            }
+            // totaltax= totalsal * (totalsal* taxparsent)/100
+            
+
+            
+            }
+        function displayempdta () {
+            readempdata();
+            console.log('Employee Name:'+empname)
+            console.log('Employee Age:'+empage)
+            console.log('Employee Gender:'+empgender)
+            console.log('Employee Department:'+empdprt)
+            console.log('Basic Salary'+empbascsal)
+            console.log('Pf:'+pf)
+            console.log('Hra:'+hra)
+            console.log('Total Salary:'+totalsal)
+           
+        }
+        displayempdta();
+         
+    </script>
+</body>
+</html>

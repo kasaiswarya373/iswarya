@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>form</title>
+    <style>
+        .heading {
+            border: 1px solid black;
+            color: white;
+            text-align: center;
+            padding: 13px;
+            font-size: 20px;
+            width: 625px;
+            position: relative;
+            left: 242px;
+            background-color: lightskyblue;
+        }
+
+        .container {
+            width: 650px;
+            height: 850px;
+            margin: 20px auto;
+            border: 1px solid;
+            background-color: lightskyblue;
+        }
+
+        .container_a,
+        .container_b,
+        .container_c {
+            background-color: beige;
+            position: relative;
+            border: 1px solid yellow;
+        }
+
+        .container_a,
+        .container_b {
+            width: 600px;
+            height: 200px;
+        }
+
+        .container_a {
+            top: 45px;
+            left: 25px;
+        }
+
+        .container_b {
+            top: 80px;
+            left: 25px;
+        }
+
+        .container_c {
+            width: 600px;
+            height: 250px;
+            top: 115px;
+            left: 25px;
+        }
+
+        #name,
+        #in_name {
+            position: relative;
+            top: 5px;
+        }
+
+        #name {
+            left: 20px;
+        }
+
+        #in_name {
+            left: 65px;
+        }
+
+        #fname,
+        #in_fname {
+            position: relative;
+            top: 45px;
+        }
+
+        #fname {
+            left: -200px;
+        }
+
+        #in_fname {
+            left: -189px;
+        }
+
+        #age {
+            position: relative;
+            top: 85px;
+            left: -450px;
+        }
+
+        #in_age {
+            position: relative;
+            top: 40px;
+            left: 111px;
+        }
+
+        .container_a1,
+        .container_b1,
+        .container_c1 {
+            border: 1px solid;
+            background-color: lightcoral;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            padding-top: 10px;
+            position: relative;
+            border: 1px solid yellow;
+        }
+
+        .container_a1 {
+            width: 130px;
+            height: 35px;
+            top: -15px;
+            left: 45px;
+        }
+
+        #address {
+            position: relative;
+            top: -45px;
+            left: 160px;
+        }
+
+        #te_address {
+            width: 152px;
+            height: 33px;
+            position: relative;
+            top: -30px;
+            left: 190px;
+        }
+
+        #country {
+            position: relative;
+            top: 0px;
+            left: -60px;
+        }
+
+        #se_country {
+            width: 148px;
+            position: relative;
+            left: -27px;
+        }
+
+        .container_b1 {
+            width: 170px;
+            height: 35px;
+            top: -15px;
+            left: 45px;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        .container_c1 {
+            width: 130px;
+            height: 35px;
+            top: -15px;
+            left: 45px;
+        }
+
+        #yourself {
+            position: relative;
+            top: -20px;
+            left: 20px;
+        }
+
+        #aboutTextArea {
+            position: relative;
+            top: 25px;
+            left: 45px;
+        }
+        .footer {
+            border: 1px solid blue;
+            background-color: lightskyblue;
+            color: black;
+            text-align: center;
+            padding: 5px;
+            font-size: 20px;
+            width: 642px;
+            position: relative;
+            left: 242px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="heading">Student Registation Page</h3>
+    <div class="container">
+        <div class="container_a">
+            <div class="container_a1">Personal Details</div>
+            <label class="a1_left" id="name">Name:</label>
+            <input class="a1_left" id="in_name" type="text" name="name" maxlength="12">
+            <label class="a1_left" id="fname">First Name:</label>
+            <input class="a1_left" id="in_fname" type="text" name="name" maxlength="12">
+            <label class="a1_left" id="age">Age:</label><br>
+            <input class="a1_left" id="in_age" type="text" name="Age">
+            <label class="a1_right" id="address">Address:</label>
+            <textarea class="a1_right" id="te_address" rows="10px" cols="20px"></textarea>
+            <label class="a1_right" id="country">Country:</label>
+            <select class="a1_right" id="se_country">
+                <option>India</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>Astralia</option>
+                <option>china</option>
+                <option>Bangladesh</option>
+            </select>
+        </div>
+        <div class="container_b">
+            <div class="container_b1">Educational Details</div>
+            <ul>
+                <li>
+                    <label>Qualification:</label>
+                    <select>
+                        <option>MBA</option>
+                        <option>MSC</option>
+                        <option>Mtech</option>
+                        <option>Btech</option>
+                    </select>
+                </li>
+                <li>
+                    <label>Languages:</label>
+                    <input type="checkbox" name="Telugu" checked disabled>Telugu
+                    <input type="checkbox" name="Hindi">Hindi
+                    <input type="checkbox" name="English">English
+                    <input type="checkbox" name="Urdu">Urdu
+                </li>
+                <li>
+                    <label>Course offered</label>
+                    <input type="radio" name="eee" id="">EEE
+                    <input type="radio" name="ece" id="">ECE
+                    <input type="radio" name="cse" id="">CSE
+                    <input type="radio" name="mech" id="">MECH
+                </li>
+            </ul>
+        </div>
+        <div class="container_c">
+            <div class="container_c1">About yourself</div>
+            <label id="yourself">Few words about yourself:</label>
+            <textarea id="aboutTextArea" rows="20" cols="10" style="width: 340px; height: 100px;"></textarea>
+        </div>
+    </div>
+    <h2 class="footer">@copy right 2023</h2>
+</body>
+
+</html>

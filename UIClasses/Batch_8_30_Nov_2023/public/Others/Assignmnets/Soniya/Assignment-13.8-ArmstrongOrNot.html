@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArmstrongOrNot</title>
+</head>
+<body>
+    Checking Whether given number is armstrong or not
+    <script>
+        var n =prompt("Enter a Number");
+        var nLength = n.length;
+        parseInt(n);
+        var temp = n;
+        var sum = 0;
+        while(n > 0)
+        {
+            var num = n % 10;
+            sum += num ** nLength;
+            n = parseInt(n / 10);
+        }
+        if(temp == sum)
+        {
+            console.log(`Given Number ${temp} is Armstrong`);
+        }
+        else
+        {
+            console.log(`Given Number ${temp} is not Armstrong`);
+        }
+    </script>
+</body>
+</html>

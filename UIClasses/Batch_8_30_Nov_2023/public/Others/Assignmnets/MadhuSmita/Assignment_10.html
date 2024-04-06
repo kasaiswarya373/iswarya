@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details in nested if</title>
+</head>
+<body>
+    <h3>Conditional Satatements using nested if......</h3>
+    <script>
+        var empname=prompt('Enter Employee Name');
+        var  age=prompt('Enter Employee Age');
+        var gender=prompt('Enter Employee Gender');
+        var department=prompt('Enter Employee department');
+        var basicsalary=prompt("enetr a basic salary");
+        basicsalary=parseInt(basicsalary);
+        var totalsal=prompt('Enter Employee total salary');
+        console.log("Empname:"+empname);
+       // console.log('gender: '+gender);
+        console.log("age:"+age);
+        console.log("department:"+department);
+        console.log("Employee basicSalary: "+basicsalary);
+        console.log(typeof(basicsalary));
+        console.log("totalsal:"+totalsal);
+        if(gender=='male')
+        {
+            console.log("gender: "+gender);
+
+            if(totalsal>=200000)
+            {
+                console.log('Tax percentage is 15%');
+            }
+             else if(totalsal>=100000)
+            {
+                console.log('Tax percentage is 10%');
+            }
+            else
+            {
+                console.log('Tax percentage is 5%');
+            }
+        }
+        else
+        {
+            console.log("Gender: "+gender);
+            if(totalsal>=200000)
+            {
+                console.log('Tax percentage is 10%');
+            }
+            else if(totalsal>=100000){
+                console.log('Tax percentage is 5%');
+            }
+            else
+            {
+                console.log('Tax percentage is 0%');
+            }
+        }
+    </script>
+</body>
+</html>

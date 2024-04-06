@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 5px solid red;
+            height: 625px;
+            border-radius: 15px;
+        }
+
+        .movingCard {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background-position: center;
+            background-size: contain;
+            animation: flowCard 10s infinite;
+            position: relative;
+        }
+
+        @keyframes flowCard {
+            0% {
+                background-image: url("images/right.jpg");
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                background-image: url("images/right.jpg");
+                top: 0px;
+                left: 1150px;
+            }
+
+            50% {
+                top: 460px;
+                left: 1150px;
+                background-image: url("images/down.png");
+
+            }
+
+            75% {
+                top: 460px;
+                left: 0px;
+                background-image: url("images/left.png");
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+                background-image: url("images/up.png");
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="movingCard"></div>
+</body>
+
+</html>

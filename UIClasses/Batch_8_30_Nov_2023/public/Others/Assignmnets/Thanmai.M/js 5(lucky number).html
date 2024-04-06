@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINDING LUCKY NUMBER</title>
+</head>
+<body>
+    <script>
+    var GNum = parseInt(prompt("Enter a number:"));
+
+    while (GNum > 9) {
+      var sum = 0;
+      var TNum = GNum;
+      while (TNum > 0) {
+        sum += TNum % 10;
+        TNum = TNum / 10;
+        TNum = TNum - (TNum % 1);
+      }
+      GNum = sum;
+    }
+    console.log(GNum);
+</script>
+</body>
+</html>

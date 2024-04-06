@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Assignment2 Conditional Control Structure.</title>
+</head>
+<body>
+    <h2>Ouestion :
+        write a program to work with employee details such as name, age, department, gender, basic salary (read data dynamically from the user) calculate total salary and total tax based on below condition. <br>
+        
+        For Male : <br>
+        total sal > 200000 tax percentage is 15<br>
+        total sal>100000 tax percentage is 10<br>
+        total salary > 50000 tax percentage is 5<br>
+        other tax percentage is 0<br>
+        <br>
+        For female:<br>
+        total sal > 200000 tax percentage is 10<br>
+        total sal > 100000 tax percentage is 5<br>
+        total salary > 50000 tax percentage is 0</h2>
+
+        <script>
+            let E_Name = prompt("Enter Employee Name");
+            let E_Age = parseInt(prompt("Enter Employee Age"));
+            let E_Gender = prompt("Enter Employee Gender");
+            let E_Dept = prompt("Enter Employee Dept");
+            let E_BasicSalary = parseFloat(prompt("Enter Employee Basic Salary"));
+            let pf = (14 * E_BasicSalary)/100;
+            let hra = (25 * E_BasicSalary)/100;
+            let E_TotalSalary = E_BasicSalary + pf + hra;
+
+            console.log(`Employee Total Salary : ${E_TotalSalary}`);
+
+            console.log(`Employee_Name : ${E_Name} , Employee_Age : ${E_Age} , Employee_Gender : ${E_Gender} , Employee_Dept : ${E_Dept} , Employee_BasicSalary : ${E_BasicSalary}`);
+
+            if(E_Gender == "male" || E_Gender == "Male"){
+                if(E_TotalSalary >= 200000){
+                    console.log("Tax Percent Slot is 15");
+                }
+                else if(E_TotalSalary >= 100000){
+                    console.log("Tax Percent Slot is 10");
+                }
+                else if(E_TotalSalary >= 50000){
+                    console.log("Tax Percent Slot is 5");
+                }
+                else{
+                    console.log("Tax Percent Slot is 0");
+                }
+
+            }
+            else if(E_Gender == "female" || E_Gender == "Female"){
+            
+
+                if(E_TotalSalary >= 200000){
+                    console.log("Tax Percent Slot is 10");
+                }
+                else if(E_TotalSalary >= 100000){
+                    console.log("Tax Percent Slot is 5");
+                }
+                else{
+                    console.log("Tax Percent Slot is 0");
+                }
+            }
+
+        </script>
+</body>
+</html>

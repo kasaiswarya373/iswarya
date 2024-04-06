@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <style>
+        .main_bg_container{
+            background-color: rgb(209, 207, 202);
+            height:300vh;
+            margin:0px;
+            padding:0px;
+            
+             
+        }
+        .amazon_header{
+            background-color: rgb(3, 3, 3);
+            height:60px;
+            width: 100%;
+            margin: 0px;
+           
+            
+        }
+   
+        .amazon-logo{
+            height:20px;
+            width:70px;
+            padding:11px;
+            position: absolute;
+            top:18px;
+            left:40px
+            
+        }
+        .anantapur{
+            color:white;
+            position: absolute;
+            top:-5px;
+            left:200px;
+        }
+        .search_bar{
+            position: absolute;
+            top:20px;
+            left:28%;
+            height: 25px;
+            width:400px;
+        }
+        #dropdown{
+            position: absolute;
+            top:25px;
+            left:60%
+        }
+        .update{
+            position: absolute;
+            top:20px;
+            left:200px;
+           color:white;
+           font-weight: bold;
+        }
+        .update:hover{
+            border: 1px solid;
+            border-color:white;
+        }
+        .hello{
+            position: absolute;
+            top:-2px;
+            left:71%;
+            color:white;
+        }
+        .account{
+            font-size: 15px;
+            font-weight: bold;
+            padding:10px;
+            position: absolute;
+            top:10px;
+            left:70%;
+            color:white
+        }
+        .account:hover{
+            border:1px solid;
+            border-color: white;
+        }
+        .returns{
+            position: absolute;
+            left:80%;
+            top:10px;
+            color:white;
+        }
+        .returns:hover{
+            border:1px solid;
+            border-color:white;
+        }
+        .cart{
+            position: absolute;
+            left:95%;
+            top:10px;
+            color: white;
+        }
+        .cart:hover{
+            border:1px solid;
+            border-color:white;
+        }
+        .list_container{
+            
+         
+           background-color: rgb(56, 53, 53);
+            width: 100%;
+            height:30px;
+        }
+        .hell{
+            display: inline;
+            color:white;
+            padding:10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .hell:hover {
+            background-color: #555; /* Change to the desired background color */
+            color: white;
+            height: fit-content;
+            width: fit-content; /* Change to the desired text color */
+            border:1px solid;
+            border-color: white;
+            
+        }
+        .productsContainer{
+            background-color:transparent;
+            width:1100px;
+            margin-top: 0%;
+            margin: auto;
+        }
+       .cloths_img{
+        height:350px;
+        width:100%;
+       }
+       .images_container{
+        background-color: white;
+        height:420px;
+        width:306px;
+        list-style-type: none;
+        padding-top:0px;
+        position: absolute;
+        bottom: -140px;
+       
+       }
+       .appliences{
+        padding:15px;
+        font-weight: bold;
+        font-size:25px;
+        padding:5px;
+       }
+       .appliences_images{
+        margin-bottom:0px;
+        margin-left: 10px;
+        height:80px;
+        width:130px
+        
+       }
+       .appliences_images:hover{
+        border:1px solid;
+       }
+       .appliences-name1{
+        position: relative;
+        left:30px;
+        bottom:15px;
+    
+       }
+       .appliences-name2{
+        position: relative;
+        left:190px;
+        bottom:50px;
+       }
+       .sec_list_container{
+        position: absolute;
+        left:38.5%;
+        bottom:-140px;
+       }
+       .third_list_container{
+        position: absolute;
+        left:65%;
+        bottom:-140px;
+       }
+       .four_list_container{
+        position: absolute;
+        
+        bottom:-610px;
+       }
+       
+       .five_list_container{
+        position: absolute;
+        left:38.5%;
+        bottom:-610px;
+       }
+       .six_list_container{
+        position: absolute;
+        left:65%;
+        bottom:-610px
+       }
+       .appliences-name3{
+        position: relative;
+        left:20px;
+        bottom:15px;
+    
+       }
+       .appliences-name4{
+        position: relative;
+        left:150px;
+        bottom:50px;
+       }
+       .wideContainers{
+        list-style-type: none;
+        background-color: white;
+        height:650px;
+        width:1000px;
+        position: absolute;
+        left: 145px;
+        top:1250px
+        
+       }
+       .wideContainersList{
+        display: inline;
+        
+       
+       }
+       .imgu{
+       padding-left:20px;
+        margin:10px
+        
+       }
+       .imgu:hover{
+        border:1px solid;
+
+       }
+    </style>
+</head>
+<body>
+    <div class="main_bg_container">
+        <div class="amazon_header">
+            <img class="amazon-logo"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8M5NG_6biMrlvfcLVU0odNG5ClXLwX0c5h7jyjiMRnw&s"></img>
+            <P class="anantapur">delivering to anantapur</P>
+            <p class="update">update Location</p>
+            <input class="search_bar" type="input" placeholder="Search Amazon.in">
+            <select id="dropdown">
+                <option value="En">English</option>
+                <option value="Hi">Hindi</option>           
+                <option value="Te">Telugu</option>      
+            </select>
+            <p class="hello">Hello,Sign in </p>
+            <p class="account">Accounts & List</p>
+            <p class="returns">Returns and Orders</p>
+            <p class="cart">cart</p>
+        </div>
+        <div class="list_container">
+            
+                <p class="hell">All</p>
+                <p class="hell">fresh</p>
+                <p class="hell">amazon tv</p>
+                <p class="hell">sell</p>
+                <p class="hell">best sellers</p>
+                <p class="hell">mobiles</p>
+                <p class="hell">todays deals</p>
+                <p class="hell">prime</p>
+                <p class="hell">customer service</p>
+                <p class="hell">electronics</p>
+                <p class="hell">new releases</p>
+                <p class="hell">home & kitchen</p>
+                <p class="hell">amazon pay</p>
+                <p class="hell">fashion</p>
+
+        </div>
+        <div class="productsContainer">
+          
+            <img class="cloths_img" src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/augatf23/hsbcunrec/MA_2x._CB580708889_.jpg">
+            <ul>
+                <li class="images_container">
+                    <h3 class="appliences">Appliences for your home | upto 55% off</h3>
+                    <img  class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg"> 
+                    <img  class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg">
+                    <h6 class="appliences-name1">Air conditioner</h6>
+                    <h6 class="appliences-name2">Refrigirator</h6>
+                    <img class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg">
+                    <img class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg">
+                    <h6 class="appliences-name1">MicroWave</h6>
+                    <h6 class="appliences-name2">Washing Machine</h6>
+                </li>
+                <li class="images_container sec_list_container">
+                    <h3 class="appliences">upto 60% off | Style for mens</h3>
+                    <img  class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-186-116._SY116_CB636110853_.jpg"> 
+                    <img  class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-2-186-116._SY116_CB636110853_.jpg">
+                    <h6 class="appliences-name1">Clothing</h6>
+                    <h6 class="appliences-name2">FootWare</h6>
+                    <img class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-3-186-116._SY116_CB636110853_.jpg">
+                    <img class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-4-186-116._SY116_CB636110853_.jpg">
+                    <h6 class="appliences-name1">Watches</h6>
+                    <h6 class="appliences-name2">Bags & Wallets</h6>
+                </li>
+                <li class="images_container third_list_container">
+                    <h3 class="appliences">Upto 75% off | HeadPhones</h3>
+                    <img  class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boat_Desktop_Qc_1x._SY116_CB577919562_.jpg"> 
+                    <img  class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boult_Desktop_Qc_1x._SY116_CB577919562_.jpg">
+                    <h6 class="appliences-name1">Upto 75% off | boAt</h6>
+                    <h6 class="appliences-name2">Uptp 75% off | boult</h6>
+                    <img class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Noise_Desktop_Qc_1x._SY116_CB577919562_.jpg">
+                    <img class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Zebronics_Desktop_Qc_1x._SY116_CB577919562_.jpg">
+                    <h6 class="appliences-name1">upto 75% off | Noise</h6>
+                    <h6 class="appliences-name2">upto 75% off | Zebronics</h6>
+                </li>
+                <li class="images_container four_list_container">
+                    <h3 class="appliences">Starting ₹99 | all your home improvement needs</h3>
+                    <img  class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_4._SY116_CB600489960_.jpg"> 
+                    <img  class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_3._SY116_CB600489960_.jpg">
+                    <h6 class="appliences-name3">spin mops,Wipes and more</h6>
+                    <h6 class="appliences-name4">Bathroom hardware & assessories </h6>
+                    <img class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_7._SY116_CB600489960_.jpg">
+                    <img class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_5._SY116_CB600489960_.jpg">
+                    <h6 class="appliences-name3">hammars & more</h6>
+                    <h6 class="appliences-name4">Extension boards,plugs & more</h6>
+                </li>
+                <li class="images_container five_list_container">
+                    <h3 class="appliences">Revamp your home in style</h3>
+                    <img  class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_furnishings_2._SY116_CB584596691_.jpg"> 
+                    <img  class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_decor_1._SY116_CB584596691_.jpg">
+                    <h6 class="appliences-name1">cushions & pillows </h6>
+                    <h6 class="appliences-name2">Figurines,Vases & more</h6>
+                    <img class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_storage_1._SY116_CB584596691_.jpg">
+                    <img class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_lighting_2._SY116_CB584596691_.jpg">
+                    <h6 class="appliences-name1">Home Storege</h6>
+                    <h6 class="appliences-name2">Lighting solutions </h6>
+                </li>
+                <li class="images_container six_list_container">
+                    <h3 class="appliences">Upto 60% off |Style on women</h3>
+                    <img  class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF1-186-116._SY116_CB636048992_.jpg"> 
+                    <img  class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF2-186-116._SY116_CB636048992_.jpg">
+                    <h6 class="appliences-name1">Women's clothing</h6>
+                    <h6 class="appliences-name2">Footware + handbags</h6>
+                    <img class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF4-186-116._SY116_CB636048992_.jpg">
+                    <img class="appliences_images" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF3-186-116._SY116_CB636048992_.jpg">
+                    <h6 class="appliences-name1">Watches</h6>
+                    <h6 class="appliences-name2">Fasion Jewellery</h6>
+                </li>
+            </ul>
+            <ul class="wideContainers">
+                <li class="wideContainersList">
+                    <h2>Todays Deals</h2>
+                    <img class="imgu" src="https://m.media-amazon.com/images/I/41tSQSq1xJL._AC_SY200_.jpg">
+                    <img class="imgu" src="https://m.media-amazon.com/images/I/4105IiC5tDL._AC_SY200_.jpg">
+                    <img class="imgu" src="https://m.media-amazon.com/images/I/91hc2MZSYlL._AC_SY200_.jpg">
+                    <img class="imgu" src="https://m.media-amazon.com/images/I/91dovXuONBL._AC_SY200_.jpg">
+                </li>
+                <li class="wideContainersList">
+                    <h2>Up to 75% off | Top home products from stores neaby</h2>
+                    <img class="imgu" src="https://m.media-amazon.com/images/I/91xnR+06GPL._AC_SY200_.jpg">
+                    <img class="imgu" src="https://m.media-amazon.com/images/I/81fVrd8EPOL._AC_SY200_.jpg">
+                    <img class="imgu" src="https://m.media-amazon.com/images/I/A1NSQHV4iIL._AC_SY200_.jpg">
+                    <img class="imgu" src="https://m.media-amazon.com/images/I/61i5PIZvolL._AC_SY200_.jpg">
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

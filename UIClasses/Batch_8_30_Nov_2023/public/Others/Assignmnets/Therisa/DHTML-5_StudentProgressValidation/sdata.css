@@ -1,0 +1,57 @@
+h3 {
+    border:2px solid;
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
+    background-color: rgb(146 180 209 / 58%);
+    margin:20px;
+    padding:10px;
+    width:402px;
+}
+ul {
+    margin:20px auto;
+    padding:20px;
+    width:500px;
+    background-color: rgb(141, 90, 164);
+}
+li {
+    list-style: none;
+    margin:10px;
+    padding:10px;
+    background-color: aliceblue;
+}
+.rblock {
+    display: none;
+}
+label {
+    font-size: larger;
+    width:50px;
+    height:10px;
+    margin:10px;
+    padding:10px;
+    font-style: oblique;
+    font-weight: bold;
+}
+.marks > input {
+    width:20px;
+    margin:5px;
+}
+div {
+    margin:10px;
+}
+#error1,#error2 {
+    display:none;
+    color:red;
+    font-size: 15px;
+}
+#displayBlock {
+    display:none;
+}
+.Passed {
+    color:green;
+    font-weight: bold;
+}
+.Failed {
+    color:red;
+    font-weight: bold;
+}

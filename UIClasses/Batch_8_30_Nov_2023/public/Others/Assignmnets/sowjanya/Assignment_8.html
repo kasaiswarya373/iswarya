@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Form Example</title>
+  <style>
+  .mainHeading{
+    border:2px solid;
+    padding: 10px;
+    text-align: center;
+    width: 100vw;
+    background-color: rgb(238, 122, 238);
+  }
+  .outsideContainer{
+    border:2px solid;
+    width:97vw;
+    height:800px;
+    padding:35px;
+    background-color: rgb(239, 194, 220)
+  }
+  .personalDetailsContainer{
+    border: 1px solid;
+    height:160px;
+    width: 95%;
+    padding: 30px;
+    margin-bottom: 35px;
+    background-color: lavenderblush;
+    }
+  .contentBox{
+    border:1px solid;
+    height:30px;
+    width:150px;
+    padding: 10px;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: large;
+    background-color: rgb(238, 122, 238);
+  }
+  .personalDetailsBox{
+    position: absolute;
+    left: 150px;
+    top: 113px;
+  }
+  .educationDetailsBox{
+    position: absolute;
+    left: 150px;
+    top: 370px;
+  }
+  li{
+    padding:10px;
+    margin:10px;
+    list-style: none;
+  }
+  .rightContent{
+    float: right;
+  }
+  .leftContent{
+    float: left;
+  }
+  .aboutYourselfBox{
+    position: absolute;
+    left: 150px;
+    top: 625px;
+  }
+  .about{
+    position: relative;
+    top:-125px;
+  }
+  .aboutContainer{
+    margin: 20px;
+    margin-left: 5%;
+  }
+  .button{
+    padding:10px;
+    width: 140px;
+    border-radius: 10px;
+    float: right;
+    margin: 10px;
+    font-weight: 600;
+    background-color: rgb(238, 122, 238);
+    border: 0.2;
+  }
+  .footer{
+    border:2px solid;
+    padding: 10px;
+    text-align: center;
+    width: 100vw;
+    margin-top: 20px;
+    font-size: large;
+    background-color: rgb(238, 122, 238);
+  }
+  </style>
+</head>
+<body>
+  <h1 class="mainHeading">Student Registration Page</h1>
+  <div class="outsideContainer">
+    <div class="personalDetailsContainer">
+       <div class="personalDetailsBox contentBox">Personal Details</div>
+       <ol class="leftContent">
+        <li>
+          <label for="name">Name :</label>
+          <input type="text" name="name" maxlength="20">
+        </li>
+        <li>
+          <label for="firstName">First Name :</label>
+          <input type="text" name="firstName" maxlength="20">
+        </li>
+        <li>
+          <label for="Age">Age :</label>
+          <input type="text" name="age" maxlength="4">
+        </li>
+       </ol>
+       <ol class="rightContent">
+        <li>
+          <label for="Address">Address :</label>
+          <input type="text" name="Address" maxlength="50">
+        </li>
+        <li>
+          <label>Country :</label>
+          <select>
+            <option>India</option>
+            <option>Europe</option>
+            <option>USA</option>
+            <option>China</option>
+            <option>Japan</option>
+            <option>Germany</option>
+          </select>          
+        </li>
+       </ol>
+    </div>
+    <div class="personalDetailsContainer">
+      <div class="contentBox educationDetailsBox">Education Details</div>
+         <ol>
+          <li>
+            <label>Qualification :</label>
+            <select>
+              <option>BSC</option>
+              <option>B.COM</option>
+              <option>BBA</option>
+              <option>B.TECH</option>
+              <option>MBA</option>
+              <option>MCA</option>
+              <option>MSC</option>
+              <option>M.TECH</option>
+            </select>          
+          </li>
+          <li>
+            <label>Languages :</label>
+            <input type="checkbox"> English
+            <input type="checkbox"> Hindi
+            <input type="checkbox"> Telugu
+            <input type="checkbox"> Urdu
+          </li>
+          <li>
+            <label>Course Opted :</label>
+            <input type="radio"> MBA
+            <input type="radio"> MCA
+            <input type="radio"> BTECH
+            <input type="radio"> MSC
+          </li>
+         </ol>
+    </div>
+    <div class="personalDetailsContainer">
+      <div class="contentBox aboutYourselfBox">About Yourself</div>
+      <div class="aboutContainer">
+      <label class="about">Few words about your career :</label>
+      <textarea cols="80" rows="10" maxlength="500"></textarea>
+      </div>
+    </div>
+    <div>
+      <input type="button" value="Register Details" class="button">
+    </div>
+  </div>
+  <div class="footer">@ copy rights 2023</div>
+</body>
+</html>

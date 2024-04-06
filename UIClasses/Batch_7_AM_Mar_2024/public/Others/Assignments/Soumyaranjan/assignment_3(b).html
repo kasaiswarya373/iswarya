@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header,
+        .container,
+        .footer {
+            border: 1px solid maroon;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .mainBlock {
+            width: 700px;
+            margin: 10px auto;
+        }
+
+        .header {
+            text-align: center;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: forestgreen;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: aqua;
+            background-color: brown;
+        }
+
+        .container {
+            height: 500px;
+        }
+
+        .leftBlock,
+        .rightBlock {
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            float: left;
+            height: 470px;
+            overflow: auto;
+        }
+
+        .leftBlock {
+            width: 25%;
+            background-color: tomato;
+        }
+
+        .rightBlock {
+            width: 65%;
+            background-color: aquamarine;
+
+        }
+
+        .leftBlock li,
+        .detailsList>li {
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            list-style-position: inside;
+        }
+
+        .detailsList>li {
+            list-style: none;
+            height: 130px;
+        }
+
+        .imgContainer,
+        .subDetailsContainer {
+            float: left;
+        }
+
+        .detailsList {
+
+            padding: 5px;
+        }
+
+        .detailsList li {
+            list-style: none;
+            padding: 5px;
+        }
+
+        .imgContainer img {
+            width: 100px;
+            height: 110px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body background="https://marketingaccesspass.com/wp-content/uploads/2015/10/Podcast-Website-Design-Background-Image.jpg">
+    <div class="mainBlock">
+        <div class="header">
+            Student Details
+        </div>
+
+        <div class="container">
+            <div class="leftBlock">
+                <ol>
+                    <li>
+                        <a href="#soumyaDetails">
+                            soumya
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#sunitaDetails">
+                            sunita
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#rajaDetails">
+                            raja
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#arpitaDetails">
+                            Arpita
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#student5">
+                            sanju
+                        </a>
+                    </li>
+                </ol>
+            </div>
+            <div class="rightBlock">
+                <ul class="detailsList">
+                    <li id="soumyaDetails">
+                        <div class="imgContainer">
+                            <img src="https://th.bing.com/th/id/OIP.lGbo6eNjqJ9WSnCi_jvWewHaKc?w=122&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                                alt="">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <li>Name: soumya</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="sunitaDetails">
+                        <div class="imgContainer">
+                            <img src="https://th.bing.com/th/id/OIP.s8rq1tgDTeTgZM7oCvV5KAHaE7?w=232&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                                alt="">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <li>Name: sunita</li>
+                                <li>Gender: Female</li>
+                                <li>Location: Delhi</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="rajaDetails">
+                        <div class="imgContainer">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <li>Name: raja</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="arpitaDetails">
+                        <div class="imgContainer">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSBYNvZxPX3EDtANkqpyXH__UPNmKwuiLDA&usqp=CAU" alt="">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <li>Name: arpita</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="student5">
+                        <div class="imgContainer">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjGwIscGRkpuHCWJr0_tYZ6gWHHYbAVGUc6A&usqp=CAU" alt="">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <li>Name: sanju</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            @copy rights 2024
+        </div>
+    </div>
+</body>
+
+</html>

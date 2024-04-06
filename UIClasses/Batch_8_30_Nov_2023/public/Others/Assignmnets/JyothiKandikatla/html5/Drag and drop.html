@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drog and drop</title>
+    <style>
+        .container{
+            border: 1px solid;
+            width: 500px;
+            height: 400px;padding: 10px;
+            margin: 10px auto;
+            overflow: auto;
+            
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        div span{
+            cursor: pointer;
+        }
+        div{
+            display: flex;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container" ondrop="onElementDrop(event)" ondragover="onElementDrog(event)"></div>
+    <img src="https://tse1.mm.bing.net/th?id=OIP.1UvGJOpnMg-5j4HMN8hXGwHaE7&pid=Api&P=0&h=220" alt=""
+     ondragstart="onElementDrogStart(event)" id="product_1">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.aDgqzvRkHnQd0uxAFZ12TwHaFC&pid=Api&P=0&h=220" alt="" 
+    ondragstart="onElementDrogStart(event)" id="product_2">
+    <script>
+        /*var productid;
+        var onElementDrop = (event) => {
+            event.preventDefault();
+            var produduct = document.querySelector(productid);
+            document.querySelector('.container').append(produduct);
+            console.log('ondrop event fired');
+        }
+        var onElementDrog  = (event) => {
+            event.preventDefault();
+            console.log('ondrogover event fired');
+        }
+        var onElementDrogStart = (event) => {
+            productid = event.target.getAttribute('id');
+            productid = '#'+productid;
+            console.log(productid);
+            console.log('ondrogstart event fired');
+        }*/
+        var imageSrc;
+        var onElementDrop = (event) => {
+            event.preventDefault();
+            var divTag = document.createElement('div');
+            var imgtag = document.createElement('img');
+            imgtag.setAttribute('src',imageSrc);
+            divTag.append(imgtag);
+
+            console.log('ondrop event fired');
+            var deleteTag = document.createElement('span');
+            deleteTag.innerText = 'X';
+            divTag.append(deleteTag);
+            divTag.addEventListener('click',(event) =>{
+                event.target.parentElement.remove();
+            });
+            document.querySelector('.container').append(divTag);
+        }
+        var onElementDrog  = (event) => {
+            event.preventDefault();
+            console.log('ondrogover event fired');
+        }
+        var onElementDrogStart = (event) => {
+            imageSrc = event.target.getAttribute('src');
+            console.log('ondrogstart event fired');
+        }
+    </script>
+</body>
+</html>

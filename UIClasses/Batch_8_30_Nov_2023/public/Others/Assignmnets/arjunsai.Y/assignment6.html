@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+          border: 2px solid ;
+          margin: 10px ;
+          padding: 10px;
+          background-color: rgb(213, 166, 108);
+          text-align: center;
+        }
+        .container{
+            border: 2px solid rgb(112, 111, 109);
+            height: 500px;
+            width: 90%;
+            margin: 10px;
+            padding: 10px;
+            background-color: aquamarine;
+            overflow: scroll;
+        }
+        li{ 
+            list-style: none;
+            border:2px solid black ;
+            margin: 20px;
+            padding:10px ;
+            
+        }
+        .imgcontainer{
+            width: 100px;
+            height: 80px;
+            border: 1px solid;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_99QOi57ptDiCsvlpj2hgmajBvHCHqsjp-w&usqp=CAU" );
+        }
+        .flwr2{
+            background-position: -91px -1px;
+        }
+        .flwr3{
+            background-position: -185px 5px;
+        }
+        .flwr4{
+            background-position: -465px 102px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>flowers details page using spiriting images</h3>
+    <div class="container">
+        <ul>  
+            
+            <li>
+                <div class="imgcontainer"></div>
+               <div>Name:hibiscus</div>
+               <div>color:red</div>
+           </li>
+           <li>
+            <div class="imgcontainer flwr2"></div>
+            <div>Name:flower</div>
+            <div>color:yellow</div>
+        </li>
+        <li>
+            <div class="imgcontainer flwr3"></div>
+            <div>Name:flower</div>
+            <div>color:violet</div>
+        </li>
+        <li>
+            <div class="imgcontainer flwr4"></div>
+            <div>Name:sunflower</div>
+            <div>color:yellow</div>
+        </li>
+       
+    </ul>
+ </div>
+</body>
+</html>

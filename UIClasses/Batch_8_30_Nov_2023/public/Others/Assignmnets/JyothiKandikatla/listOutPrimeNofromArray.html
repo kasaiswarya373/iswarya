@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list out prime no from given array</title>
+</head>
+<body>
+   <script>
+    var n = parseInt(prompt('Enter range of a array'));
+    console.log('length of the array is :'+n);
+    var arr = [];
+    for(var i = 0; i < n; i++){
+        arr[i] = parseInt(prompt(`Enter a array of element ${i+1} value`));
+        console.log(`arr[${i}]=${arr[i]}`);
+    }
+    var rem ;
+    for(var j = 0; j < n; j++){
+        count = 0;
+        
+        for( var z = 2; z < arr[j]; z++){
+          if(arr[j] % z == 0){
+            count ++;
+            break; 
+          }
+        }
+        z = 2;
+        if( count == 0 && arr[j] != 1){
+            console.log(`The prime no in a array is ${arr[j]}`);
+        }
+    }
+   </script> 
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <h3>User Registration Page</h3>
+      </li>
+      <li>
+        <label for="name">User Name:</label>
+        <input type="text" id="name" />
+      </li>
+      <li>
+        <label for="age">Age:</label>
+        <input type="text" id="age" />
+      </li>
+      <li>
+        <label for="country">Country:</label>
+        <select id="country" onchange="updateStates()">
+          <option value="india">India</option>
+          <option value="uae">UAE</option>
+          <option value="usa">USA</option>
+          <!-- <option value="russia">Russia</option> -->
+        </select>
+      </li>
+      <li>
+        <label for="state">State:</label>
+        <select id="state" onchange="updateDistricts()"></select>
+      </li>
+      <li>
+        <label for="district">District:</label>
+        <select id="district"></select>
+      </li>
+      <li>
+        <input type="button" value="Register" />
+      </li>
+    </ul>
+  </body>
+</html>

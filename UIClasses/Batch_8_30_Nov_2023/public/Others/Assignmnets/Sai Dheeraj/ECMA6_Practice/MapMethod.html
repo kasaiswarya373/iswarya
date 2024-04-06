@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Index</title>
+        </head>
+        <body>
+            <h2>JavaScript Arrays</h2>
+
+             <div class="Namedetails">
+
+             </div>   
+
+           <script>
+              /*
+
+                var array = [2, 4, 7, 9, 10, 5, 11, 16, 17, 90, 45, 23, 31, 34, 78];
+                 temp = array.map((num) => {
+                    if (num % 2 != 0){
+                        num = num + 100;
+                    } else {
+                        num = num * 3
+                    }
+                    return num;
+                 });
+                 console.log(temp); */
+
+                 var persons = [
+                    {name: 'Santhoshi', age:16, location: 'Hyd'},
+                    {name: 'Niharika', age: 16, location: 'Hyd'},
+                    {name: 'SaiDheeraj', age: 18, location: 'Hyd'},
+                    {name: 'Nikitha', age: 22, location: 'Hyd'}
+                 ];
+                 
+                 nameAndage = persons.map((value) => {
+                    return value.name + "  is  " + value.age + "  years old" + "  and location is  " + value.location; 
+                    
+                 });
+                 
+                 console.log(nameAndage);
+           </script> 
+        </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Comparing two Arrays
+    <script>
+        var data1=[20,2,5,5,5,5]
+        var data2=[20,2,5,5,5,5]
+        var  msg="Arrays are equal"
+        if(data1.length!=data2.length){
+           msg="Arrays length is not same"
+        }
+        else{
+           
+            for (i=0; i<=data1.length; i++){
+                if(data1[i]!=data2[i]){
+                   msg="Arrays are not same"
+                    break;
+                }
+            }
+        }
+        console.log(msg)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment_6</title>
+    <style>
+        #header {
+            text-align: center;
+            background-color: cyan;
+            padding: 10px;
+        }
+
+        .container_1,
+        .container_2 {
+            border: 1px solid;
+            height: 450px;
+            float: left;
+            margin-left: 10px;
+          
+        }
+
+        .container_1 {
+            width: 400px;
+        }
+        .container_1 div:hover{
+            background-color: rgb(207, 194, 172);
+        }
+
+        .container_2 {
+            width: 800px;
+            overflow: auto;
+        }
+
+        .c1c1,
+        .c1c2,
+        .c1c3,
+        .c1c4 {
+            height: 30px;
+            width: 80px;
+            border: 1px solid;
+            margin-left: 10px;
+            margin-top: 5px;
+            text-align: center;
+        }
+        .c1c1{
+            margin-top: 20%;
+        }
+
+        .container_2_div ul {
+            list-style: none;
+            margin-right: 50px;
+        }
+
+        .container_2_div {
+            float: left;
+            border: 1px solid;
+            margin-left: 10px;
+            margin-top: 5%;
+            text-align: center;
+            height: 250px;
+            width: 250px;
+             }
+
+        .Spriting {
+            height: 150px;
+            width: 150px;
+            margin-left: 35px;
+            margin-top: 5px;
+            border: 1px solid;
+            background-image: url(https://as2.ftcdn.net/v2/jpg/05/31/91/35/1000_F_531913556_06ZjPGF1HQlza5tsYvQChh5yDfEsrq4X.jpg);
+        }
+
+        .img1 {
+            background-position: 913px 1187px;
+        }
+
+        .img2 {
+            background-position: 688px 1196px;
+        }
+
+        .img3 {
+            background-position: 458px 1201px;
+        }
+
+        .img4 {
+            background-position: 247px 1201px;
+        }
+
+        .img_sprite {
+            width: 500px;
+            height: 450px;
+            border: 2px solid;
+            float: left;
+            margin-top: 80px;
+            background: url(https://t3.ftcdn.net/jpg/02/97/88/16/360_F_297881676_Zs1c3Fhx6R5QKcEmZnQA0fwUfhaVvbUL.webp) 40px 50px;
+            /* background-position: 40px 50px; */
+        }
+
+        *:target{
+            border: 3px solid red;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 id="header">Employee details</h3>
+
+    <div class="container_1">
+
+        <div class="c1c1"><a href="#Emp_1_Details">emp_1</a></div>
+        <div class="c1c2"><a href="#Emp_2_Details">emp_2</a></div>
+        <div class="c1c2"><a href="#Emp_3_Details">emp_3</a></div>
+        <div class="c1c3"><a href="#Emp_4_Details">emp_4</a></div>
+
+    </div>
+    <div class="container_2">
+        <div class="container_2_div" id="Emp_1_Details">
+            <div class="Spriting img1"></div>
+            <ul>
+                <li>Name  : Abc</li>
+                <li>EmpId : 12</li>
+                <li>Age   : 25</li>
+            </ul>
+            <!-- <img src="D:\Somesh\UI-Workspace\GitCode\UIClasses\Batch_8_30_November_2023\public\Others\Assignmnets\D.Somesh08\Images\spriting_image1.png">-->
+        </div>
+
+        <div class="container_2_div" id="Emp_2_Details">
+            <div class="Spriting img2"></div>
+            <ul>
+                <li>Name : Efg</li>
+                <li>EmpId : 13</li>
+                <li>Age : 26</li>
+            </ul>
+        </div>
+
+        <div class="container_2_div" id="Emp_3_Details">
+            <div class="Spriting img3"></div>
+            <ul>
+                <li>Name : Pqr</li>
+                <li>EmpId : 14</li>
+                <li>Age : 28</li>
+            </ul>
+        </div>
+
+        <div class="container_2_div" id="Emp_4_Details">
+            <div class="Spriting img4"></div>
+            <ul>
+                <li>Name : UVR</li>
+                <li>EmpId : 15</li>
+                <li>Age : 22</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <!-- <div class="img_sprite"></div> -->
+
+</body>
+
+</html>

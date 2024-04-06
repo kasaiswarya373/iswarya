@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAPTCHA-Like Text with Canvas</title>
+<style>
+    h1{
+      background-color: rgb(150, 134, 109);
+      text-align: center;
+      border: 2px solid rgb(125, 186, 5);
+      padding: 10px;
+      margin: 10px;
+    }
+    body{
+      background-color: rgb(129, 245, 245);
+    }
+  canvas {
+    border: 1px solid #000;
+  }
+</style>
+</head>
+<body>
+  <h1>
+    CAPTCHA TEXT WITH CANVAS
+  </h1>
+<canvas id="captchaCanvas" width="500" height="150"></canvas>
+<button onclick="generateCaptcha()">Generate CAPTCHA</button>
+
+<script>
+  var canvas = document.getElementById('captchaCanvas');
+  var ctx = canvas.getContext('2d');
+
+  // Function to generate a random string
+  function generateRandomString(length) {
+    var charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    var randomString = "";
+    for (var i = 0; i < length; i++) {
+      randomString += charset.charAt(Math.floor(Math.random() * charset.length));
+    }
+    return randomString;
+  }
+
+  // Function to draw text with distortion
+  function drawDistortedText(text, x, y, fontSize) {
+    ctx.font = fontSize + 'px Arial';
+    ctx.fillStyle = 'black';
+    ctx.fillText(text, x, y);
+    ctx.strokeStyle = 'rgba(0, 0, 0, 0.5)';
+    ctx.lineWidth = 2;
+    for (var i = 0; i < text.length; i++) {
+      ctx.strokeText(text.charAt(i), x + Math.random() * 20 - 10, y + Math.random() * 20 - 10);
+      x += ctx.measureText(text.charAt(i)).width;
+    }
+  }
+
+  // Function to generate CAPTCHA
+  function generateCaptcha() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    var captchaText = generateRandomString(5); // Generate a random 5-character string
+    drawDistortedText(captchaText, 10, 50, 40);
+  }
+
+  // Initial generation of CAPTCHA
+  generateCaptcha();
+</script>
+</body>
+</html>

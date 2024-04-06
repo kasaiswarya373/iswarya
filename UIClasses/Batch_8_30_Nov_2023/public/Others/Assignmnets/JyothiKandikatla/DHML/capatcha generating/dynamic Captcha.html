@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+    <script src="captchaLib.js"></script>
+    <style>
+        #botton{
+           background-color: green; 
+           color: aliceblue;
+        }
+        label{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" name="" id="button" onclick="Resend()" value="Resend">
+<label for="" ></label>
+    <script>
+        var Resend = () =>{
+            var generate = getrandomPattern();
+            document.querySelector('label').innerText = generate;  
+        }
+        //var generate = cpatcha('uullnnulnlun');
+       // document.querySelector('label').innerText = generate;
+       //cpatcha('uullnnulnlun');
+        
+        Resend();
+        getrandomPattern();
+
+    </script>
+</body>
+</html>

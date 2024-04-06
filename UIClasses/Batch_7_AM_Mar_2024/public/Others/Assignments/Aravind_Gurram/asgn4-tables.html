@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,th,td{
+        border: 1px solid black;
+       
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        
+    }
+    #table1,#table2,#table3{
+        border-collapse: initial;
+       width: 98%;
+       margin-left: 5px;
+        
+    }
+    img{
+        border: 1px solid black;
+    width: 90px;
+    height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    }
+    .container{
+        border: 1px solid black;
+       margin-left: 40px;
+       margin-right: 40px;
+       height: 580px;
+       width: 1000px;
+    }
+    header{
+        text-align: center;
+        border :1px solid black;
+        text-decoration: underline;
+        padding-top:10px ;
+        padding-bottom: 10px;
+        background-color:aquamarine;
+        font-size: 20px;
+        margin-left: 11px;
+        margin-right: 17px;
+        margin-top: 5px;
+        
+    }
+    footer{
+        text-align: center;
+        border: 1px solid black;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-decoration: underline;
+        background-color:plum;
+        font-size: 20px;
+        margin-left: 11px;
+        margin-right: 17px;
+
+    }
+    #hh{
+   margin-top:10px;
+}
+#ff{
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 830px;
+    height:400px
+   
+   
+}
+#fff{
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+   
+}
+</style>
+<body>
+    <div class="container">
+    <div>
+<header><h3><b>Student Details</b></h3></header>
+    </div>
+    <div id="ff">
+        <div id="fff">
+        <table id="table0">
+            <thead>
+<tr><th>Sno.</th>
+<th>Student Name</th>
+<th>Age</th>
+<th>Student Photo</th>
+<th>Class</th>
+<th>Stream</th>
+<th>Location</th>
+<th>Progress Card</th>
+</thead>
+<tbody>
+<tr><td>1</td>
+<td>Abhishek</td>
+<td>24</td>
+<td><img src="data:image/jpeg;base64,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" alt="Student photo"></td>
+<td>Degree</td>
+<td>Mpe</td>
+<td>Hyderabad</td>
+ <td><table id="table1"><tr><th>Subject</th>
+        <th>max marks </th>
+        <th>obtained marks</th>
+        <th>Status</th></tr>
+    <tr><td>maths</td>
+    <td>100</td>
+    <td>85</td>
+    <td>Pass</td></tr>
+    <tr><td>Physics</td>
+        <td>100</td>
+        <td>82</td>
+        <td>Pass</td></tr>
+        <tr><td>Electronics</td>
+            <td>100</td>
+            <td>75</td>
+            <td>Pass</td></tr></table></td></tr>
+            <tr><td>2</td>
+                <td>Manasa</td>
+                <td>25</td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezrKM0Bl_5ZQcfuVTmNjhPdR7GPUEQy5kd15-kUZdqsJBbOq5JafQFU5uNvQ6n8RDf-8&usqp=CAU"></td>
+                <td>Degree</td>
+                <td>Mps</td>
+                <td>Hyderabad</td>
+                 <td><table id="table2"><tr><th>Subject</th>
+                        <th>max marks </th>
+                        <th>obtained marks</th>
+                        <th>Status</th></tr>
+                    <tr><td>maths</td>
+                    <td>100</td>
+                    <td>70</td>
+                    <td>Pass</td></tr>
+                    <tr><td>Physics</td>
+                        <td>100</td>
+                        <td>67</td>
+                        <td>Pass</td></tr>
+                        <tr><td>Electronics</td>
+                            <td>100</td>
+                            <td>92</td>
+                            <td>Pass</td></tr></table></td></tr>
+                            <tr><td>3</td>
+                                <td>Pavan</td>
+                                <td>25</td>
+                                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBWkjy8nzrNFU7ov-uNkK5QgaBdWEwADpMlwzrp3asLYwdg_omqwN4zYtc2NKyr1e4eM&usqp=CAU"></td>
+                                <td>Degree</td>
+                                <td>Mpc</td>
+                                <td>Hyderabad</td>
+                                 <td><table id="table3"><tr><th>Subject</th>
+                                        <th>max marks </th>
+                                        <th>obtained marks</th>
+                                        <th>Status</th></tr>
+                                    <tr><td>maths</td>
+                                    <td>100</td>
+                                    <td>80</td>
+                                    <td>Pass</td></tr>
+                                    <tr><td>Physics</td>
+                                        <td>100</td>
+                                        <td>79</td>
+                                        <td>Pass</td></tr>
+                                        <tr><td>Electronics</td>
+                                            <td>100</td>
+                                            <td>75</td>
+                                            <td>Pass</td></tr></table></td></tr>
+</tbody>
+</table>
+    </div>
+    </div>
+    <div id="hh">
+<footer>
+    <b>@copy rights 2024</b>
+</footer>
+    </div>
+
+</div>
+</body>
+</html>

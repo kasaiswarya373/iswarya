@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+               var monthsFullName=['January','February','March','Aprial','May','June','July','August','september','octumber','November','December']
+              var weekFullNames=['Sunday','Monday','tuesday','wednsday','thursday','friday','saturday'];
+            var today=new Date();  //system current date
+
+            var dateFormate1=getDayFormate(today.getDate(),true)+' ' +getHalfMonthName(today.getMonth())+' '+today.getFullYear(today.getFullYear);
+            console.log(dateFormate1);
+
+            var dateFormate2=getDayFormate(today.getDate())+'/'+today.getMonth()+1 +'/'+halfYearDisplay(today.getFullYear());
+            console.log(dateFormate2)
+         
+         var dateFormate3=getDayFormate(today.getDate(),false)+'/'+ today.getMonth()+1 + '/'+today.getFullYear();
+        
+           console.log(dateFormate3);
+            
+           var dateFormate4=getHalfMonthName(today.getMonth())+','+getDayFormate(today.getDate(),true)+','+today.getFullYear();
+           console.log(dateFormate4)
+
+            var dateFormate5=getFullWeekNames(today.getDay())+' '+getHalfMonthName(today.getMonth())+' '+getDayFormate(today.getDate(),true)+' '+today.getFullYear();
+            console.log(dateFormate5)
+
+          
+            
+
+            function getDayFormate(dayNumber,extensionReq){
+             
+                if(extensionReq){
+                return dayNumber+'th'
+                }else{
+                    if(dayNumber>9){
+                    return dayNumber;
+                }else{
+                return '0'+dayNumber;
+                }
+            }
+
+            }
+
+
+            function getFullMonthName(monthNumber){
+            return monthsFullName[monthNumber]
+            }
+            
+           function getHalfMonthName(monthNumber){
+            var splitMonthName=monthsFullName[monthNumber].split('');// ['j','a']
+            return splitMonthName[0]+splitMonthName[1]+splitMonthName[2];
+
+
+            }
+            function getFullWeekNames(weekNumber){
+                return weekFullNames[weekNumber];
+            }
+            function getHalfWeekName(weekNumber){
+                var splitWeekNmame=weekFullNames[monthNumber].split('');
+                return splitWeekName[0]+splitWeekNmame[1]+splitWeekNmame[2];
+
+            }
+            function halfYearDisplay(year){
+                var splitYear= year.toString().split('');
+                return splitYear[2]+splitYear[3];
+            }
+
+
+        </script>
+    </body>
+</html>

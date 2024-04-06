@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub</title>
+</head>
+<body>
+    <h1>Check in console</h1>
+    <script>
+        var values = () => {
+            var d, e;
+
+            d = prompt("enter a first value");
+            e = prompt("enter a second value");
+            d = parseInt(d);
+            e = parseInt(e);
+
+            getsub(d,e);// we can replace with anything
+            console.log("----******----");
+        }
+
+        /**
+         * finding a sub.
+         * we can write anything in the place of (d,e)
+         */
+         
+        var getsub = (a,b) => {
+            var result = a - b;
+            console.log(`the sub is ${result}`);
+        }
+
+        values();
+    </script>
+    
+</body>
+</html>

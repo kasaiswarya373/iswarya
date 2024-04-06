@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid And Flex</title>
+    <style>
+        .maincontainer{
+            border: 1px solid rgb(55, 7, 7);
+            background-color: black;
+            border-radius: 10px;
+            padding:10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            display: grid;
+            grid-template-columns:auto auto auto ;
+
+        }
+        .subcontainer {
+            border: 2px solid brown;
+            background-color: rgb(39, 29, 29);
+            height:250px;
+            width: 450px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        /* .subcontainer div {
+            border: 1px solid ;
+            margin: 5px;
+            border-radius: 15px;
+            background-color: rgb(14, 93, 173);
+            height: 30px;
+            width : 100px;
+         } */
+
+          .innerbox {
+            border: 1px solid;
+            margin: 5px;
+            display: grid;
+          }
+
+          .whiteline {
+            grid-column: 1/4;
+          }
+
+        .whiteline1 {
+             grid-column: 1/5 ;
+        }
+
+         .whiteline2 {
+              grid-column: 1/7;
+         }
+          
+          .whiteline3 {
+              grid-column: 1/6;
+          }
+
+          #mainbox {
+            background-color: white;
+            height: 10px;
+            width: auto;
+            margin: 5px 5px 5px 50px;
+          }
+
+          #box1 {
+             flex-wrap: 1;
+             display: grid;
+             grid-template-rows: auto 85px 85px;
+             gap: 5px;
+          }
+
+          #box2 {
+             flex-wrap: 1;
+             display: grid;
+             grid-template-rows: auto 85px 85px;
+             gap: 5px;
+          }
+
+          #box3 {
+             flex-wrap: 1;
+             display: grid;
+             grid-template-rows: auto 45px 90px 45px;
+          }
+
+          #box4 {
+             flex-wrap: 1;
+             display: grid;
+             grid-template-rows: auto 55px 75px 35px;
+             grid-template-columns: auto auto auto auto;
+             gap: 2px;
+          }
+      
+          #box5 {
+             flex-wrap: 1;
+             display: grid;
+             grid-template-rows: auto 47px 47px 47px;
+             grid-template-columns: auto auto auto auto auto auto;
+             gap:1px
+          }
+   
+          #box6 {
+             flex-wrap: 1;
+             display: grid;
+             grid-template-rows: auto 35px 35px 35px;
+             grid-template-columns:auto auto auto auto ;
+          }
+
+          #box7 {
+             flex-wrap: 1;
+             display: grid;
+             grid-template-rows: auto 35px 72px 72px;
+          }
+
+          #box8 {
+             flex-wrap: 1;
+             display: grid;
+             grid-template-rows: auto 60px 60px 60px;
+             grid-template-columns: auto auto auto auto auto;
+             gap: 1px;
+          }
+
+          #box9 {
+             flex-wrap: 1;
+             display: grid;
+             grid-template-rows: auto 60px 60px 60px;
+             grid-template-columns: auto auto auto;
+          }
+
+          #subbox1 {
+             background-color: brown;
+          }
+
+          #subbox2 {
+              background-color: orange;
+          }
+
+          #subbox3 {
+            background-color: rgb(223, 223, 91);
+          }
+
+          #subbox4 {
+            background-color: rgb(55, 83, 13);
+          }
+
+          #subbox5 {
+            background-color: aquamarine;
+          }
+
+          #subbox6 {
+            background-color: rgb(71, 164, 164);
+          }
+
+          #subbox7 {
+            grid-column: 1/3;
+            background-color: brown;
+          }
+
+          #subbox8 {
+            grid-column: 3/4;
+            grid-row: 2/4;
+            background-color: orange;
+          }
+
+          #subbox9 {
+            background-color: aquamarine;
+          }
+
+          #subbox10 {
+            background-color: rgb(71, 164, 164);
+          }
+
+          #subbox11 {
+            grid-column: 1/4;
+            background-color: brown;
+          }
+
+          #subbox12{
+             background-color: aquamarine;
+          }
+
+          #subbox13 {
+             background-color: rgb(71, 164, 164);
+             grid-column: 2/4;
+          }
+
+          #subbox14 {
+            background-color:rgb(55, 83, 13) ;
+            grid-column: 1/4;
+          }
+
+          #subbox15{
+            grid-row: 2/3;
+            grid-column: 1/3;
+            background-color: orange;
+          }
+
+          #subbox16 {
+            grid-column: 3/5;
+            background-color: rgb(223, 223, 91);
+          }
+
+          #subbox17 {
+            grid-row: 3/4;
+            grid-column: 1/2;
+            background-color: aqua;
+          }
+
+          #subbox18 {
+            grid-column: 2/5;
+            background-color: rgb(71, 164, 164);
+          }
+
+          #subbox19 {
+            grid-column: 1/5;
+            background-color: brown;
+          }
+
+          #subbox20 {
+            background-color: orange;
+          }
+
+          #subbox21 {
+            background-color: yellow;
+          }
+
+          #subbox22{
+            background-color: rgb(185, 131, 65);
+          }
+
+          #subbox23 {
+             background-color: rgb(71, 164, 164);
+          }
+
+          #subbox24 {
+            background-color:brown;
+          }
+
+          #subbox25 {
+            background-color: rgb(201, 179, 179);
+          }
+
+          #subbox26 {
+             background-color: yellowgreen;
+          }
+
+          #subbox27 {
+            background-color: aqua;
+          }
+
+          #subbox28 {
+            background-color: orangered;
+          }
+
+          #subbox29 {
+            background-color: rgb(185, 131, 65);
+          }
+
+          #subbox30 {
+            background-color: rgb(55, 83, 13);
+          }  
+
+          #subbox31 {
+            background-color: rgb(174, 94, 94);
+          }
+
+          #subbox32 {
+            background-color:rgb(185, 131, 65)
+          }
+
+          #subbox33 {
+            background-color: aquamarine;
+          } 
+          
+          #subbox34 {
+             background-color: rgb(71, 164, 164);
+          }
+
+          #subbox35 {
+            background-color: blanchedalmond;
+          }
+
+          #subbox36 {
+             background-color: rgb(55, 83, 13);
+          }
+
+          #subbox37 {
+            background-color: rgb(107, 34, 34);
+          }
+
+          #subbox38 {
+            grid-column: 1/3;
+            background-color: aqua;
+          }
+
+          #subbox39 {
+            background-color: brown;
+          }
+
+          #subbox40 {
+            grid-row: 4/6;
+            grid-column: 1/3;
+            background-color: rgb(71, 164, 164);
+          }
+
+          #subbox41{
+            grid-column: 3/4;
+            background-color: rgb(89, 41, 13);
+          }
+
+          #subbox42 {
+            grid-row: 6/7;
+            grid-column: 1/4;
+            background-color: rgb(12, 139, 153);
+          }
+
+          #subbox43 {
+            grid-row: 6/7;
+            background-color: aquamarine;
+          }
+
+          #subbox44 {
+            grid-column: 1/3;
+            background-color: rgb(71, 164, 164);
+          }
+
+          #subbox45 {
+            grid-column :3/5;
+            background-color: brown;
+          }
+       
+          #subbox46 {
+            grid-row: 3/5;
+            grid-column: 1/3;
+            background-color: orange;
+          }
+
+          #subbox47 {
+            display: grid;
+            grid-row:3/5 ;
+            grid-column: 3/5;
+            grid-template-columns: auto auto;
+            background-color: aquamarine; 
+          }
+
+          #subbox48 {
+            grid-column: 1/3;
+            background-color: brown;
+          }
+
+          #subbox49 {
+            background-color: rgb(55, 83, 13);
+          }
+
+          #subbox50 { 
+            background-color: rgb(174, 94, 94);
+          }
+
+          #subbox51 {
+            background-color: brown;
+          }
+
+          #subbox52 {
+            background-color: aquamarine;
+          }
+
+          #subbox53 {
+            background-color: rgb(55, 83, 13);
+          }
+
+          #subbox54 {
+            background-color: rgb(174, 94, 94);
+            grid-column: 3/6;
+          }
+
+          #subbox55 {
+            grid-column: 1/6;
+            background-color: rgb(185, 131, 65);
+          }
+
+          #subbox56 {
+            grid-column: 1/4;
+            background-color: rgb(201, 179, 179);
+          }
+
+          #subbox57 {
+            grid-row: 3/5;
+            background-color: rgb(154, 47, 47);
+          }
+
+          #subbox58 {
+            grid-column: 2/4;
+            background-color: rgb(137, 84, 20);
+          }
+
+          #subbox59 {
+            background-color: rgb(185, 131, 65);
+          }
+
+          #subbox60{
+            background-color: rgb(55, 83, 13);
+          }
+          
+    </style>
+</head>
+<body>
+  <div class= "maincontainer">
+    <div class="subcontainer" id="box1">
+      <div id="mainbox" class="whiteline"></div>  
+      <div class="innerbox" id="subbox1"></div>
+      <div class="innerbox" id="subbox2"></div>
+      <div class="innerbox" id="subbox3"></div>
+      <div class="innerbox" id="subbox4"></div>
+      <div class="innerbox" id="subbox5"></div>
+      <div class="innerbox" id="subbox6"></div>
+    </div>  
+    
+    <div class="subcontainer" id="box2">
+      <div id="mainbox" class="whiteline"></div>   
+      <div class="innerbox" id="subbox7"></div>
+      <div class="innerbox" id="subbox8"></div>
+      <div class="innerbox" id="subbox9"></div>
+      <div class="innerbox" id="subbox10"></div>
+    </div>    
+
+    <div class="subcontainer" id="box3">
+        <div id="mainbox" class="whiteline"></div>   
+        <div class="innerbox" id="subbox11" ></div>
+        <div class="innerbox" id="subbox12"></div>
+        <div class="innerbox" id="subbox13"></div>
+        <div class="innerbox" id="subbox14"></div>
+    </div>
+
+    <div class="subcontainer" id="box4">
+      <div id="mainbox" class="whiteline1"></div>     
+      <div class="innerbox" id="subbox15"></div>
+      <div class="innerbox" id="subbox16"></div>
+      <div class="innerbox" id="subbox17"></div>
+      <div class="innerbox" id="subbox18"></div>
+      <div class="innerbox" id="subbox19"></div>
+    </div>
+
+    <div class="subcontainer" id="box5">
+      <div id="mainbox" class="whiteline2"></div>   
+      <div class="innerbox" id="subbox20"></div>
+      <div class="innerbox" id="subbox21"></div>
+      <div class="innerbox" id="subbox22"></div>
+      <div class="innerbox" id="subbox23"></div>
+      <div class="innerbox" id="subbox24"></div>
+      <div class="innerbox" id="subbox25"></div>
+      <div class="innerbox" id="subbox26"></div>
+      <div class="innerbox" id="subbox27"></div>
+      <div class="innerbox" id="subbox28"></div>
+      <div class="innerbox" id="subbox29"></div>
+      <div class="innerbox" id="subbox30"></div>
+      <div class="innerbox" id="subbox31"></div>
+      <div class="innerbox" id="subbox32"></div>
+      <div class="innerbox" id="subbox33"></div>
+      <div class="innerbox" id="subbox34"></div>
+      <div class="innerbox" id="subbox35"></div>
+      <div class="innerbox" id="subbox36"></div>
+      <div class="innerbox" id="subbox37"></div>
+    </div>
+
+    <div class="subcontainer" id="box6">
+     <div id="mainbox" class="whiteline1"></div>     
+      <div class="innerbox" id="subbox38"></div>
+      <div class="innerbox" id="subbox39"></div>
+      <div class="innerbox" id="subbox39"></div>
+      <div class="innerbox" id="subbox39"></div>
+      <div class="innerbox" id="subbox39"></div>
+      <div class="innerbox" id="subbox39"></div>
+      <div class="innerbox" id="subbox40"></div>
+      <div class="innerbox" id="subbox41"></div>
+      <div class="innerbox" id="subbox39"></div>
+      <div class="innerbox" id="subbox39"></div>
+      <div class="innerbox" id="subbox42"></div>
+      <div class="innerbox" id="subbox43"></div>
+    </div>
+
+    <div class="subcontainer" id="box7">
+      <div id="mainbox" class="whiteline1"></div>     
+      <div class="innerbox" id="subbox44"></div>
+      <div class="innerbox" id="subbox45"></div>
+      <div class="innerbox" id="subbox46"></div>
+      <div class="innerbox" id="subbox47">
+         <div class="innerbox" id="subbox48"></div>
+         <div class="innerbox" id="subbox49"></div>
+         <div class="innerbox" id="subbox50"></div>
+      </div>
+    </div>
+
+    <div class="subcontainer" id="box8">
+      <div id="mainbox" class="whiteline3"></div>   
+      <div class="innerbox" id="subbox51"></div>
+      <div class="innerbox" id="subbox52"></div>
+      <div class="innerbox" id="subbox53"></div>
+      <div class="innerbox" id="subbox51"></div>
+      <div class="innerbox" id="subbox52"></div>
+      <div class="innerbox" id="subbox53"></div>
+      <div class="innerbox" id="subbox51"></div>
+      <div class="innerbox" id="subbox54"></div>
+      <div class="innerbox" id="subbox55"></div>
+    </div>
+
+    <div class="subcontainer" id="box9">
+      <div id="mainbox" class="whiteline"></div>   
+      <div class="innerbox" id="subbox56"></div>
+      <div class="innerbox" id="subbox57"></div>
+      <div class="innerbox" id="subbox58"></div>
+      <div class="innerbox" id="subbox59"></div>
+      <div class="innerbox" id="subbox60"></div>
+    </div>
+</div>
+
+</body>
+</html>

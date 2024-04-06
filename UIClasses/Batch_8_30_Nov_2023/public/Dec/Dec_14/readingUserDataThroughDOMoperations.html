@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student registration page...
+        </title>
+        <style>
+            ul {
+                width: 500px;
+                border: 2px solid;
+                margin: 20px auto;
+                padding: 10px;
+                background-color: #ccc;
+            }
+            li {
+                list-style: none;
+                border: 1px solid #ccc;
+                background-color: #fff;
+                padding: 10px;
+                margin: 10px;
+            }
+            h3 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Student Registration form
+        </h3>
+        <ul>
+            <li>
+                <label for="userName">Enter user name: </label>
+                <input type="text" name="userName" maxlength="12" id="user_name">
+            </li>
+            <li>
+                <label for="actPwd">Enter Account Password: </label>
+                <input type="password" name="actPwd" maxlength="8" value="INDIA123" id="accountPwd">
+            </li> 
+            <li>
+                <label for="gender">Gender: </label>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" checked value="Female"> Female
+            </li>
+            <li>
+                <label>Country: </label>
+                <select>
+                    <option>India</option>
+                    <option>China</option>
+                    <option selected>Japan</option>
+                    <option>USA</option>
+                </select>
+            </li>
+            <li>
+                <label>
+                    Languages :
+                </label>
+                <input type="checkbox"> Telugu
+                <input type="checkbox"> Hindi
+                <input type="checkbox"> Urdu
+                <input type="checkbox" checked disabled> English
+            </li>
+            <li>
+                <label>Tell about urself:</label>
+                <textarea name="" id="" cols="20" rows="10" maxlength="500"></textarea>
+            </li>
+            <li>
+                <input type="button" value="Save Details" onclick="readUserData()">
+            </li>
+        </ul>
+        <script>
+            var readUserData = () => {
+                var userData = {};
+                userData.name = document.querySelector("#user_name").value;
+                userData.pwd = document.querySelector("#accountPwd").value;
+                userData.gender = document.querySelector("input[name=gender]:checked").value;
+                console.log(userData);
+            }
+        </script>
+    </body>
+</html>

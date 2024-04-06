@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Demonstrating Reccursive Function.
+    </h2>
+      <script>
+        var ContactInformation = {
+            Firstname: 'Mounika',
+            Lastname: 'Kanakapudi',
+            Petname: 'Lucky',
+            Gender:'female',
+            Maritalstat:'Unmarried',
+
+
+            Mailid: {
+                office:'kanakapudimounika1@gmail.com',
+                Personal:['kanakapudimounika822@gmail.com', 'lucky57@gmail.com']
+
+            } ,
+             Address:  {
+                Office: {
+                    location:'dubai',
+                    Buildingno:'123B',
+                    Floorno:'7th',
+                    Pincode:5000567,
+                    country: {
+                         name:'India',
+                         code:'IND',
+
+                    },
+
+
+                },
+                Personal: {
+                    PRInfo:  {
+                        details: {
+                            location:'Hyderabad',
+                            pincode:532436,
+                            colonyname:'Amrutha colony',
+                            Buildingno:'234A'
+                        },
+
+                    },
+                    Stateinfo: {
+                        details: {
+                            statename:'Telangana',
+                            stateid:'TS',
+                            Pincode:875645
+
+                        },
+                        Country: {
+                            name:'India',
+                            code:'IND',
+                        },
+                    },
+                },
+             },
+             phoneNo: {
+                Office: '+91-9391594732',
+                Personal:[663723827387,5898989489430],
+
+             },
+             SocialNetworkingIds: {
+                linkedin: 'lucky/in/linkdein.com',
+                twitter:'Lucky@twitter.com'
+
+             },
+             profilePic:'LUCKY/info/data.png',
+        };
+           
+        
+        var Employeedata = {
+            Name:'Mounika',
+            Age:23,
+            Address:'Hyderabad',
+            Gender:'female'
+        };
+
+
+        var IteratingTheObject = (info)  => {
+            for (var tempKey in Info) {
+                if ((typeof(Info[tempKey]) == 'object') &&  !Array.isArray(Info[tempKey])) {
+                    IteratingTheObject(Info[tempKey]);
+
+                } else {
+                    console.log(`${tempKey} value is => ${Info[tempKey]}`);
+                }
+            }
+        }
+        
+
+        console.log("==========================================")
+        IteratingTheObject(Employeedata);
+
+        console.log("==========================================")
+
+        IteratingTheObject(ContactInformation);
+
+
+        console.log("=========================================")
+
+      </script>
+</body>
+</html>

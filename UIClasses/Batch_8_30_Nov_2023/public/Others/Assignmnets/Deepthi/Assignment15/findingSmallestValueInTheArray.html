@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Finding The Smallest Value In The Array</title>
+    </head>
+    <body>
+        <script>
+
+        var readSmallestValues = () =>{
+            var data = [];
+            var n = prompt("Enter the total number values:");
+            n = parseInt(n);
+    
+            for (var i = 0; i < n; i++) {
+                data[i] = prompt(`Enter the ${i + 1} position`);
+                data[i] = parseInt(data[i]);
+                
+            }
+                console.log(data);
+              getSmallestValue(data);
+            }
+    
+            var getSmallestValue = (data) => {
+            var smallest = data[0];
+            for (var i = 1; i < data.length; i++) {
+                if (data[i] < smallest) {
+                    smallest = data[i];
+                }
+            }
+            console.log("the smallest value is:" +smallest);
+            }
+    
+            readSmallestValues();
+        </script>    
+    </body>
+</html>

@@ -1,0 +1,81 @@
+body{
+    background-color: cornsilk;
+}
+.container{
+    border: 2px solid;
+    width: 200px;
+    height: 200px;
+    background-color: peachpuff;
+    animation: styling 9s infinite;
+    position: relative;
+}
+.box{
+    border: 2px solid;
+    width: 200px;
+    height: 200px;
+    background-color: orchid;
+    position: relative;
+    animation: movingbox 9s infinite;
+}
+@keyframes styling {
+    0% {
+        left: 0px;
+        background-image: linear-gradient(violet, rgb(143, 193, 43), rgb(209, 182, 229));        
+    }
+    25% {
+        left: 1000px;
+        top: 0px;
+        background-image: linear-gradient(red, rgb(59, 7, 83));
+        transform: rotate(60deg);
+        opacity: 0.5;
+    }
+    50% {
+        top: 400px;
+        
+        border-radius: 20%;
+        background-image: linear-gradient()green, yellow;
+    }
+    75% {
+        right: 1000px;
+        border-radius: 80%;
+        background-image: radial-gradient(rgb(182, 234, 228), rgb(0, 187, 255));
+        
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        border-radius: 20%;
+        opacity: 2;
+        background-image: repeating-linear-gradient(yellow, rgb(240, 192, 229), blue);
+    }  
+}
+@keyframes movingbox {
+    0% {
+        left: 1000px;
+        
+        background-image: repeating-radial-gradient(rgb(0, 255, 60), yellow);
+    }
+    25% {
+        right: 1000px;
+        bottom: 0px;
+        background-color: rgb(76, 28, 125);
+        transform: rotate(80deg);
+    }
+    50% {
+        top: 0px;
+        border-radius: 50%;
+        background-color: rgb(84, 244, 31);
+    }
+    75% {
+        left: 0px;
+        border-radius: 75%;
+        background-color: rgb(177, 16, 64);
+    }
+    100% {
+        top: 200px;
+        left: 1000px;
+        opacity: 2;
+        background-color: rgb(33, 177, 217);
+        border-radius: 5%;
+    }
+}

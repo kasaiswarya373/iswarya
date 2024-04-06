@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Finding Largest Value using arrays</title>
+    </head>
+        <body>
+            <script>
+                var data = [12, 6, 53, 128, 21, 56];
+                var largestvalue = data[0];
+
+                for (var i = 1; i < data.length; i++) {
+                    if (largestvalue < data[i]) {
+                        largestvalue = data[i];
+                    }
+                }
+                console.log(largestvalue);
+            </script> 
+        </body>
+</html>

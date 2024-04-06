@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // WAP to sort elements of array in ascending order.
+            var n = parseInt(prompt("enter size of array : "));
+            var arr = [n];
+            for(var i = 0 ; i < n ; i++){
+                arr[i] = parseInt(prompt("enter values: "));
+            }
+          //  var sortedarray = [n];
+            var sorting = (arr) => {
+                for(var i = 0 ; i < n ; i++){
+                    for(var j = 0 ; j < n ;j++){
+                        if(arr[i]<arr[j]){
+                        var temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            return arr;
+        }
+            console.log("the array after sorting in ascending order is : " + sorting(arr));
+        </script>
+    </body>
+</html>

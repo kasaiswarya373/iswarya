@@ -1,0 +1,46 @@
+CSS Priorities: 
+
+Debuggin tool 
+
+-------------
+
+img and anchor tag
+
+<a href="link">
+    ..
+    .
+    .
+
+</a>
+-----------
+css properties: 
+    background-color 
+    border 
+    font-size
+    font-family 
+    text-align 
+    color 
+    width
+    height 
+    text-decoration 
+
+---------------------------------------
+
+Inline and Block level elements
+
+
+    Prop of Block level element     
+
+        1. Best eg. for a block level element - div tag
+        2. Elemet will automatically come to the new line 
+        3. Element which is following the block level element, also falls under new line 
+        4. by default it will occupy 100% width of the container
+        5. We can control the dimentions of a block level element 
+
+    Inline Elements: 
+        1. Span tag is best example for inline 
+        2. Allways occupies within the same line. 
+        3. Its dimentions depends on the content what it is holding 
+        4. we cannont control the dimentions
+
+

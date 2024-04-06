@@ -1,0 +1,26 @@
+ul{
+    width:400px;
+    border:1px solid;
+    margin:30px auto;
+    padding:10px;
+}
+.title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: dodgerblue;
+}
+li{
+    list-style: none;
+    margin:30px;
+}
+.button{
+    width:100px;
+    position: relative;
+    left : 150px;
+}
+label { 
+    width:150px;
+    display: inline-block;
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JsonWithMethods_StudentDetails</title>
+  </head>
+  <body>
+    <h2>Json With Methods Student Details - 1st Example</h2>
+
+    <script>
+      var readData = {
+        readStudentInfo() {
+          (readData.Name = prompt("Enter Student Name: ")),
+            (readData.Class = prompt("Enter Student Class: ")),
+            (readData.Section = prompt("Enter Stydent Section: ")),
+            (readData.Marks = []);
+          // readData.Total =
+          // readData.Avg =
+
+          for (let i = 0; i < 5; i++) {
+            readData.Marks[i] = prompt("enter value for " + (i + 1));
+
+            readData.Marks[i] = parseInt(readData.Marks[i]);
+          }
+        },
+      };
+
+      readData.getTotal =()=> {
+          readData.Total = 0;
+
+        for (let i = 1; i < readData.Marks.length; i++) {
+            readData.Total = readData.Total + readData.Marks[i];
+        }
+        
+        
+        
+      };
+
+      readData.getAvg = () => {
+        
+         readData.avg = readData.Total/readData.Marks.length;
+      };
+      readData.dispalyStudentInfo = () => {
+        console.log(`StudentName = ${readData.Name}`);
+        console.log(`StudentClass = ${readData.Class}`);
+        console.log(`StudentSection = ${readData.Section}`);
+        console.log(`StudentMarks = ${readData.Marks}`);
+        console.log(`StudentTotalMarks = ${readData.Total}`);
+        console.log(`StudentAvg = ${readData.avg}`);
+      };
+
+
+
+      console.log(readData);
+      readData.readStudentInfo()
+      readData.getTotal()
+      readData.getAvg()
+      readData.dispalyStudentInfo()
+    </script>
+
+
+  </body>
+</html>

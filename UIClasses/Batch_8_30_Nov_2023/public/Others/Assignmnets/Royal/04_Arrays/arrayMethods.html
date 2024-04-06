@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods of an Array</title>
+</head>
+<body>
+    <Script>
+        var data = [44, 55, 78, 244, 965, 432, 7, 346];
+
+        console.log("Print current array values : "+data); 
+        console.log('1. The lengh of given array is : '+data.length);             //to find the lengh of an array
+
+        console.log('2. Below method indicates add mentioned values into  given array');
+        data.push(100);           //It will add mentioned values into  given array        
+        console.log(data);
+        console.log('3. Below method indicates remove one single value from right side i.e. 100 removing');
+        data.pop();              //It will remove one single value from right side
+        console.log(data);
+        console.log('4. Below method indicates will insert 1 & 2 value in left side');
+        data.unshift(1,2);         //It will insert value in left side
+        console.log(data);
+        console.log('5. Below splice method indicates we can add or remove the values from any postion');
+        /**
+         * Splice(param1, param2) method mandatorily taking 2 params,
+         * one is startIndex another one is how many values we have to remove/delete
+         */
+        data.splice(2, 3);
+        console.log(data);              //Values after deleting
+        console.log('6. Same splice method is use to add new data also in place in removed data');
+        /**
+         * Here we have to provide 4 params, 1st is from which index we need to perform operation
+         * 2nd is till how much values we need to add/remove (in this case 3 values)
+         * 3rd & 4th is how much values we have to add in place of REMOVED data
+         * (not mandatory if we remove 3 then we no need to add 3 only (here we added 2 only i.e. 111 & 333))
+        */
+        data.splice(2, 3, 111, 333);
+        console.log(data);
+
+        console.log('7. Same splice method is use to add new data without removing any data');
+        data.splice(2, 0, 66, 88);          //we just need to add ZERO, in 2nd param
+        console.log(data);
+
+        /**
+         * In below join method we can join any arrray, also we can provide delimeter to deparate those index values
+        */
+        console.log(data.join());                  //join method without delimeter
+        console.log(data.join('***'));             //join method with delimeter
+        console.log(data.join(''));               //join method without delimeter and without space also
+
+        console.log('8. Below method indicate whether value present or not in boolean i.e true/false');
+        console.log(data);
+        console.log(data.includes(800));            //800 is not present so it will give false
+        console.log('Index of 333 value is : '+data.indexOf(333));
+
+
+
+
+
+    </Script>
+    
+</body>
+</html>

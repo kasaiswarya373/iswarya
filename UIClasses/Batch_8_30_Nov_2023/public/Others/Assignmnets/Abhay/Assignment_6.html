@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <style>
+        .container {
+            font-size: 20px;
+            background-color: #AEDE2A;
+            text-align: center;
+            margin: 5px 10px 10px 10px;
+            padding: 10px;
+            font-weight: bold;
+            position: fixed;
+            width: 20%;
+            color: white;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+        .container::first-letter {
+            font-size: 30px;
+        }
+
+        .tabs {
+            background-color: #AEDE2A;
+            margin: 0px 10px 10px 10px;
+            height: 60px;
+            clear: both;
+        }
+
+        .tab1,
+        .tab2,
+        .tab3,
+        .tab4,
+        .tab5 {
+            width: 100px;
+            height: 15px;
+            text-align: center;
+            float: left;
+            margin: 10px 0px 10px 120px;
+            padding: 10px;
+            border: 2px solid whitesmoke;
+            cursor: pointer;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+        .tab1:hover {
+            background-color: white;
+        }
+
+        .tab2:hover {
+            background-color: white;
+        }
+
+        .tab3:hover {
+            background-color: white;
+        }
+
+        .tab4:hover {
+            background-color: white;
+        }
+
+        .tab5:hover {
+            background-color: white;
+        }
+
+        .main {
+            border: 1px solid #AEDE2A;
+            /* overflow: auto; */
+            height: 100%;
+            margin: 10px;
+            clear: both;
+            background-color: whitesmoke;
+        }
+
+        .img1 {
+            border: 1px solid #AEDE2A;
+            height: 350px;
+            width: 300px;
+            margin: 15px auto;
+            text-align: center;
+            background-image: url("images/spriting_image.png");
+        }
+
+            .photo1 {
+            background-position: 832px 1260px;
+        }
+        .photo2 {
+            background-position: 821px 1944px;
+        }
+        .photo3 {
+            background-position: 821px 600px;
+        }
+        .photo4 {
+            background-position: 821px 1944px;
+        }
+        .photo5 {
+            background-position: 832px 1260px;
+        }
+        
+
+        .info1 {
+            font-size: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        hr {
+            border: 1px solid #AEDE2A;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Students | Details
+    </div> <br><br> <br> <br>
+    <div class="tabs">
+        <div class="tab1"><a href="#first">First Year</a></div>
+        <div class="tab2"><a href="#second">Second Year</a></div>
+        <div class="tab3"><a href="#third">Third Year</a></div>
+        <div class="tab4"><a href="#fourth">Fourth Year</a></div>
+        <div class="tab5"><a href="#fifth">Fifth Year</a></div>
+    </div>
+    <div class="main">
+        <div class="img1 photo1"></div>
+        <div class="info1" id="first">
+            <div>Name : David</div>
+            <div>Year : First Year</div>
+        </div>
+        <hr>
+        <div class="img1 photo2"></div>
+        <div class="info1" id="second">
+            <div>Name : Lisa</div>
+            <div>Year : Second Year</div>
+        </div>
+        <hr>
+        <div class="img1 photo3"></div>
+        <div class="info1" id="third">
+            <div>Name : Abhay</div>
+            <div>Year : Third Year</div>
+        </div>
+        <hr>
+        <div class="img1 photo4"></div>
+        <div class="info1" id="fourth">
+            <div>Name : Zoya</div>
+            <div>Year : Fourth Year</div>
+        </div>
+        <hr>
+        <div class="img1 photo5"></div>
+        <div class="info1" id="fifth">
+            <div>Name : Alex</div>
+            <div>Year : Fifth Year</div>
+        </div>
+        <hr>
+    </div>
+</body>
+
+</html>

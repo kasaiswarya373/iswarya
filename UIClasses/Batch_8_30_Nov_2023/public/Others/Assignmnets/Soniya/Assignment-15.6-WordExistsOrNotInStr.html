@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Exists or Not in String</title>
+</head>
+<body>
+    Program to find word exists or not in string
+    <script>
+        var readString = () =>
+        {
+            var string = prompt(`Enter string`).toLowerCase();
+            return string;
+        }
+
+        var checkingExistsOrNot = (str) =>
+        {
+            var exists = prompt(`which word you want check?`).toLowerCase();
+            var existsOrNot = str.includes(exists);
+            return existsOrNot;
+        }
+
+        var str = readString();
+        var existsOrNot = checkingExistsOrNot(str);
+        console.log(`Is given word present in the string "${str}" ?`);
+        console.log(`${existsOrNot}`);
+        
+    </script>
+</body>
+</html>

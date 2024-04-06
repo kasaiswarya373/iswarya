@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>block_floating</title>
+    </head>
+    <style>
+        h3{
+            text-align: center;
+            border: 2px solid;
+            padding: 4px;
+        }
+       .block1,.block2,.block3{
+            border: 1px solid;
+            text-align: center;
+        }
+        .block1{
+            float:left;
+            background-color: aqua;
+        }
+        .block2{
+            float: left;
+            background-color: crimson;
+         }
+        .block3{
+            float: right; 
+            background-color: violet;
+        
+        }
+            .block_2{
+                width: 300px;
+                height: 200px;
+                float: right;
+                border: 1px solid;
+                clear: both;
+                margin: 10px;
+            }
+            .block_21,.block_22,.block_23,.block_24{
+                width: 10px;
+                height: 10px;
+                text-align: center;
+                border: 1px solid;
+                margin: 10px;
+                padding: 28px;
+            }
+            .block_21{
+                float: left;
+                background-color: blue;
+            }
+            .block_22{
+               float: right;
+               background-color: aliceblue;
+            }
+            .block_23{
+                clear: both;
+                float:left ;
+                margin-top: 30px;
+                background-color: darksalmon;
+            }
+            .block_24{
+                float: left;
+                margin-top: 30px;
+                background-color: gold;
+            }
+
+            .block5,.block6,.block7,.block8,.block9,.block10,.block11{
+                border: 1px solid;
+                width: 100px;
+                height: 100px;
+            }
+                
+            .block5{
+                    clear: both;
+                    background-color: rgb(42, 171, 223);
+                    
+                    }
+                    .block6{
+                        float: left;
+                        background-color: darkturquoise;
+                    }
+                 .block7,.block8{
+                    
+                    float: right;
+                
+                }
+                .block7{
+                    background-color: mediumspringgreen;
+                }
+                .block8{
+                    background-color: antiquewhite;
+                }
+                 .block9
+                 {           
+                    clear: both;
+                   float: left;
+                   background-color: darkmagenta;
+                    }
+                    .block10{
+                        float: left;
+                        background-color: darkseagreen;
+                    }
+                    .block11{
+                        float: left;
+                        background-color: orange;
+                    }
+                    .text_center{
+                        width: 20px;
+                        height: 20px;
+                        padding: 50px;
+                        margin: 10px;
+                    }
+
+    </style>
+    <body>
+        
+         <h3>Blocks-Floating</h3>
+          <div class="block1 text_center">1</div>
+          <div class="block2 text_center">2</div>
+          <div class="block3 text_center">3</div>
+        </div>
+          <div class="block_2">
+            <div><div class="block_21">21</div>
+                 <div class="block_22">22</div> </div>           
+            <div class="block_23">23</div>            
+            <div class="block_24">24</div>            
+          </div>
+          <div>
+          <div class="block5 text_center">5</div>
+          </div>
+          <div>
+            <div class="block6 text_center">6</div>
+          <div class="block7 text_center">7</div>
+          <div class="block8 text_center">8</div>
+        </div>
+        <div>
+          <div class="block9 text_center">9</div>
+          <div class="block10 text_center">10</div>
+          <div class="block11 text_center">11</div>
+        </div>
+        </div>
+    </body>
+</html>

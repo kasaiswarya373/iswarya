@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studentpage</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+        ul{
+            border: 3px solid;
+            background-color: rgb(221, 221, 51);
+            width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        li{
+            list-style: none;
+            background-color:rgb(238, 232, 170);
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid  rgb(221, 221, 51);
+        }
+    </style>
+</head>
+<body>
+    <h3>Student Details</h3>
+    <ul>
+        <li>
+            <label for="txtName"> EnterUserName:</label>
+            <input  type="text" name="txtName" maxlength="15"/>
+        </li>
+        <li>
+            <label for="txtPassword">EnterPassword:</label>
+            <input  type="password" name="txtPassword" maxlength="8"/>
+        </li>
+        <li>
+            <label for="gender"> Gender:</label>
+            <input  type="radio" name="gender"/>Male
+            <input type="radio" name="gender" checked>Female
+        </li>
+        <li>
+            <label >Country:</label>
+            <select >
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Afrika</option>
+            </select>
+        </li>
+    </ul>
+</body>
+</html>

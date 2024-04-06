@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Demonstrating Student-Details using JASON</title>
+    </head>
+        <body>
+            <h2>
+                Various StudentDetails using JASON
+            </h2>
+                <script>
+                    var studentdetails = [
+
+                        studentdetails1 = ['Dheeraj', 20, 'male', 'hyderabad', 'vignan', [50, 76, 45, 35, 43, 87], 0, 0, ''],
+                        studentdetails2 = ['Niharika', 20, 'female', 'hyderabad', 'littleflower', [50, 43, 65, 64, 40, 54], 0, 0, ''],
+                        studentdetails3 = ['Santhoshi', 19, 'female', 'hyderabad', 'ravindrabharathi', [50, 40, 39, 63, 59, 98], 0, 0, ''],
+                        studentdetails4 = ['Raj', 20, 'male', 'hyderabad', 'bhashyam', [70, 30, 39, 93, 49, 48], 0, 0, '']
+                        ]
+
+                    for (var a = 0; a < studentdetails1[5].length; a++) {
+                        studentdetails1[6] += studentdetails1[5][a];
+                    }
+                        studentdetails1[7] = studentdetails1[6] / studentdetails1[5].length;
+
+
+                    for (var a = 0; a < studentdetails2[5].length; a++) {
+                        studentdetails2[6] += studentdetails2[5][a];
+                    }
+                        studentdetails2[7] = studentdetails2[6] / studentdetails2[5].length;
+
+
+                    for (var a = 0; a < studentdetails3[5].length; a++) {
+                        studentdetails3[6] += studentdetails3[5][a];
+                    }
+
+                        studentdetails3[7] = studentdetails3[6] / studentdetails3[5].length;
+
+
+                    for (var a = 0; a < studentdetails4[5].length; a++) {
+                        studentdetails4[6] += studentdetails4[5][a];
+                    }
+
+                        studentdetails4[7] = studentdetails4[6] / studentdetails4[5].length;
+
+
+                    if (studentdetails1[7] >= 50) {
+                        studentdetails1[8] = "you passed";
+                    } else {
+                        studentdetails1[8] = "you failed";
+                        
+                    } 
+
+                    if (studentdetails2[7] >= 50) {
+                        studentdetails2[8] = "you passed";
+                    } else {
+                        studentdetails2[8] = "you failed";
+                    }
+
+
+                    if (studentdetails3[7] >= 50) {
+                        studentdetails3[8] = "you passed";
+                    } else {
+                        studentdetails3[8] = "you failed";
+                    }
+
+
+                    if (studentdetails4[7] >= 50) {
+                        studentdetails4[8] = "you passed";
+                    } else {
+                        studentdetails4[8] = "you failed";
+                    }
+                    
+                  /*  console.log('name is' , studentdetails1[0], studentdetails2[0], studentdetails3[0]);
+                    console.log('age is' , studentdetails1[1], studentdetails2[1], studentdetails3[1]);
+                    console.log('gender is' , studentdetails1[2], studentdetails2[2], studentdetails3[2]);
+                    console.log('schoolname is' , studentdetails1[4], studentdetails2[4], studentdetails3[4]);
+                    console.log('avg is' , studentdetails1[7], studentdetails2[7], studentdetails3[7]);
+                    console.log('Grade is' , studentdetails1[8], studentdetails2[8], studentdetails3[8]);  */
+
+                    console.log('name is' , studentdetails1[0]);
+                    console.log('age is' , studentdetails1[1]);
+                    console.log('gender is' , studentdetails1[2]);
+                    console.log('schoolname is' , studentdetails1[4]);
+                    console.log('avg is' , studentdetails1[7]);
+                    console.log('Grade is' , studentdetails1[8]);
+
+                    console.log('name is' , studentdetails2[0]);
+                    console.log('age is' , studentdetails2[1]);
+                    console.log('gender is' , studentdetails2[2]);
+                    console.log('schoolname is' , studentdetails2[4]);
+                    console.log('avg is' , studentdetails2[7]);
+                    console.log('Grade is' , studentdetails2[8]);                 
+
+                    console.log('name is' , studentdetails3[0]);
+                    console.log('age is' , studentdetails3[1]);
+                    console.log('gender is' , studentdetails3[2]);
+                    console.log('schoolname is' , studentdetails3[4]);
+                    console.log('avg is' , studentdetails3[7]);
+                    console.log('Grade is' , studentdetails3[8]);
+
+                    console.log('name is' , studentdetails4[0]);
+                    console.log('age is' , studentdetails4[1]);
+                    console.log('gender is' , studentdetails4[2]);
+                    console.log('schoolname is' , studentdetails4[4]);
+                    console.log('avg is' , studentdetails4[7]);
+                    console.log('Grade is' , studentdetails4[8]);
+
+
+                </script>
+        </body>
+</html>

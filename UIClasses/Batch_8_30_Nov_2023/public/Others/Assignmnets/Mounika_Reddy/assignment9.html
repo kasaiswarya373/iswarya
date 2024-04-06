@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment9</title>
+</head>
+<body>
+    <h3> demonstrating employee details</h3>
+    <script>
+        var empname=prompt("enter name");
+        var age=prompt(" enter age");
+        var dep=prompt("enter dept")
+        var basicsal=prompt("enter basic sal")
+        var pf=prompt("enter pf")*basicsal/100;
+        var hra=prompt("enter hra")*basicsal/100;
+        basicsal=parseInt(basicsal);
+        pf=parseInt(pf);
+        hra= parseInt(hra);
+        var totalsal=basicsal+pf+hra;
+
+       console.log("name  " + empname);
+       console.log( "age  " +age);
+       console.log("dep  " +dep);
+       console.log("basicsal  " +basicsal);
+       console.log("pf  " +pf);
+       console.log("hra  "  +hra);
+       console.log("totalsal  "  +totalsal);
+
+    </script>
+    
+</body>
+</html>

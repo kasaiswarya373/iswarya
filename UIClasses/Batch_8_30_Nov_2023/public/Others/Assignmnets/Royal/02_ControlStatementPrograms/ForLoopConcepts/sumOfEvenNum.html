@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of even (69 to 21)</title>
+</head>
+<body>
+    <h3>WAP to check sum of all even number between 69 to 21</h3>
+    <script>
+        var count = 0;
+        for (var i = 69; i>=21; i--){
+            if(i % 2 == 0){
+                console.log(i);
+                count = i + count;          //here we add i previous i value to next i value
+            }
+        }
+        console.log(`The sum of all even number from 69 to 21 is ${count}`);
+    </script>
+</body>
+</html>

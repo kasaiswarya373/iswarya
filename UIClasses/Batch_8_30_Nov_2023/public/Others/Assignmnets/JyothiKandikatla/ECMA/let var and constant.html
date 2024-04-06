@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let and constant keys</title>
+</head>
+<body>
+    <script>
+        const a = 89;//by using const key a value will be fixed
+        //a++;
+        console.log(a);
+        var c = 20;//globally declred variable (globel scope)
+        var s = (z) =>{
+            //let b = z + 10;
+            var b = z + 10;//module scope  
+            console.log('i am from module scope  of var key  b value is '+ b);
+        }
+        s(100);
+        if(true){// let key defined with block scope only outside block it will get error like not defined
+            let r = 90;//block scope
+            console.log("I am from block scope with help of let key " + r);
+        }
+        console.log("I am from globel scope value "+c);
+        console.log(r);
+        //diff btwn var and let keys
+        // if we define a var key in block level it will gives result inside and outside blocks
+        //if we define a let key in block level it will gives result of inside of the block scope
+    </script>
+</body>
+</html>

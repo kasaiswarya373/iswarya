@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NumberOfDigits</title>
+    </head>
+    <body>
+        <h2>
+            WAP to find out total number of digits within a given number?
+        </h2>
+        <script>
+            var i = parseInt(prompt(" enter a value"));
+            console.log(i);
+            var count = 0;
+            while(i > 0){
+                var  rem = i % 10;
+                count ++;
+                i = i / 10;
+                i = parseInt(i);
+            }
+                console.log(count);
+        </script>
+    </body>
+</html>

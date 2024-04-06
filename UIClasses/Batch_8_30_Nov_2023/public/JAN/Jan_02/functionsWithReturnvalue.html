@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Function with Returning value
+        </title>
+    </head>
+    <body>
+        <script>
+            var a1, a2;
+            var readValues = () => { // calling function
+                a1 = prompt("enter value for a1");  // 10
+                a2 = prompt("enter value for a2");  // 20
+                a1 = parseInt(a1);
+                a2 = parseInt(a2);
+                var temp = getSum(); // temp  = 30
+                console.log("Teh sum is " + temp);
+                console.log("end");
+            }
+
+            /**
+             * This function is for finding sum
+             */ 
+            var getSum = () => {
+                var result = a1 + a2; // 30
+                return result; // return 30;
+            }
+            readValues();
+        </script>
+    </body>
+</html>
+

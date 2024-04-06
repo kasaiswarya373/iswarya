@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-8</title>
+</head>
+<body>
+    <!-- Write a program to work with employee details like empName, empGender, empAge, empDepartment, empSalary .calculate total salary of employees where the total salary is the sum of PF and HRA where PF is 14%  and HRA is 25% of basic salary-->
+    <script>
+        var empName=prompt("Enter Employee Name");
+        var empGender=prompt("Enter Employee Gender");
+        var empAge=prompt("Enter Employee Age");
+        var empDepartment=prompt("Department of Employee");
+        var basicSalary=parseInt(prompt("Enter Basic Salary of a Employee"));
+        var pf= (basicSalary*14)/100;
+        var hra=(basicSalary*25)/100;
+        var totalSalary=pf+hra+basicSalary;
+        console.log("-------------Employee Details-------------");
+        console.log("Name = " +empName);
+        console.log("Gender = "+empGender);
+        console.log("Age = "+empAge);
+        console.log("Department = "+empDepartment);
+        console.log("Salary = "+totalSalary);
+    </script>
+</body>
+</html>

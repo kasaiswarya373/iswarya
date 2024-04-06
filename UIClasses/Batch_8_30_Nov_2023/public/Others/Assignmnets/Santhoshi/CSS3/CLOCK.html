@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Clock</title>
+            <style>
+                body{
+                    background-image: linear-gradient(to right, rgb(3, 26, 37) ,  rgb(15, 114, 116) ); 
+                }
+                .box1{
+                    width: 300px;
+                    height: 300px;
+                    border: 2px solid rgb(246, 242, 5);
+                    border-radius: 50%;
+                    margin: 20px auto;
+                   
+                    margin-top: 150px;
+                
+                }
+                h1{
+                    text-align: center;
+                    font-family: 'Courier New', Courier, monospace;
+                    color: yellow;
+                }
+                .box2{
+                    width: 270px;
+                    height: 270px;
+                    border: 2px solid yellow;
+                    border-radius: 50%;
+                    margin: 20px auto;
+                    margin-top: 15px;
+                    background-image: radial-gradient(white 15%, rgb(49, 174, 162) 50%); 
+                }
+                .box3{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: rgb(16, 16, 48);
+                    position: relative;
+                    left: 125px;
+                    top: 140px;
+                }
+                .SecNeedle{
+                    border: 1px solid;
+                    width: 100px;
+                    position: relative;
+                    top: 40%;
+                    left: 50%;
+                    transform: rotate(-90deg);
+                    transform-origin: 0% 90%;
+                }
+                .minNeedle{
+                    border: 3px solid red;
+                    width: 100px;
+                    position: relative;
+                    top: 40%;
+                    left: 50%;
+                    transform: rotate(-90deg);
+                    transform-origin: 0% 60%;
+                    
+                }
+                .hrNeedle{
+                    border: 4px solid rgb(228, 9, 240);
+                    width: 50px;
+                    position: relative;
+                    top: 40%;
+                    left: 50%;
+                    transform: rotate(-90deg);
+                    transform-origin: 0% 40%;
+                }
+                .c12{
+                    position: absolute;
+                    left: 750px;
+                    top: 240px;
+                    font-size: x-large
+                }
+                .c3{
+                    position: absolute;
+                    left: 870px;
+                    top: 340px;
+                    font-size: x-large
+                }
+                .c6{
+                    position: absolute;
+                    left: 765px;
+                    top: 460px;
+                    font-size: x-large
+                }
+                .c9{
+                    position: absolute;
+                    left: 640px;
+                    top: 350px;
+                    font-size: x-large
+                }
+                .c10{
+                    position: absolute;
+                    left: 650px;
+                    top: 290px;
+                    font-size: x-large
+                }
+                .c11{
+                    position: absolute;
+                    left: 680px;
+                    top: 250px;
+                    font-size: x-large
+                }
+                .c1{
+                    position: absolute;
+                    left: 820px;
+                    top: 250px;
+                    font-size: x-large
+                }
+                .c2{
+                    position: absolute;
+                    left: 860px;
+                    top: 290px;
+                    font-size: x-large
+                }
+                .c4{
+                    position: absolute;
+                    left: 860px;
+                    top: 400px;
+                    font-size: x-large
+                }
+                .c5{
+                    position: absolute;
+                    left: 825px;
+                    top: 440px;
+                    font-size: x-large
+                }
+                .c7{
+                    position: absolute;
+                    left: 690px;
+                    top: 440px;
+                    font-size: x-large
+                }
+                .c8{
+                    position: absolute;
+                    left: 660px;
+                    top: 400px;
+                    font-size: x-large
+                }
+                .name{
+                    color: rgb(30, 22, 3);
+                    font-weight: bolder;
+                    position: relative;
+                    left: 100px;
+                    top: 40px;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>CLOCK</h1>
+            <div class="box1">
+                
+                <div class="box2">
+                    <div class="box3"></div>
+                    <div class="name">AJANTA</div>
+                    <div class="SecNeedle"></div>
+                    <div class="minNeedle"></div>  
+                    <div class="hrNeedle"></div>
+                        <span class="c1"><b>1</b></span>
+                        <span class="c2"><b>2</b></span>
+                        <span class="c3"><b>3</b></span>
+                        <span class="c4"><b>4</b></span>
+                        <span class="c5"><b>5</b></span>
+                        <span class="c6"><b>6</b></span>
+                        <span class="c7"><b>7</b></span>
+                        <span class="c8"><b>8</b></span>
+                        <span class="c9"><b>9</b></span>
+                        <span class="c10"><b>10</b></span>
+                        <span class="c11"><b>11</b></span>
+                        <span class="c12"><b>12</b></span>
+                      
+                </div>
+            </div> 
+
+            <script>
+
+                
+               var Time = () => {
+                    var date = new Date();
+                    console.log(date);
+                    var hr = date.getHours();
+                    console.log(hr);
+                    var min = date.getMinutes();
+                   // console.log(min);
+                    var sec = date.getSeconds();
+                   // console.log(sec);
+
+                    /*  1hr = 30deg , 1hr = 60min = 30deg , (1min = 1min / 2deg) , (1s = 1s/120deg) 
+                         1min = 6 deg , 1deg = 3600s  */
+                         
+
+                         var presenthourRotation = ((30 * hr) + (min / 2) + (sec/120)) ;
+                         var presentminuteRotation = ((6 * min) + (sec/10));
+                         var presentsecondRotation = ((6 * sec) - 60) ;
+
+                         document.querySelector(".hrNeedle").style.transform = `rotate(${presenthourRotation}deg)` ;
+                         document.querySelector(".minNeedle").style.transform = `rotate(${presentminuteRotation}deg)`;
+                         document.querySelector(".SecNeedle").style.transform = `rotate(${presentsecondRotation}deg)`;
+                
+
+                }
+
+                setInterval(Time , 1000) 
+            </script>
+        </body>
+</html>

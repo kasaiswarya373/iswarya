@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COBBLER/home</title>
+    <link rel="icon" href="./images/onLoadImages/cobbler_orig_logo-E.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <script src="./lib/handlebars/dist/handlebars.min.js"></script>
+    <script src="./lib/jquery/dist/jquery.min.js"></script>
+    <script src="./lib/axios/dist/axios.min.js"></script>
+    <script src="./javascripts/mainApp.js"></script>
+    <script src="./javascripts/loginAndRememberMe.js"></script>
+    <script src="./javascripts/loginAndSignupContainerTransition.js"></script>
+    <script src="./javascripts/onLoad.js"></script>
+    <!-- swiper-bundle.min.css -->
+    <!-- swiper-bundle.min.js -->
+    <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css">
+
+  </head>
+  <body>
+    <header>
+      <!--------------------BOOTSTRAP HEADER ------------------------->
+
+      <nav class="py-2 bg-light border-bottom">
+        <div class="d-flex flex-wrap nav-lists">
+          <ul class="nav me-auto">
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link link-dark px-2 a-item"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-dark px-2 a-item">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-dark px-2 a-item">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-dark px-2 a-item">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-dark px-2 a-item">About</a>
+            </li>
+          </ul>
+          <ul class="nav">
+            <!-- Button trigger modal (LOGIN) -->
+            <li class="nav-item" id="nav-login-item">
+              <button
+                type="button"
+                class="btn btn-primary myButton"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                Login
+              </button>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a href="#" class="nav-link link-dark px-2 a-item">Sign up</a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+      <header class="py-3 mb-4 border-bottom header-1">
+        <div class="container d-flex flex-wrap justify-content-center">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none"
+          >
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+            <div class="fs-4" class="logo">
+              <img
+                class="logo-img"
+                src="./images/onLoadImages/cobbler_orig_logo-E.png"
+                alt="logo-img"
+              />
+            </div>
+          </a>
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </header>
+
+      <!--------------------BOOTSTRAP HEADER ------------------------->
+    </header>
+    
+      <!-------------------------LOGIN Modal ------------------->
+      <div
+        class="modal fade"
+        id="loginModal"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="ls-wrapper">
+                <div class="form-box login">
+                  <h2 class="login-head">LOGIN</h2>
+                  <div class="input-box">
+                    <span class="icon"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-people-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+                        /></svg
+                    ></span>
+                    <input type="email" required class="user_Email" id="u_Email" />
+                    <label>Email</label>
+                    <div class="error">Enter Email</div>
+                  </div>
+                  <div class="input-box">
+                    <span class="icon pwd"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-lock-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"
+                        /></svg
+                    ></span>
+                    <input type="password" required class="user_Pwd" id="u_pwd" />
+                    <label>password</label>
+                    <div class="error">Enter password</div>
+                  </div>
+                  <div class="invalidMsgBlock"></div>
+                  <div class="remember-forgot">
+                    <label> <input type="checkbox" id="remember_Me" />Remember me</label>
+                    <a href="#">Forgot password</a>
+                  </div>
+                  <button type="submit" class="login-btn" id="login-button" onclick="storeLoginData()">LOGIN </button>
+                  <div class="login-register">
+                    <p>
+                      Don't have an account?
+                      <a href="#" class="register-link">REGISTER</a>
+                    </p>
+                  </div>
+                </div>
+
+                <!---------------------NEW SIGNUP ----------------->
+                <div class="form-box register">
+                  <h2 class="login-head">SIGNUP</h2>
+                  <div class="input-box">
+                    <span class="icon"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-people-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+                        /></svg
+                    ></span>
+                    <input type="text" id="userName"  required onkeyup="userNameVal(event)" maxlength="6"/>
+                    <label>username</label>
+                    <div class="error" id="E_UN">Enter UserName</div>
+                    <div id="userVal" class="val-errors">Enter Valid Username (combination of uppercase,lowercase,numerical)</div>
+                  </div>  
+                  <div class="input-box">
+                    <span class="icon"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-envelope-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"
+                        /></svg
+                    ></span>
+                    <input type="email" id="user_Email" required onkeyup="emailVal(event)" />
+                    <label>Email</label>
+                    <div class="error" id="U_EM">Enter Email</div>
+                    <div id="valEmail" class="val-errors">Enter Valid Email</div>
+                  </div>
+                  <div class="input-box">
+                    <span class="icon pwd">
+                      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
+              </svg> -->
+                      <svg
+                        id="openEye"
+                        class="o-e"
+                        onclick="showPass()"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-eye"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"
+                        />
+                        <path
+                          d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+                        />
+                      </svg>
+                      <svg
+                        id="closedEye"
+                        onclick="showPass()"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-eye-slash"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7 7 0 0 0-2.79.588l.77.771A6 6 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755q-.247.248-.517.486z"
+                        />
+                        <path
+                          d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829"
+                        />
+                        <path
+                          d="M3.35 5.47q-.27.24-.518.487A13 13 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7 7 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12z"
+                        />
+                      </svg>
+                    </span>
+                    <input
+                      type="password"
+                      id="user_Pwd"
+                      maxlength="12"
+                      required
+                      onkeyup="keyUpPwd(event)"
+                    />
+
+                    <label>password</label>
+                    <div class="error" id="U_PD">Enter password</div>
+
+                    <div id="validation-conditions" >
+                      <div id="min-length-val" class="val-errors">
+                        <span
+                          ><svg
+                            id="checkOne"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-check hideCheck"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"
+                            /></svg
+                          ><svg
+                            id="crossOne"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-x"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                            /></svg
+                        ></span>
+                        1.password should be minimum of 8 characters
+                      </div>
+                      <div id="max-length-val" class="val-errors">
+                        <span
+                          ><svg
+                            id="checkTwo"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-check hideCheck"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"
+                            /></svg
+                          ><svg
+                            id="crossTwo"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-x"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                            /></svg
+                        ></span>
+                        2.password should be maximum of 12 characters
+                      </div>
+                      <div id="num-char" class="val-errors">
+                        <span
+                          ><svg
+                            id="checkThree"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-check hideCheck"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"
+                            /></svg
+                          ><svg
+                            id="crossThree"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-x"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                            /></svg></span
+                        >3. password should contain one numerical character
+                      </div>
+                      <div id="upper-case" class="val-errors">
+                        <span
+                          ><svg
+                            id="checkFour"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-check hideCheck"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"
+                            /></svg
+                          ><svg
+                            id="crossFour"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-x"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                            /></svg></span
+                        >4. password should contain one uppercase character
+                      </div>
+                      <div id="symbols-char" class="val-errors">
+                        <span
+                          ><svg
+                            id="checkFive"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-check hideCheck"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"
+                            /></svg
+                          ><svg
+                            id="crossFive"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-x"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                            /></svg></span
+                        >5. password shouls contain one symbol(@$&#!?*_-)
+                      </div>
+                      <div id="lowercase-char" class="val-errors">
+                        <span
+                          ><svg
+                            id="checkSix"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-check hideCheck"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"
+                            /></svg
+                          ><svg
+                            id="crossSix"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-x"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                            /></svg></span
+                        >6. Password should contain one lower case character.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="remember-forgot">
+                    <label>
+                      <input type="checkbox" />I agree to terms &
+                      conditions</label
+                    >
+                  </div>
+                  <button
+                    type="submit"
+                    class="login-btn"
+                    id="signup-btn"
+                    
+                  >
+                    SIGNUP
+                  </button>
+                  <div class="login-register">
+                    <p>
+                      Already have an account?
+                      <a href="#" class="login-link">Login</a>
+                    </p>
+                  </div>
+                </div>
+
+                <!---------------------NEW SIGNUP ----------------->
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------------------------------------->
+
+      <main>
+        <!--------------------CAROUSEL-------------------------->
+        <div class="container carousel">
+        <div class="main-slider" >
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner" id="cara-container">
+              <!-- rendering slider images -->
+            
+              <!-- template for slider images -->
+              
+            
+              
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+        <!--------------------CAROUSEL-------------------------->
+
+        <!--------------------CATEOGRY-------------------------->
+       <div class="container cateogry">
+        <div class="cateogry-bar">
+          <h2 class="cateogry-head">CATEGORIES</h2>
+          <div class="cateogry-cards" id="cateogry-container">
+            
+            <!-- Appending Dynamic -->
+          </div>
+        </div>
+      </div>
+        <!--------------------CATEOGRY-------------------------->
+
+        <!-------------------- BRANDS -------------------------->
+      
+
+         <div class="main-brand-container"> 
+        <div class="brands-container swiper">
+          <div class="brand-heading">
+            <h1 class=" b-head" >BRANDS</h1>
+          </div>
+          <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper" id="brand-temp-container">
+              <div class="brand-card swiper-slide" id="brand-temp-slide">
+                <div class="image-box" id="brand-temp-slide">
+                  <img src="./images/brands/adidas.png" alt="" />
+                </div>
+                <div class="brand-details">
+                  <button type="button" class="btn btn-dark shop-now">SHOP NOW</button>
+
+                </div>
+              </div>
+              <div class="brand-card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/brands/nike.png" alt="" />
+                </div>
+                <div class="brand-details">
+                  <button type="button" class="btn btn-dark shop-now">SHOP NOW</button>
+
+                </div>
+              </div>
+              <div class="brand-card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/brands/puma.png" alt="" />
+                </div>
+                <div class="brand-details">
+                  <button type="button" class="btn btn-dark shop-now">SHOP NOW</button>
+
+                </div>
+              </div>
+              <div class="brand-card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/brands/reebok.png" alt="" />
+                </div>
+                <div class="brand-details">
+                  <button type="button" class="btn btn-dark shop-now">SHOP NOW</button>
+
+                </div>
+              </div>
+              <div class="brand-card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/brands/fila.png" alt="" />
+                </div>
+                <div class="brand-details">
+                  <button type="button" class="btn btn-dark shop-now">SHOP NOW</button>
+
+                  
+                
+                </div>
+              </div>
+              <div class="brand-card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/brands/asian.jpeg" alt="" />
+                  
+                </div>
+                <div class="brand-details">
+                  <button type="button" class="btn btn-dark shop-now">SHOP NOW</button>
+
+                  
+                
+                </div>
+              </div>
+              <div class="brand-card swiper-slide">
+                <div class="image-box">
+
+                  <img src="./images/brands/bata.png" alt="" />
+                </div>
+                <div class="brand-details">
+                  <button type="button" class="btn btn-dark shop-now">SHOP NOW</button>
+
+                  
+                
+                </div>
+              </div>
+              <div class="brand-card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/brands/mochi.jpeg" alt="" />
+                </div>
+                <div class="brand-details">
+                  <button type="button" class="btn btn-dark shop-now">SHOP NOW</button>
+                </div>
+              </div>
+              <div class="brand-card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/brands/newBalance.png" alt="" />
+                </div>
+                <div class="brand-details">
+                  <button type="button" class="btn btn-dark shop-now">SHOP NOW</button>
+                </div>
+              </div>
+              <div class="brand-card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/brands/skechers.jpeg" alt="" />
+                </div>
+                <div class="brand-details">
+                  <button type="button" class="btn btn-dark shop-now">SHOP NOW</button>
+                </div>
+              </div>
+              <div class="brand-card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/brands/dior.png" alt="" />
+                </div>
+                <div class="brand-details">
+                  <button type="button" class="btn btn-dark shop-now">SHOP NOW</button>
+              </div>
+              </div>
+             
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+              <div class="swiper-button-prev swiper-navBtn"></div>
+              <div class="swiper-pagination"></div>
+          </div>
+          
+        </div>
+        
+      </div> 
+    
+        
+        
+        <!-------------------- BRANDS -------------------------->
+
+      </main>
+    
+
+      
+        <!------------------------ BOOTSTRAP FOOTER --------------------------->
+        <footer >
+
+        <div class="container nav-lists">
+          <footer1 class="py-5">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5 class="f-head">Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >Features</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >FAQs</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >About</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                <h5 class="f-head">Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >Features</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >FAQs</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >About</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                <h5 class="f-head">Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >Features</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >FAQs</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary"
+                      >About</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5 class="f-head">Subscribe to our newsletter</h5>
+                  <p class="f-head">
+                    Monthly digest of what's new and exciting from us.
+                  </p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden"
+                      >Email address</label
+                    >
+                    <input
+                      id="newsletter1"
+                      type="text"
+                      class="form-control"
+                      placeholder="Email address"
+                      fdprocessedid="mmtyhc"
+                    />
+                    <button
+                      class="btn btn-primary"
+                      type="button"
+                      fdprocessedid="weihd3"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+            >
+              <p class="f-head">© 2024 Company, Inc. All rights reserved.</p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3">
+                  <a class="link-body-emphasis f-a-items" href="#"><svg class="bi" width="24" height="24">
+                      <use xlink:href="#twitter"></use></svg></a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-body-emphasis f-a-items" href="#"><svg class="bi" width="24" height="24">
+                      <use xlink:href="#instagram"></use></svg></a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-body-emphasis f-a-items" href="#"><svg class="bi" width="24" height="24">
+                      <use xlink:href="#facebook"></use></svg></a>
+                </li>
+              </ul>
+            </div>
+          </footer1>
+        </div>
+
+        <!------------------------ BOOTSTRAP FOOTER --------------------------->
+      </footer>
+    
+
+    <script src="./javascripts/storingSignupDataAndValidation.js"></script>
+    <script src="./lib/swiper/swiper-bundle.min.js"></script>
+    <script src="./javascripts/swiper.js"></script>
+  </body>
+</html>
+
+
+

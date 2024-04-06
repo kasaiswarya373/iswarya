@@ -1,0 +1,37 @@
+.box{
+    border: 3px solid rgb(199, 206, 206);
+    width: 530px;
+    height: 493px;
+    margin: 100px auto;
+    padding: 10px;
+}
+.coin{
+    border: 1px solid;
+    padding: 5px;
+    width: 20px;
+    margin: 10px ;
+    float: left;
+    text-align: center;
+
+}
+
+.coindisplay{
+    width: 100px;
+    height: 100px;
+    font-size: 70px;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    left: 10px;
+    margin: 10px auto;
+}
+.click{
+    background-color: blue;
+    width: 100px;
+    color: white;
+    position: relative;
+    top: -672px;
+    left: 696px;
+    margin: 10px auto;
+}

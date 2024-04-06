@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title> check the given number is amstrong or not </title>
+</head>
+<body>
+    <h1> check the given number is amstrong or not </h1>
+    <script> 
+        var n=parseInt(prompt("enter a number"));
+        var n1=n;
+        var sum=0,rem;
+        while(n>0) {
+            rem= n%10;
+            sum= sum+(rem*rem*rem);
+            n=parseInt(n/10);
+
+        }  
+        if(n1==sum) {
+            console.log("Given number is amstrong number", +n1);
+
+        }
+        else {
+            console.log("not a amstrong number");
+        }
+    </script>
+</body>
+</html>    
+

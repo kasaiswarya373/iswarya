@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>it's a multilevel inheritance where region is the base class, Pune is the first level derived
+        class, and Mumbai is the second level derived class.</h3>
+    <script>
+        class region {
+            constructor(cstate, ccountry) {
+                this.state = cstate;
+                this.country = ccountry;
+            }
+            displayRegionDetails() {
+                console.log(`Name of the State is ${this.state}`);
+                console.log(`Name of the Country is ${this.country}`);
+            }
+        }
+        class Pune extends region {
+            constructor(cname, cfamous, cpopulation, cstate, ccountry) {
+                super(cstate, ccountry);
+                this.city = cname;
+                this.famous = cfamous;
+                this.population = cpopulation;
+            }
+            displayPuneCity() {
+                console.log(`City Name is ${this.city}`);
+                console.log(`City Famous for ${this.famous}`);
+                console.log(`Population in ${this.city} is ${this.population}`);
+                this.displayRegionDetails();
+                console.log("----------------------------------------")
+            }
+        }
+
+        class Mumbai extends region {
+            constructor(cname, cfamous, cpopulation, cstate, ccountry) {
+                super(cstate, ccountry);
+                this.city = cname;
+                this.famous = cfamous;
+                this.population = cpopulation;
+            }
+            displayMumbaiCity() {
+                console.log(`City Name is ${this.city}`);
+                console.log(`City Famous for ${this.famous}`);
+                console.log(`Population in ${this.city} is ${this.population}`);
+                this.displayRegionDetails();
+            }
+        }
+        var cityPune = new Pune("Pune", "Education", 7166374, "Maharashtra", "India");
+        cityPune.displayPuneCity();
+        var cityPune = new Mumbai("Mumbai", "Carrier", 7966374, "Maharashtra", "India");
+        cityPune.displayMumbaiCity();
+    </script>
+</body>
+
+</html>

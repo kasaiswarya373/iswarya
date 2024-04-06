@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Local and global data - Scope of data
+        </title>
+    </head>
+    <body>
+        <script>
+            var a = 10; // global scope | public | global scope
+
+            function displayinfo() {
+                var b = 100; // local| private || local scope
+                console.log("Value of a is " + a);
+
+                console.log("Value of b is " + b);
+            }
+
+            console.log("Value of a is " + a);
+            console.log("Value of b is " + b);
+
+            displayinfo();
+        </script>
+    </body>
+</html>

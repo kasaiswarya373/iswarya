@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Detail</title>
+    <style>
+        h1{
+            width: auto;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid black;
+            text-decoration: underline;
+            background-color: #ffafcc;
+            
+        }
+
+        h1:hover{
+            background-color: aqua;
+            text-decoration: none;
+            color: red;
+        }
+
+        .body {
+            width: auto;
+            height: 800px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            background-color: #dad7cd;
+
+        }
+
+       
+        .left {
+            height: 780px;
+            margin: 10px;
+            width: auto;
+            border: 2px solid black;
+            float: left;
+            overflow: auto;
+            background-color: #ffc8dd;
+        }
+
+        .right {
+            height: 780px;
+            margin: 10px;
+            width: 70%;
+            border: 2px solid black;
+            float: left;
+            overflow: auto;
+            background-color: #ffc8dd;
+
+        }
+
+        .stdInfo {
+            height: 200px;
+            width: auto;
+            border: 2px solid black;
+            margin: 15px;
+            background-color: #cdb4db;
+        }
+
+        .left li {
+            margin: 20px;
+            font-size: large;
+            font-weight: 800;
+            padding: 25px;
+        }
+
+        .stdInfo img {
+            height: 130px;
+            width: 100px;
+            float: left;
+            margin: 30px;
+        }
+
+        .stdInfo li {
+            list-style: none;
+            margin: 20px;
+        }
+
+        span {
+            font-size: large;
+            font-weight: 700;
+            font-family: sans-serif;
+        }
+
+        .footer {
+            width: auto;
+            border: 2px solid black;
+            text-align: center;
+            background-color: #ffafcc;
+            font-size: large;
+            font-weight: 600;
+            clear: both;
+        }
+
+        .footer:hover{
+            background-color: aqua;
+            text-decoration: none;
+            color: red;
+        }
+        body{
+            background-color: #bde0fe;
+            font-family: cursive;
+        }
+        .left a {
+            text-decoration: none;
+            color: red;
+        }
+
+        .left a:hover {
+            text-decoration: underline;
+            color: rgb(12, 106, 199);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Student Details</h1>
+    </div>
+    <div class="body">
+        <div class="left">
+            <ol>
+                <li><a href="#mahesh">Mahesh Ghattamaneni</a></li>
+                <li><a href="#niraj">Niraj Chopra</a></li>
+                <li><a href="#rush">Rashmika Mandanna</a></li>
+                <li><a href="#ndd">Nivrutee Dongare</a></li>
+                <li><a href="#rakul">Rakul Preet</a></li>
+                <li><a href="#shradha">Shradha Joshi</a></li>
+                <li><a href="#manoj">Manoj Kumar</a></li>
+            </ol>
+
+        </div>
+        <div class="right">
+            <div class="stdInfo" id="mahesh">
+                <img src="mahesh-babu.jpg" alt="mahesh">
+                <ul>
+                    <li><span>Name: </span>Mahesh Babu</li>
+                    <li><span>Age: </span>40</li>
+                    <li><span>Gender: </span>Male</li>
+                    <li><span>Location: </span>Hydrabad</li>
+                </ul>
+            </div>
+            <div class="stdInfo" id="niraj">
+                <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202108/AP21219464016565_1200x768.jpeg?size=690:388"
+                    alt="AJ">
+                <ul>
+                    <li><span>Name: </span>Niraj Chopra</li>
+                    <li><span>Age: </span>27</li>
+                    <li><span>Gender: </span>Male</li>
+                    <li><span>Location: </span>Hariyana</li>
+                </ul>
+
+            </div>
+            <div class="stdInfo" id="rush">
+                <img src="Rash.jfif" alt="AJ">
+                <ul>
+                    <li><span>Name: </span>Rasmika Mandanna</li>
+                    <li><span>Age: </span>28</li>
+                    <li><span>Gender: </span>Female</li>
+                    <li><span>Location: </span>Virajpet</li>
+                </ul>
+            </div>
+            <div class="stdInfo" id="ndd">
+                <img src="IND.jpeg" alt="AJ">
+                <ul>
+                    <li><span>Name: </span>Nivrutee Dongare</li>
+                    <li><span>Age: </span>23</li>
+                    <li><span>Gender: </span>Male</li>
+                    <li><span>Location: </span>Pune</li>
+                </ul>
+            </div>
+            <div class="stdInfo" id="rakul">
+                <img src="Rakul.webp" alt="AJ">
+                <ul>
+                    <li><span>Name: </span>Rakul Preet</li>
+                    <li><span>Age: </span>30</li>
+                    <li><span>Gender: </span>Female</li>
+                    <li><span>Location: </span>Delhi</li>
+                </ul>
+            </div>
+            <div class="stdInfo" id="shradha">
+                <img src="shardha.png" alt="AJ">
+                <ul>
+                    <li><span>Name: </span>Shradha Joshi</li>
+                    <li><span>Age: </span>26</li>
+                    <li><span>Gender: </span>Female</li>
+                    <li><span>Location: </span>Nainital</li>
+                </ul>
+            </div>
+            <div class="stdInfo" id="manoj">
+                <img src="manoj.jpg" alt="AJ">
+                <ul>
+                    <li><span>Name: </span>Manoj kumar</li>
+                    <li><span>Age: </span>30</li>
+                    <li><span>Gender: </span>Male</li>
+                    <li><span>Location: </span>Chamble</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy;2024 Created By Nivrutee Dongare...</p>
+    </div>
+</body>
+
+</html>

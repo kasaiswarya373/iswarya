@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <div class="left-container">
+            
+            <div class="small-images">
+                <div class="box">
+                    <img src="images/img1.png" class="small-img">
+                    <img src="images/img2.png" class="small-img">
+                    <img src="images/img3.png" class="small-img">
+                    <img src="images/img4.png" class="small-img">
+                    <img src="images/img5.png" class="small-img">
+                                                                            
+                </div>
+                
+            </div>
+
+            <img src="images/img1.png" alt="" id="main-img">
+
+        </div>
+        <div class="right-container">
+            <h1>Men's Fashion Shirt</h1>
+            <span>60% off Offer Closes Soon</span>
+            <h2>$99.00</h2>
+            <select>
+                <option>Select a Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <div class="add">
+            <input type="number" value="1">
+            <button>Add to Cart</button>
+            <button>Buy Now </button>
+            <h3>Products Details</h3>
+            <p><strong>Brand :</strong>&nbsp;NIT  <br>
+                <strong>Sleeve Lenght :</strong>&nbsp; Long Sleeves  <br>
+                <strong>fabric :</strong>&nbsp;Cotton  <br>
+                <strong>Name :</strong>&nbsp; Fancy Faulous Mens Shirt  <br>
+            </p>
+            <span>Free Home Delivery <br> Return within 7 Days: No Question Asked <br>
+             </span>
+
+        </div>
+    </div>
+
+    <script>
+        var MainImage = document.getElementById("main-img");
+        var SmallImage = document.getElementsByClassName("small-img");
+
+        SmallImage[0].onclick = function(){
+            MainImage.src = SmallImage[0].src;
+        }
+        SmallImage[1].onclick = function(){
+            MainImage.src = SmallImage[1].src;
+        }
+        SmallImage[2].onclick = function(){
+            MainImage.src = SmallImage[2].src;
+        }
+        SmallImage[3].onclick = function(){
+            MainImage.src = SmallImage[3].src;
+        }
+        SmallImage[4].onclick = function(){
+            MainImage.src = SmallImage[4].src;
+        }
+        SmallImage[5].onclick = function(){
+            MainImage.src = SmallImage[5].src;
+        }
+        SmallImage[6].onclick = function() {
+            MainImage.src = SmallImage[6].src;
+        }
+
+    </script>
+</body>
+</html>

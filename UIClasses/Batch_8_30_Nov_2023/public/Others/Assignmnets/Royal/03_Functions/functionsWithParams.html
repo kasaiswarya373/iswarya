@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function With Parameters</title>
+</head>
+<body>
+    <script>
+        
+        var readValue = () => {         //calling function
+            var a1, a2;
+            a1 = parseInt(prompt(`Enter First Value  : `));
+            a2 = parseInt(prompt(`Enter Second value :`));
+
+            getSum(a1, a2);              //actual
+        }
+
+        var getSum = (a1, a2) => {      //called function  & formal paras
+            var result = a1 + a2;
+            console.log('The Sum is : '+result);
+        }
+        readValue();
+    </script>
+    
+</body>
+</html>

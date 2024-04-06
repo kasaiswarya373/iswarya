@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = '@#Naresh iT Technology 22 * #$'
+            str = str.split(" ")
+            var newStr = str.join("")
+        var count =0;
+        for (var i = 0; i <= newStr.length-1; i++){
+            if(newStr.charCodeAt(i) >= 65 && newStr.charCodeAt(i) <= 90 || newStr.charCodeAt(i) >= 97 && newStr.charCodeAt(i) <= 122 || newStr.charAt(i)>= 0){
+
+            }else(
+                count++
+            )
+        }
+        console.log(`Number of special Character - ${count}`);
+    </script>
+</body>
+</html>

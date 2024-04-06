@@ -1,0 +1,54 @@
+*{
+            background-color: #fefae0;
+        }
+        #title {
+            text-align: center;
+            font-size: 2rem;
+            border: 3px solid #003566;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        #div1 {
+            width: 350px;
+            height: auto;
+            padding: 10px;
+            border: 3px dashed #ef476f;
+            margin: 80px auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .delete {
+            cursor: pointer;
+            background-color: #ef476f;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .counter {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        #color1 {
+            color: #EB4132;
+        }
+
+        #color2 {
+            color: #FBBD00;
+        }
+
+        #color3 {
+            color: #31A952;
+        }
+
+        #color {
+            color: #4086F4;
+        }

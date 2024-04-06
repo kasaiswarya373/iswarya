@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of Given numbers</title>
+</head>
+
+<body>
+    <script>
+        //WAP to find sum of the given indiviuals
+        var a = prompt("Enter number");
+        a = parseInt(a);
+        var sum = 0;
+        var rem;
+        while (a > 0) {
+            rem = a % 10;
+            sum = sum + rem;
+            a = a / 10;
+            a = parseInt(a);
+        }
+        console.log("Sum of the given indiviual is " + sum);
+    </script>
+</body>
+
+</html>

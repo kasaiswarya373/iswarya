@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+
+            var contactDetails = {
+                fname: 'ABC',
+                'lname': 'PQR',
+                petname: 'Sanju',
+                maild: {
+                    office: 'abc@office.com',
+                    'prsnl': ['abc@gmail.com', 'pqr@hotmail.com']
+                },
+                address: {
+                    'office': {
+                        buldingno: '5A',
+                        country: {
+                            name: 'India',
+                            code: 'IND'
+                        },
+                        floorno: '9L',
+                        pincode: 539098
+                    },
+                    'prsnl': {
+                        stateInfo: {
+                            details: {
+                                sid: '01',
+                                scode: 'TS',
+                                pincode: 523423
+                            },
+                            countryName: 'India',
+                            dno: '158/B',
+                            streetname: 'SR Nagar'
+                        }
+                    }
+                },
+                phonoNo: {
+                    'office': '040-234234',
+                    'prsnl': [935345 , 93543534],
+                    emrgncy: 234234234
+                },
+                socialNetwrkingIds: {
+                    linkedin: 'abc',
+                    twitter: '@abc'
+                },
+                profilePic: 'abc/data/data.png',
+                gender: 'Male',
+                'mstatus': 'M'
+            }
+
+            // var emnData = {
+            //     name: 'Raj',
+            //     age: 20,
+            //     address: 'Hyderabad',
+            //     gender: 'Male'
+            // };
+
+            var iterateOverObject = (data) => {
+                for (var tempKey in data) {
+                    if ((typeof(data[tempKey]) == 'object') && !Array.isArray(data[tempKey])) {
+                        iterateOverObject(data[tempKey]); //Recurrsive function 
+                    } else {   
+                        console.log(`${tempKey} value is -> ${data[tempKey]}`); 
+                    }
+                }
+            }
+
+            // console.log("=======================================")
+            // iterateOverObject(emnData);
+        
+            
+            // console.log("=======================================")
+
+            iterateOverObject(contactDetails);
+
+            // console.log("=======================================")
+        </script>
+    </body>
+</html>

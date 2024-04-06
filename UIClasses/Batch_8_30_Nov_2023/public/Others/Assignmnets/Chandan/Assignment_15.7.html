@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //WAP to sort elements in the array in descending order
+
+        var n = parseInt(prompt("enter size of array : "));
+            var arr = [n];
+            for(var i = 0 ; i < n ; i++){
+                arr[i] = parseInt(prompt("enter values : "));
+            }
+            var sortingdesc = (arr) => {
+                for(var i = 0 ; i < n ; i++){
+                    for(var j = 0 ; j < n ; j++){
+                        if(arr[i]>arr[j]){
+                            var temp = arr[i];
+                            arr[i] = arr[j];
+                            arr[j] = temp;
+                        }
+                    }
+                }
+                return arr;
+            }
+            console.log("the array after sorting in descending order is : " +sortingdesc(arr));
+    </script>
+</body>
+</html>

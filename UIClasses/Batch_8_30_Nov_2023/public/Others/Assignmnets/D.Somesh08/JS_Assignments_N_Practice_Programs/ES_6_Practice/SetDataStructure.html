@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Data Structure in ES_6</title>
+</head>
+
+<body>
+    <script>
+        var setDs = new Set();
+        setDs.add(2);
+        setDs.add(4);
+        setDs.add('abc');
+        setDs.add('abc');
+        setDs.add(2);
+
+        console.log("size of set", setDs.size);
+
+        var bol = setDs.has('abc');
+        console.log('bol ', bol);
+        console.log('values ', setDs.values());
+
+
+        for (var val of setDs) {
+            console.log(val);
+        }
+
+        setDs.forEach((val, valAgain, setRef) => {
+            console.log(val);
+        })
+    </script>
+</body>
+
+</html>

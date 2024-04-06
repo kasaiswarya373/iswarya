@@ -1,0 +1,47 @@
+.wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .main {
+            border: 1px solid;
+            height: auto;
+            width: 600px;
+        }
+
+        .title {
+            margin: 30px;
+        }
+
+        label {
+            font-size: 1.5rem;
+        }
+
+        input {
+            margin-top: 10px;
+            height: 30px;
+            width: 200px;
+        }
+
+        canvas {
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+
+        .button {
+            margin-left: 30px;
+        }
+
+        .submit {
+            margin: 20px 0px 20px 30px;
+        }
+
+        .submit button {
+            height: 30px;
+            width: 100px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            background-color: #ffd60a;
+        }

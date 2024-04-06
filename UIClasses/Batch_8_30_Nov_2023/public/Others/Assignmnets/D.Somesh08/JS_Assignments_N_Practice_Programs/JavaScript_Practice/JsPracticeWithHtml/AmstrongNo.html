@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amstrong No check</title>
+</head>
+
+<body>
+
+    <script>
+
+        var givenNo = 1634, count = 0;
+        var storedNo = givenNo;
+        var temp = givenNo;
+
+        while (givenNo >= 1) {
+            givenNo = parseInt(givenNo / 10);
+            count++;
+        }  document.write(`count is : ${count} <br>`)
+
+        var remainder = 0, amstrong = 0, sum=0;
+        var amTemp = temp;
+        while (temp >= 1) {
+            remainder = temp % 10;
+            amstrong = remainder ** count;
+            sum += amstrong;
+            temp = parseInt(temp / 10);
+        }
+
+        if (amTemp == sum) {
+            document.write(`${amTemp} is an Amstrong Number..!!!`)
+        } else {
+            document.write(`${amTemp} is not an Amstrong Number!!`)
+        }
+    </script>
+</body>
+
+</html>

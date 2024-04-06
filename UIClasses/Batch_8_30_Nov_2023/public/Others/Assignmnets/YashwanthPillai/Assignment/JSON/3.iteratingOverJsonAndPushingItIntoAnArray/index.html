@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IteratingOverJsonUsingForInAndPushingItIntoAnArray</title>
+  </head>
+  <body>
+    <h2>Iterating Over Json Using ForIn And Pushing It Into An Array.</h2>
+    <script>
+      let myGradSubjects = {
+        1 : "C",
+        2 : "C++",
+        3 : "Java",
+        4 : "JavaScript",
+        5 : "DSA",
+        6 : "ComputerNetworksAndSecurity",
+        7 : "DBMS"
+      };
+
+
+      // 1st Method of puhing key and values in array using loops.
+    //   let mySubArray = [];
+
+    //   for (const key in myGradSubjects ) {
+    //     let entry = [];
+    //     entry.push(key)
+    //     entry.push(myGradSubjects[key])
+    //     mySubArray.push(entry)
+
+    //   }
+
+    //   console.log(mySubArray);
+
+            // 2nd Method is predefined method of puhing key and values in array .
+
+            let myData = Object.entries(myGradSubjects)
+            console.log(myData);
+    </script>
+  </body>
+</html>

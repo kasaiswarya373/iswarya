@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment10 Employee tax</title>
+</head>
+
+<body>
+    <script>
+        var name = prompt("enter your name");
+        var gender = prompt("enter your Gender");
+        var age = prompt(" enter your age");
+        var department = prompt("enter your department");
+        var basicSalary = prompt("enter your basic salary");
+
+        basicSalary = parseInt(basicSalary);
+        var pf = (basicSalary * 14) / 100;
+        var hra = (basicSalary * 25) / 100;
+
+        pf = parseInt(pf);
+        hra = parseInt(hra);
+        console.log(pf);
+        console.log(hra)
+        var totalSal = pf + hra + basicSalary;
+
+        console.log("totalSal", totalSal);
+        console.log("name", name);
+        console.log("gender", gender);
+        console.log("age", age);
+        console.log("department", department);
+        console.log("basicSalary", basicSalary);
+
+        if (gender = "male") {
+            if (basicSalary > 200000) {
+                var tax = (15 * basicSalary) / 100
+                console.log("tax Persentage is:", tax);
+                handAmount = totalSal - tax;
+                console.log("handAmount", handAmount);
+            } else if (basicSalary > 100000) {
+                var tax = (10 * basicSalary) / 100
+                console.log("tax Persentage is: ", tax);
+                handAmount = totalSal - tax;
+                console.log("handAmount", handAmount);
+            } else if (basicSalary > 50000) {
+                var tax = (5 * basicSalary) / 100
+                console.log("tax Persentage is;", tax);
+                handAmount = totalSal - tax;
+                console.log("handAmount", handAmount);
+            } else {
+                var tax = 0
+                console.log("tax Persentage is:", tax);
+                handAmount = totalSal - tax;
+                console.log("handAmount", handAmount);
+            }
+        }
+        else{
+            if (basicSalary > 200000) {
+                var tax = (10 * basicSalary) / 100
+                console.log("tax Persentage is:", tax);
+                handAmount = totalSal - tax;
+                console.log("handAmount", handAmount);
+            } else if (basicSalary > 100000) {
+                var tax = (5 * basicSalary) / 100
+                console.log("tax Persentage is:", tax);
+                handAmount = totalSal - tax;
+                console.log("handAmount", handAmount);
+            } else if (basicSalary > 50000) {
+                var tax = (0 * basicSalary) / 100
+                console.log("tax Persentage is:", tax);
+                handAmount = totalSal - tax;
+                console.log("handAmount", handAmount);
+            }
+        }
+    </script>
+</body>
+
+</html>

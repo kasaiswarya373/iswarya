@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+       <script>
+            //<script>
+             var num = prompt("enter number: ");
+            num = parseInt(num);
+            var countdigits = 0;
+           // var rem = 0;
+            while(num!=0){
+                  num % 10;
+                 countdigits++;
+                num = num/10;
+                num = parseInt(num);
+            }
+            console.log("Number of digits in a given number are: " +countdigits);
+            // WAP to find the reverse of a given number
+            var n = prompt("enter number: ");
+            n = parseInt(n);
+            var rev =0;
+            while(n!=0){
+                var rem = n%10;
+                rev = (rev*10)+rem;
+                n = n/10;
+                n = parseInt(n);
+               // rev = parseInt(rev);
+            }
+            console.log("the reverse of given number is: " + rev);
+            //WAP for finding out lucky number of a given number
+            var num = prompt("enter number: ");
+            num = parseInt(num);
+            var sum = 0;
+            while(num!=0){
+                var rem = num % 10;
+                 sum = sum+rem;
+                num = num / 10;
+                num = parseInt(num);
+               if(num==0&&sum>=10){
+                    num = sum;
+                    sum = 0;
+               }
+            }
+            console.log("Lucky number of a number is: " + sum);
+            // WAP to check if a number is palindrome or not
+            var num = prompt("enter number: ");
+            num = parseInt(num);
+            var temp = num;
+            var rev = 0;
+            while(num!=0){
+                var rem = num%10;
+                rev = (rev*10)+rem;
+                num = num/10;
+                num = parseInt(num);
+            }
+            if(rev==temp){
+                console.log("Given number is a palindrome");
+            }
+            else{
+                console.log("Given number is not a palindrome");
+            }
+            // WAP to list out all the palindrome numbers between 1000 to 22
+            console.log("Palindromes b/w 1000 to 22 are: ");
+            for(var i=1000;i>=22;i--){
+                var num = i;
+                var rev = 0;
+                while(num!=0){
+                    var rem = num%10;
+                    rev = (rev*10)+rem;
+                    num = num/10;
+                    num = parseInt(num);
+                }
+                if(rev==i){
+                    console.log(i);
+                }
+            }
+            // WAP to check wheather a given number is amstrong number or not
+            var num = prompt("enter number: ");
+            num = parseInt(num);
+            var countdigits = 0;
+            var temp = num;
+            var ans = num;
+            while(num!=0){
+                var rem = num %10;
+                countdigits++;
+                num = num/10;
+                num = parseInt(num);
+            }
+            var n = 0;
+            while(temp!=0){
+                var rem = temp%10;
+                var result = 1;
+                for(var i=0;i<countdigits;i++){
+                    result = result*rem;
+                }
+                temp = temp/10;
+                temp = parseInt(temp);
+                n+=result;
+            }
+            if(n==ans){
+                console.log("It is an amstrong number");
+            }
+            else{
+                console.log("It is not an amstrong number");
+            }
+            //WAP to display all the amstrong numbers between 1 to 1000
+            console.log("Amstrong numbers  between 1 to 1000");
+            for(var i=1;i<=1000;i++){
+                var num = i;
+                var count = 0;
+                while(num!=0){
+                    var rem = num%10;
+                    count++;
+                    num = num/10;
+                    num = parseInt(num);
+                }
+                num = i;
+                //var result = 1;
+                var n = 0;
+                while(num!=0){
+                    var result = 1;
+                    var rem = num%10;
+                    for(var j=0;j<count;j++){
+                        result = result*rem;
+                    }
+                    num = num/10;
+                    num = parseInt(num);
+                    n+=result;
+                }
+                if(n==i){
+                    console.log(i);
+                }
+            }
+            // WAP to find the number of zeros in a given number
+            var num = prompt("enter number: ");
+            num = parseInt(num);
+            var count = 0;
+            while(num!=0){
+                if(num%10==0){
+                    count++;
+                }
+                num = num/10;
+                num = parseInt(num);
+            }
+            console.log(count);
+       </script>
+    </body>
+</html>

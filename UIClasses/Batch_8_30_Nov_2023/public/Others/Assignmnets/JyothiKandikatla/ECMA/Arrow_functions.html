@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow functions</title>
+</head>
+<body>
+   <script>
+    class Jyothi {
+        constructor() {
+            this.name = 'jo';
+            this.age = ' 25'; 
+        }
+        f() {
+            var a = 1;
+        setTimeout(() => {
+            console.log('name is '+this.name + ' age is '+this.age);
+        }, 2000);
+       var mytime = setInterval(()=>{
+            console.log('visit agin'+a);
+            a++;
+            if(a == 4){
+            clearInterval(mytime);
+}
+        }, 2000)
+    }
+    }
+    var j = new Jyothi();
+    j.f();
+   </script> 
+</body>
+</html>

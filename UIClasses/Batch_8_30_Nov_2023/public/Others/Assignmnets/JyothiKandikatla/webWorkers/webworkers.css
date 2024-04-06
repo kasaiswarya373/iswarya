@@ -1,0 +1,19 @@
+.datecontainer{
+    text-align: right;
+    font-weight: bold;
+}
+.maincontainer{
+    div{
+        background-color: rgb(238, 253, 30);
+    width: 50%;
+    border: 3px solid red;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+}
+}
+span{
+    color: crimson;
+}

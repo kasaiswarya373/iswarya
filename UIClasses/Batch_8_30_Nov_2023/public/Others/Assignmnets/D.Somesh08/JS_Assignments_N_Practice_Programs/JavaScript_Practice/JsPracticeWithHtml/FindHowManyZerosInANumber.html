@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find how many zeros in a number</title>
+</head>
+<body>
+
+    <script>
+        var no = 10000000, count=0, remainder=0;
+        var temp = no;
+        while(no>=1) {
+            remainder = no%10;
+            if(remainder == 0) {
+                count++;
+            }
+            no=parseInt(no/10);
+        }
+
+        document.write(`There are ${count} zeros in ${temp}.`);
+    </script>
+    
+</body>
+</html>

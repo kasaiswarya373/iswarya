@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spirting images</title>
+</head>
+<body>
+    <style>
+        .heading,
+        .Block,
+        .footer {
+            border: 2px solid brown;
+            margin: 10px;
+            padding: 10px;
+        }
+        .Block {
+            height: 550px;
+        }
+        .heading,
+        .footer {
+            text-align: center;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .content {
+            width: 1000px;
+            margin: 20px auto;
+        }
+        .leftBox,
+        .rightBox 
+        {
+            border: 2px solid darkmagenta;
+            margin: 10px;
+            padding: 10px;
+            float: left;
+            height: 450px;
+            overflow: auto;
+        }
+        .leftBox {
+            width: 20%;
+        }
+        .rightBox {
+            width: 65%;
+        }
+        .leftBox li {
+            border: 1px solid darkcyan ;
+            margin: 10px;
+            padding: 10px;
+            list-style-position: inside;
+        }
+        .imgBlock,
+        .subDetailsBlock {
+                float: left;
+        }
+        .detailsBlock > li {
+                list-style: none;
+                height: 150px;
+        }
+        .detailsBlock {
+            border: 2px solid darkred;
+            margin: 10px;
+            padding: 5px;
+        }
+        .imgBlock {
+                width: 120px;
+                height: 140px;
+                margin-right: 20px;
+                background-image: url(Images/combined_spirting_images.png);
+        }
+        a {
+                text-decoration: none;
+        }
+        .emp1 {
+            background-position: 205px -14px;
+        }
+        .emp2 {
+            background-position: -35px -12px;
+        }
+        .emp3 {
+            background-position: -214px -15px;
+        }
+        .emp4 {
+            background-position: -170px -187px;
+        }
+    </style>
+    <div class="content">
+    <div class="heading">Student Details</div>
+      <div class="Block">
+         <div class="leftBox">
+            <ol>
+                   <li> <a href="#pic1">Rajesh</a></li>
+                   <li> <a href="#pic2">Suresh</a></li>
+                   <li><a href="#pic3">Nagendra</a></li>
+                   <li> <a href="#pic4">Venkat</a></li>
+             </ol>
+         </div>
+     <div class="rightBox">
+        <div>
+            <ul class="detailsBlock">
+                <li id="pic1">
+                    <div class="imgBlock emp1">
+                    </div>
+                    <div class="subDetailsBlock">
+                        <ul>
+                            <li>Name:Rajesh</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Kakinada</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="detailsBlock">
+                <li id="pic2">
+                    <div class="imgBlock emp2">                      
+                    </div>
+                    <div class="subDetailsBlock">
+                        <ul>
+                            <li>Name:Suresh</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Vizag</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="detailsBlock">
+                <li id="pic3">
+                    <div class="imgBlock emp3">
+                    </div>
+                    <div class="subDetailsBlock">
+                        <ul>
+                            <li>Name:Nagendra</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Vijaywada</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="detailsBlock">
+                <li id="pic4">
+                    <div class="imgBlock emp4">
+                    </div>
+                    <div class="subDetailsBlock">
+                        <ul>
+                            <li>Name:Venkat</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Amalapuram</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul> 
+         </div>
+        </div>
+       </div>
+      <div class="footer">Students@copyright2024</div>
+    </div>
+</body>
+</html>

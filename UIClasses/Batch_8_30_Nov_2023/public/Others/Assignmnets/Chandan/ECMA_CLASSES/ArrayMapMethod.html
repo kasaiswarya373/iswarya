@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating Map mathod
+    </title>
+</head>
+<body>
+    <script>
+         var data = [ 23, 45 ,89 , 90, 67];
+         console.log(data);
+       /*  for (var i = 0; i < data.length; i++) {
+            data[i] = data[i] * 10;
+         }
+         console.log(data);*/ 
+
+         data = data.map((value) => {
+            if (value % 2 == 0){
+                value = value + 10;
+            } else {
+                value = value * 2;
+            }
+              return value;
+         });
+         console.log(data);
+    </script>
+</body>
+</html>

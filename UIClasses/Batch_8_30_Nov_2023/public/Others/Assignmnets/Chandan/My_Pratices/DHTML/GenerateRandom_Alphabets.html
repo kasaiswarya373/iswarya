@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate random character</title>
+</head>
+<body>
+    <script>
+    var randomchar  = '';
+    var asciivalue = 91;
+    
+
+    //LowerCase char 97 - 122
+    var minRange = 97;
+    var maxRange = 122;
+    randomValue = Math.round(Math.random() * (maxRange - minRange)) + minRange;
+    
+    console.log(randomValue);
+    console.log(String.fromCharCode(randomValue));
+    </script>
+</body>
+</html>

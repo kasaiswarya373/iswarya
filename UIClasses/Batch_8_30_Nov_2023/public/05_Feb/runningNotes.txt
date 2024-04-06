@@ -1,0 +1,20 @@
+Error handling
+
+    1. compile time
+    2. Runtime
+        Exception 
+    3. User defined excp 
+        throw, throws
+
+----------
+
+Closure - Self invoked function 
+
+    (() => {
+        .... 
+        .... 
+        .... // Closure data/code/private data
+    })();
+    --------------------------
+
+    

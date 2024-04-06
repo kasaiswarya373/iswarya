@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //WAP to find any special symbols within given string
+        var s = prompt("enter string : ");
+        var count = 0;
+        for(var i = 0 ; i<s.length;i++){
+            if((s.charCodeAt(i)>=33 && s.charCodeAt(i) <=47) || (s.charCodeAt(i)>=58 && s.charCodeAt(i) <=64) || (s.charCodeAt(i)>=91 && s.charCodeAt(i) <=96) || (s.charCodeAt(i)>=123 && s.charCodeAt(i) <=126)) {
+                count++;
+            }
+        }
+        console.log("Nunber of special symbols in the given string are : " + count);
+     </script>
+</body>
+</html>

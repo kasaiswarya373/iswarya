@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Using Image Spriting</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .head{
+            background: rgb(215, 209, 209);
+            text-align:center;
+            padding:10px;
+            color:rgb(0, 170, 255);
+        }
+        .container{
+            border: 2px solid grey;
+            display: flex;
+            justify-content: space-around;
+            height: calc(100vh - 60px);
+            
+
+        }
+        .nameList{
+            width: 25vw;
+            
+            border: 1px solid grey;
+            padding: 10px;
+            margin:10px;
+            border-radius: 10px;
+            display: inline-block;
+            background-color: #e5f3f9;
+            overflow: auto;
+
+        }
+        .nameList .nameItem{
+            border: 1px solid grey;
+            padding: 10px;
+            margin:10px;
+            border-radius: 10px;
+            background-color: #dfdfdf;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        .detailsList{
+            
+            width: 65vw;
+            border: 1px solid grey;
+            padding: 10px;
+            margin:10px;
+            border-radius: 10px;
+            overflow: auto;
+            background-color: #e5f3f9;
+           
+        }
+        .detailsList .detailsItem{
+            border: 1px solid grey;
+            padding: 20px;
+            margin:10px;
+            border-radius: 10px;
+            background-color: #dfdfdf;
+        }
+        .datailstext{
+            display: inline-block;
+            padding: 10px;
+            
+        }
+        .img{
+            border: 1px solid ;
+            border-radius: 5px;
+            height:120px;
+            width: 100px;
+            display: inline-block;
+        }
+        .img1{
+            background-image: url(student.png);
+            background-size: cover;
+        }
+        .img2{
+            background-image: url(student.png);
+            background-size: cover;
+            background-position: 0px -125px ;
+        }
+        .img3{
+            background-image: url(student.png);
+            background-size: cover;
+            background-position: 0px -245px ;
+        }
+        .img4{
+            background-image: url(student.png);
+            background-size: cover;
+            background-position: 0px -467px ;
+        }
+        .img5{
+            background-image: url(student.png);
+            background-size: cover;
+            background-position: 0px -585px ;
+        }
+        .img6{
+            background-image: url(student.png);
+            background-size: cover;
+            background-position: 0px -705px ;
+        }
+        .img7{
+            background-image: url(student.png);
+            background-size: cover;
+            background-position: 0px -825px ;
+        }
+        .img8{
+            background-image: url(student.png);
+            background-size: cover;
+            background-position: 0px -945px ;
+        }
+        .img9{
+            background-image: url(student.png);
+            background-size: cover;
+            background-position: 0px -1070px ;
+        }
+        .img10{
+            background-image: url(student.png);
+            background-size: cover;
+            background-position: 0px -125px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="head"><h1>Student Details</h1></div>
+    <div class="container">
+        <div class="nameList">
+            <a href="#jitendra"><div class="nameItem">1. Jitendra Gupta</div></a>
+            <a href="#suraj"><div class="nameItem">2. Suraj</div></a>
+            <a href="#ghan">  <div class="nameItem">3. Ghansyam Behara</div></a>
+            <a href="#meraj"> <div class="nameItem">4. Meraj</div></a> 
+            <a href="#nagaraju"><div class="nameItem">5. Nagaraju</div></a>
+            <a href="#pradeep"> <div class="nameItem">6. Pradeep Kumar</div></a>
+            <a href="#niharika"> <div class="nameItem">7. Niharika</div></a>
+            <a href="#swathi"> <div class="nameItem">8. Swathi Mishra</div></a>
+            <a href="#srinath"><div class="nameItem">9. Srinath varma</div></a> 
+            <a href="#hari"><div class="nameItem">10. Hari Reddy</div></a>
+        </div>
+        <div class="detailsList">
+            <div class="detailsItem">
+                <div class="img1 img" id="jitendra"></div>
+                <div class="datailstext">
+                            Name : Jitendra Gupta<br>
+                            Age : 22<br>
+                            Gender : Male<br>
+                            Address: Maharajganj, uttar-Pradesh
+                </div>
+        </div>
+            <div class="detailsItem" id="suraj">
+                <div class="img2 img"></div>
+                <div class="datailstext ">
+                            Name : Suraj<br>
+                            Age : 22<br>
+                            Gender : Male<br>
+                            Address: chartapati Sambhaji Nagar, Maharashtra
+                </div>
+            </div>
+            <div class="detailsItem" id="ghan">
+                <div class="img3 img"></div>
+                <div class="datailstext">
+                            Name : Ghansyam Behara<br>
+                            Age : 25<br>
+                            Gender : Male<br>
+                            Address: Udisa
+                </div>
+            </div>
+            <div class="detailsItem" id="meraj">
+                <div class="img4 img"></div>
+                <div class="datailstext">
+                            Name : Meraj<br>
+                            Age : 23<br>
+                            Gender : Male<br>
+                            Address: Prayagraj, uttar-Pradesh
+                </div>
+            </div>
+            <div class="detailsItem" id="nagaraju">
+                <div class="img5 img"></div>
+                <div class="datailstext">
+                            Name : Nagaraju<br>
+                            Age : 21<br>
+                            Gender : Male<br>
+                            Address: Hyderabad
+                </div>
+            </div>
+            <div class="detailsItem" id="pradeep">
+                <div class="img6 img"></div>
+                <div class="datailstext">
+                            Name : Pradeep Kumar<br>
+                            Age : 25<br>
+                            Gender : Male<br>
+                            Address: Ammerpet, Hyderabad
+                </div>
+            </div>
+            <div class="detailsItem" id="niharika">
+                <div class="img7 img"></div>
+                <div class="datailstext">
+                            Name : Niharika<br>
+                            Age : 20<br>
+                            Gender : Female<br>
+                            Address: Madhapur , Hyderabad
+                </div>
+            </div>
+            <div class="detailsItem" id="swathi">
+                <div class="img8 img"></div>
+                <div class="datailstext">
+                            Name : Swathi Mishra<br>
+                            Age : 20<br>
+                            Gender : Female<br>
+                            Address: Noida, uttar-Pradesh
+                </div>
+            </div>
+            <div class="detailsItem" id="srinath">
+                <div class="img9 img"></div>
+                <div class="datailstext">
+                            Name : Srinath varma<br>
+                            Age : 24<br>
+                            Gender : Male<br>
+                            Address: Vishakhapattam
+                </div>
+            </div>
+            <div class="detailsItem" id="hari">
+                <div class="img10 img"></div>
+                <div class="datailstext">
+                            Name : Hari Reddy<br>
+                            Age : 23<br>
+                            Gender : Male<br>
+                            Address: Gaya, Bihar
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Structure</title>
+    <style>
+        h1 {
+            color: green;
+            font-weight: bold;
+        }
+
+        p {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment_10</h1>
+    <p>
+        For Male : <hr>
+        -totalsal >= 200000
+          tax percent is 15 <br>
+        -totalsal >= 100000
+          tax percent  is 10 <br>
+        -totalsal is less than 100000 tax percent is 0
+    </p>
+    <p>
+        For female: <hr>
+        -totalsal >= 200000
+          tax percent is 10 <br>
+        -totalsal >= 100000
+          tax percent is 5 <br>
+        -totalsal is less than 100000 tax percent is 0
+
+    </p>
+    <script>
+        var empname = prompt("Name");
+        var Age = prompt("Age");
+        var Gender = prompt("Gender");
+        var Dep = prompt("Dep");
+        var basicSal = prompt("BasicSal");
+        var pf = prompt("percentage of pf " ) * basicSal / 100;
+        var hra = prompt("percentage of hra ") * basicSal / 100;
+        basicSal = parseInt(basicSal);
+        pf = parseInt(pf);
+        hra = parseInt(hra);
+        var totalsal = basicSal + pf + hra;
+
+       
+        
+
+
+
+        console.log("name " + empname);
+        console.log("age " + Age);
+        console.log("Gender " + Gender);
+        console.log("dep " + Dep);
+        console.log("basicSal " + basicSal);
+        console.log("pf " + pf);
+        console.log("hra " + hra);
+        console.log("totalsal " + totalsal);
+
+        if (Gender == "male" || Gender == "Male" || Gender == "MALE" ){
+         if (totalsal > 200000) {
+            console.log('15% Tax is applied: ' + 15 * totalsal / 100);
+
+        } else if (totalsal > 100000) {
+            console.log('10% Tax is applied: ' + 10 * totalsal / 100);
+        }  
+        } else {
+        if (totalsal > 200000) {
+            console.log('10% Tax is applied: ' + 10 * totalsal / 100);
+
+        } else if (totalsal > 100000) {
+            console.log('5% Tax is applied: ' + 5 * totalsal / 100);
+        } 
+        }
+    </script>
+
+
+    
+</body>
+</html>

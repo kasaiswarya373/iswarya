@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RecerciveObjIteration</title>
+    </head>
+    <body>
+        <script>
+            //nested objects creation
+            var gopusfamily={
+                parents:{
+                   pNames:['raj','lakshmi'],
+                   childs:{
+                    firstChild:{
+                        name:'geetha',
+                        husband:"siva",
+                        childs:['karthik','sarika']
+                    },
+                    SecondChild:{
+                        name:'tasi',
+                        husband:"harish",
+                        childs:['milky','megha']
+
+                    },
+                    thirdChild:{
+                        name:"sriram",
+                        wife:'khyathi',
+                        child:'hanush'
+
+                    },
+                    fourthChild:{
+                        name:'nami',
+                        wife:'siri'
+                    }
+
+                   }
+
+
+                }
+
+            }
+         var iterationObject=(data)=>{
+            for(tempkey in data){
+                if(data[tempkey]==Object&&!ArrayisArray(data[tempkey])){
+                    iterationObject=(data[tempkey]);
+                }else{
+                    console.log(data[tempkey])
+                }
+
+            }
+
+         }
+         iterationObject(gopusfamily);
+            
+
+        </script>
+    </body>
+</html>

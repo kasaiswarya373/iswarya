@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrome test</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        var no = 121, reverse = 0, remainder = 0;
+        var temp = no;
+
+        while (no >= 1) {
+
+            remainder = no % 10;
+            reverse = reverse * 10 + remainder;
+            no = parseInt(no / 10);
+        }
+
+        if (reverse == temp) {
+            document.write("given no is a palindrome Number.");
+        } else {
+            document.write("not a palindrome Number.");
+        }
+    </script>
+
+</body>
+
+</html>

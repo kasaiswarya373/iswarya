@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Image Spriting</title>
+                <style>
+                    h3
+                    {
+                        border:1px solid;
+                        text-align: center;
+                        padding: 10px;
+                        background-color: pink;
+                        font-weight: bold;
+                        font-size: 30px;
+                    }
+                    .firstBlock,.secondBlock
+                    {
+                        height:570px;
+                        border:1px solid;
+                        margin:5px 10px;
+                        padding:10px;
+                        float: left;
+                    }
+                    .firstBlock
+                    {
+                        width:20%;
+                        overflow:auto;
+                        background-color: #ccc;
+                                      
+                    }
+                
+                     .secondBlock{
+                        width:74%;
+                        overflow:auto;   
+                        background-color: #ccc;
+                    }  
+                    .container
+                    {
+                        width:1020px;
+                        height:180px;
+                        border:1px solid;
+                        margin: 10px;
+                        background-color: beige;
+                    }
+                    
+                    .stuImage,.stu1,.stu2,.stu3,.stu4,.stu5,.stu6,.stu7,.stu8,.stu9,.stu10
+                    {
+                        width: 150px;
+                        height: 150px;
+                        border: 1px solid;
+                        border-radius: 5px;
+                        background-image: url('Assets/imagespiriting.jpg');
+                        margin:15px;
+                        float:left;
+                    }
+                    .stu1{
+                        background-position: -62px -7px;
+                    }
+                    .stu2
+                    {
+                        background-position: -45px -445px;
+                    }
+                    .stu3
+                    {
+                        background-position: -25px -260px;
+                    }
+                    .stu4
+                    {
+                        background-position: -633px -298px;
+                    }
+                    .stu5
+                    {
+                        background-position: -335px -265px;
+                    }
+                    .stu6
+                    {
+                        background-position: -337px -15px;
+                    }
+                    .stu7
+                    {
+                        background-position: -868px -513px;
+                    }
+                    .stu8
+                    {
+                        background-position: -637px -39px;
+                    }
+                    .stu9
+                    {
+                        background-position: -1186px -1285px;
+                    }
+                    .stu10
+                    {
+                        background-position: -988px -34px;
+                    }
+                    .stuDetails
+                    {
+                        font-size: 20px;
+                        font-style: inherit;
+                        margin: 30px 15px 15px 15px;
+                        font-weight: bold;
+                        float: left;
+                    }
+                    .stuName div{
+
+                        text-align: center;
+                        cursor: pointer;
+                        font-size: 20px;
+                        width:170px;
+                        border:1px black solid;
+                        margin: 10px 15px;
+                        padding: 10px 20px;
+                        float: left;
+                        background-color: beige;
+                       
+                    }
+                    .stuName div:hover{
+                        background-color: pink;
+                    }
+                </style>
+    </head>
+    <body>
+        <h3>Student Details</h3>
+        <div class="firstBlock">
+            <div class="stuName">
+                <div>
+                    <a href="#stuDetails_1">1.Raghav</a>
+                </div>
+                <div>
+                    <a href="#stuDetails_2">2.Krish</a>
+                </div>
+                <div>
+                    <a href="#stuDetails_3">3.Teena</a>
+                </div>
+                <div>
+                    <a href="#stuDetails_4">4.Raj</a>
+                </div>
+                <div>
+                    <a href="#stuDetails_5">5.Rithu</a>
+                </div>
+                <div>
+                    <a href="#stuDetails_6">6.Meghana</a>
+                </div>
+                <div>
+                    <a href="#stuDetails_7">7.Prasad</a>
+                </div>
+                <div>
+                    <a href="#stuDetails_8">8.Rupa</a>
+                </div>
+                <div>
+                    <a href="#stuDetails_9">9.Suresh</a>
+                </div>
+                <div>
+                    <a href="#stuDetails_10">10.Aadya</a>
+                </div>
+                 
+            </div>
+
+        </div>
+        <div class="secondBlock">
+            <div class="container">
+                <div class="stuImage stu1"></div>
+                
+                <div class="stuDetails" id="stuDetails_1">
+                    <div>Name: Raghav</div>
+                    <div>Age: 22</div>
+                    <div>Branch: ECE</div>
+                    <div>Avg: 79</div>
+                    <div>Location:Hyderabad</div>
+                </div>
+                
+              
+            </div>
+            <div class="container">
+                <div class="stuImage stu2"></div> 
+                <div class="stuDetails" id="stuDetails_2">
+                    <div>Name: Krish</div>
+                    <div>Age: 21</div>
+                    <div>Branch: IT</div>
+                    <div>Avg: 75</div>
+                    <div>Location:Pune</div>
+                </div>    
+            </div>
+            <div class="container">     
+                <div class="stuImage stu3"></div>
+                <div class="stuDetails" id="stuDetails_3">
+                    <div>Name: Teena</div>
+                    <div>Age: 21</div>
+                    <div>Branch: EEE</div>
+                    <div>Avg: 76.4</div>
+                    <div>Location:Banglore</div>
+                </div>    
+            </div>  
+            <div class="container">         
+                <div class="stuImage stu4"></div>
+                <div class="stuDetails" id="stuDetails_4">
+                    <div>Name: Raj</div>
+                    <div>Age: 22</div>
+                    <div>Branch: ECE</div>
+                    <div>Avg: 80</div>
+                    <div>Location:Hyderabad</div>
+                </div>
+            </div>
+            <div class="container">        
+                <div class="stuImage stu5"></div>
+                <div class="stuDetails" id="stuDetails_5">
+                    <div>Name: Rithu</div>
+                    <div>Age: 21</div>
+                    <div>Branch: CSE</div>
+                    <div>Avg: 72</div>
+                    <div>Location:Chennai</div>
+                </div>    
+            </div>
+            <div class="container">    
+                <div class="stuImage stu6"></div>
+                <div class="stuDetails" id="stuDetails_6">
+                    <div>Name: Meghana</div>
+                    <div>Age: 22</div>
+                    <div>Branch: EEE</div>
+                    <div>Avg: 79</div>
+                    <div>Location:Pune</div>
+                </div>    
+            </div>
+            <div class="container">    
+                <div class="stuImage stu7"></div>
+                <div class="stuDetails" id="stuDetails_7">
+                    <div>Name: Prasad</div>
+                    <div>Age: 21</div>
+                    <div>Branch: Civil</div>
+                    <div>Avg: 70</div>
+                    <div>Location:Banglore</div>
+                </div>    
+            </div>
+            <div class="container">    
+                <div class="stuImage stu8"></div>
+                <div class="stuDetails" id="stuDetails_8">
+                    <div>Name: Rupa</div>
+                    <div>Age: 22</div>
+                    <div>Branch: IT</div>
+                    <div>Avg: 78.5</div>
+                    <div>Location:Chennai</div>
+                </div>    
+            </div>
+            <div class="container">    
+                <div class="stuImage stu9"></div>
+                <div class="stuDetails" id="stuDetails_9">
+                    <div>Name: Suresh</div>
+                    <div>Age: 22</div>
+                    <div>Branch: ECE</div>
+                    <div>Avg: 77.5</div>
+                    <div>Location:Mumbai</div>
+                </div>    
+            </div>
+            <div class="container">    
+                <div class="stuImage stu10"></div>
+                <div class="stuDetails" id="stuDetails_10">
+                    <div>Name: Aadya</div>
+                    <div>Age: 21</div>
+                    <div>Branch: Mechanical</div>
+                    <div>Avg: 79</div>
+                    <div>Location:Mumbai</div>
+                </div>    
+            </div>
+
+        
+        </div>
+
+        
+    </body>
+</html>

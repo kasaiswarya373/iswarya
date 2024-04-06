@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <SCript>
+            var name = "Raj";
+            var age = 20;
+            var gender = "Male";
+
+
+            /*var studentDetails = {
+                name: name, 
+                age: age, 
+                gender: gender
+            }; */
+
+            var studentDetails = {name, age, gender}
+
+
+
+            console.log(studentDetails);
+            var userdata = {
+                name: 'Raj',
+                displayInfo: () => {
+
+                },
+                showMsg() {
+
+                }
+            }
+
+            // var collegeDetails = ["AbcCollege", "Hyderabad", 50000];
+            // var cname = collegeDetails[0];
+            // var cloc = collegeDetails[1];
+            // var cPincodec = collegeDetails[2];
+            var cname, cloc, cPincodec;
+            [cname, cloc, cPincodec] = ["AbcCollege", "Hyderabad", 50000]
+
+            console.log(cname, cloc, cPincodec);
+
+            var sem1Marks = [20, 30, 40];
+            var sem2Marks = [23, 33, 43];
+            var sem3Marks = [27, 37, 47];
+
+
+            var allMarks = [100, 120,[ ...sem1Marks], ...sem2Marks, ...sem3Marks];
+            console.log(allMarks)
+        </SCript>
+    </body>
+</html>

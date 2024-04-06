@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localstorage
+
+    </title>
+    <style>
+        .mainblock{
+            border: 1px solid;
+            width: 500px;
+            margin: 10px auto;
+            height: 400px;
+            padding: 50px;
+        }
+        li{
+            list-style: none;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        #button,#savebutton,#showbutton{
+            border-radius: 10px 10px;
+            
+        }
+        #button{
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+        }
+        #savebutton{
+            background-color: rgb(255, 0, 17);
+            color: white;
+            font-size: 20px;
+        }
+        #showbutton{
+            background-color: rgb(10, 158, 7);
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="mainblock">
+        <li>Username<input type="text" id="username"></li>
+        <li>Password<input type="password" id="password"></li>
+        <li><input type="checkbox" name="autofill credintials" id="auto" onchange ="filldata(event)" >fill credentials</li>
+        <li><input type="button" value="saveusercredentials" onclick="savecredentials()" id="savebutton">
+        <input type="button" value="showCredintials" onclick="showCredintials()" id="showbutton">
+        <input type="button" value="Login" id="button"></li>
+     
+    </ul>
+    <script>
+        var filldata = (event) => {
+           if(event.target.checked == true){
+           var n =  localStorage.getItem('#username');
+           var p = localStorage.getItem('#password');
+           console.log('check box checked');
+           document.querySelector('#username').value = n;
+           document.querySelector('#password').value = p;
+        }
+    else{
+        document.querySelector('#username').value = ' ';
+           document.querySelector('#password').value = ''; 
+        }
+    }
+        var showCredintials = () => {
+          var n =  localStorage.getItem('#username');
+           var p = localStorage.getItem('#password');
+           alert('username '+ n +',  password '+p);
+        }
+        var savecredentials = () =>{
+            var name =  document.querySelector('#username').value;
+            //document.querySelector('#username').value = '';
+            var password = document.querySelector('#password').value;
+            //document.querySelector('#password').value = '';
+            localStorage.setItem('#username',name);
+            localStorage.setItem('#password',password);
+            alert('your credentials are saved');
+        }
+        
+    </script>
+</body>
+</html>

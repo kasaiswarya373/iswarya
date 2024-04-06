@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmstrongNumber</title>
+</head>
+<body>
+    <script>
+        var sumOfNumber = 0;
+        var userInput = prompt('enter a number');
+        var inputLength = userInput.length;
+        userInput = parseInt(userInput);
+        var referenceNumber = userInput;
+        console.log(referenceNumber);
+        while(userInput > 0){
+            var remainderOfInput = userInput % 10;
+            var result = Math.pow(remainderOfInput,inputLength)
+            sumOfNumber = result + sumOfNumber;
+            userInput = userInput / 10;
+            userInput = parseInt(userInput);
+        }
+        if (sumOfNumber == referenceNumber){
+            console.log( referenceNumber + " " + "is a Amstrong Number")
+        }else{
+            console.log( referenceNumber +" "+"is not a Amstrong Number")
+
+        }
+   </script>
+</body>
+</html>

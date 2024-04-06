@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Employee Image Spriting</title>
+    <style>
+      * {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: 300;
+        background-color: #0a0d10;
+        color: #fff;
+      }
+      h3 {
+        height: 30px;
+        border: 1px solid;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+      }
+      .leftBlock {
+        width: 20%;
+        height: 300px;
+        line-height: 35px;
+      }
+      .rightBlock {
+        width: 79%;
+        /* border: 1px solid; */
+        float: right;
+        overflow: auto;
+        border-left-style: solid;
+        border-left-width: 1px;
+
+        margin-top: -302px;
+      }
+      .emp_name {
+        border: 1px solid;
+        width: 119px;
+        height: 50px;
+        margin: 10px;
+      }
+      .block1,
+      .block2,
+      .block3,
+      .block4,
+      .block5,
+      .block6,
+      .block7,
+      .block8,
+      .block9,
+      .block10 {
+        height: 200px;
+        width: 188px;
+        border: 1px solid;
+        margin: 15px;
+      }
+      .block_img {
+        background-image: url("emp_img/emp_spriting_imgs.png");
+      }
+      .block_img2 {
+        background-image: url("emp_img/emp_spriting_imgs.png");
+        background-position: -306px -3px;
+      }
+
+      .block_img3 {
+        background-image: url("emp_img/emp_spriting_imgs.png");
+        background-position: -494px -3px;
+      }
+      .block_img4 {
+        background-image: url("emp_img/emp_spriting_imgs.png");
+        background-position: -679px -3px;
+      }
+      .block_img5 {
+        background-image: url("emp_img/emp_spriting_imgs.png");
+        background-position: 2px -200px;
+      }
+      .block_img6 {
+        background-image: url("emp_img/emp_spriting_imgs.png");
+        background-position: -213px -200px;
+      }
+      .block_img7 {
+        background-image: url("emp_img/emp_spriting_imgs.png");
+        background-position: -488px -214px;
+      }
+      .block_img8 {
+        background-image: url("emp_img/emp_spriting_imgs.png");
+        background-position: -711px -226px;
+      }
+      .block_img9 {
+        background-image: url("emp_img/emp_spriting_imgs.png");
+        background-position: 1px -421px;
+      }
+      .block_img10 {
+        background-image: url("emp_img/emp_spriting_imgs.png");
+        background-position: -219px -426px;
+      }
+      ol > li > div {
+        padding: 5px;
+      }
+      .emp_names {
+        height: 300px;
+        width: 300px;
+        float: right;
+      }
+      .imges {
+        float: left;
+      }
+      .emp_name-1 {
+        height: 200px;
+        margin: 15px;
+        margin-left: -463px;
+        line-height: 35px;
+      }
+      footer > div {
+        border: 1px solid;
+        text-align: center;
+        height: 25px;
+        margin-top: 118rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Employee Detail</h3>
+    <div class="leftBlock">
+      <ol>
+        <li><div>Ashish</div></li>
+        <li><div>Rajesh</div></li>
+        <li><div>Teena</div></li>
+        <li><div>Priya</div></li>
+        <li><div>Kuldeep</div></li>
+        <li><div>Vipin</div></li>
+        <li><div>Payal</div></li>
+        <li><div>Piyush</div></li>
+        <li><div>Vanktesh</div></li>
+        <li><a href="#emp10">Seena</a></li>
+      </ol>
+    </div>
+    <div class="rightBlock">
+      <div class="imges">
+        <div class="block1 block_img"></div>
+        <div class="block2 block_img2"></div>
+        <div class="block3 block_img3"></div>
+        <div class="block4 block_img4"></div>
+        <div class="block5 block_img5"></div>
+        <div class="block6 block_img6"></div>
+        <div class="block7 block_img7"></div>
+        <div class="block8 block_img8"></div>
+        <div class="block9 block_img9"></div>
+        <div class="block10 block_img10"></div>
+      </div>
+      <div class="emp_names">
+        <div class="emp_name-1">
+          <div>Name: Ashish</div>
+          <div>Age : 28</div>
+          <div>Gender : Male</div>
+          <div>Department : IT</div>
+        </div>
+        <div class="emp_name-1">
+          <div>Name: Ashish</div>
+          <div>Age : 28</div>
+          <div>Gender : Male</div>
+          <div>Department : IT</div>
+        </div>
+        <div class="emp_name-1">
+          <div>Name: Ashish</div>
+          <div>Age : 28</div>
+          <div>Gender : Male</div>
+          <div>Department : IT</div>
+        </div>
+        <div class="emp_name-1">
+          <div>Name: Ashish</div>
+          <div>Age : 28</div>
+          <div>Gender : Male</div>
+          <div>Department : IT</div>
+        </div>
+        <div class="emp_name-1">
+          <div>Name: Ashish</div>
+          <div>Age : 28</div>
+          <div>Gender : Male</div>
+          <div>Department : IT</div>
+        </div>
+        <div class="emp_name-1">
+          <div>Name: Ashish</div>
+          <div>Age : 28</div>
+          <div>Gender : Male</div>
+          <div>Department : IT</div>
+        </div>
+        <div class="emp_name-1">
+          <div>Name: Ashish</div>
+          <div>Age : 28</div>
+          <div>Gender : Male</div>
+          <div>Department : IT</div>
+        </div>
+        <div class="emp_name-1">
+          <div>Name: Ashish</div>
+          <div>Age : 28</div>
+          <div>Gender : Male</div>
+          <div>Department : IT</div>
+        </div>
+        <div class="emp_name-1">
+          <div>Name: Ashish</div>
+          <div>Age : 28</div>
+          <div>Gender : Male</div>
+          <div>Department : IT</div>
+        </div>
+        <div class="emp_name-1" id="emp10">
+          <div>Name: Ashish</div>
+          <div>Age : 28</div>
+          <div>Gender : Male</div>
+          <div>Department : IT</div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>© Copyright 2023 Company Name. All rights reserved.</div>
+    </footer>
+  </body>
+</html>

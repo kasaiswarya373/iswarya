@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mean and Median Values of Array</title>
+</head>
+<body>
+    Program to find mean and median values of array
+    <script>
+        var readingValues = () =>
+        {
+            var arrayValues = [];
+            var size = parseInt(prompt(`Enter size of array`));
+            for(var i = 0;i < size;i++)
+            {
+                arrayValues[i] = parseInt(prompt(`Enter ${i+1} value`));
+            }
+            return arrayValues;
+        }
+
+        var meanCal = (arrayVals) =>
+        {
+            var meanVal,sum = 0;
+            var n = arrayVals.length;
+            for(var i = 0;i < n;i++)
+            {
+                sum += arrayVals[i];
+                meanVal = sum / n;
+            }
+            return meanVal;
+        }
+
+        var medianCal = (arrayVals) =>
+        {
+            var n = arrayVals.length; var median,index;
+            if(n % 2 == 0)
+            {
+                index = (n / 2) + (n / 2 + 1) / 2;
+                
+            }
+            else
+            {
+                index = (n + 1) / 2;
+                
+            }
+            median = arrayVals[index-1];
+            return median;
+        }
+
+        var printingVals = () =>
+        {
+        var arrayVals = readingValues();
+        console.log(`Given Array ${arrayVals}`);
+        var meanNum = meanCal(arrayVals);
+        console.log(`Mean Value is ${meanNum}`);
+        var medianNum = medianCal(arrayVals);
+        console.log(`Median Value is ${medianNum}`);
+        }
+        printingVals();
+    </script> 
+</body>
+</html>

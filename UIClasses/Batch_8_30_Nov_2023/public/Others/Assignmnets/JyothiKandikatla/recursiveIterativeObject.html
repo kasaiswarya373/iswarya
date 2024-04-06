@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>recursiveIterativeObject</title>
+    </head>
+    <body>
+        <script>
+            var mydetails = {
+                profile : "D:\UiFullStackTraing\GitHubCode\UIClasses\Batch_8_30_November_2023\public\Others\Assignmnets\JyothiKandikatla\images\1613574.jpg",
+                name : 'joo',
+                age : 23,
+                gender : 'Female',
+                perminantAdd :{
+                    Hno : '2/7-34p',
+                    vill : 'Mayapur',
+                    mondal : 'wwwww',
+                    distict : 'bbbbb',
+                    pincode : 206320,
+                    landmark :'near shivalayam'
+                },
+                perminantAdd :{
+                    Hno : '1-2-34p',
+                    village : 'vidhypur',
+                    mondal : 'kammalapur',
+                    distict : 'warangal',
+                    pincode : 506322,
+                    landmark :'near kids hospital'
+                },
+                phoneNo : ['123456789','215478963'],
+                mailid : {
+                    persaonal : ['abc@gamil.com','pqr2@gmail.com'],
+                    office : 'johcl@gmail.com'
+                },
+                mstatus : 'married',
+                socialmedia : {
+                    fb : 'abc',
+                    youtube: 'xyz2'
+                }
+            }
+            var recursiveIterativeObject = (data) =>{//calling function
+                for(var tempkey in data){
+                    console.log(data[tempkey]);
+                }
+            }
+            recursiveIterativeObject(mydetails);//called function ,mydetails is actual params
+        </script>
+    </body>
+</html>

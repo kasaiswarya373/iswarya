@@ -1,0 +1,110 @@
+
+body {
+    font-family: "poppins";
+}
+#main-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+}
+.left-container {
+    width: 60%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: -3px 13px 17px #adadff;
+    border-radius: 8px;
+}
+.left-container img {
+    width: 60%;
+    border: 2px solid; 
+    padding: 40px;;
+    border-radius: 10px;
+    border: 0;
+    background-color: white;
+    box-shadow: inset -5px -5px 17px rgb(242, 80, 251);
+}
+
+.small-images img {
+    display: flex;
+    flex-direction: column;
+}
+.box img {
+    width: 60px;
+    margin: 15px 0px;
+    background-color: white;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: -2px 4px 7px ;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.box img:hover {
+    transform: scale(1.06);
+}
+
+.right-container {
+    margin: 35px;
+    padding:50px;
+    width: 50%;
+}
+.right-container select {
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 5px 5px;
+}
+.right-container input {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    width: 35px;
+    height: 20px;
+    margin-right: 25px;
+}
+.right-container button {
+    padding: 6px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+    border-radius: 7px;
+    border-color: orangered;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(255, 222, 162);
+    transition: 0.3s ease;
+}
+
+.right-container button:hover {
+    background-color: orange;
+    color: black;
+    transform: scale(1.07);
+    
+}
+.right-container h3 {
+    margin-top: 30px;
+    padding: 0px;
+}
+.right-container p {
+    font-size: 15px;
+}
+.right-container span {
+    color: rgb(109, 182, 0);
+    font-weight: 600;
+    animation: free 0.6s infinite;
+
+}
+@keyframes free {
+    0% {
+        color: rgb(230, 19, 19);
+    }
+    100% {
+        color: rgb(39, 203, 18);
+    }
+
+}

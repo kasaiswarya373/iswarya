@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .block {
+                border: 1px solid;
+                font-weight: bold;
+                font-size: 20px;
+                background-color: green;
+                
+            }
+
+            .block:hover {
+                text-decoration: underline;
+                color: #fff;
+            }
+            a:active {
+                background-color: yellow;
+            }
+            a:focus {
+                background-color: aqua;
+                font-size: 20px;
+                text-decoration: none;
+            }
+            div:empty {
+                border: 1px solid;
+                margin: 10px;
+            }
+            .studentNames div:first-child {
+                font-size: 20px;
+                color: green;
+                text-decoration: underline;
+            }
+            .studentNames div:last-child {
+                font-size: 20px;
+                color: goldenrod;
+                text-decoration: underline;
+            }
+            .studentNames div:nth-child(3) {
+                font-size: 20px;
+                color: goldenrod;
+                text-decoration: underline;
+            }
+            /* span:only-child {
+                font-size: 30px;
+                color: green;
+            } */
+            span:first-of-type {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="block">
+            Content
+        </div>
+        <a href="http://www.google.com">Visit google page</a>
+        <a href="http://www.amazon.com">Visit Amazon page</a>
+        <a href="http://www.shopclues.com">Visit Shopclues page</a>
+        <a href="http://www.ebay.com">Visit ebay page</a>
+        <a href="http://www.gmail.com">Visit gmail page</a>
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div></div>
+        <div></div>
+        <div>Item 4</div>
+<br><br><br>
+        <div class="studentNames">
+            <div>Meena</div>
+            <div >Suresh</div>
+            
+            <div>Teena</div>
+            
+            
+            <div>David</div>
+            <div>Krish</div>
+        </div>
+
+        <p>
+            <span>Hello</span>
+            <span>test</span>
+        </p>
+        <div>
+            <p>TEST</p>
+            <span>Item 1</span>
+            <span>Item 2</span>
+        </div>
+        <div>
+            <span>Item 4</span>
+        </div>
+        <p>
+            <span>Item 5</span>
+        </p>
+    </body>
+</html>

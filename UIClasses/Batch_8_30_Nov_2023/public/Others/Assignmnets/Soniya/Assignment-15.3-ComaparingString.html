@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparing Strings</title>
+</head>
+<body>
+    Program to compare two Strings
+    <script>
+        var readingStrings = () =>
+        {
+            var string1 = prompt(`Enter first string`).toLowerCase;
+            var string2 = prompt(`Enter second string`).toLowerCase;
+            
+            comparingStrings(string1,string2);
+        }
+
+        var comparingStrings = (str1,str2) =>
+        {
+            if(str1 == str2)
+            {
+                console.log(`Given strings are same`);
+            }
+            else
+            {
+                console.log(`Given strings are not same`);
+            }
+        }
+
+        readingStrings();
+        
+    </script>
+</body>
+</html>

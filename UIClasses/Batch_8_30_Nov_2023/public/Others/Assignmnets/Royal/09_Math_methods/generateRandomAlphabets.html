@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate random char value</title>
+</head>
+<body>
+    <script>
+        // var asciiValue = 97;
+        // console.log(String.fromCharCode(asciiValue));
+
+        //Lower char 97 - 122
+        var minRange = 97;
+        var maxRange = 122;
+
+        randomValue = Math.round(Math.random() * (maxRange - minRange) + minRange)
+
+        console.log('Random value between 97 to 122 is : '+randomValue);
+        console.log('ASCII value for generated  num is : '+String.fromCharCode(randomValue));
+        
+    </script>
+    
+</body>
+</html>

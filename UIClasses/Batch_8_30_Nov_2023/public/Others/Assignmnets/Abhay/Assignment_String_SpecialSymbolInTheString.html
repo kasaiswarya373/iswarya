@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function findSpecialSymbols(arr) {
+            var specialSymbols = /[!@#$%^&*(),.?":{}|<>]/;
+            var foundSymbols = [];
+
+            for (var i = 0; i < arr.length; i++) {
+                var str = arr[i];
+                var symbolsInString = str.match(specialSymbols);
+
+                if (symbolsInString) {
+                    foundSymbols.push(...symbolsInString);
+                }
+            }
+
+            return foundSymbols;
+        }
+
+        var strings = ["Hello!", "How?", "Are", "You?", "I'm", "Good."];
+        var specialSymbolsFound = findSpecialSymbols(strings);
+
+        console.log("Special symbols found:", specialSymbolsFound);
+    </script>
+</body>
+
+</html>

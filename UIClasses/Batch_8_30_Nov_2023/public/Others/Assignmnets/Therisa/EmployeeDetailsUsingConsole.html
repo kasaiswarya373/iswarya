@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predefined Method Console</title>
+</head>
+<body>
+    <h4>
+        Write a program to work with employee details like EmpName, EmpGender, Empage, Empdepartment,
+        EmpBasicSalary. 
+    </h4>
+    <h4>
+        Calculate total salary of the employee (total salary is sum of pf,hra & basicsalary)
+        pf is 14% of bs , hra is 25% of bs.
+    </h4>
+    <script>
+        var EmpName = 'Therisa';
+        var EmpGender = 'Female';
+        var EmpAge = 23;
+        var Empdepartment = 'IT';
+        var EmpBasicSalary = 800000;
+
+        var pf = (14*EmpBasicSalary)/100;
+        var hra = (25*EmpBasicSalary)/100;
+        var total = pf + hra + EmpBasicSalary;
+
+        console.log("Employee Name : " +EmpName);
+        console.log("Employee Gender : " +EmpGender);
+        console.log("Employee Age : " +EmpAge);
+        console.log("Employee Department : " +Empdepartment);
+        console.log("Employee Basic Salary : " +EmpBasicSalary);
+        console.log("Employee PF : " +pf);
+        console.log("Employee HRA : " +hra);
+        console.log("Employee Total : " +total);
+    </script>
+</body>
+</html>

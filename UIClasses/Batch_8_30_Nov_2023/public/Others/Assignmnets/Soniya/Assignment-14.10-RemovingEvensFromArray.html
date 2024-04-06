@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resmoving Evens From Array</title>
+</head>
+<body>
+    program to remove even numbers from Array
+    <script>
+        var readingValues = () =>
+        {
+            var arrayValues = [];
+            var size = parseInt(prompt(`Enter size of Array`));
+            for(var i=0;i < size;i++)
+            {
+                arrayValues[i] = parseInt(prompt(`Enter ${i+1} value`));
+            }
+            console.log(`Actual array : ${arrayValues}`);
+            return arrayValues;
+        }
+
+        var removingEvenNums = (arrayVals) =>
+        {
+            var evenArray = [];
+            var noEvenArray = [];
+            var k = 0,l = 0;
+            for(var i = 0;i < arrayVals.length;i++)
+            {
+                if(arrayVals[i] % 2 == 0)
+                {
+                    evenArray[k] = arrayVals[i]; 
+                    k += 1;
+                }
+                else
+                {
+                    noEvenArray[l] = arrayVals[i];
+                    l += 1;
+                }
+            }
+            console.log(`Evens array :\n ${evenArray}`);
+            return noEvenArray;
+        }
+
+        var printingArray = () =>
+        { 
+            var arrayVals = readingValues();
+            var noEvens = removingEvenNums(arrayVals);
+            console.log(`Evens less array : \n ${noEvens}`);
+        }
+
+        printingArray();
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Of Even Numbers And Sum Of Odd Numbers Using Arrays and Functions</title>
+</head>
+
+<body>
+    <script>
+
+        var readEvenValues = () => {
+            var even = [];
+            var n = prompt("Enter the number of even values:");
+            n = parseInt(n);
+
+            for (var i = 0; i < n; i++) {
+                even[i] = prompt(`Enter the ${i + 1} position`);
+                even[i] = parseInt(even[i]);
+                console.log(`The ${i + 1} value is : ${even[i]}`);
+            }
+            identifyEvenValuesSum(even);
+        }
+
+        var identifyEvenValuesSum = (even) => {
+            var sum = 0;
+            for (var i = 0; i < even.length; i++) {
+                if (even[i] % 2 == 0) {
+                    sum += even[i];
+                }
+            }
+            console.log("The sum Of even numbers is:" + sum);
+        }
+        readEvenValues();
+
+        var readOddValues = () => {
+            var odd = [];
+            var number = prompt("Enter the number of odd values:");
+            number = parseInt(number);
+
+            for (var j = 0; j < number; j++) {
+                odd[j] = prompt(`Enter the ${j + 1} position`);
+                odd[j] = parseInt(odd[j]);
+                console.log(`The ${j + 1} value is : ${odd[j]}`);
+            }
+            identifyOddValuesSum(odd);
+        }
+
+        var identifyOddValuesSum = (odd) => {
+            var add = 0;
+            for (var j = 0; j < odd.length; j++) {
+                if (odd[j] % 2 == 1) {
+                    add += odd[j];
+                }
+            }
+            console.log("The sum Of Odd numbers is:" + add);
+        }
+        readOddValues();
+    </script>
+
+</body>
+
+</html>

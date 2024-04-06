@@ -1,0 +1,23 @@
+{
+
+    "productsinfo" : [
+    {
+        "img" : " ../MultipleProductDetails/images/tv.jpeg",
+        "name" : "samsung 24",
+        "manufacture" : "samsung",
+        "price": 20000
+    },
+    {
+        "img" : "../MultipleProductDetails/images/laptop.avif",
+        "name" : "sony x10",
+        "manufacture" : "samsung",
+        "price": 30000
+    },
+    {
+        "img" : "../MultipleProductDetails/images/mobile.webp",
+        "name" : "vivo y56",
+        "manufacture" : "samsung",
+        "price": 40000
+    }
+]
+}

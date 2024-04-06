@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Array filter method
+    </title>
+</head>
+<body>
+  <script>
+    var data = [34, 46, 68,79, 12, 41 , 99, 9, 76, 44];
+
+   /* var temp = [];
+    for (var i = 0; i < data.length; i++) {
+        if (data[i] % 2 == 0) {
+           temp.push(data[i]);
+        }
+    }*/
+
+    var temp = data.filter((value) => {
+        if (value % 2 != 0) {
+            return value;
+        }
+    });
+    console.log(temp);
+
+
+    var booknames = ["abc book", "ab test book", "pqr book", "hrx book", "pqs book", "hrv book","htb book"];
+
+    var userchar = 'h';
+
+    var result = booknames.filter((value) => {
+          if (value.substring(0 , userchar.length) == userchar) {
+            return true;
+          }
+    });
+    console.log(result);
+  </script>
+</body>
+</html>

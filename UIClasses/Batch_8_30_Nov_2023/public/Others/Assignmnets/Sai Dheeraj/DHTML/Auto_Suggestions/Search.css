@@ -1,0 +1,45 @@
+.container{
+    border: none;
+    width: 470px;
+    font-size: 21px;
+    padding: 11px;
+    position: absolute;
+    left: 420px;
+    top: 180px;
+}
+input{
+    font-size: 16px;
+    width: 426px;
+    height: 28px;
+    margin: 16px; 
+    background-color: rgb(233, 252, 250);
+}
+label{
+    position: relative;
+    left:15px;
+    color:rgb(2, 2, 0);
+    font-size: 30px;
+    font-weight: bold;
+}
+body{
+    background-color: lightsalmon;
+}
+ul{
+    list-style-type: none;
+    position: absolute;
+    left: 450px;
+    top: 246px;
+    border: 2px solid rgb(30, 30, 125);;
+    background-color: rgb(221, 243, 162);
+    font-size: 19px;
+    width: 386px;   
+    display:none; 
+    text-align: left;
+}
+li:hover{
+    background-color: rgb(151, 156, 3);
+    width: 100%;
+}
+.myList{
+    padding-left: 0%;
+}

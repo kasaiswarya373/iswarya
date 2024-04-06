@@ -1,0 +1,47 @@
+#movingContainer
+{
+    width: 158px;
+    height: 155px;
+    background-color: red;
+    position: relative;
+    animation: mymoves 10s infinite ;
+}
+
+@keyframes mymoves
+ {
+    0% 
+    {
+        top : 0px;
+        left:0px;
+        background-color:blue;
+    }
+    25%
+    {
+        top:0px;
+        left:1320px;
+        border-radius: 25%;
+        background-color: yellow;
+    }
+    50%
+    {
+        top:570px;
+        left:1320px;
+        border-radius : 50%; 
+        background-color: greenyellow;
+    }
+    75%
+    {   
+        top:570px;
+        left:0px;
+        border-radius : 75%; 
+        background-color: rgb(230, 28, 149);
+    }
+    100%
+    {
+        top:0px;
+        left:0px;
+        border-radius: 100px;
+        background-color: cyan;
+    } 
+}
+

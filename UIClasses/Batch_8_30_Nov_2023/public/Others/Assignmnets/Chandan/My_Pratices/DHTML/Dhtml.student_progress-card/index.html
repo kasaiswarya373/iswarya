@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <h3>
+        Student progress card generator
+    </h3>
+    <ul>
+        <li class="title">
+            student details
+
+        </li>
+        <li>
+           <label>Student name: </label>
+            <input type="text" id="sname">
+        </li>
+        <li>
+           <label>Age: </label>
+            <input type="text" id="sage">
+        </li>
+        <li>
+            <label>Gender: </label>
+              male<input type="radio" name="gender" value="male" checked>
+              female<input type="radio" name="Gender" value="female">
+
+
+        </li>
+        <li>
+            <label for="">class:</label>
+            <select name="" id="studentclass">
+                <option value="class I">class I</option>
+                <option value="class II">class II</option>
+                <option value="class III"selected>class III</option>
+                <option value="class IV">class IV</option>
+                <option value="class V">class V</option>
+            </select>
+        </li>
+        <li class="marks">
+            <label for="">
+                marks
+            </label>
+            <input type="text" id="m1">
+            <input type="text" id="m2">
+            <input type="text" id="m3">
+            <input type="text" id="m4">
+            <input type="text" id="m5">
+        </li>
+        <li>
+            <input type="button" value="generate progress card" onclick="generateprogresscard()">
+        </li>
+    </ul>
+
+    <ul id="displayBlock">
+        <li> 
+            student Name: <span id="d_name"></span>
+        </li>
+        <li>
+            student Age: <span id="d_age"></span>
+        </li>
+        <li>
+             Gender: <span id="d_gender"></span>
+        </li>
+        <li>
+            Total: <span id="d_total"></span>
+        </li>
+        <li>
+            Avg: <span id="d_avg"></span>
+        </li>
+            Grade: <span id="d_grade"></span>
+    </ul>
+
+
+</body>
+</html>

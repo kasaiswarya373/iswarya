@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+          var empName = prompt("Enter employ name");
+          var dep = prompt("Enter employe department");
+          var basicsalary = prompt("Enter Basic salary");
+          basicsalary = parseInt(basicsalary);
+          var pf = (basicsalary / 100) * 14;
+          pf = parseInt(pf);
+          var hra = (basicsalary / 100) * 25;
+          hra = parseInt(hra);
+          var totalsalary = basicsalary + pf + hra;
+          var tax = totalsalary / 100 * 18;
+          tax = parseInt(tax);
+          console.log("Name " + empName);
+          console.log("basicsalary " + basicsalary);
+          console.log("pf " + pf );
+          console.log("hra " + hra);
+          console.log("totalsalary " + totalsalary);
+          console.log("Tax is " + tax);
+
+        </script>
+    </body>
+</html>

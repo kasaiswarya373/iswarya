@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .navbar {
+            width: 100%;
+            background-color: black;
+        }
+        .image {
+            width: 100px;
+            height: 50px;
+            float: left;
+        }
+        .nav {
+            float: right;
+        }
+        .block {
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            float: right;
+            color: white;
+            
+        }
+        .block:hover {
+            background-color: aqua;
+            font-weight: bold;
+            color: black;
+        }
+        .content {
+            clear: both;
+            margin-top: 10px;
+            margin: 50px;
+            width: 400px;
+            height: 400px;
+            border: 3px solid white;
+            float: right;
+            border-radius: 50%;
+            position: relative;
+            background-color: aqua;
+        }
+        .imgblock {
+           position: absolute;
+           width: 300px;
+           height: 300px;
+           border: 3px solid white;
+           border-radius: 50%;
+           top: 50%;
+   left: 50%;
+   margin: -150px 0px 0px -150px;
+        }
+        .heading {
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            float: left;
+            position: relative;
+            top: 26%;
+            left: -27%;
+            bottom: 50%;
+            width: 500px;
+            height: 300px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .contentblock {
+            float: left;
+            position: absolute;
+            top: 43%;
+            left: 20%;
+        }
+        .mainheading:hover {
+            background-color: aqua;
+            font-weight: bold;
+            color: black;
+        }
+        .mainheading {
+            display: inline;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <div><img class="image" src="https://as2.ftcdn.net/v2/jpg/01/43/00/99/1000_F_143009916_HMJKrrYDQYKTNRSwSlrUZadAwtC10t78.jpg" alt=""></div>
+        </div>
+        <div class="nav">
+            <div class="block">Contact Us</div>
+            <div class="block">Projects</div>
+            <div class="block">About</div>
+            <div class="block">Home</div>
+        </div>
+    </div>
+    <div class="content">
+        <div><img class="imgblock" src="https://t3.ftcdn.net/jpg/06/36/69/86/360_F_636698674_DroChEj5eWmZiaZOSDMnj8hcDqqw74Fp.jpg" alt=""></div>
+    </div>
+    <div class="contentblock">
+        <div class="heading"><div class="mainheading">Hi!..I am Niharika</div>. I am a Full-Stack Developer
+            Currently learning new technologies to build more interactive and beautiful Web-Designs.
+        </div>
+    </div>
+</body>
+</html>

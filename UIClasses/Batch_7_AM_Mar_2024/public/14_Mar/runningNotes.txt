@@ -1,0 +1,48 @@
+Video links: 
+Day-1 https://youtu.be/27V9XTnEra8
+Day-2 https://youtu.be/SDyd5vNexXw
+Day-3 https://youtu.be/IdIGMCe6l7g
+Day-4 https://youtu.be/coHHUZm8aZw
+Day-5 https://youtu.be/CNTM8t7LFrE
+Day-6 https://youtu.be/g9DrM_QcRvE
+
+
+Camlecase -> userdetailsinfo  
+            user-details-info
+            user_details_info
+            userDetailsInfo - Mostrly recommended
+
+
+
+HTML Attributes:
+
+
+    p 
+
+        id attribute 
+        name attribute 
+        style -> 
+            style="cssporpname:value;cssporpname2:value2" 
+
+            style="color:green;background-color:yello;font-size:20px;text-align:center;"
+
+
+    Syntax:
+        <tagname atttname="value" attrname2="value2" .. ... .. >
+            .... 
+            ......
+            ........
+        </tagname>
+    
+    eg: 
+        <p id="testContent" name="sample" class="test" sample='new'>
+            ...
+        </p>
+
+Diffrent ways we can add colors:
+
+    1. Direct color name - red, green, violet -> color: red; 
+    2. RGB  - rgb(red, green, blue) -> color: rgb(20, 30, 60) -> 0 - 255
+    3. Hashcode - color: #_ _ _ _ _ _
+
+    4. HSL 

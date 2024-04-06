@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SumOfEven</title>
+</head>
+<body>
+    <script>
+
+        // Even Numbers
+        var x = prompt("Enter min NO");
+        x = parseInt(x);
+        var y = prompt("Enter mix NO");
+        y = parseInt(y);
+        for (s=x;s<=y;s++){
+            if (s%2==0){
+               console.log(s)
+            }
+        }
+        // sum of Even Numbers
+        var sum = 0;
+        var a = prompt("Enter min NO");
+        a = parseInt(a);
+        var b = prompt("Enter mix NO");
+        b = parseInt(b);
+        for (x=a;x<=b;x++){
+            if (x%2==0){
+                sum = sum + x;
+            }
+        }
+        console.log("sum is " + sum)
+    </script>
+    
+</body>
+</html>

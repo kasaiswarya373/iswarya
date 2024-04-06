@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display random number</title>
+</head>
+<body>
+    <h2>WAP To display random number</h2>
+
+    <script>
+        let generateRandomNum = () =>{
+
+            let number;
+            let RandomNum = randomNum(number)
+            console.log(RandomNum);
+        }
+
+        let randomNum = (number)=>{
+            let num = Math.floor((Math.random() * 100) + 1);
+            return num
+        }
+
+        generateRandomNum();
+    </script>
+</body>
+</html>

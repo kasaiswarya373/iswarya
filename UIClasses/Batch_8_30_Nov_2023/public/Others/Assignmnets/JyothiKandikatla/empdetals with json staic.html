@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empdetalis with json static</title>
+</head>
+<body>
+    <script>
+        var empDetails = {
+            name : 'Jyothi',
+             age :32, 
+             gender :'Female', 
+             deparment :'It', 
+             basicsal :100000, 
+             pf : 15, 
+             hra: 20,
+             pfamount : 0,
+             hraamount : 0,
+             total : 0,
+             tax : 0
+        }
+        pfamount = (empDetails.basicsal * empDetails.pf) / 100;
+        hraamount = (empDetails.basicsal * empDetails.hra) / 100;
+        empDetails.total = pfamount + hraamount + empDetails.basicsal;
+        if( (empDetails.gender =='male') || (empDetails.gender =='m')){
+                    if(empDetails.total >= 200000){
+                        empDetails.tax = 15;
+                    }else if(empDetails.total >= 100000){
+                        empDetails.tax = 10;
+                    }else   if(empDetails.total >= 50000){
+                        empDetails.tax = 5;
+                    }else{
+                        empDetails.tax = 0;
+                    }
+                }else{
+                    if(empDetails.total >= 200000){
+                        empDetails.tax = 10;
+                    }else  if(empDetails.total >= 100000){
+                        empDetails.tax = 5;
+                    }else  if(empDetails.total >= 50000){
+                        empDetails.tax = 0;
+                    }
+                }
+                console.log(`.....Employee Details.....`);
+                console.log(`Name: ${empDetails.name}`);
+                console.log(`Age: ${empDetails.age}`);
+                console.log(`Gender: ${empDetails.gender}`);
+                console.log(`Department: ${empDetails.deparment}`);
+                console.log(`basicSalary: ${empDetails.basicsal}`);
+                console.log(`pf: ${pfamount}`);
+                console.log(`hra: ${hraamount}`);
+                console.log(`totalsalary: ${empDetails.total}`);
+                console.log(`tax: ${empDetails.tax}`);
+
+    </script>
+</body>
+</html>

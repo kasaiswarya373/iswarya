@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+</head>
+<style>
+    h2 {
+        text-align: center;
+        border: 1px solid;
+        margin: 10px auto;
+        width: 500px;
+        padding: 5px;
+    }
+    ul {
+        border: 1px solid;
+        padding: 10px;
+        background-color: #ccc;
+        width: 500px;
+        margin: 10px auto;
+    }
+    li {
+        border: 1px solid;
+        padding: 10px;
+        background-color: paleturquoise;
+        list-style: none;
+    }
+    .copyright {
+        border: 1px solid;
+        text-align: center;
+        background-color: pink;
+    }
+    .block1 {
+        border: 1px solid;
+        width: 100px;
+        height: 20;
+        background-color: aliceblue;
+        position: relative;
+        left: 30px;
+        bottom: 788px;
+    }
+    .block2 {
+        border: 1px solid;
+        width: 150px;
+        height: 20;
+        background-color: aliceblue;
+        position: relative;
+        left: 30px;
+        bottom: 435px;
+    }
+    .block3 {
+        border: 1px solid;
+        width: 150px;
+        height: 20;
+        background-color: aliceblue;
+        position: relative;
+        left: 30px;
+        bottom: 355px;
+    }
+</style>
+<body>
+    <h2>Student Registration Page</h2>
+  
+    <ul>
+        <li> <br> 
+            <br>
+             <div> Name:
+            <input type="text" name="username" value="dinakaran">
+        </div>
+        <br>
+         <div> FirstName:
+            <input type="text" name="FirstName" maxlength="10" value="maddela">
+        </div>
+        <br>
+        <div> Age:
+            <input type="numaric" name="age" maxlength="2">
+        </div>
+        <br>
+         
+            Address
+            <textarea name="" id="" rows="10" cols="20" maxlength="300"></textarea>
+         
+            <br>
+            <br> Country:
+            <select>
+                <option>India</option>
+                <option>Africa</option>
+                <option>china</option>
+                <option>Soudi</option>
+            </select>
+            <br>
+            <br>
+            
+        </li>
+        <li>
+            <br>
+            Qualification
+            <select>
+                <option>Degree</option>
+                <option>Btec</option>
+                <option>MBA</option>
+                <option>INTER</option>
+            </select>
+            <div>
+                Langauges
+                <input type="checkbox"> English
+                <input type="checkbox"> Hindi
+                <input type="checkbox"> Telugu
+                <input type="checkbox"> Urdu
+            </div>
+            CourceOpted
+            <input type="checkbox"> MBA
+            <input type="checkbox"> MCA
+            <input type="checkbox"> Btec
+            <input type="checkbox"> Msc
+            </li>
+           <li>
+            <br>
+            <br>
+                About Yourself
+                <textarea rows="10" cols="20" maxlength="400"></textarea>
+            
+            </li>
+        </li>
+       <li>
+        <input type="button" value="RegisterDetails" onclick="readuserdata()">
+       </li>
+       <li>
+       <div class="copyright">@copyright 2023</div>
+       <div class="block block1">Personal Details</div>
+       <div class="block block2">Education Details</div>
+       <div class="block block3">About Yourself</div>
+    </li>
+    
+    </ul>
+   
+</form>
+</body>
+</html>

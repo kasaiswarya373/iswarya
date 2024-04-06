@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //var day = 'sunday';
+        //var result;
+
+        //switch (day) {
+            //case '0':
+                //result = "monday";
+                //break;
+            //case '1':
+              //  result = "tuesday";
+                //break;
+            //case '2':
+              //  result = "wednesday";
+                //break;
+           // case '3':
+             //   result = "thursday";
+              //  break;
+            //case '4':
+              //  result = "friday";
+                //break;
+            //case '5':
+              //  result = "saturday";
+                //break;
+                
+                //default:
+                  //  result = "not found";
+        //}
+        //console.log(`the value is ${result}`)
+
+    var p1 = parseInt(prompt("enter first  value"));
+    var p2 = parseInt(prompt("enter second value"));
+
+        var userOption = prompt("Choose from add/mul/div");
+
+            switch (userOption) {
+                    case 'add':
+                        var sum = p1 + p2;
+                            console.log("The sum is " + sum);
+                        break;
+                    case 'mul':
+                        var mul = p1 * p2;
+                            console.log(`The mul is ${mul}`);
+                        break;
+                    case 'div':
+                        var div = p1 / p2;
+                            console.log(`The Division is ${div}`);
+                        break;
+                    
+                default:
+                    console.log("u choose wrng option")
+            }
+        
+    </script>
+</body>
+</html>

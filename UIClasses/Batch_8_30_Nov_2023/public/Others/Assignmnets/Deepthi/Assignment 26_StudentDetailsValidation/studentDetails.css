@@ -1,0 +1,50 @@
+.title{
+    text-align: center;
+    font-size: 20px;
+    color: green;
+}
+ul{
+    width : 450px;
+    border:1px solid;
+    margin:20px auto;
+    padding:20px;
+    background-color: grey;
+
+}
+li{
+    list-style: none;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+.rblock
+{
+    display: none;
+}
+label{
+    width : 120px;
+    display: inline-block;
+}
+.marks > input{
+    width : 40px;
+}
+.passed{
+    color:green;
+    font-weight: bold;
+}
+.failed{
+    color:red;
+    font-weight: bold;
+}
+#displayBlock{
+    display: none;
+
+}
+.error{
+    color:red;
+    font-size: 10px;
+    display: none;
+    position:relative;
+    left:127px;
+}

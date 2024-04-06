@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>School Application Form</title>
+    <style>
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+        h3{
+            text-align: center;
+             font-size: 30px;
+        }
+        input{
+            font-size: 20px;
+            margin-bottom: 10px;
+            border-radius: 25px;
+        }
+        label{
+            margin-bottom: 20px;
+            color: blue;
+        }
+        select{
+            width: 255px;
+            height: 27px;
+            border-radius: 25px;
+        }
+        input, select{
+            background-color: lightblue;
+            color: blue;
+            border: 1px solid blue;
+        }
+        .increaseWidth{
+            width: 510px;
+        }
+        #yourself{
+            position: relative;
+            top: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>
+            Shool Application Form
+        </h3>
+        <form>
+            <label>Applicant's Name</label>
+            <br>
+            <input class="marginRight" type="text" name="fname">
+            <input type="text" name="lname">
+            <br>
+            <label>Age</label><br>
+            <input class="increaseWidth" type="text" name="Age"><br>
+            <label>Home Address</label><br>
+            <input class="increaseWidth" type="text" name="add1"><br>
+            <input class="increaseWidth" type="text" name="add2"><br>
+            <input class="marginRight" type="text" name="city">
+            <input type="text" name="region"><br>
+            <input class="marginRight" type="number" name="pincode">
+            <select>
+                <option>India</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>Astralia</option>
+                <option>china</option>
+                <option>Bangladesh</option>
+            </select>
+            <br>
+            <label>Gender</label>
+            <input type="radio" name="male">male
+            <input type="radio" name="Female">Female
+            <br>
+            <label id="yourself">yourself</label>
+            <textarea></textarea>
+        </form>
+    </div>
+</body>
+</html>

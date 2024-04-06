@@ -1,0 +1,447 @@
+                                                                 *      Hello...Iam your Class Tracker :-)        *
+                                                                 *     I can help you to track daily topics       *
+                                                                 **************************************************
+
+Class 01 : (14-11-2023)
+-----------------------
+   Introduction class
+
+
+Class 02 : (15-11-2023)
+------------------------
+   Technologies that we are going to learn are discussed
+
+
+Class 03 : (16-11-2023)
+-----------------------
+   1.Installation of VS Code
+   2.Installation of Nodejs
+   3.Continuation of previous class topics
+
+
+Class 04 : (17-11-2023)
+-----------------------
+   Structure of HTML
+
+
+Class 05 : (20/11/2023)
+-----------------------
+   HTML Tags (head, title, body, br, hr, pre, p, h1-h6 )
+
+
+Class 06 : (21-11-2023)
+-----------------------
+   HTML Attributes (id, name, class, title, style, src, href, alt and about different ways to use color code in css likecolor , hashcode, rgb, text align )
+
+
+Class 07 : (22-11-2023)
+-----------------------
+   How to use CSS Classes , "a" and "img" html tags .
+
+
+Class 08 : (23-11-2023)
+-----------------------
+   how to install GitHub Desktop and access the files.
+
+
+Class 09 : (24-11-2023)
+-----------------------
+   Inline And BlockLevel Elements ( span, div, p , h1-h6)
+   Different ways to apply css to any html elements .
+   [assignment_1]
+
+
+Class 10 : (27-11-2023)
+-----------------------
+   CSS Priority Order , Debugging Tool ,DOM Structure , CRUD.
+
+
+Class 11 : (28-11-2023)
+-----------------------
+   How to push a file into Github , about Impotant keyword in CSS.
+
+
+Class 12 : (29-11-2023)
+-----------------------
+   How to install and setUp the Local server and how to open a file through Local server.
+
+
+Class 13 : (01-12-2023)
+-----------------------
+   Css Properties like Padding, Margin and CSS BOX Model and Different Ways To Apply CSS , Making containers.
+
+
+Class 14 : (02-12-2023)
+-----------------------
+   1.Floating CSS properties,
+   2.Clear property,
+   3.Pseudo Classes.
+   [Assignment-2,Assignment-3]
+
+
+Class 15 : (04-12-2023)
+-----------------------
+  ********Backup class-1*********
+  From(17-12-2023) to (23-11-2023)
+
+
+Class 16 : (05-12-2023)
+-----------------------
+  ********Backup class-2*********
+  From(24-11-2023) to (02-12-2023)
+
+
+Class 17 : (06-12-2023)
+-----------------------
+    1.Pseudo Elements (First-letter, First-line ,selection, after, before)
+    2.Name Property
+    3.Overflow Property
+    4.Creating link to the internal other DOM element using anchor tag.
+    5.Assignment-3 explanation.
+    [Assignment-5]
+    
+Class 18: (07-12-2023)
+----------------------
+    1.UL and OL Tags
+    2.Basic structure of table
+    3.Special attributes of table -  border, cellspacing, cellpadding , colspan, rowspan.
+    3.Display property
+    [Assignment-5]
+
+Class 19: (08-12-2023)
+----------------------
+    1.Adding Background image to the container,
+    2.About Network option in the inspection tools
+    3.Image Spriting
+    [Assignment-6]
+
+Class 20: (11-12-2023)
+----------------------
+    1.Absolute path and Relative path
+    2.CSS Positions
+       -Static
+       -Relative
+       -Absolute
+
+Class 21: (12-12-2023)
+----------------------
+    1.Revised previous class topics
+    2.Fixed position  
+    3.Sticky position
+
+Class 22: (13-12-2023)
+----------------------
+1. CSS properies Z-index , Opacity
+2. HTML Input Elements 
+
+Class 23: (14-12-2023)
+----------------------
+1.HTML Input Elements
+2.Reading Data from Input Elements 
+      -Through js DOM Elements
+      -Through Form Tags
+3.Two Form Atrributes 
+      -Action
+      -Method
+4.Different Communication of Server through Form Tag
+      -GET Communication
+      -POST Communication
+
+
+Class 24: (15-12-2023)
+----------------------
+* Intoduction of JAVASCRIPT
+Java Script Methods 
+  -alert()
+  -typeof()
+  -prompt()
+  -parseint()
+Data Types
+   -var 
+
+Class 25: (20-12-2023)
+----------------------
+working with student details with alert method and console.log.
+ 
+Type Casting.
+
+Class 26: (21-12-2023)
+----------------------
+Control Structures
+Conditional control Structures:
+  -if
+  -ifelse
+  -elseif
+  -nested if
+  -nested ifelse.
+
+Class 27: (22-12-2023)
+----------------------
+Looping Contol Structure:
+  -For.
+
+Class 28 : (23-12-2023)
+---------------------
+For Looping Control Structures.
+Even & Odd Numbers, Sum Of Even & Odd Number, prime Number check.
+
+Class 29 : (27-12-2023)
+---------------------
+While loop Control Structures.
+Programs on while loop , Sum of digit.
+
+Class 30 : (28-12-2023)
+---------------------
+ do - while Control Structures.
+ Switch Case Control Structures.
+ programs on Switch case.
+
+Class 31 : (29-12-2023)
+---------------------
+Indroduction of Functions.
+
+Class 32 : (30-12-2023)
+---------------------
+Arrow Type Functions.
+public and private variables
+Fuctions With Params.
+
+Class 33 : (02-01-2024)
+---------------------
+Return Type of Functions and Some examples.
+
+Class 34 ; (03-01-2024)
+---------------------
+Data Structures.
+  -Arrays.
+
+Class 35 : (04-01-2024)
+----------------------
+Pre-defined Array Methods (push , pop , unshift , shift , splice , join , includes , indexof)
+[Practice Programs - 8] - [Assignment - 15]
+
+Class 36 : (05-01-2024)
+---------------------
+ String Predefined Methods
+ Date Object
+ Arguments Keyword
+ * Json Introduction
+[Assignment - 16]
+
+Class 37 : (06-01-2024)
+---------------------
+ Json Data Structure
+ 
+Class 38 : (08-01-2024)
+---------------------
+  Memory allocation of JSON object
+  Recursive function
+  for in loop
+  Array.isArray() function
+
+Class 39 : (09-01-2024)
+---------------------
+ Json objects with methods
+ this keyword
+ Anonymous function
+ setTimeout method
+[Assignment - 17]
+
+Class 40 : (11-01-2024)
+-----------------------
+ setfInterval method
+ * DHTML introduction
+ Document and Window
+ External css,js
+[Assignment - 18]
+
+Class 41 : (12-01-2024)
+-----------------------
+Reading Values form input elements
+Event Handling
+[Assignment - 19] -Creating a web page of puma product details using html and css.
+
+*********************Happy Pongal Holidays****************************
+
+Class 42 : (18-01-2024)
+-----------------------
+Progress card generated
+stringfy method
+parse method
+Deep Copy and shallow copy
+[Assignment - 20] - Employee payslip generator
+
+Class 43 : (19-01-2024)
+-----------------------
+Math Functions (floor(),round(),random())
+Generated OTP values
+[Assignment - 21 ->{Book Details} , 22 ->{Employee Registration} ,23 ->{Tambola Game}]
+
+
+Class 44 : (20-01-2024)
+-----------------------
+Generated Generic Captcha
+trim()
+
+
+Class 45 : (22-01-2024)
+-----------------------
+Console Table
+Data Validation
+Reading Data From User-with Data Validation
+Require Attribute_Form
+
+
+Class 46 : (23-01-2024)
+-----------------------
+Password Validation
+AddEventListner()
+[Assignment - 24]
+
+ 
+Class 47 : (24-01-2024)
+-----------------------
+Grid
+Flex
+[Assignment-25]-[Grid and Flex Mock Design]
+
+
+Class 48 : (25-01-2024)
+-----------------------
+Backup Class
+
+
+Class 49 : (26-01-2024)
+-----------------------
+Jquery Functions - $(), val(), show(), text()
+[Advanced Javascript]
+Class introduction
+
+Class 50 : (29-01-2024)
+-----------------------
+Class 
+Constructor
+'this' keyword
+Student Progress Card with Class
+Oops introduction
+Inheritance introduction
+
+Class 51 : (30-01-2024)
+-----------------------
+Oops Concepts
+super keyword
+Exception Handling introduction
+
+Class 52 : (31-01-2024)
+-----------------------
+Exception Handling
+
+Class 53 : (01-02-2024)
+-----------------------
+[ECMA - 6 Introduction]
+let , var , const keywords
+Scope of Variables [global, module , block]
+Arrow Function
+forEach loop
+
+Class 54 : (02-02-2024)
+-----------------------
+ECMA-6 predefined Array Methods [find() , sort(), map(), filter()]
+
+Class 55 : (05-02-2024)
+-----------------------
+User Defined Exceptions
+Closurers
+
+Class 56 : (06-02-2024)
+-----------------------
+Accessing closure Data outside of the closure
+Event Bubbling and capturing
+
+Class 57 : (07-02-2024)
+-----------------------
+[ECMA - 6]
+Set class
+Map class
+import,export and default
+
+Class 58 : (08-02-2024)
+-----------------------
+[ECMA - 6]
+Higher Order
+Promises
+Async and Await
+Function params with default values
+ECMA shortcuts
+
+Class 59 : (09-02-2024)
+-----------------------
+Jquery 
+[AJAX introduction, Architecture]
+
+Class 60 : (10-02-2024)
+-----------------------
+Creating Web Service
+
+Class 61 : (14-02-2024)
+-----------------------
+Cors 
+Loading
+
+Class 62 : (15-02-2024)
+-----------------------
+Templating
+Generic rating library created
+
+Class 63 : (16-02-2024)
+-----------------------
+XML
+[HTML5 and CSS3 Introduction]
+Local Storage
+[Assignment - 26]
+
+Class 64 : (19-02-2024)
+-----------------------
+<!Doctype html>
+Semantic tags
+Predefined html5 input elements
+audio and video tags
+canvas and svg tags
+
+Class 65 : (20-02-2024)
+-----------------------
+HTML5 events (ondragstart,ondragover,ondrop)
+Creating otp image using "toDataURL()"
+Navigator object
+
+Class 66 : (21-02-2024)
+-----------------------
+WebWorkers
+
+Class 67 : (22-02-2024)
+-----------------------
+Application Cache
+Cookies
+CSS3 properties
+Gradients(linear-gradient)
+
+Class 68 : (23-02-2024)
+-----------------------
+Keyframes
+
+Class 69 : (24-02-2024)
+-----------------------
+Media Queries
+bootstrap introduction
+
+Class 70 : (26-02-2024)
+-----------------------
+Installed third party libraries with node 
+explored bootstrap components
+
+Class 71 : (27-02-2024)
+-----------------------
+Nodejs introduction
+creating server and getting local modules
+
+

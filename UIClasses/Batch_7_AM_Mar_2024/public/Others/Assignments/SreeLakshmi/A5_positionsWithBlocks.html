@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practive postions with blocks</title>
+    <style>
+      .header,
+      .container,
+      .footer {
+        border: 2px solid;
+
+        text-align: center;
+        margin: 10px auto;
+        width: 600px;
+      }
+      .container {
+        height: 600px;
+        position: relative;
+      }
+      .block {
+        width: 100px;
+        height: 100px;
+        border: 2px solid;
+        text-align: center;
+        margin: 5px;
+      }
+      .leftTopblock1 {
+        background-color: lightskyblue;
+      }
+      .leftTopblock2 {
+        background-color: plum;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+      }
+      .rightTopblock3 {
+        background-color: lightskyblue;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+      .rightTopblock4 {
+        background-color: plum;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+      }
+      .leftBottomblock5 {
+        background-color: lightskyblue;
+        position: absolute;
+        bottom: 0px;
+      }
+      .leftBottomblock6 {
+        background-color: plum;
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+      }
+
+      .rightBottomblock7 {
+        background-color: lightskyblue;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+      }
+      .rightBottomblock8 {
+        background-color: plum;
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+      }
+      .midBlock {
+        background-color: plum;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        z-index: 1;
+      }
+      .midBlockTopLeft {
+        background-color: lightskyblue;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+      }
+
+      .midBlockTopRight {
+        background-color: lightskyblue;
+        position: absolute;
+        top: 30%;
+        right: 30%;
+      }
+
+      .midBlockBottomLeft {
+        background-color: lightskyblue;
+        position: absolute;
+        bottom: 30%;
+        left: 30%;
+      }
+
+      .midBlockBottomRight {
+        background-color: lightskyblue;
+        position: absolute;
+        bottom: 30%;
+        right: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">Blocks</div>
+    <div class="container">
+      <div class="block leftTopblock1">Block1</div>
+      <div class="block leftTopblock2">Block2</div>
+
+      <div class="block rightTopblock3">Block3</div>
+      <div class="block rightTopblock4">Block4</div>
+
+      <div class="block leftBottomblock5">Block5</div>
+      <div class="block leftBottomblock6">Block6</div>
+
+      <div class="block rightBottomblock7">Block7</div>
+      <div class="block rightBottomblock8">Block8</div>
+
+      <div class="block midBlock">Block9</div>
+
+      <div class="block midBlockTopLeft">Block5</div>
+      <div class="block midBlockTopRight">Block6</div>
+
+      <div class="block midBlockBottomLeft">Block7</div>
+      <div class="block midBlockBottomRight">Block8</div>
+    </div>
+    <div class="footer">@copy rights 2024</div>
+  </body>
+</html>

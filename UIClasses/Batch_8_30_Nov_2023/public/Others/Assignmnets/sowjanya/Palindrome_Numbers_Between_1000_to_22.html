@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Displaying Palindrome numbers Between 1000 to 22</title>
+</head>
+<body>
+  <script>
+    for (var i = 1000; i >= 22; i--)
+    {
+      var num = i;
+      var revNum = 0;
+      while (num > 0)
+      {
+        var rem = num % 10;
+        revNum = revNum * 10 + rem;
+        num = parseInt(num / 10);
+      }
+      if ( i == revNum)
+      {
+        console.log(i);
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and setInterval Methods</title>
+</head>
+<body>
+    <div>
+        This OTP is valid is only for 3 seconds, after 3 seconds it'll disappears... <br>
+        <b>942457</b>
+    </div>
+
+    <script>
+        /*
+        var displayThanksMsg = () => {
+            console.log('Thanks for practicing at midnight');
+        }
+        console.log('START');
+        setTimeout(displayThanksMsg, 3000);     //it will take 2 guaranteed parmas(1st method name, 2nd time in mili second)
+     Note: if we provide method name inside the param (i.e. displayThanksMsg shown above, this will consume space unnecessarily)
+     thats why we can use another apporoach shown in below example at line#25,
+
+        console.log('END...');
+     */
+
+     console.log('START');
+     setTimeout(() => {
+        console.log('Thanks for practicing at midnight');
+     }, 3000);
+
+        console.log('END...');
+
+        console.log('==================================================');
+
+        setTimeout(() => {              //callback method
+            document.querySelector("div").style.display = 'none';
+        }, 3000);
+
+    </script>
+    
+</body>
+</html>

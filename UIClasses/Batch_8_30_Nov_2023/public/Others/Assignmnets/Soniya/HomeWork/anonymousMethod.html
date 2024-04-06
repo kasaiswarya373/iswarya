@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Method</title>
+</head>
+<body>
+    <script>
+        
+        var display = (a,print) =>
+        {
+            console.log(a);
+            print();
+        }
+
+        display(20,() => {console.log("Hello sony");});
+    </script>
+</body>
+</html>

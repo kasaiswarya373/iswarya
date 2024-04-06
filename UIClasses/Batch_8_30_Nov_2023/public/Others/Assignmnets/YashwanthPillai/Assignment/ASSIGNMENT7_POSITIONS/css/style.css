@@ -1,0 +1,154 @@
+header {
+  border: 2px solid;
+  padding: 10px 0px;
+  text-align: center;
+  color: white;
+  background: #000;
+}
+.container {
+  border: 2px solid;
+  height: 91vh;
+  margin-top: 10px;
+  /* position: relative; */
+}
+.first-container {
+  display: inline-block;
+  position: relative;
+}
+
+.block {
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  border: 1px solid;
+}
+.text {
+  width: 100px;
+  height: 30px;
+  border: 1px solid greenyellow;
+  background-color: #fff;
+  margin: auto;
+}
+.block1 {
+  background-color: darkorchid;
+  z-index: 2;
+  position: relative;
+  opacity: 0.6;
+}
+.block2 {
+  background-color: aquamarine;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: end;
+}
+
+.second-container {
+  float: right;
+  position: relative;
+}
+
+.block3 {
+  background-color: darksalmon;
+  position: relative;
+  opacity: 0.66;
+}
+.block4 {
+  background-color: hotpink;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+.third-container {
+  display: inline-block;
+  position: relative;
+  right: 10%;
+  top: 80%;
+}
+.block5 {
+  background-color: tomato;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  z-index: 3;
+  opacity: 0.65;
+}
+.block6 {
+  background-color: olive;
+  /* position: relative; */
+  /* bottom: 0%; */
+  /* left: 0%; */
+  position: relative;
+  text-align: left;
+}
+
+.fourth-container {
+  float: right;
+  position: relative;
+  top: 80%;
+  left: 9.6%;
+}
+.block7 {
+  background-color: darkseagreen;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.65;
+  right: 50%;
+  bottom: 50%;
+}
+.block8 {
+  background-color: mediumslateblue;
+
+  position: relative;
+  text-align: right;
+}
+
+.mid-container {
+  /* border: 1px solid; */
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: auto;
+  top: 10%;
+}
+.subcontainer {
+  border: 2px solid;
+  height: 200px;
+  width: 200px;
+  background-color: cadetblue;
+  position: relative;
+  z-index: 155;
+}
+.mid-block {
+  height: 100px;
+  width: 100px;
+  border: 1px solid;
+  position: absolute;
+  opacity: 0.54;
+}
+.mid-block1 {
+  background-color: lightgreen;
+  right: 75%;
+  bottom: 75%;
+}
+.mid-block2 {
+  background-color: darkkhaki;
+  left: 75%;
+  bottom: 75%;
+}
+.mid-block3 {
+  background-color: darkred;
+  right: 75%;
+  top: 75%;
+}
+.mid-block4 {
+  background-color: slateblue;
+  top: 75%;
+  left: 75%;
+}
+.mid-block3 {
+  background-color: darkred;
+}
+.mid-block4 {
+  background-color: slateblue;
+}

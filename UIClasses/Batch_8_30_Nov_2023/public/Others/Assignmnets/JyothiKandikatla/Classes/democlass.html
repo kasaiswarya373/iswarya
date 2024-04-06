@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo on class</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body style="display: flex; flex-wrap: wrap-reverse;" >
+    <span id="d_name" style="margin:100px auto;padding: 150px; font-size:  50px; color: aliceblue; border: 1px solid ;background-color: red; display: none; height: 50px;"></span>
+    <script>
+        //var name = 'jyothi';
+    
+       class Demo{
+            method(){
+                $("#d_name").text("Welcome to class program");
+     $("#d_name").show(2000)    
+                console.log("Welcome to class program");
+            }
+        }
+        var a = new Demo();
+        a.method();
+    </script>
+</body>
+</html>

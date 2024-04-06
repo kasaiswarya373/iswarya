@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+            Assignment_9
+        </title>
+    </head>
+    <body>
+        <script>
+            var empname = prompt("enter name");
+            var empage = prompt("enter age");
+            var empdept = prompt("enter department")
+            var gender = prompt("enter gender");
+            gender=gender.trim();
+            gender=gender.toLowerCase();
+            var bsalary = prompt("enter basic salary");
+            bsalary = parseFloat(bsalary);
+            var pf = 14*bsalary/100;
+            pf = parseFloat(pf);
+            var hra = 25*bsalary/100;
+            hra = parseFloat(hra);
+
+            var totalsal = bsalary+pf+hra;
+            
+            console.log("Name :" + empname);
+            console.log("Age :" + empage);
+            console.log("gender :" + gender);
+            console.log("basic salary :" + bsalary);
+            console.log("the total salary : " + totalsal);
+            var tax=0;
+            
+            if(gender == "male")
+            {
+                if(totalsal > 200000)
+                {
+                   tax = 15;
+                    
+                }
+                else if(totalsal = 100000)
+                {
+                  
+                    tax = 10;
+                }
+                else if(totalsal = 50000)
+                {
+                    tax = 5;
+                }else
+                {
+                    console.log("total tax is ZERO" );
+                }
+            }else if(gender == "female"){
+                if(totalsal > 200000)
+                {
+                    tax = 10;
+                }
+                else if(totalsal = 100000)
+                {
+                    tax = 5;
+                }
+                else if(totalsal = 50000)
+                {
+                   
+                    console.log("no tax");
+                }
+            }else{
+                console.log("ERROR")
+            }
+            var taxAmount =( tax * totalsal)/100;
+            console.log("total tax : " + taxAmount)
+            var netsalary = totalsal -  taxAmount;
+            console.log("on hand salary : " + netsalary)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = parseInt(prompt("Enter length of the arrays"));
+        var arr = [num];
+        for (var i = 0; i < num; i++) {
+            arr[i] = parseInt(prompt("Enter array Element"));
+        }
+        var SmallNumber = arr[0];
+        for (var i = 0; i < num; i++) {
+            if (arr[i] < SmallNumber) {
+                SmallNumber = arr[i];
+            }
+        }
+        console.log("Smallest number in the Array is " + SmallNumber);
+    </script>
+</body>
+
+</html>

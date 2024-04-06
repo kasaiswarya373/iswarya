@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("hello");
+
+      function readStudentDetails() {
+        var sname, age, gender, m1, m2, m3;
+
+        sname = prompt("enter student name");
+        age = prompt("enter age");
+        m1 = prompt("enter sub 1 marks");
+        m1 = parseInt(m1);
+        m2 = prompt("enter sub 2 marks");
+        m2 = parseInt(m2);
+        m3 = prompt("enter sub 3 marks");
+        m3 = parseInt(m3);
+
+        var average = getTotalAndAvg(m1, m2, m3);
+        var grade = getGrade(average);
+
+        displayInfo(sname, average, grade);
+      }
+
+      /**
+       * function to cal total and avg
+       * @param{number} m1 first sub marks
+       * @param{number} m2 first sub marks
+       * @param{number} m3 first sub marks
+       * @return {number} sum o values
+       */
+      function getTotalAndAvg(m1, m2, m3) {
+        var total = m1 + m2 + m3;
+        var avg = total / 3;
+        return avg;
+      }
+
+      function getGrade(avg) {
+        var grade;
+        if (avg >= 40) {
+          grade = "Passed";
+        } else {
+          grade = "U have a surprise";
+        }
+        return grade;
+      }
+
+      function displayInfo(sname, avg, grade) {
+        console.log("STdent details");
+        console.log("Student name " + sname);
+        console.log("Avg " + avg);
+        console.log("Grade is " + grade);
+      }
+
+      readStudentDetails();
+    </script>
+  </body>
+</html>

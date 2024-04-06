@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSSPositionAbsolute</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h3>
+      In position : relative the current block or element moves according to the
+      X&Y Axis.
+    </h3>
+    <h4>
+      In position : absolute, the current block or element moves according, only if parent is non-static(relative etc) if recent parent is static it checks for grand parent and this goes on until it finds any of parent as non-static. <br>
+      If none of the parent is non static then it moves according to the body.
+    </h4>
+    <h2>here none of the parent is non static, so it is moving according to body.</h2>
+    <div class="container">
+      <div class="subcontainer">
+        <div class="block block1">Block1</div>
+
+        <div class="block block2">Block2</div>
+        <div class="block block3">Block3</div>
+        <div class="block block4">Block4</div>
+        <div class="block block5">Block5</div>
+      </div>
+    </div>
+  </body>
+</html>

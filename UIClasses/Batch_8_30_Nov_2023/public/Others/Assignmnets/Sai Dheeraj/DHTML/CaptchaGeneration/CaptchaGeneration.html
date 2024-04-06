@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Index</title>
+            <style>
+                #captchaBox{
+                    width: 60px;
+                    padding: 10px;
+                    height: 9px;
+                    background-color: rgb(249, 240, 240);
+                    font-weight: bold;
+                }
+                button{
+                    background-color: beige;
+                    color: rgb(101, 49, 11);
+                    margin-left: 100px;
+                    margin-top: -40px;
+                }
+                ul{
+                    background-color: rgb(51, 61, 153);
+                    width: 500px;
+                    height: 250px;
+                    margin: 20px auto;
+                }
+                h2{
+                    text-align: center;
+                }
+                li{
+                    list-style-type: none;
+                    background-color: rgb(219, 211, 135);
+                    margin: 10px;
+                    width: 400px;
+                    height: 55px;
+                    text-align: center;
+                    font-weight: bold;
+                }
+                body{
+                    background-color: rgb(200, 212, 245);
+                }
+            </style>
+        </head>
+        <body>
+            <h2>Captcha Generator Login</h2>
+            <div class="container">
+                <form id="loginform">
+                    <ul>
+                        <li>
+                            <label for="username">Enter UserName : </label>
+                            <input type="text" id="username" name="username" style="width: 200px; height: 20px; margin: 10px;">
+                        </li>
+                        <li>
+                            <label for="password">Enter Password : </label>
+                            <input type="password" id="password" name="password" style="width: 200px; height: 20px; margin: 10px;">
+                        </li>
+                        <li>
+                            <label for="captcha">Enter CAPTCHA : </label>
+                            <input type="text" id="captchaInput" name="captcha" placeholder="Enter CAPTCHA" style="width: 200px; height: 20px; margin: 10px;">
+                        </li>
+                        <div id="captchaBox"></div>
+                        <button type="button" onclick="generateCaptcha()" style="background-color: rgb(229, 209, 157);">Generate CAPTCHA</button>
+                        
+                        <input type="button" value="Submit">
+                    </ul>
+
+                </form>
+           
+            </div>
+            <script>
+                var generateCaptcha = () => {
+                    var captchaBox = document.getElementById("captchaBox");
+                    var captchaValue = generateRandomString(6);
+                    captchaBox.innerText = captchaValue;
+                }
+
+                function generateRandomString(length) {
+                    var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                    var randomString = "";
+                        for (var i = 0; i < length; i++) {
+                    var randomIndex = Math.floor(Math.random() * charset.length);
+                    randomString += charset.charAt(randomIndex);
+            }
+            return randomString;
+        }
+                
+            </script>
+        </body>
+</html>

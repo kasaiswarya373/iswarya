@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var readInfo = ( ) => {
+                var x = [ 10, 20, 30, 40, 50];
+                var sum = 0;
+                for (var i = 0; i < x.length; i++){
+                    sum += x[i];
+                }
+                console.log("the sum of the values in an array is = " , sum);
+                getMean( x , sum );
+                getMedian( x );
+            }
+            
+            var getMean = ( x , sum) =>{
+                var mean = sum / 5 ;
+                console.log(" the MEAN of the values in an array = " , mean);
+            }
+
+            var getMedian = ( x ) =>{
+                var median = (x.length + 1 ) / 2 ;
+                console.log("the MEDIAN of the values in an array = " ,median);
+            }
+                readInfo( );
+            
+        </script>
+    </body>
+</html>

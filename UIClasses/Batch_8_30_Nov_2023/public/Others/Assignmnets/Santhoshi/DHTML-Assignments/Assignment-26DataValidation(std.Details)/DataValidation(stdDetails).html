@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DataValidation</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            li{
+                list-style: none;
+            }
+            label{
+                display: inline-block;
+                width: 80px ;
+                padding: 5px;
+                margin: 5px;
+            }
+            ul {
+                width: 500px ;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: lightsteelblue;    
+            }
+            .marks > input {
+                width: 50px;
+            }
+            #error1 , #error2 {
+                display: none;
+                color: red;
+                font-size: 20px;
+ }
+        </style>
+    </head>
+    <body>
+        <h1>STUDENT PROGRESS CARD</h1>
+
+        <ul>
+            <li>
+                <label for="name"> Name : </label>
+                <input type="text" id="sname" onkeypress="return validation(event)">
+                <div id="error1">its mandatory</div>
+            </li>
+            <li>
+                <label for="age"> Age : </label>
+                <input type="text" id="sage" onkeypress=" return validationnumber(event)">
+                <div id="error2">its mandatory</div>
+            </li>
+            <li>
+                <label for="gender"> Gender : </label>
+                <input type="radio" name="gender" value="male" >Male
+                <input type="radio"  name="gender" value="female" checked>Female
+            </li>
+            <li>
+                <label for="class"> Class : </label>
+                <select name="class" id="sclass">
+                    <option value="class I"> Class I</option>
+                    <option value="class II"> Class II</option>
+                    <option value="class III"> Class III</option>
+                    <option value="class IV"> Class IV</option>
+                    <option value="class V" selected> Class V</option>
+                    <option value="class VI"> Class VI</option>
+                </select>
+            </li>
+            <li class="marks">
+                <label for="marks" > Marks : </label>
+                <input type="text" id="m1" onkeypress=" return validationmarks(event)">
+                <input type="text" id="m2" onkeypress=" return validationmarks(event)">
+                <input type="text" id="m3" onkeypress="return validationmarks(event)">
+                <input type="text" id="m4" onkeypress=" return validationmarks(event)">
+                <input type="text" id="m5" onkeypress=" return validationmarks(event)">
+                <input type="text" id="m6" onkeypress=" return validationmarks(event)">
+            </li>
+
+            <li>
+                <input type="button" value="Get PROGRESS"onclick="userData.displayStudentDetails()">
+            </li>
+            
+        </ul>
+
+        <div class="cardholder"></div> 
+
+        <ul id="display">
+            <li>
+                Name : <span id="dname"></span>
+            </li>
+            <li>
+                Age : <span id="dage"></span>
+            </li>
+            <li>
+                Gender : <span id="dgender"></span>
+            </li>
+            <li>
+                Class : <span id="dclass"></span>
+            </li>
+            <li>
+                Total : <span id="dtotal"></span>
+            </li>
+            <li>
+                Avg : <span id="davg"></span>
+            </li>
+        </ul>
+
+        <script src="script1.js"></script>
+    </body>
+</html>

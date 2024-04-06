@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //WAP to remove even numbers in the array and copy to other array
+            var n = parseInt(prompt("enter size of array : "));
+            var arr = [n];
+            for(var i = 0 ; i <  n ; i++){
+                arr[i] = parseInt(prompt("enter elements: "));
+            }
+            var evenarray = [];
+            var evennumber = (num) => {
+                if(num%2 == 0) {
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+            for(var i = 0 ; i < n ; i++){
+                if(evennumber(arr[i])){
+                    evenarray.push(arr[i]);
+                }
+            }
+            console.log("array after removing even numbers and adding into another are : " + evenarray);
+        </script>
+    </body>
+</html>

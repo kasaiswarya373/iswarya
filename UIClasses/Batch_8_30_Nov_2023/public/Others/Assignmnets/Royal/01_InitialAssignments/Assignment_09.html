@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamically Added Emp Details</title>
+</head>
+<body>
+    <script>
+        var empName = prompt('Enter Your Name : ');
+        // empName = toString(empName);
+        var empAge = prompt('Enter Your Age :');
+        empAge = parseInt(empAge);
+        var empDept = prompt('Enter Your Department :');
+        // empDept = toString(empDept);
+        var empBaseSal = prompt('Enter Your Basic Salary :');
+        empBaseSal = parseInt(empBaseSal);
+
+        var empPfPercent = prompt('Enter Your PF % of Basic Salary : ');
+        empPfPercent = parseInt(empPfPercent);
+
+        var empHraPercent = prompt('Enter Your HRA % of Basic Salary : ')
+        empHraPercent = parseInt(empHraPercent);
+
+        var empPF = empPfPercent*empBaseSal/100;
+        var empHRA = empHraPercent*empBaseSal/100;
+
+        var totalSal = empBaseSal+empPF+empHRA;
+
+        console.log('Employee Name        : '+empName);
+        console.log('Employee Age         : '+empAge);
+        console.log('Employee Department  : '+empDept);
+        console.log('Employee BaseSalary  : '+empBaseSal);
+        console.log('Employee PF Percent  : '+empPfPercent+'%');
+        console.log('Employee HRA Percent : '+empHraPercent+'%');
+
+        console.log("Employee Total Salary: "+ totalSal);
+    </script>    
+</body>
+</html>

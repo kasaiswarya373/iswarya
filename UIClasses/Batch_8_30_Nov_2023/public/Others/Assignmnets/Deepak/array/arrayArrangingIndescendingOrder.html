@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arrayArrangingDescendingOrder = () => {
+
+            var arr = [98, 21, 30, 22, 45, 67, 89, 53, 12, 99,10,5];
+            console.log( `Given array -  ${arr} `);
+        for(i = 0; i < arr.length-1; i++){
+            var swap = 0;
+            for(j = 0; j < arr.length-1; j++){
+                if(arr[j]<arr[j+1]){
+                    swap = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = swap;
+                }
+            }
+        }
+        console.log(`Array in Descending order -  ${arr} `);
+     }
+     arrayArrangingDescendingOrder();
+
+    </script>
+</body>
+</html>

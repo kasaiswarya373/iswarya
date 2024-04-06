@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Details reading from the user dynmically using DHTML</title>
+        <link rel="stylesheet" href="studentDetails.css">
+         <script src = "student.js">  </script>
+
+    </head>
+    <body>
+        <ul>
+            <li class = "title">Student Details</li>
+            <li>
+                <label for = "Name">Enter Name : </label>
+                <input type = "text" name = "name" id="sname" onkeypress = "return validateName(event)">
+                <div class = "error" id = "nameErr">*name is mandatory</div>
+            </li>
+            <li>
+                <label for = "age">Enter Age :</label>
+                <input type = "text" name = "age" id="sage" onkeypress="return validateAgeMarks(event)" maxlength = "3">
+                <div class = "error" id = "ageErr">*age is mandatory</div>
+            </li>
+            <li>
+                <label for = "gender">Gender :</label>
+                <input type = "radio" name = "gender" value = "Male" checked>Male
+                <input type = "radio" name = "gender" value = "Female">Female
+            </li>
+            <li>
+                 <label for = "">Class :</label>
+                 <select name = "" id = "class">
+                    <option>Class I</option> 
+                    <option>Class II</option>       
+                    <option>Class III</option>
+                 </select>
+            </li>
+           
+            <li class="marks">
+                <label for = "marks"> Marks :</label>
+                
+                <input type = "text" name = "marks" id="m1" onkeypress="return validateAgeMarks(event)" maxlength = "3">
+                <input type = "text" name = "marks" id="m2"  onkeypress="return validateAgeMarks(event)" maxlength ="3">
+                <input type = "text" name = "marks" id="m3"  onkeypress="return validateAgeMarks(event)" maxlength= "3">
+                <input type = "text" name = "marks" id="m4"  onkeypress="return validateAgeMarks(event)" maxlength = "3">
+                <input type = "text" name = "marks" id="m5"  onkeypress="return validateAgeMarks(event)" maxlength = "3">
+            
+            </li>
+          
+            <li>
+                <input type = "button" value = "Calculate" onclick = "generateStudentData(event)">
+                <input type = "button" value = "Reset" onclick = "resetFields()">
+            </li>
+        </ul>
+
+        <div class = "studentsProgressCards">
+
+        </div>
+
+        <ul id = "displayBlock">
+            <li>
+                Student Name : <span id = "d_name"></span>
+            </li>
+            <li>
+                Student Age : <span id = "d_age"></span>
+            </li>
+            <li>
+                 Total : <span id = "d_total"></span>
+            </li>
+            <li>
+                 Gender : <span id = "d_gender"></span>
+            </li>
+            <li>
+                Average : <span id = "d_average"></span>
+            </li>
+            <li>
+                Grade : <span id = "d_grade"></span>
+            </li>
+        </ul>
+    </body>
+</html>

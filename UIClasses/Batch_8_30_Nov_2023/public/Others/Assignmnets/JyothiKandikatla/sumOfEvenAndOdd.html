@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of even no and odd no</title>
+</head>
+<body>
+    <script>
+        var sampleArray = [1, 56, 87, 65, 12, 54, 78, 3];
+        var sum = 0;
+        for(var i = 0; i< sampleArray.length; i++){
+            if(sampleArray[i] % 2 == 0){
+                sum += sampleArray[i];
+                
+            }
+        }
+        console.log(`Sum of even numbers in a given array is : ${sum}`);
+        for(var i = 0; i< sampleArray.length; i++){
+            if(sampleArray[i] % 2 !== 0){
+                sum += sampleArray[i];
+                
+            }
+        }
+        console.log(`Sum of odd numbers in a given array is : ${sum}`);
+
+    </script>
+</body>
+</html>

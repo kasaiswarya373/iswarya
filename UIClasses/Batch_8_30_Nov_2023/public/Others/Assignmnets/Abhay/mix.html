@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // WAP to find sum of the given indiviuals
+        // var a = prompt("Enter number");
+        // a = parseInt(a);
+        // var sum = 0;
+        // var rem;
+        // while (a > 0) {
+        //     rem = a % 10;
+        //     sum = sum + rem;
+        //     a = a / 10;
+        //     a = parseInt(a);
+        // }
+        // console.log("Sum of the given indiviual is " + sum);
+
+
+        // reverse number program
+        // var no = prompt("Enter nunber");
+        // no = parseInt(no);
+        // var rem;
+        // var sum = 0;
+        // while (no > 0) {
+        //     rem = no % 10;
+        //     sum = sum * 10 + rem;
+        //     no = no / 10;
+        //     no = parseInt(no);
+        // }
+        // console.log(sum);
+
+        //lucky number
+        // var num = prompt("Enter number");
+        // num = parseInt(num);
+        // var sum = 0;
+        // while (num > 0) {
+        //     var rem = num % 10;
+        //     sum = sum + rem;
+        //     num = num / 10;
+        //     num = parseInt(num);
+        //     if (num == 0 && sum > 9) {
+        //         num = sum;
+        //         sum = 0;
+        //     }
+        // }
+        // console.log("Your Lucky number is " + sum);
+        // check no is palindrome or not
+        var num = prompt("Enter number");
+        num = parseInt(num);
+        var temp;
+        temp = num;
+        var palindrome ='';
+        while(num > 0){
+            var rem = num % 10;
+            palindrome += rem;
+            num = num / 10;
+            num = parseInt(num);
+
+        }if (temp == palindrome){
+            console.log("Number is Palindrome")
+        } else{
+            console.log("number is not palindrome")
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

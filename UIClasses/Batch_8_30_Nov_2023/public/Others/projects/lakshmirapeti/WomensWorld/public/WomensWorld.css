@@ -1,0 +1,695 @@
+#body {
+  background-color: rgb(220, 220, 217);
+}
+
+.display {
+  padding: 25px;
+  border: 1px solid white;
+  height: auto;
+  background-color: white;
+  position: relative;
+  top: 10px;
+  display: none;
+}
+
+#display {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#result {
+  text-align: center;
+  display: none;
+}
+
+#searchblock {
+  position: relative;
+  top: 8px;
+}
+
+#border {
+  border-left: 1px solid;
+  float: right;
+  position: relative;
+  top: 0px;
+  right: 41px
+}
+
+
+#searchbtn {
+  float: right;
+  position: relative;
+  top: 4px !important;
+  right: -7px !important;
+  border: none;
+  cursor: pointer;
+}
+
+#searchbtn:hover {
+  color: blue;
+}
+
+#total {
+  position: relative;
+  top: 10px
+}
+
+.display h1 {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: darkcyan;
+}
+
+#logo {
+  width: 250px;
+  height: 70px;
+  border: 1px solid white;
+}
+
+#search {
+  width: 70% !important;
+  border-radius: 15px !important;
+  /* box-shadow: 1px 1px 1px 1px whitesmoke; */
+}
+
+.navbar {
+  background-color: rgb(176, 174, 174);
+  box-shadow: 2px 2px 2px 2px rgb(141, 139, 139) !important;
+}
+
+#ultg {
+  list-style-type: none;
+  border: 1px solid white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+  height: auto;
+  width: 250px;
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  top: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  transition: 1s;
+}
+
+#ultg #litag1 #pimg:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+#star {
+  margin-left: 5px;
+}
+
+.libtn:hover {
+  color: blue;
+}
+
+.row {
+  align-items: center;
+  justify-content: center;
+}
+
+#pimg {
+  border: 1px solid rgb(244, 240, 240);
+
+}
+
+.libtn {
+  background-color: rgb(83, 203, 224);
+  border-radius: 10px;
+  color: rgb(132, 130, 130);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 22px !important;
+  font-weight: bolder;
+}
+
+#litag4 {
+  color: rgb(82, 50, 241);
+  font-size: 18px !important;
+}
+
+.rating {
+  border: 1px solid #388e3c;
+  border-radius: 10px;
+  width: 50px;
+  position: relative;
+  left: 80px;
+  color: white;
+  font-weight: bolder;
+  background-color: #388e3c;
+}
+
+#litag1,
+#litag2,
+#litag3,
+#litag4,
+#litag5 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* welcomemsg css */
+#welcomeModal .modal-header {
+  border: none !important;
+  display: block !important;
+}
+
+#welcomeModal .modal-header h1 {
+  position: relative;
+  top: 15px;
+  text-align: center;
+}
+
+#welcomeModal .modal-content {
+  padding: 25px !important;
+}
+
+#welcomeModal .modal-header h1 {
+  color: rgb(97, 199, 253);
+  font-weight: 600;
+  font-size: 23px !important;
+  font-weight: bolder;
+}
+
+#welcomeModal .modal-body {
+  text-align: center;
+  color: grey;
+  font-weight: bolder;
+  font-size: 20px;
+  font-style: oblique;
+}
+
+#welcomeModal .modal-body p {
+  color: rgb(228, 133, 212);
+  font-weight: bolder;
+}
+
+#welcomeModal #wbtn {
+  text-align: center;
+}
+
+#WelcomeModal .btn-success {
+  color: white;
+  width: 20%;
+  border-radius: 10px !important;
+}
+
+#welcomeModal #wbtn {
+  padding-bottom: 15px;
+}
+
+/* sorrymodalmsg css */
+#sorryModal .modal-content {
+  padding: 25px !important;
+}
+
+#sorryModal .modal-header {
+  border: none !important;
+  display: block;
+  text-align: center;
+}
+
+#sorryModal .modal-header h1 {
+  color: rgb(243, 108, 108);
+  font-weight: 600;
+  font-size: 23px !important;
+  font-weight: bolder;
+}
+
+#sorryModal #sbtn {
+  text-align: center;
+}
+
+#sorryModal .btn-secondary {
+  color: white;
+  width: 20%;
+  border-radius: 10px !important;
+}
+
+#sorryModal .modal-body {
+  text-align: center;
+  color: rgb(137, 237, 177);
+  font-weight: bolder;
+  font-size: 20px;
+  font-style: oblique;
+}
+
+#sorryModal .modal-body p {
+  color: rgb(205, 82, 133);
+  font-size: 22px;
+}
+
+/* navbar 2 css */
+.nav2 {
+  background-color: rgb(247, 248, 249);
+  border: 1px solid rgb(246, 243, 243);
+  box-shadow: 1px 1px white;
+  height: auto;
+  padding: 20px;
+  position: relative;
+  top: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav2 ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav2 li {
+  text-align: center;
+}
+
+.nav2 li p {
+  color: rgb(84, 84, 85);
+  font-weight: bolder;
+  position: relative;
+  top: 8px;
+  cursor: pointer;
+}
+
+.nav2 li p:hover {
+  color: blue;
+}
+
+/* login css */
+
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+
+.bi-cart {
+  font-size: 25px !important;
+}
+
+#cart {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+#loginmodal .modal-body ul {
+  list-style: none;
+}
+
+#loginmodal .modal-body ul li {
+  margin-top: 10px;
+}
+
+#block span {
+  float: left;
+}
+
+#block span input {
+  margin-right: 5px;
+}
+
+#block a {
+  float: right;
+}
+
+input {
+  border-radius: 25px;
+}
+
+#loginmodal .modal-body {
+  padding: 40px !important;
+}
+
+#loginmodal .bi-eye {
+  margin-right: 10px;
+  float: right;
+  margin-top: -30px;
+  cursor: pointer;
+}
+
+#loginmodal .bi-eye-slash {
+  margin-right: 10px;
+  float: right;
+  margin-top: -30px;
+  cursor: pointer;
+}
+
+#loginmodal .modal-header .bi-person-circle {
+  font-size: 50px;
+  color: grey;
+}
+
+#loginmodal .modal-header {
+  display: block !important;
+  text-align: center !important;
+}
+
+.btn-close {
+  float: right !important;
+}
+
+#loginmodal .modal-content {
+  padding: 30px !important;
+  background: linear-gradient(to bottom, rgb(103, 204, 238), rgb(244, 154, 247)) !important;
+}
+
+#loginmodal .modal-body ul li .bi-person-circle,
+.bi-lock {
+  float: left !important;
+  position: relative;
+  top: -29px;
+  left: 9px;
+}
+
+#loginmodal .modal-body ul li input {
+  text-align: center;
+}
+
+#loginmodal .modal-body {
+  padding: 30px !important;
+  text-align: center !important;
+  align-items: center;
+}
+
+#loginmodal .modal-header {
+  border: none !important;
+}
+
+#center {
+  text-align: center !important;
+  display: block !important;
+}
+
+#loginbtn {
+  width: 50% !important;
+  border-radius: 25px;
+}
+
+#bottom {
+  text-align: center;
+}
+
+#bottom h6 {
+  font-size: 14px;
+  color: grey;
+}
+
+#bottom .btn-secondary {
+  border: 1px solid white;
+  border-radius: 25px;
+  color: white;
+}
+
+.login {
+  text-align: center;
+}
+
+/* signup css */
+#signupmodal .bi-eye {
+
+  margin-right: 10px;
+  float: right;
+  margin-top: -30px;
+  cursor: pointer;
+}
+
+#signupmodal .modal-fade {
+  /* background-color: aqua !important; */
+  box-shadow: none !important;
+}
+
+#signupmodal .bi-eye-slash {
+  margin-right: 10px;
+  float: right;
+  margin-top: -30px;
+  cursor: pointer;
+}
+
+#signupmodal .modal-header {
+  border: none !important;
+  text-align: center !important;
+  display: block !important;
+}
+
+#signupmodal .btn-close {
+  margin-top: -30px !important;
+}
+
+#signupmodal #button .btn-primary {
+  width: 200px !important;
+  border-radius: 20px !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#signupmodal #errormsg,
+#namemsg {
+  display: none;
+  color: red;
+}
+
+#signupmodal #matchpass,
+#pattern,
+#passlen,
+#emailerr,
+#numerr,
+#exist,
+#adderr,
+#houseerr,
+#pincodeerr,
+#stateerr,
+#districterr,
+#pincodeerr,
+#cityerr,
+#villageerr {
+  display: none;
+  color: red;
+}
+
+#signupmodal #gendererr,
+#checkerr {
+  display: none;
+  color: red;
+}
+
+#signupmodal li input {
+  text-align: center !important;
+}
+
+#signupmodal .modal-body ul li .bi-person-circle,
+.bi-key,
+.bi-envelope,
+.bi-telephone {
+  float: left !important;
+  position: relative;
+  top: -32px;
+  left: 7px;
+  font-size: 20px;
+}
+
+#signupmodal #button {
+  text-align: center !important;
+}
+
+#signupmodal ul {
+  list-style: none;
+}
+
+#signupmodal ul li {
+  margin: 20px;
+}
+
+#signupmodal ul li input {
+  width: 100%;
+}
+
+#signupmodal #genderbtn {
+  align-items: center;
+}
+
+#signupmodal #image {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+#signupmodal .modal-content {
+  padding: 30px !important;
+  background: linear-gradient(to bottom, rgb(247, 121, 221), rgb(187, 159, 252), rgb(81, 215, 238)) !important;
+}
+
+/* forgotpassword css */
+
+#forgotmodal .modal-header h1 {
+  color: grey !important;
+}
+
+#forgotmodal .bi-person-circle {
+  position: relative;
+  top: -30px;
+  left: 10px;
+}
+
+#forgotmodal .modal-body ul li input {
+  text-align: center;
+}
+
+#forgotmodal .modal-header {
+  text-align: center !important;
+  display: block !important;
+}
+
+#forgotmodal .btn-close {
+  margin-top: -30px !important;
+}
+
+#forgotmodal .modal-body .fpbg {
+  float: left;
+  width: 40%;
+  height: 300px;
+  border: 1px solid white;
+  background-image: url('./images/forgotbg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#forgotmodal .modal-body {
+  padding: 0px !important;
+}
+
+#forgotmodal .modal-body .fpd {
+  float: right;
+  /* border: 1px solid white; */
+  width: 60%;
+}
+
+#forgotmodal .modal-header {
+  border: none !important;
+}
+
+#forgotmodal .modal-body ul {
+  list-style: none;
+}
+
+#forgotmodal .modal-body ul li {
+  margin: 20px;
+}
+
+#forgotmodal .modal-body h1 {
+  text-align: center;
+}
+
+#forgotmodal .modal-body h1 .bi-person-lock {
+  margin-top: 20px;
+  font-size: 40px;
+  color: orange;
+}
+
+#forgotmodal .nextbtn {
+  text-align: center !important;
+}
+
+#forgotmodal .account_l {
+  margin-top: 12px;
+  text-align: center;
+}
+
+#forgotmodal .account_c {
+  margin-top: 12px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+
+#forgotmodal .nextbtn .btn-primary {
+  margin-top: 20px !important;
+  margin-bottom: 25px !important;
+  width: 200px !important;
+  border-radius: 25px !important;
+}
+
+#forgotmodal .modal-body p {
+  text-align: center;
+}
+
+#forgotmodal .modal-body p span {
+  color: grey;
+  font-weight: bolder;
+}
+
+/* logout css */
+#logoutbtn {
+
+  display: none;
+}
+
+#logoutmodal .modal-header {
+  border: none !important;
+}
+
+#logoutmodal .modal-content {
+  background: linear-gradient(to bottom, rgb(5, 230, 246), rgb(239, 138, 229));
+}
+
+#logoutmodal .modal-body .button {
+  text-align: center;
+}
+
+#logoutmodal .modal-body h3 {
+  padding: 20px;
+  text-align: center;
+  font-weight: bolder;
+  color: grey;
+}
+
+
+@media (max-width:900px) {
+
+  #login,
+  #signup,
+  #carticons {
+    margin-top: 5px;
+
+  }
+}
+
+@media (max-width:600px) {
+  #ultg {
+    width: 90%
+  }
+}
+
+@media (max-width:345px) {
+  .nav2 {
+    position: relative;
+    top: 50px
+  }
+
+  #container {
+    position: relative;
+    top: 20px
+  }
+
+}
+
+@media (max-width:1286px) {
+  .nav2 {
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    justify-content: normal;
+  }
+
+  @media (max-width:534px) {
+    #searchblock {
+      display: none;
+    }
+  }
+}

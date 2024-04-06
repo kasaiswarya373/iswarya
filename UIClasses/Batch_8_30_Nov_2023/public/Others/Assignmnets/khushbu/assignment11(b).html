@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserGivenRange</title>
+</head>
+<body>
+    
+    <script>
+        var n = prompt("enter start range:");
+        var m = prompt("enter end range:");
+        n = parseInt(n);
+        m = parseInt(m);
+        console.log("Print " +n+ "To" +m);
+        
+        if(m > n){
+                   
+            for(a = n; a <= m; a++){            
+            console.log(a);
+            }
+        }else{
+            for(a = n; a >= m; a--){            
+            console.log(a);
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive Iterative Object</title>
+</head>
+
+<body>
+    <script>
+        var data = {
+            "Name": "Royal",
+            "Age": 25,
+            "Gender": "Male",
+            "Location": 'Maharashtra'
+        }
+       /* for (var tempkey in data) {
+            console.log(`${tempkey} value is : ${data[tempkey]}`);
+        }
+        // console.log('****************************************************');
+        this we have already printed below
+    */
+        var contactDetails = {
+            fName: 'Royal',
+            'lName': 'Gondane',
+            petName: 'RG',
+            mailId: {
+                office: 'abc@office.com',
+                'personal': ['abc@gmail.com', 'pqr@hotmail.com']
+            },
+            address: {
+                'office': {
+                    buldingNo: '5A',
+                    country: {
+                        name: 'India',
+                        code: 'IND'
+                    },
+                    floorNo: '9L',
+                    pinCode: 539098
+                },
+                'personal': {
+                    stateInfo: {
+                        details: {
+                            sId: '01',
+                            sCode: 'TS',
+                            pinCode: 523423
+                        },
+                        countryName: 'India',
+                        dNo: '158/B',
+                        streetName: 'SR Nagar'
+                    }
+                }
+            },
+            phonoNo: {
+                'office': '040-234234',
+                'personal': [935345, 93543534],
+                emergency: 234234234
+            },
+            socialNetworkingIds: {
+                linkedIn: 'RGlinkedIn',
+                twitter: 'RGtwitter'
+            },
+            profilePic: 'abc/data/data.png',
+            gender: 'Male',
+            'mMtatus': 'M'
+        }
+
+       /* 
+        for (var tempkey2 in contactDetails){
+            console.log(`${tempkey2} value is : ${contactDetails[tempkey2]}`);
+        } */
+        console.log('Above line of code is comment out, bcz it will throw undefined in case of JSON inside the JSON');
+        // console.log('****************************************************');
+
+        var iterativeOverObject = (data) => {
+            for (var tempkey2 in data){
+                // console.log(typeof(data[tempkey2]))
+                if((typeof(data[tempkey2]) == 'object') && !Array.isArray(data[tempkey2])){
+                    iterativeOverObject(data[tempkey2]);                                        //Recurrsive function
+                    var subObject = data[tempkey2];
+
+                    for (var tkey in subObject){
+                        console.log(`${tkey} value is : ${subObject[tkey]}`);
+                    }
+
+                } else{
+                    console.log(`${tempkey2} value is : ${data[tempkey2]}`);
+
+                }
+            }
+        }
+        console.log('****************************************************');
+        iterativeOverObject(data);
+        console.log('****************************************************');
+        iterativeOverObject(contactDetails);
+        console.log('****************************************************');
+
+    </script>
+
+</body>
+
+</html>

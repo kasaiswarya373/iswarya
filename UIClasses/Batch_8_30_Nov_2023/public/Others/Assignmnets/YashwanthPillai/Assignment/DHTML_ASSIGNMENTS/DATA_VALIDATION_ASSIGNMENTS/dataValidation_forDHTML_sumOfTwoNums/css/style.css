@@ -1,0 +1,55 @@
+h2{
+    border: 2px solid red;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    /* margin: auto; */
+    text-align: center;
+}
+
+.container{
+    /* border: 1px solid; */
+    min-height: 450px;
+
+}
+.sum-container{
+    border: 1px solid;
+    min-height: 3s00px;
+    width: 300px;
+    margin: auto;
+}
+li{
+    list-style: none;
+    border: 1px solid ;
+    padding: 10px;
+    margin: 5px;
+    background-color: silver;
+    color: black;
+}
+.head1{
+    text-align: center;
+}
+input[type=button]{
+    padding-inline: 100px;
+    padding-block: 10px;
+    color: red;
+    font-weight:bolder ;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: black;
+}
+input[type=button]:hover{
+    color:aquamarine;
+    border: 5px solid aquamarine;
+
+}
+.result-block{
+text-align: center;
+}
+.summ{
+    display: none;
+}
+.error{
+    color: red;
+    display: none;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luckyNumberInArray</title>
+</head>
+<body>
+    <script>
+        var luckyNumber = () => {
+            var arr = [20, 888, 757, 232, 457, 81, 57, 80, 957];
+            for(var i = 0; i <= arr.length-1; i++){
+                var num = arr[i];
+            var sum = 0;
+            while(num > 0){
+                var rem = num % 10;
+                sum = sum + rem;
+                num = num / 10;
+                num = parseInt(num);
+                if(num == 0 && sum > 9){
+                    num = sum;
+                    sum = 0
+                }
+            }
+            console.log(`Lucky number of ${arr[i]} is ${sum}`);
+        }
+    }
+    luckyNumber();
+    </script>
+</body>
+</html>

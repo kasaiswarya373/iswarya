@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to add & remove table rows</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      table,
+      form {
+        width: 500px;
+        margin: 20px auto;
+        border: 1px solid;
+        padding: 20px;
+      }
+      table {
+        border-collapse: collapse;
+        text-align: center;
+      }
+      table td,
+      table th {
+        border: solid 1px black;
+      }
+      label,
+      input {
+        display: block;
+        margin: 10px 0;
+        font-size: 20px;
+      }
+      button {
+        display: block;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>EMP Management Data</h1>
+    <form>
+      <div class="input-row">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="input-row">
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age" />
+      </div>
+      <div class="input-row">
+        <label for="gender">Gender:</label>
+        Male
+        <input type="radio" name="gender" value="Male" checked />
+        Female
+        <input type="radio" name="gender" value="Female" />
+      </div>
+      <div class="input-row">
+        <label for="">Country:</label>
+        <select name="" id="country">
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+      <button>Submit</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>country</th>
+
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+      const formEl = document.querySelector("form");
+      const tbodyEl = document.querySelector("tbody");
+      const tableEl = document.querySelector("table");
+      function onAddData(e) {
+        e.preventDefault();
+        const age = document.getElementById("age").value;
+        const name = document.getElementById("name").value;
+        const gender = document.querySelector(
+          "input[name=gender]:checked"
+        ).value;
+        const country = document.querySelector("#country").value;
+        tbodyEl.innerHTML += `
+            <tr>
+                <td>${name}</td>
+                <td>${age}</td>
+                <td>${gender}</td>
+                <td>${country}</td>
+
+                <td><button class="deleteBtn">Delete</button></td>
+            </tr>
+        `;
+      }
+
+      function onDeleteRow(e) {
+        if (!e.target.classList.contains("deleteBtn")) {
+          return;
+        }
+
+        const btn = e.target;
+        btn.closest("tr").remove();
+      }
+
+      formEl.addEventListener("submit", onAddData);
+      tableEl.addEventListener("click", onDeleteRow);
+    </script>
+  </body>
+</html>

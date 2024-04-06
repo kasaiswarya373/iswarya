@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>employe details </h3>
+    <h4> using control structure</h4>
+    <script>
+        console.log(" employe details usig conditions");
+        var empName=prompt("employe name");
+        var empAge=prompt("employe Age");
+        var empDep=prompt("employe department");
+        var empGender=prompt("enter gender");
+        var basicsalary=prompt("employe basic  annual salary");
+        basicsalary=parseInt(basicsalary);
+        var pf= (prompt("pf percentage")*basicsalary)/100;
+        pf=parseInt(pf);
+        var hra=(prompt("hra percentage")*basicsalary)/100;
+        hra=parseInt(hra);
+        var tSalary=basicsalary+pf+hra;
+        tSalary=parseFloat(tSalary);
+
+        console.log( " employe name:"+empName);
+        console.log("employe age:"+empAge)
+        console.log("employe Department:"+empDep);
+        console.log("employe Gender"+empGender);
+        console.log("basic annual salary:"+basicsalary);
+        console.log("pf percentage:"+pf);
+        console.log(" Hra percentage:"+hra);
+        console.log(" employe total salary without tax:"+tSalary);
+        if(empGender=="male")
+        {
+            if(tSalary>200000)
+            {
+                var tax=(15*tSalary)/100;
+                var Asalary=basicsalary-tax;
+                console.log("tax percentage is 15% ");
+                console.log( "employe total salary with tax:"+Asalary);
+            }
+            
+             else if(tSalary>100000)
+             {
+                 tax=( 10*tSalary)/100;
+                 Asalary=tSalary-tax;
+                 console.log("tax percentage is 10%")
+                 console.log(" employe total annual salary with tax:"+Asalary);
+
+                 
+             }
+             else if(tSalary>50000)
+             {
+                 tax=( 5*tSalary)/100;
+                 Asalary=tSalary-tax;
+                 console.log("tax percentage is 5%")
+                 console.log(" employe total annual salary with tax:"+Asalary);
+                 
+                 
+             }
+             else{
+                tax=(0*tSalary)/100;
+                Asalary=tSalary-tax;
+                console.log(" tax percentage is 0");
+                console.log(" employe total annual salary with tax:"+Asalary);
+
+                
+             }
+            
+        }
+        if(empGender=="female")
+        {
+            if(tSalary>200000)
+            {
+                var tax=(10*tSalary)/100;
+                var Asalary=basicsalary-tax;
+                console.log("tax percentage is 15% ");
+                console.log( "employe total salary with tax:"+Asalary);
+            }
+            
+             else if(tSalary>100000)
+             {
+                 tax=( 5*tSalary)/100;
+                 Asalary=tSalary-tax;
+                 console.log("tax percentage is 10%")
+                 console.log(" employe total annual salary with tax:"+Asalary);
+
+                 
+             }
+            
+                 
+             
+             else {
+                tax=(0*tSalary)/100;
+                Asalary=tSalary-tax;
+                console.log(" tax percentage is 0");
+                console.log(" employe total annual salary with tax:"+Asalary);
+
+                
+             }
+            
+        }
+        
+
+        
+
+        
+    </script>
+</body>
+</html>

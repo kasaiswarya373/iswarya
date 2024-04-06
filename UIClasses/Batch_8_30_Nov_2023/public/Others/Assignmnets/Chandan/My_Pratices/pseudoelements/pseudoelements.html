@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstratin pseudo elements
+
+    </title>
+    <style>
+        h2{
+            text-align: center;
+            border: 1px solid;
+            text-decoration: underline;
+            margin: 10px;
+            padding: 10px;
+        }
+        h3{
+            color: blueviolet;
+        }
+        p::first-letter{
+            color: yellowgreen;
+            font-size: 20px;
+            font-weight:bold;
+
+        }
+        p::first-line{
+            background-color: red;
+        }
+        p::selection{
+            color: green;
+            background-color: aqua;
+        }
+        p::after{
+         content:  'reading continuefrom our main page';
+         text-decoration: underline;
+         color: bisque;
+         
+        }
+        p[name=Electionnews]::before{
+            content:"ELECTION NEWS";
+            color: antiquewhite;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        News content
+    </h2>
+    <h3>
+        News Item1
+    </h3>
+    <p name="Electionnews" class="Enews">
+        Ending two days of suspense, the Congress central leadership has named Telangana party chief A. Revanth Reddy as 
+        its choice of Chief Minister of the State. He will take the oath of office on December 7.
+        Mr. Reddy was named the leader of the Congress Legislature Party (CLP), and he will become the first Congress
+         Chief Minister of Telangana, a State formed in 2014. Congress president Mallikarjun Kharge gave his stamp of 
+         approval on the basis of a report submitted by the party’s poll observers.
+          reading content from the maon page
+
+    </p>
+    <h3>
+        News Item2
+    </h3>
+    <p>
+        Ending two days of suspense, the Congress central leadership has named Telangana party chief A. Revanth Reddy as 
+        its choice of Chief Minister of the State. He will take the oath of office on December 7.
+        Mr. Reddy was named the leader of the Congress Legislature Party (CLP), and he will become the first Congress
+         Chief Minister of Telangana, a State formed in 2014. Congress president Mallikarjun Kharge gave his stamp of 
+         approval on the basis of a report submitted by the party’s poll observers.
+
+    </p>
+    <h3>
+        News Item3
+    </h3>
+    <p name="Electionnews" class="Enews">
+        Ending two days of suspense, the Congress central leadership has named Telangana party chief A. Revanth Reddy as 
+        its choice of Chief Minister of the State. He will take the oath of office on December 7.
+        Mr. Reddy was named the leader of the Congress Legislature Party (CLP), and he will become the first Congress
+         Chief Minister of Telangana, a State formed in 2014. Congress president Mallikarjun Kharge gave his stamp of 
+         approval on the basis of a report submitted by the party’s poll observers.
+
+    </p>
+    <h3>
+        News Item4
+    </h3>
+    <p>
+        Ending two days of suspense, the Congress central leadership has named Telangana party chief A. Revanth Reddy as 
+        its choice of Chief Minister of the State. He will take the oath of office on December 7.
+        Mr. Reddy was named the leader of the Congress Legislature Party (CLP), and he will become the first Congress
+         Chief Minister of Telangana, a State formed in 2014. Congress president Mallikarjun Kharge gave his stamp of 
+         approval on the basis of a report submitted by the party’s poll observers.
+
+    </p>
+
+
+
+</body>
+</html>

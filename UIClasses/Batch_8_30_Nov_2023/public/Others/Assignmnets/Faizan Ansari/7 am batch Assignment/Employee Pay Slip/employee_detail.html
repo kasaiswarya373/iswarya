@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="emp.css">
+        <script src="emp.js"></script>
+    </head>
+    <body>
+
+        <h3>
+            Employee Pay Slip 
+        </h3>
+
+        <ul>
+
+            <li>
+                <div class="labelText">
+                    Enter Employee Name:
+                </div>
+                <div  class="controller">
+                    <input type="text" id="ename">
+                </div>
+            </li>
+
+            <li>
+                <div class="labelText">Enter Employee Age:</div>
+                <div class="controller"><input type="number" id="eage" maxlength="2"></div>
+            </li>
+
+            <li>
+                Select Gender:
+                <input type="radio" name="gender" value="Male" checked>Male
+                <input type="radio" name="gender" value="Female">Female
+            </li>
+
+            <li>
+                <div class="labelText">
+                    Select Department:
+                </div>
+                <div class="controller">
+                    <select name="dropDown" id="edept">
+                        <option value="Development">Development</option>
+                        <option value="Testing">Testing</option>
+                        <option value="R&D">R&D</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Finance">Finance</option>
+                    </select>
+                </div>
+                
+            </li>
+
+            <li>
+                <div class="labelText">
+                    Enter Basic Salary:
+                </div>
+                <div  class="controller">
+                    <input type="text" id="ebasicSal">
+                </div>
+            </li>
+
+            <li style="text-align: center;">
+                <input type="button" value="Generate Pay Slip" onclick="read_EmpData();">
+            </li>
+        </ul>
+
+        <ul class="dispalyDetailsBlock">
+
+            <li>
+                <div class="labelText">
+                    Employee Name: 
+                </div>
+                <span id="dEname"></span>
+                
+            </li>
+
+            <li>
+                <div class="labelText">
+                    Employee Age:
+                </div> 
+                <span id="dEage"></span>
+            </li>
+
+            <li>
+                <div class="labelText">
+                    Employee Gender: 
+                </div>
+                <span id="dEgender"></span>
+            </li>
+            
+            <li>
+                <div class="labelText">
+                    Employee Department: 
+                </div>
+                <span id="dEdept"></span>
+            </li>
+            
+            <li>
+                <div class="labelText">
+                    Employee PF: 
+                </div>
+                <span id="dEpf"></span>
+            </li>
+            
+            <li>
+                <div class="labelText">
+                    Employee HRA: 
+                </div>
+                <span id="dEhra"></span>
+            </li>
+            
+            <li>
+                <div class="labelText">
+                    Employee Total Salary: 
+                </div>
+                <span id="dEtoalSal"></span>
+            </li>
+            
+            <li>
+                <div class="labelText">
+                    Tax to be Paid: 
+                </div>
+                <span id="dEtax"></span>
+            </li>
+        </ul>
+
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Employeedata using both parameters</title>
+        </head>
+        <body>
+            <script>
+            var readEmpDetails = ( ) => {
+            var eName, eAge, eGender, eBasic;
+            eName = prompt("Enter Employee name");
+            eAge = prompt("Enter Employee age");
+            eGender = prompt("Enter Employee gender");
+            eBasic = parseInt( prompt("Enter Employee Basic salary"));
+            var pf = getPf(eBasic);
+            var hra = gethra(eBasic);
+            var Total = gettotalSalary(eBasic , pf , hra);
+            displayDetails(eName, eAge, eGender, eBasic, pf, hra,Total);
+        }
+        var getPf = (eBasic) => {
+            var pf = (16 * eBasic) / 100 ;
+            return pf;
+        }
+        var gethra = (eBasic) =>{
+            var hra = (22 * eBasic) / 100 ;
+            return hra; 
+        }
+        var gettotalSalary = (eBasic , pf , hra) =>{
+            var Total = ( pf + hra + eBasic);
+            return Total;
+        }
+        var displayDetails = (eName, eAge, eGender, eBasic, pf, hra,Total) => {
+            
+            console.log(`Employee Name is ${eName}`);
+            console.log(`Employee age is ${eAge}`);
+            console.log(`Employee Gender is ${eGender}`);
+            console.log(`Basic salary is ${eBasic}`);
+            console.log(`PF is ${pf}`);
+            console.log(`HRA = ${hra}`);
+            console.log(`Employee Total salary is ${Total}`);
+        }
+        readEmpDetails( );
+            </script>
+        </body>
+</html>

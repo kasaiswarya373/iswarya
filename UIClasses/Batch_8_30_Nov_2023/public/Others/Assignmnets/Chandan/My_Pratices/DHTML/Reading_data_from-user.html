@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            text-align: center;
+            font-weight: bold;
+            color: rgb(238, 84, 7);
+        }
+        ul{
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: bisque;
+        }
+        li{
+            border: 1px solid;
+            padding: 10px;
+            margin: 10px;
+            list-style: none;
+            background-color: aliceblue;
+        }
+        .rblock{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li class="title">
+            finding sum of values
+        </li>
+        <li>
+            <label for="a1value">Enter value for a1</label>
+            <input type="text" name="a1value" id="fval">
+        </li>
+        <li>
+            <label for="a2value">Enter value for a2</label>
+            <input type="text" name="a2value" id="sval">
+        </li>
+        <li class="rblock">
+            The sum of values is 
+            <span id="resultvalue"></span>
+
+        </li>
+        <li>
+            <input type="button" value="get sum" onclick="getvalues()">
+        </li>
+    
+    </ul>
+
+
+    <!--<div>
+        The sum of two values is <span></span>
+    </div>-->
+
+    <script>
+       /* var a1 = 20;
+        var a2 = 43;
+        var result = a1 + a2;
+
+        document.querySelector("span").innerHTML = '<b>' + result + '</b>';;
+       // document.querySelector("span").innerText = '<b>' + result + '</b>' */
+
+     /*  var a1 = prompt("enter values for a1")
+       a1 = parseInt(a1);
+
+       var a2 = prompt("enter values for a2")
+       a2 = parseInt(a2);
+       var result = a1 + a2;
+
+       document.querySelector("span").innerText = result; */
+
+    </script>
+
+    <script>
+        var getvalues = () => {
+            var a1 = document.querySelector("#fval").value;
+            a1 = parseInt(a1);
+            var a2 = document.querySelector("#sval").value;
+            a2 = parseInt(a2);
+            var result = a1 + a2;
+            document.querySelector("#resultvalue").innerText = result;
+
+            document.querySelector(".rblock").style.display = 'block';
+            
+        }
+    </script>
+</body>
+</html>

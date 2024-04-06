@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                function isPrime(num) {
+                if (num <= 1) return false;
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) return false;
+        }
+        return true;
+        }
+
+        function printPrimesWithCount(limit) {
+        let count = 0;
+
+        console.log("Prime numbers from 1 to", limit, "are:");
+        for (let i = 1; i <= limit; i++) {
+            if (isPrime(i)) {
+            count++;
+            console.log(i);
+            }
+        }
+
+        console.log("Total count of prime numbers:", count);
+        }
+
+        // Set the limit to 100
+        printPrimesWithCount(100);
+
+    </script>
+</body>
+</html>

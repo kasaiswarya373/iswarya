@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstarting accessing json data..
+        </title>
+    </head>
+    <body>
+        <script>
+            var info = {
+                name: 'Teena',
+                age: 20,
+                gender: 'Female'
+            };
+
+           /* console.log(info);
+            
+            console.log(info.age);
+            console.log(info['age']);
+            console.log(info["age"]);
+
+            console.log(info.gender);
+            console.log(info['gender']);
+            console.log(info["gender"]); */ 
+
+
+            var keyname = 'name';
+
+            console.log(info.name)
+            console.log(info[keyname]); // info['name']
+
+        </script>
+    </body>
+</html>

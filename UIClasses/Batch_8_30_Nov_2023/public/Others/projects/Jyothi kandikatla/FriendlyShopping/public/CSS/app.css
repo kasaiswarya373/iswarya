@@ -1,0 +1,247 @@
+#pageContainer {
+
+    main {
+        min-height: 400px;
+    }
+}
+.categoryFilterBlock img {
+    width: 100%;
+    height: 150px;
+    margin: 10PX -10px 10px 0px;
+}
+
+.loginContent {
+    li {
+        list-style: none;
+        margin: 10px;
+    }
+    input[type=checkbox] {
+        margin-right: 10px;
+    }
+}
+.canvasblock{
+    border: 2px solid;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(241, 232, 232);
+}svg{
+    width: 50px;
+    position: reletive;
+    top: 10px;
+    left: 10px;
+}
+.modal-header,.modal-body,.modal-footer{
+    background-color: rgba(0, 206, 209, 0.118);
+   
+}
+.loginimg{
+    width: 186px;
+    height: 123px;
+    position: absolute;
+    top: 129px;
+    left: 284px;
+    border-radius: 50%;  
+}
+.sample{
+    border: 1px solid;
+    width: 400px;
+    height: 400px;
+    background-image: url('images\log.png');
+}
+.sam{
+    background-position: 100px 100px;
+}
+#SignupContainer{
+    border: 1px solid white;
+    width: 500px;
+    height: 300px;
+    margin: 75px auto;
+    border-radius: 20px;
+   h2{
+    text-align: center;
+    color: blue;
+   }
+    li{
+        list-style: none;
+        margin: 10px;
+    }
+    img{
+        position: absolute;
+        top: 400px;
+        left: 290px;
+    }
+}
+marquee{
+    color: gold;
+    margin-top: 10px;
+    border-radius: 25px;
+    text-shadow: 4px 4px 2px brown;
+     font-size: 30px; 
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: rgb(51, 176, 218);
+}
+.forgotContainer{
+    border: 1px solid;
+    width: 400px;
+    height: 200px;
+    margin: 100px auto;
+    padding: 10px;
+    li{
+        margin: 10px;
+        list-style: none;
+    }
+}
+#openeye,#closedeye{
+    position: absolute;
+    top: 86px;
+    left: 420px;
+}
+.logoutBtnContainer, .wlcomeMsg {
+    display: none;
+  }
+  .wlcomeMsg {
+    margin-right: 10px;
+  }
+  
+  #header_userAccountId {
+    font-weight: bold;
+    color: orange;
+  }
+  .alert {
+    position: absolute;
+    width: 40%;
+    color: black;
+    background-color: rgb(241, 237, 219);
+    left: 30%;
+    bottom: 205px;
+    z-index: 1000;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+    opacity: 0.8;
+  }
+  
+  #cartCountValue {
+  
+  
+      position: relative;
+      left: 29px;
+      top: -17px;
+      color: orange;
+      font-weight: bold;
+      cursor: pointer;
+  
+    position: relative;
+    left: 29px;
+    top: -17px;
+    color: orange;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  
+  
+  .ProductDetailsBlock img {
+    width: 160px;
+    height: 120px;
+  }
+  
+  /* Cart Blocks */
+  .CartsBlock1,
+  .CartsBlock2,
+  .CartsBlock3,
+  .CartsBlock4,
+  .CartsBlock5 {
+    border: 1px solid #ddd; /* Light gray border */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .CartsBlock1:hover,
+  .CartsBlock2:hover,
+  .CartsBlock3:hover,
+  .CartsBlock4:hover,
+  .CartsBlock5:hover {
+    transform: translateY(-3px); /* Move block slightly up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increase box shadow on hover */
+  }
+  
+  /* Product Data Styling */
+  .CartsBlock1,
+  .CartsBlock2,
+  .CartsBlock3,
+  .CartsBlock4,
+  .CartsBlock5 {
+    font-family: Arial, sans-serif; /* Use a common sans-serif font */
+    font-size: 14px; /* Adjust font size */
+    color: #333; /* Dark text color */
+  }
+  
+  .CartsBlock1 img,
+  .CartsBlock2 img,
+  .CartsBlock3 img,
+  .CartsBlock4 img,
+  .CartsBlock5 img {
+    margin-right: 20px; /* Add space between image and text */
+  }
+  
+  .CartsBlock1 svg,
+  .CartsBlock2 svg,
+  .CartsBlock3 svg,
+  .CartsBlock4 svg,
+  .CartsBlock5 svg {
+    cursor: pointer; /* Change cursor to pointer on trash icon */
+    fill: #888; /* Gray color for trash icon */
+    transition: fill 0.3s ease; /* Smooth transition for icon color change */
+  }
+  
+  .CartsBlock1 svg:hover,
+  .CartsBlock2 svg:hover,
+  .CartsBlock3 svg:hover,
+  .CartsBlock4 svg:hover,
+  .CartsBlock5 svg:hover {
+    fill: #ff0000; /* Red color for trash icon on hover */
+  
+  }
+  
+  
+  
+  .ProductDetailsBlock {
+    img {
+      width: 160px;
+      height: 120px;
+    }
+  }
+  .CartsBlock1,
+  .CartsBlock2,
+  .CartsBlock3,
+  .CartsBlock4,
+  .CartsBlock5 {
+    border: 2px solid;
+    height: 200px;
+    margin: 20px;
+    background-color: rgb(255, 251, 226);
+    width: 50%;
+  }
+  .CartsBlock1,
+  .CartsBlock2,
+  .CartsBlock3,
+  .CartsBlock4,
+  .CartsBlock5 {
+    svg {
+      position: relative;
+      left: 470px;
+      top: -30px;
+    }
+  }
+  #CartDataBlocks {
+    b {
+      margin: 20px;
+    }
+  }

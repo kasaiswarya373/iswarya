@@ -1,0 +1,53 @@
+h3 {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+ul {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: cadetblue;
+}
+li {
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+  background-color: #fff;
+}
+label {
+  width: 120px;
+  display: inline-block;
+}
+.marks > input {
+  width: 50px;
+}
+#save {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: cadetblue;
+  color: #fff;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 1300px;
+            height: 320px;
+            border: 2px solid;
+            border-radius: 20px;
+            margin-top: 100px;
+            text-align: center;
+            font-size: larger;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .box > div {
+            margin: 10px;
+        }
+        img{
+            width: 250px;
+            height: 200px;     
+        }
+        .deleteIcon {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .count {
+            font-size: small;
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+   
+    <img src="https://www.mybakingaddiction.com/wp-content/uploads/2011/10/lr-0953.jpg" alt="" ondragstart="onElementdragstart(event)"  id="pic1">
+    <img src="https://i.pinimg.com/736x/84/cc/8e/84cc8e0c0b5ee70fbaa37ccdc17cf0ca.jpg" alt="" ondragstart="onElementdragstart(event)" id="pic2">
+    <img src="https://i.pinimg.com/originals/15/2c/79/152c796f67911387b8dd73c08021209f.jpg" alt=""  ondragstart="onElementdragstart(event)"  id="pic3">
+    <img src="https://i.pinimg.com/736x/0c/10/25/0c1025579b72764dc37d2037a67638a5.jpg" alt=""  ondragstart="onElementdragstart(event)" id="pic4">
+    <img src="https://www.shutterstock.com/image-vector/children-reading-book-nature-cartoon-600nw-2290492039.jpg" alt=""  ondragstart="onElementdragstart(event)" id="pic5">
+
+    <div class="box" ondragover="onElementDragOver(event)" ondrop="onElementDrop(event)"> </div>
+    
+    <script>
+        var imageSrc;
+        var imageId;
+        var Count = {}; 
+
+        var onElementDrop = (event) => {
+            event.preventDefault();
+
+            if (Count[imageId]) {
+                Count[imageId]++;
+            } 
+            else {
+                Count[imageId] = 1;
+            }
+
+            if (Count[imageId] && Count[imageId] > 1) {
+                var span = document.createElement("span");
+                span.setAttribute("class","sum");
+                span.innerText = Count[imageId];
+                document.querySelector(".box").append(span);
+                return; 
+            }
+
+            var divTag = document.createElement("div");
+            var imgElement = document.createElement("img");
+
+            imgElement.setAttribute("class", "img");
+            imgElement.setAttribute("src", imageSrc);
+            imgElement.setAttribute("id", imageId);
+            imgElement.setAttribute("picscount", Count[imageId]);
+            divTag.append(imgElement);
+
+            var countingTag = document.createElement("span");
+            countingTag.setAttribute("class", "count");
+            countingTag.innerText = Count[imageId];
+            divTag.append(countingTag);
+
+            var deleteTag = document.createElement("img");
+            deleteTag.setAttribute("class","deleteIcon");
+            deleteTag.setAttribute("src", "https://cdn-icons-png.flaticon.com/512/484/484662.png");
+            deleteTag.addEventListener('click', (event) => {
+                event.target.parentElement.remove();
+                delete Count[imageId]; 
+            });
+            divTag.append(deleteTag);
+
+            document.querySelector(".box").append(divTag);
+        }
+
+        var onElementDragOver = (event) => {
+            event.preventDefault();
+            console.log("Element drag over");
+        }
+
+        var onElementdragstart = (event) => {
+            console.log("Element drag started");
+            imageSrc = event.target.getAttribute("src");
+            imageId = event.target.getAttribute("id");
+        }
+    </script>
+</body>
+</html>

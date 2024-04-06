@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // check weather number is armstrong or not
+        var num = prompt("Enter number");
+        var totalNo = num.length;
+        num = parseInt(num);
+        var temp = num;
+        var armStrongNumber = 0;
+        var rem;
+        while (num > 0) {
+            rem = num % 10;
+            armStrongNumber += rem ** totalNo;
+            num = num / 10;
+            num = parseInt(num);
+        } if (temp == armStrongNumber) {
+            console.log("Armstrong Number");
+        } else {
+            console.log("Not a Armstrong number")
+        }
+    </script>
+</body>
+
+</html>

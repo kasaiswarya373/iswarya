@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            // SWAPPING OF 2 VARIABLES USING TEMPORARY VARIABLE=======>>>>>>>>>>>>>
+
+           /* var readInfo = ( ) => {
+             var a = parseInt(prompt("enter a value-"));
+             var b = parseInt(prompt("enter b value-"));
+             console.log( "the value of a before swapping - " , a);
+             console.log( "the value of b before swapping - " , b);
+             swapping( a , b);
+            }
+            
+            
+            var swapping = ( a , b ) => {
+                var temp = a ;
+                a = b ;
+                b = temp;
+                console.log("the value of a after swapping = " , a);
+                console.log("the value of b after swapping = " , b);
+            }
+            readInfo(); */
+
+            // SWAPPING OF 2 VARIABLES WITHOUT USING TEMPORARY VARIABLE=======>>>>>>>>>>>>>
+
+            var readInfo = ( ) => {
+            var a = parseInt(prompt("enter a value-"));
+            var b = parseInt(prompt("enter b value-"));
+            console.log( "the value of a before swapping - " , a);
+            console.log( "the value of b before swapping - " , b);
+            swapping( a , b);
+            }
+            var swapping = ( a , b ) =>{
+                a = a + b;
+                b = a - b;
+                a = a - b;
+                console.log("the value of a after swapping -" , a);
+                console.log("the value of b after swapping -" , b);
+            }
+            readInfo( );
+
+        </script>
+    </body>
+</html>

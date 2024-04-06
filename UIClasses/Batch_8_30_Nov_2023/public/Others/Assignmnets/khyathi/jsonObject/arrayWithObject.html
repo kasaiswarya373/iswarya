@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var students=[
+                    
+                     {   
+                    name:"khyathi",
+                  department:"it",
+                  basicSalary:60000,
+                     },
+                 {
+                        name:"sriram",
+                       deparment:'it',
+                       basicSalary:45000
+
+                    },
+                   {
+                        name:"Nagesh",
+                       deparment:'it',
+                       basicSalary:12000
+                    }
+                ]
+                for(i=0;i<students.length;i++){
+                 
+                    var obj=salaryCal(students[i])
+                    
+
+                    console.log(obj)
+                }
+                function salaryCal(obj){
+                    
+
+                    obj.pf= (obj.basicSalary * 12)/100;
+                    obj.hra=(obj.basicSalary*15)/100;
+                    obj.totalSalary=(obj.basicSalary+obj.pf+obj.hra)
+                    
+                    return taxCal(obj);
+
+                }
+                function taxCal(obj){
+                    if(obj.totalSalary>50000){
+                        obj.tax=(obj.totalSalary*30)/100;
+                    }else if(obj.totalSalary>30000){
+                    obj.tax=(totalSalary*15)/100;
+                    }else{
+                        obj.tax=0;
+                    }
+                    
+                    return onHandAmount(obj);
+                }
+                function onHandAmount(obj){
+                   obj.totalSalaryWithTax= obj.totalSalary-obj.tax;
+                   return(obj);
+                }
+
+                // -------------------------------
+                var  test={
+                    name:'hanush',
+                    age:21,
+                    salary:25000,
+                    
+                    totalSalary(){
+                        debugger;
+                       this.pf=(this.salary*12)/100
+                       this.hra=(this.salary*15)/100
+                       
+                       this.total=this.pf+this.hra+this.salary;
+                       
+                    },
+                    taxCal(){
+                        this.tax=(this.total*20)/100;
+                        
+
+                    },
+                    onhandAmount(){
+                        this.totalSalary=this.total-this.tax;
+                    }
+                    
+
+                }
+                test.totalSalary()
+                test.taxCal();
+                test.onhandAmount();
+                console.log(test);
+                 
+        </script>
+    </body>
+</html>

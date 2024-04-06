@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecondLargestNumInArray</title>
+</head>
+<body>
+    Program to Display Smallest Number in Array
+    <script>
+        var readingArrayValues = () =>
+        {
+            var arrayValues = [];
+            var size = parseInt(prompt(`Enter size of array`));
+            for(var i = 0;i < size;i++)
+            {
+                arrayValues[i] = parseInt(prompt(`Enter ${i+1} value`));
+            }
+            return arrayValues;
+        } 
+
+        var findingSecondLargeNum = (arrayVals) =>
+        {
+            var largeNum = arrayVals[0];
+            var secondLargeNum = 0;
+            for(var i = 1;i < arrayVals.length;i++)
+            {
+                if(arrayVals[i] != largeNum)
+                {
+                    if(largeNum < arrayVals[i])
+                    {
+                    secondLargeNum = largeNum;
+                    largeNum = arrayVals;
+                    }
+                    else if(secondLargeNum < arrayVals[i])
+                    {
+                    secondLargeNum = arrayVals[i];
+                    }
+                }
+            }
+            return secondLargeNum;
+        }
+
+        var printingSecondLargeNum = () =>
+        {
+        var arrayVals = readingArrayValues();
+        var secondMaxNum = findingSecondLargeNum(arrayVals);
+        console.log(`Given Array ${arrayVals}`);
+        console.log(`Second Largest Number in array is ${secondMaxNum}`);
+        }
+
+        printingSecondLargeNum();
+    </script>
+</body>
+</html>

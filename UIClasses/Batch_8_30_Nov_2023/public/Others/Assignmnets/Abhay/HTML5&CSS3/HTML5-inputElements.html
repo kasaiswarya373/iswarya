@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        span {
+            width: 200px;
+            display: inline-block;
+        }
+
+        .price {
+            font-size: 2rem;
+            color: navy;
+        }
+
+        li::before {
+            content: " ❤️ ";
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <span>Input Type Text :</span> <input type="text">
+        </li> <br>
+
+        <li><span>Input Type email : </span><input type="email" name="" id=""></li> <br>
+
+        <li><span>Input Type Number :</span> <input type="number" name="" id="" step="10"></li><br>
+        <li><span>Input Type Phone :</span> <input type="tel" name="" id="" maxlength="10"></li><br>
+        <li><span>Input Type Password :</span><input type="password" name="" id="" maxlength="10"></li><br>
+        <li><span>Input Type color :</span> <input type="color"></li> <br>
+        <li><span>Input Type Checkbox :</span> <input type="checkbox" name="" id=""></li><br>
+        <li><span>Input Type Datetime Local :</span> <input type="datetime-local" name="" id=""></li><br>
+        <li><span>Input Type date : </span><input type="date" name="" id=""></li> <br>
+        <li><span>Input Type Upload Pic :</span> <input type="file"> </li><br>
+        <li><span>Input Type Button :</span> <button>HTML 5 Button</button></li> <br>
+        <li><span>Input Type Range : </span><input type="range" name="" id="priceRange" onchange="getPriceRange()"
+                step="500" min="0" max="10000"></li><span class="price"></span> <br>
+    </ul>
+    <script>
+        var getPriceRange = () => {
+            var selectedRange = document.querySelector("#priceRange").value;
+            document.querySelector(".price").innerHTML = selectedRange;
+        }
+    </script>
+</body>
+
+</html>

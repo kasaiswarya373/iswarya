@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // number 0f Zeros in a given number
+        var num = parseInt(prompt("Enter number"));
+        var zerocount = 0;
+        var rem;
+        while (num > 0) {
+            rem = num % 10;
+            if(rem == 0){
+                zerocount++;
+            }
+            num = num / 10;
+            num = parseInt(num);
+        }
+        console.log(zerocount);
+    </script>
+</body>
+
+</html>

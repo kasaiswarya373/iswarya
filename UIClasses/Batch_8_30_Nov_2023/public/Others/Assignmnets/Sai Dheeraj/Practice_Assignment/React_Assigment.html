@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            border: 1.5px solid;
+            padding: 8px;
+            text-align: center;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            font-weight: 800;
+            border-color: coral;
+        }
+        #container {
+            height: 560px;
+            border: 1px solid;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            grid-column: 100px;
+            border-color: brown;
+        }
+        input {
+            width: 100px ;
+            margin: 10px ;
+        }
+        #box1{
+            border: 1px solid;
+            width: 50%;
+            height: 49%;
+        }
+        #box2{
+            border: 1px ;
+            width: 49.17%;
+            height: 42%;
+            position: absolute;
+            top: 320px;
+            text-align: center;
+            padding: 40px;
+            font-size: 20px;      
+        }
+        #box3{
+            border: 1px solid;
+            width: 50%;
+            height: 100%;
+        }
+        input{
+            width: 100px;
+            padding: 8px;
+            font-size: 17px;
+        }
+      
+        #textmsg{
+            color: peru;
+        }
+        .block {
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>React Assigment Header</header>
+    <div id="container">
+        <div id="box1">
+            <input type="text" id="textmsg" placeholder="Type Here">
+            <button onclick="assignTask()">Add</button>
+        </div>
+        <div id="box2"></div>
+        <div id="box3">
+            <button style="width: 50px; padding: 8px; border-radius: 10px; position: absolute; top: 555px; right: 450px;">End</button>
+            <button style="border-radius: 10px; position: absolute; right: 380px; top: 556px; padding: 8px;" onclick="resetData()">Reset</button>
+        </div>
+    </div>    
+    </div>
+    <script>
+        
+        var arr = [];
+
+        var assignTask = () => {
+            var textContent = document.querySelector("#textmsg").value;
+            arr.push(textContent);
+            console.log(arr);
+            var text = textContent.trim();
+
+                document.getElementById("box2").innerText = text;
+                document.getElementById("textmsg").value = "";
+                timeoutId = setTimeout(function () {
+                    moveTaskToBox3();
+                }, 6000);
+            }
+       
+
+        var moveTaskToBox3 = () => {
+            
+            var box3Container = document.getElementById("box3");
+            box3Container.innerHTML = ""; 
+            arr.forEach(item => {
+                var div = document.createElement("div");
+                div.className = "block";
+                div.textContent = item;
+                box3Container.appendChild(div);
+            });
+            document.getElementById("box2").innerText = "";
+            alert("SUCCESS !");
+        }
+
+        var resetData = () => {
+            clearTimeout(timeoutId);
+            document.querySelector("#box3").innerHTML = "";
+            arr = [];
+        }
+    </script> 
+</body>
+</html>

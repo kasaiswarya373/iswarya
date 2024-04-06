@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            border: 2px solid;
+            text-align: center;
+            padding: 10px;
+            background-color: yellow;
+           
+        }
+        .maincontent{
+            border: 2px solid;
+            padding: 30px;
+        }
+        .main {
+            border: 2px solid;
+            
+            height: Auto;
+            padding: 20px;
+            margin: 30px;
+            
+        }
+        .details, .details2, .details3{
+           border: 1px solid;
+           padding: 10px;
+           position: relative;
+           left: 100px;
+           top: -30px;
+           background-color: white;
+           font-weight: bold;
+           text-decoration: underline;
+           background-color: green;
+           color: white;
+
+        }
+         li{
+            list-style: none;
+            margin: 10px;
+            padding: 3px;
+         }
+         .subli2{
+            float: right;
+            position: relative;
+            top: -145px;
+         }
+         .details2{
+            background-color: rebeccapurple;
+         }
+         .details3{
+            background-color: red;
+         }
+         .subli3{
+            float: right;
+            position: relative;
+            top: -37px;
+           
+            
+         }
+         h3{
+            border: 2px solid;
+            text-align: center;
+            padding: 10px;
+            background-color: burlywood;
+           
+        }
+        .mainlast {
+            border: 2px solid;
+            
+            height: Auto;
+            padding: 60px;
+            margin: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+<form action="http://test.com/data/info/userdetails" method="post">
+<div class="maincontent">
+    <div class="main ">
+       <span class="details">Personal Details</span>
+     <ul>
+        <li>
+            <label for="username"> Name:</label>
+            <input type="text" name="username" maxlength="50">
+          </li>
+          <li>
+            <label for="username">First Name:</label>
+            <input type="text" name="username" >
+          </li>
+          <li>
+            <label for="username">Last Name:</label>
+            <input type="text" name="username" >
+          </li>
+          <li>
+            <label for="Age">Age:</label>
+            <input type="number" name="Age" >
+          </li>
+     </ul>
+     <div>
+        <ul class="subli2">
+            <li>
+                <label >about yourself</label> 
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+            </li>
+            <li >
+                <label for="">Country:</label>
+                <select >
+                   <option>India</option> 
+                   <option>china</option> 
+                   <option>Japan</option> 
+                   <option>USA</option> 
+                   <option>Africa</option> 
+                </select>
+            </li>
+        </ul>
+     </div>
+    </div>
+
+
+    <div class="main ">
+        <span class="details2">Education Details</span>
+      <ul>
+        <li >
+            <label for="">Qualification:</label>
+            <select >
+               <option>10th</option> 
+               <option>12th</option> 
+               <option>Graduation</option> 
+               <option>Post Graduation</option> 
+               <option>PHD</option> 
+            </select>
+        </li>
+        <li>
+            <label for="Langauages"> Langauages:</label>
+          <input type="checkbox" name="Langauages" >Hindi
+          <input type="checkbox" name="Langauages" >English
+          <input type="checkbox" name="Langauages">Telugu
+          <input type="checkbox" name="Langauages">Urdu
+        </li>
+        <li>
+            <label for="Course"> Course Opted:</label>
+          <input type="radio" name="Course" >MBA
+          <input type="radio" name="Course" >MCA
+          <input type="radio" name="Course">Btech
+          <input type="radio" name="Course">Msc
+        </li>
+      </ul>
+
+     </div>
+
+
+
+     <div class="main ">
+        <span class="details3">About Yourself</span>
+      <ul>
+        <li>
+            <label >Few Words About Your Career:</label> 
+            <textarea name="" id="" cols="80" rows="10"></textarea>
+        </li>
+      </ul>
+     </div>
+
+
+     <div class="mainlast ">
+       
+      <ul class="subli3">
+        <li >
+            <input type="submit" style="background-color: rgb(47, 141, 228); color: white; padding: 10px; " value="Register Details">
+        </li>
+      </ul>
+     </div>
+
+    </div>
+</form>
+    <h3>@Copyright 2023</h3>
+</body>
+</html>

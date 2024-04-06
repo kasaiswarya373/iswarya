@@ -1,0 +1,23 @@
+<li class="sproductdetails">
+            <ul>
+            <li>
+             <img src ="" alt="" />
+             </li>
+                <li>product name : laptop </li>
+                <li>
+                    price:
+                    <span class="actualprice">34566</span>
+                    <span class="discountedprice">23456</span>
+                </li>
+                <li>
+                    manufacture: sony
+                </li>
+                <li>
+                    seller name: cns electronics
+                </li>
+                <li>
+                    rating:4.5
+                </li>
+            </ul>
+
+        </li>

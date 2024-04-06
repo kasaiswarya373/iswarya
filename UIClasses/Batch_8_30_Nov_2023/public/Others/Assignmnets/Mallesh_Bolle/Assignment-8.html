@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <title>
+            Registration Page
+        </title>
+    </head>
+    <style>
+        .bodybox{
+            border: 1px solid;
+            margin: 10px;
+            padding: 0 0 50px 0;
+        }
+        p{
+            border: 1px solid;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 15px 2px 2px 2px;
+        }
+        li{
+            list-style: none;
+            margin: 2px;
+        }
+        .fullbodyouterbox{
+            border: 1px solid;
+            position: relative;
+            background-color: gray;
+            padding: 10px;
+            margin: 25px;
+        }
+        .boxno1{
+            border:1px solid;
+            margin: 15px;
+            position: relative;
+            padding: 10px 2px 2px 10px;
+            width: 450px;
+            height: 30px;
+            background-color: white;
+        }
+        .floatingbox{
+            border: 1px solid;
+            text-align: center;
+            padding: 2px;
+            width: 150px;
+            height: 30px;
+            background-color: white;
+            position: absolute;
+            top: -20px;
+            left: 80px;
+        }
+        .address{
+            border: 1px solid;
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            top: 10px;
+            right: 10px;
+        }
+        .country{
+            border: 1px solid;
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            bottom: 5px;
+            right: 60px;
+        }
+        .enteraboutyou{
+            border: 1px solid;
+            background-color: white;
+            padding:10px;
+            margin: 20px;
+            width: 500px;
+
+        }
+        .uitag{
+            position: relative;
+        }
+        .savedetails{
+            position: absolute;
+            bottom: -50px;
+            right: 20px;
+        }
+        .copyright{
+            border: 1px solid;
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+        }
+    </style>
+    <body>
+        <p>Student Registration Page</p>
+        <div class="bodybox">
+            <ul>
+             <li class="fullbodyouterbox">
+                <div class="floatingbox">Personal Details</div>
+                  <ul>
+                    <li class="boxno1">
+                        <label for="entername">Name</label>:
+                        <input type="text" name="entername" id="">
+                     </li>
+                     <li class="boxno1">
+                        <label for="enterlastname">Last Name </label>:
+                        <input type="text" name="entername" id="">
+                    </li>
+                    <li class="boxno1">
+                        <label for="enterage">Age</label>:
+                        <input type="text" name="enterage" maxlength="2">
+                    </li>    
+                    <li class="address">
+                        <label for="address">Address</label>
+                        <textarea name="address"cols="15" rows="7"></textarea>
+                    </li>
+                    <li class="country">
+                        <label for="country">Country</label>
+                        <select name="country" id="">
+                            <option>-select-</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                            <option>India</option>
+                            <option>China</option>
+                            <option>UAE</option>
+                        </select>
+                    </li>
+                 </ul>
+             </li>
+            </ul>
+            <ul class="uitag">
+                <li class="fullbodyouterbox">
+                   <div class="floatingbox">Education Details</div>
+                     <ul>
+                       <li class="boxno1">
+                           <label for="enterqualification">Qualification</label>:
+                           <select name="enterqualification">
+                            <option>-select-</option>
+                            <option>10th</option>
+                            <option>Inter</option>
+                            <option>Degree</option>
+                            <option>B.tech</option>
+                           </select>
+                        </li>
+                        <li class="boxno1">
+                           <label for="enterlanguage">Languages </label>:
+                           <input type="radio" name="enterlanguage">English
+                           <input type="radio" name="enterlanguage">Telugu
+                           <input type="radio" name="enterlanguage">Hindi
+                           <input type="radio" name="enterlanguage" checked>Spanish                           
+                       </li>
+                       <li class="boxno1">
+                           <label for="entercourse">Course</label>:
+                           <input type="radio" name="entercourse">MBA
+                           <input type="radio" name="entercourse">MCA
+                           <input type="radio" name="entercourse">B tech
+                           <input type="radio" name="entercourse">Msc
+                       </li>    
+                    </ul>
+                </li>
+                <li class="fullbodyouterbox">
+                    <div class="floatingbox">About Yourself</div>
+                    <ul>
+                        <li>
+                            <div class="enteraboutyou">
+                            <label for="enteraboutyou">Few words about your career</label>
+                            <textarea name="enteraboutyou" cols="50" rows="10"></textarea>
+                           </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        
+                    </ul>
+                <li>
+                    <li class="savedetails">
+                        <input type="button" value="Save Details">
+                    </li>
+               </ul>
+        </div>
+        <div class="copyright">@copy right 2023</div>
+    </body>
+</html>

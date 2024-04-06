@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Student progress card </title>
+        <link rel="stylesheet" href="scardstyle.css">
+        <script src="scard.js"></script>   
+    </head>
+    <body>
+        <h1> * Student progress card * </h1>
+         <ul>
+            <li class="Student Details"></li>
+            <li>
+                <label for="sname"> Student name </label>
+                <input type="text" id = "sname">
+            </li>
+            <li>
+                <label for="sage"> Student Age</label>
+                <input type="number" id = "sage">
+            </li>
+            <li>
+                <label for="gender"> Student Gender</label>
+                <input type="radio" name = "gender" value="male">male
+                <input type="radio" name = "gender" value="female" checked>female
+            </li>
+            <li>
+                <label for="class"> Class</label>
+                <select name="" id = "stdclass">
+                    <option value="L.K.G"> L.K.G</option>
+                    <option value="U.K.G"> U.K.G</option>
+                    <option value="Class-I"> Class-I</option>
+                    <option value="Class-II"> Class-II</option>
+                    <option value="Class-III"> Class-III</option>
+                    <option value="Class-IV"> Class-IV</option>
+                    <option value="Class-V"> Class-V</option>
+                </select>
+            </li>
+            <li class = "marks">
+                <label > Marks   </label>
+                <input type="text" id = "m1">
+                <input type="text" id = "m2">
+                <input type="text" id = "m3">
+                <input type="text" id = "m4">
+                <input type="text" id = "m5">
+            </li>
+            <li>
+                <input type="button" value="Progress card" onclick="stdData()">
+            </li>
+         </ul>
+    </body>
+</html>

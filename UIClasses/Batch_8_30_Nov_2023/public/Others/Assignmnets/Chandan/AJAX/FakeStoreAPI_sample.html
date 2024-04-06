@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Demonstrating fakestore API
+    </title>
+    <script src="../c:\UI_Training\GITHub\UIClasses\Batch_8_30_Nov_2023\public\axios.js"></script>
+</head>
+<body>
+    <input type="button" value="GET data" onclick="getData()">
+    <script>
+       var getData = () => {
+        var url = 'https://fakestoreapi.com/products/2';
+        axios.get(url).then((response) => {
+            console.log(response)
+        }).catch((error1) => {
+            console.log(error1)
+        })
+       }
+    </script>
+</body>
+</html>

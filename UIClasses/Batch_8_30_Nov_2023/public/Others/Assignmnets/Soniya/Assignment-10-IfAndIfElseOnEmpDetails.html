@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+    <script>
+        var emp_Name=prompt("Enter Employee Name:");
+        var emp_Age=prompt("Enter Employee Age:");
+        var emp_Dep=prompt("Enter Employee Department:");
+        var emp_Gen=prompt("Enter Employee Gender :");
+        var emp_BasicSalary=parseInt(prompt("Enter Basic Salary:"));
+        var pf=parseFloat(prompt("Enter PF"))/100;
+        var hra=parseFloat(prompt("Enter HRA"))/100;
+        var tot_sal=emp_BasicSalary+(emp_BasicSalary*pf)+(emp_BasicSalary*hra);
+        console.log("------------EMPLOYEE DETAILS--------------");
+        console.log("Name : "+emp_Name);
+        console.log("Age : "+emp_Age);
+        console.log("Department : "+emp_Dep);
+        console.log("Gender : "+emp_Gen);
+        console.log("Salary Before Tax : "+tot_sal);
+
+        if(emp_Gen=="male")
+        {
+            if(tot_sal>200000)
+            {
+                var tax=(tot_sal*15)/100;
+            }
+            else if(tot_sal>100000)
+            {
+                tax=(tot_sal*10)/100;
+            }
+            else if(tot_sal>500000)
+            {
+                tax=(tot_sal*5)/100;
+            }
+            else
+            {
+                tax=0;
+            }
+            console.log("Tax :"+tax);
+        }
+
+        if(emp_Gen=="female")
+        {
+            if(tot_sal>200000)
+            {
+                var tax=(tot_sal*10)/100;
+            }
+            else if(tot_sal>100000)
+            {
+                tax=(tot_sal*5)/100;
+            }
+            else(tot_sal>500000)
+            {
+                tax=0
+            }
+            console.log("Tax : "+tax);
+        }
+        var sal_with_tax = tot_sal - tax;
+        console.log("Salary After Tax : "+sal_with_tax);
+    </script>
+</body>
+</html>

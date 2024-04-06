@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading{
+            text-decoration: underline;
+            text-align: center;
+            background-color: rgb(164, 126, 199);
+        }
+        .common{
+            border: 2px solid;
+            padding: 5px;
+            width: 600px;
+        }
+        .main{
+            height: 400px;
+            margin-top: 3px;
+        }
+        .side{
+            border: 2px solid;
+            float: left;
+            width: 180px;
+            height: 400px;
+            background-color: aquamarine;
+        }
+        li{
+            margin-top: 40px;
+        }
+        .scrolable{
+            width: 400px;
+            border: 2px solid;
+            float: right;
+            height: 400px;
+            overflow: auto;
+        }
+        .details{
+            width: 350px;
+            border: 2px solid;
+            height: 150px;
+            margin: 10px;
+            background-color: yellowgreen;
+        }
+        img{
+            width: 120px;
+            height: 120px;
+            margin: 15px;
+            float: left;
+        }
+        .foot{
+            text-align: center;
+            border: 2px solid black;
+            margin-top: 5px;
+            background-color: red;
+            clear: both;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="Parent">
+        <div class="child">
+            <div class="heading common">
+                Student Details
+            </div>
+            <div class="main common">
+                <div class="side">
+                    <ol>
+                        <li>Raj</li>
+                        <li>Arshdeep</li>
+                        <li>Aditya</li>
+                        <li>Krish</li>
+                        <li>Prasad</li>
+                    </ol>
+                </div>
+                <div class="scrolable">
+                     <div class="details">
+                         <img src="https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-cartoon-image-of-a-boy-with-glasses-image_2905666.jpg" alt="">
+                         <p>Name: Raj</p>
+                         <p>Age: 20</p>
+                         <p>Gender: Male</p>
+                         <p>Location: Hydrabad</p>
+                     </div>
+                     <div class="details">
+                          <img src="https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-cartoon-image-of-a-boy-with-glasses-image_2905666.jpg" alt="">
+                        <p>Name: arshdep</p>
+                         <p>Age: 22</p>
+                         <p>Gender: Male</p>
+                         <p>Location: Delhi</p>
+                     </div> 
+                     <div class="details">
+                          <img src="https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-cartoon-image-of-a-boy-with-glasses-image_2905666.jpg" alt="">
+                        <p>Name: Aditya</p>
+                         <p>Age: 24</p>
+                         <p>Gender: Male</p>
+                         <p>Location: Mumbai</p>
+                     </div>
+                     <div class="details">
+                        <img src="https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-cartoon-image-of-a-boy-with-glasses-image_2905666.jpg" alt="">
+                      <p>Name: Krish</p>
+                       <p>Age: 24</p>
+                       <p>Gender: Male</p>
+                       <p>Location: Bhopal</p>
+                   </div>
+                   <div class="details">
+                    <img src="https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-cartoon-image-of-a-boy-with-glasses-image_2905666.jpg" alt="">
+                  <p>Name: Prasad</p>
+                   <p>Age: 24</p>
+                   <p>Gender: Male</p>
+                   <p>Location: Bihar</p>
+               </div>
+                </div>
+                <div class="foot common">
+                     @copyright 2024
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

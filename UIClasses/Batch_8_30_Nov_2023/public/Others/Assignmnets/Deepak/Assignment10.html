@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeeTaxCalculation</title>
+    <script>
+        var employeeName = prompt('Enter employee Name');
+        var employeeAge = prompt('Enter employee Age');
+        var employeeGender = prompt('Enter Gender male or female');
+        var employeeBasicsalary = prompt('Enter employee Basic salary');
+        var employeeDepartment = prompt('Enter employee Department');
+        employeeBasicsalary = parseInt(employeeBasicsalary);
+        document.write("Employee Name : "+ " "+ employeeName + "<br>");
+        document.write("Employee Age : "+ " "+ employeeAge + "<br>");
+        document.write("Employee Gender : "+ " "+ employeeGender + "<br>");
+        document.write("Department of employee : "+ " "+ employeeDepartment + "<br>");
+        document.write("Basic salary of the employee"+ " "+ employeeBasicsalary + "<br>");
+        var pf = (employeeBasicsalary*14)/100;
+        var hra = (employeeBasicsalary*25)/100;
+        document.write("  PF of employee :"+ " "+ pf + "<br>" );
+        document.write(" HRA of employee :"+ " "+ hra + "<br>");
+        var employeeTotalsalary = employeeBasicsalary + pf + hra;
+        document.write(" Totalsalary of employee :"+ " "+  employeeTotalsalary + "<br>");
+
+        var tax = 0;
+     if(employeeGender == "male"){
+        if(employeeTotalsalary>=50000){
+            tax = 25;
+        }else if(employeeTotalsalary>20000)
+        {
+            tax = 15;
+        }else{
+            tax = 10;
+        }
+    }
+    else if (employeeGender == "female"){
+        if(employeeTotalsalary>=50000){
+            tax = 10;
+        }else if(employeeTotalsalary>20000)
+        {
+            tax = 20;
+        }else{
+            tax = 5;            
+        }
+    } else {
+        prompt("please enter gender male or female");
+    }          
+    var employeeTax = (tax*employeeTotalsalary)/100;
+    document.write("Employee Tax : " + " " + tax + "<br>");
+    document.write("Employee Tax : " + " " + employeeTax);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

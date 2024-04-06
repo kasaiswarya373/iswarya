@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>WAP to check whether a given word is existing or not in a string.</h3>
+    <script>
+      var inputString = "hello Sunshine! How are you";
+
+      var givenWord = "Sunshine";
+      var isWordExisting = inputString
+        .toLowerCase()
+        .includes(givenWord.toLowerCase());
+      console.log(
+        `The word "${givenWord}" ${
+          isWordExisting ? "exists" : "doesn't exists"
+        } in the string`
+      );
+    </script>
+  </body>
+</html>

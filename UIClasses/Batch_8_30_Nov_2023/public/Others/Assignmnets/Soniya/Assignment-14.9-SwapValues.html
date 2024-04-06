@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwapingValues</title>
+</head>
+<body>
+    Program to swap two values
+    <script>
+        var readingValues = () =>
+        {
+            var firstValue = parseInt(prompt(`Enter First Number`));
+            var secondValue = parseInt(prompt(`Enter Second Number`));
+            console.log(`Before Swap : \n First Number : ${firstValue} \n Second Number : ${secondValue}`);
+            swapingTwoValues(firstValue,secondValue);
+        }
+
+        var swapingTwoValues = (fN,sN) =>
+        {
+            fN = fN + sN;
+            sN = fN - sN;
+            fN = fN - sN;
+            printingSwapedValues(fN,sN);
+        }
+
+        var printingSwapedValues = (firstNum,secondNum) =>
+        {
+            console.log(`After Swap : \n First Number : ${firstNum} \n Second Number : ${secondNum}`);
+        }
+        readingValues();
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>functions Params</title>
+    </head>
+    <body>
+        <script>
+            var details = (a , msg) => { //calling function 
+                console.log(a);
+                msg();
+            }
+            // function as a params 
+            details(30,() => {console.log("Hello every one")});//called function 
+        </script>
+    </body>
+</html>

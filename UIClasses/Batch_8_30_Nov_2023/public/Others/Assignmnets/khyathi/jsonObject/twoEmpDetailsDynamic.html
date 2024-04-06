@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var empDetails={
+    
+        }
+        var readEmpData=(obj)=>{
+            // empDetails.name=obj.name
+            // empDetails.age=obj.age
+            // empDetails.gender=obj.gender
+            // empDetails.basicSalary=obj.basicSalary;
+           // debugger;
+            empDetails= obj;
+            employeSalaryCal();
+        }
+        var employeSalaryCal=()=>{
+            empDetails.pf=(empDetails.basicSalary*12)/100;
+            empDetails.hra=(empDetails.basicSalary*15)/100;
+            empDetails.totalSalary=empDetails.basicSalary+empDetails.pf+empDetails.hra;
+            empDetails.tax=(empDetails.totalSalary*30)/100;
+            empDetails.onHandAmpount=empDetails.totalSalary-empDetails.tax;
+
+
+        }
+      
+
+        var displayInfo=(obj)=>{
+            readEmpData(obj);
+
+            return empDetails;
+           
+        }
+
+       
+
+       var emp1= displayInfo({name:prompt("name"),age:prompt("age"),gender:prompt("gender"),basicSalary:parseInt(prompt("enter salary"))});
+       console.log(emp1);
+       var emp2=displayInfo({name:prompt("name"),age:prompt("age"),gender:prompt("gender"),basicSalary:parseInt (prompt("salary"))});
+       console.log(emp2)
+       console.log(empDetails);
+    //    console.log(empDetails)
+
+    </script>
+</body>
+</html>

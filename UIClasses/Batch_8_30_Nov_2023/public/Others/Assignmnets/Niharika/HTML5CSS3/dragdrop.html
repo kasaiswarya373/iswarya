@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .imagesBlock {
+            width: 250px;
+            height: 200px;
+            border: 2px solid palevioletred;
+            margin: 20px;
+            padding: 10px;
+            float: left;
+        }
+        .img {
+            width: 100px;
+            height: 100px;
+        }
+        .container {
+            width: 500px;
+            min-height: 200px;
+            margin: 20px;
+            border: 2px solid purple;
+            float: left;
+        }
+        .deleteIcon {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="imagesBlock">
+        <img class="img" src="https://m.media-amazon.com/images/I/619dZ2HD-ML._SX679_.jpg" alt="" ondragstart="onElementDragStart(event)" id="toy_1">
+        <img class="img" src="https://m.media-amazon.com/images/I/51+1Bx773wL._SY300_SX300_.jpg" alt="" ondragstart="onElementDragStart(event)" id="toy_2">
+        <img class="img" src="https://teddydaddy.in/wp-content/uploads/Ellie-Elephant-Stuffed-Animal-Soft-Toy-Pink-50-CM-Soft-Toy-Plush-Teddy-Daddy-2.jpg" alt="" ondragstart="onElementDragStart(event)" id="toy_3">
+        <img class="img" src="https://assets.ajio.com/medias/sys_master/root/20230624/Dnvd/64969dbfeebac147fcf90e75/-473Wx593H-465255132-grey-MODEL.jpg" alt="" ondragstart="onElementDragStart(event)" id="toy_4">
+    </div>
+    <div class="container" ondrop="onElementDrop(event)" ondragover="onElementDragOver(event)"></div>
+    <script>
+        var imageSrc;
+        var imageId;
+        var imageCount = {}; // Object to store counts for each image
+
+        var onElementDrop = (event) => {
+            event.preventDefault();
+            if (imageCount[imageId]) {
+                imageCount[imageId]++;
+            } else {
+                imageCount[imageId] = 1;
+            }
+            if (imageCount[imageId] && imageCount[imageId] > 1) {
+                var existingImage = document.querySelector(".container").querySelector("#" + imageId);
+            if (existingImage) {
+                existingImage.parentElement.querySelector(".counter").innerText = imageCount[imageId];
+                return; // Stop further execution
+            }
+ 
+            }
+            console.log(imageCount);
+            var divTag = document.createElement("div");
+            var imgElement = document.createElement("img");
+            imgElement.setAttribute("class", "img");
+            imgElement.setAttribute("src", imageSrc);
+            imgElement.setAttribute("id", imageId);
+            imgElement.setAttribute("data-count", imageCount[imageId]);
+            divTag.append(imgElement);
+
+            var deleteTag = document.createElement("img");
+            deleteTag.setAttribute("class","deleteIcon")
+            deleteTag.setAttribute("src", "https://cdn-icons-png.flaticon.com/512/484/484662.png");
+                divTag.append(deleteTag);
+                deleteTag.addEventListener('click', (event) => {
+                    event.target.parentElement.remove();
+                    document.querySelector(".counter").style.display = 'none';
+                });
+           // document.querySelector(".container").append(divTag);
+
+            var counter = document.createElement("div");
+            counter.setAttribute("class", "counter");
+            counter.innerText = imageCount[imageId];
+            divTag.append(counter);
+
+            document.querySelector(".container").append(divTag);
+        }
+
+        var onElementDragOver = (event) => {
+            event.preventDefault();
+            console.log("Element drag over");
+        }
+
+        var onElementDragStart = (event) => {
+            console.log("Element drag started");
+            imageSrc = event.target.getAttribute("src");
+            imageId = event.target.getAttribute("id");
+            console.log(imageSrc);
+            console.log(imageId);
+        }
+    </script>
+</body>
+</html>

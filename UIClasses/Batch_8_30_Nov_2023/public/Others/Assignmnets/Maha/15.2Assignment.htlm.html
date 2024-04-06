@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //WAP to find out second largest value from the given array.
+            var n = parseInt(prompt("enter size of array: "));
+            var array = [n];
+            for(var i = 0 ; i < n ; i++){
+                array[i] = parseInt(prompt("enter values of array: "));
+            }
+            var max = 0;
+            var secmax = 0;
+            var largestnumber = (array , max) => {
+                for(var i = 0 ; i < n ; i++){
+                    if(array[i] > max){
+                        max = array[i];
+                    }
+                }
+                return max;
+            }
+            console.log(max);
+            var secondlargest = (array , max , secmax) => {
+                for(var i = 0; i < n ; i++){
+                    if(array[i] > secmax && array[i] < max){
+                        secmax = array[i];
+                    }
+                }
+                return secmax;
+            }
+            console.log("the second largest element of an array is " + secondlargest(array ,largestnumber(array , max), secmax));
+        </script>
+    </body>
+</html>

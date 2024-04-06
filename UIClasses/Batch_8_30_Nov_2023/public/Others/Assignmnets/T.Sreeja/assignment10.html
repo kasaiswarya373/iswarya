@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read data dynamically from user</title>
+</head>
+<body>
+    <script>
+        var EmpName= prompt('Enter the Name');
+        console.log('Name'+EmpName);
+        var Age= prompt('Enter the age');
+        console.log('empage'+Age);
+        var department= prompt('Enter the dept');
+        console.log('dept'+department);
+        var Gender= prompt('Enter the gender');
+        console.log('empgender'+Gender);
+        var Basicsalary= prompt('Enter your basicsalary');
+        Basicsalary = parseInt(Basicsalary);
+        console.log('empolyee basicsalary'+Basicsalary);
+        var totalsalary=0;tax=0;
+        var pf=(14*Basicsalary)/100;
+        var hra=(25*Basicsalary)/100;
+        var TotalSalary=(0);
+        var taxpercentage= (0);
+        if  (empGender == 'male'){
+            if (Basicsalary >= 200000){
+                taxpercentage=(15*Basicsalary)/100;
+                console.log('tax is'+tax);
+                TotalSalary=Basicsalary+pf+hra-tax;
+                console.log('empolyee salary'+totalsalary);
+            } else if (Basicsalary >= 150000){
+                taxpercentage=(10*Basicsalary)/100;
+                console.log('tax is'+tax);
+                TotalSalary=Basicsalary+pf+hra-tax;
+                console.log('empolyee salary'+totalsalary);
+            } else if (Basicsalary >= 50000){
+                taxpercentage=(0*Basicsalary)/100;
+                console.log('tax is'+tax);
+                TotalSalary=Basicsalary+pf+hra-tax;
+                console.log('empolyee salary'+totalsalary);
+            } else {
+                tax=0;
+                console.log('tax is'+tax);
+                console.log('tax is'+tax);
+                totalsalary=Basicsalary+pf+hra-tax;
+                console.log('empolyee salary'+totalsalary);
+            }
+        }  
+        
+        else (empGender == 'Female')
+            if (Basicsalary >= 200000){
+                taxpercentage=(10*Basicsalary)/100;
+                console.log('tax is'+tax);
+                TotalSalary=Basicsalary+pf+hra-tax;
+                console.log('empolyee salary'+totalsalary);
+            } else if (Basicsalary  >= 100000){
+                taxpercentage=(5*Basicsalary)/100;
+                console.log('tax is'+tax);
+                TotalSalary=Basicsalary+pf+hra-tax;
+                console.log('empolyee salary'+totalsalary);
+            } else if (Basicsalary >= 50000){
+                taxpercentage=(0*Basicsalary)/100;
+                console.log('tax is'+tax);
+                TotalSalary=Basicsalary+pf+hra-tax;
+                console.log('empolyee salary'+totalsalary);
+            }else {
+                tax=0;
+                console.log('tax is'+tax);
+                console.log('tax is'+tax);
+                totalsalary=Basicsalary+pf+hra-tax;
+                console.log('empolyee salary'+totalsalary);
+            }
+        
+        
+        
+
+        
+        
+    </script>
+    
+</body>
+</html>

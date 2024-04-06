@@ -1,0 +1,40 @@
+.hbar,
+.fbar,
+.mCotainer {
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.hbar,
+.fbar {
+    text-align: center;
+}
+
+.mCotainer {
+    min-height: 500px;
+}
+
+.lcontainer,
+.rcontainer {
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    min-height: 470px;
+    overflow: auto;
+}
+
+.lcontainer {
+    width: 20%;
+}
+
+.rcontainer {
+    width: 70%;
+}
+
+.block {
+    margin: 10px;
+    border: 1px solid;
+    height: 100px;
+}

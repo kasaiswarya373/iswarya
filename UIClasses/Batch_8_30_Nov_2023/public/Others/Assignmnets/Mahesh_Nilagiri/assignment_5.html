@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Details Page </title>
+
+    <style>
+        .header{
+            border: 3px solid #000000;
+            text-align: center;
+            padding: 10px;
+            background-color: antiquewhite;
+        }
+        footer{
+            border: 2px solid black;
+            text-align: center;
+            clear: both;
+            margin: 10px;
+            padding: 10px;
+            font-weight: bolder;
+            background-color: blanchedalmond;
+        }
+        .leftBlock, .rightBlock{
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            background-color: aqua;
+            float: left;
+        }
+        .leftBlock{
+            width: 25%;
+            height: 550px;
+            
+        }
+        .rightBlock{
+            width: 67%;
+            height: 550px;
+            overflow: auto;
+
+        }
+        .nametag{
+         border: 1px solid;
+         text-align: center;
+         padding: 10px;
+         margin: 10px;
+         font-weight: bold;
+         background-color: antiquewhite;
+         position: sticky;
+         top: 0%;
+        
+      }
+        .studentList :hover{
+            background-color: antiquewhite;
+
+        }
+        .block{
+            border: 2px solid black;
+            height: 150px;
+            margin: 10px;
+        }
+        .imgBlock, .StudentDetailsBlock{
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            font-weight: bolder;
+        }
+        .imgBlock{
+            border: 2px solid black;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            cursor: pointer;
+            background-image: url("Images/sprittingImage.jpg");
+           
+        }
+        .std1{
+         background-position: 20px -20px;
+        } 
+        .std2{
+         background-position: -141px -29px;
+        } 
+        .std3{
+         background-position: -294px -58px;
+        } 
+        .std4{
+         background-position:-445px -56px;
+        } 
+        .std5{
+         background-position: -722px -60px;
+        } 
+        .std6{
+         background-position: 442px -72px;
+        } 
+        .std7{
+         background-position: -247px -211px;
+        } 
+        .std8{
+         background-position: -45px -395px;
+        } 
+        .std9{
+         background-position: -428px -224px;
+        } 
+        .std10{
+         background-position: -274px -419px;
+        } 
+        .label,
+        .content,
+        .colonholder {
+            float: left;
+        }
+       .label {
+            width: 100px;
+            color: red;
+            font-size: large;
+        }
+        .colonholder {
+            width: 50px;
+        }
+        .StudentDetailsBlock .row{
+            clear: both;
+        }
+            
+        .studentList li{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            list-style-position: inside;
+        }
+        .StudentDetailsBlock li{
+            
+            list-style: none;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h3 class="header"> Student Details Page </h3>
+
+    <div class="leftBlock">
+      <div class="nametag"> Students Name </div>
+    
+         <ol class="studentList">
+       
+            <li> <a href="#student_details_1">  Maheshwari    </a> </li>
+            <li> <a href="#student_details_2">  Neha          </a> </li>
+            <li> <a href="#student_details_3">  rohith        </a> </li>
+            <li> <a href="#student_details_4">  sharma        </a> </li>
+            <li> <a href="#student_details_5">  ramesh        </a> </li>
+            <li> <a href="#student_details_6">  shivani       </a> </li>
+            <li> <a href="#student_details_7">  venkata Laxmi </a> </li>
+            <li> <a href="#student_details_8">  venkatesh     </a> </li>
+            <li> <a href="#student_details_9">  Kajal         </a> </li>
+            <li> <a href="#student_details_10"> Anushka       </a> </li>
+         </ol>
+    </div>
+
+    <div class="rightBlock">
+      <div class="nametag"> Students Name </div>
+      <div class="block" id="student_details_1">
+        <div class="imgBlock std1"> </div> 
+        <ol class="StudentDetailsBlock">
+           <li class="row">
+              <div class="label"> Name     </div>
+              <div class="colonholder"> :  </div>
+              <div class="content"> Maheshwari </div>
+           </li>
+           <li class="row">
+              <div class="label"> Age </div>
+              <div class="colonholder"> : </div>
+              <div class="content"> 23 </div>
+           </li>
+           <li class="row">
+              <div class="label"> Sex </div>
+              <div class="colonholder"> : </div>
+              <div class="content"> Female </div>
+           </li>
+           <li class="row">
+              <div class="label"> Address </div>
+              <div class="colonholder"> : </div>
+              <div class="content"> Hyderabad </div>
+           </li>
+          
+        </ol>
+      </div>
+      <div class="block"  id="student_details_2">
+         <div class="imgBlock std2"> </div> 
+        <ol class="StudentDetailsBlock">
+            <li class="row">
+               <div class="label"> Name </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Neha </div>
+            </li>
+            <li class="row">
+               <div class="label"> Age </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> 18 </div>
+            </li>
+            <li class="row">
+               <div class="label"> Sex </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Female </div>
+            </li>
+            <li class="row">
+               <div class="label"> Address </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Hyderabad </div>
+            </li>
+           
+         </ol>
+      </div>
+
+        <div class="block"  id="student_details_3">
+         <div class="imgBlock std3"> </div> 
+        <ol class="StudentDetailsBlock">
+            <li class="row">
+               <div class="label"> Name </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> rohith </div>
+            </li>
+            <li class="row">
+               <div class="label"> Age </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> 30 </div>
+            </li>
+            <li class="row">
+               <div class="label"> Sex </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Male </div>
+            </li>
+            <li class="row">
+               <div class="label"> Address </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Hyderabad </div>
+            </li>
+           
+         </ol>
+      </div>
+      <div class="block"  id="student_details_4">
+         <div class="imgBlock std4"> </div> 
+        <ol class="StudentDetailsBlock">
+            <li class="row">
+               <div class="label"> Name </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> sharma </div>
+            </li>
+            <li class="row">
+               <div class="label"> Age </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> 15 </div>
+            </li>
+            <li class="row">
+               <div class="label"> Sex </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Male </div>
+            </li>
+            <li class="row">
+               <div class="label"> Address </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Mumbai </div>
+            </li>
+           
+         </ol>
+      </div>
+      <div class="block"  id="student_details_5">
+         <div class="imgBlock std5"> </div> 
+        <ol class="StudentDetailsBlock">
+            <li class="row">
+               <div class="label"> Name </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> ramesh </div>
+            </li>
+            <li class="row">
+               <div class="label"> Age </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> 26 </div>
+            </li>
+            <li class="row">
+               <div class="label"> Sex </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Male </div>
+            </li>
+            <li class="row">
+               <div class="label"> Address </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Nalgonda </div>
+            </li>
+           
+         </ol>
+      </div>
+      <div class="block"  id="student_details_6">
+         <div class="imgBlock std6"> </div> 
+        <ol class="StudentDetailsBlock">
+            <li class="row">
+               <div class="label"> Name </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> shivani </div>
+            </li>
+            <li class="row">
+               <div class="label"> Age </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> 20 </div>
+            </li>
+            <li class="row">
+               <div class="label"> Sex </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Female </div>
+            </li>
+            <li class="row">
+               <div class="label"> Address </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Mumbai </div>
+            </li>
+           
+         </ol>
+      </div>
+      <div class="block"  id="student_details_7">
+         <div class="imgBlock std7"> </div> 
+        <ol class="StudentDetailsBlock">
+            <li class="row">
+               <div class="label"> Name </div>
+               <div class="colonholder"> : </div>
+               <div class="content">  venkata Laxmi  </div>
+            </li>
+            <li class="row">
+               <div class="label"> Age </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> 45 </div>
+            </li>
+            <li class="row">
+               <div class="label"> Sex </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Female </div>
+            </li>
+            <li class="row">
+               <div class="label"> Address </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> mothkur </div>
+            </li>
+           
+         </ol>
+      </div>
+      <div class="block"  id="student_details_8">
+         <div class="imgBlock std8"> </div> 
+        <ol class="StudentDetailsBlock">
+            <li class="row">
+               <div class="label"> Name </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> venkatesh </div>
+            </li>
+            <li class="row">
+               <div class="label"> Age </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> 45 </div>
+            </li>
+            <li class="row">
+               <div class="label"> Sex </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Male </div>
+            </li>
+            <li class="row">
+               <div class="label"> Address </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> mothkur </div>
+            </li>
+           
+         </ol>
+      </div>
+      <div class="block"  id="student_details_9">
+         <div class="imgBlock std9"> </div> 
+        <ol class="StudentDetailsBlock">
+            <li class="row">
+               <div class="label"> Name </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Kajal </div>
+            </li>
+            <li class="row">
+               <div class="label"> Age </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> 28 </div>
+            </li>
+            <li class="row">
+               <div class="label"> Sex </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Female </div>
+            </li>
+            <li class="row">
+               <div class="label"> Address </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Hyderabad </div>
+            </li>
+           
+         </ol>
+      </div>
+      <div class="block"  id="student_details_10">
+         <div class="imgBlock std10"> </div> 
+        <ol class="StudentDetailsBlock">
+            <li class="row">
+               <div class="label"> Name </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Anushka </div>
+            </li>
+            <li class="row">
+               <div class="label"> Age </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> 30 </div>
+            </li>
+            <li class="row">
+               <div class="label"> Sex </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Female </div>
+            </li>
+            <li class="row">
+               <div class="label"> Address </div>
+               <div class="colonholder"> : </div>
+               <div class="content"> Hyderabad </div>
+            </li>
+           
+         </ol>
+      </div>
+    
+        
+        
+       
+    </div>
+    <footer> @Copy Right Code </footer>
+    
+</body>
+</html>

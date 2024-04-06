@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            
+            console.log("display employee details");
+            
+
+
+         
+            function empDetails() {
+                var name,age,gender,dep,basicsalary;
+                name=prompt("please enter name");
+                age=prompt("please enter your age");
+                gender=prompt("please enter your gender");
+                 dep=prompt("please enter your department");
+                basicsalary= parseInt(prompt("enter your basic salary"));
+                console.log("employee Name="+name);
+                console.log("employee age="+age);
+                console.log("employee gender="+gender);
+                console.log("employee department="+dep);
+                console.log("employee basic salary="+basicsalary);
+                
+                empTotalSalary(basicsalary);
+
+
+            }
+
+           
+            function empTotalSalary( basicsalary){
+                var pf,hra, tax,totalSalary,taotalSalaryWithTax;
+                pf=(12*basicsalary)/100;
+                pf=parseInt(pf);
+                hra=parseInt((15*basicsalary)/100);
+             empOnHandAmout( pf,hra,basicsalary);
+
+            }
+          
+            function empOnHandAmout(pf,hra,basicsalary){ 
+                totalSalary=pf+hra+basicsalary;
+
+                taotalSalaryWithTax=(totalSalary-(20*totalSalary)/100);
+                console.log("employee total salary with pf,hra="+totalSalary);
+                console.log("employe total salary with tax="+taotalSalaryWithTax);
+            }
+
+            empDetails();
+            // empOnHandAmout( pf,hra,basicsalary);
+
+
+           
+          
+            
+          
+
+        </script>
+    </body>
+</html>

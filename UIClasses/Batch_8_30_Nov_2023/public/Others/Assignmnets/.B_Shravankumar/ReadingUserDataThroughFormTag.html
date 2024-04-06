@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>studentRegistrationForm</title>
+        <style>
+            h1{
+                text-align: center;
+                font-style: italic;  
+                color: aliceblue;
+          
+            }
+            
+            .back{
+                /* background-color: #f50a0a; */
+                width: 450px;
+                margin: 10px auto;
+                padding: 15px;
+                border: 2px solid;
+
+            }
+            .top{
+                /* opacity: 0.5; */
+                background-color: rgb(207 207 218);
+                margin: 20px;
+                padding: 15px;
+                color: #0f046a;
+            }
+           
+            .details{
+                margin: 10px auto;
+            }
+            #text{
+                font-weight: bolder;
+              
+            }
+            
+            body{
+                background-image: url(images/bck4.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            .submit{
+                text-align: center;
+            }
+
+            .ftr{
+                text-align: center;
+                font-style: oblique;
+                font-weight:bolder ;
+                color: orange;
+            }
+
+            .top input[type="submit"]:active{
+                background-color: red;
+            }
+            .top input:focus{
+                background-color: aqua;
+            }
+            .top input:hover{
+                height: 20px;
+                width: 250px;
+                color: gold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>**Registration Form**</h1>
+        <form action="http://test.com/info" method="get">
+        <div class="back">
+
+
+            <div class="top">
+                <label for="userName" id="text">UserName  :</label>
+                <input type="text" name="userName" maxlength="15">
+            </div>
+
+            <div class="top">
+                <label for="password" id="text">Password  :</label>
+                <input type="password" name="password" maxlength="8">
+            </div>
+
+            <div class="top">
+                <label for="MobileNo" id="text">Mobile No :</label>
+                <input type="number" name="MobileNo" maxlength="10">
+            </div>
+
+            <div class="top">
+                <label for="age" id="text">Age    :</label>
+                <input type="number" name="age" maxlength="2">
+            </div>
+
+            <div class="top">
+                <label for="gender" id="text">Gender  :</label>
+                <input type="radio" name="gender" checked value="Male">Male
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Others
+            </div>
+
+            <div class="top">
+                <label for="Languages" id="text">Languages    :</label>
+                <input type="checkbox" name="tel">Telugu
+                <input type="checkbox" name="eng" checked disabled>English
+                <input type="checkbox" name="tam">Tamil
+                <input type="checkbox" name="hin">Hindi
+                </div>
+
+            
+
+            <div class="top">
+                <label for="location" id="text">Location  :</label>
+                <select name="location">
+                    <option>Hyderabad</option>
+                    <option>Delhi</option>
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                </select>
+            </div>
+
+           
+
+            <div class="top submit">
+                <input type="submit" name="submit" value="saveData">
+            </div>
+
+            <div class="ftr">
+                -------Copyrights@Shravan2023-------
+            </div>
+        </form>
+
+        
+        
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Working with employee Data using functions
+        </title>
+    </head>
+    <body>
+        <script>
+         
+              
+
+            var readEmployeeDetails = () => {
+               
+                var name = prompt("enter employee name");
+                var age = prompt("enter age");
+               var basicSal = prompt("enter basic sal");
+                var Pf = getPf(basicSal);
+                var Hra = getHra(basicSal);
+                var TotalTax = getTotalTax(Pf,Hra,basicSal);
+
+                readDisplaDetails (name,age,basicSal,Pf,Hra,TotalTax) ;
+            }
+
+            var getPf = (basicSal) => {
+                var Pf = (14 * basicSal) / 100;
+                return Pf ;
+                getHra();
+            }
+            var getHra = (basicSal) => {
+                var Hra = (12 * basicSal) / 100;
+                return Hra;
+             getTotalTax();
+            }
+
+         
+
+            var getTotalTax = (Pf,Hra,basicSal) => {
+                var taxPercent = 14;
+                var totalSal = Pf+Hra+basicSal;
+                var TotalTax = totalSal - (totalSal * taxPercent) / 100;
+                return TotalTax;
+                
+            }
+
+            var readDisplaDetails = (name,age,basicSal,Pf,Hra,TotalTax) => {
+             
+                console.log("Student name " + name);
+                console.log("age" + age);
+                console.log("basicSal" + basicSal);
+                console.log("Pf" + Pf);
+                console.log("Hra" + Hra);
+                console.log("TotalTax" + TotalTax);
+            }
+            
+            readEmployeeDetails();
+         
+         
+        </script>
+    </body>
+</html>

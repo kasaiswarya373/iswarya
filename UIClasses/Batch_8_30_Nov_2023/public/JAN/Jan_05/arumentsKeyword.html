@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            'arguments' keyword
+        </title>
+    </head>
+    <body>
+        <script>
+            /*function addValues() {
+                // console.log(arguments);
+                // var result = a + b;
+                var result = 0;
+                for (var i = 0 ; i < arguments.length; i++) {
+                    result += arguments[i]
+                }
+                console.log("the sum is " + result);
+            } */
+
+
+            var addValues = (a, b, ...z) => {
+                var result = a + b;
+                for (var i = 0 ; i < z.length; i++) {
+                    result += z[i];
+                }
+                
+                console.log("the sum is " + result);
+            }
+
+            addValues(2, 3);
+            addValues(22, 33);
+            addValues(22, 33, 44);
+            addValues(22, 33, 44, 78);
+        </script>
+    </body>
+</html>

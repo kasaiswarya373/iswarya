@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpTable</title>
+    <link rel="stylesheet" href="emp.css">
+    
+</head>
+<body>
+    <ul class="mainul">
+        <li>
+            <ul class="outerBlock">
+                <li>Name:
+                    <input type="text" name="" id="name">
+
+                </li>
+                <li>Age:
+                    <input type="text" name="" id="age">
+
+                </li>
+                <li>Gender:
+                    <input type="radio" name="gender" id="male" value="Male">Male
+                    <input type="radio" name="gender" id="Female" value="Female" checked>Female
+
+                </li>
+                <li>Location:
+                    <input type="text" name="" id="loc">
+
+                </li>
+                <li>Country :
+                 <select name="" id="dbcount">
+                    <option value="India" selected>India</option>
+                    <option value="china">China</option>
+                    <option value="USA">USA</option>
+                 </select>
+                </li>
+                <li class="buttons">
+                    <input type="button" name="" id="btn" value="submit" onclick="emp.submit()">
+                    <input type="button" name="" id="rset" value="reset" onclick="emp.reset()">
+                </li>
+            </ul>
+        </li>
+    </ul>
+   
+    <table id="temp"  border=" 1px solid;" cellspacing="0" cellpadding="10px" ></table>
+  
+   
+    <script src="emp.js"></script>
+</body>
+</html>

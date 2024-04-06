@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largestNumber</title>
+</head>
+<body>
+    <script>
+        var n = parseInt(prompt('Enter length of the array'));
+        console.log(`Length of the array is : ${n}`);
+        var arr = [];
+        for( var j = 0; j < n; j++){
+            arr[j] = parseInt(prompt(`Enter Array element of ${j+1}  value`));
+            console.log(`arr[${j}] = ${arr[j]}`);
+        }
+      
+        var largeno = 0;
+        for(var i = 0; i < n; i++){
+            if(largeno < arr[i]){
+                largeno = arr[i];
+            }
+        }
+        console.log(`The Largest number from given array ${largeno}`);
+    </script>
+</body>
+</html>

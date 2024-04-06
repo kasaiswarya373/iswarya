@@ -1,0 +1,42 @@
+/* .container > div {
+    border: 1px solid;
+    margin: 4px;
+    height: 30px;
+    width: 30px;
+    float: left;
+} */
+
+.columnDiv{
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.container{
+    border: 2px solid;
+    width: fit-content;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#btn{
+position: relative;
+left: 400px;
+top: 50px;
+}
+
+#completed{
+    display: none;
+ 
+}
+
+#showNo{
+    color: green;
+    font-size: 20px;
+}

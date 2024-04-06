@@ -1,0 +1,136 @@
+body 
+{
+    /* background-image: url(/background/image.jpg); */
+    background-image: url(https://cdn.gamedevmarket.net/wp-content/uploads/20191203152955/77f8f945d6791e26447b40fd36260908.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1
+{
+    text-align: center;
+    color: blue;
+}
+li
+{
+    list-style-type: none;
+}
+#startBtn
+{
+    background: aqua;
+    width: 71px;
+    height: 70px;
+    border-radius: 66px;
+    font-size: 20px;
+    position: absolute;
+    left: 212px;
+    top: 71px;
+
+}
+.callerContainer
+{
+    border: 3px solid brown;
+    width: 290px;
+    height: 135px;
+    border-radius: 70px;
+    padding: 20px;
+    margin: 10px;
+    position: absolute;
+    left: 564px;
+    top: 76px;
+    background-color: aliceblue;
+}
+#callerNumber
+{
+    border: 2px solid;
+    width: 119px;
+    height: 67px;
+    border-radius: 30px;
+    position: relative;
+    left: 25px;
+    margin: 10px;
+    background: white;
+    padding: 10px;
+    text-align: center;
+    font-size :60px;
+    color:blue;
+}
+#numCaller
+{
+    font-size: 25px;
+    text-align: center;
+    color:blue;
+}
+.player1Container
+{
+    position: absolute;
+    bottom: 2px;
+    left: 254px;
+    
+}
+.player1Container,.player2Container
+{
+    border: 3px solid brown;
+    width: 420px;
+    height: 314px;
+    margin: 19px;
+    padding: 15px;
+    display:flex;
+    flex-flow:row wrap;
+     justify-content: center;
+    
+    gap:8px 8px;
+    background-color: aliceblue;
+    text-align: center;
+}
+.player2Container
+{
+    position: absolute;
+    right: 230px;
+    bottom: 2px;
+}
+.player1Container li,.player2Container li
+{
+    width:30px;
+    height:30px;
+    border:1px solid rgb(170, 170, 243);
+    border-radius: 70px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+span
+{
+    font-size: 20px;
+    color: aliceblue;
+    border: 2px solid brown;
+    background-color: blue;
+    padding:10px;
+    border-radius: 20px;
+}
+#player1
+{
+    position: absolute;
+    left: 432px;
+    top: 310px;
+    margin: 11px;
+}
+#player2
+{
+    position: absolute;
+    right: 432px;
+    top: 310px;
+    margin: 11px;
+}
+#winner
+{
+    font-size: 40px;
+    color: green;
+    display: none;
+    position: absolute;
+    left: 557px;
+    top: 132px;
+}
+
+
+
+

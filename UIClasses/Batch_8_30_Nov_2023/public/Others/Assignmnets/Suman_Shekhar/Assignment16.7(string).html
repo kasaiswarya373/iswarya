@@ -1,0 +1,26 @@
+<!-- WAP to find out number of uppercase characters and lowercase character within a given string. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var s = prompt("enter string: ");
+            var countuppercase = 0;
+            var countlowercase = 0;
+            for(var i = 0 ; i<s.length;i++){
+                if(s.charCodeAt(i)>=65 && s.charCodeAt(i) <= 90){
+                    countuppercase++;
+                }
+                else if(s.charCodeAt(i)>=97 && s.charCodeAt(i)<=122){
+                    countlowercase++;
+                }
+            }
+            console.log("Total uppercaseletters in the string are : " + countuppercase);
+            console.log("Total lowercaseletters in the string are : " + countlowercase);
+    </script>
+</body>
+</html>

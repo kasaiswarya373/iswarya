@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating CSS overflow property
+        </title>
+        <style>
+            .container {
+                border: 1px solid;
+                margin: 20px auto;
+                padding: 10px;
+                width: 400px;
+                height: 500px;
+                overflow-x: scroll;
+            }
+            .block1 {
+                background-color: aquamarine;
+            }
+            .block2 {
+                background-color: aliceblue;
+            }
+            .block1,
+            .block2 {
+                border: 1px solid;
+                width: 100px;
+                height: 120px;
+                text-align: center;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="block1">Block 1</div>
+            <div class="block2">Block 2</div>
+            <div class="block1">Block 1</div>
+           
+            
+        </div>
+    </body>
+</html>

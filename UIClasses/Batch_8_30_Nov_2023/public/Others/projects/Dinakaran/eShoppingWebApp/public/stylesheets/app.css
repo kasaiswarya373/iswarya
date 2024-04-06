@@ -1,0 +1,47 @@
+#pageContainer {
+
+
+main {
+    min-height: 400px;
+}
+
+}
+
+.categoryFilterBlock img {
+    width: 90%;
+    height: 150px;
+    margin: 10px;
+}
+.logincontent {
+    background-color: chartreuse;
+    li {
+        list-style: none;
+        margin: 10px;
+       
+    }
+    input[type=checkbox] {
+        margin-right: 10px;
+    }
+}
+
+#pageLoginModel .modal-footer button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4caf50;
+    color: white;
+}
+.newSignupdetails {
+    border-radius: 10px;
+    border: 1px solid plum;
+    width: 550px;
+    margin: 20px auto;
+    padding: 20 px;
+    background-color: cornflowerblue;
+    li {
+        margin: 20px;
+        list-style: none;
+        padding: 10px;
+    }
+}

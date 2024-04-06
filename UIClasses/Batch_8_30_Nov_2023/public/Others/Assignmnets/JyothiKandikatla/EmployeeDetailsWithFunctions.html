@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee with functions</title>
+    </head>
+    <body>
+        <script>
+            var name , age , gender , deparment , basicsal , pf , hra;
+            function readEmployeeData(){
+                name = prompt('Enter employee name');
+                age = prompt('Enter employee age');
+                gender = prompt('Enter employee gender');
+                deparment = prompt('Enter employee department');
+                basicsal =parseInt(prompt('Enter employee basicsalary'));
+                pf = parseInt(prompt('Enter employee pf'));
+                hra = parseInt(prompt('Enter employee hra'));
+                pfAndHra();
+                totalsalary();
+                taxp();
+                taxAmount();
+                taxReductionAmount();
+            }
+            var pfamount , hraamount;
+            function pfAndHra(){
+                pfamount = (basicsal * pf) / 100;
+                hraamount = (basicsal * hra) / 100;
+            }
+            var totalSalary = 0;
+            function totalsalary(){
+                totalSalary = pfamount + hraamount + basicsal;                
+            }
+            var taxamount;
+          function taxAmount(){
+            taxamount = totalSalary * tax / 100;
+
+          }
+            var tax = 0;
+            function taxp(){
+                if( (gender =='male') || (gender =='m')){
+                    if(totalSalary >= 200000){
+                        tax = 15;
+                    }else if(totalSalary >= 100000){
+                        tax = 10;
+                    }else   if(totalSalary >= 50000){
+                        tax = 5;
+                    }else{
+                        tax = 0;
+                    }
+                }else{
+                    if(totalSalary >= 200000){
+                        tax = 10;
+                    }else  if(totalSalary >= 100000){
+                        tax = 5;
+                    }else  if(totalSalary >= 50000){
+                        tax = 0;
+                    }
+                }
+            }
+            var taxreductionAmount;
+            function taxReductionAmount(){
+                taxreductionAmount = totalSalary - taxamount;
+            }
+            function employeeInfo(){
+                readEmployeeData();
+                console.log(`.....Employee Details.....`);
+                console.log(`Name: ${name}`);
+                console.log(`Age: ${age}`);
+                console.log(`Gender: ${gender}`);
+                console.log(`Department: ${deparment}`);
+                console.log(`basicSalary: ${basicsal}`);
+                console.log(`Pf: ${pf}%`);
+                console.log(`hra: ${hra}%`);
+                console.log(`PfAmount: ${pfamount}`);
+                console.log(`hraAmount: ${hraamount}`);
+                console.log(`totalsal: ${totalSalary}`);
+                console.log(`tax: ${tax}%`);
+                console.log(`taxamount: ${taxamount}`);
+                console.log(`taxreductionSalary: ${taxreductionAmount}`);              
+            }
+            employeeInfo();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+var countryList = {
+    'c_ind': {
+        countryName: INDIA,
+        code: 'IND',
+        latlng: '',
+        statesInfo: [
+            {
+                name: 'Telangana',
+                code: 'TS',
+                districtInfo: [
+                    {
+                        name: 'Warangal',
+                        code: 'WN'
+                    },
+                    ...
+                ]
+            }
+        ]
+    },
+    c_USA: {
+        countryName: INDIA,
+        code: 'IND',
+        latlng: '',
+        statesInfo: [
+            {
+                name: 'Telangana',
+                code: 'TS',
+                districtInfo: [
+                    {
+                        name: 'Warangal',
+                        code: 'WN'
+                    },
+                    ...
+                ]
+            }
+        ]
+    }
+}

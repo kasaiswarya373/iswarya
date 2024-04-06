@@ -1,0 +1,7 @@
+#rightBlockProducts {
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        margin: 20px;
+    }
+}

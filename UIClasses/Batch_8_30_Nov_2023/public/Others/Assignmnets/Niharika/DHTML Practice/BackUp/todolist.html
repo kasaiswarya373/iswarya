@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://thumbs.dreamstime.com/z/to-do-list-icon-blue-color-clipboard-checklist-vector-graphics-various-use-187733011.jpg">
+    <style>
+       .container{
+                width: 50%;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin: 10px auto;
+                padding: 10px;
+            }
+            #addingtask {
+                width: 200px;
+                height: 20px;
+                display: inline-block;
+                border: 1px solid;
+                border-radius: 4px;
+                margin: 20px auto;
+            }
+            #submitask {
+                float: right;
+                width: 100px;
+                height: 30px;
+                background-color: green;
+                color: white;
+                font-weight: bold;
+                margin: 10px auto;
+                border: 1px solid;
+                position: relative;
+                top: -56px;
+                right: 128px;
+            }
+            
+            .sdiv {
+            width: 80%;    
+            padding: 10px;
+            border: 2px solid;
+            border-radius: 5px;
+            margin: 10px;
+            border-color: red;
+            transition: border-color 0.3s; /* Add transition for a smooth effect */
+            display: none;
+        }
+        .highlight {
+            border: 2px solid;
+            border-color: white; /* Highlight color */
+            background-color: #42b72a;
+            color: white;
+            font-weight: bold;
+        }
+        .todolist {
+            font-weight: bold;
+            color: black;
+            display: inline;
+            position: relative;
+            left: 445px;
+            margin: 50px auto;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="todolist">
+            TO-DO LIST APP
+        </div>
+    <div class="container">
+        <div>
+            <label for="addtask"><b>Enter Tasks : </b></label>
+            <input type="text" name="addtask" id="addingtask">
+        </div>
+        <span>
+            <input type="button" id="submitask" value="ADD-TASK" onclick="addingtasks()">
+        </span>
+    </div>
+    <script>
+        var addingtasks = () => {
+          
+    var div1 = document.createElement("div");
+    div1.setAttribute("class", "sdiv");
+    var input = document.createElement("input");
+    input.setAttribute("type", "checkbox");
+    input.setAttribute("id", "task");
+    input.setAttribute("class", "checkbox");
+    input.onclick = function () {
+        highlightBorder(input);
+    };
+    div1.append(input);
+    var label = document.createElement("label");
+    label.setAttribute("for", "task1");
+    div1.append(label);
+
+    var span = document.createElement("span");
+    span.setAttribute("class", "check");
+    span.innerText = document.querySelector("#addingtask").value;
+    div1.append(span);
+
+    
+    document.querySelector(".container").append(div1);
+    // Use querySelectorAll to select all elements with class "sdiv"
+    var sdivList = document.querySelectorAll(".sdiv");
+
+    // Loop through the NodeList and set their style
+    for (var i = 0; i < sdivList.length; i++) {
+        sdivList[i].style.display = 'block';
+    }
+    clearvalues();
+};
+
+var clearvalues = () => {
+    document.querySelector("#addingtask").value = '';
+}
+function highlightBorder(checkbox) {
+            var sdiv = checkbox.closest('.sdiv');
+            
+            if (checkbox.checked) {
+                sdiv.classList.add('highlight');
+            } else {
+                sdiv.classList.remove('highlight');
+            }
+        }
+        
+    </script>
+</body>
+</html>

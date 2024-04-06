@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prob1 Num of digits</title>
+</head>
+<body>
+    <h2>WAP To find out total no. of digits in agiven number</h2>
+    <script>
+        let num = parseInt(prompt("Enter A Number"));
+
+        let temp = num;
+        let count = 0;
+        let remainder;
+
+        while(temp > 0){
+             remainder = temp%10;
+            //  console.log(remainder);
+            if(remainder > 0){
+                count = count + 1;
+            }
+            
+            temp = parseInt(temp/10);
+
+        }
+        console.log(`Given Number : ${num}`);
+        console.log(`THE NUMBER OF DIGITS IN GIVEN NUMBER : ${count}`);
+    </script>
+</body>
+</html>

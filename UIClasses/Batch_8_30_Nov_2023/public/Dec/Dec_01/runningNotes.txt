@@ -1,0 +1,23 @@
+
+.abc, .pqr {
+    .. 
+    ..
+}
+
+
+div, span, .pqr, #abc, .sample {
+
+}
+
+CSS Padding and margin properties.
+
+    margin - 10px - its afor all the 4 directions 
+    margin-top: 10px 
+    margin-bottom - 5px 
+    margin: 30px 10px
+    padding 
+
+-----------------
+
+CSS BOX model
+    

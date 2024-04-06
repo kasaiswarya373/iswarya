@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>WAP to display all the prime numbers between 1 to 1000.</h3>
+    <script>
+      for (var a = 1; a <= 1000; a++) {
+        if (a < 2) {
+          continue;
+        }
+
+        var isPrime = true;
+        for (var i = 2; i * i <= a; i++) {
+          if (a % i === 0) {
+            isPrime = false;
+            break;
+          }
+        }
+        if (isPrime) {
+          console.log(a);
+        }
+      }
+    </script>
+  </body>
+</html>

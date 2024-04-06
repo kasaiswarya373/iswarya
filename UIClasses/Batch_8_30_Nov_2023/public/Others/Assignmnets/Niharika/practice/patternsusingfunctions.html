@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // WAP to print hollow square.
+          //  var n = parseInt(prompt("enter number of rows: "));
+            //var a = "";
+            var n = parseInt(prompt("Enter the number of rows: "));
+                var a = "";
+
+                function hollowsquare() {
+                    for (var i = 1; i <= n; i++) {
+                        for (var j = 1; j <= n; j++) {
+                            if (i == 1 || i == n || j == 1 || j == n) {
+                                a += "* ";
+                            } else {
+                                a += "  "; // add spaces for the hollow part
+                            }
+                        }
+                        a += "\n";
+                    }
+                    console.log(a);
+                }
+
+            hollowsquare();
+
+            // WAP to print rhombus star pattern
+            var n = parseInt(prompt("enter number of rows: "));
+                    var a ="";
+                    function rhombuspattern() {
+                        for(var i=1;i<=n;i++){
+                        for(var j=1;j<=i;j++){
+                            a+=" ";
+                        }
+                        for(var k=1;k<=n;k++){
+                            a+="* ";
+                        }
+                        a+="\n";
+                    }
+                    console.log(a);
+                    }
+            rhombuspattern();
+        </script>
+    </body>
+</html>

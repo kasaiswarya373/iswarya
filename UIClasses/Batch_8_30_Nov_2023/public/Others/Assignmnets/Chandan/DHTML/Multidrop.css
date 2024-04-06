@@ -1,0 +1,33 @@
+h3{
+    border: 3px solid greenyellow;
+    text-align: center;
+    background-color: #53cfa8d9;
+    padding: 10px;
+    margin: 10px;
+    font-style: italic;
+
+}
+body{
+    background-color: darkgray;
+}
+.container{
+    margin: 30px;
+    width:600px;
+    border: 3px solid;
+    box-shadow: black;
+    background-color: thistle;
+}
+.container div{
+    margin: 20px 30px;
+    background-color: rgb(63, 128, 178);
+}
+label{
+    width: 200px;
+    display: inline-block;
+    font-size: 20px;
+}
+h2 {
+    text-align: center;
+    margin: 30px;
+
+}

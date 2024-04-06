@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrting js classes
+        </title>
+    </head>
+    <body>
+        <script>
+
+            class StudentDetails {
+                constructor() {
+                    this.sname = 'Raj';
+                    this.age = 20;
+                    this.location = 'Hyderabad';
+                    this.marks = [34, 55, 67]
+                }
+                displayStudentDetails() {
+                    this.getTotalAndAvg();
+                    console.log("----------Student detalis=---------------")
+                    console.log("Student name " + this.sname)
+                    console.log("Age is " + this.age);
+                    console.log("Total is " + this.total);
+                    console.log("Avg " + this.avg);
+                }
+                getTotalAndAvg() {
+                    this.total = 0;
+                    for (var i = 0 ; i < this.marks.length; i++) {
+                        this.total += this.marks[i];
+                    }
+                    this.avg = this.total / this.marks.length;
+                }
+            }
+
+            var s1 = new StudentDetails();
+            s1.displayStudentDetails();
+
+
+            // var s2 = new StudentDetails();
+            // s2.displayStudentDetails();
+
+            // var s3 = new StudentDetails();
+            // s3.displayStudentDetails();
+
+            console.log(s1)
+            // console.log(s2)
+            // console.log(s3)
+            // console.log(s4)
+        </script>
+    </body>
+</html>

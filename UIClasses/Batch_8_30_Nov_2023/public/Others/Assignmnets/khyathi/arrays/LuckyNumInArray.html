@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[231,567,428,56,111];
+        console.log(a);
+        for( var i=0;i<a.length;i++){
+         var sum=0;
+         
+
+            while(a[i]>0){
+           var rem= a[i]%10;
+           a[i]=parseInt(a[i]/10);
+           sum+=rem;
+           if(a[i]==0&&sum>9){
+            a[i]=sum;
+            sum=0;
+           }
+         }
+        console.log(sum)
+
+        }
+    </script>
+</body>
+</html>

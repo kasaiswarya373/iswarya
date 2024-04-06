@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculation of area and perimeter of rectangle</title>
+</head>
+<body>
+    <script>
+        var getInfo = ( ) => {
+            var L , B ;
+            L = parseInt(prompt("Enter length value -"));
+            B = parseInt(prompt("Enter breadth value -"));
+            var area = getArea( L , B );
+            var perimeter = getPerimeter( L , B);
+            var result = Result( area , perimeter );
+        }
+       
+        var getArea = ( L , B ) => {
+            var Area = L * B ;
+            return Area ;
+        }
+        var getPerimeter = ( L , B) =>{
+            var perimeter = (2 * (L + B));
+            return perimeter ;
+        }
+        
+        var Result = ( area , perimeter ) =>{
+            console.log("Area of Rectangle = " , area);
+            console.log("Perimeter of Rectangle = " , perimeter);
+
+        }
+        getInfo( );
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating Drag and Drop using html 5
+    </title>
+    <style>
+        h2{
+            border: 2px solid mediumseagreen;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            font-style: italic;
+            background-color: beige;
+        }
+        body{
+            background-color: rgba(10, 159, 132, 0.448);
+        }
+        .container{
+            width: 700px;
+            height: 500px;
+            border: 1px solid;
+            margin: 20px auto;
+            background-color: rgba(167, 225, 7, 0.914);
+            overflow: auto;
+        }
+        img{
+            width: 170px;
+            height: 150px;
+        }
+        div span {
+            cursor: pointer;
+            background-color: rgb(239, 31, 31);
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        DRAG and DROP 
+    </h2>
+    <div class="container" ondrop="onElementDrop(event)" ondragover="onElementDragOver(event)"></div>
+
+    <img src="https://www.shutterstock.com/image-photo/happy-child-hugging-teddy-bear-600nw-2174853185.jpg" alt="" ondragstart="onElementDragStart(event)" id="product_1">
+    <img src="https://www.safariltd.com/cdn/shop/products/lion-128823_1024x1024.jpg?v=1610741722" alt="" ondragstart="onElementDragStart(event)" id="product_2">
+    <img src="https://images.unsplash.com/photo-1587925358603-c2eea5305bbc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3Jpc3R3YXRjaHxlbnwwfHwwfHx8MA%3D%3D" alt="" ondragstart="onElementDragStart(event)" id="product_3">
+    <img src="https://images-cdn.ubuy.co.in/655cfb677076f442df434736-friction-powered-cars-push-and-go-toys.jpg" alt="" ondragstart="onElementDragStart(event)" id="product_4">
+     
+    <script>
+       /*  var productId;
+            var onElementDrop = (event) => {
+                event.preventDefault();
+                var imgElement = document.querySelector(productId);
+                document.querySelector(".container").append(imgElement);
+            }
+
+            var onElementDragOver = (event) => {
+                event.preventDefault();
+                console.log("Element drag over");
+                
+            }
+            var onElementDragStart = (event) => {
+                console.log("Element drag started");
+                
+                productId = event.target.getAttribute("id");
+                productId = '#' + productId;
+                console.log(productId); 
+            } */
+
+            var imageSrc;
+            var onElementDrop = (event) => {
+                event.preventDefault();
+                var divTag = document.createElement("div");
+                var imgElement = document.createElement("img");
+                imgElement.setAttribute("src", imageSrc);
+                divTag.append(imgElement);
+
+                var deleteTag = document.createElement("span");
+                deleteTag.innerText = 'X';
+                divTag.append(deleteTag);
+                deleteTag.addEventListener('click', (event) => {
+                    event.target.parentElement.remove();
+                });
+
+                document.querySelector(".container").append(divTag);
+            }
+
+            var onElementDragOver = (event) => {
+                event.preventDefault();
+                console.log("Element drag over");
+                
+            }
+            var onElementDragStart = (event) => {
+                console.log("Element drag started");
+                
+                imageSrc = event.target.getAttribute("src");
+                console.log(imageSrc);
+            }
+
+              function DropProduct(event) {
+                event.preventDefault();
+                var productId = onElementDragStart(event).getData ;
+                var product_1 = document.getElementById(productId);
+                var productCountSpan = product.querySelector('.product-count');
+                var count = parseInt(productCountSpan.innerText) + 1;
+                productCountSpan.innerText = count;
+                event.target.appendChild(product.cloneNode(true));
+              }
+                
+            
+    </script>
+
+</body>
+</html>

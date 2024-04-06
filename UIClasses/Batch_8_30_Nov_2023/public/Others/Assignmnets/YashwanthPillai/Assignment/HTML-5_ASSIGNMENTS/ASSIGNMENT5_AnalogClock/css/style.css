@@ -1,0 +1,123 @@
+.container{
+    /* border: 2px solid black; */
+    height: 95vh;
+    width: 95vw;
+    margin: auto;
+}
+
+.clock{
+    border: 15px solid tomato;
+    /* border-inline-color: white; */
+    border-bottom-color: aquamarine;
+    border-top-color: aquamarine;
+    border-radius: 50%;
+    height: 95vh;
+    width: 50vw;
+    margin: auto;
+    position: relative;
+    background-color: black;
+}
+.center{
+    border: 2px solid;
+    border-radius: 100%;
+    width: 3% !important;
+    height: 3%;
+    position: absolute;
+    top: 47.5%;
+    left: 49.5%;
+    color: white;
+}
+
+.hrs,.min,.sec{
+    transform-origin:bottom ;
+    background-color: white !important; 
+    border-start-start-radius: 100px;
+    border-end-end-radius: 100px;
+}
+.hrs{
+    border: 2px inset black;
+    background-color: yellow;
+    width: 1%;
+    height:35%;
+    position: absolute;
+    top: 14%;
+    left: 50.5%;
+    
+    z-index: 16;
+}
+.min{
+    border: 2px inset black;
+    background-color: olivedrab;
+    width: 1%;
+    height: 42%;
+    position: absolute;
+    top: 7%;
+    left: 50.5%;
+    z-index: 3;
+}
+.sec{
+    border: 2px inset black;
+    background-color: lightcoral;
+    width: 1%;
+    height: 40%;
+    position: absolute;
+    top: 9%;
+    left: 50.5%;
+    z-index: 7;
+}
+.numbers{
+    font-size: xx-large;
+    font-weight: bolder;
+    position: absolute;
+    color: white;
+}
+.one{
+    top: 9%;
+    left: 75%;
+}
+.two{
+    
+    top: 26%;
+    left: 90%;
+}
+.three{
+    top: 46%;
+    left: 97%; 
+}
+.four{
+    top: 68%;
+    left: 92%; 
+}
+.five{
+    bottom: 9%;
+    right: 22%; 
+}
+
+.six{
+    bottom: 0%;
+    left: 50%;
+}
+.seven{
+    bottom: 9%;
+    left: 22%;
+}
+.eight{
+    bottom: 29%;
+    left: 5%;
+}
+.nine{
+    top: 46%;
+    left: 1%; 
+}
+.ten{
+    top: 25%;
+    left: 6%; 
+}
+.eleven{
+    top: 7%;
+    left: 23%; 
+}
+.twelve{
+    top: 0%;
+    left: 50%;
+}

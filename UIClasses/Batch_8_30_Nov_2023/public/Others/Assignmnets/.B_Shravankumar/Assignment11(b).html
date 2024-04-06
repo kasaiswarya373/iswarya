@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OddNumber</title>
+</head>
+<body>
+    <script>
+        // Odd Numbers
+
+        var l = prompt("Enter max NO");
+        l = parseInt(l);
+        var f = prompt("Enter min NO");
+        f = parseInt(f);
+        for (n=l;n>=f;n--){
+            if(n%2==1){
+                console.log(n)
+            }
+        }
+
+        // sum of Odd Numbers
+
+        var sum = 0;
+        var z = prompt("Enter Max NO");
+        z = parseInt(z);
+        var a = prompt("Enter Min NO");
+        a = parseInt(a);
+
+        for (nbr=z;nbr>=a;nbr--){
+            if(nbr%2!=0){
+                sum = sum + nbr;
+            }
+        }
+        console.log("sum of Odd numbers " + sum)
+    </script>
+    
+</body>
+</html>

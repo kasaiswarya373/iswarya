@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage-Example</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="colorPicker">
+           Select Theme :  <input type="color" id="userColor" onchange="getTheme()">
+        </div>
+        <div class="userName">
+            <input type="text" placeholder="ENTER USERNAME" id="u_name">
+            <button id="un_save" onclick="getUserDetails()">SAVE</button>
+        </div>
+        <div class="message">
+            Enjoy Your Day Mr/Ms. <span id="userMessage"></span>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

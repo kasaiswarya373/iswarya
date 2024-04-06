@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ducklings | Kids Shopping Platform</title>
+        
+        <script src="./lib/jquery/dist/jquery.js"></script>
+        <script src="./lib/handlebars/dist/handlebars.js"></script>
+        <script src="./lib/axios.js"></script>
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6pCwL-2Pu1JJE9gvezT_c1yLWRDyaGhZWg&usqp=CAU">
+        <link rel="stylesheet" href="./stylesheets/app.css">
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./stylesheets/Productdetails.css">
+        <link rel="stylesheet" href="/./public/lib/ratingStars_lib/rating.css">
+        <link rel="stylesheet" href="./stylesheets/SingleProductDetails.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body onload="generateCaptcha()" style="overflow: visible;">  
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" 
+                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">User Login</h1>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <ul>
+                      <li>
+                        <input type="email" id="UserAccountId" placeholder="Email/User Id" maxlength="15" style="width: 300px;">
+                      </li>
+                      <li>
+                        <input type="password" id="accountpassword" placeholder="Account Password" maxlength="10" style="width: 300px;">
+                      </li>
+                      <li>
+                        <input type="Captcha" placeholder="Enter text shown below" maxlength="6" style="width: 300px;">
+                      </li>
+                      <li>
+                        <input type="checkbox" id="RememberMe"> Remember My Credentials
+                      </li>
+
+                      <div id="captchaContainer"></div>
+                      <img id="refreshButton" src="./images/slider/refresh.png" onclick="generateCaptcha()" alt="Refresh Captcha">
+
+                      <div class="mb-3 invalidMsgBlock"></div>
+
+                      <p><a href="#" class="btn btn-link text-warning fs-6" 
+                            style="font-weight: bold; display: flex;opacity: none;" onclick="SelectedloadPage('ForgotPwd')">Forgot Password?</a></p>
+                    </ul>
+                  </div>
+                  <div class="modal-footer" style="background-color: lemonchiffon;">
+                    
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="ValidateUserCredentials()">Login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      <div class="headpart">
+            
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-icon"> <img src="./images/duckling_1.png" alt=""></span>
+            <span class="fs-4">Little Moments, Big Memories
+              <span class="fs-4-1">
+                "Where Every Baby Accessory Tells a Story." !
+              </span>
+             </span> 
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" style="font-weight: bold;">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" style="font-weight: bold;">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" style="font-weight: bold;">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" style="font-weight: bold;">About</a></li>
+            <button type="button" class="btn btn-primary" style="height: 40px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Login
+            </button>
+            <li class="nav-item"><button type="button" 
+                    class="btn btn-warning" style="margin-left: 10px;" onclick="SelectedloadPage('SignUp')">Sign up</button>
+          </li>
+          </ul>
+
+      <marquee behavior="" direction="left" style="color: rgb(58, 4, 58); font-family: 'Times New Roman', Times, serif; font-weight: bold;font-size: large;" >Launching Summer'24 Collections Hurry up for Exciting offers !!!!</marquee>
+        </header>
+      </div>
+
+        <main>
+           <div class="Block" id="pageSlider">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/slider/baby1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/slider/baby2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/slider/image4.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+           </div>
+        <div id="MetaContentBlock">
+           <div class="card-group" style="margin: 20px;">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/32579.webp" alt="Card image cap">
+              <div class="card-body" style="cursor: pointer;">
+                <h5 class="card-title">Fashion that Pops</h5>
+                <p class="card-text">Holi Hues & Happy Faces | Upto 14Yrs</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted" style="font-weight: bold;">Shop Now</small>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/32749.webp" alt="Card image cap">
+              <div class="card-body" style="cursor: pointer;">
+                <h5 class="card-title">Kid's Shoe Delight</h5>
+                <p class="card-text">Walk the Rainbow | Upto 8Yrs</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted" style="font-weight: bold;">Shop Now</small>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/32753.webp" alt="Card image cap">
+              <div class="card-body" style="cursor: pointer;">
+                <h5 class="card-title">Books, Toys & More...</h5>
+                <p class="card-text">What's in the Store</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted" style="font-weight: bold;">Shop Now</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="margin: 30px;">
+            <img class="card-img-top" src="https://centrepoint.a.bigcontent.io/v1/static/HDB3-WEB-EN-RAMADAN_COLLECTION-BABY-12FEB24" alt="Card image cap">
+            
+          </div>
+
+          <div class="card mb-3" style="margin: 30px;">
+            <img class="card-img-top" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/spring24_desktop_essentials_120224_01.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Daily Care Essentials</h5>
+              <p class="card-text" style="text-align: center;">Baby Daipers, SkinCare & More</p>
+              <p class="card-text" style="text-align: center;"><small class="text-muted">Super Savings with Upto 100% Rash Free Nights</small></p>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <img class="card-img-top" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_spring_def_090224_16.jpg" alt="Card image cap">
+            <div class="card-body"> 
+            </div>
+          </div>
+          
+          <div class="card-group" style="margin: 20px;">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/32744.webp" alt="Card image cap">
+              <div class="card-body" style="cursor: pointer;">
+                <h5 class="card-title">Watches That Complete your looks..</h5>
+                <p class="card-text">Shirt-Astic TimePieces | Upto 14Yrs</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted" style="font-weight: bold;">Shop Now</small>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/32750.webp" alt="Card image cap">
+              <div class="card-body" style="cursor: pointer;">
+                <h5 class="card-title">Start With Global Kids Fashion !!!</h5>
+                <p class="card-text">Fashion's Grand Tour | 2-8Yrs</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted" style="font-weight: bold;">Shop Now</small>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/32746.webp" alt="Card image cap">
+              <div class="card-body" style="cursor: pointer; scrollbar-highlight-color: rosybrown;">
+                <h5 class="card-title">Baby Gear | Nursery | Toys & Gaming</h5>
+                <p class="card-text">Dive In Fun with Little Ones</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted" style="font-weight: bold;">Shop Now</small>
+              </div>
+            </div>
+          </div>
+        </div>
+           <div id="mainContentBlockArea"></div>
+        </main>
+
+        <footer class="py-5">
+            <div class="row">
+              <div class="col-2">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-2">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-2">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-4 offset-1">
+                <form>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of whats new and exciting from us.</p>
+                  <div class="d-flex w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address" fdprocessedid="h3b4no">
+                    <button class="btn btn-primary" type="button" fdprocessedid="kvmahf">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+              <p>© 2024 Ducklings, Inc. All rights reserved.</p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+              </ul>
+            </div>
+          </footer>
+          <script src="./javascripts/index.js"></script>
+          <script src="./javascripts/Captcha.js"></script>
+          <script src="./javascripts/login.js"></script>
+          <script src="./javascripts/ProductDetails.js"></script>
+          <script src="./lib/ratingStars_lib/rating.js"></script>  
+          <script>
+            var saveChanges = () => {
+                //$("#exampleModal").modal('hide')
+               
+            }
+          </script>  
+    </body>
+</html>

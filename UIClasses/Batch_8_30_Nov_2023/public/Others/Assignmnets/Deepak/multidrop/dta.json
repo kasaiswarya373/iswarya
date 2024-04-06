@@ -1,0 +1,474 @@
+{
+   "INDIA" :{
+        "countryName": "INDIA",
+        "latlng": "12.232.33.2",
+        "C_code" : "IND",
+        "statesInfo":[
+            {
+                "name": "TELANGANA",
+                "code": "TS",
+                "districtInfo": [
+                    {
+                        "name": "Warangal",
+                        "code": "WN"
+                    },
+                    {
+                        "name": "Peddapalli",
+                        "code": "PDL"
+                    },
+                    {
+                        "name": "Kamareddy",
+                        "code": "KMR"
+                    },
+                    {
+                        "name": "Narayanpet",
+                        "code": "NRP"
+                    }
+                ]
+            },
+            {
+                "name": "ODISHA",
+                "code": "OD",
+                "districtInfo": [
+                    {
+                        "name": "GANJAM",
+                        "code": "GJN"
+                    },
+                    {
+                        "name": "BADRAK",
+                        "code": "BDR"
+                    },
+                    {
+                        "name": "NUAPADA",
+                        "code": "NPD"
+                    },
+                    {
+                        "name": "CUTTUCK",
+                        "code": "CTK"
+                    }
+                ]
+            },
+            {
+                "name": "CHHATISHGARH",
+                "code": "CG",
+                "districtInfo": [
+                    {
+                        "name": "RAIPUR",
+                        "code": "R"
+                    },
+                    {
+                        "name": "BILASPUR",
+                        "code": "BLS"
+                    },
+                    {
+                        "name": "DURG",
+                        "code": "DURG"
+                    },
+                    {
+                        "name": "KORIYA",
+                        "code": "KR"
+                    }
+                ]
+            }, {
+                "name": "ANDRA PRADESH",
+                "code": "AD",
+                "districtInfo": [
+                    {
+                        "name": "Srikakulam",
+                        "code": "SRLM"
+                    },
+                    {
+                        "name": "Parvathipuram",
+                        "code": "PRVT"
+                    },
+                    {
+                        "name": "Vizianagaram",
+                        "code": "VIG"
+                    },
+                    {
+                        "name": "Visakhapatnam",
+                        "code": "VZG"
+                    }
+                ]
+            }
+        ]
+   },
+    "USA" :{
+    "countryName": "USA",
+    "latlng": "2.464.437.38",
+    "C_code" : "USA",
+    "statesInfo":[
+        {
+            "name": "ALABAMA",
+            "code": "TS",
+            "districtInfo": [
+                {
+                    "name": "Montgomery",
+                    "code": "MN"
+                },
+                {
+                    "name": "Huntsville",
+                    "code": "HNT"
+                },
+                {
+                    "name": "Phoenix",
+                    "code": "PHO"
+                },
+                {
+                    "name": "Denver",
+                    "code": "DNV"
+                }
+            ]
+        },
+        {
+            "name": "ALASKA",
+            "code": "AL",
+            "districtInfo": [
+                {
+                    "name": "Juneau",
+                    "code": "WN"
+                },
+                {
+                    "name": "Anchorage",
+                    "code": "WN"
+                },
+                {
+                    "name": "Atlanta",
+                    "code": "ATL"
+                },
+                {
+                    "name": "Chicago",
+                    "code": "CHO"
+                }
+            ]
+        },
+        {
+            "name": "IDAHO",
+            "code": "IDO",
+            "districtInfo": [
+                {
+                    "name": "Boise",
+                    "code": "BOI"
+                },
+                {
+                    "name": "Boston",
+                    "code": "BOS"
+                },
+                {
+                    "name": "Detroit",
+                    "code": "DET"
+
+                {
+                    "name": "Jackson",
+                    "code": "JACK"
+                }
+            ]
+        }, {
+            "name": "NEW YORK",
+            "code": "NY",
+            "districtInfo": [
+                {
+                    "name": "Albany",
+                    "code": "ALB"
+                },
+                {
+                    "name": "New York City",
+                    "code": "NYC"
+                },
+                {
+                    "name": "Sioux Falls",
+                    "code": "SIA"
+                },
+                {
+                    "name": "Olympia",
+                    "code": "OLP"
+                }
+            ]
+        }
+    ]
+},
+"JAPAN" :{
+    "countryName": "JAPAN",
+    "latlng": "9.76.23.56",
+    "C_code" : "JAP",
+    "statesInfo":[
+        {
+            "name": "Hokkaido",
+            "code": "HOK",
+            "districtInfo": [
+                {
+                    "name": "Hokkaido",
+                    "code": "HOK"
+                },
+                {
+                    "name": "Kyoto",
+                    "code": "KYT"
+                },
+                {
+                    "name": "Hyōgo",
+                    "code": "HYG"
+                },
+                {
+                    "name": "Nara",
+                    "code": "NR"
+                }
+            ]
+        },
+        {
+            "name": "Chūgoku",
+            "code": "TS",
+            "districtInfo": [
+                {
+                    "name": "Tottori",
+                    "code": "TOT"
+                },
+                {
+                    "name": "Shimane",
+                    "code": "SHM"
+                },
+                {
+                    "name": "Okayama",
+                    "code": "OKY"
+                },
+                {
+                    "name": "Hiroshima",
+                    "code": "HMR"
+                }
+            ]
+        },
+        {
+            "name": "Shikoku",
+            "code": "SHK",
+            "districtInfo": [
+                {
+                    "name": "Tokushima",
+                    "code": "TSMA   "
+                },
+                {
+                    "name": "Kagawa",
+                    "code": "KGW"
+                },
+                {
+                    "name": "Ehime",
+                    "code": "EHM"
+                },
+                {
+                    "name": " Kōchi",
+                    "code": "KCH"
+                }
+            ]
+        }, 
+        {
+            "name": "Chūbu",
+            "code": "CHO",
+            "districtInfo": [
+                {
+                    "name": "Niigata",
+                    "code": "NIG"
+                },
+                {
+                    "name": "Toyama",
+                    "code": "TMA"
+                },
+                {
+                    "name": "Fukui",
+                    "code": "FKI"
+                },
+                {
+                    "name": "Shizuoka",
+                    "code": "SHI"
+                }
+            ]
+        }
+    ]
+},
+"BANGLADESH" :{
+    "countryName": "BANGLADESH",
+    "latlng": "89.453.234",
+    "C_code" : "BAN",
+    "statesInfo":[
+        {
+            "name": "Rajshahi",
+            "code": "RAJ",
+            "districtInfo": [
+                {
+                    "name": "Natore",
+                    "code": "NT"
+                },
+                {
+                    "name": "Rajshahi",
+                    "code": "RJS"
+                },
+                {
+                    "name": "Pabna",
+                    "code": "PBH"
+                },
+                {
+                    "name": "Naogaon",
+                    "code": "NGON"
+                }
+            ]
+        },
+        {
+            "name": "Dhaka",
+            "code": "TS",
+            "districtInfo": [
+                {
+                    "name": "Dhamra",
+                    "code": "DHA"
+                },
+                {
+                    "name": "Dohar",
+                    "code": "DOA"
+                },
+                {
+                    "name": "Keraniganj",
+                    "code": "KERN"
+                },
+                {
+                    "name": "Nawabganj,",
+                    "code": "NRJ"
+                }
+            ]
+        },
+        {
+            "name": "Gazipur",
+            "code": "GZP",
+            "districtInfo": [
+                {
+                    "name": "Baraduari",
+                    "code": "BRD"
+                },
+                {
+                    "name": "Dinajpu",
+                    "code": "DIN"
+                },
+                {
+                    "name": "Sukhsagar",
+                    "code": "SUH"
+                },
+                {
+                    "name": "Matasagar",
+                    "code": "MTS"
+                }
+            ]
+        }, {
+            "name": "Comilla",
+            "code": "TS",
+            "districtInfo": [
+                {
+                    "name": "Barura",
+                    "code": "BAR"
+                },
+                {
+                    "name": "Chandina",
+                    "code": "CHA"
+                },
+                {
+                    "name": "Daudkandi",
+                    "code": "DAU"
+                },
+                {
+                    "name": "Homna",
+                    "code": "HMO"
+                }
+            ]
+        }
+    ]
+},
+"SRILANKA" :{
+    "countryName": "SRILANKA",
+    "latlng": "12.34.45.45",
+    "C_code" : "SL",
+    "statesInfo":[
+        {
+            "name": "Kandy",
+            "code": "TS",
+            "districtInfo": [
+                {
+                    "name": "Peradeniya",
+                    "code": "WN"
+                },
+                {
+                    "name": "Polgolla",
+                    "code": "POL"
+                },
+                {
+                    "name": "Talwatta",
+                    "code": "TLW"
+                },
+                {
+                    "name": "Warangal",
+                    "code": "WAGL"
+                }
+            ]
+        },
+        {
+            "name": "Trincomalee",
+            "code": "TS",
+            "districtInfo": [
+                {
+                    "name": "Ampitiya",
+                    "code": "AMPT"
+                },
+                {
+                    "name": "Gelioya",
+                    "code": "GPL"
+                },
+                {
+                    "name": "Anniwatta",
+                    "code": "AMI"
+                },
+                {
+                    "name": "Wattegama",
+                    "code": "WTG"
+                }
+            ]
+        },
+        {
+            "name": "Ratnapura",
+            "code": "RTP",
+            "districtInfo": [
+                {
+                    "name": "Wattegama",
+                    "code": "WTG"
+                },
+                {
+                    "name": "Watapuluwa",
+                    "code": "WPL"
+                },
+                {
+                    "name": "Lewella",
+                    "code": "LEW"
+                },
+                {
+                    "name": "Malwatta",
+                    "code": "MAL"
+                }
+            ]
+        }, 
+        {
+            "name": "Colombo",
+            "code": "COL",
+            "districtInfo": [
+                {
+                    "name": "Katugastota",
+                    "code": "KTU"
+                },
+                {
+                    "name": "Asgiriya",
+                    "code": "ASG"
+                },
+                {
+                    "name": "Mapanawatura",
+                    "code": "MAP"
+                },
+                {
+                    "name": "Polgolla",
+                    "code": "POL"
+                }
+            ]
+        }
+    ]
+}
+}

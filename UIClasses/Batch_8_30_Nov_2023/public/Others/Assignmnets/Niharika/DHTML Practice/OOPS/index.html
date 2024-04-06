@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var employee = {
+                basesalary : 30000,
+                overtime : 10,
+                rate : 10,
+                getWages(){
+                    console.log(this.basesalary+(this.overtime*this.rate));
+                }
+            }
+            employee.getWages();
+        </script>
+    </body>
+</html>

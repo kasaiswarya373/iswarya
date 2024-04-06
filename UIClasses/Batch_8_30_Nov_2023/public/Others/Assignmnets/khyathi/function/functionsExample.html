@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        var calculateNetSalary=function(TotalSalary, pf){
+            var taxAmount=calculateTax(TotalSalary);//called function
+            // console.log()\
+            return TotalSalary-taxAmount-pf;
+        }
+
+        
+
+ var calculateTax =function(TotalSalary){
+    var taxAmount=(TotalSalary*30)/100;
+    return taxAmount;
+ }
+
+ var netSalary=calculateNetSalary(800000,1200);//called function
+
+ console.log("Total net salary "+netSalary);
+
+ var  taxAmountValue= calculateTax(800000);//called function
+
+ console.log("Total tax amount "+ taxAmountValue);
+
+
+    </script>
+</body>
+</html>

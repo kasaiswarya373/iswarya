@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Work with employee details with functions </title>
+</head>
+<body>
+    <script>
+         var ename, gender, dept, basicsal, totalsal, pf, hra, totaltax;
+         var a=900;
+         function readingEmpData() {
+            ename = prompt(" Enter the employee name");
+            gender= prompt("Enter Gender");
+            dept = prompt(" dept");
+            basicsal = prompt (" Enter basicsal");
+            basicsal = parseInt( basicsal);
+
+         }
+         function getPfHra(){
+            pf=(12 * emlbasiscal) / 100;
+            hra=(24 * emlbasiscal) / 100;
+
+         }
+         function gettotalsal(){
+            totalsal = basicsal + pf + hra;
+            gettotaltax();
+         }
+         function gettotaltax(){
+            var taxPercent = 0;
+                if (gender == 'Male') {
+                    if (totalsal >= 100000) {
+                        taxPercent = 10;
+                    }
+                } else { // Female
+                    if (totalsal >= 10000) {
+                        taxPercent = 5;
+                    }
+                }
+                totaltax = totalsal - (totalsal * taxPercent) / 100;
+            }
+        function displayEmpData(){
+            readingEmpData();
+            gettotalsal();
+            console.log("emp data");
+            console.log(` name ${ename}`);
+            console.log(`Ttoal Sal  ${totalsal}`)
+            console.log(`Totaltax ${totaltax}`);
+        }
+        displayEmpData();
+    </script>
+</body>
+</html>

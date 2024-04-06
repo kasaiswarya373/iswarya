@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>
+      WAP to findout number of UpperCase character & lowercase character within
+      a given string.
+    </h3>
+    <script>
+      var inputString = "Hello Love";
+
+      var UpperCaseCount = 0;
+      var lowercaseCount = 0;
+
+      for (var i = 0; i < inputString.length; i++) {
+        var currentChar = inputString[i];
+        if (currentChar >= "A" && currentChar <= "Z") {
+          UpperCaseCount++;
+        } else {
+          currentChar >= "a" && currentChar < +"z";
+          lowercaseCount++;
+        }
+      }
+      console.log(UpperCaseCount);
+      console.log(lowercaseCount);
+    </script>
+  </body>
+</html>

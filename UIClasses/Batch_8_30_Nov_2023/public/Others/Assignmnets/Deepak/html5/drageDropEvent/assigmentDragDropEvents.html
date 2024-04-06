@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Drag drop events from html5
+        </title>
+        <style>
+            .container {
+                border: 2px solid;
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px lightgray;
+                margin: 80px auto;
+                padding: 10px;
+                height: 400px;
+                width: 600px;
+                overflow: auto;
+
+            }
+            img {
+                width: 120px;
+                height: 150px;
+            }
+            div span {
+                cursor: pointer;
+            }
+            .inputPosition{
+                position: absolute;
+                top: 10px;
+                left: 70%;
+                width: 40px;
+                border-radius: 5px;
+
+            }
+            .btn{
+                display: block;
+                width: 100%;
+                background-color: rgb(170, 15, 15);
+                padding: 5px;
+                border-radius: 5px;
+                color: white;
+            }
+            .positiondiv{
+                position: relative;
+                box-shadow: 0px 0px 10px lightgray;
+                padding: 10px;
+                margin: 5px;
+                width: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" ondrop="onElementDrop(event)" ondragover="onElementDragOver(event)"></div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH2zMQwtAyybZyv7f8sj6S812ksopvUR_bEg&usqp=CAU" alt="" ondragstart="onElementDragStart(event)" id="product_1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfR0wGAET8AY4kY1j0pUkua13HCsJ_b5iNKg&usqp=CAU" ondragstart="onElementDragStart(event)" id="product_2">
+        <script>
+
+
+            var arrofSrc = [];
+            var imageSrc , imageid , count = 1;
+            var arrofAllSrc = [];
+            var onElementDrop = (event) => {
+                event.preventDefault();
+
+                var divTag = document.createElement("div");
+                divTag.className = "positiondiv"
+
+                var mulcont = document.createElement('input');
+                mulcont.type = "number";
+                mulcont.min = 1;
+                mulcont.id = imageid;
+                mulcont.className = "inputPosition"
+
+                if(!arrofSrc.includes(imageSrc)){
+                arrofSrc.push(imageSrc);
+                var imgElement = document.createElement("img");
+                imgElement.setAttribute("src", imageSrc);
+                divTag.append(imgElement);
+
+                var deleteTag = document.createElement("button");
+                deleteTag.className = "btn"
+                deleteTag.innerText = 'Delete';
+                deleteTag.setAttribute('id',imageSrc);
+                divTag.append(deleteTag);
+
+                deleteTag.addEventListener('click', (event) => {
+                    event.target.parentElement.remove();
+                    var imgindx = arrofSrc.indexOf(event.target.id)
+                    arrofSrc.splice(imgindx,1)
+                });
+
+                document.querySelector(".container").append(divTag);
+                mulcont.value = 1;
+
+            }else if(arrofSrc.includes(imageSrc)){
+                arrofAllSrc.push(imageSrc);
+
+                var reslt = arrofAllSrc.filter((srcs)=>{
+                    return  srcs == imageSrc;
+                })
+
+                count = reslt.length
+                if(reslt.length == 1){
+                    var taginput =  document.getElementById(`${imageid}`).value
+                    document.getElementById(`${imageid}`).value = `${count+parseInt(taginput)}`;
+                }else{
+                    var taginput =  document.getElementById(`${imageid}`).value;
+                    document.getElementById(`${imageid}`).value = `${1+((parseInt(taginput)))}`;
+                }
+            }
+
+            divTag.append(mulcont);
+            
+        }
+            var onElementDragOver = (event) => {
+                event.preventDefault();
+                
+            }
+            var onElementDragStart = (event) => {                
+                imageSrc = event.target.getAttribute("src");
+                imageid = `#${event.target.getAttribute("src")};`
+            }
+        </script>
+    </body>
+</html>

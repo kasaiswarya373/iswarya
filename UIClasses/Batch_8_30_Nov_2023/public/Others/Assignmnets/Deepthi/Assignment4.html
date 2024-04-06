@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Details</title>
+            <style>
+                h3{
+                    text-align: center;
+                    border: 1px solid;
+                    background-color: aqua;
+                    padding:10px;
+                }
+                .header div
+                {
+                    border: 1px solid;
+                    border-radius: 8px ;
+                    width:100px;
+                    margin:15px 15px;
+                    padding:15px 15px;
+                    text-align: center;
+                    text-decoration: underline;
+                    font-size: 20px;
+                    float:left;
+                    cursor:pointer;
+                }
+                .header div:hover
+                {
+                    background-color: yellow;
+                }
+                .container
+                {
+                    width:98%;
+                    height:450px;
+                    border: 1px solid;
+                    clear:both;
+                    margin:5px;
+                    padding:10px;
+                    overflow:auto;
+                }
+                .containerOne
+                {
+                    width:97%;
+                    height:150px;
+                    border: 1px solid;
+                    margin:10px;
+                    background-color: beige;
+                }
+
+                .empImage
+                {
+                    width:120px;
+                    height:120px;
+                    border-radius: 10px;
+                    border:1px solid;
+                    margin: 10px 10px;
+                    float:left;
+                }
+                .empDetails
+                {
+                   font-style: inherit;
+                   font-weight: 300;
+                   margin: 10px 15px 15px 15px;
+                   font-weight: bold;
+                   float:left;
+                }
+                .empDetails div
+                {
+                    margin-top: 10px;
+                }
+                .copyRight
+                {
+                    background-color: aqua;
+                }
+                
+            </style>
+    </head>
+    <body>
+        <h3>Employee Details</h3>
+        <div class="header">
+            <div>
+                <a href="#emdetails_1">Raj</a>
+            </div>
+            <div>
+                <a href="#emdetails_2">krish</a>
+            </div>
+            <div>
+                <a href="#emdetails_3">Teena</a>
+            </div>
+            <div>
+                <a href="#emdetails_4">Prasad</a>
+            </div>
+            <div>
+                <a href="#emdetails_5">Rupa</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="containerOne">
+                <img class="empImage" src="assets/abc1.jpg"/>
+                    <div class="empDetails" id="emdetails_1">
+                        <div>Name: Raj</div>
+                        <div>Age: 25</div>
+                        <div>Gender: Male</div>
+                        <div>Department: IT</div>
+                    </div>
+            </div>
+            <div class="containerOne">
+                <img class="empImage" src="assets/xyz.jpg"/>
+                    <div class="empDetails" id="emdetails_2">
+                        <div>Name: Krish</div>
+                        <div>Age: 26</div>
+                        <div>Gender: Male</div>
+                        <div>Department: Developer</div>
+                    </div>
+            </div>
+            <div class="containerOne">
+                <img class="empImage" src="assets/girl.jpg"/>
+                    <div class="empDetails" id="emdetails_3">
+                        <div>Name: Teena</div>
+                        <div>Age: 25</div>
+                        <div>Gender: Female</div>
+                        <div>Department: IT</div>
+                    </div>
+            </div>
+            <div class="containerOne">
+                <img class="empImage" src="assets/bcd.jpg"/>
+                    <div class="empDetails" id="emdetails_4">
+                        <div>Name: Prasad</div>
+                        <div>Age: 26</div>
+                        <div>Gender: Male</div>
+                        <div>Department: Developer</div>
+                    </div>
+            </div>
+            <div class="containerOne">
+                <img class="empImage" src="assets/girl1.jpg"/>
+                    <div class="empDetails" id="emdetails_5">
+                        <div>Name: Rupa</div>
+                        <div>Age: 26</div>
+                        <div>Gender: Female</div>
+                        <div>Department: IT</div>
+                    </div>
+            </div>
+        </div>
+        <h3 class="copyRight">@Copyrights 2023 Deepthi Reddy E</h3>
+    </body>
+</html>

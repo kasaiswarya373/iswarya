@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generating Students Progress Card on UI</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <h3>Students Progress Card Generator On Page</h3>
+    <ul>
+        <li class="title">Students Details</li>
+        <li>
+            <label>Student Name :</label>
+            <input type="text" id="sName">
+        </li>
+        <li>
+            <label>Student Age :</label>
+            <input type="text" name="" id="sAge">
+        </li>
+        <li>
+            <label>Gender :</label>
+            Male<input type="radio" name="gender" value="male" checked>
+            Female<input type="radio" name="gender" value="female">
+        </li>
+        <li>
+            <label>Class :</label>
+                <select name="" id="studentClass">
+                    <option value="class I">Class I</option>
+                    <option value="class II" selected>Class II</option>
+                    <option value="class IIII">Class III</option>
+                    <option value="class VI">Class VI</option>
+                    <option value="class V">Class V</option>
+                </select>
+        </li>
+        <li class="marks">
+            <label>Marks :</label>
+            <input type="text" id="m1">
+            <input type="text" id="m2">
+            <input type="text" id="m3">
+            <input type="text" id="m4">
+            <input type="text" id="m5">
+        </li>
+        <li>
+            <input type="button" value="Generate Progress Card" onclick="generateProgressCard()">  
+            <!--In above onclick event, we can also use this -> "userData.readStudentData();"  -->
+
+            <input type="button" value="Reset Fields" onclick="resetFields()">
+        </li>
+    </ul>
+
+    <ul id="displayBlock">
+        <li>
+            Student Name : <span id="d_name"></span>
+        </li>
+        <li>
+            Student Age : <span id="d_age"></span>
+        </li>
+        <li>
+            Gender : <span id="d_gender"></span>
+        </li>
+        <li>
+            Total : <span id="d_total"></span>
+        </li>
+        <li>
+            Average : <span id="d_avg"></span>
+        </li>
+        <li>
+            Grade : <span id="d_grade"></span>
+        </li>
+    </ul>
+
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Control Structure</title>
+ </head>
+ <body>
+    <h2>-----Employee Details-----</h2>
+   <script>
+      var empName=prompt("Enter Employee name:");
+      var empGender=prompt("Enter Employee gender: ");
+      var empAge=prompt("Enter Employee Age:");
+      var empDept=prompt("Enter Employee Dept");
+      var empBasicSal=prompt("Enter Employee Basic Salary");
+      empBasicSal=parseInt(empBasicSal);
+
+      var PF=prompt("Enter Pf Percentage");
+      PF=parseFloat(PF);
+      PF=(PF*empBasicSal)/100;
+
+      var HRA=prompt("Enter Hra Percentange");
+      HRA=parseFloat(HRA);
+      HRA=(HRA*empBasicSal)/100;
+
+      TotalSal=PF+HRA+empBasicSal;
+      console.log("Employee name is "+empName);
+      console.log("Employee gender is " +empGender);
+      console.log("Employee age is " +empAge);
+      console.log("Employee Dept is " +empDept);
+      console.log("Employee Basic Salary is " +empBasicSal);
+      console.log("Employee PF is " +PF);
+      console.log("Employee HRA  is " +HRA);
+      console.log("Employee Total is " +TotalSal);
+
+      if(empGender=='male') {
+        if(TotalSal>200000) {
+            console.log("15% tax will be applied from your salary");
+         }else if(TotalSal>100000) {
+            console.log("10% tax will be applied from your salary");
+         }else if(TotalSal>50000) {
+            console.log("5% tax will be applied from your salary");
+         }else {
+            console.log("zero tax will be applied from your salary");
+         }
+      }else {
+        if(TotalSal>200000) {
+            console.log("10% tax will be applied from your salary");
+         }else if(TotalSal>100000) {
+            console.log("5% tax will be applied from your salary");
+         }else if(TotalSal>50000) {
+            console.log("0% tax will be applied from your salary");
+         }
+      }
+   </script>
+    
+</body>
+</html>

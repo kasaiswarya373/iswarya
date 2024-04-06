@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empname,empgender,empage,empdepartment;
+        empname=prompt("enter empname");
+        empgender=prompt("enter empgender");
+        empage=prompt("enter empage");
+        empdepartment=prompt("enter emp department");
+        var basicsalary,pf,hra;
+        basicsalary=prompt("enter basic salary")
+        var pfpercentage=prompt("enter pf percentage")
+        var hrapercentage=prompt("enter hra percentage");
+        pf=pfpercentage/100*basicsalary;
+        hra=hrapercentage/100*basicsalary;
+        basicsalary=parseInt(basicsalary);
+        pfpercentage=parseInt(pfpercentage);
+        hrapercentage=parseInt(hrapercentage);
+        var totalsalary=basicsalary+hra+pf;
+        console.log("employeenameis"+empname);
+        console.log("employee gender"+empgender);
+        console.log("employee age is"+empage);
+        console.log("employee department is"+empdepartment);
+        console.log("basic salary is"+basicsalary);
+        console.log("pf is"+pf);
+        console.log("hra is"+hra);
+        console.log("total salary"+totalsalary);
+
+        
+    </script>
+</body>
+</html>

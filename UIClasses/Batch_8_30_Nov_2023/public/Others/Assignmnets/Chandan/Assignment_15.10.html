@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          //WAP to find out all palindrome numbers within the array 
+          var n = parseInt(prompt("enter size of the array : "));
+            var arr = [n];
+            for(var i = 0 ; i < n ; i++){
+                arr[i] = parseInt(prompt("enter values : "));
+            }
+            var ispalindrome = (num) => {
+                var temp = num;
+            var rev = 0;
+            while(num!=0){
+                var rem = num%10;
+                rev = (rev*10)+rem;
+                num = num/10;
+                num = parseInt(num);
+            }
+            if(rev==temp){
+               return true;
+            }
+            else{
+                return false;
+            }
+            }
+            var palindromearray = [];
+            for(var i = 0 ; i < n ;i++){ 
+                if(ispalindrome(arr[i])){
+                    palindromearray.push(arr[i]);
+                }
+                else{
+                    palindromearray.push("No palindromes found");
+                    break;
+                }
+            }
+            console.log("palindrome numbers in the given array are : " + palindromearray);
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total words in string</title>
+</head>
+<body>
+    Program to find total number of words in String without split
+    <script>
+        var readString = () =>
+        {
+            var string = prompt(`Enter String`);
+             return string;
+        }
+         
+        var countingWordsInString = (str) =>
+        {
+            var  count = 1;
+            for(var i = 0;i < str.length;i++)
+            {
+                if(str[i] == ' ')
+                {
+                    count += 1;
+                }
+            }
+            return count;
+        }
+
+        var printingWordsCount = () =>
+        {
+            var str = readString();
+            var wordCount = countingWordsInString(str);
+            console.log(`No of Words in "${str}" are ${wordCount}`);
+        }
+        printingWordsCount();
+    </script>
+</body>
+</html>

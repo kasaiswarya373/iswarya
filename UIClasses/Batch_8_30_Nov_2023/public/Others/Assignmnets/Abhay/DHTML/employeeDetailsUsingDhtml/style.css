@@ -1,0 +1,32 @@
+h3 {
+    margin: 0px;
+    border: 1px solid;
+    height: 30px;
+    text-align: center;
+    padding: 15px;
+    font-size: 2rem;
+    background-color: darkred;
+    color: white;
+}
+
+.name,
+.age,
+.gender,
+.basicSal,
+.pf,
+.hra,
+.total {
+    border: 1px solid black;
+    width: 350px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: white;
+}
+
+.employeeDetails img {
+    height: 150px;
+    padding: 10px;
+    margin-left: 60px;
+    border-radius: 100px;
+}

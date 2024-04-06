@@ -1,0 +1,67 @@
+HTML Attributes
+
+
+    id -> used to add the unique identity to any html tag.
+
+    Camlecase 
+
+        <tagname id="userContentDescription"></tagname> - Recommended
+
+        <tagname id="user_content_description"></tagname>
+        <tagname id="user-content-description"></tagname>
+        <tagname id="usercontentdescription"></tagname>
+
+
+    id - To add unique identity to html element
+
+    name - To group set of reletave elements with same name attribute value 
+
+    class - To inject single/multiple css classes to any html element 
+
+    title - To add a  title content to any html element, where the content will automatically shown 
+            as a tool tip, while user mouseovers on the element. 
+    
+    style - Used to inject single/multiple css properties to html element 
+
+    src - Used to provide the source/path of resource 
+
+    href - Used to provide the hyperlink path of page 
+
+    alt - Using which we can add the alternative text content which willbe shown automatically if the provided image path is not available 
+
+
+    etc. 
+
+
+<tagname attrname="value" attrname2="value2">
+    ...
+</tagnma>
+
+style="single/multiple css porp"
+
+<p style="propname:value;propname:value2;">
+    ...
+</p>
+
+color:red;
+
+font-size: 30px;
+
+background-color: blue;
+
+-------------
+
+Differnt ways of using color code in css 
+
+    color: directcolorname / rgb/ rgba / hashcode / HSA value 
+
+
+    color: green; 
+    color: rgb(20, 45, 67);  0 - 255
+    Hashcode: # ab 12 ca;
+
+
+    ASCII 
+
+
+    text-align: right/left/center;

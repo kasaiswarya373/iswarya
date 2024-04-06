@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <style>
+        .mainContainer{
+            border: 1px solid;
+            width: 300px;
+            margin: 10px auto;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        #d1{
+            border:1px solid greenyellow;
+            background-color: greenyellow;
+            width: 30px;
+            height: 100px;
+            margin: 10px;
+            display: none;
+        }
+        #d2{
+            border:1px solid red;
+            background-color: red;
+            width: 30px;
+            height: 100px;
+            margin: 10px;
+            display: none;
+        }
+        #d3{
+            border:1px solid pink;
+            background-color: pink;
+            width: 30px;
+            height: 100px;
+            margin: 10px;
+            display: none;
+        }
+        #d4{
+            border:1px solid orange;
+            background-color: orange;
+            width: 30px;
+            height: 100px;
+            margin: 10px;
+            display: none;
+        }
+        #d5{
+            border:1px solid blue;
+            background-color: blue;
+            width: 30px;
+            height: 100px;
+            margin: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div id="d1"  style="order: 2;">1</div>
+        <div id="d2"  style="order: 4;">2</div>
+        <div id="d3" style="order: 5;">3</div>
+        <div id="d4" style="order: 3; order: 5;flex-shrink: 2;flex-basis:150px">4</div>
+        <div id="d5"  style="order: 1;">5</div>
+    </div>
+    <script>
+       
+       $('#d1').show(2000); 
+       $('#d2').show(2000); 
+       $('#d3').show(2000); 
+       $('#d4').show(2000); 
+       $('#d5').show(2000); 
+      
+       </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextContentvsValue</title>
+</head>
+
+<body>
+
+    <input type="text" id="val" onfocus="test()">
+
+    <input type="text" id="text">
+
+    <p id="spanId">this is text content!!!!!</p>
+
+    <script>
+        function test() {
+            let val = document.querySelector('#val').value;
+            console.log('value', val);
+
+            let txt = document.querySelector('#text').textContent;
+            console.log('txt', txt);
+
+           let spnId = document.querySelector('#spanId').value;
+           console.log('spnId', spnId);
+        }
+    </script>
+
+</body>
+
+</html>

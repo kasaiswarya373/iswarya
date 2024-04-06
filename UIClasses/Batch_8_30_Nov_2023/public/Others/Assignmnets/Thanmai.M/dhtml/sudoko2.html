@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #sudoku-board {
+      display: grid;
+      grid-template-columns: repeat(9, 50px);
+      grid-template-rows: repeat(9, 50px);
+      gap: 1px;
+      border: 1px solid #f07070;
+    }
+
+    .cell {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 18px;
+      border: 1px solid #e18a8a;
+      cursor: pointer;
+    }
+
+    .cell:hover {
+      background-color: #8dffff;
+    }
+  </style>
+</head>
+<body>
+  <div id="sudoku-board"></div>
+
+  <script>
+    const initialBoard = [
+      [5, 3, 0, 0, 7, 0, 0, 0, 0],
+      [6, 0, 0, 1, 9, 5, 0, 0, 0],
+      [0, 9, 8, 0, 0, 0, 0, 6, 0],
+      [8, 0, 0, 0, 6, 0, 0, 0, 3],
+      [4, 0, 0, 8, 0, 3, 0, 0, 1],
+      [7, 0, 0, 0, 2, 0, 0, 0, 6],
+      [0, 6, 0, 0, 0, 0, 2, 8, 0],
+      [0, 0, 0, 4, 1, 9, 0, 0, 5],
+      [0, 0, 0, 0, 8, 0, 0, 7, 9],
+    ];
+
+    function createSudokuBoard() {
+      const sudokuBoard = document.getElementById('sudoku-board');
+
+      for (let i = 0; i < 9; i++) {
+        for (let j = 0; j < 9; j++) {
+          const cell = document.createElement('div');
+          cell.className = 'cell';
+          cell.textContent = initialBoard[i][j] !== 0 ? initialBoard[i][j] : '';
+          cell.setAttribute('row', i);
+          cell.setAttribute('col', j);
+          cell.addEventListener('click', handleCellClick);
+          sudokuBoard.appendChild(cell);
+        }
+      }
+    }
+
+    function handleCellClick() {
+      const row = parseInt(this.getAttribute('row'));
+      const col = parseInt(this.getAttribute('col'));
+      const inputValue = prompt('Enter a number (1-9):');
+      const inputNumber = parseInt(inputValue);
+
+      if (isValidInput(inputNumber) && isValidMove(row, col, inputNumber)) {
+        this.textContent = inputNumber;
+        this.style.color = 'purple';
+      } else {
+        alert('Invalid move. Please try again.');
+      }
+    }
+
+    function isValidInput(number) {
+      return !isNaN(number) && number >= 1 && number <= 9;
+    }
+
+    function isValidMove(row, col, number) {
+      return isRowValid(row, number) && isColValid(col, number) && isBoxValid(row, col, number);
+    }
+
+    function isRowValid(row, number) {
+      for (let col = 0; col < 9; col++) {
+        if (initialBoard[row][col] === number) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    function isColValid(col, number) {
+      for (let row = 0; row < 9; row++) {
+        if (initialBoard[row][col] === number) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    function isBoxValid(startRow, startCol, number) {
+      const boxSize = 3;
+      const boxStartRow = Math.floor(startRow / boxSize) * boxSize;
+      const boxStartCol = Math.floor(startCol / boxSize) * boxSize;
+
+      for (let row = 0; row < boxSize; row++) {
+        for (let col = 0; col < boxSize; col++) {
+          if (initialBoard[boxStartRow + row][boxStartCol + col] === number) {
+            return false;
+          }
+        }
+      }
+      return true;
+    }
+
+    createSudokuBoard();
+  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist details</title>
+    <link rel="stylesheet" href="Artistdetails.css">
+    <script src="Artistdetaila.js"></script>
+</head>
+<body>
+    <h3>Artist Details</h3>
+    <ul>
+        <li>
+            Artist name : <input type="text" id="name">
+            
+        </li>
+        <li>
+            Artist Age : <input type="number " id="age">
+        </li>
+        <li>
+                    Gender : <input type="radio" name="gender" id="egender" >Female
+                             <input type="radio" name="gender" id="egender" >Male
+                             <input type="radio" name="gender" id="egender" >other
+        </li>
+        <li>
+            Artist Department : <input type="text" id="dept">
+        </li>
+        <li>
+              Id : <input type="text" id="id">
+    
+        </li>
+        <li>
+            Artist salary : <input type="text" id="sal">
+        </li>
+        <li>
+            <input type="button" value="get Artist details" onclick="readUserData"() >
+        </li>
+        
+    </ul>
+    <ul class="ArtistDetails">
+        
+        <li>
+            Artist Name is : <span id="name"></span>
+        </li>
+        <li>
+            Artist age is : <span id="age"></span>
+        </li>
+        <li>
+             gender is : <span id="gender"></span>
+        </li>
+        <li>
+            Artist Department is : <span id="dept"></span>
+        </li>
+        <li>
+             id is : <span id="id"></span>
+        </li>
+        <li>
+           Artist salary is : <span id="sal"></span>
+        </li>
+        
+    </ul>
+</body>
+</html>

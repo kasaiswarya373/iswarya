@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays map method</title>
+</head>
+<body>
+   <script>
+    var a = ['meta','name','viewport','content','device','initial','charset'];
+    var temp = a.map((v) =>{
+        if( v.substring(0,1) == "c"){
+            v += ' is exist'+'<br>';
+        }else{
+            v += ' not exist'+'<br>';
+        }
+        return v;
+   /* var p = "";
+    var temp = a.map((v) =>{
+        if( v.substring(0,1) == "c"){
+            p += v+' is exist'+'<br>';
+        }else{
+            p += v+' not exist'+'<br>';
+        }
+        return p;
+        document.querySelector('body').innerHTML = p;
+   
+    */
+})
+    console.log(temp);
+   </script> 
+</body>
+</html>

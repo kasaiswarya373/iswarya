@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Details Reading from User using DHTML</title>
+        <link rel = "stylesheet" href = "employee.css">
+        <script src = "employeeDetails.js"></script>
+    </head>
+<body>
+    
+    <ul>
+        <li class = "title"> Employee Details </li>
+        <li>
+            <label for = "name">Employee Name : </label>
+            <input type = "text" name = "name" id = "ename">
+        </li>
+        <li>
+            <label for = "age">Employee Age : </label>
+            <input type = "text" name = "age" id = "eage">
+        </li>
+        <li>
+            <label>Gender :</label>
+            <input type = "radio" name = "gender" value = "Male" checked>Male
+            <input type = "radio" name = "gender" value = "Female">Female
+
+
+        </li>
+        <li>
+            <label for = "dept">Department : </label>
+            <select name = "dept" id = "edept">
+                <option>IT</option>
+                <option>HR</option>
+                <option>Finance</option>
+                <option>Maintainence</option>
+            </select>
+        </li>
+        <li>
+            <label for = "salary">Enter BasicSalary :</label>
+            <input type = "text" name = "salary" id = "basicsal">
+        </li>
+        <li>
+            <input type = "button" value = "calculate" onclick = "generateEmployeeDetails()">
+            <input type = "button" value = "reset" onclick = "resetFields()">
+        </li>
+    </ul>
+
+    <div class = "empDetails">
+
+    </div>
+
+</body>
+</html>

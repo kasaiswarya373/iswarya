@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>no.of special symbols</title>
+</head>
+<body>
+    <script>
+        var text = "Th%is I&S M$y T*EXT Stri#nG@";
+        var count = 0;
+        for(var i = 0; i <= text.length; i++){
+            if(text.charAt(i) == '@'  ||text.charAt(i) == '#'||text.charAt(i) == '$'||text.charAt(i) == '%'||text.charAt(i) == '&' ||text.charAt(i) == '*'){
+                count++;
+            }
+        }
+        console.log('Special symbols in a given string is '+count);
+    </script>
+</body>
+</html>

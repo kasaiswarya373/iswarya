@@ -1,0 +1,91 @@
+
+                h3{
+                    width: 700px;
+                    height:25px;
+                    text-align: center;
+                    border:1px solid;
+                    padding: 8px;
+                    margin:10px auto;
+                    font-size: 24px;
+
+                }
+                .container
+                {
+                    width:700px;
+                    height:740px;
+                    border:1px solid;
+                    margin:9px auto;
+                    padding:8px;
+                    /* overflow:auto; */
+                }
+                .detailsBlock
+                {
+                    width:670px;
+                    height:180px;
+                    border: 1px solid;
+                    margin: 22px 10px 10px 5px;
+                    padding:10px;
+            
+                    
+                }
+                .personalDetails{
+                    text-align: center;
+                    text-decoration: underline;
+                    font-weight: bold;
+                    font-size: 20px;
+                    position: relative;
+                    top: -26px;
+                    left:42px;
+                    width:150px;
+                    border: 1px solid;
+                    padding:8px;
+                    background-color: white;
+                }
+                .educationDetails{
+                    text-align: center;
+                    text-decoration: underline;
+                    font-weight: bold;
+                    font-size: 20px;
+                    position: relative;
+                    top: -26px;
+                    left:42px;
+                    width:170px;
+                    border: 1px solid;
+                    padding:6px;
+                    background-color: white;
+                }
+                .footer
+                {
+                    width: 700px;
+                    height:25px;
+                    text-align: center;
+                    border:1px solid;
+                    padding: 8px;
+                    margin:10px auto;
+                    font-size:20px;
+                    font-weight: bold;
+
+                }
+                .name
+                {
+                    margin:0px 8px 26px 20px;
+                    
+                }
+                .address
+                {
+                    margin:-3px 58px 12px 2px;
+                    float: right;
+                    clear: both;
+                }
+                .ctry
+                {
+                    margin:-0px 172px 12px 2px;
+                    float: right;
+                    clear: both;
+                }
+                .button
+                {
+                    position: relative;
+                    right: -537px;
+                    bottom:-18px;
+                }

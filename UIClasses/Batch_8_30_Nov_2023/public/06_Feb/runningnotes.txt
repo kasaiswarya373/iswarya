@@ -1,0 +1,8 @@
+Steps to access closure data outside of closure
+
+    1. assign a name to closure 
+    2. return an object from the closure
+    3. Assing the data/methods/objects/values etc which has to be accessable outside of closure to 
+        the object which is getting returned from the closure
+    4. Now from outside of closure, through the closure name make use of data been returned from 
+        closure

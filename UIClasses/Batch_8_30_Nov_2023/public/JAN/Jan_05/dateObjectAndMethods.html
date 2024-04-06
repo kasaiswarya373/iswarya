@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            var msg = [2, 3, 4];
+            console.log(msg.reverse());
+            var cdate = new Date();
+
+            var monthNames = ['Januaray', 'Feb', 'March', 'Apr']
+
+            console.log(cdate)
+
+            /*var mydob = new Date("Jan 09 2024")
+
+            console.log(mydob) */ 
+
+            console.log(cdate.getDate());
+            console.log(cdate.getMonth());
+            console.log(cdate.getDay());
+
+
+            var myformat = `${cdate.getDate()} / ${cdate.getMonth() + 1} / ${cdate.getFullYear()}`;
+
+            var monthName = monthNames[cdate.getMonth()];
+            var myformat2 = `${cdate.getDate()} / ${monthName} / ${cdate.getFullYear()}`;
+
+            console.log(myformat)
+            console.log(myformat2)
+
+            console.log(cdate.getHours())
+
+        </script>
+    </body>
+</html>
+
+Assignment:
+
+    1. 5th Jan 2024
+    2. 05/01/2024
+    3. 05/01/24
+    4. Jan 5th, 2024
+    5. Friday Jan 5th, 2024
+    Friday January 5th, 2024
+    Fri January 5th, 2024
+    Fri Jan 5th, 2024
+    05/01/24 09:03:10
+
+    09:10:20
+    09 min :03 sec

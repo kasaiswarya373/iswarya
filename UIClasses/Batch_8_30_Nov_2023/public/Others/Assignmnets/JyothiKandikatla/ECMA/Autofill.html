@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autofill</title>
+</head>
+<body>
+    <input type="text" class="txt" onkeypress="g()">
+    <div id="d"></div>
+    <script>
+        var o = ["jyo",'htie','abd','defgge','xxx','vv'];
+        var g = () =>{
+            var p = '';       
+             var a ="a"; //document.querySelector('.txt').value;
+             o.filter((value) => {
+                if(value.substring(0,a.length) == a){
+                console.log(value)
+                p += value +'<br>';
+                document.querySelector('#d').innerHTML = p ;
+                }
+             })
+        }
+        g();
+    </script>
+</body>
+</html>

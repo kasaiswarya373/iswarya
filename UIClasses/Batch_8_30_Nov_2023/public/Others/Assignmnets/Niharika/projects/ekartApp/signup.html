@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+             body {
+                margin: 0;
+                padding: 0;
+                background-color: #f0f2f5;
+            }
+            .navbar {
+                height: 60px;
+                background-color: rgb(246, 162, 7);
+                display: flex;
+                gap: 10px;
+            }
+            .logo {
+                width: 100px;
+                height: 100px;
+                
+            }
+            .img {
+                width: 150px;
+                height: 60px;
+            }
+            .Search {
+                width: 400px;
+                height: 30px;
+                outline: none;
+                
+            }
+            .searchbar {
+                width: 250px;
+                height: 50px;
+                margin-left: 150px;
+                margin-top: 10px;
+            }
+            .searchbutton {
+                margin-top: 18px;
+                margin-left: 150px;
+            }
+            .container {
+                width: 400px;
+                border: 1px solid;
+                border-radius: 10px;
+                margin: 20px auto;
+            }
+            h3 {
+                text-align: center;
+                margin: 10px;
+                font-weight: bold;
+                font-size: 25px;
+            }
+            .input {
+                width: 80%;
+                margin: 15px 20px;
+                padding: 10px;
+                height: 30px;
+                outline: none;
+                border-radius: 5px;
+                border: none;
+            }
+            .bi-arrow-clockwise {
+                height: 30px;
+                position: relative;
+                left: -15px;
+                top: 6px;
+            }
+            .displayText {
+                background-color: blue;
+                width: 100px;
+                height: 20px;
+                margin: 20px;
+                text-align: center;
+                padding: 10px;
+                color: white;
+                font-weight: bold;
+            }
+            .loginbuttn {
+                width: 90%;
+                margin: 15px;
+                padding: 10px;
+                height: 40px;
+                outline: none;
+                border-radius: 5px;
+                border: none;
+                background-color: #42b72a;
+                color: white;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="navbar">
+                 <div class="logo">
+                    <img class="img" src="images/Screenshot 2024-02-03 230047.png" alt="">
+                 </div>
+                 <div class="searchbar">
+                    <input type="text" placeholder="Search here" class="Search">
+                 </div>
+                 <div>
+                    <button class="searchbutton">
+                        Search
+                    </button>
+                 </div>
+            </div>
+        </div>
+            <h3>SIGN-IN</h3>
+        <div class="container">
+                <div>
+                   <input type="text" placeholder="Email address or mobile number" class="input">
+                </div>
+                <div>
+                    <input type="password" placeholder="Password" class="input">
+                 </div>
+                 <div>
+                    <input type="password" placeholder=" Renter Password" class="input">
+                 </div>
+                 <div>
+                    <input type="text" placeholder="Enter Captcha" class="input" id="captchaVal">
+                    <span onclick="handleIconClick()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+                            <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="displayText"></div>
+                <div>
+                    <input type="button" class="loginbuttn" value="Create Account"onclick="enableButton()">
+                 </div>
+        </div>
+       <script>
+        
+        var captcha;
+            var handleIconClick = () => {
+                function generateCaptcha() {
+                captcha = '';
+            function getRandomUpperCase() {
+                return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+            }
+            function getRandomLowerCase() {
+                return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+            }
+            function getRandomNumber() {
+                return Math.floor(Math.random() * 10);
+            }
+            captcha += getRandomUpperCase();
+            captcha += getRandomLowerCase();
+            captcha += getRandomNumber();
+            captcha += getRandomUpperCase();
+            captcha += getRandomLowerCase();
+            captcha += getRandomNumber();
+            document.querySelector(".displayText").innerText = captcha;
+        //console.log(captchavalue);
+        }
+        generateCaptcha();
+        }
+        var enableButton = () => {
+            var captchavalue = document.querySelector("#captchaVal").value;
+        console.log(captchavalue);
+        console.log('Generated Captcha:', captcha);
+        if(captchavalue == captcha) {
+           // document.querySelector(".loginbuttn").disabled = false;
+           document.querySelector(".loginbuttn").disabled = false;
+            alert("Captcha Matched");
+        }
+        }
+       </script>
+        
+    </body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59" height="59" viewBox="0 0 59 59">
+  <g id="circled-forward-indication-arrow" transform="translate(-1414 -3233)">
+    <g id="forward-arrow" transform="translate(1428.182 3248.955)">
+      <path id="Path_8" data-name="Path 8" d="M0,0H19.742V19.742" transform="translate(17.417 0) rotate(45)" fill="none" stroke="#003d68" stroke-width="1"/>
+      <line id="Line_1" data-name="Line 1" x2="31.377" transform="translate(0 13.96)" fill="none" stroke="#003d68" stroke-width="1"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(1414 3233)" fill="none" stroke="#003d68" stroke-width="1">
+      <circle cx="29.5" cy="29.5" r="29.5" stroke="none"/>
+      <circle cx="29.5" cy="29.5" r="29" fill="none"/>
+    </g>
+  </g>
+</svg>

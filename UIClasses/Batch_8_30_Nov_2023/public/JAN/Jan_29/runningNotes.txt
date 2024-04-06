@@ -1,0 +1,124 @@
+
+// Clanguage
+
+functin doSub() {
+
+}
+function doSum (int a1, int a2) {
+    // 1st
+}
+
+function doSum(int a1, float a2) {
+    /// 2nd
+}
+
+function doSum (int a1, int a2, int a3) {
+    // 3rdone
+}
+
+function doSum(int a1, float a2, float a3) {
+    // 4th one
+}
+
+
+doSum(20, 30); // 1st ibe gets invoked
+
+doSum(30, 2.5, 5.6) //4th one 
+
+dSum(3.4); // error
+
+-------------------------
+
+Javascript:
+
+
+function doSub() {
+
+}
+function doSum (a1, a2) {
+    // 1st
+}
+
+function doSum(a1, a2) {
+    /// 2nd
+}
+
+function doSum (a1, a2,  a3) {
+    // 3rdone
+}
+
+function doSum(a1,  a2,  a3) {
+    // 4th one
+}
+
+
+doSum(20, 30); // last one
+
+doSum(30, 2.5, 5.6) // lastone
+dSum(3.4); // lastone 
+
+doSum(); // lstone 
+
+----------------
+
+classes in JAva 
+
+class CollegeDetails {
+    CollegeDetails() { // constructor
+
+    }
+
+    CollegeDetails(String name, Int rating) {
+
+    }
+    CollegeDetails(String name) {
+        
+    }
+}
+--------------
+
+Classes in js 
+
+class CollegeDetails {
+    constructor() {
+        
+    }
+}
+-------------------
+
+class unidetials {
+    univname 
+        uni loc 
+        uni rating
+}
+
+class StudentDetails {
+    constructor () {
+        name, 
+        age
+        collegename 
+        collegeloca 
+
+        
+    }
+}
+
+class CollegeDetails {
+    constructor () {
+        collegename, 
+        collloc 
+        colgrting
+
+      
+}
+
+=------------
+
+OOPS 
+
+    Class 
+    Object 
+    Inheritance
+    * Polymorphism - 
+    Data abstraction 
+    Encapsulation 

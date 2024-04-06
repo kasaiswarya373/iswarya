@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Finding Given Number is a palindrome or not
+    </title>
+</head>
+
+<body>
+    <script>
+        var palindromenum = prompt("enter a number");
+        palindromenum = parseInt(palindromenum);
+        console.log("Given number is:" + palindromenum);
+
+        var temp = palindromenum;
+        var sum = 0;
+        var rem;
+        while (palindromenum > 0) {
+            rem = palindromenum % 10;
+            sum = (sum * 10) + rem;
+            palindromenum = palindromenum / 10;
+            palindromenum = parseInt(palindromenum);
+        }
+        console.log("palindrome of a given number:" + sum);
+        
+        if (temp == sum) {
+            console.log("given number is a palindrome number");
+        }
+        else {
+            console.log("given number is not a palindrome number")
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowels count in string</title>
+</head>
+<body>
+    Program to count total number of vowels in a string
+    <script>
+        var readingString = () =>
+        {
+            var string = prompt(`Enter string`).toLowerCase();
+            return string;
+        }
+
+        var countingVowels = (str) =>
+        {
+            var count = 0;
+            for(var i = 0;i < str.length;i++)
+            {
+                if(str[i] != ' ')
+                {
+                if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
+                {
+                    count++;
+                }
+                }
+            }
+            return count;
+        }
+
+        var printingVowelsCount = () =>
+        {
+            var str = readingString();
+            var vowelCount = countingVowels(str);
+            console.log(`Total Vowels in "${str}" are ${vowelCount}`);
+        }
+
+        printingVowelsCount();
+    </script>
+</body>
+</html>

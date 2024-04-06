@@ -1,0 +1,29 @@
+h3 {
+  text-align: center;
+  border: 1px solid;
+  margin: 10px;
+  padding: 10px;
+}
+.eDetails {
+  border: 1px solid #140101;
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+}
+.eDetails > ul > li {
+  list-style: none;
+  border: 1px solid #ccc;
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+}
+li {
+  list-style: none;
+}
+.eDetails > ul {
+  margin: 5px;
+  padding: 5px;
+}
+img {
+  width: 170px;
+}

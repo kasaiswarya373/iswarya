@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding The Prime Numbers In The Array</title>
+</head>
+
+<body>
+    <script>
+
+        var readPrimeValues = () => {
+            var prime = [];
+            var n = prompt("Enter the total number values:");
+            n = parseInt(n);
+
+            for (var i = 0; i < n; i++) {
+                prime[i] = prompt(`Enter the ${i + 1} position`);
+                prime[i] = parseInt(prime[i]);
+                console.log(`The ${i + 1} value is : ${prime[i]}`);
+            }
+            console.log("The Prime Numbers are:");
+            
+            getPrimeNumbers(prime);
+        }
+
+        var getPrimeNumbers = (prime) => {
+            for (var i = 0; i < prime.length; i++) {
+                num = 0;
+                for (var j = 1; prime[i] >= j; j++) {
+                    if (prime[i] % j == 0) {
+                        num++;
+                    }
+                }
+                if (num == 2) {
+                    console.log("prime number is: " + prime[i]);
+                }
+            }
+        }
+
+        readPrimeValues();
+
+    </script>
+</body>
+
+</html>

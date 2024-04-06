@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container {
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <p>one</p>
+        <p>Two</p>
+
+        <p>three</p>
+        <div class="container">
+            <div>
+                <div>Name:</div>
+                <div>price:</div>
+                <div>color:</div>
+                <div>MAnufacturer:</div>
+            </div>
+            <div>
+                <div id="name"></div>
+                <div id="price"></div>
+                <div id="color"></div>
+                <div id="manuf"></div>
+
+            </div>
+        </div>
+        <script>
+            var carInfo = {
+                name: 'XUV',
+                price: 200000,
+                color: 'Black',
+                manuf: 'Mahindra'
+            }
+
+//             document.querySelector("#name").innerText = carInfo.name;
+
+            for (var tempkey in carInfo) {
+                var id = '#' + tempkey;
+                document.querySelector(id).innerText = carInfo[tempkey];
+            }
+
+
+            // document.querySelectorAll("p").style.color = 'Red';
+            console.log(document.querySelector("p"))
+            console.log(document.querySelectorAll("p"))
+
+            document.querySelectorAll("p")[2].style.color = 'Red';
+        </script>
+    </body>
+</html>

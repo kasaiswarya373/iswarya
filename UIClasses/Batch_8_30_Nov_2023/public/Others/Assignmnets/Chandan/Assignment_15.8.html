@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // WAP to find out smallest value in the array.
+
+        var n = parseInt(prompt("enter size of array : "));
+            var arr =  [n];
+            for(var i = 0 ; i < n ; i++){
+                arr[i] = parseInt(prompt("enter values : "));
+            }
+            var min = arr[0];
+            var smallestvalue = (arr) => {
+                for(var i = 0; i< n ; i++){
+                    if(arr[i]<min){
+                        min = arr[i];
+                    }
+                }
+                return min;
+            }
+            console.log("smallest element in the array is : " + smallestvalue(arr));
+    </script>
+</body>
+</html>

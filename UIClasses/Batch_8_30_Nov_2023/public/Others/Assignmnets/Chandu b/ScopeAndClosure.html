@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*function sample () {
+                var a = "Hello"
+                
+                console.log(a);
+            }    
+            sample(); */
+
+
+            function sample() {
+                var example = "Hello";
+                console.log("Hello Everyone");
+                function inner() {
+                    console.log(example);
+                }
+                return inner
+            }
+            let value = sample();
+            console.log(value());
+        </script>
+    </body>
+</html>

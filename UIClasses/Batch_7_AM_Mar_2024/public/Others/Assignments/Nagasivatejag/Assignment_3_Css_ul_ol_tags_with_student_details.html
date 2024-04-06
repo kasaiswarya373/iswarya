@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ulandoltags</title>
+</head>
+<body>
+    <style>
+        .heading,
+        .Block,
+        .footer {
+            border: 2px solid brown;
+            margin: 10px;
+            padding: 10px;
+        }
+        .Block {
+            height: 550px;
+        }
+        .heading,
+        .footer {
+            text-align: center;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .content {
+            width: 1000px;
+            margin: 20px auto;
+        }
+        .leftBox,
+        .rightBox 
+        {
+            border: 2px solid darkmagenta;
+            margin: 10px;
+            padding: 10px;
+            float: left;
+            height: 450px;
+            overflow: auto;
+        }
+        .leftBox {
+            width: 20%;
+        }
+        .rightBox {
+            width: 65%;
+        }
+        .leftBox li {
+            border: 1px solid darkcyan ;
+            margin: 10px;
+            padding: 10px;
+            list-style-position: inside;
+        }
+        .imgBlock,
+        .subDetailsBlock {
+                float: left;
+        }
+        .detailsBlock > li {
+                list-style: none;
+                height: 150px;
+        }
+        .detailsBlock {
+            border: 2px solid darkred;
+            margin: 10px;
+            padding: 5px;
+        }
+        .imgBlock img  {
+                width: 120px;
+                height: 140px;
+                margin-right: 20px;
+        }
+        a {
+                text-decoration: none;
+        }
+    </style>
+    <div class="content">
+    <div class="heading">Student Details</div>
+      <div class="Block">
+         <div class="leftBox">
+            <ol>
+                   <li> <a href="#pic1">Rajesh</a></li>
+                   <li> <a href="#pic2">Suresh</a></li>
+                   <li> <a href="#pic3">Nagendra</a></li>
+                   <li> <a href="#pic4">Venkat</a></li>
+                   <li> <a href="#pic5">Prabhu</a></li>
+                   <li> <a href="#pic6">Mahesh</a></li>
+             </ol>
+         </div>
+     <div class="rightBox">
+        <div>
+            <ul class="detailsBlock">
+                <li id="pic1">
+                    <div class="imgBlock">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXsjbS3dmUiEeJ_3iaULQR5wgoSBIbArECHgem9_XGnw&s" alt="server busy">
+                    </div>
+                    <div class="subDetailsBlock">
+                        <ul>
+                            <li>Name:Rajesh</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Kakinada</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="detailsBlock">
+                <li id="pic2">
+                    <div class="imgBlock">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLFjryUGysb-D3rRqNRdoVslvLf1CMNZcHmKzv0bOLcg&s" alt="server busy">
+                    </div>
+                    <div class="subDetailsBlock">
+                        <ul>
+                            <li>Name:Suresh</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Vizag</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="detailsBlock">
+                <li id="pic3">
+                    <div class="imgBlock">
+                        <img src="https://i.pinimg.com/236x/6b/7e/d6/6b7ed698713c09ad9e6afc7dcb996a09.jpg" alt="server busy">
+                    </div>
+                    <div class="subDetailsBlock">
+                        <ul>
+                            <li>Name:Nagendra</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Vijaywada</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="detailsBlock">
+                <li id="pic4">
+                    <div class="imgBlock">
+                        <img src="https://i.pinimg.com/236x/c3/33/27/c333273fcfc3198e93df380c0cfc0437.jpg" alt="server busy">
+                    </div>
+                    <div class="subDetailsBlock">
+                        <ul>
+                            <li>Name:Venkat</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Amalapuram</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="detailsBlock">
+                <li id="pic4">
+                    <div class="imgBlock">
+                        <img src="https://www.shutterstock.com/image-photo/close-head-shot-confident-serious-260nw-1481322794.jpg" alt="server busy">
+                    </div>
+                    <div class="subDetailsBlock">
+                        <ul>
+                            <li>Name:Prabhu</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Delhi</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="detailsBlock">
+                <li id="pic5">
+                    <div class="imgBlock">
+                        <img src="https://i.pinimg.com/236x/ac/18/50/ac1850ddee8ed3b5864a4a68612a12d3.jpg" alt="server busy">
+                    </div>
+                    <div class="subDetailsBlock">
+                        <ul>
+                            <li id="pic6">Name:Mahesh</li>
+                            <li>Gender:Male</li>
+                            <li>Location:Kolkata</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+         </div>
+        </div>
+       </div>
+      <div class="footer">Students@copyright2024</div>
+    </div>
+</body>
+</html>

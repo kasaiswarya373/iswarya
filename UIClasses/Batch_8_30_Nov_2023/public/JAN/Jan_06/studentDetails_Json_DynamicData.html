@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var sDetails = {
+                instituteName: 'NIT'
+            };
+
+            var readStudentDetails = () => {
+
+                sDetails.name = prompt("enter value fo name");
+                sDetails.age = prompt("enter value for age");
+                sDetails.marks = [];
+
+                for (var i = 0 ; i < 5; i++) {
+                    sDetails.marks[i] = prompt("enter value for " + (i + 1));
+                    sDetails.marks[i] = parseInt(sDetails.marks[i]);
+                }
+                getTotalAndAvg();
+            }
+            var getTotalAndAvg = () => {
+                sDetails.total = 0;
+                for (var i = 0 ; i < sDetails.marks.length; i++) {
+                    sDetails.total += sDetails.marks[i];
+                }
+                sDetails.avg = sDetails.total / sDetails.marks.length;
+                console.log(sDetails);
+            }
+
+            var displayDetails = () => {
+                readStudentDetails()
+                console.log("name is " + sDetails.name);
+                console.log("Toptal is " + sDetails.total)
+                console.log("Avg is " + sDetails.avg);
+            }
+
+            displayDetails();
+
+        </script>
+    </body>
+</html>

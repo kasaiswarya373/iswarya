@@ -1,0 +1,127 @@
+header {
+    height: 120px; /* Adjust the height as needed */
+    position: relative; /* Position relative for absolute positioning of logo */
+}
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: #0000ff !important;
+}
+.text-secondary {
+    --bs-text-opacity: 1;
+    color: white !important;
+    font-weight: bold;
+}
+.text-white {
+    --bs-text-opacity: 1;
+    color: white !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important; /* Change to desired hover color */
+    transform: scale(1.1);
+    border: 1px solid white;
+  }
+.logo {
+    position: absolute;
+    top: -1px;
+    width: 108px; /* Adjust the width as needed */
+    height: 106px; /* Maintain aspect ratio */
+    left: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.shopicon {
+    width: 150px;
+}
+img {
+    width: 150px;
+    height: 250px;
+}
+.carousel {
+    width: 94%;
+    height: auto;
+    margin: 20px;
+}
+.loadDiv {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loadImg {
+    width: 500px;
+    height: 250px;
+}
+.blur {
+    filter: blur(5px); 
+}
+footer {
+    position: relative;
+    bottom: 1px;
+    margin: 20px;
+}
+.shopname {
+    font-weight: bold;
+    color: #ffc107;
+    position: relative;
+    top: 28px;
+    left: 36px;
+    font-size: 25px;
+}
+.slogan {
+    position: absolute;
+    left: 180px;
+    top: 76px;
+}
+.categorydiv {
+    width: 90%;
+    height: 150px;
+    margin: 10px;
+    margin-left: 51px;
+}
+.categoryimages {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    position: relative;
+    top: -20px;
+    transition: transform 0.3s ease;
+}
+.categoryimages:hover {
+    transform: scale(1.1);
+}
+.catgimgs {
+    width: 340px;
+    height: 200px;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+.categoryFilterBlock {
+    margin: 30px;
+}
+.catgimgs:hover {
+    transform: scale(1.1);
+}
+.dealsBlock  {
+    width: 93%;
+    margin-left: 35px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.featuredBlock {
+    width: 93%;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 20px;
+}
+.stylesBlock {
+    width: 93%;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 20px;
+}

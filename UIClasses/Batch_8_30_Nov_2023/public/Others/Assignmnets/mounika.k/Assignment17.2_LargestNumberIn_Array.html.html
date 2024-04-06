@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindTheLargestValue</title>
+</head>
+<body>
+    <h1>Largest value </h1>
+    <script>
+        var i, temp, n;
+        var data = [];
+        var n= parseInt(prompt("enter number of elements"));
+
+        for(i=0;i<n; i++) {
+            data[i] = parseInt(prompt("enter element $(i+1) position"));
+
+        }
+        var largestNumber = ()  => {
+            largestNumber = data[0];
+            for(i=1; i<data.length;i++)
+            {
+                if(data[i]>largestNumber)
+                largestNumber=data[i];
+            }
+            return largestNumber;
+        }
+
+            console.log(largestNumber());
+    </script>
+    
+</body>
+</html>

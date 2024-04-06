@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1To1000ArmstrongNums</title>
+</head>
+<body>
+    Printing 1 to 1000 Armstrong Numbers
+    <script>
+        for(var i = 1;i <= 1000;i++)
+        {
+            var temp = i;
+            var iLength = i.toString().length;
+            var sum = 0;
+            while(temp > 0)
+            {
+                var digit = temp % 10;
+                sum += digit ** iLength;
+                temp = parseInt(temp / 10);
+            }
+            if(i == sum)
+            {
+                console.log(sum);
+            }
+        }
+    </script>
+</body>
+</html>

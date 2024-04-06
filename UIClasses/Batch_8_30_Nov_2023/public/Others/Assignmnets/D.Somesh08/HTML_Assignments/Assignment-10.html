@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-10</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var name = prompt('Enter EmployeeName : ');
+        var hra = prompt("Enter HRA : ");
+        hra = parseInt(hra);
+        var pf = prompt("Enter PF : ");
+        pf = parseInt(pf);
+        var basicSal = prompt("Enter Basic Sal : ");
+        basicSal = parseInt(basicSal);
+        var gender = prompt("Enter Gender : ");
+
+        var totalSal = basicSal + hra + pf;
+        console.log("totalSal : " + totalSal);
+
+        gender = gender.trim(gender.toLowerCase());
+        console.log("gender : " + gender);
+
+        var tax = 0;
+
+        if (gender == 'male') {
+
+            if (totalSal >= 200000) {
+                tax = (15 * totalSal) / 100;
+                console.log("tax : " + tax);
+            } else if (totalSal >= 100000) {
+                tax = (10 * totalSal) / 100;
+                console.log("tax : " + tax);
+            } else {
+                tax = (5 * totalSal) / 100;
+                console.log("tax : " + tax);
+            }
+
+            totalSal = totalSal - tax;
+            console.log("Total Salary : " + totalSal);
+
+        } else {
+
+            if (totalSal >= 200000) {
+                tax = (10 * totalSal) / 100;
+                console.log("tax : " + tax);
+            } else if (totalSal >= 100000) {
+                tax = (5 * totalSal) / 100;
+                console.log("tax : " + tax);
+            } else {
+                tax = (0 * totalSal) / 100;
+                console.log("tax : " + tax);
+            }
+
+            totalSal = totalSal - tax;
+            console.log("Total Salary : " + totalSal);
+        }
+    </script>
+</body>
+
+</html>

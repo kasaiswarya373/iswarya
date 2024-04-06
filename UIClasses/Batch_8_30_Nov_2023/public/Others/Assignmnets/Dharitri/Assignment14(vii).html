@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 14 (vii)</title>
+  </head>
+  <body>
+    <h3>WAP to find the number of zero in a given number</h3>
+    <script>
+        var n=parseInt(prompt("enter a number"));
+        var zeroCount = 0, rem;
+
+        while (n > 0){
+            n = n % 10;
+            if( rem == 0){
+                zeroCount++;
+            }
+          n=parseInt(n /10);
+        }
+
+        console.log(zeroCount);
+        
+    </script>
+    
+  </body>
+</html>

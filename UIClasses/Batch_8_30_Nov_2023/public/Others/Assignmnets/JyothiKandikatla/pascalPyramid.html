@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascal traingle</title>
+</head>
+<body>
+    <script>
+        var n = prompt('Enter number of rows');
+        n = parseInt(n);
+        // number of rows of pascal traingle
+        for(var i = 0; i < n; i++){
+            var star =' ';
+            var num = 1;
+            //add the left side space
+            for(var j = n; j >= i; j--){
+                star += ' ';
+            }
+            // add the number sequence
+                for(var z = 0; z <= i ; z++){
+                    star += num + ' ';
+                    // pascal traingle formula
+                    num = num *(i - z)/(z + 1);
+                    
+                
+              }
+            console.log(star);
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_Assignment_11</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+        <label for="min">Min : </label> <input type="number" id="min">
+        <label for="max">Max : </label> <input type="number" id="max">
+
+        <button onclick="printNumbers()">submit</button>
+        
+        <script type="text/javascript">
+           
+           function printNumbers() {
+                var min = document.getElementById("min").value;
+                var max = document.querySelector("#max").value;
+                console.log("val of min : " + min)
+                console.log("val of max : " + max)
+
+                for (var i = min; i < max; i++) {
+                    document.write("value of i : " + i + "<br>");
+                }
+            }
+        </script>
+
+    </form>
+</body>
+
+</html>

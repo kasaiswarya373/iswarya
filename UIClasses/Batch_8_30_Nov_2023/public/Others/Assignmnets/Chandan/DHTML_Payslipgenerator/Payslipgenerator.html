@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payslipgenerator.css">
+    <script src="payslipgenerator.js"></script>
+</head>
+<body>
+    <h3>Employee pay slip Generator</h3>
+    <div class="container">
+        <div class="ename">
+            <label for="fname"><b>Enter name: </b></label>
+            <label type="text" id="emname">
+        </div>
+        <div class="emname">
+            <label for="fage"><b>Enter age: </b></label>
+            <label type="text" id="fage">
+        </div>
+        <div class="emname">
+            <label><b>Gender : </b></label>
+            Male
+            <input type="radio" name="Gender" value="Male" id="Male">
+            Female
+            <input type="radio" name="Gender" value="Female" id="Female">
+        </div>
+        <div class="emname">
+            <label><b>Select Department : </b></label>
+            <select id="empdept">
+                <option>IT</option>
+                <option>Developer</option>
+                <option>Testing</option>
+                <option>Analysis</option>
+                <option>HR</option>
+            </select>
+        </div>
+        <div class="emname">
+            <label for="salary"><b>Enter basic salary : </b></label>
+            <input type="text" name="salary" id="empsal">
+        </div>
+        <div class="emname submit">
+            <input type="button"value="Generate pay slip" id="payslip" onclick="displaydetails()">
+        </div>
+
+        </div>
+        <div class="newcontainer">
+            <div class="payslip">
+                <b>pay-slip<b>
+            </div>
+            <div class="emname">
+                <b>Employee-Name:</b>
+                <span id="name"></span>
+            </div>
+            <div class="emname">
+                <b>Employee-Age:</b>
+                <span id="age"></span>
+            </div>
+            <div class="emname">
+                <b>Employee-Gender:</b>
+                <span id="Gender"</span>
+            </div>
+            <div class="emname">
+                <b>Employee-Basicsal : </b>
+                <span id="sal"></span>
+            </div>
+            <div class="emname">
+                <b>PF-amount :</b>
+                <span id="PF"></span>
+            </div>
+            <div class="emname">
+                <b>HRA-amount:</b>
+                <span id="hra"></span>
+            </div>
+            <div class="emname">
+                <b>Tax-amount :</b>
+                <span id="tax"></span>
+            </div>
+            <div class="emname">
+                <b>Total-Salary:</b>
+                <span id="totalsal"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

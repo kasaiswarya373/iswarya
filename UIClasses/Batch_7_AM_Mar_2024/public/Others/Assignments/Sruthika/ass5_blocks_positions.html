@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <style>
+      h2 {
+        width: 1000px;
+        height: 40px;
+        border: 1px solid;
+        text-align: center;
+        margin: 10px auto;
+      }
+      .container {
+        width: 1000px;
+        height: 800px;
+        border: 1px solid;
+        position: relative;
+        margin: 10px auto;
+        background-image: url(images/background.jpg);
+      }
+      .block {
+        height: 80px;
+        width: 100px;
+        border: 1px solid;
+        text-align: center;
+        padding-top: 40px;
+      }
+      .block1 {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        background-color: lightskyblue;
+        z-index: 14;
+      }
+      .block2 {
+        position: absolute;
+        left: 45px;
+        top: 50px;
+        background-color: lightcoral;
+        z-index: 13;
+      }
+      .block3 {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: lightcoral;
+        z-index: 22;
+      }
+      .block4 {
+        position: absolute;
+        right: 45px;
+        top: 50px;
+        background-color: lightskyblue;
+        z-index: 21;
+      }
+      .block5 {
+        position: absolute;
+        left: 45%;
+        top: 45%;
+        height: 150px;
+        width: 200px;
+        background-image: url(images/container1.jpg);
+        background-size: 100% 100%;
+        z-index: 9;
+      }
+      .block6 {
+        position: absolute;
+        left: 600px;
+        top: 300px;
+        background-color: lavender;
+        z-index: 1;
+      }
+      .block7 {
+        position: absolute;
+        left: 390px;
+        top: 300px;
+        background-color: lavender;
+      }
+      .block8 {
+        position: absolute;
+        left: 600px;
+        top: 490px;
+        background-color: lavender;
+      }
+      .block9 {
+        position: absolute;
+        left: 400px;
+        top: 490px;
+        background-color: lavender;
+      }
+      .block10 {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: lightskyblue;
+        z-index: 4;
+      }
+
+      .block11 {
+        position: absolute;
+        bottom: 50px;
+        left: 45px;
+        background-color: lightcoral;
+        z-index: 5;
+      }
+      .block12 {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: lightcoral;
+      }
+      .block13 {
+        position: absolute;
+        bottom: 50px;
+        right: 45px;
+        background-color: lightskyblue;
+      }
+      .footer {
+        height: 30px;
+        width: 1000px;
+        border: 1px solid;
+        text-align: center;
+        margin: 10px auto;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Blocks</h2>
+    <div class="container">
+      <div class="block1 block">1</div>
+      <div class="block2 block">2</div>
+      <div class="block3 block">3</div>
+      <div class="block4 block">4</div>
+      <div class="block5 block">5</div>
+      <div class="block6 block">6</div>
+      <div class="block7 block">7</div>
+      <div class="block8 block">8</div>
+      <div class="block9 block">9</div>
+      <div class="block10 block">10</div>
+      <div class="block11 block">11</div>
+      <div class="block12 block">12</div>
+      <div class="block13 block">13</div>
+    </div>
+    <div class="footer">@copyrights 2024</div>
+  </body>
+</html>

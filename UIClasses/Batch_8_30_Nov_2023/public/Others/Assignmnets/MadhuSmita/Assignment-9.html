@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details using javascript</title>
+    <script>
+        console.log("Employee Details")
+        
+        var EmployeeName= prompt("enter your Name");
+        console.log("Employee name :" + EmployeeName);
+        console.log(typeof(EmployeeName));
+
+        var EmployeeAge= prompt("Enter your Age");
+        console.log("Employee Age :"+EmployeeAge);
+        console.log(typeof(EmployeeAge));
+
+        var EmployeeGender= prompt("Enter your Gender");
+        console.log( "EmployeeGender :"+EmployeeGender);
+        console.log(typeof(EmployeeGender));
+
+        var EmployeeDepartment= prompt("Enter your Department");
+        console.log("Employee Department:"+EmployeeDepartment);
+        console.log(typeof(EmployeeDepartment));
+
+        var basicsalary=prompt("Enter a basic salary");
+        basicsalary=parseInt(basicsalary);
+        
+        console.log("Employee basicSalary: "+basicsalary);
+        console.log(typeof(basicsalary));
+
+        var pfpercantage=prompt("Enter the pf percentage");
+        console.log(typeof(pfpercantage));
+        pfpercantage = parseFloat(pfpercantage)/100;
+        console.log("Employee pf percentage: "+pfpercantage);
+         
+        var pf=pfpercantage*basicsalary   
+        console.log(typeof(pf));
+        console.log("Employee pf: "+pf);
+
+        var HRApercentage=prompt("Enter HRA percentage");
+        HRApercentage=parseInt(HRApercentage)/100 ;
+        console.log(typeof(HRApercentage));
+        console.log("Employee HRA percentage:" +HRApercentage);
+
+        var HRA=HRApercentage*basicsalary;
+        console.log(typeof(HRA));
+        console.log("Employee HRA:"+HRA);
+
+        var totalsalary= pf+HRA+basicsalary;
+        console.log(typeof(totalsalary));
+        console.log("Employee total salary :"+totalsalary);
+
+    </script>
+</head>
+<body>
+    <h3>Employee Details in Javascript.........</h3>
+    
+</body>
+</html>

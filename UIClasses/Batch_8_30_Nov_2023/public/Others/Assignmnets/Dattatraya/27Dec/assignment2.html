@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>WAP to find out the total number of digits with a given number.</h3>
+    <script>
+      var n = parseInt(prompt("Enter a number:"));
+      var numberOfDigits = 0;
+      var tempNumber = n;
+
+      while (tempNumber != 0) {
+        tempNumber = tempNumber / 10 - (tempNumber % 10) / 10;
+        numberOfDigits++;
+      }
+      console.log(numberOfDigits);
+    </script>
+  </body>
+</html>

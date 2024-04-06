@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky number find...!</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var no = 123456, sum = 0;
+        while (no >= 1) {
+
+            sum += no % 10;
+            no = parseInt(no / 10);
+
+            if (no == 0 && sum > 9) {
+                no = sum;
+                sum = 0;
+            }
+        }
+
+        document.write(`Lucky No of a given number : ${sum}`);
+        console.log(`Lucky No of a given number : ${sum}`);
+
+    </script>
+</body>
+
+</html>

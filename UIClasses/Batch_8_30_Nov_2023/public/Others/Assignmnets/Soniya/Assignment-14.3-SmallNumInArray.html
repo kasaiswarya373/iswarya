@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmallestNumInArray</title>
+</head>
+<body>
+    Displaying the Smallest Number in Array
+    <script>
+        var readingValuesIntoArray = () =>
+        {
+            var arrayValues = [];
+            var size = parseInt(prompt("Enter size of array"));
+            for(var i = 0;i < size;i++)
+            {
+                arrayValues[i] = parseInt(prompt(`Enter ${i+1} value`));
+            } 
+            return arrayValues;
+        } 
+
+        var findingSmallNumInArray = (arrayvals) =>
+        {
+            var smallNum = arrayvals[0]; 
+            for(var i = 1;i < arrayvals.length; i++)
+            {
+                if(smallNum <= arrayvals[i])
+                {
+                    smallNum = smallNum;
+                }
+                else
+                {
+                    smallNum = arrayvals[i];
+                }
+            }
+            return smallNum;
+        }
+
+        var printingSmallNum = () =>
+        {
+        var arrayvals = readingPrintingValuesIntoArray();
+        var minNum = findingSmallNumInArray(arrayvals);
+        console.log(`Given Array \n ${arrayvals}`);
+        console.log(`Smallest Number in the given array is ${minNum}`);
+        }
+
+        printingSmallNum();
+    </script>
+</body>
+</html>

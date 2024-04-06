@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <style>
+        .header, .container, .footer {
+             border: 1px solid maroon;
+             margin: 10px;
+             padding: 10px;
+        }
+        .header ,.footer{
+            text-align:center;
+            color:red;
+            font-weight: bold;
+            font-size:20px;
+            background-color: black;
+        }
+        .container{
+            height: 500px;
+        }
+        .left-block, .right-block{
+            border:1px solid;
+            margin:5px;
+            padding:5px;
+            float:left;
+            height:470px;
+            overflow: auto;
+            
+
+        }
+        .left-block{
+            width:25%;
+            text-align: center;
+            color:blue;
+            background-color: green;
+        }
+        .right-block{
+            width:70%;
+            font-weight: bold;
+            text-align: left;
+            color:blue;
+            background-color: yellowgreen;
+        }
+        .detailsList{
+            padding:10px
+        }
+        /* img {
+                width: 150px;
+                height: 95%;
+                border: 1px solid;
+                margin: 5px;
+                float: left;
+            } */
+        .imgContainer img{
+            width: 250px;
+            height: 110px;
+            margin-right: 20px;
+            float: left;
+            border: 1px solid;
+        }
+        .detailsList > li {
+            list-style: none;
+            height: 130px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main-block">
+        <div class="header">Student details</div>
+        <div class="container">
+            <div class="left-block">
+                <ol>
+                    <li>Ted Mosby</li>
+                    <li>
+                        <a href="marshdetails">
+                            Marshall Eriksen
+                        </a>
+                    </li>
+                    <li>Robin</li>
+                    <li>Lilly Ayldrin</li>
+                    <li>
+                        <a href="laststd"> Barney Stinson</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="right-block">
+                <ul class="detailsList">
+                    <li>
+                        <div class="imgContainer">
+                            <img src="https://mixdeseries.com.br/wp-content/uploads/2021/01/How-I-Met-Your-Mother-fatos-Ted.webp" alt="tedpic">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <p>Name: Ted Mosby</p>
+                                <p>Gender : Male</p> 
+                                <p>Location:USA</p>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgContainer">
+                            <img src="https://openpsychometrics.org/tests/characters/test-resources/pics/HIMYM/2.jpg" alt="">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <p>Name:Marshall Eriksen</p>
+                                <p>Gender : Male</p> 
+                                <p>Location:USA</p>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgContainer">
+                            <img src="https://i.pinimg.com/474x/5c/c8/6a/5cc86a681c9dd446fa789b4524e28cd7.jpg" alt="">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <p>Name:Robin</p>
+                                <p>Gender : Female</p> 
+                                <p>Location:USA</p>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgContainer">
+                            <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/08/How-I-Met-Your-Mother-Lily.jpg" alt="">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <p>Name:Lilly Alydrin</p>
+                                <p>Gender : Female</p> 
+                                <p>Location:USA</p>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgContainer">
+                            <img src="https://media.gq.com/photos/55828b3f1177d66d68d5287c/1:1/w_450,h_450,c_limit/blogs-the-feed-how-i-met-your-mother-barney-stinson.jpg" alt="">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <p>Name:Barney Stinson</p>
+                                <p>Gender :Male</p> 
+                                <p>Location:USA</p>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer"> @ copy rights 2024</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drag Drop Events</title>
+        <style>
+            h3 {
+                border: 1px solid;
+                padding: 10px;
+                color: chartreuse;
+                text-align: center;
+                font-size: bold;
+            }
+            .container {
+                border: 1px solid;
+                width: 800px;
+                height: 400px;
+                margin: 10px auto;
+                overflow: auto;
+                background-color: aquamarine;
+            }
+            img {
+                width: 100px;
+                height: 100px;
+                margin: 20px;
+                display: inline-block;
+            }
+            .subblock, numOfimage {
+                display: inline-block;
+            }
+            div span {
+                cursor: pointer;
+                position: relative;
+                top: 20px;
+                left: -110px;border-radius: 10px;
+                border: 1px solid;
+                color: grey;
+                box-shadow: 5px 5px 10px lightseagreen;
+
+            }
+              
+        </style>
+    </head>
+    <body>
+        <h3>
+            Drag Drop Events
+        </h3>
+
+        <div class="container" ondrop="onprodutDrop(event)" ondragover="onproductDragOver(event)"></div>
+        
+        <img src="https://st.depositphotos.com/1927453/1975/i/450/depositphotos_19750405-stock-photo-alone-tree-on-meadow-at.jpg" alt=""ondragstart="onproductDragStart(event)" >
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/021/746/785/small/holding-a-tree-in-a-ball-ecology-and-environment-concept-with-generative-ai-photo.jpg" alt=""ondragstart="onproductDragStart(event)" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlszz3l9a81tuWNycubjrvbvvuKSVlr5ZxGw&usqp=CAU" alt=""ondragstart="onproductDragStart(event)" >
+        
+    </body>
+    <script>
+        var producturl;
+        var isRepete=false;
+        var array=[];
+        var count=1;
+
+
+        var onproductDragStart=(event)=>{
+            console.log("start")
+        producturl=event.target.getAttribute("src")
+
+        }
+        var onproductDragOver=(event)=>{
+            event.preventDefault();
+            console.log("drag")
+
+        }
+        var onprodutDrop=(event)=>{
+        
+            var isFound=array.find((item)=>item.img===producturl);
+
+                event.preventDefault();
+        
+            if(!isFound){
+                array.push({img:producturl,count:1});
+        
+            }else{
+            array.map((item)=>{
+                if(item.img===producturl){
+                    item.count= item.count+1;
+                }
+            }) 
+            }
+        
+
+        console.log(array)
+
+            addHTML();
+        }
+
+        function addHTML(){
+                document.querySelector(".container").innerHTML='';
+                array.forEach((item)=>{
+                var divTag= document.createElement("div")
+                divTag.classList.add("subblock")
+                
+                var productimg=document.createElement("img")
+                productimg.setAttribute("src",item.img)
+                
+                divTag.append(productimg)
+                document.querySelector(".container").append(divTag);
+
+                var spantag=   document.createElement("span")
+                
+                spantag.innerText= "Num Of Images:"+item.count
+                spantag.classList.add("numOfimages")
+                document.querySelector(".container").append(spantag);
+            
+            })
+        }
+    </script>
+    
+</html>

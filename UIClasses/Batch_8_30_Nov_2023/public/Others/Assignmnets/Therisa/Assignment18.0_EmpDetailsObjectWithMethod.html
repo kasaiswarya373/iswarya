@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 18</title>
+    </head>
+    <body>
+        <script>
+            // Reading Employee Data by object with methods....
+            var empdata = {
+                readEmpData: () => {
+                    empdata.ename = prompt("Enter Employee name : ");
+                    empdata.age = prompt("Enter Employee age : ");
+                    empdata.gender = prompt("Enter Employee Gender: ");
+                    empdata.department = prompt("Enter Department: ");
+                    empdata.basicSalary = parseInt(prompt("Enter Bassic Salary: "));  
+                },
+                getPfHra: () => {
+                    empdata.pf = parseInt(prompt("Enter PF percentage: "));
+                    empdata.Pf = (empdata.basicSalary*empdata.pf)/100;
+                    empdata.hra = parseInt(prompt("Enter Hra percentage: "));
+                    empdata.Hra = (empdata.basicSalary*empdata.hra)/100;   
+                },
+                calTotalSal: () => {
+                    empdata.TotalSal = empdata.basicSalary + empdata.Pf + empdata.Hra 
+                },
+                displayData: () => {
+                    empdata.readEmpData();
+                    empdata.getPfHra();
+                    empdata.calTotalSal();
+                    console.log("Employee name is :  " +empdata.ename);
+                    console.log("Employee age is :  " +empdata.age);
+                    console.log("Employee gender is : " +empdata.gender);
+                    console.log("Employee department is : " +empdata.department);
+                    console.log("Employee basic salary is : " +empdata.basicSalary);
+                    console.log("Employee pf is :  " +empdata.Pf);
+                    console.log("Employee hra is :  " +empdata.Hra);
+                    console.log("Employee Total salary is : " +empdata.TotalSal);
+                }
+            }
+            empdata.displayData();
+        </script>
+    </body>
+</html>

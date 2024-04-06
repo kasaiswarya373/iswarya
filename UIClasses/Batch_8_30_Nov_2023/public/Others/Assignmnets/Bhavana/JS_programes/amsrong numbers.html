@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMSRONG NUMBER</title>
+</head>
+<body>
+    <script>
+    var n= 153,rem;
+        var sum =0, temp = n;
+
+        while(n>0){
+            rem= n%10;
+            sum = sum + (rem*rem*rem);
+            n = n/10;
+            n = parseInt(n);
+        }
+        if (sum == temp){ 
+                console.log("it is amstrong");
+            }
+            else{
+                console.log("it is not amstrong");
+            }
+    
+      /* var n = [1,25,153,5698,1634];
+    
+       var checkArmstrongOrNot = (n) =>{
+        var variablelen = n.toString().length;//it counts the digits in number
+        var temp = n;
+        var sum = 0,r;
+
+        while(n>0){
+            r = n%10; 
+            sum = sum + (r**variablelen);// (r*r*r)
+            n = n/10;
+            n = parseInt(n);
+        }
+        if (sum == temp){
+            //return true;
+            console.log("true")
+        }
+        else {
+       // return false;
+       console.log("false")
+    }
+       }
+       checkArmstrongOrNot(153);
+       checkArmstrongOrNot(25);
+       checkArmstrongOrNot(1634);
+       checkArmstrongOrNot(5698);
+       //console.log(checkArmstrongOrNot(153));*/
+    </script>
+</body>
+</html>
+//use dynamic data

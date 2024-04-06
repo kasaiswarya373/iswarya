@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VowelOrNotUsingSwitch</title>
+</head>
+<body>
+    Checking a given letter is vowel or not using switch
+    <script>
+        var i = prompt("Enter a Alphabet");
+        function vowelOrNotMsg()
+        {
+            console.log(`${i} is a vowel`);
+        }
+        function check()
+        {
+        switch(i)
+        {
+            case 'a':
+                {
+                    vowelOrNotMsg();
+                    break;
+                }
+            case 'e':
+                {
+                    vowelOrNotMsg();
+                        break;
+                }  
+            case 'i':
+                {
+                    vowelOrNotMsg();
+                        break;
+                }    
+            case 'o':
+                {
+                    vowelOrNotMsg();
+                        break;
+                }    
+            case 'u':
+                {
+                    vowelOrNotMsg();
+                        break;
+                }    
+            default:
+                {
+                    console.log("Nu icchindi Vowel kadu bey, sarigga ivvu");
+                }    
+        }
+        }
+        check();
+    </script>
+</body>
+</html>

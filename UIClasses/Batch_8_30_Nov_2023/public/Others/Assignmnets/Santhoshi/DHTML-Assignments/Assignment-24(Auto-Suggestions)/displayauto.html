@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maindiv{
+            width: 500px;
+            height: 220px;
+            border: 1px solid;
+            margin: 20px auto;
+            margin-top: 300px;
+        }
+        .imgclass{
+            width: 250px;
+            height: 200px; 
+            border: 1px solid;
+            margin: 10px 10px 10px 10px;
+        }
+        .img{
+            width: 250px;
+            height: 200px;
+        }
+        .bookdetails{
+            position: relative;
+            left: 300px;
+            top: -200px;
+        }
+        .block{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="imgclass">
+            <div class="img"></div>
+            <div class="bookdetails">
+                <div class="block">
+                    <b> name:</b>
+                    <span> the Krishna</span> </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var maindiv = document.createElement("div");
+        maindiv.setAttribute("class", "maindiv");
+
+        var div1 = document.createElement("div");
+        div1.setAttribute("class" , "imgclass");
+        var imgtag = document.createElement("div");
+        imgtag.setAttribute("class" , "img");
+        imgtag.setAttribute("src" , bookinfo.imageurl);
+        div1.append(imgtag);
+        maindiv.append(div1);
+
+        var bookdiv = document.createElement("div");
+        bookdiv.setAttribute("class" , "bookdetails");
+
+        var div2 = document.createElement("div");
+        div2.setAttribute("class" , "block");
+        var b1 = createElement("b");
+        b1.innerText = "Name: ";
+        var span1 = document.createElement("span");
+        span1.innerText = bookinfo.name;
+        div2.append(b1);
+        div2.append(span1);
+        bookdiv.append(div2);
+
+        var div3 = document.createElement("div");
+       div3.setAttribute("class" , "block");
+       var b2 = createElement("b");
+       b2.innerText = "Pulisher ";
+       var span2 = document.createElement("span");
+       span2.innerText = bookinfo.publisher;
+       div3.append(b2);
+      div3.append(span2);
+      bookdiv.append(div3);
+
+       var div4 = document.createElement("div");
+      div4.setAttribute("class" , "block");
+      var b3 = createElement("b");
+      b3.innerText = "Pulisher ";
+      var span3 = document.createElement("span");
+      span3.innerText = bookinfo.publisher;
+      div4.append(b3);
+      div4.append(span3);
+      bookdiv.append(div4);
+
+      maindiv.append(bookdiv);
+      document.querySelector(".displayingblock").append(maindiv);
+
+
+    </script>
+</body>
+</html>

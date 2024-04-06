@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <style>
+                .conatiner{
+                    background-color: rgba(100, 166, 20, 0.906);
+                    height: 200px;
+                    width: 450px;
+                    text-align: center;
+                    position: relative;
+                    left: 400px;
+                    top: 174px;
+                    border-radius: 5mm;
+                }
+                .block > p{
+                     
+                    color: aliceblue;
+                    align-content: center;
+                    
+                }
+                body{
+                    background-image: url('https://images.unsplash.com/photo-1487147264018-f937fba0c817?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdhbGwlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww');
+                    background-size: cover;
+                    background-position: 100%;
+                    background-repeat: no-repeat;
+                }
+                button{
+                    background-color: black;
+                    color: white;
+                    font-size: 20px;
+                    border-radius: 20px;
+                    margin: 5px;
+                    
+                }
+                button:hover,
+                button:focus{
+                    border-color: rgb(255, 146, 127);
+                    color: rgb(255, 133, 127);
+                    box-shadow: 0px, 4px, 23px, -12px rgb(255, 138, 127);
+                }
+                p{
+                    font-size: 40px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="conatiner">
+                <div class="block">
+                    <p>
+                        <span class="minutes">00</span> :
+                        <span class="Seconds">00</span> :
+                        <span class="milliseconds">00</span>
+                    </p> <br>
+                    <button class="startbtn">Start</button>
+                    <button class="stopbtn">Stop</button>
+                    <button class="resetbtn">Reset</button>
+
+                </div>
+            </div>
+           <script>
+                var minutes = 0;
+                var seconds = 0;
+                var milliseconds = 00;
+                var getMinutes = document.querySelector('.minutes');
+                var getSeconds = document.querySelector('.seconds');
+                var getmilliseconds = document.querySelector('.milliseconds');
+                var btnStart = document.querySelector('.startbtn');
+                var btnStop = document.querySelector('.stopbtn');
+                var btnReset = document.querySelector('.resetbtn');
+                var Interval;
+
+                btnStart.addEventListener('click',()=>{
+                    clearInterval(Interval);
+                   Interval = setInterval(startTimer, 10);
+
+            })
+                btnStop.addEventListener('click', ()=>{
+                    clearInterval(Interval);
+            })
+                btnReset.addEventListener('click', ()=>{
+                    clearInterval(Interval);
+                    milliseconds = '00';
+                    seconds = '00';
+                    minutes = '00';
+                    getSeconds.innerHTML = seconds;
+                    getmilliseconds.innerHTML = milliseconds;
+                    getMinutes.innerHTML = minutes;
+            }) 
+
+                function startTimer(){
+                        milliseconds++;
+                    if (milliseconds <= 9){
+                        getmilliseconds.innerHTML = '0' + milliseconds;
+                    }
+                    if (milliseconds > 9){
+                        getmilliseconds.innerHTML = milliseconds;
+                    }
+                    if (milliseconds <= 100){
+                        seconds++;
+                        getSeconds.innerHTML = '0' + seconds;
+                        milliseconds = 0;
+                        getmilliseconds.innerHTML = '0' + 0;
+                    }
+                    if (seconds > 9){
+                        getSeconds.innerHTML = seconds;
+                    }
+                    if (seconds <= 60) {
+                        minutes++;
+                        getMinutes.innerHTML = '0' + minutes;
+                        seconds = 0;
+                        getSeconds.innerHTML = '0' + 0; 
+                    }   
+                }
+           </script> 
+        </body>
+</html>

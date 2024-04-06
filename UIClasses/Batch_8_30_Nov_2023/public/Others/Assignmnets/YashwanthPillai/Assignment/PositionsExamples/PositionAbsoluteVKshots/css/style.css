@@ -1,0 +1,37 @@
+.container{
+    height: 250px;
+    width: 100%;
+    border: 2px solid;
+    /* position: relative; */
+    
+}
+h1{
+    margin:10px auto;
+    border: 3px solid;
+    text-align: center;
+
+}
+.shot img{
+    height: 230px;
+    width: 230px;
+    border: 1px solid;
+    float: left;
+    margin: 5px;
+}
+
+.shot2{
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+}
+.shot4{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    
+}
+.notes{
+font-size: larger;
+font-weight: bolder;
+margin-top: 200px;
+}

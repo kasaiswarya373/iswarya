@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions In CSS</title>
+    <style>
+        body {
+            font-family: cursive;
+            background-color: #FFF7FC;
+        }
+
+        h2 {
+            width: auto;
+            padding: 15px;
+            text-align: center;
+            margin: 10px;
+            border: 2px solid black;
+            background-color: #8B93FF;
+
+        }
+
+        .footer {
+            width: auto;
+            text-align: center;
+            margin: 10px;
+            border: 2px solid black;
+            background-color: #8B93FF;
+        }
+
+        .main {
+            height: 700px;
+            width: auto;
+            margin: 10px;
+            border: 2px solid black;
+            position: relative;
+            background-color: #8cc0e0;
+        }
+
+        .box {
+            height: 100px;
+            width: 80px;
+            border: 1px solid black;
+            background-color: #FF71CD;
+            border-radius: 5px;
+        }
+
+        .box1 {
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .box2 {
+            position: relative;
+            top: -30px;
+            left: 60px;
+        }
+
+        .box3 {
+            position: relative;
+            top: 319px;
+            left: 60px;
+        }
+
+        .box4 {
+            position: relative;
+            top: 263px;
+            left: 30px;
+        }
+
+        .box5 {
+            position: absolute;
+            right: 75px;
+            bottom: 77px;
+        }
+
+
+        .box6 {
+            position: absolute;
+            right: 36px;
+            bottom: 30px;
+        }
+
+        .box7 {
+            position: absolute;
+            top: 23px;
+            right: 26px;
+        }
+
+        .box8 {
+            position: absolute;
+            top: 76px;
+            right: 66px;
+        }
+
+        .center {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            bottom: 350px;
+            left: 503px;
+            margin: 20px auto;
+            position: absolute;
+            background-color: #16c8d5;
+        }
+
+        .mcenter {
+            position: relative;
+        }
+
+        .box01 {
+            position: relative;
+            top: -200px;
+            right: -464px;
+        }
+
+        .box02 {
+            position: relative;
+            top: -125px;
+            right: -464px;
+        }
+
+        .box03 {
+            position: relative;
+            top: -226px;
+            right: -662px;
+        }
+
+        .box04 {
+            position: relative;
+            top: -512px;
+            right: -659px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <h2>Positions In CSS</h2>
+    </div>
+    <div class="main">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="mcenter">
+            <div class="center">Main</div>
+            <div class="box box01">01</div>
+            <div class="box box02">02</div>
+            <div class="box box03">03</div>
+            <div class="box box04">04</div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy;2024 Created By Nivrutee Dongare...</p>
+    </div>
+</body>
+
+</html>

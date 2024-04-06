@@ -1,0 +1,24 @@
+CORS - Cross origin resource sharing 
+
+    http://www.amazon.com/search/productlist?q=toys 
+
+    http://sample.com/info
+        create a req to get data from amazon 
+
+
+    pqr.com
+
+
+        httP://www.pqr.com/getinfo/countrylist
+
+    
+    abc.com
+        http://www.abc.com/test/abc
+
+        
+        
+        https://fakestoreapi.com/products/2
+
+        http://localhost:8082/14_Feb/fakeStoreAPI_Sample.html
+
+        CORS setup within the server

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smallestvalueof given array</title>
+</head>
+<body>
+    <script>
+         var n = parseInt(prompt('Enter length of the array'));
+        console.log(`Length of the array is : ${n}`);
+        var arr = [];
+        for( var j = 0; j < n; j++){
+            arr[j] = parseInt(prompt(`Enter Array element of ${j+1}  value`));
+            
+        }
+        console.log(`The given array is [${arr}]`);
+        var samllestno = arr[0];
+        for( var i = 1 ; i < n; i++){
+            if(arr[i] < samllestno ){
+                samllestno = arr[i];
+            }
+        }
+      console.log(`The samllest no in given array is ${samllestno}`);
+    </script>
+</body>
+</html>

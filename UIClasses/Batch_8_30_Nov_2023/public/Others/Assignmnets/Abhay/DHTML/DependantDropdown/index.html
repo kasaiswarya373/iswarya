@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <div class="country">
+                <label for="country"> Country : </label>
+                <select onchange="" id="displayCountries">
+                    <option value="" selected disabled>Select Country</option>
+                </select>
+            </div>
+            <div class=" states">
+                <label for="state">State : </label>
+                <select name="state" id="displaystate" onchange="">
+                    <option value="" selected disabled>Select State</option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="district">
+                <label for="district">District : </label>
+                <select name="district" id="displaydistrict">
+                    <option value="" selected disabled>Select District</option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+
+</body>
+
+</html>

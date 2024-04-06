@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating Transform scale
+    </title>
+    <style>
+        body{
+            background-color: rgb(168, 101, 232);
+        }
+        h2{
+            border: 1px solid brown;
+            padding: 12px;
+            margin: 12px;
+            text-align: center;
+            font-style: italic;
+            background-color: aquamarine;
+        }
+        .container{
+            border: 1px solid;
+            width: 200px;
+            text-align: center;
+            background-color: greenyellow;
+            padding: 50px;
+            margin: 170px auto;
+            transition: transform 5s, border-radius 5s;
+        }
+        .container:hover{
+           /* transform: scale(2,3); */
+           /* transform: scale3d(2, 0.7, 0.2);*/
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Demonstrating Transform scale
+    </h2>
+    <div class="container"></div>
+</body>
+</html>

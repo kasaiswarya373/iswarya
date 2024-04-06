@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax Call Practise</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  </head>
+  <body>
+    <h2>Electronic : Laptops</h2>
+    <div class="loader">
+      <img
+        src="https://cdn.pixabay.com/animation/2022/07/29/03/42/03-42-11-849_512.gif"
+        alt=""
+      />
+    </div>
+    <div class="error-msg">
+      Error while Loading....... Please Try After sometime
+    </div>
+    <div class="container">  </div>
+    <div id="firstProductContainer">
+      <div class="productContainer">
+        <li class="li-img">
+          <img src="{{image}}" class="prod-img" />
+        </li>
+        <li>Product Name : {{name}} </li>
+        <li>Manufracturer : {{manu}} </li>
+        <li>
+          Price : <span class="actual-price"> {{actualPrice}} </span>
+          <span class="discount-price"> {{discountPrice}}</span>
+        </li>
+        <li>Ratings : {{rating}} </li>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

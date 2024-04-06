@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //WAP to find out amstrong numbers in the given array
+
+        var n = parseInt(prompt("enter size of array : "));
+            var arr = [n];
+            for(var i = 0 ; i < n ; i++){
+                arr[i] = parseInt(prompt("enter values: "));
+            }
+            var amstrongarray = [];
+            var isAmstrongNum = (num , amstrongarray) => {
+                var countdigits = 0;
+            var temp = num;
+            var ans = num;
+            while(num!=0){
+                var rem = num %10;
+                countdigits++;
+                num = num/10;
+                num = parseInt(num);
+            }
+            var n = 0;
+            while(temp!=0){
+                var rem = temp%10;
+                var result = 1;
+                for(var i=0;i<countdigits;i++){
+                    result = result*rem;
+                }
+                temp = temp/10;
+                temp = parseInt(temp);
+                n+=result;
+            }
+            if(n==ans){
+               // flag = true;
+               return true;
+            }
+            else{
+               // console.log("It is not an amstrong number");
+               return false;
+            }
+            }
+            for(var i = 0 ; i < n ; i++){
+                if(isAmstrongNum(arr[i] , amstrongarray)) {
+                    amstrongarray.push(arr[i]);
+                }
+            }
+            console.log("amstrong numbers in the array is : " +amstrongarray);
+    </script>
+</body>
+</html>

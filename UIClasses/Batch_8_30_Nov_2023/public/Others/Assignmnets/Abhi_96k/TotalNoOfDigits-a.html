@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total no of digits in given numbers</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var no = prompt("Enter no to find how many numbers presented in a Number : ");
+        var count = 0;
+
+        while (no >= 1) {
+            no = parseInt(no / 10);
+            count++;
+        }
+        document.write(`Total digits presented in a given no : ${count}`);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="title"><span id="color1">Drag</span> <span id="color2">&</span> <span id="color3">Drop</span> <span
+            id="color4">Event</span></header>
+    <div id="div1" ondragover="dragOverEvent(event)" ondrop="dropEvent(event)"></div>
+    <br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Google_Developers_text_logo.svg/1280px-Google_Developers_text_logo.svg.png"
+        ondragstart="dragStartEvent(event)">
+    <script src="app.js"></script>
+</body>
+
+</html>

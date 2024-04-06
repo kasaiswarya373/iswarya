@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>prime number 1 to 1000</h2>
+    <script>
+       var num = 0;
+        
+        for(var a = 2; a <= 1000; a++) {
+            num = 0;
+            for(var i = 10, b = 1;b <= a; b++) {
+                if(a % b == 0) {
+                    num = num + 1;
+                }
+            }
+            if (num == 2) {
+
+                console.log(a);
+            }
+        }
+
+        
+
+    </script>
+</body>
+</html>

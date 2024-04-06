@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generating Random Value</title>
+</head>
+<body>
+    <h3>Generating Random Value using Math.random() method</h3>
+    <script>
+        var maxRange = 1000;
+        var randomNumber = Math.random()*maxRange;
+        console.log(randomNumber);                  //it will give any random number from 0 to 100
+
+        console.log(Math.floor(randomNumber));      //It will always look for full value (neglecting points)
+        console.log(Math.round(randomNumber));      //It will round off full value based on nearer point value
+
+        
+
+    </script>
+    
+</body>
+</html>

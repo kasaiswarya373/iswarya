@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const maxReg = 100;
+        var b = 99; // global scope
+        var showInfo = () => {
+            var a = 90; // module scope
+            console.log(a)
+        }
+
+        maxReg++;
+        console.log(maxReg)
+
+        if (true) { // blocks
+            let z = 100; // block scope
+            console.log("value of z is " + z)
+        }
+
+        console.log("value of z is " + z)
+        showInfo();
+    </script>
+</body>
+</html>

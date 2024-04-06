@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json string and parsing</title>
+</head>
+<body>
+    <h3>JSON string and parsing</h3>
+
+    <script>
+        var userInfo = {
+            name : 'Raj',
+            age : 25,
+            gender : 'Male',
+            feePaid : 'yes',
+            displayInfo () {
+            },
+            marks : [33, 44, 55]
+        };
+
+        console.log(userInfo);                      //This is object
+
+        var data = JSON.stringify(userInfo);
+
+        console.log(data);                          //Object converted into String format
+
+        console.log(JSON.parse(data));              //String is converted back into the Object 
+    </script>
+    
+</body>
+</html>

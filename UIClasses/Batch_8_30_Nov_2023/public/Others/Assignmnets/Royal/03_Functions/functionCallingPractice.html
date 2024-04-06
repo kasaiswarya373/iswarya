@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Calling</title>
+</head>
+<body>
+    <script>
+        var test = () => {
+            console.log('Test 1');
+            sample();
+        }
+        test();              //if we call test method here then we will get error (var hoisting will comes into picture)
+        var sample = () =>{
+            console.log('Sample 2');
+            // test();
+        }
+        // test();          //this will work
+    </script>
+    
+</body>
+</html>

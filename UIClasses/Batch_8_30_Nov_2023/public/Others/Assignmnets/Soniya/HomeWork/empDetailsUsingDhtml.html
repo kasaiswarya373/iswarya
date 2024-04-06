@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empDetailsUsingDhtml</title>
+</head>
+<style>
+    ul
+    {
+        list-style-type: none;
+        font-size: 174%;
+    }
+</style>
+<body>
+    <h1>Employee Details</h1>
+    <ul class="empDetails"></ul>
+    <script>
+
+        // create an object to store the employee details
+        var empDetails = {
+        name: prompt("Enter Name"),
+        age: prompt("Enter Age"),
+        gender: prompt("Enter Gender"),
+        basicSalary: parseInt(prompt("Enter basicSalary")),
+        pf: 0.9, 
+        hra: 0.5, 
+        tax: 0.3 
+        };
+
+
+        empDetails.pf = (empDetails.basicSalary * empDetails.pf)/100;
+        empDetails.hra = (empDetails.basicSalary * empDetails.hra)/100;
+        empDetails.totalSalary = empDetails.basicSalary + empDetails.pf + empDetails.hra;
+        empDetails.tax = (empDetails.totalSalary * empDetails.tax)/100;
+        empDetails.totalSalary = empDetails.totalSalary - empDetails.tax;
+
+        // get the ul element by its class name
+        var ul = document.querySelector(".empDetails");
+
+        // loop through the object properties and create the list items
+        for (var prop in empDetails) {
+        // create a new li element
+        var li = document.createElement("li");
+
+        // set the text content of the li element
+        li.innerText = prop.charAt(0).toUpperCase() + prop.slice(1) + " : " + empDetails[prop];
+
+        // add the li element to the ul element
+        ul.appendChild(li);
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Demonstrating js classes Inheritance Demo </title>
+</head>
+<body>
+    <script>
+
+      class CollegeDetails {
+        constructor() {
+            this.CollegeName = "ABC college" ;
+            this.CollegeRating = '4/5';
+            this.CollegeLocation = 'Banglore';
+
+            this.UniversityName = 'Osmania University';
+            this.UniversityLocation = 'Banglore';
+            this.UniversityRating ='5/10';
+        }
+        displayCollegeDetails() {
+            console.log("College name "  + this.CollegeName);
+            console.log("College Rating"  + this.CollegeRating);
+            console.log("College Location"  + this.CollegeLocation);
+
+            console.log("univ name" + this.UniversityName);
+            console.log("univ rating" + this.UniversityRating);
+            console.log("univ loc" + this.UniversityLocation);
+
+        }
+      }
+
+      var studentDetails
+
+      var c1 = new CollegeDetails();
+      c1.displayCollegeDetails();
+
+      
+    </script>
+</body>
+</html>

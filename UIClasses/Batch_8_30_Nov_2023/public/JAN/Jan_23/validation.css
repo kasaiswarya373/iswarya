@@ -1,0 +1,25 @@
+ul {
+                width: 500px;
+                border: 1px solid;
+                margin: 20px auto;
+                padding: 20px;
+            }
+            li {
+                
+                margin: 10px;
+                padding: 10px;
+                list-style: none;
+            }
+            h3 {
+                text-align: center;
+                color: goldenrod;
+            }
+            svg {
+                position: relative;
+                left: -25px;
+                top: 3px;
+            }
+
+            .validationList {
+                display: none;
+            }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var readValues = () => { // calling function
+                var a1, a2;
+                a1 = prompt("enter value for a1"); // 10
+                a2 = prompt("enter value for a2"); // 20
+                a1 = parseInt(a1);
+                a2 = parseInt(a2);
+                getSum(a1, a2);   // getSum(10, 20), actual params
+                console.log("end");
+            }
+
+            /**
+             * This function is for finding sum
+             * @a1 {number} first param
+             * @p2 {number} second param
+             */ 
+            var getSum = (a1, p2) => { // p1 -> 10, p2- 20  called function , formal parms
+                var result = a1 + p2;
+                console.log("The sum is " + result);
+            }
+            readValues();
+        </script>
+    </body>
+</html>
+

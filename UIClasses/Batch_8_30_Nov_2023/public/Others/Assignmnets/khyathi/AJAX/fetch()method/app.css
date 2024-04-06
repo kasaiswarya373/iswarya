@@ -1,0 +1,38 @@
+h3{
+    text-align: center;
+    border: 1px solid;
+    padding: 5px;
+    background-color:skyblue
+}
+.sProductDetails{
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(209, 230, 238);
+    list-style-type: none;
+    width: 200px;
+    min-height: 200px;
+    float: left;
+}
+ul{
+    margin-left: 0px;
+    padding-left: 0px;
+
+}
+li{
+    list-style-type: none;
+    padding: 5px;
+    background-color: white;
+    margin: 5px;
+    margin-left:0px ;
+}
+img{
+    width: 150px;
+}
+.actualPrice{
+    color: red;
+    text-decoration: line-through;
+}
+.discounPrice{
+    color: green;
+}

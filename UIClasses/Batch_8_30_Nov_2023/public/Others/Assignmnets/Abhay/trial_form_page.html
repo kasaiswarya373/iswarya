@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2>Registration Form</h2>
+    </div>
+    <div class="container">
+        <form action="https://media.publit.io/file/q_80/chrmpWebsite/thank-you-form.png" method="get">
+            <div class="date">
+                <label for="date" id="date1">Date of Registration</label> <br><br>
+                <input type="date" id="date">
+            </div> <br>
+            <div class="name">
+                <label for="fullname" id="fullname">Enter Full Name :</label> <br>
+                <input type="text" id="fullname" placeholder="Enter Full Name *" required>
+            </div> <br>
+            <div class="age">
+                <label for="age" id="age">Enter Age :</label><br>
+                <input type="number" id="age" placeholder="Age *" required>
+            </div> <br>
+            <div class="gender">
+                <label for="gender" name="gender" id="gen">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="others">Others</label>
+            </div> <br>
+            <div class="course">
+                <label for="course" id="course">Select Course :</label>
+                <select name="course" id="coursed">
+                    <option value="">---Select---</option>
+                    <option value="UI Fullstack">UI Fullstack</option>
+                    <option value="UI Fullstack">Java</option>
+                    <option value="UI Fullstack">.Net</option>
+                    <option value="UI Fullstack">Python</option>
+                    <option value="UI Fullstack">Salesforce</option>
+                    <option value="UI Fullstack">Selenium</option>
+                </select>
+            </div> <br>
+            <div class="area">
+                <label for="area">About Yourself:</label>
+                <textarea name="area" id="area" cols="30" rows="3"></textarea>
+            </div> <br>
+            <div class="button">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        ------Copyrights@Abhay2023------
+    </div>
+</body>
+
+</html>

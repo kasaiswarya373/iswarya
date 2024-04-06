@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="detail.css">
+    <script src="empRegistration.js"></script>
+</head>
+<body>
+        <h1>EMPLOYEE REGISTRATION FORM</h1>
+        <div>
+            <div class="leftDiv">
+                <h2 style="text-align: center;">Employee Details</h2>
+                <ul id="regdetail">
+                    <li>
+                        <label for="">Employee Name :</label>
+                        <input type="text" id="empName">
+                    </li>
+                    <li>
+                        <label for="">Employee Age :</label>
+                        <input type="text" size="3" id="empAge">
+                    </li>
+                    <li>
+                        <label for="">Gender :</label>
+                        Male <input type="radio" name="Gender" value="Male">
+                        Female <input type="radio" name="Gender" value="Female">
+                    </li>
+                    <li>
+                        <label for="">Country :</label>
+                        <select name="" id="empContry">
+                            <option value="India">India</option>
+                            <option value="America">America</option>
+                            <option value="Africa">Africa</option>
+                            <option value="China">China</option>
+                            <option value="Srilanka">Srilanka</option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="button" value="Register" onclick="register()">
+                    </li>
+                </ul>
+            </div>
+            <div class="rightdiv">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td >Sr no.</td>
+                            <td>Employee Name</td>
+                            <td>Employee Age</td>
+                            <td>Employee Gender</td>
+                            <td>Employee Location</td>
+                            <td>Delete</td>
+                            <td>Edit</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>
+</html>

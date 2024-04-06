@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var  n = parseInt(prompt("Enter the number to check if palindrome or not : ?"));
+        var temp,rem,sum=0;
+        temp = n;
+        while(n > 0){
+            rem = n % 10;
+            sum = sum*10 + rem;
+            n = parseInt(n/10);
+        }
+        if (temp==sum) {
+            console.log("Its a palindrome"); 
+        } else {
+            console.log("Its not a palindrome");
+        }
+
+        var first = parseInt(prompt("Enter the starting number : ?"));
+        var last = parseInt(prompt("Enter the last number : ?"));
+        for (var i = first; i <= last; i++) {
+            temp = i ,sum = 0 ; 
+            while(i > 0){
+            rem = i % 10;
+            sum = sum*10 + rem;
+            i = parseInt(i/10);
+        }
+        if (temp==sum) {
+            console.log(i); 
+        }
+    }
+    </script>
+</body>
+</html>

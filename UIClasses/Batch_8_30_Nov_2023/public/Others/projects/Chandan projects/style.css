@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header {
+    background: tomato;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?w=996&t=st=1706281929~exp=1706282529~hmac=620338214e381dd27c40cb899a154a7a5f587") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.logo {
+    font-size: 2em;
+    color: #fff;
+
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500px;
+    margin-left: 40px;
+}
+.navigation a::after {
+       content: '';
+       position: absolute;
+       left: 0;
+       bottom: -6px;
+       width: 100%;
+       height: 3px;
+       background: #fff;
+       border-radius: 5px;
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    border: 2px solid #ef3506;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #0933f1;
+    font-weight: 500px;
+    margin-left: 40px;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    border: 2px solid rgba(255,255,255);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2 {
+    color: #ef3506;
+    text-align: center;
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgb(1, 21, 15);
+    font-weight: 500px;
+    transition: .5s ;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #0933f1;
+    font-weight: 600px;
+    
+}
+.remember-forgot {
+    font-size: .8em;
+    color: #0933f1;
+    font-weight: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input {
+    margin-right: 3px;
+    color: #0933f1;
+}
+.btn {
+    width: 100%;
+    height: 40px;
+    background: #0933f1;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500px;
+}
+.login-register {
+    font-size: .8em;
+    color: #0933f1;
+    text-align: center;
+    font-weight: 500px;
+
+}
+.login-register p a {
+    color: #0933f1;
+    font-weight: 600px;
+    text-decoration: underline;
+}

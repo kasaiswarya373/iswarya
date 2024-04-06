@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Employee Pay Slip</title>
+    <link rel="stylesheet" href="empPaySlip.css" />
+  </head>
+  <body>
+    <h3>Employee Pay slip</h3>
+
+    <ul>
+      <li class="title">Employee Pay Slip Details</li>
+      <li>
+        <label for="sname">Employee Name:</label>
+        <input type="text" id="ename" />
+      </li>
+      <li>
+        <label for="age">Age:</label>
+        <input type="text" id="age" />
+      </li>
+      <li>
+        <label for="gender">Gender:</label>
+        Male
+        <input type="radio" name="gender" value="Male" checked />
+        Female
+        <input type="radio" name="gender" value="Female" />
+      </li>
+
+      <li>
+        <label for="">Department:</label>
+        <select name="" id="empDepartment">
+          <option value="it">IT</option>
+          <option value="ui">UI</option>
+          <option value="hr">HR</option>
+          <option value="Testing">TESTING</option>
+        </select>
+      </li>
+
+      <li>
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" />
+      </li>
+
+      <li>
+        <input type="button" value="Generate Pay Slip" onclick="readData()" />
+      </li>
+    </ul>
+
+    <div class="paySlipCardHolder"></div>
+
+    <ul id="displayBlock">
+      <li>Employee Name: <span id="d_name"></span></li>
+      <li>Employee Age: <span id="d_age"></span></li>
+      <li>Gender: <span id="d_gender"></span></li>
+      <li>PF: <span id="d_pf"></span></li>
+      <li>HRA: <span id="d_hra"></span></li>
+      <li>Tax: <span id="d_tax"></span></li>
+      <li>Total Salary: <span id="d_salary"></span></li>
+    </ul>
+
+    <script src="empPaySlip.js"></script>
+  </body>
+</html>

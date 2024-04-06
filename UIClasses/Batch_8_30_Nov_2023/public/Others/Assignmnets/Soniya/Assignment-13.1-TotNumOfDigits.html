@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TotalNumOfDigits</title>
+</head>
+<body>
+    Total Number of Digits in a Number
+    <script>
+        var n=parseInt(prompt("Enter a number"));
+        var count=0;
+        var num=n;
+        while(n > 0)
+        {
+            n=parseInt(n / 10);
+            count++;
+        }
+        console.log(`Total Number of digits in a Number ${num} is ${count}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Real Time Example on Closures</title>
+            <link rel="stylesheet" href="closure.css">
+            <script src="closure.js"></script>
+            <script src="lib/mathUtil.js"></script>
+    </head>
+    <body>
+        <h3>
+            Demonstrating Closures
+        </h3>
+        <ul>
+            <li>
+                Enter first value
+                <input type="text" id="fval">
+            </li>
+            <li>
+                Enter Second value
+                <input type="text" id="sval">
+            </li>
+            <li>
+                <input type="button" value="Addition" onclick="doOperation('add')">
+                <input type="button" value="Multiplication" onclick="doOperation('mul')">
+                <input type="button" value="Division" onclick="doOperation('div')">
+                <input type="button" value="Substraction" onclick="doOperation('sub')">
+            </li>
+            <li id="rblock">
+
+            </li>
+            <li>
+                How many times user clicked on buttons: <span id="count_result"></span>
+            </li>
+        </ul>
+    </body>
+</html>

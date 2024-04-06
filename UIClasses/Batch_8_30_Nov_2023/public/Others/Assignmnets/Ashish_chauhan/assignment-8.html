@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Page</title>
+    <style>
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        height: 50px;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid black;
+        background-color: aliceblue;
+      }
+
+      .container {
+        height: 1100px;
+        border: 2px solid black;
+        position: relative;
+      }
+      .personalDetailContainer {
+        height: 300px;
+        border: 1px solid black;
+        margin: 18px;
+        padding: 10px;
+        background-color: aliceblue;
+      }
+      .personalDetailDiv {
+        width: 189px;
+        height: 60px;
+        border: 1px solid;
+        text-align: center;
+        margin: 10px;
+        position: relative;
+        bottom: 30px;
+        left: 28px;
+        background-color: #fff;
+      }
+      .nameBlock {
+        width: 44%;
+        height: 200px;
+        border: 1px solid black;
+        position: relative;
+        left: 36px;
+        bottom: 17px;
+      }
+      #age {
+        position: relative;
+        left: 51px;
+      }
+
+      .addressBlock {
+        width: 50%;
+        height: 200px;
+        border: 1px solid black;
+        position: relative;
+        left: 48%;
+        bottom: 73%;
+      }
+      ul {
+        padding: 10px;
+      }
+      li {
+        list-style: none;
+
+        padding: 10px;
+        margin: 10px;
+      }
+      .addressDiv > label {
+        position: relative;
+        bottom: 27px;
+        left: 22px;
+      }
+      .addressDiv > textarea {
+        position: relative;
+        left: 74px;
+        top: 20px;
+      }
+      .countryDiv {
+        position: relative;
+        left: 23px;
+        top: 40px;
+      }
+      .countryDiv > select {
+        position: relative;
+        left: 47px;
+        width: 245px;
+      }
+      .educationBlock {
+        height: 200px;
+        border: 1px solid black;
+        position: relative;
+        left: 2px;
+        bottom: 17px;
+        margin-left: 34px;
+        margin-right: 25px;
+      }
+      #qualification {
+        width: 15%;
+      }
+      .aboutYourselfDiv > label {
+        position: relative;
+        bottom: 66px;
+        left: 92px;
+      }
+      .aboutYourselfDiv > textarea {
+        position: relative;
+        left: 171px;
+        top: 12px;
+      }
+      .registerBtn {
+        position: absolute;
+        right: 98px;
+        bottom: 21px;
+      }
+      .registerBtn > #btn {
+        padding: 10px;
+        font-weight: 300;
+        text-align: center;
+        background-color: aliceblue;
+        border-radius: 5px;
+      }
+      #btn:hover {
+        background-color: #4cb9e7;
+        cursor: pointer;
+        color: #fff;
+      }
+      .copyRight {
+        text-align: center;
+        border: 1px solid black;
+        position: relative;
+        top: 15px;
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Registration Page</h1>
+    <div class="container">
+      <!-- Personal Details -->
+      <div class="personalDetailContainer">
+        <div class="personalDetailDiv"><h4>Personal Detail</h4></div>
+        <div class="nameBlock">
+          <ul>
+            <li>
+              <label for="firstName"> First Name:</label>
+              <input type="text" />
+            </li>
+            <li>
+              <label for="lastName">Last Name:</label>
+              <input type="text" name="lastName" />
+            </li>
+            <li>
+              <label for="age">Age:</label>
+              <input id="age" type="number" name="age" />
+            </li>
+          </ul>
+        </div>
+        <div class="addressBlock">
+          <div class="addressDiv">
+            <label for="address">Address :</label>
+            <textarea name="address" cols="30" rows="5"></textarea>
+          </div>
+          <div class="countryDiv">
+            <label for="country">Country :</label>
+            <select name="country">
+              <option value="india">India</option>
+              <option value="usa">USA</option>
+              <option value="caneda">Caneda</option>
+              <option value="england">England</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Details -->
+      <div class="personalDetailContainer">
+        <div class="personalDetailDiv"><h4>Education Details</h4></div>
+        <div class="educationBlock">
+          <ul>
+            <li>
+              <label for="qualification">Qualification:</label>
+              <select name="qualification" id="qualification">
+                <option>Btech</option>
+                <option>Bca</option>
+                <option>Bsc</option>
+                <option>B.com</option>
+              </select>
+            </li>
+
+            <li>
+              <label> Languages : </label>
+              <input type="checkbox" /> English <input type="checkbox" /> Hindi
+              <input type="checkbox" /> Telugu
+              <input type="checkbox" checked /> Urdu
+            </li>
+
+            <li>
+              <label for="gender">Opt Cource: </label>
+              <input type="radio" name="cource" /> MBA
+              <input type="radio" name="cource" /> MCA
+              <input type="radio" name="cource" /> B.TECH
+              <input type="radio" name="cource" /> MSC
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- About Yourself Details -->
+      <div class="personalDetailContainer">
+        <div class="personalDetailDiv"><h4>About Yourself</h4></div>
+        <div class="educationBlock">
+          <div class="aboutYourselfDiv">
+            <label>Few Words About Your Career :</label>
+            <textarea cols="80" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="registerBtn">
+        <input type="button" id="btn" value="Register Details" />
+      </div>
+    </div>
+    <div class="copyRight">
+      <h4>@ Coty Rights 2023</h4>
+    </div>
+  </body>
+</html>

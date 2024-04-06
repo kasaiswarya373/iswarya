@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Function with passing params Returning value
+        </title>
+    </head>
+    <body>
+        <script>
+            
+            var readValues = () => { // calling function
+                var a1, a2;
+                a1 = prompt("enter value for a1");  // 10
+                a2 = prompt("enter value for a2");  // 20
+                a1 = parseInt(a1);
+                a2 = parseInt(a2);
+                var temp = getSum(a1, a2); // temp  = 30
+                console.log("Teh sum is " + temp);
+                console.log("end");
+            }
+
+            /**
+             * This function is for finding sum
+             */ 
+            var getSum = (a1, a2) => {
+                var result = a1 + a2; // 30
+                return result; // return 30;
+            }
+            readValues();
+        </script>
+    </body>
+</html>
+

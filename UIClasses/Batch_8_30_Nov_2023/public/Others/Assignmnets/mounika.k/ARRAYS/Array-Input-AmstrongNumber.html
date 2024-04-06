@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmstrongNumber</title>
+</head>
+<body>
+    <script>
+            var amstrongNumber = () =>{
+            var arr = [424, 1564 , 570, 173, 333, 57, 40 ,457, 78, 777];
+            for(i = 0; i <= arr.length - 1; i++){
+                let sumOfNumber = 0;
+                let userInputForLength = arr[i]
+                let userInput = arr[i];
+                let numberSum = 0;
+                let inputLength = 0;
+                let referenceNumber = userInput;
+                while(userInputForLength > 0){
+                    var remainderOfInput = userInputForLength % 10;
+                    var result = remainderOfInput**inputLength
+                    sumOfNumber += result ;
+                    userInputForLength = userInputForLength / 10;
+                    userInputForLength = parseInt(userInputForLength);
+                    inputLength++
+                }
+                while(userInput > 0){
+                    var remainderInput = userInput % 10;
+                    var res = remainderInput**inputLength
+                    numberSum += res;
+                    userInput = userInput / 10;
+                    userInput = parseInt(userInput);
+                }
+                if (numberSum  == referenceNumber){
+                    console.log( referenceNumber + " " + "is a Amstrong Number")
+                }else{
+                    console.log( referenceNumber +" "+"is not a Amstrong Number")
+                    
+                }
+            }
+        }
+        amstrongNumber();
+   </script>
+</body>
+</html>

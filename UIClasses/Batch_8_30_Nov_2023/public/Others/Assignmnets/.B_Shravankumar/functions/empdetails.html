@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Student details using functions
+
+    <script>
+        function readdata(){
+            var empname, age, gender, basicsalary;
+            empname=prompt("Enter name");
+            age=prompt("Enter age")
+            gender=prompt("enter gender");
+            basicsalary=prompt("Enter basic salary")
+            basicsalary=parseInt(basicsalary)
+           var pf= calculating(basicsalary)
+            console.log(pf)
+           
+            
+           
+        }
+        function calculating(basicsalary){
+            var pf, hra, total=0;
+            pf=(basicsalary*14)/100;
+            hra= (basicsalary*24)/100;
+            total=basicsalary+pf+hra
+            display(total)
+            return pf;
+           
+           
+        }
+        function display(total){
+            console.log(total)
+        }
+        readdata();
+
+    </script>
+</body>
+</html>

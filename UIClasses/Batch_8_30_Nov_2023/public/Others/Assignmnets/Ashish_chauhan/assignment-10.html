@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo of if else</title>
+    <style>
+      h1 {
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+        height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Employee Detail</h1>
+    <script>
+      var emp_name = prompt("Enter Name");
+      console.log("Employee Name " + emp_name);
+      console.log(typeof emp_name);
+
+      var emp_age = prompt("Enter Age");
+      console.log("Employee Age " + emp_age);
+      console.log(typeof emp_age);
+
+      var emp_dept = prompt("Enter Department");
+      console.log("Employee Department " + emp_dept);
+      console.log(typeof emp_dept);
+
+      var emp_gender = prompt("Enter Gender");
+      console.log("Employee Gender " + emp_gender);
+      console.log(typeof emp_gender);
+
+      var basic_sal = prompt("Enter Basic Salary");
+      basic_sal = parseInt(basic_sal);
+      console.log("Employee Salaty " + basic_sal);
+      console.log(typeof basic_sal);
+
+      // Taxes apply for males
+      if (basic_sal >= 200000) {
+        var tax_1 = (15 * basic_sal) / 100;
+        tax_1 = parseFloat(tax_1);
+        console.log("Tax on 15 Percent is " + tax_1);
+      } else if (basic_sal >= 100000) {
+        var tax_2 = (10 * basic_sal) / 100;
+        tax_1 = parseFloat(tax_2);
+        console.log("Tax on 10 Percent is " + tax_2);
+      } else if (basic_sal > 50000) {
+        var tax_3 = (5 * basic_sal) / 100;
+        tax_3 = parseFloat(tax_3);
+        console.log("Tax on 5 Percent is " + tax_3);
+      } else {
+        var tax_4 = basic_sal;
+        tax_4 = parseFloat(tax_4);
+        console.log("Tax on 0 percent " + tax_4);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment Student </title>
+    <style>
+     .container1{
+            height: 30px;
+            border: 2px solid black;
+            background-color:white;
+            padding-top: 5px;
+            padding-left: 5px;
+            text-align: center;
+            font-size: larger;
+            margin-bottom: 20px;
+
+           
+     }
+
+     .container2{
+        display:grid ;
+        grid-template-columns: 3.5fr 0.2fr 8.3fr;
+        
+        height: 550px;
+     }
+
+     .first{
+        border: 2px solid black;
+        height: 500px;
+       
+     }
+     
+     
+     .first>div{
+       height: 30px;
+       width: 110px;
+       border: 1px solid black;
+       margin-top: 20px;
+       margin-left: 50px;
+       text-align: center;
+     }
+
+     .second{
+        border: 2px solid black;
+        height: 500px;
+        overflow-y: scroll;
+     }
+     .details{
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        border: 1px solid black;
+        margin: 5px;
+     }
+     .img{
+        border: 1px solid black;
+        height: 150px;
+        margin: 20px;
+     }
+     .add{
+        margin-top: 50px;
+     }
+     </style>
+</head>
+<body>
+    <div class="container1">Student Details Page</div>
+   
+   
+    <div class="container2">
+         
+        <div class="first">
+          
+                <div>1.Priti</div>
+                <div>2.Damini</div>
+                <div>3.Mansi</div>
+                <div>4.Kajal</div>
+            
+        </div>
+       
+        <div class="blank">
+
+        </div>
+         
+        <div class="second">
+
+              <div class="details">
+                     <div class="img"><img src="/girl.jpg" height="150" width="300" ></div>
+                     <div class="add">
+                       <div> Name:Priti</div>
+                        <div>Age:24</div>
+                        <div>Gender:Female</div>
+                        <div>Location:Maharashtra</div>
+                     </div>
+              </div>
+              <div class="details">
+                     <div class="img"><img src="/girl.jpg" height="150" width="300" ></div>
+                     <div class="add">
+                       <div>Name:Damini</div>
+                        <div>Age:22</div>
+                        <div>Gender:Female</div>
+                        <div>Location:Maharashtra</div>
+                     </div>
+              </div> 
+              <div class="details">
+                     <div class="img"><img src="/girl.jpg" height="150" width="300" ></div>
+                     <div class="add"> 
+                       <div>Name:Mansi</div>
+                        <div>Age:20</div>
+                        <div>Gender:Female</div>
+                        <div>Location:Maharashtra</div>
+                     </div>
+              </div> 
+              <div class="details">
+                    <div class="img"><img src="/girl.jpg" height="150" width="300" ></div>
+                     <div class="add">
+                        <div>Name:Kajal</div>
+                        <div>Age:21</div>
+                        <div>Gender:Female</div>
+                        <div>Location:Maharashtra</div>
+                     </div>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

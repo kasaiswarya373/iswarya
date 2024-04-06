@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var readdata = ( ) =>{
+            var data = [];
+            var values = parseInt(prompt("enter no.of values of array"));
+            for( var i = 0; i < values; i++){
+                    data[i] = parseInt(prompt("enter values in array"));
+            }
+        }
+            var process = (data , values ) => {
+                var num = 0;
+                for (var i = 0; i < data; i++){
+                while(num > 0){
+                    var rem = num % 10;
+                    count++;
+                    num = num / 10;
+                    num = parseInt(num);
+                } 
+                console.log(num);
+                console.log(count);
+            
+                var original = 0;
+                while(tempnum > 0){
+                    var rem = tempnum % 10;
+                    original+= rem ** count;
+                    console.log(original);
+                    tempnum = tempnum / 10;
+                    tempnum = parseInt(tempnum);
+                }
+                    if( original == result){
+                        console.log("amstrong" , data);
+                }
+                    
+                    
+                
+            }
+        }
+        </script>
+    </body>
+</html>

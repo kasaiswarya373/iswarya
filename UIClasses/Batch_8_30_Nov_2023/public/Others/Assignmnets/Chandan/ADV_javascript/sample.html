@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <style>
+            span {
+                border: 1px solid;
+                margin: 20px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <span id="min"></span>
+        <span id="sec"></span>
+        <span id="msec"></span>
+
+        <script>
+            var msecIntervl, secIntervl, minIntrvl;
+
+            function doUpdateMilliSec() {
+                var count = 0;
+                msecIntervl = setInterval(() => {
+                    count++;
+                    $("#msec").text(count);
+                    if (count == 1000) {
+                        clearInterval(msecIntervl);
+                        doUpdateSec();
+                    }
+                })
+            }
+
+            function doUpdateSec() {
+                var count = 0;
+                secIntervl = setInterval(() => {
+                    count++;
+                    $("#sec").text(count);
+                    if (count == 60) {
+                        clearInterval(secIntervl);
+                    }
+                })
+            }
+
+            doUpdateMilliSec();
+        </script>
+    </body>
+</html>

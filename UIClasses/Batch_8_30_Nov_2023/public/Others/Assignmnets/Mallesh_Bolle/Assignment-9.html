@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+           java something
+        </title>
+    </head>
+    <body>
+        <h3>Employee Salary Details</h3>
+        <script>
+            var empname = prompt("Enter Name");
+            var empage = prompt("Enter Age");
+            var empgender = prompt("Enter Gender");
+            var empdept = prompt("Enter Dept");
+            var empbasicsalary = prompt("Enter Salary");
+            
+            var emppf = prompt("Enter Pf");
+            var emphra = prompt("Enter Hra");
+
+           empbasicsalary = parseInt(empbasicsalary);
+           emppf = parseInt(emppf);
+           emphra= parseInt(emphra);
+
+            var emptotalsalary = empbasicsalary + (emppf*empbasicsalary)/100 + (emphra*empbasicsalary)/100 ;
+
+            console.log("Name " + empname);
+            console.log("Age " + empage);
+            console.log("Gender " + empgender);
+            console.log("Dept " + empdept)
+            console.log("Basic Salary  " + empbasicsalary);
+            console.log("Pf " + emppf);
+            console.log("Hra " + emphra);
+            console.log("Total Salary " + emptotalsalary)
+
+        </script>
+    </body>
+</html>

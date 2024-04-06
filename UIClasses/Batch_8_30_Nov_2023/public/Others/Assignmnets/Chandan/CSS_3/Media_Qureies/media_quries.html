@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Media Quries
+        </title>
+        <link rel="stylesheet" href="media_quries.css">
+        <script src="../jquery.js"></script>
+    </head>
+    <body>
+        <header>
+            Shopping Application
+        </header>
+        <main>
+            <svg onclick="toggleMenuBar()" id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+            <div class="mynavBar">
+                <div>Home</div>
+                <div>Careers</div>
+                <div>Contact us</div>
+                <div>Our Clients</div>
+                <div>Our history</div>
+            </div>
+            <div class="msgBlock">
+                About to show the notification message for every day..
+            </div>
+            <div class="addsBlock">
+                <marquee behavior="" direction="">adds to come soon</marquee>
+            </div>
+        </main>
+        <footer>@copyrights 2024</footer>
+
+        <script>
+            var toggleMenuBar = () => {
+                $(".mynavBar").toggle();
+            }
+        </script>
+    </body>
+</html>

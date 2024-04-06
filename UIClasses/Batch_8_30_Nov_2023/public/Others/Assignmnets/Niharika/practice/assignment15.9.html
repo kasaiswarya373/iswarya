@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //WAP to find mean and median values of the given array
+            var n = parseInt(prompt("enter size of array : "));
+            var arr = [n];
+            for(var i = 0 ; i <  n ; i++){
+                arr[i] = parseInt(prompt("enter elements: "));
+            }
+            var mean = 0;
+            var findmean = (arr , mean) => {
+                var sum = 0;
+                for(var i = 0 ; i < n ; i++){
+                     sum += arr[i];
+                }
+                mean = sum/n;
+                return mean;
+            }
+            var sorting = (arr) => {
+                for(var i = 0 ; i < n ; i++){
+                    for(var j = 0 ; j < n ;j++){
+                        if(arr[i]<arr[j]){
+                        var temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            return arr;
+        }
+            var median = 0;
+            var middle = parseInt(n/2);
+            var findmedian = (arr , n , median) => {
+                if(n%2!=0) {
+                    return sorting(arr[middle]);
+                }
+                else{
+                    return (sorting[middle - 1] + sorting[middle]) / 2;
+                }
+               // return median;
+            }
+            console.log("mean of the given array elements is : " + findmean(arr , mean ));
+            console.log("median of the given array is : " + findmedian(sorting(arr) , n , median));
+        </script>
+    </body>
+</html>

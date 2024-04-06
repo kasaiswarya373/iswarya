@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+    </head>
+        <body>
+            <h2>
+                 Demonstrating Reccursive Function   
+            </h2>
+                <script>
+            var ContactInformation = {
+                Firstname: 'SaiDheeraj',
+                LastName: 'Kondagunturi',
+                Petname: 'Nani',
+                Gender: 'Male',
+                MaritalStat: 'UM',
+
+                Mailid: {
+                    office: 'Khlsaidheeraj29998@gmail.com',
+                    personal: ['saidheeraj@gmail.com', 'khlsd@yaahoo.com']
+                },
+                Address: {
+                    Office: {
+                        location: 'Banglore',
+                        Buildingno: '123A',
+                        Floorno: '6th',
+                        Pincode: 500098,
+                        country: {
+                            name: 'India',
+                            code: 'IND'
+                        },
+                        
+                    },
+                    Personal: {
+                        PRInfo: {
+                            details: {
+                                location: 'Hyderabad',
+                                pincode: 585647, 
+                                Colonyname: 'NarayanaColony',
+                                Buildingno: '169A'
+                            },
+                        },
+                        StateInfo: {
+                            details: {
+                                statename: 'Telangana',
+                                stateid: 'TS',
+                                pincode: 834567
+                            },
+                            Country: {
+                                name: 'India',
+                                code: 'IND',
+                            }, 
+                        },
+                    },
+                },
+                phonoNo: {
+                    Office: '+91-9352562',
+                    Personal: [37538744 , 93543534],
+                },
+                SocialNetworkingIds: {
+                    linkedin: 'khlsd/in/linkedin.com',
+                    twitter: 'KSD@twitter.com'
+                },
+                ProfilePic: 'KSD/Info/data.png',
+                
+            };
+
+            var Employeedata = {
+                Name: 'Saidheeraj',
+                Age: 22,
+                Address: 'Hyderabad',
+                Gender: 'Male'
+            };
+
+            var IteratingTheObject = (Info) => {
+                for (var tempKey in Info) {
+                    if ((typeof(Info[tempKey]) == 'object') && !Array.isArray(Info[tempKey])) {
+                        IteratingTheObject(Info[tempKey]);
+                    } else {   
+                        console.log(`${tempKey} value is => ${Info[tempKey]}`); 
+                    }
+                }
+            }
+
+            console.log("=======================================")
+            IteratingTheObject(Employeedata);
+            
+            console.log("=======================================")
+
+            IteratingTheObject(ContactInformation);
+
+            console.log("=======================================")
+                </script> 
+        </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                Demonstrating String-Methods
+            </title>
+    </head>
+        <body>
+            <script>
+              var  greeting = "Hi students wishing you all 'Happy New year' !! hope u enjoyed .. ";
+              var year = "its 2024 !!";
+
+              console.log(year);
+
+              console.log(greeting);
+
+              console.log(greeting[7]);
+
+              console.log(greeting.length);
+
+              console.log(greeting.charAt(7));
+              
+                console.log(greeting.substring(4, 10)); // [both substring and slice are same !!!!!!!]
+                console.log(greeting.slice(4, 10)); // (start, endindex)
+
+                console.log(greeting.substr(4, 12)); // (startindex, totalcharacters)
+
+                console.log(greeting.replace("students", "audience"));
+
+                console.log(greeting.replace(" ", "***")); // for replacing all the characters having space with ***** then;
+                console.log(greeting.replace(/e/gi, "***"));
+
+                console.log(greeting.split(' '));
+
+                console.log(greeting.includes("Happy"));
+
+                console.log(greeting.indexOf("year"));
+
+                console.log(greeting.toUpperCase());
+
+                console.log(greeting.toLowerCase());
+
+            </script>
+        </body>
+</html>

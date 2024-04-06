@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prob1 : JSON With Emp Details</title>
+</head>
+<body>
+    <h2>WAP To display employee details With Dynamic Json</h2>
+
+    <script>
+        let readEmpDetails = () =>{
+   empDetails = {
+      E_name : prompt("Enter Employee Name"),
+      E_age  : prompt("Enter Employee Age"),
+      E_gender : prompt("Enter Employee Gender "),
+      E_dept : prompt("Enter Employee Dept"),
+      E_basicSal : parseInt(prompt("Ennter Employee Basic Salary"))
+   } 
+   displayEmpDetails()
+   getpf()
+   getHra()
+   empTotalSal()
+   getTax()
+}
+let displayEmpDetails = () =>{
+    console.log(`E_name = ${empDetails.E_name}`)
+    console.log(`E_age = ${empDetails.E_age}`)
+    console.log(`E_gender = ${empDetails.E_gender}`)
+    console.log(`E_dept = ${empDetails.E_dept}`)
+    console.log(`E_BasicSal = ${empDetails.E_basicSal}`)
+    
+}
+let empTotalSal = ()=>{
+  empDetails.E_totalSal = empDetails.E_basicSal + empDetails.E_HRA + empDetails.E_PF
+  console.log(`E_totalSal = ${ empDetails.E_totalSal}`)
+}
+let getpf = () =>{
+     empDetails.E_PF = (empDetails.E_basicSal/100)*15
+     console.log(`E_PF = ${empDetails.E_PF}`)
+ 
+}
+let getHra = () => {
+     empDetails.E_HRA =  (empDetails.E_basicSal/100)*10
+    
+          console.log(`E_HRA = ${empDetails.E_HRA}`)
+
+}
+let getTax = () =>{
+    if(empDetails.E_gender == "MALE" || empDetails.E_gender == "male"){
+
+        if(empDetails.E_totalSal > 250000){
+
+            empDetails.E_totalTax =  (empDetails.E_totalSal/100) * 20
+        }
+
+        else if(empDetails.E_totalSal > 200000){
+
+            empDetails.E_totalTax =  (empDetails.E_totalSal/100) * 15
+        }
+
+        else if(empDetails.E_totalSal > 150000){
+
+            empDetails.E_totalTax =  (empDetails.E_totalSal/100) * 10
+        }
+
+        else {
+
+            empDetails.E_totalTax =  0
+        }
+    }
+    if(empDetails.E_gender == "FEMALE" || empDetails.E_gender == "female"){
+
+        if(empDetails.E_totalSal > 250000){
+
+            empDetails.E_totalTax =  (empDetails.E_totalSal/100) * 15
+        }
+
+        else if(empDetails.E_totalSal > 200000){
+
+            empDetails.E_totalTax =  (empDetails.E_totalSal/100) * 10
+        }
+
+        else if(empDetails.E_totalSal > 150000){
+
+            empDetails.E_totalTax =  (empDetails.E_totalSal/100) * 5
+        }
+
+        else {
+
+            empDetails.E_totalTax =  0
+        }
+    }
+    console.log(`TOTAL TAX = ${empDetails.E_totalTax}`)
+}
+
+readEmpDetails()
+    </script>
+</body>
+</html>

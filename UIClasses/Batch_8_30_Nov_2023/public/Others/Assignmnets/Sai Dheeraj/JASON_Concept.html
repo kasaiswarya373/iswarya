@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Demonstrating JASON Concept</title>
+    </head>
+        <body>
+          <script>
+            // JASON Concept :
+
+           /* var studName = "Sai";
+            var studAge = 16;
+            var studGender = "Male";
+            var studLocation = "Hyderabad";
+            var studQuali = "SSC";
+            // var marks = [Sci = 87, Mat = 89, Soc = 95, Eng = 95, Tel = 90, Hin = 79];  
+            var marks = [87, 89, 95, 95, 90, 79];  */
+
+                                                // instead of scatterd data "like above" we can go for the heterogenous data in "JASON" !!
+                                                
+            var studDetails = ['Sai', 16, 'Male','Hyderabad', 'SSC', [87, 89, 95, 95, 90, 79], 0, 0, ''];
+
+            for (var a = 0; a < studDetails[5].length; a++) {
+                studDetails[6] = studDetails[6] + studDetails[5][a]; 
+            }
+
+            studDetails[7] = studDetails[6] / studDetails[5].length;
+
+            if (studDetails[7] >= 80) {
+                studDetails[8] = "Passed";
+
+            } else {
+                studDetails[8] = "failed";
+            }
+
+            console.log('Name is' , studDetails[0]);
+            console.log('age is' , studDetails[1]);
+            console.log('gender is' , studDetails[2]);
+            console.log('Qualification is' , studDetails[4]);
+            console.log('avg is' , studDetails[7]);
+            console.log('Grade is' , studDetails[8]);
+          </script>  
+        </body>
+</html>

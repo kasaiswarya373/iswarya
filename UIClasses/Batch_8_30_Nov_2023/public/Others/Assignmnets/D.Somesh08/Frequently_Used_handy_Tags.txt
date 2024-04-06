@@ -1,0 +1,152 @@
+imp :
+----- 
+1)To open any folder in vs-code.
+open corresponding folder, do cmd-> enter *code (dot).
+----------------------------------------------------------
+
+1)    * {
+            box-sizing: border-box; //by default, it's content-box.
+        }
+
+Explanation : 
+------------
+
+CSS Box Sizing
+The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+
+Without the CSS box-sizing Property
+By default, the width and height of an element is calculated like this:
+
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+
+This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).
+
+The following illustration shows two <div> elements with the same specified width and height:
+
+This div is smaller (width is 300px and height is 100px).
+
+This div is bigger (width is also 300px and height is 100px).
+
+The two <div> elements above end up with different sizes in the result (because div2 has a padding specified):
+
+Example
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid red;
+}
+
+-----------------------------------------------------------------------------------------------------------
+
+2) while working with *input tag, 
+
+   <label for="Name">Name</label> <input type="text" id="Name" name="name" value="Someshwar Reddy">
+
+-> here, we are mapping label with input, using *id of *input.
+-> we must use *id only, so that as soon as we click on label,text box v'll automatically gets heighlighted in UI.
+
+-----------------------------------------------------------------------------------------------------------
+
+3):target pseudo cls.here * indicates entire web page.
+
+ *:target{
+            border: 3px solid red;
+            background-color: black;
+        }
+
+-> while working with <a> tag & if we are focusing an element as soon as we click on a <a> tag, to apply any css properties to that targeted element, at that time this *:target pseudo cls is very useful.
+
+-----------------------------------------------------------------------------------------------------------
+
+4) input:default + label{  //it means, immediate field of input.
+                 background-color:red;
+                           }
+------------------------------------
+5) p:not(.container){ //means, apart from from a <p> tag, which has class as .container, select remaining all.
+              background-color:red;
+                   }
+
+------------------------------------------------
+
+6) p::selection{
+           background-color:black;
+           color:green;
+                   }  //this ::selection adds css properties to dom content, when we select the content on the browser/dom.
+
+--------------------------------------------------------------------------------------------------------------
+
+7) Some of predefined methods of JavaScript :
+
+<script>
+
+alert("shows any message as an alert message on the dom");
+document.write("used to print something on dom");
+prompt("takes any input as string");
+typeof(var a); //Identifies the type(*string, int) of a variable.
+
+
+Type casting : the process of converting one type of data type of another data type is known as TypeCasting.
+parseInt(a) //converts any variable as a number.but it should be of form number to convert properly.
+parseFloat(a)
+etc.....
+
+</script>
+
+----------------------------------------------------------------------------------------------------------------
+
+8) How to reverse a number?
+
+I am assuming that you asked how 1 is the remainder when 1 is divided by 10.
+
+6 divided by 2
+Remainder will be 0 because 2*3 = 6.
+
+7 divided by 2
+Remainder in this case will be 1. We need to find the highest number less than 7 whose divisor is 2. So the highest number we found by this method is 6. Hence , the remainder is 1.
+
+Now 1 divided by 10.
+We need to find the highest number which is less than or eqaul to 1 and is the result of product of 10 and some number. In this case highest number is 0. So the remainder is 1-0 = 1.
+
+To find the remainder of a divison operation , you can use modulus operator % . It is present in most programming languages.
+
+X = A % B
+Here X is the remainder when A is divided by B.
+
+ex  : 
+        var dev = 1%10;
+
+        document.write(`dev value is : ${dev}`); o/p : 1
+
+2) 6 ( 3      2)7(3        10)1(0 -> quotient
+   6            6             0
+  ---          ---           --- 
+   0            1             1 -> remainder
+
+----------------------------------------------------------------------------------------------------------------
+
+9) * {
+    margin: 0;
+    padding: 0;
+  } 
+->used to remove default space at the start of webpage.
+
+----------------------------------------------------------------------------------------------------------------
+
+10) check if an element has child nodes.
+
+    if (bodyEl.hasChildNodes()) {
+
+        // Remove all the rows within the tbody
+        while (bodyEl.firstChild) {
+            bodyEl.removeChild(bodyEl.firstChild);
+        }
+    }
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Using json object with methods</title>
+</head>
+
+<body>
+    <script>
+        var empData = {
+
+            readEmployeeData() {
+
+                this.ename = prompt("enter the employee name:");
+                empData.age = prompt("enter the employee age:");
+                empData.gender = prompt("enter the employee gender:");
+                this.basicsal = prompt("enter the basic salary");
+                this.basicsal = parseInt(this.basicsal);
+                this.getPfAndHra();
+            },
+
+            getPfAndHra() {
+                this.pf = (14 * this.basicsal) / 100;
+                console.log("The pf of the employee is:" + this.pf);
+                empData.hra = (25 * this.basicsal) / 100;
+                console.log("The hra of the employee is:" + empData.hra);
+                this.getTotalSal();
+            },
+
+            getTotalSal() {
+                this.totalsal = this.basicsal;
+                this.totalsal = this.basicsal + this.pf + empData.hra;
+                console.log("The total salary of the employee is:" + empData.totalsal);
+                this.getTotaltax();
+            },
+
+            getTotaltax(){
+
+                if (empData.gender == 'male') {
+                    if (this.totalsal >= 200000) {
+                        empData.taxpercent = (empData.totalsal * 15) / 100;
+                        empData.netsalary = empData.totalsal - empData.taxpercent;
+                        console.log("the netsalary of employee is:" + empData.netsalary);
+                    }
+                    else if (empData.totalsal >= 100000) {
+                        empData.taxpercent = (empData.totalsal * 10) / 100;
+                        empData.netsalary = empData.totalsal - empData.taxpercent;
+                        console.log("the netsalary of employee is:" + empData.netsalary);
+                    }
+                    else if (empData.totalsal >= 50000) {
+                        empData.taxpercent = (empData.totalsal * 5) / 100;
+                        empData.netsalary = empData.totalsal - empData.taxpercent;
+                        console.log("the netsalary of employee is:" + empData.netsalary);
+                    }
+                    else {
+                        empData.taxpercent = empData.totalsal;
+                        console.log("the netsalry of employee is:" + empData.totalsal);
+                    }
+
+                }
+                else {
+                    if (empData.totalsal >= 200000) {
+                        empData.taxpercent = (empData.totalsal * 10) / 100;
+                        empData.netsalary = empData.totalsal - empData.taxpercent;
+                        console.log("the netsalary of employee is:" + empData.netsalary);
+                    }
+                    else if (empData.totalsal >= 100000) {
+                        empData.taxpercent = (empData.totalsal * 5) / 100;
+                        empData.netsalary = empData.totalsal - empData.taxpercent;
+                        console.log("the netsalary of employee is:" + empData.netsalary);
+                    }
+                    else {
+                        empData.taxpercent = empData.totalsal;
+                        console.log("the netsalary of employee is:" + empData.totalsal);
+                    }
+
+                }
+            },
+
+            getDisplayInfo() {
+                this.readEmployeeData();
+                console.log(this);
+                console.log(`The name of the employee is : ${this.ename}`);
+                console.log(`The age of the employee is : ${empData.age}`);
+                console.log(`The gender of the employee is : ${empData.gender}`);
+
+            }
+        };
+        empData.getDisplayInfo();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details with Json</title>
+</head>
+<body>
+   
+    <script>
+        var stuDetails = {
+            "Name" : "Royal",
+            "Age" : 25,
+            "Gender" : "Male",
+            "Location" : 'Maharashtra',
+            "Marks" : [44, 55, 66, 77],
+            "Total" : 0,
+            "Average" : 0,
+            "Grade" : ''
+        }
+
+        for (var i = 0; i < stuDetails.Marks.length; i++){
+
+            stuDetails.Total += stuDetails.Marks[i];
+        }
+        
+        stuDetails.Average = stuDetails.Total / stuDetails.Marks.length;
+
+        if (stuDetails.Average >= 40){
+            stuDetails.Grade = 'Passed';
+        } else {
+            stuDetails.Grade = 'You have surprised'
+        }
+        
+        console.log('Name is    : '+stuDetails.Name);
+        console.log('Age is     : '+stuDetails.Age);
+        console.log('Total is   : '+stuDetails.Total);
+        console.log('Average is : '+stuDetails.Average);
+        console.log('Grade is   : '+stuDetails.Grade);
+
+
+        </script>
+    
+</body>
+</html>

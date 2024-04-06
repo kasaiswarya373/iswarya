@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeNumbersInArray</title>
+</head>
+<body>
+    Program to print all the prime Numbers in a array
+    <script>
+        var readingArrayValues = () =>
+        {
+            var arrayValues = [];
+            var size = parseInt(prompt(`Enter size of array`));
+            for(var i = 0;i < size;i++)
+            {
+                arrayValues[i] = parseInt(prompt(`Enter ${i+1} value`));
+            }
+            return arrayValues;
+        }
+
+        var  storingPrimeNumsinArray = (arrayVals) =>
+        {
+            var primeNums = [];
+            var k = 0;
+            for(var i = 0;i < arrayVals.length;i++)
+            {
+                if(arrayVals[i] % 2 == 1 || arrayVals[i] == 2)
+                {
+                var count = 0;
+                for(var j = 3;j < arrayVals[i];j += 2)
+                {
+                    if(arrayVals[i] % j == 0)
+                    {
+                        count += 1;
+                    }
+                }
+                
+                if(count == 0)
+                {
+                    primeNums[k] = arrayVals[i]; 
+                    k++;  
+                }
+                }
+            }
+            return primeNums;
+        }
+
+        var printingPrimeNums = () =>
+        {
+        var arrayVals = readingArrayValues();
+        var allPrimeNumsInArray = storingPrimeNumsinArray(arrayVals);
+        console.log(`Given Array : \n ${arrayVals}`);
+        console.log(`Prime Numbers in Array ${allPrimeNumsInArray}`);
+        }
+
+        printingPrimeNums();
+    </script>
+</body>
+</html>

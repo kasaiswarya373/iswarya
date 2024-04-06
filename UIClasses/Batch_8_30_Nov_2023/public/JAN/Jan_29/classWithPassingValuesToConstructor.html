@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrting js classes
+        </title>
+    </head>
+    <body>
+        <script>
+
+            class StudentDetails {
+                
+                constructor(obj) {
+                    var passportno  = '2323423';
+                    this.sname = obj.sname;
+                    this.age =  obj.sage;
+                    this.location =  obj.sloc;
+                    this.marks =  obj.smarks;
+                }
+                displayStudentDetails(a1) {
+                    this.getTotalAndAvg();
+                    console.log("----------Student detalis=---------------")
+                    console.log("Student name " + this.sname)
+                    console.log("Age is " + this.age);
+                    console.log("Total is " + this.total);
+                    console.log("Avg " + this.avg);
+                }
+                getTotalAndAvg() {
+                    this.total = 0;
+                    for (var i = 0 ; i < this.marks.length; i++) {
+                        this.total += this.marks[i];
+                    }
+                    this.avg = this.total / this.marks.length;
+                }
+            }
+            
+            var data1 = {
+                name: 'raj',
+                age: 20,
+                loc: 'Hyd',
+                marks :[34, 56, 79]
+            }
+            var s1 = new StudentDetails(data1);
+            s1.displayStudentDetails(100);
+
+            // var s2 = new StudentDetails("Teena", 22, 'Che', [66, 99, 56]);
+            // s2.displayStudentDetails();
+
+            // var s3 = new StudentDetails("Prasad", 22, 'Hyd', [5, 99, 45]);
+            // s3.displayStudentDetails();
+
+
+            // var list = [];
+            // list.push(s1, s2, s3)
+            // console.log(list)
+
+        
+            // console.log(s1)
+            // console.log(s2)
+            // console.log(s3)
+
+            
+
+        </script>
+    </body>
+</html>

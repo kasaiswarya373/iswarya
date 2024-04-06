@@ -1,0 +1,42 @@
+#ball
+{
+    background-color: aqua;
+    border-radius: 50%;
+    width: 150px;
+    height:150px;
+    position: absolute;
+    animation : mymoves 3s infinite;
+}
+@keyframes mymoves {
+    0%
+    {
+        left:0px;
+        top:0px;
+    }
+    20%
+    {
+        top:590px;
+        left:250px;
+    }
+    40%
+    {
+        top:100px;
+        left:500px;
+    }
+    60%
+    {
+        top:590px;
+        left:750px;
+    }
+    80%
+    {
+        top:200px;
+        left:1000px;
+    }
+    100%
+    {
+        top:590px;
+        left:1250px;
+    }
+
+}

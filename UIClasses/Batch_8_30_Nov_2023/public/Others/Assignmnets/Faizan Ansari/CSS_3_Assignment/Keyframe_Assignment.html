@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Keyframe Assignment</title>
+    </head>
+    <style>
+         @keyframes myPattern {
+            0%{
+                border-radius: 50%;
+                background-color: red;
+                left: 70%;
+            }
+            25%{
+                border-radius: 0%;
+                background-color: lime;
+                top: 70%;
+            }
+            50%{
+                border-radius: 50%;
+                background-color:black;                
+                left: 0%;
+            }
+            75%{
+                border-radius:  0%;
+                background-color: darkblue;
+                top: 10%;
+            }
+         }   
+        .container{ 
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            position: absolute;
+            animation: myPattern 10s infinite;
+        }
+    </style>
+    <body>
+        <div class="container"></div>
+    </body>
+</html>

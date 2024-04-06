@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic OTP</title>
+    
+</head>
+<body>
+    <input type="button" value="resend" onclick="otpgenerating(5)">
+    <div>otp : <span ></span></div>
+    <script>
+           var otpgenerating = (size) =>
+           {
+               var otpValue = '';
+               for(var i = 1;i <= size;i++)
+               {
+                   var value = Math.floor(Math.random() * 10);
+                   otpValue += value;
+               }
+               document.querySelector("span").innerText= otpValue;
+            }
+
+
+    </script>
+</body>
+</html>

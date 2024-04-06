@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3 id="resultHeading"></h3>
+    <div id="resultContainer"></div>
+
+    <script>
+        class Region {
+            constructor(cstate, ccountry) {
+                this.state = cstate;
+                this.country = ccountry;
+            }
+
+            displayRegionDetails() {
+                const resultContainer = document.getElementById("resultContainer");
+                const details = document.createElement("p");
+                details.textContent = `Name of the State is ${this.state} | Name of the Country is ${this.country}`;
+                resultContainer.appendChild(details);
+            }
+        }
+
+        class Pune extends Region {
+            constructor(cname, cfamous, cpopulation, cstate, ccountry) {
+                super(cstate, ccountry);
+                this.city = cname;
+                this.famous = cfamous;
+                this.population = cpopulation;
+            }
+
+            displayPuneCityDetails() {
+                const resultContainer = document.getElementById("resultContainer");
+                const details = document.createElement("p");
+                details.textContent = `City Name is ${this.city} | City Famous for ${this.famous} | Population in ${this.city} is ${this.population}`;
+                resultContainer.appendChild(details);
+
+                this.displayRegionDetails();
+                resultContainer.appendChild(document.createElement("hr"));
+            }
+        }
+
+        class Mumbai extends Region {
+            constructor(cname, cfamous, cpopulation, cstate, ccountry) {
+                super(cstate, ccountry);
+                this.city = cname;
+                this.famous = cfamous;
+                this.population = cpopulation;
+            }
+
+            displayMumbaiCityDetails() {
+                const resultContainer = document.getElementById("resultContainer");
+                const details = document.createElement("p");
+                details.textContent = `City Name is ${this.city} | City Famous for ${this.famous} | Population in ${this.city} is ${this.population}`;
+                resultContainer.appendChild(details);
+
+                this.displayRegionDetails();
+                resultContainer.appendChild(document.createElement("hr"));
+            }
+        }
+
+        const cityPune = new Pune("Pune", "Education", 7166374, "Maharashtra", "India");
+        cityPune.displayPuneCityDetails();
+
+        const cityMumbai = new Mumbai("Mumbai", "Carrier", 7966374, "Maharashtra", "India");
+        cityMumbai.displayMumbaiCityDetails();
+
+        document.getElementById("resultHeading").textContent = "Displaying Region and City Details:";
+    </script>
+</body>
+
+</html>

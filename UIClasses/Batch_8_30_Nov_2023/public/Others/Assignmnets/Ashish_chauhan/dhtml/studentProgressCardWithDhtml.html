@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Progress Card</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h3>Student Progress Card</h3>
+    <ul>
+      <li class="title">Student Details</li>
+      <li>
+        <label for="sname">Student Name</label>
+        <input type="text" id="sname" />
+      </li>
+      <li>
+        <label for="age">Age</label>
+        <input type="text" id="age" />
+      </li>
+      <li>
+        <label for="gender">Gender</label>
+        Male
+        <input type="radio" name="gender" value="Male" checked />
+        Female
+        <input type="radio" name="gender" value="Female" />
+      </li>
+
+      <li>
+        <label for="">Class:</label>
+        <select name="" id="studentClass">
+          <option value="class I">Class I</option>
+          <option value="class II">Class II</option>
+          <option value="class III">Class III</option>
+          <option value="class IV">Class IV</option>
+        </select>
+      </li>
+
+      <li class="marks">
+        <label for="">Marks:</label>
+        <input type="text" id="m1" />
+        <input type="text" id="m2" />
+        <input type="text" id="m3" />
+        <input type="text" id="m4" />
+        <input type="text" id="m5" />
+      </li>
+      <li>
+        <input
+          type="button"
+          value="Generate Progress Card"
+          onclick="readData()"
+        />
+      </li>
+    </ul>
+  </body>
+</html>

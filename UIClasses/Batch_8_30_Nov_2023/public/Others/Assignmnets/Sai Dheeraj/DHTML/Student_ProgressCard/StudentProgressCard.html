@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>INDEX</title>
+                <link rel="stylesheet" href="scard.css">
+                <script src="scard.js"></script>
+        </head>
+            <body>
+               <h1> Student Details </h1>
+            <ul>
+               <li class="Student Details"></li>
+               
+               <li>
+                <label for="sname">Student name</label>
+                <input type="text" id = "sname">
+               </li>
+
+               <li>
+                    <label for="sage">Student age</label>
+                    <input type="text" id="sage">
+               </li>
+
+               <li>
+                <label for="gender">Student gender</label>
+                <input type="radio" name="gender" value="male">male
+                <input type="radio" name="gender" value="female" checked>female
+               </li>
+
+               <li>
+                <label for="class">Class</label>
+                <select name="" id="stdclass">
+                    <option value="Class I-A">Class I-A</option>
+                    <option value="Class I-B">Class I-B</option>
+                    <option value="Class II-A">Class II-A</option>
+                    <option value="Class II-B">Class II-B</option>
+                    <option value="Class III-A">Class III-A</option>
+                    <option value="Class III-B">Class III-B</option>
+                    <option value="Class IV-A">Class IV-A</option>
+                    <option value="Class IV-B">Class IV-B</option>
+                </select>
+               </li>
+
+               <li class="marks">
+                <label> Marks </label>
+                <input type="text" id="m1">
+                <input type="text" id="m2">
+                <input type="text" id="m3">
+                <input type="text" id="m4">
+                <input type="text" id="m5">
+               </li>
+
+               <li>
+                <input type="button" value="Progress Card" onclick="StudentDetails()">
+               </li>
+            </ul>  
+        </body>
+</html>

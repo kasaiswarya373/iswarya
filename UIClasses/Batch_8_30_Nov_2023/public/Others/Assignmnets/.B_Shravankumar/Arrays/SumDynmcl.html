@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum = () => {
+            var n = prompt("enter a nth value");
+            var marks = [];
+              
+            for (i = 0; i < n; i++) {
+                marks[i] = parseInt(prompt(`enter a ${i+1} value`));
+            }
+
+            var total = 0;
+            for (i = 0; i < marks.length; i++) {
+                total += marks[i];
+            }
+            console.log(`${total}`);
+        }
+        sum();
+    </script>
+    
+</body>
+</html>

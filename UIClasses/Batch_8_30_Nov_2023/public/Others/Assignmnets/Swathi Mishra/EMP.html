@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title> EMP DETAILS </title>
+</head>    
+<body>
+    <h1> EMP Details</h1>
+    <script>
+        var name,age,gender,dept,pf,hra,basicsal,taxper,tax,onhandsal;
+        
+        prompt("enter emp name");
+        prompt("enter age");
+        prompt("enter gender");
+        prompt("enter dept");
+        var basicsal=prompt("enter sal");
+         basicsal=parseInt(basicsal);
+        pf=(basicsal*14)/100;
+        hra=(basicsal*12)/100;
+        totalsal=basicsal+pf+hra;
+        console.log("basicsal= " +basicsal);
+        console.log("totalsal= "+totalsal);
+
+        if(gender=='Male' || 'M') {
+            if(totalsal>200000) {
+                taxper=15;
+
+            }
+            else if(totalsal>150000) {
+                taxper=10;
+            }
+            else if(totalsal>100000){
+                taxper=5;
+            }
+        } 
+        else if(gender=='Female' || 'F') {
+            if(totalsal>200000) {
+                taxper=10;
+            } else if(totalsal>150000){
+                taxper=5;
+            }
+        }
+
+        tax=(totalsal*taxper)/100;
+        onhandsal=totalsal-tax;
+        console.log(tax);
+        console.log(onhandsal);
+
+
+
+
+    </script>
+
+</body>

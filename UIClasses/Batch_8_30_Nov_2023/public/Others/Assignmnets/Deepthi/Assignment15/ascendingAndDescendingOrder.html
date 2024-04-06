@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascending And Descending Order of an Array</title>
+</head>
+
+<body>
+    <script>
+
+        var readAscendingArray = () => {
+
+            var sort = [24, 60, 4, 89, 6, 12, 34];
+            for (i = 0; i < sort.length; i++) {
+                var result = getAscendingArray(sort);
+                console.log(result);
+            }
+        }
+
+        var getAscendingArray = (n) => {
+
+            var temp;
+            for (i = 0; i < n.length; i++) {
+                for (j = i + 1; j <= n.length; j++) {
+                    if (n[i] > n[j]) {
+                        temp = n[i];
+                        n[i] = n[j];
+                        n[j] = temp;
+                    }
+                }
+            }
+            return n;
+        }
+
+        readAscendingArray();
+
+        var readDescendingArray = () => {
+
+            var sort = [24, 60, 4, 89, 6, 12, 34];
+            for (i = 0; i < sort.length; i++) {
+                var result = getDescendingArray(sort);
+                console.log(result);
+            }
+        }
+
+        var getDescendingArray = (n) => {
+
+            var temp;
+            for (i = 0; i < n.length; i++) {
+                for (j = i + 1; j <= n.length; j++) {
+                    if (n[i] < n[j]) {
+                        temp = n[i];
+                        n[i] = n[j];
+                        n[j] = temp;
+                    }
+                }
+            }
+            return n;
+        }
+
+        readDescendingArray();
+    </script>
+
+</body>
+
+</html>

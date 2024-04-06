@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <title> Number of Digits </title>
+</head>
+<body>
+    <h1> Number of digits in a given number </h1>
+    <script>  
+        var count=0;
+        var n=parseInt(prompt("enter a number"));
+        for( var i = n ; n > 0 ; n = parseInt(n/10) ) {
+        count++;
+        }   
+        console.log("count of digits: ", +count);
+    </script>
+</body>
+</html>        

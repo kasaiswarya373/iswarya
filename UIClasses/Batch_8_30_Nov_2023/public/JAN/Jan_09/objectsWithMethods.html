@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating objects with methods.
+        </title>
+    </head>
+    <body>
+        <script>
+            var empname = 'Teena';
+
+            var showempdata = () => {
+
+            }
+
+            var data  = {
+                readValues: () => {
+                    data.a1 = prompt("entr a1 value");
+                    data.a2 = prompt("enter a2 value");
+
+                    data.a1 = parseInt(data.a1);
+                    data.a2 = parseInt(data.a2);
+                    data.getSumofValues();
+                }
+            };
+
+
+            data.getSumofValues = () => {
+                data.result = 0;
+                data.result = data.a1 + data.a2;
+                console.log("Sum of values is " + data.result);
+            }
+
+            console.log(data)
+
+            data.readValues();
+        </script>
+    </body>
+</html>

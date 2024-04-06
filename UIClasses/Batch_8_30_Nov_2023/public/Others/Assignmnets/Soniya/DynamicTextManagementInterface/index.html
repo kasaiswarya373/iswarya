@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BridgentechReactAssignment</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="title">Dynamic Text Management Interface</div>
+    <div id="parentContainer">
+        <div id="header">Header</div>
+        <div id="leftTopContainer">
+            <input type="text" id="textBox" placeholder="Enter text" maxlength="30">
+            <button id="addBtn" onclick="addText()">Add</button>
+        </div>
+        <div id="rightSubContainer">
+            <div id="removedTextDispayContainer"></div>
+            <button id="endBtn" onclick="showPopUp()">End</button>
+            <button id="resetBtn" onclick="clearContent()">Reset</button>
+        </div>
+        <div id="leftBottomContainer"></div>
+    </div>
+</body>
+</html>

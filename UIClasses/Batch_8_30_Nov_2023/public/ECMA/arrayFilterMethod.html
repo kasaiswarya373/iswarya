@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Array Filter method
+        </title>
+    </head>
+    <body>
+        <script>
+            var data = [34, 45,78, 90, 12, 34, 9, 22, 16];
+
+            /*var temp = [];
+            for (var i = 0 ; i < data.length; i++) {
+                if (data[i] % 2 == 0) {
+                    temp.push(data[i]);
+                } 
+            }*/
+
+            var temp = data.filter((value) => {
+                if (value % 2 != 0) {
+                    return true;
+                }
+            });
+            console.log(temp);
+
+
+            var booknames = ["abc book", "ab test book", "pqr book", "pq book", 'psr book'];
+
+            var userchar = 'pq';
+
+            var result = booknames.filter((value) => {
+            
+                if (value.substring(0, userchar.length) == userchar) {
+                    return true;
+                }
+            });
+            console.log(result)
+
+
+
+        </script>
+    </body>
+</html>

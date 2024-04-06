@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var employename= prompt("enter your name");
+        console.log("employe name" + employename);
+        console.log(typeof(employename));
+
+        var employeage=prompt("enter your age");
+        console.log("employeage" + employeage);
+        console.log(typeof(employeage));
+
+        var employegender=prompt("enter your gender");
+        console.log("employegender" + employegender);
+        console.log(typeof(employegender));
+
+        var employedepartment=prompt("employedepartment" + employedepartment);
+        console.log("employedepartment" + employedepartment);
+        console.log(typeof(employedepartment));
+
+        var basicsalary=prompt("enter your basicsalary");
+        basicsalary=parseInt(basicsalary);
+
+        console.log("employebasicsalary" + basicsalary);
+        console.log(typeof(basicsalary));
+
+        var pfparcentage=prompt("enter the pf parcentage");
+        console.log(typeof(pfparcentage));
+        pfparcentage=parseFloat(pfparcentage)/100;
+        console.log("employepfparcentage" + pfparcentage);
+
+        var pf= pfparcentage*basicsalary
+        console.log(typeof(pf));
+        console.log("employe pf") + pf;
+
+        var hraparcentage=prompt("enter hra percentage");
+        hraparcentage=parseInt(hraparcentage)/100;
+        console.log(typeof(hraparcentage));
+        console.log("hraparcentage" + hraparcentage);
+
+        var hra=hraparcentage*basicsalary
+        console.log(typeof(hra));
+        console.log("employee hra"+hra);
+
+        var totalsalary=pf+hra+basicsalary;
+        console.log(typeof(totalsalary));
+        console.log("emplopye totalsalary" + totalsalary);
+
+    </script>
+</body>
+</html>

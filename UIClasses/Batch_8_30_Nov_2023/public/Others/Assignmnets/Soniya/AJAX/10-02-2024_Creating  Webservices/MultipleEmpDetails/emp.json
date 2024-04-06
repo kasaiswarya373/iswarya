@@ -1,0 +1,54 @@
+{
+  "empData" : [
+        {
+            "img" : "../MultipleEmpDetails/images/emp1.jpeg",
+            "name" : "Ronald",
+            "age" : 23,
+            "gender" : "Male",
+            "department" : "computer science",
+            "basicSalary" : 50000
+            
+        },
+        {
+            "img" : "../MultipleEmpDetails/images/emp2.jpeg",
+            "name" : "John",
+            "age" : 24,
+            "gender" : "Male",
+            "department" : "computer science",
+            "basicSalary" : 60000
+            
+        },
+        {
+            "img" : "../MultipleEmpDetails/images/emp3.jpeg",
+            "name" : "Sony",
+            "age" : 22,
+            "gender" : "Female",
+            "department" : "computer science",
+            "basicSalary" : 50000
+        },
+        {
+            "img" : "../MultipleEmpDetails/images/emp4.jpeg",
+            "name" : "Honey",
+            "age" : 22,
+            "gender" : "Female",
+            "department" : "computer science",
+            "basicSalary" : 50000
+        },
+        {
+            "img" : "../MultipleEmpDetails/images/emp5.jpeg",
+            "name" : "Mary",
+            "age" : 23,
+            "gender" : "Female",
+            "department" : "computer science",
+            "basicSalary" : 40000
+        },
+        {
+            "img" : "../MultipleEmpDetails/images/emp6.jpeg",
+            "name" : "Pinky",
+            "age" : 22,
+            "gender" : "Female",
+            "department" : "computer science",
+            "basicSalary" : 50000
+        }
+    ]
+    }

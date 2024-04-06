@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title> Prime numbers in given range </title>
+</head>
+<body>
+    <h1> Prime numbers in a given range </h1>
+    <script>
+        var i,j;
+        /*var n=parseInt(prompt("enter a given range"));*/
+        for(j=1;j<=10;j++) {
+            count=0;
+        for(i=2;i<j;i++) {
+            if(j%i==0) {
+                count++;
+                break;
+            }
+
+        }
+    
+        if(j>1 && count==0) {
+            
+            console.log(j);
+            
+
+           
+        } 
+       
+        
+
+    }
+    
+    </script>
+</body>
+</html>
+

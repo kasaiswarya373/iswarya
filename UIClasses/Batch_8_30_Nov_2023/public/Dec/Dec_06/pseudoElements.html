@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Pseudo Elements
+        </title>
+        <style>
+            
+            h2 {
+                text-align: center;
+                border: 1px solid;
+                text-decoration: underline;
+                margin: 10px;
+                padding: 10px;
+            }
+            h3 {
+                color: aqua;
+            }
+            p::first-letter {
+                font-size: 20px;
+                font-weight: bold;
+                color: green;
+            }
+            p::first-line {
+                background-color: yellow;
+            }
+            p::selection {
+                color: green;
+                background-color: red;
+            }
+            p::after {
+                text-decoration: underline;
+                color: blue;
+              content: ' Continue reading from our main page...';  
+            }
+
+            p[name=crimeNews]::before {
+                content: 'CRIME NEWS';
+                color: red;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>
+            News Content
+        </h2>
+        <h3>
+            News Item 1
+        </h3>
+        <p>
+            The lawsuit asserts that Brown had been drinking the lemonade for six days and was a member of Panera’s Unlimited Sip Club, granting access to unlimited drinks. Notably, a large Charged Lemonade reportedly contains 390 milligrams of caffeine, nearly reaching the FDA's recommended daily maximum intake of 400 milligrams.
+           
+        </p>
+
+        <h3>
+            News Item 2
+        </h3>
+        <p name="crimeNews" class="cnews">
+            Lawsuit asserts that Brown had been drinking the lemonade for six days and was a member of Panera’s Unlimited Sip Club, granting access to unlimited drinks. Notably, a large Charged Lemonade reportedly contains 390 milligrams of caffeine, nearly reaching the FDA's recommended daily maximum intake of 400 milligrams.
+        </p>
+        <h3>
+            News Item 2
+        </h3>
+        <p>
+            Lawsuit asserts that Brown had been drinking the lemonade for six days and was a member of Panera’s Unlimited Sip Club, granting access to unlimited drinks. Notably, a large Charged Lemonade reportedly contains 390 milligrams of caffeine, nearly reaching the FDA's recommended daily maximum intake of 400 milligrams.
+        </p>
+        <h3>
+            News Item 2
+        </h3>
+        <p name="crimeNews" class="cnews">
+            Lawsuit asserts that Brown had been drinking the lemonade for six days and was a member of Panera’s Unlimited Sip Club, granting access to unlimited drinks. Notably, a large Charged Lemonade reportedly contains 390 milligrams of caffeine, nearly reaching the FDA's recommended daily maximum intake of 400 milligrams.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime numbers between 1 to 1000</title>
+</head>
+
+<body>
+    <script>
+        for(var i = 2; i <= 100; i++){
+            num = 0;
+            for(var j = 1; i >= j; j++)
+            {
+                if(i % j == 0)
+                {
+                    num++;
+                }
+            }
+
+            if(num == 2)
+            {
+                console.log("prime numbers are:" +i);
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascending And Descending Array Values</title>
+</head>
+<body>
+    Program to set array values in ascending and descending order
+    <script>
+        var readingArrayValues = () =>
+        {
+            var arrayValues = [];
+            var size = parseInt(prompt(`Enter size of array`));
+            for(var i = 0;i < size;i++)
+            {
+                arrayValues[i] = parseInt(prompt(`Enter ${i+1} value`));
+            }
+            console.log(`Given Array ${arrayValues}`);
+            return arrayValues;
+        }
+
+        var  sortAscending = (arrayVals) =>
+        {
+            var temp = 0;
+            for(var i = 0;i < arrayVals.length;i++)
+            {
+                for(var j = 0;j < arrayVals.length;j++)
+                {
+                   if(arrayVals[i] < arrayVals[j])
+                    {
+                        {
+                                temp = arrayVals[i];
+                                arrayVals[i] = arrayVals[j];
+                                arrayVals[j] = temp;
+                        }
+                    }
+                }
+                
+            }
+            return arrayVals;
+        }
+
+        var printingValues = () =>
+        {
+        var arrayVals= readingArrayValues();
+        var ascendingValues = sortAscending(arrayVals);
+        console.log(`Ascending Order Array : \n ${ascendingValues}`);
+        }
+        printingValues();
+    </script>
+</body>
+</html>

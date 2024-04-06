@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///C:/UI_FULLSTACK_TRAINING/WebApplication/public/CSS-3/animation.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+    }
+    .container{
+        width: 80%;
+        height:80%;
+        background-size: 100% 100% ;
+        box-shadow:20px 20px 10px black ;
+        animation: slider 10s linear infinite;
+    }
+    @keyframes slider{
+        0%{
+            background-image: url(https://thumbs.dreamstime.com/b/picturesque-sunrise-scenic-summer-morning-nature-background-bright-sunshine-green-leaves-trees-riverside-sunlight-clean-148892223.jpg);
+        }
+        25%
+        {
+            background-image: url(https://img.freepik.com/premium-photo/beautiful-landscape-with-sun-forest-meadow-sunrise-sun-s-rays-shine-through-trees_260899-1232.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1708646400&semt=ais);
+        }
+        50%{
+            background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20220627/pngtree-pine-forest-at-dawn-or-dusk-in-springtime-photo-image_32122066.jpg);
+        }
+        75%{
+            background-image: url(https://nakednutrition.com/cdn/shop/articles/Depositphotos_2544276_L_345x345@2x.jpg?v=1652689226);
+        }
+        100%{
+            background-image: url(https://www.shutterstock.com/image-photo/sunny-forest-early-morning-260nw-90779018.jpg);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+
+</body></html>

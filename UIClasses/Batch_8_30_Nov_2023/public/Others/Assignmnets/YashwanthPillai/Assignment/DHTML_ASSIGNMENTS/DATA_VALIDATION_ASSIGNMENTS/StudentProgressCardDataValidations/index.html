@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORE MULTIPLE STUDENT PROGRESS CARD</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h2>STUDENT PROGRESS CARD</h2>  
+    <div class="container">
+        <div class="input-container">
+            <li class="head1">PROGRESS CARD</li>
+            <li>
+                <label for="sname">NAME : </label>
+                <input type="text" name="sname" id="Sname" onkeypress="return validateName(event)">
+                <div class="error" id="SNAME">name is mandatory</div>
+            </li>
+            <li>
+                <label for="sid">ROLL-NO : </label>
+                <input type="text" name="sid" id="Sid" onkeypress="return validateIdAndAge  (event)" maxlength="10"> 
+                <div class="error" id="SID">roll-no is mandatory</div>
+
+            </li>
+            <li>
+                <label for="sage">AGE : </label>
+                <input type="number" name="sage" id="Sage" onkeypress="return validateIdAndAge(event)"  maxlength="3" min="1" max="25">
+                <div class="error" id="SAGE">age is mandatory</div>
+
+            </li>
+            <li>
+                <label for="sgender">GENDER : </label>
+                <input type="radio" name="sgender" value="Male" >Male
+                <input type="radio" name="sgender" value="Female" >Female
+            </li>
+            <li>
+                <label for="sclass">CLASS : </label>
+                <select name="sclass" id="Sclass">
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                    <option value="4th">4th</option>
+                    <option value="5th">5th</option>
+                    <option value="6th">6th</option>
+                    <option value="7th">7th</option>
+                    <option value="8th">8th</option>
+                    <option value="9th">9th</option>
+                    <option value="10th">10th</option>
+                </select>
+            </li>
+            <li>
+                <label for="ssection">SECTION : </label>
+                <select name="ssection" id="ssec">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </li>
+            <li>
+                <label for="smarks">MARKS : </label>
+                <input type="text" name="smarks" id="m1" onkeypress="return validateMarks(event)">
+                <div class="error" id="M1">marks is mandatory</div>
+
+                <input type="text" name="smarks" id="m2" onkeypress="return validateMarks(event)">
+                <div class="error" id="M2">marks is mandatory</div>
+
+                <input type="text" name="smarks" id="m3" onkeypress="return validateMarks(event)">
+                <div class="error" id="M3">marks is mandatory</div>
+
+                <input type="text" name="smarks" id="m4" onkeypress="return validateMarks(event)">
+                <div class="error" id="M4">marks is mandatory</div>
+
+                <input type="text" name="smarks" id="m5" onkeypress="return validateMarks(event)">
+                <div class="error" id="M5">marks is mandatory</div>
+
+            </li>
+            <li class="buttons">
+                <input type="button" name="button"  value="Generate Progress Card" onclick="generateProgCard()">
+                <input type="button" name="button"  value="Reset" onclick="resetfields()">
+            </li>
+        </div>
+
+        <div class="display-container">
+            
+            <li class="head1">PROGRESS CARD</li> 
+            <li> NAME : <span id="s-name"></span> </li>
+            <li> ROLLNO : <span id="s-id"></span></li>
+            <li> AGE : <span id="s-age"></span></li>
+            <li> GENDER : <span id="s-gender"></span></li>
+            <li> CLASS : <span id="s-class"></span></li>
+            <li> SECTION : <span id="s-sec"></span></li>
+            <li> TOTAL : <span id="s-total"></span></li>
+            <li> AVERAGE : <span id="s-avg"></span></li>
+            <li class="pof"> GRADE : <span id="s-grade"></span></li>
+        </div>
+    </div> 
+    
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

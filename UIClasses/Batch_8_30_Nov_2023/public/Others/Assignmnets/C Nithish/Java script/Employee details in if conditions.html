@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details In Conditions</title>
+</head>
+<body>
+    <script>
+
+         var empname=prompt("Enter Name")
+         var age=prompt("Enter Age")
+         var gender=prompt("Enter Gender")
+         var depart=prompt("Enter Department")
+         var bscsal=prompt("Enter Basic Salary")
+         var pf=prompt("Enter PF Parsentage")*bscsal/100
+         var hra=prompt("Enter Hra parsentage")*bscsal/100
+         
+         
+         bscsal=parseInt(bscsal)
+         pf=parseInt(pf)
+         hra=parseInt(hra)
+         totalsalary=parseInt(totalsalary)
+         var totalsalary=bscsal+pf+hra
+          
+         if(gender=='Male'){
+            if(totalsalary>=200000){
+              taxparsentage=15;
+            }
+            else if(totalsalary>=100000){
+              taxparsentage=10;
+            }
+            else{
+              taxparsentage=5;
+            }
+         } else{
+            if (totalsalary>=200000){
+                taxparsentage=10;
+            }
+            else if (totalsalary>=100000){
+                taxparsentage=5;
+            }
+            else{
+                taxparsentage=0;
+            }
+        
+         }
+
+          var taxAmount=totalsalary*taxparsentage/100;
+          var onHandSal=totalsalary-taxAmount
+         
+         console.log("Name:"+empname);
+          console.log("Age:"+age);
+          console.log("Gender:"+gender);
+          console.log("Depart:"+depart)
+          console.log("Basic Salary:"+bscsal);
+          console.log("PF:"+pf);
+          console.log("Hra:"+hra);
+          console.log("Total Salary:"+totalsalary);
+          console.log("Tax Amount:"+taxAmount);
+          console.log("OnHandSalary:"+onHandSal)
+          
+          
+
+    </script>
+</body>
+</html>

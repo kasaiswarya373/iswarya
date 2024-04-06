@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Width of positioned element
+        </title>
+        <style>
+            .block1, .block3, .block4 {
+                border: 1px solid;
+                width: 130px;
+                height: 130px;
+            }
+            .block1 {
+                background-color: gold;
+            }
+            .block2 {
+                border: 1px solid;
+                background-color: aqua;
+                position: absolute;
+                width: 300px;
+                
+            }
+            .block3 {
+                background-color: bisque;
+            }
+            .block4 {
+                background-color: blueviolet;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="block1">Block 1</div>
+        <div class="grandParent">
+            <div class="parent">
+                <div class="block2">Block 2</div>
+            </div>
+        </div>
+        <div class="block3">Block 3</div>
+        <div class="block4">Block 4</div>
+    </body>
+</html>

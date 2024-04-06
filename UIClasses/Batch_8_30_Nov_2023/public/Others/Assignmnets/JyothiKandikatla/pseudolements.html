@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News</title>
+        <style>
+            h2{
+                border: 1px solid;
+                border-color: white;
+                background-color: black;
+                text-align: center;
+                color: white;
+                
+        
+                margin: 10px auto;
+                padding: 10px;
+                font-family: cursive;
+            }
+            h3{
+                text-decoration: underline;
+                color: red;
+            }
+            p::first-letter{
+                color:rgb(99, 47, 255);
+                font-size: 30px;
+                
+            }
+            p{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 20px;
+            }
+            p::first-line{
+               background-color: yellow;
+               
+            }
+            p::after{
+                content:  'A laborer died after falling from a metro girder in Thane on Wednesday afternoon.';
+                background-color: aqua;
+            }
+            p[class=p]::before{
+               background-color: red; 
+               content: 'CrimeNews';
+            }
+            p::selection{
+                background-color: black;
+                color: whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>TodayNews</h2>
+        <div >
+            <h3>News Content1</h3>
+            <p class="p">A laborer died after falling from a metro girder in Thane on Wednesday afternoon.A laborer died after falling from a metro girder in Thane on Wednesday afternoon.A laborer died after falling from a metro girder in Thane on Wednesday afternoon.A laborer died after falling from a metro girder in Thane on Wednesday afternoon.A laborer died after falling from a metro girder in Thane on Wednesday afternoon.A laborer died after falling from a metro girder in Thane on Wednesday afternoon.A laborer died after falling from a metro girder in Thane on Wednesday afternoon.
+                A laborer died after falling from a metro girder in Thane on Wednesday afternoon.
+                A laborer died after falling from a metro girder in Thane on Wednesday afternoon.</p>
+                <h3>News Content2</h3>  
+                <p>A laborer died after falling from a metro girder in Thane on Wednesday afternoon.A laborer died after falling from a metro girder in Thane on Wednesday afternoon.A laborer died after falling from a metro girder in Thane on Wednesday afternoon.A laborer died after falling from a metro girder in Thane on Wednesday afternoon.A laborer died after falling from a metro girder in Thane on Wednesday afternoon.A laborer died after falling from a metro girder in Thane on Wednesday afternoon.A laborer died after falling from a metro girder in Thane on Wednesday afternoon.
+                    A laborer died after falling from a metro girder in Thane on Wednesday afternoon.
+                    A laborer died after falling from a metro girder in Thane on Wednesday afternoon.</p>        </div>
+    </body>
+</html>

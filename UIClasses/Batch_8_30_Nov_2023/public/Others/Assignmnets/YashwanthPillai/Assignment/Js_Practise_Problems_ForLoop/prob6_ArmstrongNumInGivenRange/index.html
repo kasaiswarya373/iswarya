@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prob6 Armstrong Number in given Range</title>
+  </head>
+  <body>
+    <h2>WAP to display armstrong number in given range</h2>
+
+    <script>
+      let num = parseInt(prompt("Enter A Number"));
+      let remainder;
+      let remainder1;
+      let checkArmStrongNum = 0;
+
+      let temp = num;
+      let s_temp = num;
+      let PowerOfNum = 0;
+
+      while (temp > 0) {
+        
+        remainder = temp % 10;
+        if (remainder > 0) {
+          PowerOfNum = PowerOfNum + 1;
+        }
+        
+
+        temp = parseInt(temp / 10);
+      }
+      while(s_temp>0){
+        remainder1 = s_temp % 10;
+        checkArmStrongNum = checkArmStrongNum + remainder1 ** PowerOfNum;
+        s_temp = s_temp/10;
+      }
+
+      if (checkArmStrongNum == num) {
+        console.log(`Armstrong ${num}`);
+      } else {
+        console.log(`Not a Armstrong ${num}`);
+      }
+    </script>
+  </body>
+</html>

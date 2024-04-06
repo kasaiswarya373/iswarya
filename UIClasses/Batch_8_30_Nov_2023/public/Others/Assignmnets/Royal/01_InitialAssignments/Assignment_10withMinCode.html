@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        var empName = prompt('Enter Your Name : ');
+        var empGender = prompt('Enter Your Gender : ');
+        var basicSal = prompt('Enter Basic Salary : ');
+        basicSal = parseInt(basicSal);
+
+        var pf=(15 * basicSal)/100;
+        var hra = (25 * basicSal)/100;
+
+        var totalSal = basicSal +pf+hra;
+
+        var taxPercent = 0;
+
+        if(empGender=='Male' || empGender=='male')
+        {
+            if(basicSal >= 200000){
+                    taxPercent=15;
+            } else if(basicSal >= 150000){
+                taxPercent = 10;
+            } else if(basicSal >= 50000){
+                taxPercent = 5;
+            }
+
+        } else{
+            if(basicSal >= 200000){
+                taxPercent=10;
+        } else if(basicSal >= 150000){
+            taxPercent = 5;
+        }
+
+        var taxAmount = (totalSal * taxPercent)/100;
+        console.log(taxAmount);
+        }
+        console.log('Employee Name        : '+empName);
+        console.log('Employee BaseSalary  : '+basicSal);
+        console.log('Employee PF Percent  : '+pf);
+        console.log('Employee HRA Percent : '+hra);
+    </script>
+    </body>
+</html>

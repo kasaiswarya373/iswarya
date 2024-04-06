@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date methods</title>
+</head>
+<body>
+    <script>
+        var cdate = new Date();
+        console.log(cdate);
+        console.log('Day    : '+cdate.getDay());
+        console.log('Month  : '+cdate.getMonth());
+        console.log('Hour   : '+cdate.getHours());
+        console.log('Minute : '+cdate.getMinutes());
+        
+        myFormat1 = `${cdate.getDate()} / ${cdate.getMonth()+1} / ${cdate.getFullYear()}`;
+        console.log(myFormat1);
+
+        var monthName = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+        var monthName = monthName[cdate.getMonth()];
+        myFormat2 = `${cdate.getDate()} / ${monthName} / ${cdate.getFullYear()}`;
+        console.log(myFormat2);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>    
+     var Gender
+    var readdetails = () => {
+        var empname,age,depart,basicsal;
+         
+        empname=prompt("Entaer Employee Name")
+        Gender=prompt("Enter Gender")
+        age=prompt("Enter Age")
+        depart=prompt("Enter Department")
+        basicsal=prompt("Enter Basic Salary")
+        basicsal=parseInt(basicsal)
+
+       var PF = getpf( basicsal);
+       var HRA =  gethra(basicsal);
+       
+       var Total = gettotalsal(basicsal,PF,HRA)
+
+       var Tax = getTotaltax(Total);
+
+       displaydetails(empname,age,depart,basicsal,PF, HRA, Total,Tax);
+
+
+    }
+
+    var getpf = ( basicsal) => {
+        var pf= basicsal*14/100
+        return pf;
+    }
+    var gethra = (basicsal) =>{
+        var hra=basicsal*25/100
+        return hra;
+    }
+
+    var gettotalsal = (basicsal,PF,HRA) => {
+        var totalsal = basicsal+PF+HRA
+        return totalsal;
+    }
+
+    var getTotaltax = (Total) =>{
+        var taxparsentage=0;
+        var Tax
+        if (Gender == 'Male'){
+          if (Total >= 100000){
+            taxparsentage=10;
+          }
+          else if ( Total >= 50000){
+            taxparsentage=5;
+          } 
+          else if(  Total <= 50000){
+            taxparsentage=0;
+          }
+
+        }else{
+            if ( Total <= 100000){
+                taxparsentage=5;
+            }
+            else if ( Total <= 50000){
+                taxparsentage = 0;
+            }
+            totalTax =  Total - ( Total * taxparsentage) / 100;
+
+        }
+        
+           return Tax;
+    }
+
+    var displaydetails = (empname,age,depart,basicsal,PF, HRA, Total,Tax) => {
+        console.log("Name:"+empname)
+        console.log("Gender:"+Gender)
+        console.log("Age:"+age)
+        console.log("Department:"+depart)
+        console.log("Basic Salary:"+basicsal)
+        console.log("PF : "+PF)
+        console.log("HRA : "+HRA)
+        console.log("Total Salary : "+Total)
+        console.log("Total Tax : "+Tax)
+    }
+  
+    readdetails();
+    
+    </script>
+
+</body>
+</html>

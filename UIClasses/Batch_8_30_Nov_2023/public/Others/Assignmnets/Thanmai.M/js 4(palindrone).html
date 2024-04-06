@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <script>
+    alert("The Palindrome Number");
+    var num1 = parseInt(prompt("Enter a Value"));
+    var num2 = num1;
+    var Reverse = 0
+    while(num1 > 0) {
+        var digit = num1 % 10;
+        Reverse = Reverse * 10 + digit;
+        num1 = parseInt(num1 / 10); 
+    }
+    if(Reverse === num2) {
+        console.log("The given Value "+(num2)+" is Palindrome .");
+    }
+    else {
+        console.log("The given Value "+(num2)+" is  not a Palindrome.");
+    }
+</script>
+</body>
+</html>

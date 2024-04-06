@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyNumbersInArray</title>
+</head>
+<body>
+    <script>
+        var readingValues = () =>
+        {
+            var arrayVals = [];
+            var size = parseInt(prompt(`Enter size of array`));
+            for(var i = 0;i < size;i++)
+            {
+                arrayVals[i] = parseInt(prompt(`Enter ${i+1} value`));
+            }
+            return arrayVals;
+        }
+
+        var findingLuckyNums = (arrayValues) =>
+        {
+            var temp = 0;var luckyNumArray = []; var k = 0;
+            for(var i = 0;i < arrayValues.length; i++)
+            {
+                temp = 0;
+                var num = arrayValues[i];
+                if (num < 10)
+                {
+                    temp = num;
+                }
+                else
+                {
+                    while(num > 0)
+                    {
+                        temp += num % 10;
+                        num = parseInt(num / 10);
+
+                        if(num == 0 && temp > 9)
+                        {
+                            num = temp ;
+                            temp = 0;
+                        }
+                    }
+                }
+                luckyNumArray[k] = temp;
+                k += 1;
+            }
+            return luckyNumArray;
+        }
+
+        var printingLuckyNums = () =>
+        {
+        var arrayValues = readingValues();
+        var LuckyNumsArray = findingLuckyNums(arrayValues);
+
+        for(var i = 0;i < arrayValues.length;i++)
+        {
+            console.log(`Lucky Number of ${arrayValues[i]} is ${LuckyNumsArray[i]}`);
+        }
+        }
+
+        printingLuckyNums();
+    </script>
+</body>
+</html>

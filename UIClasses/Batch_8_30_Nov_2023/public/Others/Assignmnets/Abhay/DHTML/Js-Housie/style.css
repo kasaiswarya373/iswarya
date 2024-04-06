@@ -1,0 +1,51 @@
+.title {
+            background-color: brown;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+
+        .number {
+            border: 1px solid;
+            border-radius: 10px;
+            margin: 4px;
+            font-weight: bold;
+            min-height: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: calc(10% - 8px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .displaynumber {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            position: relative;
+            top: 100px;
+            font-size: 150px;
+            text-align: center;
+            color: blueviolet;
+
+        }
+
+        .container {
+            width: 100%;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        input {
+            margin: 20px auto;
+            width: 100px;
+            height: 30px;
+        }
+
+        .displayNumber {
+            text-align: center;
+            font-size: 3rem;
+            color: tomato;
+        }

@@ -1,0 +1,36 @@
+    #abc {
+        background-color: green;
+    }
+
+    .sample {
+        background-color: green;
+    }
+
+    p {
+        background-color: green;
+    }
+
+
+    [prasad=pqr] {
+        background-color: green;
+    }
+
+    [name=test] {
+        background-color: green;
+    }
+
+
+    <p style="background-color: green;" id="abc" class="sample" prasad="pqr" name="test">
+        Hello every one
+    </p>
+
+----------------------
+
+Debugging Tool : 
+    CRUD on both css and html content also 
+
+    
+
+----------------------
+
+CSS priority order : 

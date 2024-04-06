@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Total no of Special Symbols in a String</title>
+    </head>
+    <body>
+        <script>
+             var str = prompt("Enter the string");
+            console.log(str);
+            var splsymbol = 0;
+            
+            for(i = 0; i < str.length; i++)
+            {
+                if((str.charCodeAt(i) >= 32 && str.charCodeAt(i) <= 47) || 
+                (str.charCodeAt(i) >= 58 && str.charCodeAt(i) <= 64) ||
+                (str.charCodeAt(i) >= 91 && str.charCodeAt(i) <= 96)||(str.charCodeAt(i) >= 123 && str.charCodeAt(i) <= 126 )){
+                    splsymbol++;
+                }
+                
+            }
+            console.log("The special symbols in string: " +splsymbol);
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+      .header{
+        text-align: center;
+        font-style:inherit;
+        border: 2px solid black;
+        background-color: aquamarine;
+        padding: 10px;
+        margin: 10px;
+         }
+         .container{
+            width: 100%;
+            height: 250px;
+            border: 2px solid black;
+            background-color:aquamarine;
+         }
+         .inner{
+            width: 96%;
+            height: 200px;
+            border: 2px solid black;
+            background-color:red;
+            padding: 10px;
+            margin: 20px;
+          }
+         
+          .tag{
+                    border: 1px solid;
+                    height: 50px;
+                    width: 200px;
+                    position: absolute;
+                    text-align: center;
+                    padding: 5px;
+                    margin: 5px;
+                  background-color:aqua;
+                }  
+                .t1{
+                    left:  71px;
+                     top: 70px;
+
+                }
+                .t2{
+                  left:71px;
+                  top: 334px;
+
+                }
+                .t3{
+                   left: 71px;
+                   top: 600px;
+}
+                .position1{
+                    position: absolute;
+                    left: 80px;
+                    top: 150px;
+                    bottom: 5px;
+
+                    
+                }
+                .positionright{
+                    position:absolute;
+                    right: 100px;
+                    top: 150px;
+
+
+
+
+                }
+                .position2{
+                  position: absolute;
+                    left: 90px;
+                    top: 450px;
+                }
+                    .position3{
+                   position: absolute;
+                   left: 50px;
+                    top: 100px;
+                    }
+
+
+  </style>
+</head>
+<body>
+    <h3 class="header">Student-Registration-Page</h3>
+    <div class="container">
+        <div class="inner">
+            <div class="tag t1"><h3>Personal Details</h3></div>
+         <div class="position1">
+            <label for="firstname"> First Name:</label>
+            <input type="text"><br><br>
+            <label for="lastname">Last Name:</label>
+            <input type="text"><br><br>
+            <label for="lastname">Age:</label>
+            <input type="number">
+         </div>
+         <div class="positionright">
+            <label for="address">Address:</label>
+            <input type="text"><br><br>
+            <label for="country">Country</label>
+            <select name="country">
+                <option>Hyderabad</option>
+                <option>Mumbai</option>
+                <option>Banglore</option>
+                <option>Kerala</option>
+
+            </select>
+         </div>
+         </div>
+         <div class="container">
+            <div class="inner">
+                <div class="tag t2"><h3>Education Details</h3></div>
+                <div class="position2">
+                    <label>Qualification:</label>
+                    <select name="Qualification" >
+                        <option>Btech</option>
+                        <option>Intermediate</option>
+                        <option>degreee</option>
+                        <option>BBA</option>
+                        <option>other</option>
+                    </select><br><br>
+                    <label>Languages Known</label>
+                    <input type="checkbox">English
+                    <input type="checkbox">Telugu
+                    <input type="checkbox">Hindi
+                    <input type="checkbox">other
+<br><br>
+            
+                <label>CourseOpted:</label>
+                <input type="radio">Mtech
+                <input type="radio">Ms
+                <input type="radio">Btech
+                <input type="radio">other
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="inner">
+        <div class="tag t3"><h3>About yourself</h3>
+            <div class="position3">
+                <label>Few words About Your Carrer</label>
+                <input type="email">
+
+        </div>
+        </div>
+
+</body>
+</html>

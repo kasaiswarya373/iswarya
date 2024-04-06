@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LargestNumberInArray</title>
+</head>
+<body>
+    Program to display the largest value from the array
+    
+    <script>
+        var readingPrintingValuesOfArray = () =>
+        {
+        var values = [];
+        var size = parseInt(prompt(`Enter size of array`));  
+        for(var i = 0; i < size ; i++ )  
+        {
+            values[i] = parseInt(prompt(`Enter ${i+1} value`));
+        }
+        return values;
+        }
+
+        var findingLargeNum = (arrayHolder) =>
+        {
+            var largeNum = arrayHolder[0];
+            for(var i = 1 ; i < arrayHolder.length ; i++)
+            {
+                if(largeNum >= arrayHolder[i])
+                {
+                    largeNum = largeNum;
+                }
+                else
+                {
+                    largeNum = arrayHolder[i];
+                }
+            }
+            return largeNum;
+        }
+
+        var printingLargeNum = () =>
+        {
+        var arrayHolder = readingPrintingValuesOfArray();  
+        var largeNum = findingLargeNum(arrayHolder);
+        console.log(`Given Array is \n ${arrayHolder}`);
+        console.log(`Largest number in the given Array is ${largeNum}`);
+        }
+        printingLargeNum();
+    </script>
+</body>
+</html>

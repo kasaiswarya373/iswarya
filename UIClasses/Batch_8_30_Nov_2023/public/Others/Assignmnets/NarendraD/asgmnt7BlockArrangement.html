@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <title>Block Arrangement</title>
+    <header class="header">
+        Block Arrangement using CSS Positioning
+    </header>
+    <body>
+        <style>
+            .header{
+                border: 1px solid black;
+                height: 25px;
+                text-align: center;
+            }
+            .div{
+                border:1px solid black;
+                height: 100px;
+                width: 100px;
+            }
+            .div1{
+                position: absolute;
+                left:25px;
+                top: 50px;
+                z-index: 1;
+                background-color: orange;
+            }
+            .div2{
+                position: absolute;
+                left:60px;
+                top: 100px;
+                z-index: 2;
+                background-color: blue;
+            }
+            .div3{
+                position: absolute;
+                right:25px;
+                top: 50px;
+                z-index: 3;
+                background-color: red;
+            }
+            .div4{
+                position: absolute;
+                right:60px;
+                top: 100px;
+                z-index: 4  ;
+                background-color: blue;
+            }
+            .middleContainer{
+                position: absolute;
+                height: 200px;
+                width: 200px;
+                top:230px;
+                left: 650px;
+                z-index: 64;
+            }
+            .middle{
+                position: absolute;
+                border: 1px solid black;
+                height: 200px;
+                width: 200px;
+                top:2px;
+                left: 2PX;
+                z-index: 70;
+                background-color: orange;
+            }
+            .leftTop{
+                position: absolute;
+                left:-20px;
+                top: -20px;
+                z-index: 66;
+                background-color: plum;
+            }
+            .leftBottom{
+                position: absolute;
+                left:-20px;
+                bottom: -20px;
+                z-index: 67;
+                background-color: grey;
+            }
+            .rightTop{
+                position: absolute;
+                right:-30px;
+                top: -20px;
+                z-index: 68;
+                background-color: blue;
+            }
+            .rightBottom{
+                position: absolute;
+                right:-30px;
+                bottom: -20px;
+                z-index: 69;
+                background-color: red;
+            }
+            .div5{
+                position: absolute;
+                left:25px;
+                bottom: 50px;
+                z-index: 50;
+                background-color: green;
+            }
+            .div6{
+                position: absolute;
+                left:60px;
+                bottom: 100px;
+                z-index: 52;
+                background-color: purple;
+            }
+            .div7{
+                position: absolute;
+                right:25px;
+                bottom: 50px;
+                z-index: 53;
+                background-color: purple;
+            }
+            .div8{
+                position: absolute;
+                right:60px;
+                bottom: 100px;
+                z-index: 55;
+                background-color: orange;
+            }
+
+        </style>
+        <div class="div div1"></div>
+        <div class="div div2"></div>
+        <div class="div div3"></div>
+        <div class="div div4"></div>
+        <div class="middleContainer">
+            <div class="div middle">1</div>
+            <div class="div leftTop">2</div>
+            <div class="div leftBottom">3</div>
+            <div class="div rightTop">4</div>
+            <div class="div rightBottom">5</div>
+        </div>
+        <div class="div div5"></div>
+        <div class="div div6"></div>
+        <div class="div div7"></div>
+        <div class="div div8"></div>
+    </body>
+</html>

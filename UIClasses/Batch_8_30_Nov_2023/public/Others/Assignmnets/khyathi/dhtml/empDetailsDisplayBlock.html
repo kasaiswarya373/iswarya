@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+        div{
+            padding: 10px;
+
+        }
+        .inputData{
+            border: 1px solid;
+            width: 500px;
+            margin: 10px auto;
+            background-color: skyblue;
+        }
+
+        #userList{
+            list-style-type: none;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 5px;
+            border: 1px solid black;
+            color: white;
+            background-color: green;
+            border-radius: 10px;
+            margin: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="inputData">
+        <h3>Employe Details</h3>
+    <div>
+        <label >employee Name:</label>
+        <input type="text" id="eName">
+    </div>
+    <div>
+        <label >employee Age:</label>
+        <input type="text" id="eAge">
+    </div>
+    <div>
+        <label >employee basicSalary:</label>
+        <input type="text" id="salary">
+    </div>
+    <div>
+        <input type="button" value="save" onclick="save()">
+    </div>
+  </div>
+
+  <div >
+    <ul id="userList">
+
+    </ul>
+  </div>
+  <script>
+
+var empArray=[];
+
+var editObj;
+var isEditMode=false;
+
+var editedIndex;
+
+function listFormate(){
+console.log(empArray)
+   var userList= document.getElementById('userList');
+   var item='';
+   
+   for(var i=0;i<empArray.length;i++){
+    item=`${item}<li>
+        <span><b>Name</b>:${empArray[i].name}</span><br/>
+        <span><b>Age</b>: ${empArray[i].age}</span><br/>
+        <span><b>Gross Salary</b>:${empArray[i].salary}</span><br/>
+        <span><b>PF Amount</b>:${empArray[i].pf}</span><br/>
+        <span><b>Tax Amount</b>:${empArray[i].tax}</span><br/>
+        <span><b>Take Home Salary</b>:${empArray[i].netSalary}</span></br>
+        <button onclick="EditRecord(${i})">Edit</button> <button onclick="deleteRecord(${i})">delete</button>
+
+        </li>`;
+   }
+   userList.innerHTML=item;
+
+}
+
+function setFormData(inputObj){
+    document.getElementById('eName').value=inputObj.name;
+    document.getElementById('eAge').value=inputObj.age;
+    document.getElementById('salary').value=inputObj.salary;
+}
+
+
+
+function EditRecord(index){
+
+    isEditMode=true;
+    for(var i=0;i<empArray.length;i++){
+        if(i===index){
+            editedIndex=index;
+            editObj=empArray[i];
+        }
+    }
+
+    setFormData(editObj)
+}
+
+function deleteRecord(index){
+var filterdArray=[];
+    for(var i=0;i<empArray.length;i++){
+        if(i===index){
+
+        }else{
+            filterdArray.push(empArray[i])
+        }
+    }
+
+    empArray=filterdArray;
+    listFormate();
+
+
+}
+
+function updateData(inputObj){
+    for(var i=0;i<empArray.length;i++){
+        if(i===editedIndex){
+            empArray[i].name=inputObj.name;
+            empArray[i].age=inputObj.age;
+            empArray[i].salary=inputObj.salary;
+            empArray[i].netSalary=inputObj.netSalary;
+            empArray[i].pf=inputObj.pf;
+            empArray[i].tax=inputObj.tax;
+        }
+    }
+}
+function save(){
+
+    if(isEditMode){
+
+        var personuUpdateObj={
+     name: document.getElementById('eName').value,
+    age:document.getElementById('eAge').value,
+    salary:document.getElementById('salary').value,
+    
+    }
+
+    var resultObj=getPersonObjWithPF(personuUpdateObj);
+
+    updateData(resultObj);
+    listFormate();
+
+
+
+
+    }else{
+        var personObj={
+     name: document.getElementById('eName').value,
+    age:document.getElementById('eAge').value,
+    salary:document.getElementById('salary').value,
+    
+    }
+
+  //;
+
+  var resultObj=getPersonObjWithPF(personObj);
+
+  empArray.push(resultObj);
+  reset();
+  listFormate();
+    }
+   
+//    console.log();
+}
+
+function reset(){
+    document.getElementById('eName').value='';
+    document.getElementById('eAge').value='';
+    document.getElementById('salary').value='';
+}
+
+function getPersonObjWithPF(inputObj){
+ 
+    inputObj.pf=getPfAmount(inputObj.salary);
+    inputObj.tax= getTaxAmount(inputObj.salary);
+    inputObj.netSalary=getNetSalary(inputObj.salary,inputObj.pf,inputObj.tax);
+    return inputObj;
+
+}
+
+function getPfAmount(salary){
+return salary*0.12;
+}
+
+function getTaxAmount(salary){
+    if(salary>500000){
+        return salary*0.20;
+    }
+
+    return 0;
+}
+
+function getNetSalary(TotatlSalar,PF,Tax){
+    return TotatlSalar-PF-Tax;
+}
+
+
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallStack Problem with normal JS functions</title>
+</head>
+
+<body>
+
+   <button id="btn">Click</button>
+
+    <script>
+        class CallStackTest {
+            constructor(name, id) {
+                this.id = id;
+                this.name = name;
+            }
+
+            OnClickTest() {
+                //as normal js function can't store this ref, we can't acess this object properties.
+                document.querySelector('#btn').addEventListener('click', function () { console.log(this.name) });
+                //arrow function can hold this obj reference.
+                document.querySelector('#btn').addEventListener('click', () => { console.log(this.name) });
+
+                setTimeout(() => console.log(this.id), 2000);
+                setTimeout(function () {
+                    console.log(this.id)
+                }, 2000);
+
+            }
+        }
+
+        var obj = new CallStackTest("somesh", 102);
+
+        obj.OnClickTest();
+
+
+        console.log("inside normal Js function : " + obj.name);
+
+
+
+    </script>
+</body>
+
+</html>

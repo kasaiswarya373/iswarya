@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Detail (Templating)</title>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>         <!-- Axios external library, most common for ajax operation-->
+        <link rel="stylesheet" href="myapp.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>     <!-- always put Jquery before app.js, sequence matters -->
+        <script src="app.js"></script>          <!--(2) If we're keeping it here at top, then we have to create another method -->
+    </head>
+    <body>
+        <h3>
+            Product Details Page
+        </h3>
+        <ul class="productDetailsContainer">
+            
+        </ul>
+
+        <!-- <script src="app.js"></script> -->         <!-- (1) If we keep src=app.js file here, then the product will load -->
+
+        <div id="singleProductTmpl" style="display: none;">
+            <li class="sProductDetails">
+                <ul>
+                    <li>
+                        <img src="{{imageUrl}}">
+                    </li>
+                    <li>Product Name: {{name}}</li>
+                    <li>
+                        <span class="actualPrice">{{actualPrice}}</span>
+                        <span class="discountedPrice">{{discountPrice}}</span>
+                    </li>
+                    <li>Manufacturer: {{manu}}</li>
+                    <li>Rating: {{rating}}</li>
+                </ul>
+            </li>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head> 
+    <title> List of all palendrome numbers between 1000 to 22 </title>
+</head>
+<body>
+    <h1> List of all palendrome numbers between 1000 to 22 </h1>
+    <script> 
+     
+        for(var i=1000 ; i>=22 ; i--) {
+            var n1=i,sum=0;
+            for(j=i; j>0; ) {
+                rem=j%10;
+                sum=(sum*10)+rem;
+                j=parseInt(j/10);
+            }
+            if(sum==n1) {
+                console.log(n1);
+            }
+
+        }   
+    </script>
+</body>
+</html>    

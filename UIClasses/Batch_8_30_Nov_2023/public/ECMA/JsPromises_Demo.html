@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Promises</title>
+    </head>
+    <body>
+        <div id="status"></div>
+        <script>
+            var age = 10;
+            var p1 = new Promise((resolve, reject ) => {
+                if (age <= 21)  {
+                    setTimeout(() => {
+                        resolve("Age not set");
+                    }, 2000);                    
+                } else {
+                    reject("AGe got matched");
+                }
+            });
+
+            /*p1.then((msg) => {
+                console.log("Msg is " + msg)
+            }).catch((err) => {
+                console.log("Msg is " + err);
+            });*/ 
+            async function doJob() {
+                console.log("STarting")
+                document.querySelector("#status").innerHTML = await p1.then((msg) => {
+                    console.log("promise done")
+                    return msg;
+                }).catch((msg) => {
+                    return msg;
+                });
+                console.log("test")
+                          
+            }
+            doJob();
+
+            
+        </script>
+    </body>
+</html>

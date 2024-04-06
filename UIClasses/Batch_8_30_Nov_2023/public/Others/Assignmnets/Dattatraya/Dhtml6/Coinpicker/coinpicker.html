@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cPicker.css" />
+  </head>
+  <body>
+    <h3>Coin Picker</h3>
+    <div class="diplayNumber"></div>
+    <button class="btn" onclick="getRandomValues()">Click me</button>
+    <div class="container"></div>
+    <script>
+      for (var i = 1; i <= 100; i++) {
+        var span = document.createElement("span");
+        span.setAttribute("class", "number");
+        span.setAttribute("id", i);
+        span.innerText = i;
+        document.querySelector(".container").append(span);
+      }
+      var generateNumbers = [];
+      var getRandomValues = () => {
+        var maxRange = 100;
+        do {
+          randomNumbers = Math.round(Math.random() * maxRange);
+        } while (generateNumbers.includes(randomNumbers));
+
+        generateNumbers.push(randomNumbers);
+
+        document.querySelector(".diplayNumber").innerText = randomNumbers;
+        var coin = document.getElementById(randomNumbers);
+        coin.style.backgroundColor = "green";
+        coin.style.textDecoration = "line-through";
+
+        if (generateNumbers.length == 100) {
+          alert("Game Over");
+        }
+      };
+    </script>
+  </body>
+</html>

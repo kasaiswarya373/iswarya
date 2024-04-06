@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment8 : FormsAndInput</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <form action="#">
+    <div class="container">
+      <header class="heading1">STUDENT REGISTRATION PAGE</header>
+
+      <!--FIRST SECTION  -->
+      <section class="first-container">
+        <div class="head head1">Personal Details</div>
+        <div class="pd1">
+          <ul class="personaldetails">
+            <li>
+              <label for="firstname">First Name :</label>
+              <input
+                type="text"
+                name="firstname"
+                placeholder="FirstName"
+                minlength="4"
+                maxlength="10"
+              />
+            </li>
+            <li>
+              <label for="lastname">Last Name :</label>
+              <input
+                type="text"
+                name="latname"
+                placeholder="LastName"
+                minlength="4"
+                maxlength="10"
+              />
+            </li>
+            <li>
+              <label class="age" for="age">Age :</label>
+              <input
+                type="number"
+                name="age"
+                placeholder="Age"
+                minlength="2"
+                maxlength="3"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="pd2">
+          <ul class="personaldetails">
+            <li>
+              <label for="address">Address :</label>
+              <input
+                type="text"
+                name="address"
+                placeholder="Address"
+                minlength="5"
+                maxlength="50"
+              />
+            </li>
+            <li>
+              <label for="country">Country :</label>
+              <select name="country" id="country">
+                <option selected value="0">choose</option>
+                <option value="1">INDIA</option>
+                <option value="2">CHINA</option>
+                <option value="3">BANGLADESH</option>
+                <option value="4">PAKISTAN</option>
+                <option value="5">JAPAN</option>
+                <option value="6">USA</option>
+                <option value="7">ISRAEL</option>
+                <option value="8">ENGLAND</option>
+                <option value="10">FRANCE</option>
+                <option value="11">PORTUGAL</option>
+                <option value="12">BRAZIL</option>
+                <option value="13">ARGENTINA</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECOND SECTION -->
+      <section class="second-container">
+        <div class="head head1">Education Details</div>
+        <div class="EducationDetails">
+          <ul class="ed1">
+            <li>
+              <label for="qualification">Qualification : </label>
+              <select name="qualification" id="qualification">
+                <option selected value="0">select</option>
+                <option value="1">Matriculation/SSC</option>
+                <option value="2">Intermediate</option>
+                <option value="3">Diploma</option>
+                <option value="4">UnderGraduation</option>
+                <option value="5">PostGraduation</option>
+                <option value="6">P.H.D</option>
+              </select>
+            </li>
+            <li>
+              <label for="languages">Languages :</label>
+              <input type="checkbox" name="lang1" id="lang1" value="english" />
+              <label for="lang1">English</label>
+              <input type="checkbox" name="lang2" id="lang2" value="hindi" />
+              <label for="lang2">Hindi</label>
+              <input type="checkbox" name="lang3" id="lang3" value="telugu" />
+              <label for="lang3">Telugu</label>
+              <input type="checkbox" name="lang4" id="lang4" value="tamil" />
+              <label for="lang4">Tamil</label>
+              <input type="checkbox" name="lang5" id="lang5" value="marathi" />
+              <label for="lang5">Marathi</label>
+            </li>
+            <li>
+              <label class="courses" for="course">Course Completed :</label>
+              <input type="radio" name="course" id="course1" value="B.Tech" />
+              <label for="course">B.Tech</label>
+              <input type="radio" name="course" id="course2" value="M.Tech" />
+              <label for="course">M.Tech</label>
+              <input type="radio" name="course" id="course3" value="BBA" />
+              <label for="course">BBA</label>
+              <input type="radio" name="course" id="course4" value="MBA" />
+              <label for="course">MBA</label>
+              <input type="radio" name="course" id="course5" value="BSC" />
+              <label for="course">BSC</label>
+              <input type="radio" name="course" id="course6" value="MSC" />
+              <label for="course">MSC</label>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- THIRD SECTION -->
+      <section class="third-container">
+        <div class="head head1">About Yourself</div>
+        <div class="textarea">
+          <div class="label">
+            <label for="aboutyourself">Few words about your career :</label>
+          </div>
+          <div class="textbox">
+            <textarea
+              name="aboutyourself"
+              id="aboutyourself"
+              cols="90"
+              rows="9"
+            ></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUBMIT BUTTON -->
+      <div class="register">
+        <input type="submit" value="Register Details">
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="copyright">
+        @copyrights 2023
+      </footer>
+    </div>
+  </form>
+  </body>
+</html>

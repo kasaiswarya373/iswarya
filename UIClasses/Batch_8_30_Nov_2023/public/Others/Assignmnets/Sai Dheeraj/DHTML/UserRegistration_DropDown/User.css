@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+    color: rgb(0, 79, 128);
+    font-size: 40px;
+}
+li{
+    list-style: none;
+    color: none;
+    font-size: 20px;
+     
+}
+ul{
+    width: 350px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: none;  
+
+}
+label{
+    display: inline-block;
+    width: 110px;
+    margin: 10px;
+    font-weight: bold;
+
+}
+#saved{
+    display: none;
+    color: black;
+    font-size: 30px;
+}

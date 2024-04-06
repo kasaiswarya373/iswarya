@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <script>
+            var readingvalues = () =>  {
+
+                var p1, p2, p3, p4;
+                    p1 = parseInt(prompt("enter p1 value")); 
+                    p2 = parseInt(prompt("enter p2 value")); 
+                    p3 = parseInt(prompt("enter p3 value")); 
+                    p4 = parseInt(prompt("enter p4 value"));
+                var getsum = sum (p1, p2, p3, p4);
+                console.log("the sum is" + getsum);
+               
+            }
+                var sum = (p1, p2, p3, p4) => {
+                    var value = p1 + p2 + p3 + p4; 
+                    return value;
+            } 
+             readingvalues();       
+            </script>
+        </body>
+</html>

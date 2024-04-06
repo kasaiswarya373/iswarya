@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="User.css">
+        </head>
+        <body>
+            <h1> User Registration</h1>
+    <ul>
+        <li>
+            <label for="name"> User Name:</label>
+            <input type="text" placeholder="Your name">
+        </li>
+        <li>
+            <label for="age"> Age:</label>
+            <input type="text" placeholder="Your age">
+        </li>
+        <li>
+            <label for="country"> Country:</label>
+
+            <select name="country" id="CountryName"  onchange="displayState()">
+
+                <option value="" >Select Country</option>
+            </select>
+        </li>
+        <li>
+            <label for="states">State : </label>
+            <select name="state" id="State"  onchange="displayDistrict()" >
+                <option value="" >Select State</option>
+            </select>
+        </li>
+        <li>
+            <label for="district">District : </label>
+            <select name="district" id="district">
+                <option value="" >Select District</option>
+            </select>
+        </li>
+        <li>
+            <button style="position: relative; left: 120px;top:50px; width:130px; background-color: white; height: 30px; font-size: larger;"  onclick= "end()" > Click here </button>
+        </li>
+    </ul>
+            <br><br><br>
+        <div id="saved"> <h1> You have registered successfully </h1></div>
+
+           <script src="User.js">
+           </script> 
+        </body>
+</html>

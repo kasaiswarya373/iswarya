@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment-8</title>
+    <style>
+        h2{
+            width: auto;
+            height: 50px;
+            padding: 10px;
+            background-color: lightblue;
+            text-align: center;
+        }
+        .box1{
+            border: 2px solid;
+            width: auto;
+            height: 200px;
+            margin: 10px;
+        }
+        .box2{
+            border: 2px solid;
+            width: auto;
+            height: 150px;
+            margin: 10px;
+        }
+        .pd{
+            border: 2px solid;
+            width: 150px;
+            height: 40px;
+            background-color: aliceblue;
+            position: relative;
+            top: -10px;
+            left: 20px;
+            text-align: center;
+            padding-top: 10px;
+        }
+       .pd2{
+        position: relative;
+        left: 400px;
+        top: -150px;
+        float: left;
+        padding: 10px;
+       }
+       .ed{
+        border: 2px solid;
+        width: 150px;
+        height: 40px;
+        background-color: aliceblue;
+        position: relative;
+        top: -10px;
+        left: 20px;
+        text-align: center;
+       }
+       .box3{
+        width: auto;
+        height: 150px;
+        border: 2px solid;
+        margin: 10px;
+       }
+       .det{
+        border: 2px solid;
+        width: 150px;
+        height: 40px;
+        background-color: aliceblue;
+        position: relative;
+        top: -10px;
+        left: 20px;
+        text-align: center;
+       }
+       .register{
+        width: 200px;
+        height: 50px;
+        border: 2px solid;
+        text-align: center;
+        position: relative;
+        left: 1200px;
+       }
+       .copy{
+        width: auto;
+        height: 50px;
+        border: 2px solid;
+        text-align: center;
+        margin: 10px;
+       }
+       .full{
+        overflow:auto;
+       }
+    </style>
+</head>
+<body>
+    <h2> Student Registration Form</h2>
+    <form action="images/save.png" method="get">
+    <div class="full">
+    <div class="box1">
+        <div class="pd"> Personal Details</div>
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td> <input type="name"></td>
+            </tr>
+            <tr>
+                <td> <label for="name">FirstName:</label></td>
+                <td><input type="name"></td> 
+            </tr>
+            <tr>
+                <td> <label for="Age">Age:</label></td>
+                <td><input type="number"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="pd2">
+        <table>
+            <tr>
+                <td><label for="Address"> Address:</label></td>
+                <td><textarea name="" id="" cols="50" rows="3"></textarea></td>
+            </tr>
+            <tr> <label for="Country"> Country:</label></tr>
+            <tr><select name="" id="" >
+                <option value="Country">India</option>
+                <option value="Country">Italy</option>
+                <option value="Country">Bangladesh</option>
+                <option value="Country">USA</option>
+                <option value="Country">England</option>
+            </select></tr>
+        </table>
+    </div>
+
+    <br><br><br><br>
+    <div class="box2">
+        <div class="ed">Educational Details </div>
+        <table>
+            <tr>
+                <td> <label for="qualification">Qualification</label></td>
+                <td><select name="" id="">
+                    <option value="B.E"> B.E</option>
+                    <option value="B.tech">B.tec</option>
+                    <option value="B.com">B.A</option>
+                    <option value="B.sc">B.com</option>
+                    <option value="B.A">Bsc</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="languages">Languages</label></td>
+                <td><input type="checkbox">English</td>
+                <td><input type="checkbox">Telugu</td>
+                <td><input type="checkbox">Hindi</td>
+                <td><input type="checkbox">Urdu</td>
+            </tr>
+            <tr>
+                <td><label for="course "> Course Opted</label></td>
+                <td> <input type="radio"> Phyton</td>
+                <td> <input type="radio"> Java</td>
+                <td> <input type="radio"> Full stack</td>
+                <td> <input type="radio"> .Net</td>
+            </tr>     
+        </table>
+    </div>
+    <br><br><br><br>
+    <div class="box3">
+        <div class="det">About Yourself</div>
+        <table>
+            <tr>
+                <td><label for="Yourself"> Few Words About You:</label></td>
+                <td> <textarea name="" id="" cols="50" rows="3"></textarea></td>
+            </tr>
+
+        </table>
+
+    </div>
+    <div class="register"> Register Details</div>
+    <div class="copy">@Copy rights 2023</div>
+</div>
+<div>
+    <input type="submit" value="submit">
+    <div style="text-align: center;"></div>
+</div>
+</form>
+</body>
+</html>

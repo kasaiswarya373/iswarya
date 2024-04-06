@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        border: 1px solid;
+        text-align: center;
+        padding: 10px;
+      }
+      .leftBlock,
+      .rightBlock {
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+        float: left;
+        height: 500px;
+      }
+      .leftBlock {
+        width: 25%;
+      }
+      .rightBlock {
+        width: 65%;
+        overflow: auto;
+      }
+      .studentList div {
+        border: 1px solid;
+        width: 100px;
+        margin: 10px;
+        padding: 10px;
+      }
+      .block {
+        border: 1px solid;
+        margin: 10px;
+        height: 150px;
+      }
+      .imgBlock,
+      .detailsBlock {
+        float: left;
+        margin: 10px;
+      }
+      .imgBlock {
+        width: 200px;
+        border: 1px solid;
+      }
+      img {
+        width: 200px;
+        height: 120px;
+      }
+      .label,
+      .content,
+      .colonholder {
+        float: left;
+      }
+      .label {
+        width: 100px;
+      }
+      .colonholder {
+        width: 50px;
+      }
+      .detailsBlock .row {
+        clear: both;
+      }
+      .studentList li {
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+        list-style-position: inside;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="header">Student Details Page</h3>
+    <div class="leftBlock">
+      <ol class="studentList">
+        <li>
+          <a href="#raj"> Raj</a>
+        </li>
+        <li>
+          <a href="#rajesh"> Rajesh</a>
+        </li>
+        <li>
+          <a href="#john"> John</a>
+        </li>
+        <li>
+          <a href="#harsha"> Harsha</a>
+        </li>
+        <li>
+          <a href="#krish"> Krish</a>
+        </li>
+        <li>
+          <a href="#suresh"> Suresh</a>
+        </li>
+      </ol>
+    </div>
+    <div class="rightBlock">
+      <div class="block" id="raj">
+        <div class="imgBlock">
+          <img
+            src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
+          />
+        </div>
+
+        <div class="detailsBlock">
+          <div class="row">
+            <div class="label">Name</div>
+            <div class="colonholder">:</div>
+            <div class="content">Raj</div>
+          </div>
+          <div class="row">
+            <div class="label">Age:</div>
+            <div class="colonholder">:</div>
+            <div class="content">10</div>
+          </div>
+          <div class="row">
+            <div class="label">Gender</div>
+            <div class="colonholder">:</div>
+            <div class="content">Male</div>
+          </div>
+          <div class="row">
+            <div class="label">Location:</div>
+            <div class="colonholder">:</div>
+            <div class="content">Hyderabad</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block" id="rajesh">
+        <div class="imgBlock">
+          <img
+            src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
+          />
+        </div>
+
+        <div class="detailsBlock">
+          <div class="row">
+            <div class="label">Name</div>
+            <div class="colonholder">:</div>
+            <div class="content">Rajesh</div>
+          </div>
+          <div class="row">
+            <div class="label">Age:</div>
+            <div class="colonholder">:</div>
+            <div class="content">10</div>
+          </div>
+          <div class="row">
+            <div class="label">Gender</div>
+            <div class="colonholder">:</div>
+            <div class="content">Male</div>
+          </div>
+          <div class="row">
+            <div class="label">Location:</div>
+            <div class="colonholder">:</div>
+            <div class="content">bhubaneswar</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block" id="john">
+        <div class="imgBlock">
+          <img
+            src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
+          />
+        </div>
+
+        <div class="detailsBlock">
+          <div class="row">
+            <div class="label">Name</div>
+            <div class="colonholder">:</div>
+            <div class="content">John</div>
+          </div>
+          <div class="row">
+            <div class="label">Age:</div>
+            <div class="colonholder">:</div>
+            <div class="content">10</div>
+          </div>
+          <div class="row">
+            <div class="label">Gender</div>
+            <div class="colonholder">:</div>
+            <div class="content">Male</div>
+          </div>
+          <div class="row">
+            <div class="label">Location:</div>
+            <div class="colonholder">:</div>
+            <div class="content">chennai</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block" id="harsha">
+        <div class="imgBlock">
+          <img
+            src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
+          />
+        </div>
+
+        <div class="detailsBlock">
+          <div class="row">
+            <div class="label">Name</div>
+            <div class="colonholder">:</div>
+            <div class="content">Harsha</div>
+          </div>
+          <div class="row">
+            <div class="label">Age:</div>
+            <div class="colonholder">:</div>
+            <div class="content">10</div>
+          </div>
+          <div class="row">
+            <div class="label">Gender</div>
+            <div class="colonholder">:</div>
+            <div class="content">female</div>
+          </div>
+          <div class="row">
+            <div class="label">Location:</div>
+            <div class="colonholder">:</div>
+            <div class="content">delhi</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block" id="krish">
+        <div class="imgBlock">
+          <img
+            src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
+          />
+        </div>
+
+        <div class="detailsBlock">
+          <div class="row">
+            <div class="label">Name</div>
+            <div class="colonholder">:</div>
+            <div class="content">Krish</div>
+          </div>
+          <div class="row">
+            <div class="label">Age:</div>
+            <div class="colonholder">:</div>
+            <div class="content">10</div>
+          </div>
+          <div class="row">
+            <div class="label">Gender</div>
+            <div class="colonholder">:</div>
+            <div class="content">Male</div>
+          </div>
+          <div class="row">
+            <div class="label">Location:</div>
+            <div class="colonholder">:</div>
+            <div class="content">Hyderabad</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block" id="suresh">
+        <div class="imgBlock">
+          <img
+            src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
+          />
+        </div>
+
+        <div class="detailsBlock">
+          <div class="row">
+            <div class="label">Name</div>
+            <div class="colonholder">:</div>
+            <div class="content">Suresh</div>
+          </div>
+          <div class="row">
+            <div class="label">Age:</div>
+            <div class="colonholder">:</div>
+            <div class="content">10</div>
+          </div>
+          <div class="row">
+            <div class="label">Gender</div>
+            <div class="colonholder">:</div>
+            <div class="content">Male</div>
+          </div>
+          <div class="row">
+            <div class="label">Location:</div>
+            <div class="colonholder">:</div>
+            <div class="content">Hyderabad</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

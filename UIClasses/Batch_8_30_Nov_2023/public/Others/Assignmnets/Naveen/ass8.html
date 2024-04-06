@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+    <style>
+      .li{
+            border: 3px snow whitesmoke;
+            margin: 10px;
+            padding: 10px;
+        }
+        .li1{
+            position: absolute;
+           right: 80px;
+           top: 40px;
+        }
+        .header{
+            border: 5px solid whitesmoke;
+            text-align: center;
+        } 
+        .main{
+            width: auto;
+            height: 1000px;
+            border: 5px solid burlywood;
+        }
+        .main1{
+            width: auto;
+            height: 200px;
+            border: 10px solid skyblue;
+            margin: 20px;
+            position: relative;
+
+        }
+        .main2{
+            width: auto;
+            height: 200px;
+            border: 10px solid skyblue;
+            margin: 20px;
+            position: relative;
+
+        }
+        .main3{
+            width: auto;
+            height: 300px;
+            border: 10px solid skyblue;
+            margin: 20px;
+            position: relative;
+
+        }
+        .header1{
+            text-decoration: underline;
+            border: 5px solid rgb(107, 102, 95);
+            position: absolute;
+            left: 60px;
+            top: -50px;
+            z-index: 3;
+            padding: 10px;
+        }
+        #button{
+            border: 3px solid black;
+            border-radius: 10px; 
+            padding: 5px;
+            margin: 15px;
+            position: absolute;
+            right: 0;
+        }
+        .footer{
+            border: 20px solid yellowgreen;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Student Registration Page</h1>
+    <div class="main">
+        <div class="main1">
+            <h4 class="header1">Personal Details</h4>
+            <ul>
+            <li class="li">
+            <label for="UserName"><b>Enter your Name</b></label>
+            <input type="text" name="UserName" maxlength="15">
+        </li>
+        <li class="li">
+            <label for="Password"><b>Enter Password</b></label>
+            <input type="pwt" password="pwt">
+           </li>
+           <li class="li">
+            <label for="age"><b>Age</b></label>
+            <input type="number" age>
+           </li>
+           <li class="li1">
+            <label for="address"><b>Address</b></label>
+           <textarea name="text" id="" cols="20" rows="3" display="none"></textarea>
+           </li>
+           <li class="li">
+            <label for="text"><b>country</b></label>
+            <select name="dropdown" id="">
+                <option value="">India</option>
+                <option value="">england</option>
+                <option value="">Srilanka</option>
+                <option value="">USA</option>
+                <option value="">Aus</option>
+            </select>
+           </li>
+        </ul>
+        </div>
+        <div class="main2">
+            <h4 class="header1">Education Details </h4>
+            <li class="li">
+                <label for="text"><b>Qualification</b></label>
+                <select name="dropdown" id="">
+                    <option value="">SELECT</option>
+                    <option value="">10th</option>
+                    <option value="">INTER</option>
+                    <option value="">DEGREE</option>
+                    <option value="">POLYTECHNIC</option>
+                    <option value="">BTECH</option>
+                </select>
+            </li>
+            <li class="li">
+                <label for="SELECT">Courseopted</label>
+                <input type="radio" name="course">MCA
+                <input type="radio" name="COURSE">MBA
+                <input type="radio" name="gender">BTCH
+             </li>
+             <li class="li">
+                <label for="SELECT">Courseopted</label>
+                <input type="checkbox" name="course">Telugu
+                <input type="checkbox" name="COURSE">English
+                <input type="checkbox" name="gender">Hindi
+             </li>
+
+        </div>
+        <div class="main3">
+            <h4 class="header1"> About YourSelf</h4>
+                <li class="li">
+                    <label for="address"><b>Few Words About Your Career</b></label>
+                   <textarea name="text" id="" cols="50" rows="10" display="none"></textarea>
+                </li>
+        </div>
+        <input type="submit" 
+        name="submit" value="Submit Registration" id="button">
+    </div>
+    <div class="footer">@COPY RIGHT 2023</div>
+
+</body>
+</html>

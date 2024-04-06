@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session Storage</title>
+    <script src="app.js"></script>
+    <style>
+      .themeBlock {
+        text-align: right;
+        margin-right: 20px;
+      }
+      
+      .welcomeBlock{
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        border: 2px solid red;
+        color: #d7eb28;
+        padding: 40px;
+        text-align: center;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="themeBlock">
+       Choose Theme : 
+      <!-- Choose Theme :
+      <select name="" id="themeSelector" onchange="getSelectedTheme()">
+        <option>Red</option>
+        <option>Green</option>
+        <option>Yellow</option>
+      </select> -->
+    </div>
+
+    <div>
+        <input type="color" id="themeSelector" onchange="getSelectedTheme()">
+        <input type="text" placeholder="Enter Your Name" id="userName">
+        <button onclick="saveUserDetails()">Save</button>
+    </div>
+
+    <div class="welcomeBlock">
+        Thanks for visiting our webpage Mr. <span id="u_name"></span>
+    </div>
+  </body>
+</html>

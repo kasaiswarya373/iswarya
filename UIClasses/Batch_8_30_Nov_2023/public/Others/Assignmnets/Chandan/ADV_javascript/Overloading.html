@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> overloading </title>
+</head>
+<body>
+    <script>
+        var dosum = (a1, a2) => {
+
+        }
+
+        var dosum = (a1, a2, a3) => {
+
+        }
+    </script>
+</body>
+</html>
+
+// C language------//
+
+function dosum (int a1, int a2){
+    // 1st
+}
+function dosum (int a1, float a2){
+    // 2nd
+}
+function dosum (int a1, int a2 , inta3){
+    // 3rd one
+}
+function dosum (int a1, float a2 , float a3){
+    // 4th one
+}
+
+dosum(20,30);  // 1st one gets invoked
+
+dosum(30,2.4, 6.7); // 4th  one gets invoked
+
+dosum (3.4); // error
+
+
+
+// javascript-----//
+
+function dosub() {
+
+}
+
+function dosum ( a1,  a2){
+    // 1st
+}
+function dosum ( a1,  a2){
+    // 2nd
+}
+function dosum ( a1,  a2 , a3){
+    // 3rd one
+}
+function dosum ( a1,  a2 ,  a3){
+    // 4th one
+}
+
+dosum(20,30);  // last one get invoked
+
+dosum(2.4 ); // last  one gets invoked
+
+dosum (); // 1st one 
+
+
+classes in JAVA ...
+
+class collegeDetails {
+    collegeDetails() { // constructor
+
+    }
+
+    collegeDetails(string name , int rating) {
+
+    }
+
+    collegeDetails(string name) {
+
+    }
+}
+
+classes in javascript-----
+
+class collegeDetails {
+    constructor() {
+        
+    }
+}

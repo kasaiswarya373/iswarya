@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 60;
+        var b = 40;
+        var c = a + b;        /*declaring variables outside the function so anyone or anytime 
+                               we can accsess it called as public or global scope*/
+        function myFunction() {
+            console.log(c);
+        }
+        myFunction();
+        // ******************************************************************************************************
+
+        function myFunction() {
+            var a = 60;                  /* declaring the varibales inside the function only for particular function 
+                                          so noone can access those varibale called private or local scope of varibale*/
+            var b = 40;
+            var c = a + b;
+            console.log(c);
+        }
+        myFunction();
+
+
+    </script>
+</body>
+
+</html>

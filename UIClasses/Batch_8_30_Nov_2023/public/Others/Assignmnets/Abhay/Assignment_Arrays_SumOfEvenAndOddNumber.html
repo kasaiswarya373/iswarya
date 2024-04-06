@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Sum of the even number and Odd number in the arrays.
+        var num = parseInt(prompt("Enter Size of the array"));
+        var array = [num];
+        for (var i = 0; i < num; i++) {
+            array[i] = prompt("Enter nuber");
+            array[i] = parseInt(array[i]);
+        }
+        var evenSum = 0;
+        var oddSum = 0;
+        var getValuesforEvenNumber = (array, evenSum) => {
+            for (var i = 0; i < num; i++) {
+                if (array[i] % 2 == 0) {
+                    evenSum += array[i];
+                }
+            }
+            return evenSum;
+        }
+        var getValuesforOddNumber = (array, oddSum) => {
+            for (var i = 0; i < num; i++) {
+                if (array[i] % 2 != 0) {
+                    oddSum += array[i];
+                }
+            }
+            return oddSum;
+        }
+        console.log("Sum of the even numbers in the arrays is " + getValuesforEvenNumber(array, evenSum));
+        console.log("Sum of the Odd numbers in the arrays is " + getValuesforOddNumber(array, oddSum));
+    </script>
+</body>
+
+</html>

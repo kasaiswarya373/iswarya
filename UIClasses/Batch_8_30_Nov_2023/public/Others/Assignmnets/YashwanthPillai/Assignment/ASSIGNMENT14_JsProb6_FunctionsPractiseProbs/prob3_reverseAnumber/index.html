@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse A Number</title>
+</head>
+<body>
+    <h2>WAP TO REVERSE A NUMBER USING FUNCTION</h2>
+
+    <script>
+        let RevNum = () =>{
+            let num = parseInt(prompt("ENTER A NUMBER TO REVERSE"));
+            let ReversedNumber = getRevNum(num);
+            console.log(`Given Number = ${num} and Reversed Num = ${ReversedNumber}`)
+        }
+        let getRevNum = (num) =>{
+            let temp = num;
+            let remainder;
+            let revnum = 0;
+            while(temp > 0){
+
+                remainder = temp % 10;
+                revnum = revnum *10 + remainder
+                temp = parseInt(temp/10)
+            }
+            return revnum
+        }
+
+        RevNum()
+    </script>
+</body>
+</html>

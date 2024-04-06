@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="title">
+                <label for="code">Enter Security Code</label> <br>
+                <input type="text">
+            </div>
+            <canvas id="myCanvas" width="200px" height="100px"></canvas>
+            <div class="button"> <span>Need Another Security Code</span> <button id="BtnClick"
+                    onclick="getCaptcha()">Click Here</button></div>
+            <div class="submit">
+                <button id="submitButton" onclick="getCaptchaImage()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"> </script>
+</body>
+
+</html>

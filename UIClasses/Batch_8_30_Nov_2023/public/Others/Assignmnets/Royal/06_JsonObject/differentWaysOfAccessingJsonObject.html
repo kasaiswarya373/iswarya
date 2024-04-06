@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Ways Of Accessing JSON Object</title>
+</head>
+<body>
+    <script>
+        var info = {
+            'name' : "Royal",
+            'age'  : 30,
+            'gender' : 'Male'
+        }
+
+        console.log(info.age);
+        console.log(info['age']);
+        console.log(info["age"]);
+
+        var keyName = 'name';
+        
+        console.log(info[keyName])
+
+    </script>
+</body>
+</html>

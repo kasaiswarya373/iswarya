@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="multiDrop.css" />
+    <script src="multiDrop.js"></script>
+    <title>Cascading Dropdowns</title>
+  </head>
+  <body>
+    <h3>User Registration Page</h3>
+    <ul>
+      <li>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+      </li>
+      <li>
+        <label for="age">Age:</label>
+        <input type="text" id="age" />
+      </li>
+      <li>
+        <label for="country">Country:</label>
+        <select id="country" onchange="populateStates()">
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="india">India</option>
+          <!-- Add more countries as needed -->
+        </select>
+      </li>
+      <li>
+        <label for="state">State:</label>
+        <select id="state" onchange="populateCities()"></select>
+      </li>
+      <li>
+        <label for="city">City:</label>
+        <select id="city"></select>
+      </li>
+      <li>
+        <input type="button" value="Register" />
+      </li>
+    </ul>
+  </body>
+</html>

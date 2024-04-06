@@ -1,0 +1,27 @@
+ul{
+    width:420px;
+    margin:20px auto;
+    border:1px solid;
+    background-color: gray;
+    padding:15px;
+}
+li{
+    list-style: none;
+    border:1px solid;
+    margin:10px;
+    padding:10px;
+    background-color: whitesmoke;
+}
+.title{
+    color:green;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+label{
+width : 130px;
+display: inline-block;
+}
+#displayBlock{
+    display: none;
+}

@@ -1,0 +1,56 @@
+h2 {
+    border: 2px solid palegreen;
+    background-color: grey;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+  }
+  .container {
+    /* border: 1px solid black; */
+    min-height: 500px;
+  }
+  
+  .input-container,.display-container {
+    border: 2px solid palegreen;
+    background-color: whitesmoke;
+    color: white;
+    width: 600px;
+    margin: auto;
+  }
+  .display-container{
+      margin-block: 10px;
+      display: none;
+      color: black;
+  }
+  li {
+    border: 1px solid palegreen;
+    background-color: gray;
+    list-style: none;
+    margin: 5px;
+    padding: 15px;
+  }
+  .head1 {
+    text-align: center;
+    font-weight: bolder;
+  }
+  label {
+    width: 150px;
+    display: inline-block;
+  }
+  input[name=submit] {
+    padding: 5px;
+    border-radius: 7px;
+    background-color: black;
+    color: brown;
+  }
+  input[name=submit]:hover{
+      color: aquamarine;
+      border: 1px solid aquamarine;
+  }
+  .buttons{
+      text-align: center;
+      
+  }
+  span{
+      font-weight: bolder;
+  }

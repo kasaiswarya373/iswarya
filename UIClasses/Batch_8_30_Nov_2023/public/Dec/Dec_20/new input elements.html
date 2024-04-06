@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER DETAILS</title>
+    <style>
+        ul{
+            border: 1px solid;
+            width: 500px;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: brown;
+        }
+        li{
+            list-style: none;
+            border: 1px soliid;
+            background-color: aqua;
+            padding: 8px;
+            margin: 8px;
+        }
+        h1{
+            text-align: center;
+            color: magenta;
+            font-size: 20px;
+            padding: 10px;
+            margin: 8px;
+            border: 1px solid gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        USER DETAILS
+    </h1>
+    <ul>
+        <li>
+            user name:<input type="text">
+        </li>
+        <li>
+            user Gender:<input type="text">
+        </li>
+        <li>
+            Age:<input type="number">
+        </li>
+        <li>
+            fav color:<input type="color">
+        </li>
+        <li>
+            DOB:<input type="datetime-local">
+        </li>
+        <li>
+            Hobbies:<input type="text">
+        </li>
+        <li>
+            Mobile:<input type="text">
+        </li>
+
+        <li>
+            Place:<input type="text">
+        </li>
+        <li>
+            Appointment Time:<input type="text">
+        </li>
+        <li><span class="price"></span>
+            price Range:<input type="range" min="1000" max="10000" id="price range"
+             onchange="updateprice()" oninput="updateprice()">
+
+        </li>
+        <li>
+            <input type="month">
+        </li>
+        <li>
+            <input type="email">
+        </li>
+    </ul>
+    <script>
+        var updateprice=()=> {
+            var price = document.querySelector("#Price Range").value;
+            document.querySelector(".price").innerHTML = price;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            Student Details
+        </div>
+        <div class="sname">
+            <label for="sname">Student Name :</label>
+            <input type="text" name="sname" id="sname" onkeypress="return ValidityState(event)">
+            <div class="errorname" id="error1">This Field is required</div>
+        </div>
+        <div class="sage">
+            <label for="sage">Student Age :</label>
+            <input type="text" name="sage" id="sage" onkeypress="return ValidityState2(event)" maxlength="2">
+            <div class="errorage" id="error2">This Field is required</div>
+        </div>
+        <div class="gender">
+            <label for="gender">Student Gender :</label>
+            Male<input type="radio" name="gender" value="Male">
+            Female<input type="radio" name="gender" value="Female">
+        </div>
+        <div class="class">
+            <label for="class">Class :</label>
+            <select name="class" id="sclass">
+                <option value="" selected hidden>Select</option>
+                <option value="First">First</option>
+                <option value="Second">Second</option>
+                <option value="Third">Third</option>
+                <option value="Fourth">Fourth</option>
+            </select>
+        </div>
+        <div class="marks">
+            <label for="marks">Marks :</label>
+            <input type="text" id="m1" placeholder="English" onkeypress="return ValidityState3(event)" maxlength="2">
+            <input type="text" id="m2" placeholder="Hindi" onkeypress="return ValidityState3(event)" maxlength="2">
+            <input type="text" id="m3" placeholder="Marathi" onkeypress="return ValidityState3(event)" maxlength="2">
+            <input type="text" id="m4" placeholder="Maths" onkeypress="return ValidityState3(event)" maxlength="2">
+            <input type="text" id="m5" placeholder="science" onkeypress="return ValidityState3(event)" maxlength="2">
+            <span id="error3" class="errormarks">This Field is required</span>
+        </div>
+        <div class="btn">
+            <input type="button" name="btn" id="btn" value="Generate Card" onclick="readStudentDetails()">
+        </div>
+    </div>
+
+
+    <div class="sub-main" id="displayBlock">
+        <div class="nav">
+            Student Details
+        </div>
+        <div class="sname">
+            <label for="sname">Student Name : <span id="d_name"></span></label>
+        </div>
+        <div class="sage">
+            <label for="sage">Student Age : <span id="d_age"></span></label>
+        </div>
+        <div class="gender">
+            <label for="gender">Student Gender : <span id="d_gender"></span></label>
+        </div>
+        <div class="class">
+            <label for="class">Student Class : <span id="d_class"></span></label>
+        </div>
+        <div class="total">
+            <label for="total">Student Total : <span id="d_total"></span></label>
+        </div>
+        <div class="avg">
+            <label for="avg">Student Avg : <span id="d_avg"></span></label>
+        </div>
+        <div class="grade">
+            <label for="grade">Student Grade : <span id="d_grade"></span></label>
+        </div>
+        <div class="btn">
+            <input type="button" name="btn" id="btn" value="Download Now" onclick="resetValues()">
+        </div>
+        <div class="msg">
+            <h3>Your Card is downloading please have a patience</h3>
+        </div>
+        <div class="footer">Made With ❤️ By Abhay</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .mainblock{
+            border: 1px solid;
+            height: 960px;
+            width: auto;
+            margin: 10px ;
+        }
+        .block1, .block2, .block3{
+            border: 1px solid;
+            height: 250px;
+            margin: 30px;
+        }
+        .headingblock1, .headingblock2, .headingblock3{
+            border: 1px solid;
+            height: 40px;
+            width: 200px;
+            position: relative;
+            left: 50px;
+            top: -23px;
+            background-color: white;
+            text-align: center;
+        }
+        li{
+        
+            list-style: none;
+        }
+        .firstname{
+            position: relative;
+            top: 30px;
+        }
+        .age{
+            position: relative;
+            top: 60px;
+
+        }
+        .address{
+            position: relative;
+            top: -100px;
+            left: 600px;
+        }
+        .address > textarea{
+            position: relative;
+            width: 260px;
+            height: 60px;
+            top: 20px;
+        }
+        input[type="number" i] {
+        writing-mode: horizontal-tb !important;
+        padding-block: 1px;
+        padding-inline: 2px;
+      }
+        .country{
+            position: relative;
+            left: 600px;
+            top: -50px;
+        }
+        select {
+        position: relative;
+        left: 5px;
+        width: 250px;
+        height: 25px;
+      }
+      .language{
+        position: relative;
+        top: 40px;
+      }
+      .course{
+        position: relative;
+        top: 75px;
+      }
+      .about {
+        position: relative;
+        top: -80px;
+      }
+      .about > textarea{
+        position: relative;
+        top: 70px;
+        width: 800px;
+        height: 130px;
+      }
+      .registerbutton{
+        position: relative;
+        left: 1150px;
+      }
+      .footer{
+        text-align: center;
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+</head>
+<body>
+    <h3 class="header">Student Registration Page</h3>
+    <div class="mainblock">
+        <div class="block1">
+            <div class="headingblock1">Personal Details</div>
+            <ul>
+                <li>
+                    <label for="username">Name :</label>
+                    <input type="text" name="username">
+                </li>
+                <li class="firstname">
+                    <label for="firstname">First Name :</label>
+                    <input type="text" name="firstname">
+                </li>
+                <li class="age">
+                    <label for="Age">Age :</label>
+                    <input type="number" name="Age">
+                </li>
+                <li class="address">
+                    <label for="address">Addess :</label>
+                    <textarea name="address"></textarea>
+                </li>
+                <li class="country">
+                    <label for="country">Country :</label>
+                    <select>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>Japan</option>
+                        <option>China</option>
+                        <option>Korea</option>
+                        <option>Nepal</option>
+                        <option>others</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+            <div class="block2">
+                <div class="headingblock2">Education Details</div>
+                <ul>
+                    <li>
+                        <label>Qualification :</label>
+                            <select>
+                                <option>MBA</option>
+                                <option>B.Tech</option>
+                                <option>MCA</option>
+                                <option>M.Tech</option>
+                                <option>MSc</option>
+                                <option>Others</option>
+                            </select>    
+                    </li>
+                    <li class="language">
+                        <label>Languages :</label>
+                        <input type="checkbox">English
+                        <input type="checkbox">Hindi
+                        <input type="checkbox">Odia
+                        <input type="checkbox">Telugu
+                    </li>
+                    <li class="course">
+                        <label>Course Opted :</label>
+                        <input type="radio">MBA
+                        <input type="radio">MCA
+                        <input type="radio">BTech
+                        <input type="radio">MSc
+                    </li>
+                </ul>
+            </div>
+                <div class="block3">
+                    <div class="headingblock3">About Yourself</div>
+                        <ul>
+                            <li class="about">
+                                <label>Few words about your career :</label>
+                                <textarea maxlength="500"></textarea>
+                            </li>
+                        </ul>
+            </div>
+            <div class="registerbutton">
+                <input type="button" value="Register Details">
+            </div>
+    </div>
+    <div class="footer">© 2023 Naresh IT.</div>
+</body>
+</html>

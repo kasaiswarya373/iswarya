@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeanMedianCaluculationInArray
+    </title>
+</head>
+<body>
+   <script>
+    var givenArray=()=>{
+        var a=[2,3,5,4,9,7];
+        console.log(a)
+      for( i=0;i<=a.length;i++){
+            for( j=i+1;j<=a.length;j++){
+                if(a[i]>a[j]){
+                    var temp;
+                  temp=a[i];
+                  a[i]=a[j];
+                  a[j]=temp;
+                }
+            }
+        }
+        console.log(a)
+     meanCalculation(a);
+    medianCalculation(a);
+
+
+
+
+    }
+    meanCalculation=(a)=>{
+       var sum=0;
+         for(i=0;i<a.length;i++){
+             sum+=a[i];
+         }
+       var  mean=sum/a.length;
+        
+      console.log("mean="+mean);
+     } 
+        
+
+
+      
+     
+    
+
+     
+    medianCalculation=(a)=>{
+        
+               
+            if(a.length%2==0){
+                var k=(a.length+1)/2;
+
+               var l= (a[k-1.5]+a[k-0.5])/2;
+                console.log(l)
+            }else{
+                var k=(a.length+1)/2;
+
+            
+            console.log(a[k-1]);
+            }
+        
+
+    }
+    givenArray();
+
+   </script>
+</body>
+</html>

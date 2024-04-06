@@ -1,0 +1,119 @@
+.clockContainer{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 100px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.hands_box{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hands_box .secHand{
+   position: absolute;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center; 
+   width: 150px;
+   height: 150px;
+}
+.hands_box .hoursHand{
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    width: 100px;
+    height: 100px;
+    transform: rotate(140deg);
+ }
+ .hands_box .minHand{
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    width: 120px;
+    height: 120px;
+    transform: rotate(80deg);
+ }
+.hands_box .secHand i{
+    position: absolute;
+    height: 75px;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+.hands_box .hoursHand i{
+    position: absolute;
+    height: 50px;
+    border: 2px solid ;
+    border-radius: 50%;
+}
+.hands_box .minHand i{
+    position: absolute;
+    height: 60px;
+    border: 2px solid blue;
+    border-radius: 50%;
+}
+.no12{
+    top: 2px;
+    right: 90px;
+}
+.no6{
+    bottom: 2px;
+    right: 95px;
+}
+.no3{
+    right: 2px;
+    top: 82px;
+}
+.no9{
+    left: 2px;
+    top: 82px;
+}
+.no1{
+    top: 9px;
+    right: 50px;
+}
+.no11{
+   top: 9px;
+    left: 50px;
+}
+.no2{
+    top: 41px;
+    right: 17px;
+}
+.no10{
+    top: 41px;
+    left: 17px;
+}
+.no4{
+    top: 127px;
+    right: 15px;
+} 
+.no5{
+    bottom: 13px;
+    right: 47px;
+}
+.no7{
+    bottom: 13px;
+    left: 47px;
+}
+.no8{
+    top: 127px;
+    left: 15px;
+}
+.no{
+    font-weight: bold;
+    position: absolute;
+    font-size: 23px;
+}

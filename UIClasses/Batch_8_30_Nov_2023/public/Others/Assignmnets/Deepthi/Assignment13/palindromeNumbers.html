@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Palindrome Numbers b/w 1000 to 22
+    </title>
+</head>
+
+<body>
+    <script>
+
+        var remainder;
+    
+        for (var palindromenum = 999; palindromenum >= 22; palindromenum--) {
+            var temp = palindromenum;
+            var sum = 0;
+            while (temp > 0) {
+
+                remainder = temp % 10;
+                sum = (sum * 10) + remainder;
+                temp = temp / 10;
+                temp = parseInt(temp);
+
+                if (palindromenum == sum) {
+                    console.log("palindrome number b/w 1000 and 22 is:" + palindromenum);
+                }
+            }
+        }     
+    </script>
+</body>
+
+</html>

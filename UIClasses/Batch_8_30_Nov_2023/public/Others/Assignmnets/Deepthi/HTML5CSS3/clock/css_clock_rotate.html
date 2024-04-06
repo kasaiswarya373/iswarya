@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title>
+   <link rel="stylesheet" href="clock.css">    
+</head>
+
+<body>
+    <div class="circle">
+        <div class="dot">.</div>
+        <div class="hand hourHand"></div>
+        <div class="hand minHand"></div>
+        <div class="hand secHand"></div>
+        <div class="clock one">1</div>
+        <div class="clock two">2</div>
+        <div class="clock three">3</div>
+        <div class="clock four">4</div>
+        <div class="clock five">5</div>
+        <div class="clock six">6</div>
+        <div class="clock seven">7</div>
+        <div class="clock eight">8</div>
+        <div class="clock nine">9</div>
+        <div class="clock ten">10</div>
+        <div class="clock eleven">11</div>
+        <div class="clock twelve">12</div>
+    </div>
+    <script>
+
+        var getcurrentTime = () => {
+        var date = new Date();
+
+        var hours = date.getHours();
+        console.log(hours);
+        var minutes = date.getMinutes();
+        console.log(minutes);
+        var seconds = date.getSeconds();
+
+        hours_rotation = (hours * 30) + (minutes/2);
+        console.log(hours_rotation);
+        minutes_rotation = minutes * 6;
+        seconds_rotation = seconds * 6;
+
+        document.querySelector(".hourHand").style.transform = `rotate(${hours_rotation}deg)`;
+        document.querySelector(".minHand").style.transform = `rotate(${minutes_rotation}deg)`;
+        document.querySelector(".secHand").style.transform = `rotate(${seconds_rotation}deg)`;
+        }
+
+        setInterval(() => {
+            getcurrentTime();
+        },1000);
+        
+    </script>
+</body>
+
+</html>

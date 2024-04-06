@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 17</title>
+  </head>
+  <body>
+   <h3>Employee Details Using This Operator</h3>
+     <script>
+          var empDetails = { 
+             readstudentDetails () {
+                this.name = prompt("Enter your name");
+                this.age = prompt (" Enter your age ");
+                this.gender = prompt("Enter your gender");
+                this.dept = prompt ("enter your dept ");
+                this.pf = parseInt(prompt ( " Enter your pf"));
+                this.hra =parseInt(prompt("Enter your hra"));
+                this.basicSal = parseInt(prompt (" Enter your basic salary "));
+                this.getTotalValue();
+             },
+             getTotalValue () {
+                this.pf = (this.pf*this.basicSal)/100;
+                this.hra =(this.hra*this.basicSal)/100;
+                this.totalSal=(this.basicSal+this.pf+this.hra);
+
+             },
+             displayEmpDetails () {
+              this.readstudentDetails ();
+               console.log("name is" +this.name);
+               console.log("age is"  +this.age);
+               console.log("gender is" +this.gender);
+               console.log("dept is" +this.dept);
+               console.log("pf is" +this.pf);
+               console.log("hra is" +this.hra);
+               console.log("total Salary is" +this.totalSal);
+
+               }
+            }
+             empDetails.displayEmpDetails();
+     </script>
+    
+  </body>
+</html>

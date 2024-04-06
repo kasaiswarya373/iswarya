@@ -1,0 +1,35 @@
+Application cache - 
+
+    ebookstore.com 
+
+        visit the page
+        login 
+        explore the list of categories - select the one
+        explore the list of books from the selected categories
+        start reading it..
+        if the book is good, will order for a physical book through online payment
+
+
+bookstore.appcache 
+
+    CACHE:
+        // LIST OUT ALL THE RESOURCES WHICH NEED TO BE FORCEFULLY CACHED WITHIN THE BROWSER 
+        pages/books/*.*
+        imges/books/*.png
+        styles/page.css
+
+    NETWORK:
+        // LIST OF RESCOURCES WHICH SHOULD NEVER CACHED 
+        login/page.html
+        pages/payment.*
+        *.*
+
+    FALLBACK:
+        /pagenotfound.html
+
+    
+
+index.html
+    <html manifest="path/bookstore.appcache">
+            ...
+    </html>

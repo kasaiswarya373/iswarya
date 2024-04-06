@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page with Local Storage</title>
+    <link rel="stylesheet" href="login.css">
+    <script src = "login.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li class="title">Log into your account</li>
+        <li class="data">
+            <label for="uname">User Name</label>
+            <input type="text" name="uname" id="u_name">
+        </li>
+        <li class="data">
+            <label for="pswd">Password</label>
+            <input type="password" name="pswd" id="u_pswd">
+        </li>
+        <li style="margin-top:10px;">
+            <input type="checkbox" id="u_checkbox" onclick="getRememberData()"> Remember me
+        </li>
+        <li>
+            <button>Login</button>
+        </li>
+    </ul>
+
+</body>
+
+</html>

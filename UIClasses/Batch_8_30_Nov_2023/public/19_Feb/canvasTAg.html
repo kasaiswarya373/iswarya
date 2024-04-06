@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Canvas tag
+        </title>
+        <style>
+            canvas {
+                border: 2px solid;
+                margin: 20px auto;
+                width: 700px;
+                height: 600px;
+            }
+        </style>
+    </head>
+    <body>
+      
+        <canvas id="mycanvas"></canvas>
+
+        <script>
+            var ctx = document.querySelector("#mycanvas").getContext("2d");
+            
+            ctx.moveTo(20, 20);
+            ctx.lineTo(100, 100);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+
+            
+            ctx.font = "30px Arial";        
+            ctx.fillStyle = 'green';
+            // ctx.fillText("Hello World", 10, 50);
+            ctx.strokeText("A", 10, 50);
+            ctx.strokeText("1", 15, 50);
+            ctx.strokeText("4", 31, 50);
+            ctx.strokeText("C", 17, 50);
+
+
+            // ctx.fillStyle = "rgb(200,0,0)";
+            // ctx.fillRect (10, 10, 55, 50);
+        </script>
+    </body>
+</html>

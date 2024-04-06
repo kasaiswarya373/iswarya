@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript basics</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #header:hover{
+           color:red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3 id="header">Employee Details...!</h3>
+
+    <script type="text/javascript">
+
+       var name = prompt("Enter Employee name : ");
+       var age = prompt("Enter age : ");
+       var basicSalary = prompt("Enter Basic Salary : ");
+       var pf = prompt("Enter PF % : ");
+       var hra = prompt("Enter HRA % : ");
+
+    //    To print output on webpage
+       document.write("Employee Name : "+name);
+       document.write("Age : "+age);
+       document.write("Basic Salary : "+basicSalary);
+       document.write("pf % : "+pf);
+       document.write("HRA % : "+hra);
+
+    //    To print output on Console. i.e.,F12
+       console.log("Employee Name : "+name);
+       console.log("Age : "+age);
+       console.log("Basic Salary : "+basicSalary);
+       console.log("pf % : "+pf);
+       console.log("HRA % : "+hra);
+
+       pf = (parseInt(pf)*basicSalary)/100;
+       hra = (parseInt(hra)*basicSalary)/100;
+
+       var totalSalary = parseInt(basicSalary)+pf+hra;
+       document.write("Total salary of Employee "+ name + " is : "+totalSalary);
+       console.log("Total salary of Employee "+ name + " is : "+totalSalary);
+
+
+    </script>
+    
+</body>
+</html>

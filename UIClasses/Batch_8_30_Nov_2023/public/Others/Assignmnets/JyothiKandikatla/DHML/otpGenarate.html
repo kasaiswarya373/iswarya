@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtpGenerate</title>
+</head>
+<body>
+    <span style="color:brown;"></span>
+    <input type="button" value="GenerateOTP" onclick=" OTPGenerate(5)">
+   <script>
+    var OTPGenerate = (size) => {
+        var otp = '';
+        for( var i = 1; i <= size; i++ ){
+            var no = Math.round((Math.random() * 9));
+      otp +=`  ${no}`;
+        }
+        console.log(otp);
+       document.querySelector('span').innerText = otp;
+    }
+ 
+   </script> 
+</body>
+</html>

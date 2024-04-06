@@ -1,0 +1,23 @@
+.resultbox{
+    display: none;
+}
+ul {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #8e0b0b;
+}
+li {
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    background-color: #fff;
+}
+h1{
+    width: auto;
+    height: 50px;
+    text-align: center;
+    border: 2px solid;
+    background-color: lightslategrey;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <style>
+        .heading {
+            border: 2px solid;
+            margin: 10px;
+            padding: 10px;
+            background-color: pink;
+            color: black;
+            text-align: center;
+            cursor: grab;
+        }
+        .leftblock,.rightblock {
+            height: 500px;
+            border: 2px solid;
+            margin: 10px;
+            padding: 10px;
+            cursor: grab;
+            float: left;
+            text-align: center;
+        }
+        .leftblock {
+            width: 20%;
+            background-color: bisque;
+            padding-left: 0;
+        }
+        .rightblock {
+            width: 70%;
+            background-color: beige;
+            overflow: auto;
+        }
+        .subheading {
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-style: double;
+            color: brown;
+        }
+        .block {
+            border: 1px solid;
+            padding: 10px;
+            margin: 10px;
+            list-style-position: inside;
+        }
+        .blocks {
+            width: 90%;
+            height: 170px;
+            border: 2px solid;
+            margin: 20px;
+            padding: 10px;
+            overflow: auto;
+        }
+        .image {
+            width: 150px;
+            height: 150px;
+            border: 1px solid;
+            margin: 10px;
+            float: left;
+        }
+        .list {
+            list-style: none;
+           float: left;
+           overflow: auto;
+        }
+        .names {
+            margin: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h3 class="heading">Student-Details</h3>
+    <div class="leftblock"><h3 class="subheading">Student-Names</h3>
+        <ol>
+            <li class="block">
+                <a href="#123">Ram</a>
+            </li>
+            <li class="block">
+                <a href="#1234">Krish</a>
+            </li>
+            <li class="block">
+                <a href="#12345">Meena</a>
+            </li>
+            <li class="block">
+                <a href="#123456">Teena</a>
+            </li>
+            <li class="block">
+                <a href="#1234567">Govind</a>
+            </li>
+        </ol>
+    </div>
+    <div class="rightblock"><h3 class="subheading">Student-Details</h3>
+        <div class="blocks" id="123">
+            <div><img class="image" src="https://media.istockphoto.com/id/143071480/photo/student-standing-on-steps-outdoors.jpg?s=612x612&w=0&k=20&c=A7TPrLH_am1xvXB-c-3zqEFDuJr_UflG50l95BosTnI=" alt=""></div>
+            <ol class="list" >
+                <li class="names"><b>Name : </b> Ram</li>
+                <li class="names"><b>Age : </b> 20y</li>
+                <li class="names"><b>Gender : </b> Male</li>
+                <li class="names"><b>Location :</b> Hyderabad</li>
+            </ol>
+        </div>
+        <div class="blocks" id="1234">
+            <div><img class="image" src="https://www.shutterstock.com/image-photo/confident-handsome-student-holding-books-600nw-366568778.jpg" alt=""></div>
+            <ol class="list">
+                <li class="names"><b>Name : </b> Krish</li>
+                <li class="names"><b>Age : </b> 23y</li>
+                <li class="names"><b>Gender : </b> Male</li>
+                <li class="names"><b>Location :</b> Delhi</li>
+            </ol>
+        </div>
+        <div class="blocks" id="12345">
+            <div><img class="image" src="https://c8.alamy.com/comp/J73T6D/university-student-girl-looking-happy-smiling-with-book-or-notebook-J73T6D.jpg" alt=""></div>
+            <ol class="list">
+                <li class="names"><b>Name : </b> Meena</li>
+                <li class="names"><b>Age : </b> 20y</li>
+                <li class="names"><b>Gender : </b> Female</li>
+                <li class="names"><b>Location :</b> Hyderabad</li>
+            </ol>
+        </div>
+        <div class="blocks" id="123456">
+            <div><img class="image" src="https://img.freepik.com/premium-photo/young-girl-student-smiling-against-university_101969-611.jpg" alt=""></div>
+            <ol class="list">
+                <li class="names"><b>Name : </b> Teena</li>
+                <li class="names"><b>Age : </b> 24y</li>
+                <li class="names"><b>Gender : </b> Female</li>
+                <li class="names"><b>Location :</b> Pune</li>
+            </ol>
+        </div>
+        <div class="blocks" id="1234567">
+            <div><img class="image" src="https://www.shutterstock.com/shutterstock/photos/2005718696/display_1500/stock-photo-portrait-of-young-happy-confident-indian-latin-hispanic-high-school-college-university-student-2005718696.jpg" alt=""></div>
+            <ol class="list">
+                <li class="names"><b>Name : </b> Govind</li>
+                <li class="names"><b>Age : </b> 25y</li>
+                <li class="names"><b>Gender : </b> Male</li>
+                <li class="names"><b>Location :</b> Mumbai</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

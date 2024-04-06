@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dateAssignment</title>
+    </head>
+    <body>
+        <script>
+            var curdate = () =>{
+            var curDate = new Date();
+            var condition = parseInt(prompt('Enter 1 to 10 numbers only'));
+            var day = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+            var month = ['January','February','March','April','May','June','July','August','Septmber','October','November','December'];
+            var monthname = month[curDate.getMonth()].substr(0,3);
+            var FullYear = curDate.getFullYear();
+            var shortYear = FullYear % 100;
+            var addZero = zero(curDate);
+            var addZeroh = zeroh(curDate);
+            var addZerom = zerom(curDate);
+            var addZeros = zeros(curDate);
+            var addZeromo = zeromo(curDate);
+            var nthval = nth(curDate);
+            findingCurrentDate(curDate,condition,day,month,monthname,FullYear,shortYear,addZero,addZeroh,addZerom,addZeros,addZeromo,nthval);
+            }
+            /*|| curDate.getHours < 10 || curDate.getDay < 10 || curDate.getMinutes < 10 || curDate.getSeconds < 10 || curDate.getMonth < 10*/
+            var zero = (curDate) =>{
+            var z = '';
+            if((curDate.getDate()) < 10 ){
+                  z += '0';
+                  return z;
+
+                }else{
+                    return z;
+                }
+            }
+            var zeroh = (curDate) =>{
+            var z = '';
+            if((curDate.getHours() )< 10 ){
+                  z += '0';
+                  return z;
+
+                }else{
+                    return z;
+                }
+            }
+            var zerom = (curDate) =>{
+            var z = '';
+            if((curDate.getMinutes() )< 10 ){
+                  z += '0';
+                  return z;
+
+                }else{
+                    return z;
+                }
+            }
+            var zeros = (curDate) =>{
+            var z = '';
+            if(curDate.getSeconds() < 10 ){
+                  z += '0';
+                  return z;
+
+                }else{
+                    return z;
+                }
+            }
+            var zeromo = (curDate) =>{
+            var z = '';
+            if((curDate.getMonth()+1) < 10 ){
+                  z += '0';
+                  return z;
+
+                }else{
+                    return z;
+                }
+            }
+            var nth = (curDate) =>{
+                var n = "";
+                if(curDate.getDate() == 1 || curDate.getDate() == 21 ||curDate.getDate() == 31){
+                    n += 'st';
+                    return n;
+                }else if(curDate.getDate() == 2 || curDate.getDate() == 22){
+                    n += 'nd';
+                    return n;
+                }else if(curDate.getDate() == 3 || curDate.getDate() == 23){
+                    n += 'rd';
+                    return n; 
+                }else{
+                    n += 'th';
+                    return n;  
+                }
+            }
+          var findingCurrentDate = (curDate,condition,day,month,monthname,FullYear,shortYear,addZero,addZeroh,addZerom,addZeros,addZeromo,nthval) =>{
+          switch (condition) {
+                case 1 ://5th Jan 2024
+                    var date = `${curDate.getDate()}${nthval} ${monthname} ${curDate.getFullYear()}`;
+                    console.log(date);
+                    break;
+                case 2 ://05/01/2024
+                    var date = `${addZero}${curDate.getDate()}/${addZeromo}${curDate.getMonth() + 1}/ ${curDate.getFullYear()}`;
+                    console.log(date);
+                    break;
+                case 3 ://05/01/24
+                    var date = `${addZero}${curDate.getDate()}/${addZeromo}${curDate.getMonth() + 1}/${shortYear}`;
+                    console.log(date);
+                    break;
+                case 4 ://Jan 5th, 2024
+                    var date = `${monthname} ${curDate.getDate()}${nthval},${curDate.getFullYear()}`;
+                    console.log(date);
+                    break;
+                case 5://Friday Jan 5th,2024
+                    var date = `${day[curDate.getDay()]} ${monthname} ${curDate.getDate()}${nthval}, ${curDate.getFullYear()}`;
+                    console.log(date);
+                    break;
+                case 6://Fri  January 5th,2024
+                    var date = `${day[curDate.getDay()].substr(0,3)} ${month[curDate.getMonth()]} ${curDate.getDate()}${nthval}, ${curDate.getFullYear()}`;
+                    console.log(date);
+                    break;
+                case 7://Fri Jan 5th,2024
+                    var date = `${day[curDate.getDay()].substr(0,3)} ${monthname} ${curDate.getDate()}${nthval}, ${curDate.getFullYear()}`;
+                    console.log(date);
+                    break;
+                case 8 ://05/01/24 00:00:00
+                    var date = `${addZero}${curDate.getDate()}/${addZeromo}${curDate.getMonth() + 1}/${shortYear} ${addZeroh}${curDate.getHours()}:${addZerom}${curDate.getMinutes()}:${addZeros}${curDate.getSeconds()}`;
+                    console.log(date);
+                    break;
+                case 9 :// 00:00:00
+                    var date = `${addZeroh}${curDate.getHours()}:${addZerom}${curDate.getMinutes()}:${addZeros}${curDate.getSeconds()}`;
+                    console.log(date);
+                    break;
+                case 10 :// 00 hours :00 min:00 sec
+                    var date = `${addZeroh}${curDate.getHours()} Hours:${addZerom}${curDate.getMinutes()} Min:${addZeros}${curDate.getSeconds()}Sec`;
+                    console.log(date);
+                    break;
+            }
+        }
+        curdate();
+        </script>
+    </body>
+</html>

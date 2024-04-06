@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="useregistration.css">
+        <script src="useregistration.js"></script>
+        <script src="useregistration1.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h3>User-Registration Page</h3>
+            <div class="detailsblock">
+                <label for="name"><b>Enter-Name : </b></label>
+                <input type="text" name="name" id="uname">
+            </div>
+            <div class="detailsblock">
+                <label for="age"><b>Enter-Age : </b></label>
+                <input type="text" name="age" id="uage">
+            </div>
+            <div class="detailsblock">
+                <label for="country"><b>Select-Country : </b></label>
+                <select name="" id="displayCountries" onchange="updateStates()">
+                    <option value="">Select Country</option>
+                </select>
+            </div>
+            <div class="detailsblock">
+                <label for="states"><b>Select-State: </b></label>
+                <select name="" id="displaystates" onchange="updatedistricts()">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="detailsblock">
+                <label for="districts"><b>Select-District : </b></label>
+                <select name="" id="displaydistricts">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="detailsblock">
+                <input type="button" value="Register" onclick="displayMsg()">
+            </div>
+        </div>
+        <div class="msgblock">
+            <img class="imageblock" src="https://static.vecteezy.com/system/resources/previews/010/151/485/non_2x/tick-icon-accept-approve-sign-design-free-png.png" alt="">
+            <div class="content">You have Succesfully Registered </div>
+        </div>
+    </body>
+</html>

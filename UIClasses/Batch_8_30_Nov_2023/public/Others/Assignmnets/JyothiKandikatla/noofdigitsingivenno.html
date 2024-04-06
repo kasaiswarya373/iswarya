@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Finding No.og digits in a given number</title>
+    </head>
+    <body>
+        <script>
+            //Write a program to find total no.of digits with in a given number
+            var rem, count = 0;
+            var n = parseInt(prompt('Enter a number'));
+            while(n > 0 ){
+                rem = n % 10;
+                count++;
+                n = parseInt(n / 10);
+            }
+            console.log(count);
+        </script>
+    </body>
+</html>

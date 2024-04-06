@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Employee Details</title>
+    </head>
+    <body>
+        Caluculating the employee salary
+        <script>
+            var ename = prompt('enter your name');
+            var eage = prompt('Enter your age');
+            var edpt= prompt('enter your Department');
+            var ebsalary = prompt('enter your basic salary');
+
+            ebsalary=parseInt(ebsalary);
+
+            pf=(14*ebsalary)/100;
+            hra=(25*ebsalary)/100
+             totalebsalary =pf+hra+ebsalary;
+
+            console.log('Empname '+ename);
+            console.log('Eage '+eage);
+            console.log('Edepartment '+edpt);
+            console.log('Esalary'+ebsalary);
+            console.log('totalebsalary '+totalebsalary);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Promt Dynamically</title>
+</head>
+<body>
+
+    <h3>Working Employee Details On Dynamically</h3>
+    <script>
+
+        var empname=prompt("Enter employee Name:")
+        var age=prompt("Enter Employee Age:")
+        var gender=prompt("Enter Employee Gender:")
+        var depart=prompt("Enter Employee Department:")
+        var bscsal=prompt("Enter Basic Salary: ")
+        var pf=prompt("Enter PF Parsentage:")*bscsal/100
+        var hra=prompt("Enter Hra Parsentage:")*bscsal/100
+
+        
+
+      
+
+        bscsal=parseInt(bscsal)
+        pf=parseInt(pf)
+        hra=parseInt(hra)
+        totalsalary=parseInt(totalsalary)
+        
+        var totalsalary=bscsal+pf+hra
+       
+        console.log("Name:"+empname)
+        console.log("Age:"+age)
+        console.log("Gender:"+gender)
+        console.log("Department:"+depart)
+        console.log("Basic Salary:"+bscsal)
+        console.log("PF:"+pf)
+        console.log("HRA:"+hra)
+        console.log("Total Salary :"+totalsalary)
+        
+    </script>
+</body>
+</html>

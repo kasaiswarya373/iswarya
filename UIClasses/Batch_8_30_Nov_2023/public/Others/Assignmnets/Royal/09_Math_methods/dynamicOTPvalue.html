@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate OTP dynamically</title>
+    <style>
+        span{
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid;
+            text-align: center;
+            color: green;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Your generated OTP is : <span></span>
+    </div>
+    <script>
+        /*
+        var genarateOTPvalue = (size) => {
+            var otpValue = '';
+            for(var i = 1; i <= size; i++){
+
+                var randomNumber = Math.round(Math.random() * 9);
+                otpValue += randomNumber;
+            }
+            document.querySelector('span').innerText = otpValue;
+            console.log(otpValue)           //on console
+        }
+        genarateOTPvalue(5);
+        */
+        
+            // setInterval(() => {
+            //     genarateOTPvalue(5);
+            // }, 3000);
+        
+            var generateOTP = (size) => {
+                var otpVal = '';
+                for (var i = 1; i <= size; i++){
+                    randNum = Math.round(Math.random() * 9);
+                    otpVal += randNum;
+                }
+                console.log(otpVal)
+            }
+            generateOTP(3);
+
+    </script>
+    
+</body>
+</html>

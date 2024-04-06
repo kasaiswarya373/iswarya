@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Date Formats</title>
+</head>
+<body>
+    Program to set custom date Formats
+    <script>
+          var custDate = new Date(2024, 0, 6, 22, 56, 46);
+          console.log(custDate);
+          var month,day,year,yearshort,fullMonth,fullDay,halfMonth,halfDay;
+          var fullMonthName = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+          var halfMonthName = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+          var fullDayName = ['Sunday','Monday','TuesDay','Wednesday','Thursday','Friday','Saturday'];
+          var halfDayName = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+           
+          yearshort = custDate.getFullYear().toString();
+          year = yearshort.slice(2);
+
+          fullMonth = fullMonthName[custDate.getMonth()];
+          fullDay = fullDayName[custDate.getDay()];
+          halfMonth = halfMonthName[custDate.getMonth()];
+          halfDay = halfDayName[custDate.getDay()];
+
+          var format = prompt(`Which Format you want? Enter number from (1 - 11)`);
+          switch(format)
+          {
+            case '1':
+                    {
+                     var format_1 = `${custDate.getDate()}  ${halfMonth}  ${custDate.getFullYear()}`;  
+                     console.log(format_1);
+                     break;
+                    }
+            case '2':
+                    {
+                     var format_2 = `${custDate.getDate()} / ${custDate.getMonth()+1} / ${custDate.getFullYear()}`;  
+                     console.log(format_2);
+                     break;
+                    }
+            case '3':
+                    {
+                     var format_3 = `${custDate.getDate()} / ${custDate.getMonth()+1} / ${year}`;  
+                     console.log(format_3);
+                     break;
+                    }
+            case '4':
+                    {
+                     var format_4 = `${halfMonth}   ${custDate.getDate()} , ${custDate.getFullYear()}`;  
+                     console.log(format_4);
+                     break;
+                    }  
+            case '5':
+                    {
+                     var format_5 = `${fullDay}  ${halfMonth}   ${custDate.getDate()} , ${custDate.getFullYear()}`;  
+                     console.log(format_5);
+                     break;
+                    }    
+            case '6':
+                    {
+                     var format_6 = `${fullDay}  ${fullMonth}   ${custDate.getDate()} , ${custDate.getFullYear()}`;  
+                     console.log(format_6);
+                     break;
+                    }  
+            case '7':
+                    {
+                     var format_7 = `${halfDay}  ${fullMonth}   ${custDate.getDate()} , ${custDate.getFullYear()}`;  
+                     console.log(format_7);
+                     break;
+                    } 
+            case '8':
+                    {
+                     var format_8 = `${halfDay}  ${halfMonth}   ${custDate.getDate()} , ${custDate.getFullYear()}`;  
+                     console.log(format_8);
+                     break;
+                    }
+            case '9':
+                    {
+                     
+                     var format_9 = `${custDate.getDate()} / ${custDate.getMonth()+1} / ${year}    ${custDate.getHours()} : ${custDate.getMinutes()} : ${custDate.getSeconds()}` ;  
+                     console.log(format_9);
+                     break;
+                    }       
+            case '10':
+                    {
+                     var format_10 = `${custDate.getHours()} : ${custDate.getMinutes()} : ${custDate.getSeconds()}` ;  
+                     console.log(format_10);
+                     break;
+                    }  
+            case '11':
+                    {
+                     var format_11 = `${custDate.getMinutes()} min : ${custDate.getSeconds()} sec` ;  
+                     console.log(format_11);
+                     break;
+                    }   
+            default:
+                    {
+                     console.log(`Your required format is not available`);
+                    }          
+          }
+
+    </script>
+</body>
+</html>

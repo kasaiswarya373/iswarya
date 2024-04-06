@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+           java something
+        </title>
+    </head>
+    <body>
+        <h3>Employee Salary Details</h3>
+        <script>
+            var empname = prompt("Enter Name");
+            var empage = prompt("Enter Age");
+            var empgender = prompt("Enter Gender");
+            var empdept = prompt("Enter Dept");
+            var empbasicsalary = parseInt(prompt( "enter basicsalary"));
+            var emppf = 14;
+            var emphra = 25;
+
+            var emptotalsalary = empbasicsalary + (emppf*empbasicsalary)/100 + (emphra*empbasicsalary)/100 ;
+
+            console.log("Name => " + empname);
+            console.log("Age => " + empage);
+            console.log("Gender => " + empgender);
+            console.log("Dept => " + empdept)
+            console.log("Basic Salary  => " + empbasicsalary);
+            console.log("Pf is 14% => " + emppf);
+            console.log("Hra is 25% => " + emphra);
+            console.log("Total Salary => " + emptotalsalary);
+
+            if ( empgender == "male" ){
+                if(emptotalsalary >= 200000){
+                    var empmaletax15 = (emptotalsalary* 15 )/100;
+                    console.log("Tax is 15% => " +empmaletax15 );
+                    console.log( "Total in hand Ammount is => " + (emptotalsalary-empmaletax15));
+                }
+                else if ( emptotalsalary >= 100000){
+                    var empmaletax10 = (emptotalsalary*10)/100;
+                    console.log("Tax is 10% => " + empmaletax );
+                    console.log( "Total in hand Ammount is => " + (emptotalsalary-empmaletax10));
+                }
+                else if ( emptotalsalary >= 50000){
+                    var empmaletax5 = (emptotalsalary*5 )/100;
+                    console.log("Tax is 5% => " + empmaletax5);
+                    console.log( "Total in hand Ammount is => " + (emptotalsalary-empmaletax5));
+                }
+                else {
+                    console.log("No tax will be applied")
+                }
+            }
+            else{
+                if(emptotalsalary >= 200000 ){
+                    var empfetax10 = (emptotalsalary*10)/100;
+                    console.log("Tax is 10% => " + empfetax10);
+                    console.log( "Total in hand Ammount is => " + (emptotalsalary-empfetax10));
+                }
+                else if(emptotalsalary >=100000 ){
+                    var empfetax5 = ( emptotalsalary*5)/100;
+                    console.log("Tax is 5% => " + empfetax5);
+                    console.log( "Total in hand Ammount is => " + (emptotalsalary-empfetax5));
+                }
+                else {
+                    console.log("No tax will be applied");
+                }
+            }
+        </script>
+    </body>
+</html>

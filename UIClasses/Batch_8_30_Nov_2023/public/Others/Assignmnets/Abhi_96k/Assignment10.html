@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        background-color: aqua;
+    }
+</style>
+<script>
+    
+    var name = prompt("Enter your name:");
+    var age = prompt("Enter your Age:");
+    age = parseInt(age);
+    var gender = prompt("Enter your gender:");
+    var dept = prompt("Enter your department:");
+    var BasicSalary = prompt("Enter your Basic Salary:");
+    BasicSalary = parseFloat(BasicSalary);
+
+var pf = 10/100 * BasicSalary;
+    pf = parseFloat(pf);
+    var hra = 30/100 * BasicSalary;
+    hra = parseFloat(hra);
+    var TotalSalary = hra + BasicSalary + pf;
+
+    console.log("Name : " + name);
+    console.log("Gender : " + gender);
+    console.log("Age : " + age);
+    console.log("Department : " + dept);
+    console.log("Basic Salary : "+ BasicSalary);
+    console.log("Your PF is " + pf);
+    console.log("Your HRA is " + hra);
+    console.log("Your total salary is " + TotalSalary);
+      
+</script>  
+<body>
+       <h1> * WAP for Employee details like ename,eAge,basicSal,totalsal,hra
+        pf,and,department calculate total salary?</h1>             
+</body>
+</html>

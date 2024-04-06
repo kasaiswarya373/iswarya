@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog3 : Find largest Num in three</title>
+</head>
+<body>
+    <h2>WAP To find largest number in three</h2>
+
+    <script>
+        let num1 = parseFloat(prompt("ENTER NUMBER1"))
+        let num2 = parseFloat(prompt("ENTER NUMBER2"))
+        let num3 = parseFloat(prompt("ENTER NUMBER3"))
+
+
+        console.log(`NUMBER1 : ${num1} , NUMBER2 : ${num2} , NUMBER3 : ${num3}`);
+
+        if(num1 > num2){
+            if(num1 > num3){
+                console.log(`NUMBER1 ${num1} is greater`);
+            }
+        }
+        else if(num2 > num3){
+            console.log(`NUMBER2 ${num2} is greater`);
+        }
+        else{
+            console.log(`NUMBER3 ${num3} is greater`);
+        }
+        
+    </script>
+</body>
+</html>

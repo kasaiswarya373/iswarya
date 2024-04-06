@@ -1,0 +1,32 @@
+
+h3 {
+    text-align: center;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightcyan;
+    color: blueviolet;
+}
+.details {
+    border: 1px solid;
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+}
+.imgdetails {
+    width: 200px;
+    border: 1px solid blue;
+    margin: 10px;
+}
+.imgd {
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.edetails {
+    border: 1px solid blue;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}

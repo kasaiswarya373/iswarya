@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diff ways to define a Functions</title>
+</head>
+<body>
+    <script>
+    //1st way of creating a function
+        function displayInfo1 () {
+            console.log("1. Older way of creating a function which is not recommended due to var hoisting concept");
+        };
+    // displayInfo1();
+
+    //2nd way of creating a function by assigning a variable
+        var displayInfo2 = function () {
+            console.log("2. Newer way of creating a function which is not recommended in which to var hoisting can be achieve")            
+        };
+    // displayInfo2();
+
+    //3rd way of creating a funtion using fat operation (arrow function) which is recommended from latest ECMA-6
+        var displayInfo3 = () => {
+            console.log("3. Recommended way from latest ECMA-6 in which we can achieve var hoisting and function keyword is avoiding")
+        }
+
+        displayInfo3();
+
+
+    </script>
+    
+</body>
+</html>

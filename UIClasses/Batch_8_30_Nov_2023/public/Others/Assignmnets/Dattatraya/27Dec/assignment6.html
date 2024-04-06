@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>WAP to listout all the Pallindrome number between 1000 to 21</h3>
+    <script>
+      var i = 1000;
+      var j = 21;
+      for (i; i >= j; i--) {
+        var originalNumber = i;
+        var reversedNumber = 0;
+        var tempNumber = i;
+
+        while (tempNumber > 0) {
+          reversedNumber = reversedNumber * 10 + (tempNumber % 10);
+          tempNumber = tempNumber / 10 - (tempNumber % 10) / 10;
+        }
+        if (originalNumber === reversedNumber) {
+          console.log(originalNumber);
+        }
+      }
+    </script>
+  </body>
+</html>

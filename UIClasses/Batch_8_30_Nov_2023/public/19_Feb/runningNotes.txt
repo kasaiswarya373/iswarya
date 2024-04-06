@@ -1,0 +1,35 @@
+HTML4
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+HTML5
+<!DOCTYPE html>
+    DTD  - Document type definition
+    Schema
+
+--------------------
+
+Semantic tags :
+
+    header 
+    footer 
+    main 
+    navbar 
+    article 
+    section 
+    figure 
+    aside 
+    .. 
+    .. 
+    .. 
+
+    Predefined new set of input elements 
+    --------------------
+    Audio and video tags
+    -----------------------
+
+    Drawing graphical picture within the page.
+        Canvas 
+
+        SVG 

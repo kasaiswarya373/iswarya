@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Dynamic Data in JSON</title>
+</head>
+<body>
+    <h3>Accessing Dynamic Data in JSON</h3>
+    <script>
+        /*
+       var stuDetails = {
+            'name' : '',      //here we no need to define value, it will get auto-genrated dynamically when we use prompt()
+            'age' : '""'
+        };
+        */
+
+        var stuDetails = {};        //now defining empty jSON object
+
+        var readStudentDetails = () => {
+
+            stuDetails.name  = prompt('Enter Your Name : ');
+            stuDetails.age   = prompt('Enter Your Age  : ');
+            stuDetails.marks = [];
+    
+            for(var i = 0; i < 5; i++){
+                stuDetails.marks[i] = prompt(`Enter Marks of M${i+1}`);
+                stuDetails.marks[i] = parseInt(stuDetails.marks[i]);
+            }
+            getTotalAndAverage();
+        }
+
+        var getTotalAndAverage = () => {
+
+            stuDetails.total = 0;    
+            for(var i = 0; i < stuDetails.marks.length; i++){
+                stuDetails.total += stuDetails.marks[i];
+            }
+            stuDetails.avg = stuDetails.total / stuDetails.marks.length;    //avg will get created dynamically into to json object
+
+            console.log(stuDetails);
+        }
+        
+        var displayDetails = () => {
+            readStudentDetails()
+            console.log('Name is  : '+stuDetails.name);
+            console.log('Age  is  : '+stuDetails.age);
+            console.log('Total is : '+stuDetails.total);
+            console.log('Avg   is : '+stuDetails.avg);
+        }
+
+        displayDetails();
+
+        
+
+    </script>
+    
+</body>
+</html>

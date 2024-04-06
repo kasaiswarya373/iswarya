@@ -1,0 +1,50 @@
+HTML 5
+    15-20 new concepts
+   1. Local & Session storage
+   2. semantic Tags of html 5
+   3.input elements
+   4. audio & video Tags
+   5. application catche
+   6. navigator object
+   7. navigator geolocation
+   8.canvas Tags
+   9. SVG Tags
+   10. drag & drop events
+   11. web worker
+CSS 3
+
+HTML4
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+HTML5
+<!DOCTYPE html>
+    DTD  - Document type definition
+    Schema - the structure of the webpage 
+
+--------------------
+
+Semantic tags :
+
+    header 
+    footer 
+    main 
+    navbar 
+    article 
+    section 
+    figure 
+    aside 
+    .. 
+    .. 
+    .. 
+
+    Predefined new set of input elements 
+    --------------------
+    Audio and video tags
+    -----------------------
+
+    Drawing graphical picture within the page.
+        Canvas 
+
+        SVG 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+      <script>
+        var values = [ 10, 20, 30, 40, 50];
+        var small = values[0];
+        for(i = 1; i < values.length; i++){
+          if( small > values[i]){
+            small = values[i];
+          }
+          else{
+            break;
+          }
+        }
+        console.log(small);
+      </script>  
+    </body>
+</html>

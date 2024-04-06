@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Value between given range</title>
+</head>
+<body>
+    <h3>Random Value between given range</h3>
+    <script>
+        var minRange = 10;
+        var maxRange = 50;
+        var randomValue = Math.random() * maxRange;
+        console.log('Before Round off : '+randomValue);
+        randomValue = Math.round(randomValue);
+        console.log('After  Round off : '+randomValue);
+
+        if (randomValue < minRange){
+            randomValue = maxRange - randomValue;
+        }
+        console.log('Random value between 10 to 50 is : '+randomValue);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <h1>
+        Employee Details
+    </h1>
+    <body>
+        <script>
+        var empName = prompt("Enter name of employee :");
+        var empBasicSal = parseFloat(prompt("Enter Basic Salary of " + empName));
+        const pfPer = 25;
+        const basicPer = 14;
+
+        var pf = empBasicSal * (pfPer/100);
+        var hra = empBasicSal * (basicPer/100);
+        var totalSal = empBasicSal + pf + hra;
+        alert(" Total sal of " + empName + "is " + totalSal  );
+    </script>
+    </body>
+</html>

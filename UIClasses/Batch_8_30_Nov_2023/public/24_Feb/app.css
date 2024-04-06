@@ -1,0 +1,98 @@
+header, main, footer {
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+main {
+    height: 500px;
+    overflow: auto;
+}
+
+.msgBlock {
+    border: 1px solid;
+    margin: 100px;
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+}
+
+.addsBlock {
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    border: 1px solid;
+    height: 100px;
+    width: 200px;
+    background-color: yellowgreen;
+}
+
+.mynavBar {
+    display: flex;
+    flex-direction: row;
+}
+
+.mynavBar div {
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+
+.mynavBar div:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+#menuIcon {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    display: none;
+}
+
+@media screen and (min-width: 350px) and (max-width:500px) {
+    .msgBlock {
+        width: 150px;
+        background-color: aqua;
+        margin: 50px;
+    }
+
+    .addsBlock {
+        display: none;
+    }
+
+    .mynavBar {
+        
+        flex-direction: column;
+    }
+
+    #menuIcon {
+        display: block;
+    }
+    .mynavBar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:700px) {
+    .msgBlock {
+        width: 250px;
+        background-color: blue;
+        margin: 150px;
+    }
+    .addsBlock {
+        background-color: blueviolet;
+    }
+    .abc {
+       
+    }
+}
+
+
+
+@media screen and (min-width: 501px) and (max-width:700px) {
+    abc {
+        background-color: gold !important;
+    }
+}

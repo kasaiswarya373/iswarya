@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignement3 Student Details</title>
+    <style>
+      .main {
+        width: 700px;
+        margin: 10px auto;
+      }
+      .header,
+      .body,
+      .footer {
+        border: 1px solid black;
+        margin: 5px;
+        padding: 5px;
+      }
+      .header {
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 15px;
+      }
+      .footer {
+        text-align: center;
+        font-weight: bold;
+        color: blue;
+      }
+      .body {
+        height: 500px;
+      }
+      .leftBlock,
+      .rightBlock {
+        height: 470px;
+        border: 1px solid;
+        float: left;
+        padding: 5px;
+        margin: 5px;
+        overflow: auto;
+      }
+      .leftBlock {
+        width: 25%;
+      }
+      .leftList {
+        border: 3px solid;
+        margin: 20px auto;
+        padding: 5px;
+        list-style-position: inside;
+        width: 65px;
+      }
+
+      .rightBlock {
+        width: 68%;
+      }
+      .rightList {
+        list-style: none;
+        padding: 5px;
+      }
+      .studDetails {
+        height: 150px;
+        border: 1px solid;
+        list-style-type: none;
+      }
+      img {
+        width: 100px;
+        height: 140px;
+        margin-right: 20px;
+      }
+      .imgContainer,
+      .studDetailsContainer {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">Student Details</div>
+      <div class="body">
+        <div class="leftBlock">
+          <ol>
+            <li class="leftList"><a href="#student1">Sree</a></li>
+            <li class="leftList"><a href="#student2">Mike</a></li>
+            <li class="leftList"><a href="#student3">Jyo</a></li>
+            <li class="leftList"><a href="#student4">Steve</a></li>
+            <li class="leftList"><a href="#student5">An</a></li>
+          </ol>
+        </div>
+        <div class="rightBlock">
+          <ul>
+            <li class="studDetails" id="student1">
+              <div class="imgContainer">
+                <img src="girl1.png" alt="Sree" />
+              </div>
+              <div class="studDetailsContainer">
+                <ul>
+                  <li class="rightList">Name: Sree</li>
+                  <li class="rightList">Age: 40</li>
+                  <li class="rightList">Gender: F</li>
+                  <li class="rightList">Location: Vizag</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="studDetails" id="student2">
+              <div class="imgContainer">
+                <img src="boy1.png" alt="Mike" />
+              </div>
+              <div class="studDetailsContainer">
+                <ul>
+                  <li class="rightList">Name: Mike</li>
+                  <li class="rightList">Age: 24</li>
+                  <li class="rightList">Gender: M</li>
+                  <li class="rightList">Location: Mclean</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="studDetails" id="student3">
+              <div class="imgContainer">
+                <img src="girl2.png" alt="Jyo" />
+              </div>
+              <div class="studDetailsContainer">
+                <ul>
+                  <li class="rightList">Name: Jyo</li>
+                  <li class="rightList">Age: 35</li>
+                  <li class="rightList">Gender: F</li>
+                  <li class="rightList">Location: Richmond</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="studDetails" id="student4">
+              <div class="imgContainer">
+                <img src="boy2.png" alt="Steve" />
+              </div>
+              <div class="studDetailsContainer">
+                <ul>
+                  <li class="rightList">Name: Steve</li>
+                  <li class="rightList">Age: 25</li>
+                  <li class="rightList">Gender: M</li>
+                  <li class="rightList">Location: Richmond</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="studDetails" id="student5">
+              <div class="imgContainer">
+                <img src="girl3.png" alt="An" />
+              </div>
+              <div class="studDetailsContainer">
+                <ul>
+                  <li class="rightList">Name: An</li>
+                  <li class="rightList">Age: 45</li>
+                  <li class="rightList">Gender: F</li>
+                  <li class="rightList">Location: Indiana</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">@copy right 2024</div>
+    </div>
+  </body>
+</html>

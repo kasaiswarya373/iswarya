@@ -1,0 +1,48 @@
+.formContainer{
+    width:400px;
+    border : 1px solid;
+    margin : 50px auto;
+    padding:15px;
+}
+li{
+    list-style: none;
+}
+label {
+    display:inline-block;
+    margin: 7px;
+    font-weight: bold;
+ }
+li > input{
+    width:92%;
+    list-style: none;
+    margin-top: 5px;
+    text-align: center;
+    padding: 12px;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0px 30px;
+}
+.button>input {
+    background-color: dodgerblue;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+#openEye , #closedEye{
+    position:relative;
+    top :-32px;
+    left:359px;
+}
+#dot{
+    position:relative;
+    top:3px;
+}
+.block{
+    display:none;
+}

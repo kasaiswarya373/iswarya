@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        position
+    </title>
+    <style>
+        .block{
+            border: 1px solid;
+            height: 120px;
+            width: 120px;
+            text-align: center
+        }
+        .block1{
+            background-color: aqua;
+        }
+        .block2{
+            background-color: red;
+            left: 750px;
+            position: fixed;
+        }
+        .block3{
+            background-color: pink;
+        }
+        .container{
+            border: 1px solid;
+            height: 500px;
+            width: 500px;
+            margin: 10px auto;
+            padding: 10px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="block block1">block1</div>
+    <div class="block block2">block2</div>
+    <div class="block block3">block3</div>
+    <div class="block block3">block4</div>
+    <div class="block block3">block5</div>
+    <div class="block block1">block6</div>
+    <div class="block block3">block7</div>
+
+    </div>
+
+</body>
+</html>

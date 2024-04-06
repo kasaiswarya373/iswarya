@@ -1,0 +1,63 @@
+body{
+    font-family: arial, sans-serif;
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+form {
+    margin-bottom: 20px;
+}
+.input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dc3545;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+}
+input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #28a745;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.login-section {
+    background-color: #fff;
+}
+.forgot-password-section{
+    background-color: #f2f2f2;
+}
+.signup-section{
+    background-color: #e6e6e6;
+}

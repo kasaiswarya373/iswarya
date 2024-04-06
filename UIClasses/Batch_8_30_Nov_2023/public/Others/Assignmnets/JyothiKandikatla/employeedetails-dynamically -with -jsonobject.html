@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emp details dynamically with json object</title>
+    </head>
+    <body>
+        <script>
+            var empDetails = {
+                pfamount : 0,
+                hraamount : 0,
+                totalsal : 0,
+                tax : 0,
+                taxamount : 0,
+                taxreductionAmount : 0
+            };
+            var readEmpDetails = () =>{
+            empDetails.name = prompt('Enter employee name');
+            empDetails.age = prompt('Enter employee age');
+            empDetails.gender = prompt('Enter employee gender');
+            empDetails.deparment = prompt('Enter employee department');
+            empDetails.basicsal =parseInt(prompt('Enter employee basicsalary'));
+            empDetails.pf = parseInt(prompt('Enter employee pf'));
+            empDetails.hra = parseInt(prompt('Enter employee hra'));
+            pfandhra();
+            }
+            var pfandhra = () => {
+                empDetails.pfamount = 0;
+                empDetails.hraamount = 0;
+                empDetails.pfamount = (empDetails.basicsal * empDetails.pf) / 100;
+                empDetails.hraamount = (empDetails.basicsal * empDetails.hra) / 100;
+                totalsal();
+            }
+            var totalsal = () => {
+                empDetails.totalsal = 0;
+                empDetails.totalsal = empDetails.basicsal + empDetails.pfamount + empDetails.hraamount;
+                taxcal();
+                taxamount();
+                taxreductionAmount();
+            }
+            var taxamount = () =>{
+                empDetails.taxamount = 0;
+                empDetails.taxamount = (empDetails.totalsal * empDetails.tax ) / 100;
+            }
+            var taxreductionAmount = () => {
+                empDetails.taxreductionAmount = 0;
+                empDetails.taxreductionAmount = empDetails.totalsal - empDetails.taxamount;
+            }
+            var taxcal = () => {
+                if( (empDetails.gender =='male') || (empDetails.gender =='m')){
+                    if(empDetails.totalsal >= 200000){
+                        empDetails.tax = 15;
+                    }else if(empDetails.totalsal >= 100000){
+                        empDetails.tax = 10;
+                    }else if(empDetails.totalsal >= 50000){
+                        empDetails.tax = 5;
+                    }else{
+                        empDetails.tax = 0;
+                    }
+                }else{
+                    if(empDetails.totalsal >= 200000){
+                        empDetails.tax = 10;
+                    }else  if(empDetails.totalsal >= 100000){
+                        empDetails.tax = 5;
+                    }else  if(empDetails.totalsal >= 50000){
+                        empDetails.tax = 0;
+                    }
+                }
+                
+            }
+            var employeeInfo = () => {
+                readEmpDetails();
+                console.log(`.....Employee Details.....`);
+                console.log(`Name: ${empDetails.name}`);
+                console.log(`Age: ${empDetails.age}`);
+                console.log(`Gender: ${empDetails.gender}`);
+                console.log(`Department: ${empDetails.deparment}`);
+                console.log(`basicSalary: ${empDetails.basicsal}`);
+                console.log(`Pf: ${empDetails.pf}%`);
+                console.log(`hra: ${empDetails.hra}%`);
+                console.log(`pfAmount: ${empDetails.pfamount}`);
+                console.log(`hraAmount: ${empDetails.hraamount}`);
+                console.log(`totalsal: ${empDetails.totalsal}`);
+                console.log(`tax: ${empDetails.tax}%`);
+                console.log(`taxamount: ${empDetails.taxamount}`);
+                console.log(`taxreductiontotalsal: ${empDetails.taxreductionAmount}`);
+            }
+            employeeInfo();
+        </script>
+    </body>
+</html>

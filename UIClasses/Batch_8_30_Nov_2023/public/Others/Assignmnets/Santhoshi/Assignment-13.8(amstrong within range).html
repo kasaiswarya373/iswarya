@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //programme to display armstrong number between 1 to 100?
+
+
+        for( i = 1; i <= 1000; i++){
+            var num = i;
+            var count = 0;
+            var tempnum = num;
+            var result = num;
+        while(num > 0){
+            var rem = num % 10;
+            count++;
+            num = num / 10;
+            num = parseInt(num);
+            } 
+        var original = 0;
+        while(tempnum > 0){
+        var rem = tempnum % 10;
+        original+= rem ** count;
+        
+        tempnum = tempnum / 10;
+        tempnum = parseInt(tempnum);
+            }
+            if(original == result){
+                console.log(i);
+            }
+        } 
+
+        // programe to display the  amstrong values between 1000 to 3000?
+
+
+        for(i = 1000 ; i <= 3000 ; i++){
+            var num = i;
+            var count = 0;
+            var original = 0;
+            var tempnum = num;
+            var answer = num;
+            while( num > 0){
+                var rem = num % 10 ;
+                count++;
+                num = num / 10;
+                num = parseInt(num);
+            }
+            while(tempnum > 0){
+                rem = tempnum % 10;
+                original += rem ** count;
+                tempnum = tempnum / 10;
+                tempnum = parseInt(tempnum);
+
+            }
+            if(original == answer ){
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var readEmployeeDetails=()=>{
+        var name,basicSalary;
+        name=prompt("enter name");
+        basicSalary=prompt("enter basic salary");
+        basicSalary=parseInt(basicSalary);
+      var  pf= getPf(basicSalary);
+       var hra=getHra(basicSalary);
+       var tax=getTotalTax(pf,hra,basicSalary);
+       var totalSalary=getOnHandAmount(basicSalary,tax,pf,hra)
+       displayEmployeeDetails(name,basicSalary,pf,hra,tax,totalSalary);
+     }  
+     var getPf=(basicSalary)=>{
+      var pf=(12*basicSalary)/100;
+      return pf;
+     }  
+     var getHra=(basicSalary)=>{
+        var hra=(15*basicSalary)/100;
+        return hra;
+     } 
+     var getTotalTax=(pf,hra,basicSalary)=>{
+     var tax=(pf+hra+basicSalary)*30/100;
+     return tax;
+     }
+     var getOnHandAmount=(basicSalary,tax,pf,hra)=>{
+        var totalSalary=(pf+hra+basicSalary)-tax;
+        return totalSalary;
+     }
+  var displayEmployeeDetails=( name,basicSalary,pf,hra,tax,totalSalary)=>{
+    console.log("employee name="+name);
+    console.log("employe basicSalary= "+basicSalary);
+    console.log("pf="+pf);
+    console.log("hra="+hra);
+    console.log("tax amount="+tax);
+    console.log("total on hand amount="+totalSalary);
+
+
+
+    }
+    readEmployeeDetails();
+    </script>
+</body>
+</html>

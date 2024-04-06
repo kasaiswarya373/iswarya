@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>WAP to find the reverse of a given number.</h3>
+    <script>
+      var originalNumber = parseInt(prompt("Enter a number:"));
+      var reversedNumber = 0;
+      while (originalNumber > 0) {
+        var digit = originalNumber % 10;
+        reversedNumber = reversedNumber * 10 + digit;
+        originalNumber = originalNumber / 10 - digit / 10;
+      }
+      console.log("Reversed Number: " + reversedNumber);
+    </script>
+  </body>
+</html>

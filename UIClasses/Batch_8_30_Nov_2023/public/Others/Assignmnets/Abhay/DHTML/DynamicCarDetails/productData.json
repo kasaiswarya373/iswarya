@@ -1,0 +1,25 @@
+{
+    "details": [
+        {
+            "name": "Alto800",
+            "company": "Maruti Suzuki",
+            "color": "Maroon",
+            "capacity": "4",
+            "image": "https://www.autovista.in/assets/img/new_cars_colour_variants/alto-800-colour-updown-red.jpg"
+        },
+        {
+            "name": "XUV500",
+            "company": "Mahindra",
+            "color": "Black",
+            "capacity": "7",
+            "image": "https://msmotorindia.com/public/uploads/car_image/1684916215_ab5c5cff6ec077b9ff33.jpeg"
+        },
+        {
+            "name": "Hector",
+            "company": "Moris Garage",
+            "color": "Red",
+            "capacity": "5",
+            "image": "https://stimg.cardekho.com/images/carexteriorimages/930x620/MG/Hector/10958/1690866258382/front-left-side-47.jpg"
+        }
+    ]
+}

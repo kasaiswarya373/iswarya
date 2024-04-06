@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: orange;">Demonstrating_Employee_Details</h1>
+    <script>
+
+        var empDetails = () => {
+        var empname, Age, Dep, basicSal;
+
+        empname = prompt("Name");
+        Age = prompt("Age");
+        Dep = prompt("Dep");
+        basicSal = prompt("BasicSal");
+        basicSal = parseInt(basicSal);
+
+        var EmpPf = Epf(basicSal);
+        var Emphra = Ehra(basicSal);
+        var EmptotalSal = Etotalsal(basicSal, EmpPf, Emphra);
+        var Empinfo = Einfo(empname, Age, Dep, basicSal, EmpPf, Emphra, EmptotalSal);
+
+            console.log("end");
+
+        }
+
+        var Epf = (basicSal) => {
+        pf = prompt("percentage of pf " ) * basicSal / 100;
+        return pf;
+    }
+
+        var Ehra = (basicSal) => {
+        hra = prompt("percentage of hra ") * basicSal / 100;
+            return hra;
+    }
+       
+        var Etotalsal = (basicSal, EmpPf, Emphra) => {
+        totalsal = basicSal + EmpPf + Emphra;
+        return totalsal;
+
+        }
+        
+
+
+        var Einfo = (empname, Age, Dep, basicSal, EmpPf, Emphra, EmptotalSal) => {
+        console.log("name " + empname);
+        console.log("age " + Age);
+        console.log("dep " + Dep);
+        console.log("basicSal " + basicSal);
+        console.log("pf " + EmpPf);
+        console.log("hra " + Emphra);
+        console.log("totalsal " + EmptotalSal)
+
+        }
+        empDetails();
+
+
+    </script>
+</body>
+</html>

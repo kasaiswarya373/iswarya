@@ -1,0 +1,54 @@
+Psuedo Elements 
+
+Pseudo Classes : 
+
+
+    Syntax:
+
+        selctor:<pseudo class name> {
+            .... 
+            ...
+        }
+
+    eg:
+
+        #abc:hover {
+            ...
+        }
+    hover 
+    focus
+    blur 
+    first-child 
+    link
+    empty  
+    active
+    etc 
+
+    0-------------------------
+
+    Pseudo Elements: 
+
+        after
+        before 
+        first-line 
+        first-letter 
+        selection 
+        marker 
+        etc. 
+
+            Syntax:
+
+                selector :: pseudo element name {
+                     ...
+                }
+
+            eg:
+             
+                #abc::after {
+
+                }
+------------------
+
+CSS display prop:
+
+    display: inline/block/inline-block/none/   flex/grid;

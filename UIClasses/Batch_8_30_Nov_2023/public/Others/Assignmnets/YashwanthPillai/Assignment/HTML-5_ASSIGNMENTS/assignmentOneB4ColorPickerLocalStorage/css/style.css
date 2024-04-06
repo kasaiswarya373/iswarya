@@ -1,0 +1,28 @@
+.container {
+  border: 5px solid black;
+  height: 95vh;
+}
+.colorPicker {
+  border: 1px solid black;
+  /* display: inline-block; */
+  float: inline-end;
+  margin-inline: 10px;
+  margin-block: 10px;
+}
+.userName {
+  margin-inline: 10px;
+  margin-block: 10px;
+}
+
+.message{
+    border: 4px solid yellow;
+    color: coral;
+    height: 50px;
+    width: 450px;
+    position: relative;
+    padding: 15px;
+    top: 40%;
+    left: 35%;
+    font-size: x-large;
+    display: none;
+}

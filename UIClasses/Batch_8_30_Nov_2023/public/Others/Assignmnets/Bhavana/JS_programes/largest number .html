@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAGEST NUMBERS</title>
+</head>
+<body>
+  <script>
+    //********LARGEST VALUE******
+    /*var n = [10,25,85,65,8,1];
+    var lagestvalue = n[0];
+    for(var i = 1;i < n.length;i++){
+     if (lagestvalue < n[i]){
+        lagestvalue = n[i];
+     }
+    }
+    console.log(lagestvalue);*/
+  
+
+   //********SECOND LAGEST VALUE *********
+        var n = [10,25,85,65,8,1];
+        var lagestvalue = n[0];
+        var secondlargest = 0;
+        for(var i = 1;i < n.length;i++){
+         if (lagestvalue < n[i]){
+            secondlargest = lagestvalue;
+            lagestvalue = n[i];
+         } else if(secondlargest<n[i]){
+            secondlargest = n[i];
+         }
+        }
+        console.log(lagestvalue);
+        console.log(secondlargest);
+
+
+   
+    //******SMALLEST VALUE*****
+   /*  var n = [10,25,85,65,8,1];
+    var lagestvalue = n[0];
+    for(var i = 1;i < n.length;i++){
+     if (lagestvalue > n[i]){
+        lagestvalue = n[i];
+     }
+    }
+    console.log(lagestvalue);*/
+  </script>
+</body>
+</html>
+
+
+
+   

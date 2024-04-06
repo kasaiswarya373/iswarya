@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>If and If else example</title>
+</head>
+<body>
+  <script>
+    var empname = prompt("Enter Employee Name");
+    var empgender = prompt("Enter Employee Gender");
+    var empage = prompt("Enter Employee Age");
+    var empdep =prompt("Enter Employee Department");
+    var empbasicsal = prompt("Enter Employee Basic Salary");
+    empbasicsal = parseInt(empbasicsal);
+    var PFper = prompt("Enter PF percentage")
+    PFper = parseInt(PFper);
+    PF = (PFper*empbasicsal)/100;
+    var Hraper = prompt("Enter HRA percentage")
+    Hraper = parseInt(Hraper);
+    hra = (Hraper*empbasicsal)/100;
+    var totalsal, tax, male, Female;
+    totalsal= empbasicsal + PF + hra;
+    console.log("Employee Name  is " + empname);
+    console.log("Employee Gender is " + empgender);
+    console.log("Employee Age is " + empage);
+    console.log("Employee Department is " + empdep);
+    console.log("Employee Basic salary is " + empbasicsal);
+    console.log("Employee PF amount is " + PF);
+    console.log("Employee HRA amount is " + hra);
+    console.log("Employee total salary is " + totalsal);
+    if(empgender == 'male')
+    {
+      if(totalsal>200000)
+      {
+        tax=(empbasicsal*15)/100;
+        console.log("Employee tax amount is " + tax);
+        totalsal= empbasicsal + PF + hra - tax;
+        console.log("Employee tatal salary after tax deduction " + totalsal);
+      }
+      else if(totalsal>100000)
+      {
+        tax = (empbasicsal*10)/100;
+        console.log("Employee tax amount is " + tax);
+        totalsal= empbasicsal + PF + hra - tax;
+        console.log("Employee tatal salary after tax deduction " + totalsal);
+      }
+      else if(totalsal>50000){
+        tax= (empbasicsal*5)/100;
+        console.log("Employee tax amount is " + tax);
+        totalsal= empbasicsal + PF + hra - tax;
+        console.log("Employee tatal salary after tax deduction " + totalsal);
+      }
+      else
+      {
+        tax = 0;
+        console.log("Employee tax amount is " + tax);
+        totalsal= empbasicsal + PF + hra - tax;
+        console.log("Employee tatal salary after tax deduction " + totalsal);
+      }
+    }else 
+    {
+      if(empgender == 'Female')
+      {
+        if(totalsal>200000){
+          tax=(empbasicsal*10)/100;
+          console.log("Employee tax amount is " + tax);
+          totalsal= empbasicsal + PF + hra - tax;
+          console.log("Employee tatal salary after tax deduction " + totalsal);
+        }else if(totalsal>100000){
+          tax = (empbasicsal*5)/100;
+          console.log("Employee tax amount is " + tax);
+          totalsal= empbasicsal + PF + hra - tax;
+          console.log("Employee tatal salary after tax deduction " + totalsal);
+        }else{
+          tax = 0;
+          console.log("Employee tax amount is " + tax);
+          totalsal= empbasicsal + PF + hra - tax;
+          console.log("Employee tatal salary after tax deduction " + totalsal);
+        }
+      }
+    }
+  </script>
+</body>
+</html>

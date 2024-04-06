@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Captcha_Canvas!</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #bbe7bd;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+      width: 300px;
+      text-align: center;
+    }
+    .container input {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+    }
+    .button {
+      width: 50%;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form action="" method="get" onsubmit="return false;">
+        <input
+          type="text"
+          name="valiIpt"
+          id="valiIpt"
+          placeholder="Enter Captcha"
+          style="width: 200px"
+        />
+        <br />
+        <canvas id="valicode"></canvas> <br />
+        <button id="toggle">refresh</button>
+        <input id="submit" type="submit" value="submit" />
+      </form>
+    </div>
+  </body>
+  <script>
+    var rightCode = "";
+    var valiIpt = document.querySelector("#valiIpt");
+    var toggleBtn = document.querySelector("#toggle");
+    var submitBtn = document.querySelector("#submit");
+    toggleBtn.addEventListener(
+      "click",
+      function () {
+        getImgValiCode();
+        console.log("click:" + rightCode);
+      },
+      false
+    );
+    submitBtn.addEventListener(
+      "click",
+      function () {
+        if (valiIpt.value === "") {
+          alert("verification code must be filled!");
+          return false;
+        }
+        if (valiIpt.value !== rightCode) {
+          alert("Verification code error!");
+          return false;
+        }
+        alert("Submitted successfully!");
+        valiIpt.value = "";
+      },
+      false
+    );
+    getImgValiCode();
+    console.log("init:" + rightCode);
+    function getImgValiCode() {
+      var showNum = [];
+      var canvasWinth = 150;
+      var canvasHeight = 30;
+      var canvas = document.getElementById("valicode");
+      var context = canvas.getContext("2d");
+      canvas.width = canvasWinth;
+      canvas.height = canvasHeight;
+      var sCode =
+        "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,0,1,2,3,4,5,6,7,8,9,!,@,#,$,%,^,&,*,(,)";
+      var saCode = sCode.split(",");
+      var saCodeLen = saCode.length;
+      for (var i = 0; i <= 4; i++) {
+        var sIndex = Math.floor(Math.random() * saCodeLen);
+        var sDeg = (Math.random() * 30 * Math.PI) / 180;
+        var cTxt = saCode[sIndex];
+        showNum[i] = cTxt.toLowerCase();
+        var x = 10 + i * 20;
+        var y = 20 + Math.random() * 8;
+        context.font = "bold 23px 微软雅黑";
+        context.translate(x, y);
+        context.rotate(sDeg);
+
+        context.fillStyle = randomColor();
+        context.fillText(cTxt, 0, 0);
+
+        context.rotate(-sDeg);
+        context.translate(-x, -y);
+      }
+      for (var i = 0; i <= 5; i++) {
+        context.strokeStyle = randomColor();
+        context.beginPath();
+        context.moveTo(
+          Math.random() * canvasWinth,
+          Math.random() * canvasHeight
+        );
+        context.lineTo(
+          Math.random() * canvasWinth,
+          Math.random() * canvasHeight
+        );
+        context.stroke();
+      }
+      for (var i = 0; i < 30; i++) {
+        context.strokeStyle = randomColor();
+        context.beginPath();
+        var x = Math.random() * canvasWinth;
+        var y = Math.random() * canvasHeight;
+        context.moveTo(x, y);
+        context.lineTo(x + 1, y + 1);
+        context.stroke();
+      }
+      rightCode = showNum.join("");
+    }
+
+    function randomColor() {
+      var r = Math.floor(Math.random() * 256);
+      var g = Math.floor(Math.random() * 256);
+      var b = Math.floor(Math.random() * 256);
+      return "rgb(" + r + "," + g + "," + b + ")";
+    }
+  </script>
+</html>

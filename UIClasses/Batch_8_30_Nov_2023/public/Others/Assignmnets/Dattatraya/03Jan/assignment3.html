@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>WAP to findout the second largestValue from the given array.</h3>
+    <script>
+      var arr = [10, 5, 9, 45, 30];
+      var largestValue = arr[0];
+      var secondLargestValue = arr[0];
+
+      for (var i = 1; i < arr.length; i++) {
+        if (arr[i] > largestValue) {
+          secondLargestValue = largestValue;
+          largestValue = arr[i];
+        } else if (arr[i] > secondLargestValue && arr[i] != largestValue) {
+          secondLargestValue = arr[i];
+        }
+      }
+      console.log(secondLargestValue);
+    </script>
+  </body>
+</html>

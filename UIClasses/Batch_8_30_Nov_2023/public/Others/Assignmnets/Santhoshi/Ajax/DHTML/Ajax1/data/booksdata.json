@@ -1,0 +1,49 @@
+{
+    "details" : [
+        {
+            "name" : "Akbhar and Birbal",
+            "author":"Mrs Rungeen Singh",
+            "Readingage" : "8 - 12 years",
+            "Language" : "English",
+            "Publisher" : "Young Learner Publications",
+            "Price" : "80/-",
+            "image" : "https://bookstation.in/cdn/shop/products/38751_front.jpg?v=1676472988&width=1024"
+        },
+        {
+            "name" : "Grandma's Bag of Stories",
+            "author":"Mrs Sudha Murthy",
+            "Readingage" : "6 - 12 years",
+            "Language" : "English",
+            "Publisher" : "Early Learner Publications",
+            "Price" : "480/-",
+            "image" : "https://www.crossword.in/cdn/shop/files/71ZMCcjgSeL._SL1500.jpg?v=1705465195"
+        },
+        {
+            "name" : "Animals Tales From Panchtantra",
+            "author":" Raghu Raman",
+            "Readingage" : "5 - 15 years",
+            "Language" : "English",
+            "Publisher" : "Dream Learner Publications",
+            "Price" : "180/-",
+            "image" : "https://www.crossword.in/cdn/shop/files/81DwRKsXg7L.jpg?v=1688625790"
+        },
+        {
+            "name" : " Shiva's Blue Throat Mythology Tale",
+            "author":" Monisha Narang",
+            "Readingage" : "5 - 16 years",
+            "Language" : "English",
+            "Publisher" : "Young Learner Publications",
+            "Price" : "230/-",
+            "image" : "https://m.media-amazon.com/images/I/61VrvmlbTJL._AC_UF350,350_QL80_.jpg"
+        },
+        {
+            "name" : "Krishna The Eight Child Mythology Tale",
+            "author":"Gopika Purnima",
+            "Readingage" : "5 - 10 years",
+            "Language" : "English",
+            "Publisher" : "wonder house Publications",
+            "Price" : "280/-",
+            "image" : "https://m.media-amazon.com/images/I/61vYQh9xZgL._AC_UF1000,1000_QL80_.jpg"
+        }
+    ]
+}

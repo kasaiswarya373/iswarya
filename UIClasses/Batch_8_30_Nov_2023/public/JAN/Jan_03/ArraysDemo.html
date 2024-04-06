@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demonstrating Arrays</title>
+  </head>
+  <body>
+    <script>
+      /*var sname = 'Raj';
+            var sage = 20;
+            var gender = 'Male';
+            var m1, m2, m3, m4, m5;
+            m1 = 44;
+            m2 = 90;
+            m3 = 90;
+            m4 = 89;
+            m5 = 76;
+            
+
+            var total = m1 + m2 + m3 + m4 + m5;
+            var avg = total / 5;
+
+            console.log("Sname is " + sname)
+            console.log("total " + total);
+            console.log("avg " + avg); */
+      var sname = "Raj";
+      var sage = 20;
+      var gender = "Male";
+      var marks = [44, 90, 90, 89, 76, 34, 56];
+
+      // var total = marks[0] + marks[1] + marks[2] + marks[3] + marks[4];
+      var total = 0;
+      for (var i = 0; i < marks.length; i++) {
+        total += marks[i];
+      }
+      var avg = total / 5;
+
+      console.log("Sname is " + sname);
+      console.log("total " + total);
+      console.log("avg " + avg);
+    </script>
+  </body>
+</html>

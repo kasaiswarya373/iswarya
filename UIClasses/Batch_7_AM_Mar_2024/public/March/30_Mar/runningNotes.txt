@@ -1,0 +1,44 @@
+Deploying static content to webserver
+
+
+file:///F:/UIClasses/UIClasses/Batch_7am_Mar_2024/30_Mar/assignment5_solution.html - 
+
+webserver - (tomcat apache, jboss, weblogic, .net, nodejs, php,..)
+    1. To serve the user requests through webservices/API/RESTAPi 
+    2. To host the resources, which can be accessable through the network. 
+
+Steps to create webserver under nodejs environment
+    1. install nodejs and check the version been installed 
+            node --version
+    
+    2. Install express node module 
+            npm install express -g
+    3. Install express generator package..
+            npm install express-generator -g
+
+    4. redirect to the directory, in which you would like to create a webserver  
+
+    5. create a webserver - 
+            express webservername
+
+    6. install nodde modules, by giving following command, under the server directory 
+
+            npm install 
+
+    7. Specify the port number, under which app should run , open app.js file, add below code at line 24
+
+                app.listen(8081, () => {
+                  console.log("SErver is listing at 8081");
+                });
+    8. Run ur server within commandprompt, with below command 
+
+            npm start
+
+    9. Check for server running status, by hitting below url in browser
+
+            http://localhost:8081
+
+
+
+
+            

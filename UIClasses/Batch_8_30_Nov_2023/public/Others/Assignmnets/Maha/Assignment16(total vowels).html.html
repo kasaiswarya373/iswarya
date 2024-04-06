@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //WAP to find out total number of vowels in the given string.
+            var s = prompt("enter string: ");
+            var count = 0;
+            s = s.toLowerCase();
+            for(var i=0;i<s.length;i++){
+               if(s.charAt(i) == 'a' || s.charAt(i) == 'e' || s.charAt(i) == 'i' || s.charAt(i) == 'o' || s.charAt(i) == 'u') {
+                count++;
+               }
+               // console.log(count);
+            }
+            console.log("number of vowels in the given string are : " + count);
+        </script>
+    </body>
+</html>

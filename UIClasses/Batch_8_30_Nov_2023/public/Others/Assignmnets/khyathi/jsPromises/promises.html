@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var age=22
+        var p1=new Promise((a,b)=>{  
+            //(a) resolve-> then; (b) reject-> catch
+            console.log('start')
+            if(age<=21){
+                
+               
+               b('age is not set ');
+            }else{
+                
+                a("age is  set");
+            }
+            
+
+        });
+        p1.then((msg)=>{
+            console.log('age is above 21')
+            console.log(msg)
+        }).catch((err)=>{
+            console.log("age is below 21")
+            console.log(err)
+        });
+        console.log('end')
+    </script>
+    
+</body>
+</html>

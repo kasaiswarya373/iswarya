@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            border: 1px solid;
+            width: 500px;
+            /* height: 300px; */
+            margin: 50px auto;
+            background-color: gray;
+        }
+        .field{
+            padding: 10px;
+            margin: 50px;
+            background-color: lightgray;
+        }
+        h3{
+            text-align: center;
+        }
+        button{
+         position: absolute;
+         top: 300px;
+         left: 650px;
+        }
+    </style>
+</head>
+<body>
+   <div class="block">
+     <h3>User Login page</h3>
+     <div class="field"> Email: <input type="email"  id="email"></div>
+     
+     <div class="field"> Password:<input type="password" id="password"></div>
+     <button onclick="saveData()">Save </button>
+   </div>
+   <script>
+    if(localStorage.getItem("u_email")!=null){
+        document.querySelector('#email').value=localStorage.getItem("u_email");
+        console.log(localStorage.getItem("u_email") ) 
+    
+    }
+    if(localStorage.getItem("u_pass")!=null){
+        document.querySelector('#password').value=localStorage.getItem("u_pass");
+        console.log(localStorage.getItem("u_pass") ) 
+    
+    }
+   saveData=()=>{
+    debugger;
+    useremail=document.querySelector("#email").value;
+    localStorage.setItem("u_email",useremail)
+    console.log(useremail)
+    document.querySelector("#email").value='';
+    
+    userPass=document.querySelector("#password").value;
+    localStorage.setItem("u_pass",userPass)
+    console.log(userPass)
+    document.querySelector("#password").value='';
+   }
+
+   
+   </script>
+</body>
+</html>

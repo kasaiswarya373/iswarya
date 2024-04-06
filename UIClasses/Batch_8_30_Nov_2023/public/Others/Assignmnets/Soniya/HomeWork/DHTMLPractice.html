@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHTML practice</title>
+</head>
+<body>
+    <div class="content"></div>
+    <script>
+        var msg = "hello sony";
+        var ptag = document.createElement('p');
+        ptag.innerText = msg;
+        ptag.setAttribute("id","sony");
+        ptag.setAttribute("class","saniya");
+        ptag.setAttribute("title","akhila");
+        ptag.style.color= prompt("Enter your desired colour");
+        ptag.style.fontSize="50px";
+        console.log(ptag);
+        // document.getElementsByClassName("content1").append(ptag);
+        document.querySelector(".content").append(ptag);
+    </script>
+</body>                                       
+</html>

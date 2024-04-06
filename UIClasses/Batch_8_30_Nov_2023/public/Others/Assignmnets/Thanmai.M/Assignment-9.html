@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeeSalaryDetails</title>
+</head>
+<body>
+    <script>
+           function calculateTax(gender, totalSalary) {
+                var taxPercentage = 0;
+    
+                if (gender === 'male') {
+                    if (totalSalary > 200000) {
+                        taxPercentage = 15;
+                    } else if (totalSalary > 100000) {
+                        taxPercentage = 10;
+                    } else if (totalSalary > 50000) {
+                        taxPercentage = 5;
+                    }
+                } else if (gender === 'female') {
+                    if (totalSalary > 200000) {
+                        taxPercentage = 10;
+                    } else if (totalSalary > 100000) {
+                        taxPercentage = 5;
+                    }
+                }
+    
+                return (taxPercentage / 100) * totalSalary;
+            }
+    
+            function calculateEmployee() {
+                var name = prompt("Enter employee name: ");
+                var age = parseInt(prompt("Enter employee age: "));
+                var department = prompt("Enter employee department: ");
+                var gender = prompt("Enter employee gender (Male/Female): ");
+                var basicSalary = prompt("Enter employee basic salary: ");
+    
+                var totalSalary = basicSalary; 
+    
+                var totalTax = calculateTax(gender, totalSalary);
+                var netSalary = totalSalary - totalTax;
+                    
+                console.log("......Employee Details:........");
+                console.log("Name:", name);
+                console.log("Age:", age);
+                console.log("Department:", department);
+                console.log("Gender:", gender);
+                console.log("Basic Salary:", basicSalary);
+                console.log("Total Salary:", totalSalary);
+                console.log("Total Tax:", totalTax);
+                console.log("net Salary:", netSalary);
+            }
+    
+            calculateEmployee();
+        </script>
+    </body>
+    </html>
+
+
+
+

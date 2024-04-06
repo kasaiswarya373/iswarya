@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>json_ForIn</title>
+    </head>
+    <body>
+      <script>
+        var studentDetails = {
+            name : 'jo',
+            age : 20,
+            gender : 'Female'
+        }
+       /*var tempkey = studentDetails.name;
+        var tempKey = 'name';//assiging  the key value in tempkey
+        console.log(studentDetails[tempKey]);//accessing values in a other way
+        */
+       //for in looping 
+       for(var tempkey in studentDetails){
+        //console.log(tempkey);//tempkey -name
+        console.log(studentDetails[tempkey]); //studentDetails['name']
+       }
+
+      </script>  
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://sg-res.9appsdownloading.com/sg/res/jpg/b2/77/53b414a03ef10e0acee22fe83a8d-70s.jpg?x-oss-process=style/mq200">
+    <link rel="stylesheet" href="coinpicker.css">
+    <script src="coinpicker.js"></script>
+    <style>
+       /* .number {
+            border: 1px solid;
+            border-radius: 10px;
+            margin: 4px;
+            font-weight: bold;
+            min-height: 10px;
+            padding: 10px;
+            display: inline-block;
+        }
+        body {
+            background-color:lightcyan;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+        }
+        .displaynumber {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            position: relative;
+            top: 100px;
+            font-size: 150px;
+            text-align: center;
+            color: blueviolet;
+            
+        }
+        .image {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .dice {
+            position: relative;
+            top: -60px;
+            right: -283px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 45px;
+        }*/
+    </style>
+</head>
+<body>
+    <h3>TAMBOLA COIN PICKER</h3>
+    <div class="displaynumber"></div>
+    <div class="dice">
+        <img class="image" src="https://ladieskitty.net/wp-content/uploads/2013/02/roll_the_dice.jpg" onclick="getrandomvalues()">
+    </div>
+    <div class="container"></div>
+    <script>
+        for (var i = 1; i <= 90; i++) {
+            var div = document.createElement("div");
+            div.setAttribute("class", "number");
+            div.setAttribute("id",i);
+            div.innerText = i;
+            document.querySelector(".container").append(div);
+        }
+        var generatedNumbers = [];
+        var getrandomvalues = () => {
+            var maxrange = 90;
+            do {
+                randomnumber = Math.round(Math.random() * maxrange);
+            } while (generatedNumbers.includes(randomnumber));
+            
+            generatedNumbers.push(randomnumber);
+             
+            document.querySelector(".displaynumber").innerText = randomnumber;
+            var spanToHighlight = document.getElementById(randomnumber);
+            spanToHighlight.style.backgroundColor = "gold";
+            spanToHighlight.style.textDecoration = "line-through";
+
+            if (generatedNumbers.length == 90) {
+                alert("Game is Finished!");
+            }
+        }
+    </script>
+</body>
+</html>

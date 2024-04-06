@@ -1,0 +1,27 @@
+.Stu{
+    text-align: center;
+    border: 3px solid;
+    border-style: dashed;
+    width: 500px;
+    margin: 20px auto;
+    background-color: rgb(93, 189, 111);
+    color: rgb(0, 0, 0);
+    padding: 13px;
+    border-radius: 22px;
+    text-decoration: underline;
+    font-weight:bolder;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mar{
+    text-align: center;
+}
+.re{
+    text-decoration: underline;
+}

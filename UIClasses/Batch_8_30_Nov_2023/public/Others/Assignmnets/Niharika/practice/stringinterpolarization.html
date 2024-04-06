@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //string interpolarization: it is present in ECMA-6 of JS it is useful in writing names.
+            // Syntax: to be written inside a "`";
+            //console.log(`ur name ${name}`);
+            //"`" it is called as backtick.
+            // "**" it is called exponention operator.
+            //** is used to find out power.
+            var num = prompt("enter number: ");
+            num = parseInt(num);
+            var a = prompt("enter what power to be calculated: ");
+            a = parseInt(a);
+            var b = num**a;
+            console.log(b);
+            var num = prompt("enter number:");
+            num = parseInt(num);
+            var rev = "";
+            while(num!=0){
+                var rem = num%10;
+                rev+=rem;
+                num = num/10;
+                num = parseInt(num);
+            }
+            rev = parseInt(rev);
+            console.log(rev);
+            //DO-While loop : 
+            //Syntax: do {
+               // ....
+          //  }
+        </script>
+    </body>
+</html>

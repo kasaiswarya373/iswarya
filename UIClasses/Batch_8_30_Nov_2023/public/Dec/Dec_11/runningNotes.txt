@@ -1,0 +1,19 @@
+CSS Positions:
+
+
+    top
+    left 
+    right
+    bottom 
+
+    position: static/relative/absolute/fixed/sticky 
+
+    position: static
+
+
+        position absolute
+
+            allways depends on its parent posiiton while moving to a nw position
+
+            i only depend on the parent, whose postion is non static 
+

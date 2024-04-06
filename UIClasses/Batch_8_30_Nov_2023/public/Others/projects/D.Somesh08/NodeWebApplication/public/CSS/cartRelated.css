@@ -1,0 +1,96 @@
+#cartIcon {
+    width: 54px;
+    height: 31px;
+    cursor: pointer;
+
+}
+
+#cartItemsCount {
+    position: relative;
+    top: 6px;
+    right: -37px;
+    cursor: pointer;
+}
+
+/* Cart Blocks */
+.CartsBlock1,
+.CartsBlock2,
+.CartsBlock3,
+.CartsBlock4,
+.CartsBlock5 {
+    border: 1px solid #ddd;
+    /* Light gray border */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    /* White background */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions */
+
+}
+
+.CartsBlock1:hover,
+.CartsBlock2:hover,
+.CartsBlock3:hover,
+.CartsBlock4:hover,
+.CartsBlock5:hover {
+    /* Move block slightly up on hover */
+    transform: translateY(-3px);
+    /* Increase box shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Data Styling */
+.CartsBlock1,
+.CartsBlock2,
+.CartsBlock3,
+.CartsBlock4,
+.CartsBlock5 {
+    /* Use a common sans-serif font */
+    font-family: Arial, sans-serif;
+    /* Adjust font size */
+    font-size: 14px;
+    /* Dark text color */
+    color: #333;
+
+}
+
+.CartsBlock1 img,
+.CartsBlock2 img,
+.CartsBlock3 img,
+.CartsBlock4 img,
+.CartsBlock5 img {
+    margin-right: 20px;
+    height: 150px;
+    width: 150px;
+    /* Add space between image and text */
+}
+
+.CartsBlock1 svg,
+.CartsBlock2 svg,
+.CartsBlock3 svg,
+.CartsBlock4 svg,
+.CartsBlock5 svg {
+    /* Change cursor to pointer on trash icon */
+    cursor: pointer;
+    /* Gray color for trash icon */
+    fill: #888;
+    /* Smooth transition for icon color change */
+    transition: fill 0.3s ease;
+}
+
+.CartsBlock1 svg:hover,
+.CartsBlock2 svg:hover,
+.CartsBlock3 svg:hover,
+.CartsBlock4 svg:hover,
+.CartsBlock5 svg:hover {
+    /* Red color for trash icon on hover */
+    fill: #ff0000;
+
+}

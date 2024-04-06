@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var m = prompt("enter a number");
+        m = parseInt(m);
+        var temp = m;
+        var reversenum = 0;
+        while (m != 0) {
+            var rem = m % 10;
+            reversenum = reversenum * 10 + rem;
+            m = m / 10;
+            m = parseInt(m);
+        }
+        if (temp == reversenum) {
+            console.log("its pallindrome");
+        } else {
+            console.log("its not pallindrome");
+        }
+
+        console.log(reversenum)
+    </script>
+</body>
+</html>

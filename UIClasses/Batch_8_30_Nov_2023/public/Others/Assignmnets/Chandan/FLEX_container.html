@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maincontainer {
+            border: 1px solid orangered;
+            height: 400px;
+            flex-direction: row;
+            display: flex; /*none,inline,inline-block */
+          /*  flex-direction: column-reverse;  row, column,row-reverse , column-reverse*/
+           /*   flex-direction: row;
+              flex-wrap: wrap-reverse;*/
+             /* flex-flow: row wrap-reverse;*/
+
+             /*justify-content: space-between;*/
+
+             align-items: center;
+             justify-content: center;
+        }
+        .maincontainer div {
+            border: 1px solid;
+            margin: 5px;
+            height: 40px;
+            width: 120px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div style="order: 3;">Item 1</div>
+        <div style="order: 1;">Item 2</div>
+        <div style="order: 2;flex-shrink: 2;flex-basis: 150px;">Item 93</div>
+        <div style="order: 5;">Item 4</div>
+        <div style="order: 4;">Item 5</div>
+        <div style="order: 3;">Item 1</div>
+        <div style="order: 1;">Item 2</div>
+        <div style="order: 2;">Item 3</div>
+        <div style="order: 5;flex-grow: 2;">Item 44</div>
+        <div style="order: 4;">Item 5</div>
+        
+        
+        
+    </div>
+</body>
+</html>

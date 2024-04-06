@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_7</title>
+    <style>
+        .container{
+            width: 1250px;
+            height: 8px;
+            text-align: center;
+            border:3px solid;
+            margin: 11px 12px 4px -2px;
+            padding: 12px 37px;
+            font-size: 15px;
+            position:static;
+                    }
+        .block{
+            border: 1px solid;
+            width: 120px;
+            height: 120px;
+            text-align:center;
+        }
+        
+       
+        .block1{
+            background-color: blue;
+        }
+        .block2{
+            background-color: yellow;
+            position:relative;
+            left:50px;
+            top: -50px;
+        }
+        .block3{
+            background-color: blue;
+            position: relative;
+            left: -1px;
+            bottom: -280px;
+        }
+        .block4{
+            background-color: yellow;
+            position: relative;
+            left: 50px;
+            bottom: -93px;
+        }
+        .block5{
+            background-color: rgb(31, 17, 226);
+            position: relative;
+            right: -1px;
+            bottom: -36px;
+            float: right;
+        }
+        .block6{
+            background-color: yellow;
+            position: relative;
+            right: -70px;
+            bottom: 28px;
+            float: right;
+        }
+        .block7{
+            background-color: blue;
+            
+            position: relative;
+            right: -247px;
+           top:  -490px;
+           float: right;
+        }
+        .block8{
+            background-color: yellow;
+            position: relative;
+            right: -321px;
+           top:  -419px;
+           float: right;
+        }
+        .block9{
+            background-color: yellow;
+            position:relative;
+            left: 595px;
+            top: -230px;
+            
+        }
+        .block10,.block11,.block12,.block13{
+            border: 1px solid;
+            width: 80px;
+            height: 80px;
+            text-align:center;
+        }
+        .block10{
+            background-color: rgb(0, 26, 255);
+            position:relative;
+            left:681px;
+            top: -397px;
+        }
+        .block11{
+            background-color: rgb(0, 26, 255);
+            position:relative;
+            left: 552px;
+            top: -480px;
+        }
+        .block12{
+            background-color: rgb(0, 26, 255);
+            position:relative;
+            left:684px;
+            top: -428px;
+        }
+        .block13{
+            background-color: rgb(0, 26, 255);
+            position:relative;
+            left:549px;
+            top: -510px
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><b>Block Arrangement</b></div>
+    <div class="block block1">block1</div>
+    <div class="block block2">block2</div>
+    <div class="block block3">block3</div>
+  
+    <div class="block block4">block4</div>
+    <div class="block block5">block5</div>
+    <div class="block block6">block6</div>
+    <div class="block block7">block7</div>
+    <div class="block block8">block8</div>
+    <div class="block block9">block9</div>
+    <div class="block block10">block10</div>
+    <div class="block block11">block11</div>
+    <div class="block block12">block12</div>
+    <div class="block block13">block13</div>
+    
+
+</body>
+</html>

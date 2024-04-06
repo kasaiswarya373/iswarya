@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builders Landing Page</title>
+    <style>
+        body {
+            background-image: url('images/pexels-codioful-\(formerly-gradienta\)-6985001.jpg');
+            background-size: cover;
+
+        }
+
+        .top {
+            /* background-color: white; */
+            width: 100%;
+        }
+
+        .logo img {
+            width: 200px;
+            float: left;
+            margin-right: 310px;
+        }
+
+        .email {
+            font-size: 20px;
+            position: absolute;
+            font-family: cursive;
+            right: 20px;
+            top: 50px;
+        }
+
+        .email span {
+            color: darkred;
+        }
+
+        .nav {
+            clear: both;
+            margin-top: 20px;
+        }
+
+
+        .tab2,
+        .tab3,
+        .tab4,
+        .tab5,
+        .tab6,
+        .tab8 {
+            border: 1px solid black;
+            width: 125px;
+            height: 15px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            float: right;
+            background-color: #FFB600;
+            color: white;
+            font-weight: 200;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .tab1,
+        .tab7 {
+            border: 1px solid white;
+            width: 120px;
+            height: 15px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            float: right;
+            background-color: black;
+            color: whitesmoke;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .tab1:hover {
+            background-color: #FFB600;
+            color: black;
+            cursor: pointer;
+            border: 1px solid white;
+        }
+
+        .tab2:hover {
+            background-color: black;
+            cursor: pointer;
+            border: 1px solid white;
+        }
+
+        .tab3:hover {
+            background-color: black;
+            cursor: pointer;
+            border: 1px solid white;
+        }
+
+        .tab4:hover {
+            background-color: black;
+            cursor: pointer;
+            border: 1px solid white;
+        }
+
+        .tab5:hover {
+            background-color: black;
+            cursor: pointer;
+            border: 1px solid white;
+        }
+
+        .tab6:hover {
+            background-color: black;
+            cursor: pointer;
+            border: 1px solid white;
+        }
+        .tab8:hover {
+            background-color: black;
+            cursor: pointer;
+            border: 1px solid white;
+        }
+
+        .tab7:hover {
+            background-color: #FFB600;
+            color: black;
+            cursor: pointer;
+            border: 1px solid white;
+        }
+
+        .bottom {
+            clear: both;
+        }
+
+        .left_block {
+            width: 650px;
+            float: left;
+            margin-top: 120px;
+            text-align: left;
+            margin-left: 40px
+        }
+
+        .left_block h1 {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 44px;
+        }
+
+        .left_block h5 {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .right_block {
+            width: 500px;
+            border: 1px solid;
+            float: right;
+            margin: 20px 80px 20px 1px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .bar {
+            width: 400px;
+            height: 15px;
+            background-color: whitesmoke;
+            margin: 10px auto;
+            padding: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            clear: both;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="images/real-estate-logo-design-vector-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="email">
+            Email :
+            <span>xyz@gmail.com</span>
+        </div>
+        <div class="nav">
+            <div class="tab1">GET A QUOTE</div>
+            <div class="tab2">CONTACT</div>
+            <div class="tab3">VIEW PRO</div>
+            <div class="tab4">PAGE EXAMPLE</div>
+            <div class="tab5">BLOG</div>
+            <div class="tab6">THEME INFO</div>
+            <div class="tab8">HOME</div>
+            <div class="tab7">About Us</div>
+        </div>
+
+    </div>
+    <div class="bottom">
+        <div class="left_block">
+            <h1>Use Oue Trusted services to build your dream home</h1>
+            <h5>The practice of designing, constructing, and operating buildings is most usually a collective effort of
+                different group of professionals and trades.</h5>
+        </div>
+        <form action="thank-you.html" method="get">
+            <div class="right_block">
+                <h2>Get A Free Quote!</h2>
+                <div class="bar">
+                    <label for="name">Name :</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="bar">
+                    <label for="email">Email :</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="bar">
+                    <label for="number">Number :</label>
+                    <input type="number" name="number">
+                </div>
+                <div class="bar">
+                    <label for="message">Add Message :</label>
+                    <textarea name="message" id="message" cols="20" rows="1"></textarea>
+                </div>
+                <div class="bar">
+                    <label for="radio">Interested :</label>
+                    <input type="radio" name="yes"> Yes
+                    <input type="radio" name="no"> No
+                    <input type="radio" name="NotDecided"> Not Decided
+                </div>
+                <div class="bar">
+                    <label for="button"></label>
+                    <input type="submit" name="submit" value="Request A Call Back">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        ------ Copyrights @Abhay2023 ------
+    </div>
+</body>
+
+</html>

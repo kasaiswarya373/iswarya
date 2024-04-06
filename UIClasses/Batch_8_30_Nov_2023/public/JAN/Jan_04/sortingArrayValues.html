@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Sorting values.
+        </title>
+    </head>
+    <body>
+        <script>
+            var n = [34, 44, 78, 90, 12, 3];
+
+            for (var i = 0; i < n.length; i++) {
+                for (var j = i + 1; j <= n.length; j++) {
+                    if (n[i] < n[j]) { // do swapping
+                        var temp = n[i]
+                        n[i] = n[j]
+                        n[j] = temp;
+                    }
+                }
+            }
+
+            console.log(n)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.loginContainer
+{
+    border: 2px solid #ccc;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;  
+    height: 35%;  
+}
+input
+{
+    width: 283px;
+    height: 32px;
+    margin-bottom: 10px;
+}
+label
+{
+    display: block;
+    margin-bottom: 9px;
+}
+#checkBox
+{
+    width: 18px;
+}
+#rememberMe
+{
+    position: absolute;
+    bottom: 313px;
+    right: 760px;                                                                                                                           
+}
+#loginBtn
+{
+    background-color: green;
+    width: 20%;
+    height: 31px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 245px;
+    left: 595px;
+    color:white;
+}

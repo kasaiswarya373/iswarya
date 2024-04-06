@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            var contactDetails = {
+                fname: 'ABC',
+                'lname': 'PQR',
+                petname: 'Chandu',
+                mailid: {
+                    office: 'abcd@office.com',
+                    'prsnl': ['abcd@gmail.com', 'pfre@hotmail.com']
+                
+                    
+            },
+            address: {
+                'office': {
+                    buildingno: '87A',
+                    country: {
+                        name: 'india',
+                        code: 'IND',
+                    },
+                    floorno: '9L',
+                    pincode: 7654321,
+                },
+                'prsnl': {
+                    stateinfo: {
+                        details: {
+                            Sid: '43',
+                            Scode: 'OD',
+                            pincode: 752012,
+                        },
+                        countryname: 'india',
+                        dno: '654/y',
+                        streetname: 'raghurajpur',
+                    }
+                }
+            },
+            phoneno: {
+                'office': '65437-89023',
+                'prsnl': 8765432190,
+                emergency: 8745469754
+
+
+            },
+            socialNetworkingIDs:  {
+                linkedin: 'abc',
+                twitter: '@abc'
+            },
+            profilepic: 'abc/data/data.png',
+            gender: 'male',
+            'mstatus': 'NM'
+        }
+
+
+        var emdata = {
+            name: 'Raj',
+            age: 23,
+            address: 'odisha',
+            gender: 'male'
+        };
+
+        var iterateOverObject = (data) => {
+            for (var tempkey in data) {
+                if ((typeof(data[tempkey]) == 'object') && !Array.isArray(data[tempkey])) {
+                    iterateOverObject(data[tempkey]);
+
+                } else {
+                    console.log(`${tempkey} value is -> ${ data[tempkey]}`);
+                }
+            }
+        }
+
+        console.log("=======================================")
+        iterateOverObject(emdata);
+
+        console.log("========================================")
+        iterateOverObject(contactDetails);
+
+
+        console.log("=========================================")
+
+        </script>
+    </body>
+</html>

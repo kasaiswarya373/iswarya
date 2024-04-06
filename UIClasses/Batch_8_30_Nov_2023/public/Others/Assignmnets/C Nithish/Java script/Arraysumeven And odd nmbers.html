@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Of Even and Odd Numbers In Array</title>
+</head>
+<body>
+    
+   <script>
+    var even=[];
+    
+
+    for ( var i = 1; i < 1000; i++){
+       if ( i % 2 == 0    ){
+        even.push(i)
+       }
+    }
+    console.log(even);
+
+     var sum=0
+     for (var i = 0; i < even.length; i++){
+        sum += even[i]
+     }
+    console.log(`Sum Of Even Numbes ${sum}`);
+    var odd=[];
+        for ( var i = 1; i < 1000; i++){
+        if ( i % 2 != 0    ){
+         odd.push(i)
+        }
+     }
+     console.log(odd);
+     
+      var sum=0
+      for (var i = 0; i < odd.length; i++){
+         sum += odd[i]
+      }
+      console.log(`Sum Of Odd Numbes ${sum}`);
+   </script>
+
+</body>
+</html>

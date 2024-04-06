@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css" type="text/css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="menu_bar">
+            <nav>
+                <h1><span>R</span>amya.</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_text">
+            <p>UI Fullstack Developer</p>
+            <h1>Hi i'm <span>Ramya</span><br>From Hyderabad</h1>
+            <!-- <img src="https://static.toiimg.com/photo/103492611.cms"> -->
+        </div>
+    </div>
+    <div id="aboutme">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="https://imagesvs.oneindia.com/images/1/17733204/17733204-960_anushka-shetty_p.jpg">
+                </div>
+                <div class="about_col_2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>Secure a responsible career opportunity to fully utilize my training and skills,<br>
+                        while making a significant contribution to the success of the company.</p>
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab_links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span>UI-Developer</span></br>HTML, CSS, JAVASCRIPT, BOOTSTRAP, WORDPRESS</li>
+                            <li><span>Tools</span> </br>Photoshop, MS-Office, CORE JAVA.</li>
+                            <li><span>Operating Systems: </span></br>Windows family</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="Projects">
+                        <ul>
+                            <li><span>School website </span></br>HTML, CSS, JAVASCRIPT, BOOTSTRAP, WORDPRESS</li>
+                            <li><span>Calculator</span> </br>Photoshop, MS-Office, CORE JAVA.</li>
+                            <li><span>Operating Systems: </span></br>Windows family</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="Education">
+                        <ul>
+                            <li><span>B.Tech</span></br>HTML, CSS, JAVASCRIPT, BOOTSTRAP, WORDPRESS</li>
+                            <li><span>Diploma</span> </br>Photoshop, MS-Office, CORE JAVA.</li>
+                            <li><span>SSC </span></br>Windows family</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------portfolio----------->
+    <div class="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My Projects</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="https://imagesvs.oneindia.com/images/1/17733204/17733204-960_anushka-shetty_p.jpg">
+                    <div class="layer">
+                        <h3>Caluculator</h3>
+                        <p>This is a decktop application</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imagesvs.oneindia.com/images/1/17733204/17733204-960_anushka-shetty_p.jpg">
+                    <div class="layer">
+                        <h3>Caluculator</h3>
+                        <p>This is a decktop application</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imagesvs.oneindia.com/images/1/17733204/17733204-960_anushka-shetty_p.jpg">
+                    <div class="layer">
+                        <h3>Caluculator</h3>
+                        <p>This is a decktop application</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab_links")
+        var tabcontents = document.getElementsByClassName("tab_contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active_link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active_tab")
+            }
+            event.currentTarget.classList.add("active_link");
+            document.getElementById(tabname).classList.add("active_tab");
+        }
+    </script>
+</body>
+
+</html>

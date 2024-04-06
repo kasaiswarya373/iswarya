@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Student Registration Task </title>
+</head>
+<style>
+    h3,
+    .footer {
+        border: 1px solid;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        margin-top: 20px;
+    }
+
+    .Block1 {
+
+        height: 150px;
+        border: 1px solid;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+
+        padding-top: 20px;
+
+    }
+
+    .Block2 {
+
+        height: 150px;
+        border: 1px solid;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .Block3 {
+        margin-top: 10px;
+
+        height: 200px;
+        border: 1px solid;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    .MainBlock {
+
+        width: 100%;
+        height: 600px;
+        border: 1px solid;
+
+    }
+
+    .RegisterDetails {
+        margin-top: 10px;
+        position: absolute;
+        border: 1px solid;
+        right: 20px;
+        width: 120px;
+        height: 20px;
+    }
+
+    .PersonalDetails {
+        position: absolute;
+        top: 70px;
+        left: 50px;
+        border: 1px solid;
+        width: 200px;
+        height: 40px;
+        background-color: aliceblue;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    li {
+
+
+
+        margin: 10px;
+        list-style: none;
+
+
+    }
+
+    .EducationDetails {
+        position: absolute;
+        top: 260px;
+        left: 50px;
+        border: 1px solid;
+        width: 200px;
+        height: 30px;
+        background-color: aliceblue;
+        text-align: center;
+        padding-top: 10px;
+
+    }
+
+    .AboutYourself {
+        position: absolute;
+        top: 430px;
+        left: 50px;
+        border: 1px solid;
+        width: 200px;
+        height: 40px;
+        background-color: aliceblue;
+        text-align: center;
+        padding-top: 10px;
+
+    }
+
+    .About {
+        margin-top: 60px;
+        padding-left: 200px;
+
+
+
+    }
+
+    .EduDetails {
+        margin-top: 30px;
+        padding-left: 150px;
+    }
+
+    .PerDetails {
+        position: absolute;
+    }
+    .firstname{
+        top:160px;
+        left:70px;
+        
+    }
+    .age{
+       
+        top:190px;
+        left:70px;
+    }
+.address{
+    top:120px;
+        right:200px;
+}
+.country{
+    top:160px;
+        right:200px;
+}
+
+</style>
+
+
+
+<body>
+    <form action="test123.com" target="_blank" method="get">
+        <h3>Student Registration page</h3>
+        <div class="MainBlock">
+            <div class="Block1">
+                <div class="PersonalDetails">Personal Details</div>
+                <ul>
+                    <li Class="PerDetails name">
+                        <label>Name</label> <input type="text" name="Name">
+                    </li>
+                    <li Class="PerDetails address">
+                        <label>Address</label> <textarea name="AddressDetails"></textarea>
+                    </li>
+                    <li Class="PerDetails firstname">
+                        <label>First name</label> <input type="text" name="fName">
+                    </li>
+                    <li Class="PerDetails country">
+                        <label>Country</label>
+                        <select>
+                            <option name="country" value="In">India</option>
+                            <option name="Country" value="US">USA</option>
+                            <option anme="Country" value="Jp">Japan</option>
+                        </select>
+                    </li> 
+                    <li Class="PerDetails age"><label>Age</label> <input type="number" name="no"></li>
+                </ul>
+            </div>
+            <div class="Block2">
+                <div class="EducationDetails">Education Details</div>
+
+                <li class="EduDetails">
+                    <label>Qualification</label>
+                    <select>
+                        <option>Btech</option>
+                        <option>MCA</option>
+                        <option>Masters</option>
+                    </select>
+                </li>
+                <li class="EduDetails">
+                    <label>Languages</label>
+                    <input type="checkbox" >Telugu
+                    <input type="checkbox" >English
+                    <input type="checkbox" >Hindi
+                    <input type="checkbox" > All
+                </li>
+                <li class="EduDetails">
+                    <label>Courses Offered</label>
+                    <input type="radio" name="Radio">cse
+                    <input type="radio" name="Radio">It
+                    <input type="radio" name="Radio">EEE
+                    <input type="radio" name="Radio">ECE
+                </li>
+
+            </div>
+            <div class="Block3">
+                <div class="AboutYourself">About Yourself</div>
+                <li class="About">
+                    <label>Few words about your carrer</label><textarea rows="5" columns="5"></textarea>
+                </li>
+            </div>
+            <div class="RegisterDetails"><input type="submit" value="Register Details"></div>
+        </div>
+        <div class="footer">@copy rights 2023</div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Position_Fixed</title>
+            <style>
+                h1{
+                    border: 5px solid blue;
+                    background-color: aqua;
+                    font-weight: bolder;
+                    text-align: center;
+                    margin: 0px;
+                    
+                    position: fixed;
+                    left: 10px;
+                    right: 10px;
+                    padding: 5px;
+                    /* margin-top: -99px; */
+                }
+                .container{
+                    border: 4px solid green;
+                    height: 700px;
+                    background-color: rgb(215, 247, 250);
+                    overflow: auto;
+                    /* margin-top: 125px; */
+                    
+                }
+                .sc1{
+                    margin-top: 50px;
+                    /* padding-top: 50px; */
+                }
+
+                .subcontainer{
+                    border: 3px solid;
+                    height: 145px;
+                    margin: 20px;
+                    margin-top: 80px;
+                    list-style: none;
+                    /* list-style-type: upper-roman; */
+                    margin-left: -35px;
+                    background-color: gold;
+                    border-radius: 80px;
+                }
+
+                .img, .Details{
+                    border: 1px solid;
+                    height: 134px;
+                    width: 127px;
+                    float: left;
+                    margin: 5px;
+                }
+                .img{
+                    margin-left: 67px;
+                    background-image: url(images/fixed.jpg);
+                }
+                .img1{
+                    background-position: 0px 264px;
+                }
+
+                .img2{
+                    background-position: 0px 133px;
+                }
+
+                .img3{
+                    background-position: -131px -326px;
+                }
+
+                .img4{
+                    background-position: -131px 264px;
+                }
+
+                .img5{
+                    background-position: 389px 264px;
+                }
+
+                .Details{
+                    /* padding: 5px; */
+                    border: 0px;
+                    margin-left: 20px;
+                    font-weight: bolder;
+                }
+            </style>
+        </head>
+        <body>
+            
+
+            <ol class="container">
+                <h1>Player Details</h1>
+                <li class="subcontainer">
+                    <div class="img img1"></div>
+                    <div class="Details">
+                        <p>Name : Virat</p>
+                        <p>Nick : Chikku</p>
+                        <p>Age : 35</p>
+                        <p>Gender : Male</p>
+                    </div>
+                </li>
+
+
+                <li class="subcontainer">
+                    <div class="img img2"></div>
+                    <div class="Details">
+                        <p>Name : Rohit</p>
+                        <p>Nick : Hitman</p>
+                        <p>Age : 36</p>
+                        <p>Gender : Male</p>
+                    </div>
+                </li>
+
+                <li class="subcontainer">
+                    <div class="img img3"></div>
+                    <div class="Details">
+                        <p>Name : Dawan</p>
+                        <p>Nick : Gabar</p>
+                        <p>Age : 36</p>
+                        <p>Gender : Male</p>
+                    </div>
+                </li>
+
+                <li class="subcontainer">
+                    <div class="img img4"></div>
+                    <div class="Details">
+                        <p>Name : Shami</p>
+                        <p>Nick : Lala</p>
+                        <p>Age : 31</p>
+                        <p>Gender : Male</p>
+                    </div>
+                </li>
+
+                <li class="subcontainer">
+                    <div class="img img5"></div>
+                    <div class="Details">
+                        <p>Name : Ashwin</p>
+                        <p>Nick : Ashu</p>
+                        <p>Age : 35</p>
+                        <p>Gender : Male</p>
+                    </div>
+                </li>
+            </ol>
+            
+        </body>
+</html>

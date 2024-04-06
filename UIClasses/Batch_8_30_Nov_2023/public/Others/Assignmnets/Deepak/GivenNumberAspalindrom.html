@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GivenNumberPalindromCheck</title>
+</head>
+<body>
+    <script>
+        for( num = 1000; num >= 22; num-- ){
+            var numberToUse = num;
+            let requiredString = '';
+            var usernumber = numberToUse;
+            while(numberToUse > 0){
+                var moduleNumber = numberToUse % 10;
+                moduleNumber = moduleNumber.toString();
+                requiredString = requiredString + moduleNumber ;
+                numberToUse = numberToUse / 10;
+                numberToUse = parseInt(numberToUse);
+            }
+             usernumber = usernumber.toString();
+            if(requiredString == usernumber){
+                document.write(usernumber + "<br>");
+            }
+        }
+    </script>
+</body>
+</html>

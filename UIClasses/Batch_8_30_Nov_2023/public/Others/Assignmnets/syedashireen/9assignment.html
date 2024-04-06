@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+       <script>
+        var empname = prompt("enter a name");
+        var empgender =prompt("enter a gender") ;
+        var age = prompt("enter a age") ;
+        var dept = prompt("enter a dept") ;
+        var basicsal=prompt("enter a basicsal");
+        
+         // var pfsal= prompt("enter a pfsal");
+       // var hrasal= prompt("enter a hrasal");
+       
+       var pfsal=(basicsal*14)/100;
+       var hrasal= (basicsal*25)/100;
+      
+       basicsal = parseInt(basicsal);1
+       pfsal = parseInt(pfsal);
+       hrasal = parseInt(hrasal);
+
+        var totalsal = basicsal+pfsal+hrasal;
+
+        console.log("-------------emp details-----------");
+        console.log("Name"+ empname);
+        console.log("gender"+ empgender);
+        console.log("age"+ age);
+        console.log("dept"+  dept);
+        console.log("tolalsal"+ totalsal);
+
+        </script>
+</body>
+</html>

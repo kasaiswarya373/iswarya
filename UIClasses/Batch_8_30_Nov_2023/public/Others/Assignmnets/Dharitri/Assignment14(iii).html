@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 14 (iii)</title>
+  </head>
+  <body>
+    <h3>WAP to check wheather  its palindrome or not</h3>
+    <script>
+        var n = prompt("Enter a value");
+        console.log(n);
+        var rev = 0;
+        var rem;
+        var temp =n;
+         while (n > 0) {
+            rem = n % 10;
+            rev = rev * 10 + rem;
+            n /= 10;
+            n = parseInt(n);
+
+         }
+
+         if (temp == rev) {
+            console.log( "It is a Palindrome number");
+          }  else {
+           console.log (" It is not a  Palindrome Number");
+        
+           }
+         console.log(rev); 
+
+    </script>
+
+  </body>
+</html>

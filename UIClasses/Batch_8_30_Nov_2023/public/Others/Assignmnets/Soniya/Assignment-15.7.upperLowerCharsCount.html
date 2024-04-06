@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting Upper and Lower Chars</title>
+</head>
+<body>
+    Programs to count uppercase and lowercase chars in a String
+    <script>
+        var readString = () =>
+        {
+            var string = prompt(`Enter string`);
+            return string;
+        }
+
+        var  countingUpperLowerChars = (str) =>
+        {
+            temp = str.toLowerCase();
+            var uppCount = 0;lowCount = 0;
+            for(var i = 0;i < str.length;i++)
+            {
+                if(str[i] != ' ')
+                {
+                if(str[i] != temp[i])
+                {
+                    uppCount++;
+                }
+                else
+                {
+                    lowCount++;
+                }
+                }
+            }
+            console.log(`Given string "${str}"`);
+            console.log(`UpperCase Characters : ${uppCount}`);
+            console.log(`LowerCase Characters : ${lowCount}`)
+        }
+
+        
+        var str = readString();
+        countingUpperLowerChars(str);
+
+    </script>
+</body>
+</html>

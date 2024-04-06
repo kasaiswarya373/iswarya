@@ -1,0 +1,54 @@
+h2{
+border: 2px solid yellow;
+background-color: black;
+color: white;
+padding: 10px;
+text-align: center;
+
+}
+.container{
+    /* border: 2px solid; */
+    min-height: 400px;
+}
+
+.input-container{
+    border: 1px solid yellow;
+    background-color: black;
+    width: 500px;
+    margin-inline: auto;
+    margin-block: 5px;
+    
+}
+li{
+    border: 1px solid yellow;
+    background-color: silver;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    list-style: none;
+}
+
+.head1{
+    text-align: center;
+    font-weight: bolder;
+}
+label{
+    width: 120px;
+    display: inline-block;
+}
+input[name=smarks]{
+    width: 50px;
+}
+input[name=button]{
+    background-color: black;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+input[name=button]:hover{
+    color: aquamarine;
+}
+.buttons{
+    text-align: center;
+    
+}

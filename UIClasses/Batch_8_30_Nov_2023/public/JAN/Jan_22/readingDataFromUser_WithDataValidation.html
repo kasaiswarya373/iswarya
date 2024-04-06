@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .title {
+                text-align: center;
+                font-weight: bold;
+                color: green;
+            }
+
+            ul {
+                width: 300px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #ccc;
+            }
+            li {
+                border: 1px solid;
+                padding: 10px;
+                margin: 10px;
+                list-style: none;
+                background-color: #fff;
+            }
+            .rblock {
+                display: none;
+            }
+            .error {
+                color: red;
+                font-size: 11px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="title">
+                Finding sum of values
+            </li>
+            <li>
+                <label for="a1value">Enter value fo a1 </label>
+                <input type="text" name="a1value" id="fval" onkeypress="return validateData(event)" maxlength="3">
+                <div class="error" id="a1Err">a1 is a mandate field</div>
+            </li>
+            <li>
+                <label for="a2value">Enter value fo a2 </label>
+                <input type="text" name="a2value" id="sval" onkeypress="return validateData(event)" maxlength="3">
+                <div class="error" id="a2Err">a2 is a mandate field</div>
+            </li>
+            <li class="rblock">
+                The sum of vlues is 
+                <span id="resultValue"></span>
+            </li>
+            <li>
+                <input type="button" value="Get Sum" onclick="getValues(event)">
+               
+               
+            </li>
+        </ul>
+
+
+
+        <!-- <div>
+            The sum of two values is <span>.....</span>
+        </div> -->
+        <script>
+           /* var a1 = 20;
+            var a2 = 40;
+            var result = a1 + a2;
+
+            document.querySelector("span").innerHTML = '<b>' + result + '</b>';
+            // document.querySelector("span").innerText = '<b>' + result + '</b>'; */ 
+
+            /* var a1 = prompt("enter values for a1");
+            a1 = parseInt(a1);
+
+            var a2 = prompt("enter values for a2");
+            a2 = parseInt(a2);
+            var result = a1 + a2;
+            document.querySelector("span").innerText = result; */
+        </script>
+
+        <script>
+
+
+            var getValues = (event) => {
+                console.log(event);
+                var a1 = document.querySelector("#fval").value;
+                a1 = a1.trim();
+                if (a1 == '') {
+                    document.querySelector("#a1Err").style.display = 'block';
+                    return;
+                } else {
+                    document.querySelector("#a1Err").style.display = 'none';
+                }
+                a1 = parseInt(a1);
+                
+                var a2 = document.querySelector("#sval").value;
+                a2 = a2.trim();
+                if (a2 == '') {
+                    document.querySelector("#a2Err").style.display = 'block';
+                    return;
+                } else {
+                    document.querySelector("#a2Err").style.display = 'none';
+                }
+                a2 = parseInt(a2);
+                
+                var result = a1 + a2;
+                document.querySelector("#resultValue").innerText = result;
+
+                document.querySelector(".rblock").style.display = 'block';
+
+                resetFieldValues();
+            }
+
+            var resetFieldValues = () => {
+                document.querySelector("#fval").value = '';
+                document.querySelector("#sval").value = '';
+            }
+
+            var validateData= (event) => {
+                // event.target.style.background = 'green';
+                console.log(event);
+                console.table([event], ['keyCode', 'key', 'timeStamp']);
+                var a1value = document.querySelector("#fval").value; 
+                console.log(a1value)
+                console.log("i got fired");
+                if (event.keyCode >= 48 && event.keyCode <= 57 ) { // Validating only numbers
+                    return true;
+                } else {
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>

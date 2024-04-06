@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="progress_card.css">
+        <script src="progress_card.js"></script>
+    </head>
+    <body>
+
+        <h3>
+            Progress Card Generation
+        </h3>
+
+        <ul>
+
+            <li>
+                <div class="labelText">
+                    Enter Student Name:
+                </div>
+                <div  class="controller">
+                    <input type="text" id="sname">
+                </div>
+            </li>
+
+            <li>
+                <div class="labelText">Enter Student Age:</div>
+                <div class="controller"><input type="text" id="sage"></div>
+            </li>
+
+            <li>
+                Select Gender:
+                <input type="radio" name="gender" value="Male" checked>Male
+                <input type="radio" name="gender" value="Female">Female
+            </li>
+
+            <li>
+                Enter Student Class:
+                <select name="" id="sclass">
+                    <option value="unselected">Select Class</option>
+                    <option value="Class 1">Class 1</option>
+                    <option value="Class 2">Class 2</option>
+                    <option value="Class 3">Class 3</option>
+                    <option value="Class 4">Class 4</option>
+                    <option value="Class 5">Class 5</option>
+                </select>
+            </li>
+
+            <li class="smarks">
+                Enter Student Marks:
+                <input type="text" id="m1">
+                <input type="text" id="m2">
+                <input type="text" id="m3">
+                <input type="text" id="m4">
+                <input type="text" id="m5">
+            </li>
+
+            <li>
+                <input type="button" value="Generate Progress Card" onclick="readStudentData();">
+                <input type="button" value="Reset Form" onclick="resetFields()">
+            </li>
+
+        </ul>
+
+        <ul class="dispalyDetailsBlock">
+            <li>        
+                Student Name: <span id="dname"></span>
+            </li>
+            <li>
+                Student Age: <span id="dage"></span>
+            </li>
+            <li>
+                Student Gender: <span id="dgender"></span>
+            </li>
+            <li>
+                Student Class: <span id="dclass"></span>
+            </li>
+            <li>
+                Student Total: <span id="dtotal"></span>
+            </li>
+            <li>
+                Student Avg: <span id="davg"></span>
+            </li>
+            <li>
+                Student Grade: <span id="dgrade"></span>
+            </li>
+        </ul>
+        
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+</head>
+<body>
+   <h2 style="color: green;">Please Check in Console.........</h2>
+    <script>
+        var Name = prompt('Enter Name');
+        var Age = prompt("enter Age");
+        var Gender = prompt("Enter Gender");
+        var Course = prompt("Enter Course");
+        var sub1 = prompt("Enter sub1 marks"), sub2 = prompt("Enter sub2 marks"), sub3 = prompt("Enter sub3 marks"),
+         sub4 = prompt("Enter sub4 marks");
+
+         sub1 = parseInt(sub1);
+         sub2 = parseInt(sub2);
+         sub3 = parseInt(sub3);
+         sub4 = parseInt(sub4);
+
+         var total =  sub1 +  sub2 +  sub3 +  sub4;
+         var Avg = total / 4
+
+
+         console.log("Name " + Name);
+         console.log("Age " + Age);
+         console.log("Gender " + Gender);
+         console.log("Course " + Course);
+         console.log("Total " + total);
+         console.log("Avg " + Avg);
+    </script>
+    
+</body>
+</html>

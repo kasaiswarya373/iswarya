@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header,
+        .container,
+        .footer {
+            border: 1px solid maroon;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .mainBlock {
+            width: 700px;
+            margin: 10px auto;
+        }
+
+        .header {
+            text-align: center;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: forestgreen;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: aqua;
+            background-color: brown;
+        }
+
+        .container {
+            height: 500px;
+        }
+
+        .leftBlock,
+        .rightBlock {
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+            float: left;
+            height: 470px;
+            overflow: auto;
+        }
+
+        .leftBlock {
+            width: 25%;
+            background-color: tomato;
+        }
+
+        .rightBlock {
+            width: 65%;
+            background-color: aquamarine;
+
+        }
+
+        .leftBlock li,
+        .detailsList>li {
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            list-style-position: inside;
+        }
+
+        .detailsList>li {
+            list-style: none;
+            height: 130px;
+        }
+
+        .imgContainer,
+        .subDetailsContainer {
+            float: left;
+        }
+
+        .detailsList {
+
+            padding: 5px;
+        }
+
+        .detailsList li {
+            list-style: none;
+            padding: 5px;
+        }
+
+        .imgContainer {
+            width: 125px;
+            height: 131px;
+            margin-right: 20px;
+            background-image: url(file:///D:/Ui%20fullstack/sample_image/IMAGE6.png);
+        }
+        .img1{
+            background-position: -395px -836px;
+        }
+        .img2{
+            background-position: -106px -600px;
+        }
+        .img3{
+            background-position: -409px -602px;
+        }
+        .img4{
+            background-position: -117px -265px;
+        }
+        .img5{
+            background-position: -753px -606px;
+        }
+    </style>
+</head>
+
+<body
+    background="https://marketingaccesspass.com/wp-content/uploads/2015/10/Podcast-Website-Design-Background-Image.jpg">
+    <div class="mainBlock">
+        <div class="header">
+            Student Details
+        </div>
+
+        <div class="container">
+            <div class="leftBlock">
+                <ol>
+                    <li>
+                        <a href="#soumyaDetails">
+                            soumya
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#sunitaDetails">
+                            sunita
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#rajaDetails">
+                            raja
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#arpitaDetails">
+                            Arpita
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#student5">
+                            sanju
+                        </a>
+                    </li>
+                </ol>
+            </div>
+            <div class="rightBlock">
+                <ul class="detailsList">
+                    <li id="soumyaDetails">
+                        <div class="imgContainer img1">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <li>Name: soumya</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="sunitaDetails">
+                        <div class="imgContainer img2">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <li>Name: sunita</li>
+                                <li>Gender: Female</li>
+                                <li>Location: Delhi</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="rajaDetails">
+                        <div class="imgContainer img3">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <li>Name: raja</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="arpitaDetails">
+                        <div class="imgContainer img4">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <li>Name: arpita</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="student5">
+                        <div class="imgContainer img5">
+                        </div>
+                        <div class="subDetailsContainer">
+                            <ul>
+                                <li>Name: sanju</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            @copy rights 2024
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.dateContainer {
+    text-align: right;
+    font-weight: bold;
+}
+.blockContainer {
+    div {
+        border: 1px solid;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+    }
+}

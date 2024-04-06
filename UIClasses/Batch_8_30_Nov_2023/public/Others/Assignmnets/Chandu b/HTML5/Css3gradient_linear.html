@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css3 gradient linear</title>
+        <style>
+            body {
+                background-color: black;
+            }
+            h3 {
+                border: 1px solid;
+                margin: 50px auto;
+                padding: 15px;
+                width: 350px;
+                font-size: 15px;
+                text-align: center;
+                color: darkcyan;
+            }
+            .container {
+                border: 2px solid;
+                width: 300px;
+                height: 300px;
+                border-radius: 10px;
+                margin: 150px auto;
+                text-align: center;
+                font-size: 22px;
+                font-weight: bold;
+                /* background-color: yellow; 
+                background-image: linear-gradient(130deg, red, green, blue); */
+                background-image:repeating-linear-gradient(to bottom right, orange 8%, aquamarine 17%, red 20%, black 23%);
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Css3 Gradient Linear
+        </h3>
+        <div class="container">
+            Hello every one
+        </div>
+    </body>
+</html>

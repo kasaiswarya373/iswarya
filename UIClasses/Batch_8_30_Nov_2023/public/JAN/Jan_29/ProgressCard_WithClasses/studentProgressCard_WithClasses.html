@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Usage of js classes
+        </title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li class="title">
+                Student Progress Card Generator
+            </li>
+            <li>
+                <input type="text" placeholder="Student Name" id="name">
+            </li>
+            <li>
+                <input type="text" placeholder="Student Age" id="age">
+            </li>
+            <li class="marksInput">
+                <input type="text" id="m1">
+                <input type="text" id="m2">
+                <input type="text" id="m3">
+                <input type="text" id="m4">
+                <input type="text" id="m5">
+            </li>
+            <li>
+                <input type="button" value="GenerateProgressCard" onclick="readInfo()">
+                <input type="button" value="Reset" onclick="resetFields()">
+                <input type="button" value="Show Lis of all" onclick="showList()">
+            </li>
+        </ul>
+        <ul class="progressCard">
+            <li>
+                Student Name: <span id="d_name"></span>
+            </li>
+            <li>
+                Age: <span id="d_age"></span>
+            </li>
+            <li>
+                Total: <span id="d_total"></span>
+            </li>
+            <li>
+                Avg: <span id="d_avg"></span>
+            </li>
+            <li>
+                Grade: <span id="d_grade"></span>
+            </li>
+        </ul>
+    </body>
+</html>

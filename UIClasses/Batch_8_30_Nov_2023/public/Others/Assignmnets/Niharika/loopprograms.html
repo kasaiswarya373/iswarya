@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var num = prompt("enter number of rows: ");
+            num = parseInt(num);
+            var a = "";
+            for(var i=1;i<=num;i++){
+                for(var j=num;j>=i;j--){
+                    a += " ";
+                }
+                for(var k=1;k<=i;k++){
+                    a+="* ";
+                }
+                a += "\n";
+            }
+            console.log(a);
+            console.log("reverse pyramid star");
+            var n = prompt("enter number of rows: ");
+            n = parseInt(n);
+            var a = "";
+            for(var i=1;i<=n;i++){
+                for(var j=1;j<=i;j++){
+                    a += " ";
+                }
+                for(var k=n;k>=i;k--){
+                    a+="* ";
+                }
+                a+="\n";
+            }
+            console.log(a);
+            console.log("Diamond star pattern");
+            var n = prompt("enter number of rows: ");
+            n = parseInt(n);
+            var a = "";
+            for(var i=1;i<=n;i++){
+                for(var j=n;j>=i;j--){
+                    a += " ";
+                }
+                for(var k=1;k<=i;k++){
+                    a+="* ";
+                }
+                a += "\n";
+            }
+           // console.log(a);
+           // var a = "";
+            for(var i=1;i<=n;i++){
+                for(var j=1;j<=i;j++){
+                    a += " ";
+                }
+                for(var k=n;k>=i;k--){
+                    a+="* ";
+                }
+                a+="\n";
+            }
+            console.log(a);
+        </script>
+    </body>
+</html>

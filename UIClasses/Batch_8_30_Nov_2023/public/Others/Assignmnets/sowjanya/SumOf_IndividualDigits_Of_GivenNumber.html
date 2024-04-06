@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sum Of Individual Digits of a Given Number</title>
+</head>
+<body>
+  <script>
+      var Num = prompt("Enter a number");
+      Num = parseInt(Num);
+      var sum = 0;
+      while (Num > 0)
+      {
+        var rem = Num % 10;
+        sum += rem;
+        Num = Num / 10;
+        Num = parseInt(Num)
+      }
+      console.log("sum of Individual digits of a given number is " + sum);
+  </script>
+
+</body>
+</html>

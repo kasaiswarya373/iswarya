@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+    <body>
+        <h2>Problem</h2>
+        <div>
+            Write a program to work with employee details name,age,department,gender,basic salary 
+            (read data dynamically from the user).calculate Total salary & total tax based on below 
+            conditions:
+        </div>
+        <h2>male</h2>
+            <div> total salary > 200000 </div>
+            <div> tax percentage is 15 </div>
+            <div> total salary > 100000 </div>
+            <div> tax percentage is 10 </div>
+            <div> total salary > 50000 </div>
+            <div> tax percentage is 5 </div>
+            <div> otherwise </div>
+            <div> tax percentage is zero </div>
+        
+    <h2>female</h2>
+            <div> total salary > 200000 </div>
+            <div> tax percentage is 10 </div>
+            <div> total salary > 100000 </div>
+            <div> tax percentage is 5 </div>
+            <div> total salary > 50000 </div>
+            <div> tax percentage is 0 </div>
+    
+        <script>
+            var EmpName = prompt("Enter Employee name: ");
+            console.log("Employee Name: " +EmpName);
+            var EmpAge = prompt("Enter Employee age: ");
+            console.log("Employee Age: " +EmpAge);
+            var EmpGender = prompt("Enter Employee Gender: ");
+            console.log("Employee Gender: " +EmpGender);
+            var EmpDepartment = prompt("Enter Employee Department: ");
+            console.log("Employee Department: " +EmpDepartment);
+            var EmpBasicSal = prompt("Enter Employee BasicSalary: ");
+            Basicsalary = parseInt(EmpBasicSal);
+            console.log("Employee Basic Salary: " +EmpBasicSal);
+
+            var pf = prompt("Enter pf percentage : ");
+            pf = (pf*EmpBasicSal)/100;
+            pf = parseFloat(pf);
+            console.log("PF percentage : " +pf);
+            var hra = prompt("enter hra percentage : ");
+            hra = (hra*EmpBasicSal)/100;
+            hra = parseFloat(hra);
+            console.log("hra Percentage : " +hra);
+            var TotalSalary = EmpBasicSal + pf + hra;
+            TotalSalary = parseInt(TotalSalary);
+            console.log("Total Salary: " +TotalSalary);
+
+            if(EmpGender == "male"){
+                if(EmpBasicSal >= 200000){
+                    console.log("15% of tax be applied to your salary  " );
+                }else if (EmpBasicSal >= 100000){
+                    console.log("10% of tax be applied to your salary  " );
+                }else if (EmpBasicSal >= 50000){
+                    console.log("5% of tax be applied to your salary  " );
+                }else {
+                    console.log("No tax will be applied ");
+                }
+            } else {
+                if(EmpBasicSal >= 200000){
+                    console.log("10% of tax be applied to your salary  " );
+                }else if (EmpBasicSal >= 100000){
+                    console.log("5% of tax be applied to your salary  " );
+                } else {
+                    console.log("No tax will be applied ");
+                }
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Sample {
+        constructor() {
+          // CAnnot be invoked manually
+          // automatically gets invoked when we create a object for this class
+        }
+        displayInfo() {
+          // function | method
+          console.log("hello all");
+        }
+        readInfo() {}
+      }
+
+      // instance | object
+
+      var p1 = new Sample(); // Creating a new object to a existing class +
+
+      console.log(p1);
+
+      var p2 = new Sample();
+
+      console.log(p2);
+      var p3 = new Sample();
+
+      console.log(p3);
+
+      p1.displayInfo();
+    </script>
+  </body>
+</html>

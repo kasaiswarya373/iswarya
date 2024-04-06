@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IteratingOverNestedJson</title>
+  </head>
+  <body>
+    <h2>Iterating Over Nested Json and arrays</h2>
+
+    <script>
+
+        // 3rd Example ====>
+
+      let person = {
+        name: "John",
+        contact: {
+          phone: "987-654-3210",
+          email: "john123@xyz.com",
+          address: {
+            city: "Berlin",
+            country: "Germany",
+          },
+        },
+      };
+
+
+    //// 2nd Example =====>
+
+//     let myJSON = {
+//     "Boss" : "John",
+//     "Department" : "Finance",
+//     "Department id": 3,
+//     "employees":[
+//         {
+//             "name":"Shaun",
+//             "age": 30
+//         },
+//         {
+//             "name":"Paul",
+//             "age" : 27
+//         }
+//     ]
+// };
+
+
+// 1st Example ====> 
+
+// var contactDetails = {
+//                 fname: 'ABC',
+//                 'lname': 'PQR',
+//                 petname: 'Sanju',
+//                 maild: {
+//                     office: 'abc@office.com',
+//                     'prsnl': ['abc@gmail.com', 'pqr@hotmail.com']
+//                 },
+//                 address: {
+//                     'office': {
+//                         buldingno: '5A',
+//                         country: {
+//                             name: 'India',
+//                             code: 'IND'
+//                         },
+//                         floorno: '9L',
+//                         pincode: 539098
+//                     },
+//                     'prsnl': {
+//                         stateInfo: {
+//                             details: {
+//                                 sid: '01',
+//                                 scode: 'TS',
+//                                 pincode: 523423
+//                             },
+//                             countryName: 'India',
+//                             dno: '158/B',
+//                             streetname: 'SR Nagar'
+//                         }
+//                     }
+//                 },
+//                 phonoNo: {
+//                     'office': '040-234234',
+//                     'prsnl': [935345 , 93543534],
+//                     emrgncy: 234234234
+//                 },
+//                 socialNetwrkingIds: {
+//                     linkedin: 'abc',
+//                     twitter: '@abc'
+//                 },
+//                 profilePic: 'abc/data/data.png',
+//                 gender: 'Male',
+//                 'mstatus': 'M'
+//             }
+
+
+
+      let iterateOverJson = (data) => {
+        for (let key in data) {
+
+            if((typeof(data[key]) == 'object') && !Array.isArray(data[key])){
+                iterateOverJson(data[key]);
+            }else{
+                console.log(`${key} is ${data[key]}`)
+
+            }
+        }
+      };
+      iterateOverJson(person)
+
+
+      
+    </script>
+  </body>
+</html>

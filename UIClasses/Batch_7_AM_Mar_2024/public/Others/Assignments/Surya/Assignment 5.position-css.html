@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>position CSS</title>
+        <style>
+            .heading{
+                text-align: center;
+                border: 1px solid;
+                color: white;
+                background-color: green;
+                padding: 15px;
+                margin: 5px auto;
+                font-weight: bold;
+            }
+            .body{
+                border: 1px;
+                color: blue;
+                background: beige;
+                height: 600px;
+                width: 1500px;
+                margin: auto;
+                position: relative;
+            }
+            .footer{
+                border: 1px solid;
+                color: blue;
+                background-color: none;
+                margin: 5px auto;
+                text-align: center;
+                border: 1px solid;
+                padding: 15px;
+                background-color: antiquewhite;
+            }
+            .block1,.block2,.block3,.block4,.block5,.block6,.block7,.block8,.block9,.block10,.block11,.block12,.block13{
+                text-align: center;
+                color: aqua;
+                border: 1px solid;
+                border-color: blueviolet;
+                padding: 15px;
+                margin: 5px;
+            }
+            .block1{
+                background-color: greenyellow;
+                width: 60px;
+                height: 60px;
+                position: relative;
+            }
+            .block2{
+                background-color: blue;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                left: 43px;
+                top: 45px;
+                z-index: 1;
+            }
+            .block3{
+                background-color: magenta;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 501px;
+            }
+            .block4{
+                background-color: brown;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 480px;
+                left: 41px;
+                z-index: 2;
+            }
+            .block5{
+                background-color: gray;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 0px;
+                left: 1398px;
+            }
+            .block6{
+                background-color: darkolivegreen;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 44px;
+                left: 1358px;
+                z-index: 3;
+            }
+            .block7{
+                background-color: blueviolet;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 501px;
+                left: 1398px;
+            }
+            .block8{
+                background-color: orange;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 480px;
+                left: 1358px;
+                z-index: 4;
+            }
+            .block9{
+                background-color: goldenrod;
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                bottom: 240px;
+                left: 690px;
+                z-index: 5;
+            }
+            .block10{
+                background-color: darkorchid;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                bottom: 345px;
+                left: 645px;
+            }
+            .block11{
+                background-color: green;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                bottom: 198px;
+                left: 645px;
+            }
+            .block12{
+                background-color: hotpink;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                bottom: 198px;
+                left: 793px;
+            }
+            .block13{
+                background-color: darksalmon;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                bottom: 345px;
+                left: 793px;
+            }
+            </style>
+            </head>
+            <body>
+                <div class="header"></div>
+                <div class="body">
+                <div class="block1">block1</div>
+                <div class="block2">block2</div>
+                <div class="block3">block3</div>
+                <div class="block4">block4</div>
+                <div class="block5">block5</div>
+                <div class="block6">block6</div>
+                <div class="block7">block7</div>
+                <div class="block8">block8</div>
+                <div class="block9">block9</div>
+                <div class="block10">block10</div>
+                <div class="block11">block11</div>
+                <div class="block12">block12</div>
+                <div class="block13">block13</div>
+            </body>
+            </html>

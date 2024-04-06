@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding The Palinfrome Number In Array</title>
+</head>
+
+<body>
+    <script>
+
+        var readPalindromeValues = () => {
+            var palindrome = [];
+            var number = prompt("Enter the total number values:");
+            number = parseInt(number);
+
+            for (var i = 0; i < number; i++) {
+                palindrome[i] = prompt(`Enter the ${i + 1} position`);
+                palindrome[i] = parseInt(palindrome[i]);
+                console.log(`The ${i + 1} value is : ${palindrome[i]}`);
+            }
+            getPalindromeNumbers(palindrome);
+        }
+
+        var getPalindromeNumbers = (palindrome) => {
+            var rem;
+            for (var i = 0; i < palindrome.length; i++) {
+                temp = palindrome[i];
+                sum = 0;
+                while (temp > 0) {
+                    rem = temp % 10;
+                    sum = (sum * 10) + rem;
+                    temp = temp / 10;
+                    temp = parseInt(temp);
+                    if (palindrome[i] == sum) {
+                        console.log("The palindrome number is:" + palindrome[i]);
+                    }
+                }
+            }
+        }
+        readPalindromeValues();
+
+    </script>
+</body>
+</html>

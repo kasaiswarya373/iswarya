@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="studentprogres.js"></script>
+    <style>
+        h1 {
+            border: 1px solid;
+            background-color: tomato;
+            text-align: center;
+            margin: 15px;
+            padding: 16px;
+        }
+        .container {
+            width: 800px;
+            border: 3px solid;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: turquoise;
+        }
+        .detailsblock {
+            width: 80%;
+            border: 2px solid;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+
+        }
+        .marks > input {
+             width: 30px;
+        }
+        .save {
+            text-align: center;
+        }
+        #error1 {
+            display: none;
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student-Progress </h1>
+    <div class="container">
+        <div class="detailsblock">
+            <b style="font-size: 20px;">Student-Details</b>
+        </div>
+        <div class="detailsblock">
+            <label for="name"><b>Enter-Student-Name: </b></label>
+            <input type="text" id="sname" onkeypress="return validData(event)" maxlength="10">
+            <div id="error1">It is a mandatory Field!!!</div>
+        </div>
+        <div class="detailsblock">
+            <label for="age"><b>Enter Age : </b></label>
+            <input type="text" id="sage" onkeypress=" return validNum(event)" maxlength="2">
+        </div>
+        <div class="detailsblock">
+            <label><b>Gender: </b></label>
+            Male <input type="radio" name="gender" value="Male" checked>
+            Female <input type="radio" name="gender" value="Female">
+        </div>
+        <div class="detailsblock">
+            <label for=""><b>Class:</b></label>
+            <select name="" id="studentClass">
+                <option value="class I">Class I</option>
+                <option value="class II">Class II</option>
+                <option value="class III" selected>Class III</option>
+                <option value="class IV">Class IV</option>
+                <option value="class V">Class V</option>
+                <option value="class VI">Class VI</option>
+                <option value="class VII">Class VII</option>
+                <option value="class VIII">Class VIII</option>
+                <option value="class IX">Class IX </option>
+                <option value="class X">Class X</option>
+            </select>    
+        </div>
+        <div class="detailsblock">
+            <label for="">
+               <b>Marks : </b>
+            </label>
+            <div style="margin: 10px;">
+                <input type="text" id="m1" placeholder="Telugu" onkeypress="return validValue(event)">
+                <input type="text" id="m2" placeholder="Hindi" onkeypress="return validValue(event)">
+                <input type="text" id="m3" placeholder="English" onkeypress="return validValue(event)">
+                <input type="text" id="m4" placeholder="Maths" onkeypress="return validValue(event)">
+                <input type="text" id="m5" placeholder="Science" onkeypress="return validValue(event)">
+                <input type="text" id="m6" placeholder="Social" onkeypress="return validValue(event)">
+            </div>
+        </div>
+        <div class="detailsblock save">
+            <input type="button" value="Generate Progress-Card" onclick="displayDetails()">
+        </div>
+    </div>
+    <div class="display">
+
+    </div>
+</body>
+</html>
+</body>
+</html>

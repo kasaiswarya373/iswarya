@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating Image Slide show - Bootstrap
+    </title>
+    <script src="../Jquery.js/"></script>
+    <link rel="stylesheet" href="bootstrap_library/css/bootstrap.min.css">
+    <script src="../handlebar.js"></script>
+    <script src="bootstrap_library/js/bootstrap.min.js"></script>
+    <script src="slideShow.js"></script>
+    <style>
+        body{
+            background-color: rgb(199, 178, 148);
+        }
+        h2{
+            border: 1px solid yellowgreen;
+            background-color: orange;
+            text-align: center;
+            font-style: italic;
+        }
+        .carousel-item  img{
+            width: 500px;
+            height: 600px;
+        }
+        .carousel-caption{
+          h5{
+            color: aquamarine !important;
+          }
+          p {
+            color: blue !important;
+          }
+          #carouselExampleCaptions{
+            height: 550px;
+          }
+          img{
+            height: 550px;
+          }
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Demonstrating Image Slide show - static content
+    </h2>
+   
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+        <div class="carousel-inner"></div>
+          <div class="carousel-item active">
+            <img src="images/imagescar.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/imagescar1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/imagescar2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div id="singleSlideImage" style="display: none;">
+        <div class="carousel-item active">
+          <img src="{imageUrl}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>{title}</h5>
+            <p>{caption}</caption></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="singleSlideImageBtn" style="display: none;">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{counter}}" 
+        class="{{activeClass}}" aria-current="true" aria-label="Slide {{index}}"></button>
+      </div>
+</body>
+</html>

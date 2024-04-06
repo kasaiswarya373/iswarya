@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Student Info
+    </title>
+    <style>
+        .studentMainContainer{
+            border: 1px solid;
+            text-align: center;
+            padding: 10px,auto;
+            margin: 5px;
+        }
+        .studentNameContainer{
+            border: 1px solid;
+            height: 70%;
+            width: 20%;
+            margin: 5px;
+            float: left;
+        }
+        .studentNameSubContainer{
+            border: 1px solid;
+            height: 120px;
+            width: 80%;
+            padding: 5px;
+            margin: 10px;
+        }
+        .studentDetailsContainer{
+            border: 1px sloid;
+            height: 70%;
+            width:78%;
+            float: right;
+            margin: 3px;
+        }
+        .studentCopyRight{
+            border: 1px solid;
+            clear: both;
+            text-align: center;
+            margin: 5px;
+        }
+        .studentDetailsInnerContainer{
+                border: 1px solid;
+                height: 31%;
+                margin: 5px;
+               
+            }
+            .imageStudent{
+                height:110px;
+                width: 130px;
+                border: 1px solid;
+                float: left;
+                margin: 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="studentMainContainer">
+           <h3> Student Details </h3>
+        </div>
+        <div class="studentNameContainer">
+            <div class="studentNameSubContainer">1. Ramu</div>
+            <div class="studentNameSubContainer">2. Nikil</div>
+            <div class="studentNameSubContainer">3. Somu</div>
+        </div>
+
+        <div class="studentDetailsContainer">
+            <div class="studentDetailsInnerContainer"> 
+                <div>
+                    <img class="imageStudent" alt="image" src="https://th.bing.com/th/id/OIP.lVT481hkw_yemyT6f_AYngHaJ4?w=131&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7">
+                <div class="studentDetailsInfo">
+                    <p>Name: Ramu</p>
+                    <p>Age: 20</p>
+                    <p>Gender: Male</p>
+                    <p>Location: UK</p>
+                </div>
+                
+            </div>
+            <div class="studentDetailsInnerContainer"> 
+                <div>
+                    <img class="imageStudent" alt="image" src="data:image/jpeg;base64,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">
+                </div>
+                <div class="studentDetailsInfo">
+                    <p>Name: Nikil</p>
+                    <p>Age: 24</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Bangalore</p>
+                   </div>
+            </div>
+            <div class="studentDetailsInnerContainer"> 
+                <div>
+                    <img class="imageStudent" alt="image" src="https://th.bing.com/th/id/OIP.xl5MmrrIAgkWgZPEzsq01wAAAA?w=129&h=207&c=7&r=0&o=5&dpr=1.1&pid=1.7">
+                </div> 
+                <div class="studentDetailsInfo">
+                    <p>Name: Somu</p>
+                    <p>Age: 25</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Hyderabad</p>
+                   </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
+    </style>

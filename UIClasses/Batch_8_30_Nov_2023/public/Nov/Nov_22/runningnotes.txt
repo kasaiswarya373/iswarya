@@ -1,0 +1,52 @@
+<h3 style="background-color: #abc2ba;color: aqua;">
+    News Content 2: 
+</h3>
+
+
+CSS ClasseS:
+
+    Syntax:
+
+    .userdefinedclassname {
+        ...
+        ....
+        .....
+        ....
+        ...
+
+    }
+    <tagname class="userdefinedclassname">
+        ..
+    </tagname>
+
+    Example: 
+
+        // Defining a class 
+
+        .newsContent {
+            color: green;
+            background: #ccc;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        <p class="newsContent">
+            content
+        </p>
+        
+html, body, head, style, p, h1 - h6 title, a tag and img tag
+
+a tag: 
+
+        <a href=".. path of the external web page . ">
+            ......
+        </a>
+
+        <a href="http://www.gogle.com">
+            aldkfja;sldfkjas;dl
+        </a>
+
+        <a href="link">
+           text 
+           <img src="" alt="">
+        </a>

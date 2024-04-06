@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <script>
+        /*        var value = {
+
+            Getvalues: () => {
+                    value.a1 = prompt("enter a1 value");       // this a1,a2 are kept in the jason-object becoz, this are the relevant data.
+                    value.a2 = prompt("enter a2 value");
+
+                    value.a1 = parseInt(value.a1);
+                    value.a2 = parseInt(value.a2);
+                    value.addsumofvalues();
+            }
+        };                                                     // this is the "value Object" and a1,a2 are in this value-Object.                
+            value.addsumofvalues = () => {
+                    value.result = 0;
+                    value.result = value.a1 + value.a2;
+
+                    console.log(value);
+                }
+                value.Getvalues();  */
+
+
+
+            var studentInfo = {          // this method is one-way of writing data of "ObjectMethods".
+                instituteName: 'NIT'
+        };
+
+            studentInfo.readStudentDetails = () => {
+
+                studentInfo.name = prompt("enter value fo name");
+                studentInfo.age = prompt("enter value for age");
+                studentInfo.marks = [];
+
+                for (var i = 0 ; i < 5; i++) {
+                    studentInfo.marks[i] = prompt("enter value for " + (i + 1));
+                    studentInfo.marks[i] = parseInt(studentInfo.marks[i]);
+                }
+                studentInfo.getTotalAndAvg();
+        }
+            studentInfo.getTotalAndAvg = () => {
+                    studentInfo.total = 0;
+                        for (var i = 0 ; i < studentInfo.marks.length; i++) {
+                    studentInfo.total += studentInfo.marks[i];
+                }
+                studentInfo.avg = studentInfo.total / studentInfo.marks.length;
+                        console.log(studentInfo);
+            }
+
+                var displayDetails = () => {
+                studentInfo.readStudentDetails()
+                console.log("name is " + studentInfo.name);
+                console.log("Toptal is " + studentInfo.total)
+                console.log("Avg is " + studentInfo.avg);
+            }
+
+            displayDetails();   
+
+            </script>
+        </body>
+</html>

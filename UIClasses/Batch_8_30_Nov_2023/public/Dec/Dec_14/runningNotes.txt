@@ -1,0 +1,53 @@
+Reading data from input elements:
+    1. Through js dom operations - pending 
+    2. Through the Form tag - we could read the data from the set of input elements (automatically), and send to the specified server (through url)
+
+
+Form 
+
+<form>
+
+</form>
+
+Form Tag:
+    2 mandae attributes 
+
+       1. action attribute - 
+
+            Through this action attribute we could specify the path/url of the server to whcih data has to be sent
+
+       2. method attribute
+
+                GET/POST/PUT/QUERY .... 
+
+
+                GET/POST
+
+
+
+        Syntax"
+
+            <form action="path/url of the server to which data has to be sent" 
+                  method="Through which we can speicify whether the communication is secured / non-secured">
+                ....
+            </form>
+
+        Example:
+            <form action="http://www.sample.com/info/data" method="GET">
+                .... 
+            </form>
+
+
+Types of communication 
+
+    secured  - POST
+
+    Non secured - GET 
+
+0-------------------------------------------0
+
+http://test.com/data/info/userdetails
+
+http://test.com/data/info/userdetails?userName=Krish&actPwd=INDIA123&gender=on
+
+http://test.com/data/info/userdetails?userName=Krisjh&actPwd=INDIA123&gender=Male&country=China&lng_tel=on&lng_urd=on&aboutyou=am+good

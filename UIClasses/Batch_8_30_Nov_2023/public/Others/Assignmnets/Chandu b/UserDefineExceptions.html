@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User define exceptions</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+         <style>
+            h3 {
+                margin: 10px;
+                padding: 20px;
+                text-align: center;
+                color: blue;
+                font-size: bold;
+            }
+            ul {
+                border: 1px solid;
+                width: 400px;
+                margin: 20px auto;
+                padding: 10px;
+                background-color: aqua;
+            }
+            li {
+                border: 1px solid #04e417;
+                margin: 10px;
+                padding: 10px;
+                list-style: none;
+            }
+            #resultBlock {
+                text-align: center;
+                font-weight: bold;
+                color: green;
+                display: none;
+            }
+            .error {
+                color: red;
+                font-size: 12px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Student Regestration Page</h3>
+        <ul>
+            <li>
+                Enter user Name:
+                <input type="text" id="uname" >
+                <div class="error name_error">Please enter name</div>
+            </li>
+            <li>
+                Enter user Age:
+                <input type="text" id="uage" >
+                <div class="error age_error">Please enter age</div>
+            </li>
+            <li>
+                Enter Password:
+                <input type="text" id="password" maxlength="6">
+                <div class="error password_error">Please enter password</div>
+            </li>
+            <li id="resultBlock">
+
+            </li>
+            <li>
+                <input type="button" value="Save Details" onclick="SaveDetails()">
+            </li>
+        </ul>
+        <script>
+            var SaveDetails = () => {
+
+                var obj = {};
+                obj.name = $("#uname").val();
+                obj.age = $("#uage").val();
+                obj.password = $("#password").val();
+                if (!obj.name.trim()) {
+                    $(".name_error").show();
+                    return;
+                } else {
+                    $(".name_error").hide();
+                }
+                /*if (obj.age < 21) {
+                    $(".age_error").show();
+                    return;
+                } else {
+                    $(".age_error").hide();
+                } */
+                if (!obj.age.trim()) {
+                    $(".age_error").show();
+                    return;
+                } else {
+                    $(".age_error").hide();
+                }
+                if (!obj.password.trim()) {
+                    $(".password_error").show();
+                    return;
+                } else {
+                    $(".password_error").hide();
+                }
+                resetValues();
+
+                $("#resultBlock").show();
+                $("#resultBlock").text("Register Successfully");
+            }
+
+            var resetValues  = () => {
+                $("#uname").val('');
+                $("#uage").val('');
+                $("#password").val('');
+            }
+        </script>
+    </body>
+</html>

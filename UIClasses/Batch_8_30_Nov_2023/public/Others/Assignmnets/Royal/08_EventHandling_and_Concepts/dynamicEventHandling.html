@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Event Handling</title>
+</head>
+<body>
+    <div id="container">Click_Me_Text</div>
+    <h4>Please see the console to see the output</h4>
+    <script>
+        var showMsg = () => {
+            console.log('You have clicked on Click_Me_text...')
+        }
+        /**
+         * addEventListener() method is used for Dynamic event handing,
+         * click, doubleClick, mousehover are the params/value we need to provide
+         */
+        // document.querySelector('#container').addEventListener('click', showMsg);
+
+
+        /**
+         * We can use callback method to save the memory consumtion
+         */ 
+         document.querySelector('#container').addEventListener('click', () => {
+            console.log('You clicked on Click_Me_text, using callback funtion')
+         });
+
+         
+    </script>
+    
+</body>
+</html>

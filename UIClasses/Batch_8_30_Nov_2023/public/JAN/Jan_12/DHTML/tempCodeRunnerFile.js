@@ -1,0 +1,1 @@
+document.querySelector(".productDetailsContainer").append(mainLiTag);

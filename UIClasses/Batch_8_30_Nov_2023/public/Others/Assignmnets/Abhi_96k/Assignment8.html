@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    h3 {
+        text-align: center;
+        background-color: aqua;
+
+    }
+    body{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #header {
+        height: 50px;
+        border: 2px solid;
+        padding-top: 8px;
+        margin: 0%;
+        text-align: center;
+        overflow-x: hidden;
+        border-color: saddlebrown;
+    }
+
+    #Main_Container {
+        height: 550px;
+        border: 3px solid;
+        margin-top: 10px;
+        overflow-x: hidden;
+    }
+
+    .container {
+        height: 25%;
+        border: 1px solid;
+        margin: 2% 1%;
+    }
+
+    #Main_Container .About {
+        height: 32%;
+    }
+
+
+    #section_1 {
+        float: left;
+        position: relative;
+        left: 55px;
+        top: -5px
+    }
+
+
+    #section_2 {
+        position: relative;
+        left: 65px;
+        top: -5px;
+    }
+
+    .EducationDetails .table_2 {
+        position: relative;
+        left: 55px;
+
+    }
+
+    #pd {
+        position: relative;
+    }
+
+    #toggle {
+            height: 35px;
+            width: 150px;
+            border: 1px solid;
+            text-align: center;
+            padding-top: 8px;
+            position: relative;
+            left: 45px;
+            top: -18px;
+            z-index: 1;
+            opacity: 1;
+            color:black;
+            background-color: salmon;
+        }
+
+        #toggle_2 {
+            height: 35px;
+            width: 150px;
+            border: 1px solid;
+            text-align: center;
+            padding-top: 8px;
+            position: relative;
+            left: 45px;
+            top: -18px;
+            z-index: 1;
+            opacity: 1;
+            color: black;
+            background-color: fuchsia;
+        }
+        #about_you_toggle {
+        height: 35px;
+        width: 150px;
+        border: 1px solid;
+        text-align: center;
+        padding-top: 8px;
+        position: relative;
+        left: 45px;
+        top: -18px;
+        z-index: 1;
+        opacity: 1;
+        color:black;
+        background-color: rgb(18, 222, 236);
+    }
+
+    #aboutyou_text_area {
+        position: relative;
+        left: 80px;
+
+    }
+
+    #about_you_label {
+        position: relative;
+        bottom: 30%;
+        left: 65px;
+    }
+
+
+</style>
+
+<body>
+    <h3 id="header">Student Registration Page</h3>
+    <form>
+        <div id="Main_Container">
+
+            <div class="container PersonalDetails" id="PD">
+
+                <div id="toggle">
+                    Personal_Details
+                </div>
+
+                <div id="section_1">
+
+                    <table class="table_1">
+                        <tr>
+                            <td><label for="Name">Name</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="Name" name="name" value="Abhi96k"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="FirstName">FirstName</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="FirstName" name="FirstName" value="Abhi"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Age">Age</label></td>
+                            <td>:</td>
+                            <td><input type="number" id="Age" name="Age" value="20"></td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div id="section_2">
+
+                    <table>
+                        <tr>
+                            <td><label for="Address">Address</label></td>
+                            <td>:</td>
+                            <td><textarea id="Address" name="Address" value="Address">Address.</textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Country">Country</label></td>
+                            <td>:</td>
+                            <td> <select id="Country" name="Country">
+                                    <option selected>India</option>
+                                    <option>Pakistan</option>
+                                    <option>Japan</option>
+                                    <option>srilanka</option>
+                                </select></td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="container EducationDetails" id="ED">
+                <div id="toggle_2">
+                    Education_Details
+                </div>
+
+                <table class="table_2">
+                    <tr>
+                        <td><label for="Qualification">Qualification</label></td>
+                        <td>:</td>
+                        <td> <select id="Qualification" name="Qualification" value="MSC">
+                                <option>SSC</option>
+                                <option>Intermediate</option>
+                                <option>Degree</option>
+                                <option selected>MSC</option>
+                            </select></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="Languages">Languages</label></td>
+                        <td>:</td>
+                        <td id="Languages">
+                            <input type="checkbox"  name="Language" value="kannada" id="kannada" checked> <label for="kannada">kannada</label>
+                            <input type="checkbox"  name="Language" value="Hindi" id="Hindi"> <label for="Hindi">Hindi</label>
+                            <input type="checkbox"  name="Language" value="English" id="English"> <label for="English">English</label>
+                            <input type="checkbox"  name="Language" value="Urdu" id="Urdu"> <label for="Urdu">Urdu</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="Course">Course Occupied</label></td>
+                        <td>:</td>
+                        <td id="Course">
+                            <input type="radio" name="Qualification" value="MBA" id="MBA"> <label for="MBA">MBA</label>
+                            <input type="radio" name="Qualification" value="MCA" id="MCA"> <label for="MCA">MCA</label>
+                            <input type="radio" name="Qualification" value="MSC" id="MSC" checked> <label for="MSC">MSC</label>
+                            <input type="radio" name="Qualification" value="B.tech" id="ITA"> <label for="ITA">ITA</label>
+
+                        </tr>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="container About" id="about">
+                <div id="about_you_toggle">
+                    About_You
+                </div>
+
+                <label for="aboutyou_text_area" id="about_you_label">Few Words About Your Carrer :</label>
+                <textarea id="aboutyou_text_area" rows="5" cols="55" name="About_You">carrer details</textarea>
+            </div>
+            <input type="submit" value="Register" style="position: relative;bottom: 4%;height: 40px;width: 90px; left: 90%; color:green;">
+        </div>
+       
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <style>
+
+        *{
+            padding:0;
+            margin:0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            padding:10px 5%;
+            background-color: rgb(218, 250, 235);
+        }
+        .header{
+            text-align:center;
+            border:1px solid grey;
+            padding: 10px;
+            border-radius:10px;
+            background-color: azure;
+
+        }
+        .personalDetails{
+            border:1px solid grey;
+            padding: 20px;
+            border-radius:10px;
+            margin:10px auto;
+            display: flex;
+            justify-content: space-around;
+            background-color: azure;
+            line-height:35px;
+            
+
+        }
+        .educational , .about{
+            border:1px solid grey;
+            padding: 20px;
+            border-radius:10px;
+            margin: 10px auto;
+            background-color: azure;
+            line-height:35px;
+
+            
+        }
+        /* .educational label{
+            width: 200px;
+        } */
+
+        legend{
+            border: 1px solid grey;
+            padding: 5px;
+            border-radius:5px;
+            background-color:rgb(173, 253, 253);
+            line-height: 25px;
+        }
+        .personalDetails div{
+           
+            line-height:35px;
+            font-size: 20px;
+           
+        }
+        input{
+            
+            font-size: 18px;
+            border-radius: 5px;
+            outline: none;
+            padding:3px 5px;
+        }
+        .personalDetails label{
+            display: inline-block;
+            width: 100px;
+            font-size: 20px;
+            
+        }
+        .educational label{
+            display: inline-block;
+           width: 100px;
+            font-size: 20px;
+            
+        }
+        .textareaBox{
+            display: flex;
+            align-items: center;
+        }
+        textarea{
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+     select{
+        width: 210px;
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 2px;
+     }
+     
+     .about{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: azure;
+        
+       
+     }
+     .about label{
+            display: inline-block;
+            width: 300px;
+            font-size: 22px;
+            
+        }
+        input[type="submit"]{
+            display: block;
+            margin:20px auto;
+            font-size: 20px;
+            padding: 5px 10px;
+            background-color:yellowgreen;
+            color: rgb(255, 255, 255);
+        }
+        .footer{
+            text-align: center;
+            color:grey;
+            background:azure;
+            border:1px solid grey;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+        #quali , #lang , #langu{
+            width: 200px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+       <h1>Student Registration Page</h1>
+    </div>
+    
+
+   
+    <div class="container">
+        <form>
+            <fieldset class="personalDetails">
+                <legend><h4> Personal Details</h4></legend>
+      
+        <div>
+            
+            
+            <label for="fName">first Name :</label>
+            <input type="text" id="fName"><br>
+            <label for="lName">Last Name :</label>
+            <input type="text" id="lName"><br>
+            <label for="age">Age :</label>
+            <input type="number" id="age">
+    
+        </div>
+        <div>
+            <div class="textareaBox">
+            <label for="address">Address :</label>
+            <textarea name="address" id="address" cols="25" rows="3"></textarea>
+        </div>
+            <label for="lName">Country :</label>
+           <select>
+                <option value="India">India</option>
+                <option value="Nepal">Nepal</option>
+                <option value="USA">USA</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="China">China</option>
+           </select>
+
+        </div>
+    </fieldset> 
+    <fieldset class="educational">
+        <legend><h4>Educational Details</h4></legend>
+        <div>
+            <label id="quali">Qualification :</label>
+            <select>
+                <option value="BCom">High School</option>
+                <option value="BSc">Intermediate</option>
+                <option value="BTech">Graduate</option>
+                <option value="BCA">Postgraduate</option>
+                
+            </select>
+        </div>
+        <div>
+            <label id="lang">Language :</label>
+            <input type="checkbox" id="english">
+             <label name="lang" for="english">Engish</label>
+             <input name="lang" type="checkbox" id="Hindi">
+             <label for="Hindi">Hindi</label>
+             <input name="lang" type="checkbox" id="Telugu">
+             <label for="Telugu">Telugu</label>
+             <input  name="lang"type="checkbox" id="Urdu">
+             <label for="Urdu">Urdu</label>
+        </div>
+        <div>
+            <label id="langu">Course Opted :</label>
+            <input type="checkbox" id="MCA">
+             <label name="course" for="MCA">MCA</label>
+             <input name="course" type="checkbox" id="BTech">
+             <label for="BTech">BTech</label>
+             <input name="course" type="checkbox" id="BCA">
+             <label for="BCA">BCA</label>
+             <input  name="course"type="checkbox" id="MSc">
+             <label for="MSc">MSc</label>
+        </div>
+    </fieldset>
+    <fieldset class="about">
+        <legend><h4>About Yourself</h4></legend>
+        <div><label for="textarea">Few Words About Yourself</label></div>
+        
+        <div>
+            <textarea name="" id="textarea" cols="40" rows="5"></textarea>
+        </div>
+    </fieldset>
+    <input type="submit" value="Register Details">
+ </form>   
+    </div>
+
+
+
+
+    
+
+    <div class="footer">
+        <h3>@Copyright JitendraGupta</h3>
+    </div>
+    
+</body>
+</html>

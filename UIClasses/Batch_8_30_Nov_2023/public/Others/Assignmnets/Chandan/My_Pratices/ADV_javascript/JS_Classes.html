@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS demo classes </title>
+</head>
+<body>
+    <script>
+             //  constructor() notes--- 
+                    // automatically gets invoked when we create a object for this claass
+                    // cannot be invoked manually
+                    // class is skeleton of object which holds both properties and behaviours 
+                    // class is a predefined keyword using which we can create a class in latest javascript.. 
+                    // syntax :
+                    //*  class <classname> {
+                    //      ....
+                    //  }
+                    //    eg..  class studentDetails {
+
+                     // }
+                     // new is predefined keyword using which we can instantiate an object for any class...//
+                     // syntax: var obj = new <classname>();
+                    // eg. var p1 = new studentDetails();
+                    // we can create any number of objects for any class...
+
+                    // constructor method--- constructor is a predefined keyword using which we can define a constructor within a class..//
+                     // it is not invoked manually but gets invoked automatically when we create an object or instance for a particular class.
+                     // in js we cannot overload constructors..
+                     // the parameter defined with in the constructor will be passsed at the time of creating an obj for particular class..
+                     //* syntax: class studentDetails {
+                    //                 constructor() {
+                    //                   
+                    //                         }
+                    //                         displayinfo()  { 
+                    //                               ....
+                    //                            }
+                    //                         }
+                    //                           var p1 = new studentDetails(); // here constructor method gets invoked automatically..
+                    //     under constructor we can intialise class variable or properties through this()
+                    // syntax : constructor with class variables:
+                    //               eg: class studentDetails {
+                    //                          constructor() {
+                    //                                 this.name = 'chandan';
+                    //                                 this.age = 23;
+                    //                                  ...
+                    //                                 }
+                    //                                  displaystudentDetails() {
+                    //                                           ...
+                    //                                }
+                    //                              }
+               class Sample {
+                       constructor() {}
+             displayInfo () {
+                      //  method |function
+                console.log("hello all");
+             }
+             
+             readInfo() {}
+            }
+
+             
+
+             
+        
+
+        // instance | object 
+
+        var p1 = new Sample(); // creating a new object to a existing class +
+        console.log(p1)
+        var p2 = new Sample();
+        console.log(p2)
+        var p3 = new Sample();
+        console.log(p3)
+        var p4 = new Sample();
+        console.log(p4)
+         p1.displayInfo();
+
+    </script>
+</body>
+</html>

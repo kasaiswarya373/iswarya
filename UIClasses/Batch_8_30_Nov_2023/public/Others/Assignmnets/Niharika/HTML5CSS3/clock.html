@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .clock {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                border: 5px solid;
+                margin: 70px auto;
+                position: relative;
+            }
+            .no12,.no11, .no10, .no9, .no8, .no7, .no6, .no5, .no4, .no3, .no2, .no1 {
+                font-weight: bold;
+                position: absolute;
+                top: 10px;
+                left: 138px;
+                font-size: 20px;
+            }
+            .no11 {
+                top: 34px;
+                left: 64px;
+            }
+            .no10 {
+                top: 88px;
+                left: 24px;
+            }
+            .no9 {
+                top: 148px;
+                left: 23px;
+            }
+            .no8 {
+                top: 199px;
+                left: 28px;
+            }
+            .no7 {
+                top: 243px;
+                left: 70px;
+            }
+            .no6 {
+                top: 267px;
+                left: 144px;
+            }
+            .no5 {
+                top: 245px;
+                left: 222px;
+            }
+            .no4 {
+                top: 200px;
+                left: 251px;
+            }
+            .no3 {
+                top: 138px;
+                left: 266px;
+            }
+            .no2 {
+                top: 84px;
+                left: 258px;
+            }
+            .no1 {
+                top: 36px;
+                left: 226px;
+            }
+            .smallblock {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid;
+                background-color: black;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+            #minHand {
+                width: 108px;
+                border: 3px solid palevioletred;
+                position: absolute;
+                top: 155px;
+                left: 98px;
+            }
+            #hourHand {
+                width: 60px;
+                border: 4px solid blue;
+                position: absolute;
+                top: 152px;
+                left: 119px;
+            }
+            #secHand {
+                width: 120px;
+                border: 1px solid;
+                position: absolute;
+                top: 156px;
+                left: 96px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="clock">
+            <div class="leg1"></div>
+            <div class="leg2"></div>
+            <span class="no12">12</span>
+            <span class="no11">11</span>
+            <span class="no10">10</span>
+            <span class="no9">9</span>
+            <span class="no8">8</span>
+            <span class="no7">7</span>
+            <span class="no6">6</span>
+            <span class="no5">5</span>
+            <span class="no4">4</span>
+            <span class="no3">3</span>
+            <span class="no2">2</span>
+            <span class="no1">1</span>
+            <div class="smallblock"></div>
+            <div id="secHand">
+
+            </div>
+            <div id="minHand">
+
+            </div>
+            <div id="hourHand">
+
+            </div>
+        </div>
+        <script>
+            var clockRotation = () => {
+                var date = new Date();
+                var minutes = date.getMinutes();
+                console.log(minutes);
+                var hours = date.getHours();
+                console.log(hours);
+                var seconds = date.getSeconds();
+                console.log(seconds);
+                if(hours > 12) {
+                    hours = hours - 12;
+                }
+                document.getElementById("hourHand").style.transform = `rotate(${(hours * 30)}deg)`;
+                document.getElementById("minHand").style.transform = `rotate(${minutes * 6}deg)`;
+                document.getElementById("secHand").style.transform = `rotate(${seconds * 6}deg)`;
+            };
+        
+            clockRotation();
+            setInterval(clockRotation, 1000);
+        </script>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep & ShallowCopy</title>
+</head>
+<body>
+    <script>
+        var a = 10;
+        var b = a;
+        console.log(`a = ${a}`);
+        console.log(`b = ${b}`);
+        a++;
+        console.log(`a = ${a}`);
+        console.log(`b = ${b}`);
+
+        var data1 =
+        {
+            name : 'sony',
+            age : 23
+        };
+
+        var data2 = JSON.stringify(data1);
+        var data2 = data2;
+
+        console.log(data1);
+        console.log(data2);
+
+        data1.age++;
+        
+        console.log(data1);
+        console.log(data2);
+        
+    </script>
+</body>
+</html>

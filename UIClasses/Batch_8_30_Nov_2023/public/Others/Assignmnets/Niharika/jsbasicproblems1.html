@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // Write a program in JS to make such a pattern like a right angle triangle with the number increased by 1.
+            console.log("right angle triangle number pattern");
+            var rows = prompt("enter numner of rows: ");
+            rows = parseInt(rows);
+            var right = "";
+            var val = 1;
+            for(var i=1;i<=rows;i++){
+                for(var j=1;j<=i;j++){
+                    right += val;
+                    val++;
+                    right += " ";
+                }
+                right+="\n";
+            }
+            console.log(right);
+           //Write a JS program to display a pattern like a right angle triangle with a number.
+           console.log("right angle triangle number pattern-1");
+           var num = prompt("enter number: ");
+           num = parseInt(num);
+           var a = "";
+           for(var i=1;i<=num;i++){
+            for(var j=1;j<=i;j++){
+                a+=j;
+                a+=" ";
+            }
+            a+="\n";
+           }
+           console.log(a);
+           //Write a program in JS to make a decreasing star pattern.
+           console.log("decreasing star pattern");
+            var n = prompt("enter number of rows: ");
+            n = parseInt(n);
+            var b = "";
+            for(var i=1;i<=n;i++){
+                for(var j=n;j>=i;j--){
+                    b+="*";
+                    b+=" ";
+                }
+                b+="\n";
+            }
+            console.log(b);
+            // WAP in JS for printing square star pattern
+            console.log("Square star pattern");
+            var numb = prompt("enter number of rows: ");
+            numb = parseInt(numb);
+            var c = "";
+            for(var i=1;i<=numb;i++){
+                for(var j = 1;j<=numb;j++){
+                    c+="*";
+                    c += "";
+                }
+                c += "\n";
+            }
+            console.log(c);
+            // Write a JS program to calculate the factorial of a given number.
+            var number = prompt("enter number: ");
+            number = parseInt(number);
+            var factorial = 1;
+            for(var i = 1;i <= number;i++){
+                factorial = factorial*i;
+            }
+            console.log("The factorial of a given number is: " + factorial);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Index</title>
+        </head>
+        <body>
+            <div class="Udetails">
+                <div>
+                    <b>University Name : </b>
+                    <span id="Uname"></span>
+                </div>
+                <div>
+                    <b>University Rating : </b>
+                    <span id="Urating"></span>
+                </div>
+                <div>
+                    <b>University Location : </b>
+                    <span id="Uloc"></span>
+                </div>
+            </div>
+            <div id="Cdetails">
+                <div>
+                    <b>College Name : </b>
+                    <span id="CName"></span>
+                </div>
+                <div>
+                    <b>College Rating : </b>
+                    <span id="CRating"></span>
+                </div>
+                <div>
+                    <b>College Location : </b>
+                    <span id="Clocation"></span>
+                </div>
+                <div>
+                    <b>College affiliated to : </b>
+                    <span id="Caffto"></span>
+                </div>
+            </div>
+            <script>
+                class UniversityDetails {
+                    constructor() {
+                        this.uniName = "JNTUH";
+                        this.uniRating = "6/10";
+                        this.unilocation = "Kukatpally";
+                    }
+
+                    displayUniversityDetails () {
+
+                        console.log("------------University Details---------------");
+                        console.log("Name of University : " + this.uniName);
+                        document.querySelector("#Uname").innerHTML = this.uniName;
+                        console.log("Rating of University : " + this.uniRating);
+                        document.querySelector("#Urating").innerHTML = this.uniRating;
+                        console.log("Location of University : " + this.unilocation);
+                        document.querySelector("#Uloc").innerHTML = this.unilocation;
+                    }
+                }
+
+
+                class CollegeDetails extends UniversityDetails {
+                    constructor() {
+                        super();
+                        this.collegeName = "SREYAS Institute of Engineering & Technology";
+                        this.collegeRating = "7/10";
+                        this.collegelocation = "ESI Bandlaguda";
+                        this.collegeAffiliatedTo = "JNTUH";
+                       
+
+                    }
+
+                    displayCollegeDetails () {
+
+                        console.log("----------------College Details------------------------------");
+                        console.log("Name of college : " + this.collegeName);
+
+                        document.querySelector("#CName").innerHTML = this.collegeName;
+
+                        console.log("Rating of college : " + this.collegeRating);
+
+                        document.querySelector("#CRating").innerHTML = this.collegeRating;
+
+                        console.log("Location of College : " + this.collegelocation);
+
+                        document.querySelector("#Clocation").innerHTML = this.collegelocation;
+
+                        console.log("College Affiliated to : " + this.collegeAffiliatedTo);
+
+                        document.querySelector("Caffto").innerHTML = this.collegeAffiliatedTo;
+
+                        super.displayUniversityDetails();
+                    }
+                }
+
+                class StudentDetails  {
+                    constructor () {
+                        
+                        this.studentName = "Kondagunturi Sai Dheeraj";
+                        this.studentage = 22;
+                        this.studentlocation = "Nagole Hyderabad";
+                        this.studentCourse = "B.Tech Civil Engineering";
+                        this.studentAwardedFrom = "JNTUH";
+                        
+                    }
+
+                    displayStudentDetails () {
+                        console.log("---------------------------Student Details----------------------------");
+                        console.log("Name of Student : " + this.studentName);
+                        console.log("Age of Student : " + this.studentage);
+                        console.log("Location of Student : " + this.studentlocation);
+                        console.log("Course taken by Student : " + this.studentCourse);
+                        console.log("Student Awarded from : " + this.studentAwardedFrom);
+                        
+                    }
+                }
+
+
+                var College = new CollegeDetails();
+                College.displayCollegeDetails();
+
+                var Student = new StudentDetails();
+                Student.displayStudentDetails();
+            </script>
+        </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Demo</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <style>
+        #content{
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 25px;
+            color: brown;
+            border: 1px solid;
+        }
+        input{
+            margin: 10px;
+            padding: 10px;
+        }
+        .highlight{
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>In this demo, we're Dynamically changing the className after clicking on button</h3><br>
+
+    <input type="button" value="Highlight" onclick="highlightElement()">
+    <div class="container" id="content"> Hey, Look at here...!</div>  
+    <script>
+        var highlightElement = () => {
+            // document.querySelector('.container').setAttribute('class', 'highlight');    //here we are replacing existing className
+
+            // var existingClass = document.querySelector('#content').getAttribute("class");
+            // existingClass = existingClass + ' highlight';
+            // document.querySelector('#content').setAttribute('class', existingClass);
+
+            $('#content').addClass('highlight');
+            
+        }
+    </script>
+    
+</body>
+</html>

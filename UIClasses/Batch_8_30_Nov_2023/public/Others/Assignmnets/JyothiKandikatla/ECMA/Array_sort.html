@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sort</title>
+</head>
+<body>
+    <script>
+        var a = [23,21,54,87,56,23,54,68,95,12,10,45,75,65,95,15,35,42,55];
+        var s = '';
+        a = a.sort((v1,v2) =>{
+            if(v1 > v2){
+                s += v1+"<br>";
+            }
+        });
+
+        console.log(a);
+        a.sort();
+        document.querySelector('body').innerHTML = a;
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating HTML input elements
+        </title>
+        <style>
+            h3 {
+                text-align: center;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                background-color: blueviolet;
+            }
+            ul {
+                width: 550px;
+                border: 1px solid;
+                margin: 20px auto;
+            }
+            li {
+                list-style: none;
+                border: 1px solid #ccc;
+                margin: 10px;
+                padding: 10px;
+            }
+           input[type=button] {
+            background-color: green;
+           }
+           #aboutlabel  {
+                display: block;
+           }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Registration page
+        </h3>
+        <ul>
+            <li>
+                <label for="userName">
+                    Enter user name:
+                </label>
+                <input type="text" maxlength="10" name="userName"> 
+            </li>
+            <li>
+                <label for="accntPwd">
+                    Account Password: 
+                </label>
+                <input type="password" maxlength="8" name="accntPwd" />
+            </li>
+            <li>
+                Country Name: 
+                <select name="" id="">
+                    <option value="Ind">India</option>
+                    <option value="Chn">China</option>
+                    <option value="US" selected>USA</option>
+                    <option value="Aus">Australia</option>
+                </select>
+            </li>
+            <li>
+                Gender:
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+            </li>
+            <li>
+                Languages Known:
+                    <input type="checkbox"> English
+                    <input type="checkbox"> Hindi
+                    <input type="checkbox"> Telugu
+            </li>
+            <li>
+                <label id="aboutlabel">About your self: </label>
+                <textarea name="" id="" cols="30" rows="5" maxlength="100"></textarea>
+            </li>
+            <li>
+                <input type="file">
+            </li>
+            <li>
+                <input type="button" value="Save Details">
+            </li>
+            
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculating Date and Time using Switch case</title>
+</head>
+
+<body>
+    <script>
+        var cdate = new Date();
+        console.log(cdate);
+
+        var n = prompt("Enter the case numbers:");
+        n = parseInt(n);
+
+        var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        var monthName = monthNames[cdate.getMonth()];
+        var dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        var day = dayNames[cdate.getDay()];
+        var monthNames1 = ["January", "Feburary", "March", "Apri", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var month = monthNames1[cdate.getMonth()];
+        var dayNames1 = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
+        var day1 = dayNames1[cdate.getDay()];
+
+        function getFormatDate(pdate, n) {
+            var day = pdate.getDate();
+            var month = pdate.getMonth() + 1;
+            var year = pdate.getFullYear().toString();
+            if (month < 10)
+                month = "0" + month;
+
+            if (day < 10)
+                day = "0" + day;
+
+            if (n == 3 || n == 9) {
+                var yr = year.slice(2);
+                return day + "/" + month + "/" + yr;
+               }
+            else {    
+                return day + "/" + month + "/" + year;
+            }
+     
+        }
+
+        function getFormatDateTime(pdate) {
+            var hours = pdate.getHours();
+            var minutes = pdate.getMinutes();
+            var seconds = pdate.getSeconds();
+
+            if (hours < 10)
+                hours = "0" + hours;
+
+            return hours + ":" + minutes + ":" + seconds;
+        }
+
+        function getFormatDateTimes(pdate) {
+            var minutes = pdate.getMinutes();
+            var seconds = pdate.getSeconds();
+
+            if (minutes < 10)
+                minutes = "0" + minutes;
+
+            if (seconds < 10)
+                seconds = "0" + seconds;
+
+            return minutes + "min" + ":" + seconds + "sec";
+
+        }
+
+
+        switch (n) {
+            case 1: var myformat1 = `${cdate.getDate()}th  ${monthName}  ${cdate.getFullYear()}`;
+                    console.log(myformat1);
+                    break;
+
+            case 2: var myformatdate = getFormatDate(cdate, n);
+                    console.log("My Format Date: " + myformatdate);
+                    break;
+
+            case 3: var myformatdate = getFormatDate(cdate, n);
+                    console.log("My Format Date: " + myformatdate);
+                    break;
+
+            case 4: var myformat2 = `${monthName} ${cdate.getDate()}th, ${cdate.getFullYear()}`;
+                    console.log(myformat2);
+                    break;
+
+            case 5: var myformat3 = `${day} ${monthName} ${cdate.getDate()}th, ${cdate.getFullYear()}`;
+                    console.log(myformat3);
+                    break;
+
+            case 6: var myformat4 = `${day} ${month} ${cdate.getDate()}th, ${cdate.getFullYear()}`;
+                    console.log(myformat4);
+                    break;
+
+            case 7: var myformat5 = `${day1} ${month} ${cdate.getDate()}th, ${cdate.getFullYear()}`;
+                    console.log(myformat5);
+                    break;
+
+            case 8: var myformat6 = `${day1} ${monthName} ${cdate.getDate()}th, ${cdate.getFullYear()}`;
+                    console.log(myformat6);
+                    break;
+
+            case 9: var myformatdate = getFormatDate(cdate, n);
+                    var myformattime = getFormatDateTime(cdate);
+                    console.log(myformatdate +" "+  myformattime);
+                    break;
+
+            case 10: var myformattime = getFormatDateTime(cdate);
+                    console.log("My Format Time: " + myformattime);
+                    break;
+
+            case 11: var myformattime1 = getFormatDateTimes(cdate);
+                    console.log(myformattime1);
+                    break;
+
+        }
+
+    </script>
+</body>
+
+</html>

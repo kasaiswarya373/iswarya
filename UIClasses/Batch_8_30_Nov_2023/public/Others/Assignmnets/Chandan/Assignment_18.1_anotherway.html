@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empdetails = {
+            readempdetails: () => {
+                empdetails.name = prompt("enter emp name: ");
+                empdetails.age = prompt("enter emp age: ");
+                empdetails.gender = prompt("enter emp gender: ");
+                empdetails.basicsal = parseInt(prompt("enter emp salary : "));
+            },
+            calculatepfhra: () => {
+                empdetails.pf = parseInt(prompt("enter pf percentage : "));
+                empdetails.hra = parseInt(prompt("enter hra percentage : "));
+                empdetails.pfvalue = (empdetails.pf*empdetails.basicsal)/100;
+                empdetails.hravalue = (empdetails.hra*empdetails.basicsal)/100;
+            },
+            calculatetotalsal: () => {
+                empdetails.totalsal = empdetails.basicsal+empdetails.pfvalue+empdetails.hravalue;
+            },
+            displaydetails: () => {
+                empdetails.readempdetails();
+                empdetails.calculatepfhra();
+                empdetails.calculatetotalsal();
+                console.log("employee name is : " + empdetails.name);
+            console.log("employee age is : " + empdetails.age);
+            console.log("employee gender is : " + empdetails.gender);
+            console.log("employee basicsalary is : " + empdetails.basicsal);
+            console.log("employee total salary  is : " + empdetails.totalsal);
+
+            }
+        }
+        empdetails.displaydetails();
+    </script>
+</body>
+</html>

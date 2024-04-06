@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var sum = 0;
+     for(var i = 69;i>=21;i--){
+        if(i%2==0){
+            sum+=i;
+            
+        }
+    }
+    console.log(sum);
+    sum = 0;
+    for(var i =5;i<=95;i++){
+        if(i%2!=0){
+            sum+=i;
+        }
+    }
+    console.log(sum);
+    //check if a number is a prime number or not
+    // wap to display all the prime numbers b/w 1 to 100-
+    //"===" => data type comparission and value comparission
+/*var num = prompt("enter number: ");
+    num = parseInt(num);
+    var count = 0;
+    for(var i=1;i<=num;i++){
+        if(num%i==0){
+            count++;
+        }
+    }
+    if(count==2){
+            console.log("it is a prime number");
+        }
+        else{
+            console.log("its not a prime number;")
+        }
+        */
+       // var number = 1000;
+    /*for(var i =2;i<number;i++){
+        if(number%i==0){
+            count++;
+            break;//it looks for the parent looping structure
+        }
+        if(count==0){
+           console.log("its a prime");
+        }
+    }*/
+    var val = prompt("enter range : ");
+    val = parseInt(val);
+    var counter = 0;
+    for(var i=2;i<val;i++){
+        if(val%i==0){
+            counter++;
+            //break;
+        }
+        if(counter==0){
+            console.log(i);
+        }
+    }
+
+   </script>
+</body>
+</html>

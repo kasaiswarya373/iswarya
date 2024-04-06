@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindromNumberInArray</title>
+</head>
+<body>
+    <script>
+    var a=[121,324,1001,11,60,808]
+        for( var i=0;i<a.length;i++){
+            temp=a[i];
+            sum=0;
+            while(a[i]>0){
+                var rem=a[i]%10;
+                a[i]=parseInt(a[i]/10);
+                sum=sum*10+rem;
+                if(temp==sum){
+                    console.log(sum)
+                }
+            }
+
+    }
+</script>
+    
+</body>
+</html>

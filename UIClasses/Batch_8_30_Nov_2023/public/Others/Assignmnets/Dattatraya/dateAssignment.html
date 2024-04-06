@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var currentDate = new Date();
+      console.log(currentDate);
+
+      var months1 = [
+        "Jan",
+        "Feb",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      var months2 = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      var weeks = [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ];
+      var min = ["min"];
+      var sec = ["sec"];
+      var hr = ["hr"];
+
+      var weeks2 = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+      var years = [24];
+      var months = [0];
+
+      var months1 = months1[currentDate.getMonth()];
+      var Design1 = `${
+        currentDate.getDate() + "th"
+      } ${months1} ${currentDate.getFullYear()}`;
+      console.log(Design1);
+
+      var Design2 = `${currentDate.getDate()} / ${months}${
+        currentDate.getMonth() + 1
+      } / ${currentDate.getFullYear()}`;
+      console.log(Design2);
+
+      var Design3 = `${currentDate.getDate()} / ${months}${
+        currentDate.getMonth() + 1
+      } / ${years}`;
+      console.log(Design3);
+
+      var Design4 = `${months1} ${
+        currentDate.getDate() + "th" + ","
+      } ${currentDate.getFullYear()}`;
+      console.log(Design4);
+
+      var weeks = weeks[currentDate.getDay()];
+      var Design5 = `${weeks} ${months1} ${
+        currentDate.getDate() + "th" + ","
+      } ${currentDate.getFullYear()}`;
+      console.log(Design5);
+
+      var months2 = months2[currentDate.getMonth()];
+      var Design6 = `${weeks} ${months2} ${
+        currentDate.getDate() + "th" + ","
+      } ${currentDate.getFullYear()}`;
+      console.log(Design6);
+
+      var weeks2 = weeks2[currentDate.getDay()];
+      var Design7 = `${weeks2} ${months2} ${
+        currentDate.getDate() + "th" + ","
+      } ${currentDate.getFullYear()}`;
+      console.log(Design7);
+
+      //   var weeks2 = weeks2[currentDate.getDay()];
+      var Design8 = `${weeks2} ${months1} ${
+        currentDate.getDate() + "th" + ","
+      } ${currentDate.getFullYear()}`;
+      console.log(Design8);
+
+      var Design9 = `${currentDate.getDate()} / ${months}${
+        currentDate.getMonth() + 1
+      } / ${years} ${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`;
+      console.log(Design9);
+
+      var Time = `${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`;
+      console.log(Time);
+
+      //   var Time2 = `${currentDate.getMinutes() + "min"} : ${
+      //     currentDate.getSeconds() + "sec"
+      //   }`;
+      //   console.log(Time2);
+
+      var Time2 = `${currentDate.getHours()}${hr} : ${currentDate.getMinutes()}${min} : ${currentDate.getSeconds()}${sec}`;
+      console.log(Time2);
+    </script>
+  </body>
+</html>

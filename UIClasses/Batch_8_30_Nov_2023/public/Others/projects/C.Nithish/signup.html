@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="https://static.thenounproject.com/png/736674-200.png">
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/free-vector/abstract-digital-grid-vector-black-background_53876-111550.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        ul{
+            border: 2px  solid white;
+            width: 400px;
+            height: 400px;
+            position: relative;
+            left: 35%;
+            margin-top: 100px;
+            color: white;
+            
+        }
+        h3{
+            position: relative;
+            left: 38%;
+            font-size: 24px;
+            font-weight: bold;
+            
+        }
+        li{
+        
+            list-style: none;
+            margin:15px 10px 15px -20px ;
+             font-size: 20px;
+           
+        }
+        label{
+            width: 170px;
+            display: inline-block;
+        }
+        .button{
+            position: relative;
+            left: 45%;
+            
+        }
+        input[type=submit]{
+            width: 100px;
+            padding: 3px;
+           background-color:dodgerblue;
+        }
+        input{
+            border-radius: 12px;
+            padding: 5px;
+        }
+        input:hover{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" method="post">
+        <ul>
+            
+                <h3>    Sign Up</h3>
+            
+            <li>
+                <label for="username">UserName:</label>
+               <input type="text" name="username" placeholder="Username" maxlength="12">
+            </li>
+            <li>
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" placeholder="********" maxlength="8">
+            </li>
+            <li>
+                <label for="confirm-pass">Confirm Password:</label>
+                <input type="password" name="confirm-pass" placeholder="********" maxlength="8">
+            </li>
+            <li>
+                <label for="Mobile-no">Mobile No:</label>
+                <input type="numbers" name="Mobile-no" placeholder="1234567890" maxlength="10">
+
+            </li>
+            <li>
+                <label for="gmail">EmailID:</label>
+                <input type="email" name="gmail" placeholder="abc@gmail.com">
+            </li>
+            <li class="check-box">
+                <input type="checkbox" >
+                Are You agree with 
+            </li>
+             <li class="button">
+            <input type="submit" value="Submit">
+             </li>
+        </ul>
+    </form>
+    
+</body>
+</html>

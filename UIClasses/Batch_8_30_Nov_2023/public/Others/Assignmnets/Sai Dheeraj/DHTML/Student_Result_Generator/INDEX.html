@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Result Page</title>
+        <style>
+            .title {
+                text-align: center;
+                font-weight: bold;
+                color: rgb(4, 21, 54);
+            }
+
+            ul {
+                width: 500px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #64c231;
+            }
+            li {
+                border: 1px solid;
+                padding: 10px;
+                margin: 10px;
+                list-style: none;
+                background-color: blue;
+            }
+            .rblock {
+                display: none;
+            }
+
+            h3 {
+                text-align: center;
+                
+                margin: 10px;
+                
+            }
+
+            label {
+                width: 120px;
+                display: inline-block;
+            }
+
+            .msg {
+                display: none;
+            }
+
+            .marks > input {
+                width: 50px;
+            }
+
+            .passed {
+                color: rgb(176, 218, 52);
+                font-weight: bold;
+            }
+
+            .surprise {
+                color: red;
+                font-weight: bold;
+            }
+
+            #displayBlock {
+                display: none;
+            }
+            body{
+                background-color: lavender;
+            }
+        </style>
+    </head>
+        <body>
+            <h3>
+                Student Result Generator
+            </h3>
+            <ul>
+                <li class="title">
+                    Student Details
+                </li>
+                <li>
+                    <label>Student Name: </label>
+                    <input type="text" id="sname">
+                </li>
+                <li>
+                    <label>Age: </label>
+                    <input type="text" id="sage">
+                </li>
+                <li>
+                    <label>Gender: </label>
+                    Male <input type="radio" name="gender" value="Male" checked>
+                    Female <input type="radio" name="gender" value="Female">
+                </li>
+                <li>
+                    <label for="">Class:</label>
+                    <select name="" id="studentClass">
+                        <option value="class I">Class I</option>
+                        <option value="class II">Class II</option>
+                        <option value="class III" selected>Class III</option>
+                        <option value="class IV">Class IV</option>
+                        <option value="class V">Class V</option>
+                        <option value="class VI">Class VI</option>
+                        <option value="class VII">Class VII</option>
+                        <option value="class VIII">Class VIII</option>
+                    </select>
+                </li>
+                <li class="marks">
+                    <label for="">
+                        Marks
+                    </label>
+                    <input type="text" id="m1" placeholder="Telugu">
+                    <input type="text" id="m2" placeholder="Hindi">
+                    <input type="text" id="m3" placeholder="Maths">
+                    <input type="text" id="m4" placeholder="English">
+                    <input type="text" id="m5"placeholder="Science">
+                </li>
+                <li>
+                    <input type="button" value="Generate Progress Card" onclick="generateProgressCard()">
+                    <input type="reset" value="Reset Fields" onclick="resetFields()">
+                </li>
+            </ul>
+    
+            <div class="progressCardHolder"></div>
+    
+            <ul id="displayBlock">
+                <li>
+                    Student Name: <span id="d_name"></span>
+                </li>
+                <li>
+                    Student Age: <span id="d_age"></span>
+                </li>
+                <li>
+                    Gender: <span id="d_gender"></span>
+                </li>
+                <li>
+                    Total: <span id="d_total"></span>
+                </li>
+                <li>
+                    Avg: <span id="d_avg"></span>
+                </li>
+                <li>
+                    Grade: <span id="d_grade"></span>
+                </li>
+
+            <script src="index.js"></script>
+        </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details using funtions</title>
+</head>
+<body>
+    <script>
+        var name, gender, age, department, basicSalary, total, pf, hra;
+        function employeeSalary() {
+            name = prompt("enter your name");
+            gender = prompt("enter your Gender");
+            age = prompt(" enter your age");
+            age = parseInt(age);
+            department = prompt("enter your department");
+            basicSalary = prompt("enter your basic salary");
+            basicSalary = parseInt(basicSalary);
+            pfahra();
+        }
+        function pfahra() {
+            pf = (basicSalary * 14) / 100;
+            hra = (basicSalary * 24) / 100;
+            pf = parseInt(pf);
+            hra = parseInt(hra);
+            console.log(" pf of employee:", pf);
+            console.log(" hra of employee:", hra);
+            totalSal();
+            getTotalTax()
+        }
+        function totalSal() {
+            total = pf + hra + basicSalary;
+            getTotalTax();
+        }
+        function getTotalTax() {
+                var taxPercent = 0;
+                if (gender == 'Male') {
+                    if (totalSal >= 100000) {
+                        taxPercent = 10;
+                    }
+                } else { 
+                    if (totalSal >= 10000) {
+                        taxPercent = 5;
+                    }
+                }
+                totalTax = total - (total * taxPercent) / 100;
+            }
+        function employeeDetails() {
+            console.log("Employee name:", name);
+            console.log("Employee Gender:", gender);
+            console.log("Employee age:", age);
+            console.log("Employee department:", department);
+            console.log("Employee basicSalary:", basicSalary);
+            console.log("total:", total);
+            console.log("totalTax:", totalTax);
+        }
+        employeeSalary();
+        employeeDetails();
+
+    </script>
+</body>
+
+</html>

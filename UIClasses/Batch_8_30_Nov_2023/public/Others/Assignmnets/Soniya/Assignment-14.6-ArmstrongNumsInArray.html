@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArmstrongNumbersInArray</title>
+</head>
+<body>
+    Program to print armstrong numbers in array
+    <script>
+        var readingValsInArray = () =>
+        {
+            var arrayVals = [];
+            var size = parseInt(prompt(`Enter size of Array`));
+            for(var i = 0;i < size;i++)
+            {
+                arrayVals[i] = prompt(`Enter ${i+1} value`);
+            }   
+            return arrayVals;
+        }
+
+        var  storingArmstrongNums = (arrayValues) =>
+        {
+            var k = 0;var armstrongArray = [];
+            for(var i = 0;i < arrayValues.length; i++)
+            {
+                var valLength = arrayValues[i].length;
+                arrayValues[i] = parseInt(arrayValues[i]);
+                var actualVal = arrayValues[i];
+                var rem = 0, sumVal = 0; 
+
+                while(arrayValues[i] > 0)
+                {
+                    var rem = arrayValues[i] % 10;
+                    sumVal += rem ** valLength;
+                    arrayValues[i] = parseInt(arrayValues[i] / 10);
+                }
+
+                if(sumVal == actualVal)
+                {
+                    armstrongArray[k] = sumVal;
+                    k += 1;
+                }
+            }
+            return armstrongArray;
+        }
+
+        var printingArmstrongArray = () =>
+        {
+        var arrayValues = readingValsInArray();
+        console.log(`Given Array : \n ${arrayValues}`);
+        var armstrngArray = storingArmstrongNums(arrayValues);
+        console.log(`Armstrong Numbers in given array are : \n ${armstrngArray}`);
+        }
+
+        printingArmstrongArray();
+    </script>
+</body>
+</html>

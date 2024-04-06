@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods In JS</title>
+</head>
+
+<body>
+    <script>
+        var arr = [25, 87, 98, 76, 87];
+        var strArr = ['banana', 'orange', 'mango', 'keewi', 'mosambi'];
+
+        // find method
+        var val = arr.find((value, index) => {
+            if (value === 87 || value === 76) {
+                //console.log(value + ":" + index);
+                return value;
+            }
+        });
+        console.log(val);
+
+        // map method
+        var mapTest = [4, 7, 98, 76, 53];
+        var modifiedMapVal = mapTest.map((value, index, arr) => {
+            return value * 2;
+        });
+        console.log("modifiedMapVal : " + modifiedMapVal);
+
+        // filter method
+        var filterArr = [9, 3, 2, 4, 5, 67];
+        var filterUpdate = filterArr.filter((value) => {
+            if (value % 2 === 0) {
+                return value;
+            }
+        });
+        console.log("filterUpdate : " + filterUpdate);
+
+        //sort method
+
+        var afterSort = arr.sort((a, b) => {
+            if (a < b) {
+                return true;
+            } else {
+                return false;
+            }
+        });
+
+
+        afterSort = strArr.sort();
+        console.log("sort : " + afterSort);
+
+
+    </script>
+</body>
+
+</html>

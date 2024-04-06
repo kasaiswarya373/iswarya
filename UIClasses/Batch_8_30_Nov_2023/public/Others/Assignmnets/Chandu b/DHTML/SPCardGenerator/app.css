@@ -1,0 +1,44 @@
+h3 {
+    border: 1px solid;
+    padding: 10px;
+    color: blue;
+    text-align: center;
+    background-color: coral;
+}
+body {
+    background-color: cornflowerblue;
+}
+.title {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(4, 0, 14);
+}
+ul {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: aqua;
+}
+li {
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    background-color: aquamarine;
+
+}
+label {
+    width: 120px;
+    display: inline-block;
+}
+.marks > input {
+    width: 50px;
+}
+.passed {
+    color: green;
+    font-weight: bold;
+}
+.suprise {
+    color: orangered;
+    font-weight: bold;
+}

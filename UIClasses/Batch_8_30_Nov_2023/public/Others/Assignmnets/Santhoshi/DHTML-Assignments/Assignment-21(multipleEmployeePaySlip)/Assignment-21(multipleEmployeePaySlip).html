@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assignment-21</title>
+    <link rel="stylesheet" href="mestyle.css">
+   
+</head>
+<body>
+    <script src="medetail.js"></script>
+
+    <h1>Multiple Employee Salary Slip Generator</h1>
+    <ul>
+        <li class="title"> Employee Details </li>
+        <li>
+            <label for="empname"> Employee Name:</label>
+            <input type="text" id="ename">
+        </li>
+        <li>
+            <label for="empage"> Employee Age:</label>
+            <input type="text" id="eage">
+        </li>
+        <li>
+            <label for="empgender"> Employee Gender:</label>
+           <input type="radio" name="gender" value="Male" checked> Male
+           <input type="radio" name="gender" value="Female"> Female
+        </li>
+        <li>
+            <label for="department">Department:</label>
+            <select name="department" id="dept"> 
+                <option value="It">It</option>
+                <option value="SAP"> SAP</option>
+                <option value="Testing" selected>Testing</option>
+                <option value="Devloper">Devloper</option>
+            </select>
+        </li>
+        <li>
+            <label for="basicsalary"> Basic Salary:</label>
+            <input type="text" id="bs">
+        </li>
+        <li>
+            <label for="pf">  PF(in %):</label>
+            <input type="text" id="pf">
+        </li>
+        <li>
+            <label for="hra"> HRA(in %):</label>
+            <input type="text" id="hra">
+        </li>
+        <li>
+            <input type="button" value="Total salary" onclick="readinfo.empdata()" style="background-color: rgb(80, 222, 229)">
+            <input type="reset" value="Reset Fields" onclick="readinfo.reset()" style="background-color: red;">
+        </li>
+    </ul>
+    <ul class="displayblock">
+        <li> Employee Name :  <span id="dname"></span></li>
+        <li> Employee Age : <span id="dage"></span></li>
+        <li> Employee Gender : <span id="dgender"></span></li>
+        <li> Employee Department : <span id="ddept"></span></li>
+        <li> Employee Basic salary : <span id="dbasic"></span>
+        <li> Employee PF : <span id="dpf"></span></li>
+        <li> Employee HRA : <span id="dhra"></span></li>
+        <li> Total Salary : <span id="dtotal"></span></li>
+        
+    </ul> 
+    
+</body>
+</html>

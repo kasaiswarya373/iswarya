@@ -1,0 +1,48 @@
+h3 {
+  text-align: center;
+  color: rgb(100, 218, 32);
+  font-family: Arial, sans-serif;
+  border: 1px solid;
+  margin: 10px;
+  padding: 10px;
+}
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ProductDetails > ul > li {
+  list-style: none;
+  border: 1px solid #9add9d;
+  width: 400px;
+  padding: 7px;
+  margin: 5px;
+}
+.ProductDetails {
+  border: 1px solid green;
+  margin: 10px;
+  padding: 10px;
+  width: 440px;
+}
+li {
+  list-style: none;
+}
+
+.ProductDetails > ul {
+  margin: 5px;
+  padding: 5px;
+}
+.actualPrice {
+  font-weight: bold;
+  color: red;
+  text-decoration: underline;
+  text-decoration-line: line-through;
+}
+.discountedPrice {
+  color: green;
+  font-weight: bold;
+}
+
+img {
+  width: 200px;
+  height: 100px;
+}

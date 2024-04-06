@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-12.1</title>
+</head>
+<body>
+    <script>
+        //Printing 1 - 100 prime numbers
+        console.log("2");
+        for(var i = 3;i <= 100;i+=2)
+        {
+            var count = 0;
+            for(var j = 2;j < i;j++)
+            {
+                if(i%j == 0)
+                {
+                    count++;
+                    break;
+                }
+            }
+            if(count == 0)
+            {
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+</html>

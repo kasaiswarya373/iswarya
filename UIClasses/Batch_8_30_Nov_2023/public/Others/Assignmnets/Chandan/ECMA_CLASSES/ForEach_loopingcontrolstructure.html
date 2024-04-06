@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating for each looping cs
+
+    </title>
+</head>
+<body>
+    <script>
+        var data = [20 , 30, 40 , 50 ,60];
+
+       // for (var i = 0; i < data.length; i++) {
+       //     console.log(i);
+       //     console.log(data[i])
+       // }
+
+
+
+        data.forEach((value, index) => {
+
+             if (index > 1) {
+                return false;
+             }
+            console.log(value);
+            console.log(index)
+        });
+    </script>
+</body>
+</html>

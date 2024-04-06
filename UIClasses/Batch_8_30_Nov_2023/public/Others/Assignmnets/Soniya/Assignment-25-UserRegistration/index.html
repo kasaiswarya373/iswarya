@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>Registration Page</h1>
+    <form id="formData">
+        <div>
+            <label for="name">Name</label>
+            <input type = "text" placeholder="Enter your name" id="name">
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="text" placeholder="Enter your age" id="age" maxlength="2">
+        </div>
+        <div>
+            <label>Gender</label>
+            Female<input type="radio" name="gender" value="female">
+            Male<input type="radio" name="gender" value="male">
+        </div>
+        <div>
+            <label for="class">Class</label>
+            <select id="class" required>
+                <option>select</option>
+                <option>Class 1</option>
+                <option>Class 2</option>
+                <option>Class 3</option>
+                <option>Class 4</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">register</button>
+        </div>
+    </form>
+    <h1>Registered List</h1>
+    <ul id="registeredList">
+        <li><strong>Select</strong></li>
+        <li><strong>Age</strong></li>
+        <li><strong>Gender</strong></li>
+        <li><strong>Class</strong></li>
+    </ul>
+    <button id="refresh">Refresh</button>
+    <script src="app.js"></script>
+</body>
+</html>

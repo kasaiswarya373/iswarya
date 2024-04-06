@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="empdetail.css">
+    <script src="emp.js"></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <ul>
+            <h2>Employee Details</h2>
+            <li><label for="">Employee Name </label> <input type="text" id="emp_name"></li>
+            <li><label for="">Age</label> <input type="text" id="emp_Age" ></li>
+            <li><label for="">Gender</label> <span>Male : <input type="radio" class="adjinput" name="Gender" value="Male">  Female : <input type="radio" class="adjinput" name="Gender" value="Female"></span></li>
+            <li><label for="">Department</label><input type="text" id="emp_dept" ></li>
+            <li><label for="">Basic Salary</label>
+                <input type="text" id="emp_bsSalary" >
+            </li>
+            <li>
+                <input type="button" value="Generate Salary Slip" onclick="generateDetail()">
+            </li>
+
+        </ul>
+    </div>
+    <div id="detailshowCont">
+      
+    </div>
+</body>
+</html>

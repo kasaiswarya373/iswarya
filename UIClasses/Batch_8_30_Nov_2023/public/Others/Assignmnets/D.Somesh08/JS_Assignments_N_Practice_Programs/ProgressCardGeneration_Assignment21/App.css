@@ -1,0 +1,37 @@
+#readDataUl, .container #resultUlTag{
+    border: 2px solid;
+    width: fit-content;
+    padding: 10px;
+    background-color: #ccc;
+    margin: 20px auto;
+}
+
+.container > li, #resultUlTag>li {
+    list-style-type:none;
+    margin-top: 7px;
+    border: 1px solid;
+    padding: 5px;
+    background-color: white;
+}
+
+
+.marksContainer>input{
+    width: 30px;
+}
+
+h3{
+    background-color: white;
+    text-align: center;
+    color: rgb(13, 134, 13);
+}
+
+.container > li > label, #resultUlTag > li > label{
+    display: inline-block;
+    width: 100px;
+}
+
+#displayDetails{
+    display: none;
+}
+
+  

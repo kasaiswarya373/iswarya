@@ -1,0 +1,109 @@
+.head,.footer{
+                border: solid 1px grey;
+                background-color:rgb(87, 150, 405);
+                color: white;
+                padding:10px;
+                margin: 10px;  
+            }
+            .head{
+                height: 40px;
+
+            }
+            .footer{
+                position: relative;
+                top: 41px;
+                font-size: 20px;
+                text-align: center;
+                height: 30px;
+
+                
+            }
+            
+            h2{
+                font-size: 20px;
+                text-align: right;
+            }
+            .img{
+                background-image: url(images/login.png);
+            }
+            .image{
+                background-image: url(images/login2.png);
+
+            }
+            .img1,.img2,.img3,.img4{
+                border: solid 1px rgb(87, 150, 405) ;
+                width: 57px;
+                height: 58px;
+            }
+            .imglogin,img{
+                border: solid 1px white ;
+                width: 150px;
+                height: 150px;
+                position: relative;
+                background-color: white;
+                left: 60px;
+                top: 15px;
+                background-position:-5px -1px;
+            }
+            
+            .img1{
+                position: relative;
+                left: 1252px;
+                top: -66px;
+                background-position: 0px -5px;
+            }
+            .img2{
+                position: relative;
+                left: 71px;
+                top: -126px;
+                background-position: -65px -5px;
+            }
+            .img3{
+                position: relative;
+                left: 150px;
+                top: -183px;
+                background-position: -79px -74px;
+            }
+            .img4{
+                position: relative;
+                left: 220px;
+                top: -242px;
+                background-position: -150px -83px;
+            }
+            .login{
+                border: solid 1px cornflowerblue;
+               width: 360px;
+                padding: -28px;
+                background-color:white;
+                margin:59px auto;
+                font-size: large;
+                
+            }
+            li{
+                list-style-type: none;
+                margin: -7px auto;
+                padding: 15px;
+                
+            }
+            .button{
+                background-color: cornflowerblue;
+                color: white;
+                border : none;
+                width: 100px;
+                position: relative;
+                left: 104px;
+                font-size: large;
+            }
+            .setsize{
+              width: 150px;  
+               display: inline-block; 
+            }
+            .center{
+                position: relative;
+                left: 80px;
+                border: 1px solid white;
+                width: 150px;          
+                text-align: center;
+            }
+           
+            

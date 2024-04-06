@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find palindromes b/w given no's</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        for (var j = 1000; j >= 22; j--) {
+             
+            var remainder = 0, reverse = 0, i=j , temp = i;
+            while (i >= 1) {
+                remainder = i % 10;
+                reverse = reverse * 10 + remainder;
+                i = parseInt(i / 10);
+
+                if (reverse == temp) {
+                    document.write(`${temp} is a palindrome in b/w 1000 to 22 <br>`);
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

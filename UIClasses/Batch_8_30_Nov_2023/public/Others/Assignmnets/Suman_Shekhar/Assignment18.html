@@ -1,0 +1,36 @@
+<!-- Employee Details -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empdetails = {
+                readempdetails: () => {
+                    empdetails.empname = prompt("enter employee name: ");
+                    empdetails.empage = prompt("enter employee age : ");
+                    empdetails.empgender = prompt("enter employee gender : ");
+                    empdetails.empbasicsal = parseInt(prompt("enter employee basic salary : "));
+                    empdetails.getPfHra();
+                }
+            }
+            empdetails.getPfHra = () => {
+                empdetails.pf = (empdetails.empbasicsal*14)/100;
+                empdetails.hra = (empdetails.empbasicsal*25)/100;
+                empdetails.totalsalary = empdetails.empbasicsal + empdetails.pf + empdetails.hra;
+            }
+            empdetails.displaydetails = () => {
+                empdetails.readempdetails();
+                console.log("employee name is : " + empdetails.empname);
+                console.log("employee age is : " + empdetails.empage);
+                console.log("employee gender is : " + empdetails.empgender);
+                console.log("employee basicsalary is : " + empdetails.empbasicsal);
+                console.log("employee total salary  is : " + empdetails.totalsalary);
+            }
+            empdetails.displaydetails();
+    </script>
+</body>
+</html>

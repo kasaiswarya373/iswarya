@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Question :</h3>
+    <p>Write a program to work with a employee details like name, gender, age, department, basic salary.</p>
+    <p>calculate total salary of the employee, where total salary is PF , HRA and basic salary.</p>
+    <p>PF is 15 % of basic salary.</p>
+    <p>HRA is 25 % of basic salary.</p>
+
+    <script>
+        var name = prompt("Enter Name : ?");
+        var age  = prompt("Enter age : ?");
+        var gender = prompt("enter gender : ?");
+        var department = prompt("Enter Department : ?");
+        var basicSalary = prompt("Enter Salary : ?");
+        basicSalary = parseFloat(basicSalary);
+
+        var pf = (basicSalary *15)/100;
+        pf = parseFloat(pf);
+        var hra = (basicSalary *25)/100;
+        hra = parseFloat(hra);
+        var totalSalary = pf+hra+basicSalary;
+        totalSalary = parseFloat(totalSalary);
+
+
+        console.log("Name : " + name);
+        console.log("Gender : " + gender);
+        console.log("Age : " + age);
+        console.log("Department : " + department);
+        console.log("Basic Salary : " + basicSalary);
+        console.log("Your PF is " + pf);
+        console.log("Your HRA is " + hra);
+        console.log("Your total Salary is " + totalSalary);
+    
+    </script>
+
+</body>
+</html>

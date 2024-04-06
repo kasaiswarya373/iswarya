@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emp Detail with JSON object</title>
+  </head>
+  <body>
+    <script>
+      var empData = {
+        readValues() {
+          empData.name = prompt("Enter Emp Name");
+          empData.age = prompt("Enter Emp Age");
+          empData.salary = prompt("Enter Emp Salary");
+          empData.salary = parseInt(empData.salary);
+
+          empData.getPfRate = prompt("Enter Pf ");
+          empData.getPfRate = parseFloat(empData.getPfRate);
+
+          empData.getHraRate = prompt("Enter HRA");
+          empData.getHraRate = parseFloat(empData.getHraRate);
+        },
+      
+
+      getPf(){
+        empData.pf = (empData.salary * empData.getPfRate) / 100;
+        console.log("Your PF is " + empData.pf);
+      },
+
+      getHra  ()  {
+        empData.hra = (empData.salary * empData.getHraRate) / 100;
+        console.log("Your HRA is " + empData.hra);
+      },
+
+      getTotalSalary  ()  {
+        empData.totalSalary = empData.salary + empData.pf + empData.hra;
+        console.log("Your Total Salary is " + empData.salary);
+      }
+    };
+
+      console.log(empData);
+      empData.readValues();
+      empData.getPf();
+      empData.getHra();
+      empData.getTotalSalary();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstrongNumbersInArray</title>
+</head>
+<body>
+    <script>
+        /**var a=[5,153,154,370];
+        for(i=0;i<a.length;i++){
+            var num=String (a[i]);
+            temp=a[i];
+           var  armstrongNum=0
+            var totalNum=num.length;
+            while(num>0){
+                var rem=num%10;
+                num=parseInt(num/10);
+                armstrongNum+=rem**totalNum;
+                if(temp==armstrongNum){
+                console.log(armstrongNum);
+            }
+
+            }
+           
+        }**/
+//usingfunctions
+//modularised coding
+        var givenNumbers=()=>{
+            var a=[5,153,154,370];
+            for(var i=0;i<a.length;i++){
+             var result=  checkArmstringNumOrNot(a[i]);
+             console.log(`${a[i]} is a armstrong Number ${result}`);
+            }
+        }
+        var checkArmstringNumOrNot=(num)=>{
+            var numLength= num.toString().length
+            temp=num;
+            var rem;
+            result=0;
+            while(num>0){
+                rem=num%10;
+                num=parseInt(num/10);
+                result+=rem**numLength;
+
+            }
+            if(result==temp){
+                return true;
+            }else{
+                return false;
+            }
+
+        }
+        givenNumbers();
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .msg {
+            padding: 20px;
+        }
+
+        .first,
+        .second,
+        .button {
+            border: 1px solid;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <label for="firstnumber">First number</label>
+        <input type="text" id="firstno"> <br><br>
+    </div>
+    <div class="second">
+        <label for="secondnumber">Second number</label>
+        <input type="text" id="secondno"> <br><br>
+    </div>
+    <div class="button">
+        <button type="button" class="btn btn-outline-danger" onclick="getResult()">Result</button>
+        <div class="msg"></div>
+    </div>
+
+
+    <script>
+        var getResult = () => {
+            var message = document.querySelector(".msg");
+            message.innerHTML = "";
+
+            var firstnumber = document.querySelector("#firstno").value;
+            var secondnumber = document.querySelector("#secondno").value;
+
+            try {
+                if (firstnumber.trim() == "") throw new Error("First filed is empty");
+                if (isNaN(Number(firstnumber))) throw new Error("First Input is Not a number");
+                if (secondnumber.trim() == "") throw new Error("Second Filed is Empty");
+                if (isNaN(Number(secondnumber))) throw new Error("Second input is Not a number");
+                var result = Number(firstnumber) + Number(secondnumber);
+                document.querySelector(".msg").innerHTML = `Addition is ${result}`;
+            } catch (err) {
+                message.innerHTML = `${err.message}`;
+            } finally {
+                alert("Click Ok to see the result")
+            }
+        }
+    </script>
+</body>
+
+</html>

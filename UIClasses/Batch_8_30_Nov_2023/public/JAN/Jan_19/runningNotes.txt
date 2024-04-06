@@ -1,0 +1,25 @@
+ass: 22
+
+    var bookdetails = [
+        {
+            bookname: 'abc',
+            price 
+            authrs 
+            pub 
+            catergory
+        },
+        {
+            bookname: 'pqr',
+            price 
+            authrs 
+            pub 
+            catergory
+        }
+
+    ]
+
+Assignment: 23
+
+Assignment 24
+    Game coin picker 
+

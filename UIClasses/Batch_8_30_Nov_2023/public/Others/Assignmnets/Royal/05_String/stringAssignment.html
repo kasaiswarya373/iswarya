@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Chars within a given string</title>
+</head>
+<body>
+    <script>
+        var words = 'Hello! My name is Royal';
+        console.log('The given word --> '+words);
+        console.log('Total chars is --> '+words.length);
+        console.log('Total words is --> '+words.split(' ').length);
+
+        var findVowels = () => {
+
+            console.log('******Using REGEX we are solving this******');
+            var string = prompt('Enter a String, I will give you Vowels from it')
+            console.log('Promt entered text is --> '+string);
+            var regex = /[aeiou]/gi;
+            var chars = string.match(regex);
+            console.log('Vowels are   : '+chars.join(','));
+            console.log('Vowels count : '+chars.length);
+        }
+        // findVowels();
+        
+        console.log('Word is include or not --> '+words.includes('Name'));
+        // console.log(''+words);
+        // console.log(''+words);
+        // console.log(''+words);
+        // console.log(''+words);
+        // console.log(''+words);
+    </script>
+    
+</body>
+</html>

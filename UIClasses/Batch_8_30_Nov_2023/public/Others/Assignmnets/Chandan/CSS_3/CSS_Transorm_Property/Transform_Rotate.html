@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating Transform Rotate 
+    </title>
+    <style>
+        h1{
+            border: 1px solid red;
+            padding: 15px;
+            margin: 15px;
+            text-align: center;
+            background-color: palegreen;
+            font-style: italic;
+        }
+        .container{
+           border: 1px solid;
+           width: 600px;
+           padding: 50px;
+           text-align: center;
+           background-color: red;
+           margin: 170px auto;
+           /*transform: rotateY(120deg );*/
+           border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>  Demonstrating Transform Rotate </h1>
+    <div class="container">
+        content
+    </div>
+    <script>
+       /* var degValue = 0;
+        var applyAnimation = () => {
+            degValue += 5;
+            var angleValue = degValue + 'deg';
+            document.querySelector('.container').style.transform = 'rotateY(' + angleValue + ')';
+            if (degValue == 360) {
+                    degValue = 0;
+                }
+            }
+        
+       setInterval(() => {
+        applyAnimation();
+       } , 100); */
+
+       var degValue = 0;
+       var x = 5;
+       var y = 10;
+       var z = 15;
+        var applyAnimation = () => {
+            degValue += 5;
+            x++;
+            y++;
+            z++;
+            var angleValue = degValue + 'deg';
+            document.querySelector('.container').style.transform = `rotate3d(${x},${y},${z},${angleValue})`;
+
+            if (degValue == 360) {
+                    degValue = 0;
+                }
+            }
+        
+       setInterval(() => {
+        applyAnimation();
+       } , 100); 
+
+    </script>
+</body>
+</html>

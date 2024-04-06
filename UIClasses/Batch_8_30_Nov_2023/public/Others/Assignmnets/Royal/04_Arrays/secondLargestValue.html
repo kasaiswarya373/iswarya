@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest & Second Largest value</title>
+</head>
+<body>
+    <script>
+        var n = [12, 48, 63, 546, 142, 76];
+
+        var largetValue = n[0];
+        var secondLargest = 0;
+
+        for (var i = 1; i < n.length; i++){
+                if (largetValue < n[i]){
+                    secondLargest = largetValue;
+                    largetValue = n[i];
+                } else if (secondLargest < n[i]) {
+                     secondLargest = n [i];
+                }
+        }
+        console.log('Largest Value is : '+largetValue);
+        console.log('Second Largest value is : '+secondLargest);
+
+
+    </script>
+    
+</body>
+</html>

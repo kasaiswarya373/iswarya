@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promises in javscript</title>
+</head>
+<body>
+    <script>
+        var a = 35;
+        var prommise = new Promise((resolve,reject) => {
+            if(a > 40){
+                setTimeout(() => {  
+                     resolve('valid value');
+                    },2000)
+             
+            }else {
+                reject('invalid value');
+            }
+        });
+        console.log('start');
+        prommise.then((response) => {
+            console.log('the value is '+response);
+           
+        }).catch((err) => {
+            console.log('the value is '+err);
+            
+        });
+        console.log('end');
+       
+       /* async function b (){
+            console.log('start');
+         await prommise.then((response) => {
+            console.log('the char is '+response);
+           
+        }).catch((err) => {
+            console.log('the value is '+err);
+            
+        });
+        console.log('end');
+        }
+       b();*/
+    </script>
+</body>
+</html>

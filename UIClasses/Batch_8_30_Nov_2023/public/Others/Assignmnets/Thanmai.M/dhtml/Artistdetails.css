@@ -1,0 +1,29 @@
+h3{
+    border: 3px solid;
+    height: 20px;
+    width: 500px;
+    padding: 4px;
+    margin: 3px;
+    text-align: center;
+} 
+ul{
+
+border: 3px solid;
+height:300px ;
+width: 500px;
+margin: 5px;
+padding: 5px;
+
+}
+li{
+    margin: 5px;
+    padding: 5px;
+    list-style:square; 
+}
+.ArtistDetails{
+    border: 3px solid;
+    height:300px ;
+    width: 500px;
+    margin: 5px;
+    padding: 5px;
+}

@@ -1,0 +1,32 @@
+.themeSelector {
+    margin: 20px;  
+}
+li{
+    width: 390px;
+    list-style-type: none;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(244, 251, 248);
+}
+ul{
+    width: 450px;
+    padding: 20px;
+    
+    background-color: rgb(237, 249, 223);
+    margin: 40px auto;
+
+}.registrationmsg{
+    border: 2px solid;
+    border-color: rgb(12, 12, 99);
+    padding: 20px;
+    height: 40px;
+    width: 250px;
+    font-weight: bold;
+    margin: 40px auto; 
+      
+}
+.welcomeBlock{
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS - Positions</title>
+        <style>
+            .header, .footer {
+                border: 2px solid;
+                margin: 5px;
+                padding: 2px;
+                text-align: center;
+                text-decoration: underline;
+            }
+            .maincontent {
+                border: 2px solid;
+                position: relative;
+                height: 500px;
+                margin: 5px;
+                padding: 2px;
+            }
+            .block {
+                list-style-type: none;
+            }
+            li {
+                text-align: center;
+                width: 100px;
+                height: 120px;
+                border: 1px solid;
+                margin: 5px;
+                padding: 10px;
+            }
+            .block1 {
+                background-color: aqua;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .block2 {
+                background-color: aliceblue;
+                position: absolute;
+                left: 50px;
+                top: 50px;
+            }
+            .block3 {
+                background-color: aquamarine;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+            .block4 {
+                background-color: blueviolet;
+                position: absolute;
+                right: 50px;
+                top: 50px;
+            }
+            .block5 {
+                background-color: beige;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+            }
+            .block6 {
+                background-color: burlywood;
+                position: absolute;
+                left: 50px;
+                bottom: 50px;
+            }
+            .block7 {
+                background-color: blue;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+            }
+            .block8 {
+                background-color: brown;
+                position: absolute;
+                right: 50px;
+                bottom: 50px;
+            }
+            .block9 {
+                background-color: red;
+                position: absolute;
+                top: 35%;
+                left: 45%;
+                z-index: 20;
+            }
+            .block10 {
+                background-color: crimson;
+                position: absolute;
+                right: 80px;
+                bottom: 100px;
+                z-index: 1;
+            }
+            .block11 {
+                background-color: forestgreen;
+                position: absolute;
+                left: 80px;
+                top: 100px;
+                z-index: 1;
+            }
+            .block12 {
+                background-color: gold;
+                position: absolute;
+                left: 80px;
+                bottom: 100px;
+                z-index: 1;
+            }
+            .block13 {
+                background-color: greenyellow;
+                position: absolute;
+                right: 80px;
+                top: 100px;
+                z-index: 1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>
+                CSS Positions - Blocks
+            </h1>
+        </div>
+        <div class="maincontent">
+            <ul class="block">
+                <li class="block1">Block 1</li>
+                <li class="block2">Block 2</li>
+                <li class="block3">Block 3</li>
+                <li class="block4">Block 4</li>
+                <li class="block5">Block 5</li>
+                <li class="block6">Block 6</li>
+                <li class="block7">Block 7</li>
+                <li class="block8">Block 8</li>
+                <li class="block9">Block 9
+                    <ul class="block">
+                        <li class="block10">Block 10</li>
+                        <li class="block11">Block 11</li>
+                        <li class="block12">Block 12</li>
+                        <li class="block13">Block 13</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <h3>
+                CSS Positions - Blocks@ copyright 2024
+            </h3>
+        </div>
+    </body>
+</html>

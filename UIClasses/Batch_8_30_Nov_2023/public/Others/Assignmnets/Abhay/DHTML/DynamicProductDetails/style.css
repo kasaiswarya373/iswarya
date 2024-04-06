@@ -1,0 +1,39 @@
+.header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.product1 {
+    border: 3px solid khaki;
+    width: 30%;
+    height: auto;
+
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.productName,
+.productPrice,
+.productManufacturer,
+.productRatings,
+.btn input {
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}

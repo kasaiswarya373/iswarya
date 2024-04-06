@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date demo in js</title>
+  </head>
+  <body>
+    <script>
+      var cdate = new Date();
+      console.log(cdate);
+
+      var monthNames = ["Jan", "Feb", "March", "Apr"];
+      var monthNames2 = ["January", "Ferbury", "March", "Aprial"];
+      var weeks = [
+        "sunday",
+        "monday",
+        "tuesdat",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+      ];
+
+      var min = ["min"];
+      var sec = ["sec"];
+
+      var weeks2 = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+      var years = [24];
+      var months = [0];
+
+      //   var newFormateDate = `${cdate.getDate()} / ${
+      //     cdate.getMonth() + 1
+      //   } / ${cdate.getFullYear()}`;
+      //   console.log(newFormateDate);
+
+      var monthName = monthNames[cdate.getMonth()];
+      var myFormat1 = `${
+        cdate.getDate() + `th`
+      } ${monthName} ${cdate.getFullYear()}`;
+      console.log(myFormat1);
+
+      var myFormat2 = `${cdate.getDate()} / ${months}${
+        cdate.getMonth() + 1
+      } / ${cdate.getFullYear()}`;
+      console.log(myFormat2);
+
+      //   var year = years[cdate.getFullYear()];
+      var myFormat3 = `${cdate.getDate()} / ${months}${
+        cdate.getMonth() + 1
+      } / ${years}`;
+      console.log(myFormat3);
+
+      var myFormat4 = `${monthName} ${
+        cdate.getDate() + `th` + `,`
+      } ${cdate.getFullYear()}`;
+      console.log(myFormat4);
+
+      var week = weeks[cdate.getDay()];
+      var myFormat5 = `${week} ${monthName} ${
+        cdate.getDate() + `th` + `,`
+      } ${cdate.getFullYear()}`;
+      console.log(myFormat5);
+
+      var monthName2 = monthNames2[cdate.getMonth()];
+      var myFormat6 = `${week} ${monthName2} ${
+        cdate.getDate() + `th` + `,`
+      } ${cdate.getFullYear()}`;
+      console.log(myFormat6);
+
+      var week2 = weeks2[cdate.getDay()];
+      var myFormat7 = `${week2} ${monthName2} ${
+        cdate.getDate() + `th` + `,`
+      } ${cdate.getFullYear()}`;
+      console.log(myFormat7);
+
+      var myFormat8 = `${week2} ${monthName} ${
+        cdate.getDate() + `th` + `,`
+      } ${cdate.getFullYear()}`;
+      console.log(myFormat8);
+
+      var myFormat9 = `${months}${cdate.getDate()} / ${months}${
+        cdate.getMonth() + 1
+      } / ${years}  ${cdate.getHours()}:${cdate.getMinutes()}:${cdate.getSeconds()}`;
+      console.log(myFormat9);
+
+      var timeFormat = `${cdate.getHours()}:${cdate.getMinutes()}:${cdate.getSeconds()}`;
+      console.log(timeFormat);
+
+      var timeFormat2 = `${cdate.getHours()}:${cdate.getMinutes()}${min}:${cdate.getSeconds()}${sec}`;
+      console.log(timeFormat2);
+    </script>
+  </body>
+</html>

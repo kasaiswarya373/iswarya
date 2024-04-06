@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Arrow functions
+        </title>
+    </head>
+    <body>
+        <script>
+            class Sample {
+                constructor() {
+                    this.name = 'Raj';
+                    this.age = 20;
+                }
+                displayInfo() {
+                    console.log("Name value is " + this.name);
+                    console.log("Age value is " + this.age);
+
+
+                    setTimeout(() => {
+                        console.log("Name value is " + this.name);
+                        console.log("Age value is " + this.age);
+                    }, 2000)
+
+                }
+            }
+
+            var p1 = new Sample();
+            p1.displayInfo();
+
+        //     var p2 = new Sample();
+        //    p2.displayInfo();
+
+        </script>
+    </body>
+</html>

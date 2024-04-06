@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dhtml Demo</title>
+    </head>
+    <body>
+        <h3>Student Details</h3>
+        <div class="block"></div>
+        <script>
+          /*  var divtag = document.createElement('div');
+            divtag.innerText = 'Welcome to dhtml';
+            divtag.setAttribute('id','head');
+            divtag.setAttribute('class','heading');
+            divtag.style.color = 'yellow';
+            divtag.style['font-size'] = '20px';
+            console.log(divtag);*/
+            var msg = prompt('Enter a message added');
+            var tag = prompt('Enter a tag like(div/h2/p/span)');
+            var divtag = document.createElement(tag);
+            divtag.innerText = msg;
+            divtag.setAttribute('id','head');
+            divtag.setAttribute('class','heading');
+            divtag.style.color = 'red';
+            divtag.style['font-size'] = '20px';
+            console.log(divtag);
+            document.querySelector('.block').append(divtag);
+        </script>
+    </body>
+</html>

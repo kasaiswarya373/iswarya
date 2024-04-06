@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div> <h2>write a programme to find the no.of zeros in a given number? </h2></div>
+    <script>
+        var num = prompt("enter the number-");
+        num = parseInt(num);
+        var rem;
+        var count = 0;
+        while(num > 0){
+            rem = num % 10;
+            if( rem == 0){
+                count++;
+            }
+            num = num / 10;
+            num = parseInt(num);
+            
+            }
+            console.log(count);
+    </script>
+</body>
+</html>

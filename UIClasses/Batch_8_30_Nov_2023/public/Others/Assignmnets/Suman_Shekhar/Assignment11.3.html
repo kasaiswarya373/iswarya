@@ -1,0 +1,27 @@
+<!-- WAP to display all the numbers between user's given range. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Display all the numbers between user's given range</h3>
+    <script>
+        var i = prompt("Enter the first number of ur range");
+        var j = prompt("Enter the last number of ur range");
+        if (i < j) {
+            for(i ; i <= j ; i++){
+                console.log(i);
+            }
+        } else if (i == j){
+            console.log(i);
+        } else {
+            for(i ; i >= j ; i--){
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+</html>

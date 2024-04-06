@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /* var empdata = {
+                name : "santhoshi",
+                age : 23,
+                gender : 'female',
+                department : 'civil',
+             };
+             var keyname = 'gender';
+             console.log(empdata.name);
+             console.log(empdata[keyname]);
+             console.log("=========================================================");
+             console.log("FOR-IN loop in json object");
+
+             var data = {
+                name : 'niharika',
+                gender : 'female',
+                department : 'ECE'
+             }
+             for(var temppkey in data){
+                console.log(temppkey); // keys will be displayed.
+                console.log(data[temppkey]); // values of keys will be displayed.
+             }
+             console.log("=======================================================");
+
+             var contactDetails = {
+                 fname: 'ABC',
+                'lname': 'PQR',
+                petname: 'Sanju',
+                    maild: {
+                        office: 'abc@office.com',
+                        'prsnl': ['abc@gmail.com', 'pqr@hotmail.com']
+                    },
+                        address: {
+                            'office': {
+                            buldingno: '5A',
+                                country: {
+                                    name: 'India',
+                                    code: 'IND'
+                                },
+                        floorno: '9L',
+                        pincode: 539098
+                         },
+                            'prsnl': {
+                                 stateInfo: {
+                                    details: {
+                                        sid: '01',
+                                        scode: 'TS',
+                                        pincode: 523423
+                                    },
+                                    countryName: 'India',
+                                    dno: '158/B',
+                                    streetname: 'SR Nagar'
+                                     }
+                                 }
+                            },
+                                phonoNo: {
+                                    'office': '040-234234',
+                                    'prsnl': [935345 , 93543534],
+                                    emrgncy: 234234234
+                                 },
+                                    socialNetwrkingIds: {
+                                         linkedin: 'abc',
+                                        twitter: '@abc'
+                                         },
+                                             profilePic: 'abc/data/data.png',
+                                            gender: 'Male',
+                                            'mstatus': 'M'
+                            }
+                    var emnData = {
+                     name: 'Raj',
+                    age: 20,
+                    address: 'Hyderabad',
+                    gender: 'Male'
+                    };
+                    var iterateOverObject = (d) => {                 
+                            for(var tempkey in d){
+                                if((typeof(d[tempkey]) == 'object') && ! Array.isArray(d[tempkey])){
+                                    iterateOverObject(d[tempkey]);
+                                }else{
+                                    console.log(`${tempkey} value is ${d[tempkey]}` )
+                                }
+                            }
+}
+console.log("=======================================")
+iterateOverObject(emnData);
+iterateOverObject(contactDetails); */
+
+                    var empdata = {
+                        name : 'santhoshi',
+                        age : 23,
+                        gender : 'female',
+                        department : 'civilEngg',
+                         sem1marks : {
+                            m1 : 45,
+                            m2 : 66,
+                            m3 : 77,
+                            m4 : 98
+                        },
+                        sem2marks : {
+                            s1 : 34,
+                            s2 : 78,
+                            s3 : 54,
+                            s4 : 90
+                        },
+                        subjects : ["hyd", "geology" , "maths" , "fmhm"],
+                        sem3marks : {
+                            subjects : {
+                                a1 : 42,
+                                a3 : 61,
+                                a2 : 9,
+                                a4 : 87
+                            }
+                        }
+                    }
+
+                    var recursion = (key) => {
+                    for(var tempindex in key){
+                        if((typeof(key[tempindex]) == 'object') && ! Array.isArray(key[tempindex])){
+                            recursion(key[tempindex]);
+                        }else{
+
+                            console.log(`${tempindex} value is ${key[tempindex]}`);
+
+                        }
+                    }
+                }
+                recursion(empdata);
+        </script>
+    </body>
+</html>

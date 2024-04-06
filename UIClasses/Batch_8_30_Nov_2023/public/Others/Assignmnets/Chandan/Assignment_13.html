@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>WAP to find the sum of two nos.</h2>
+    <script>
+        var a = prompt("Enter number");
+        a = parseInt(a)
+        var sum = 0;
+        var rem;
+        while (a > 0) {
+            rem = a % 10;
+            sum = sum + rem;
+            a = a  / 10;
+            a = parseInt(a);
+        }
+        console.log("sum of the given indivisual is " + sum);
+    </script>
+
+
+
+</body>
+</html>

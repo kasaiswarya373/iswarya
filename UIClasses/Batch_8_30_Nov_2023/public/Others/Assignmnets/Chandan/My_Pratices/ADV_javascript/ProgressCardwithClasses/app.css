@@ -1,0 +1,25 @@
+ul {
+    width: 450px;
+    border: 1px solid;
+    margin: 20px auto;
+    padding:  10px;
+    background-color: blanchedalmond;
+}
+body {
+    background-color: rgba(11, 11, 245, 0.642);
+}
+li {
+    list-style:none ;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+    background-color: #ccc;
+}
+.marksInput input {
+    width: 50px;
+}
+.title {
+    text-align: center;
+    color: #0637fb;
+    font-size: 20px;
+}

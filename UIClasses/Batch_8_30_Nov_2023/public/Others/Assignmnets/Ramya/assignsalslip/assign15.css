@@ -1,0 +1,31 @@
+.title{
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
+ul {
+    width: 750px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: lightblue;
+}
+li {
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    background-color: #fff;
+    font-size: 25px;
+}
+h3 {
+    text-align: center;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+label {
+    width: 220px;
+    display: inline-block;
+}
+#displayBlock {
+    display: none;
+}

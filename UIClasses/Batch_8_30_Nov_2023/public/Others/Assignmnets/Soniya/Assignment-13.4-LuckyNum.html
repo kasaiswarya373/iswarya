@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyNum</title>
+</head>
+<body>
+     I will help you to find your Lucky Number
+    <script>
+        var n = parseInt(prompt("Please enter your number"));
+        var luckyNum = 0;
+        while(n > 0)
+            {
+                luckyNum += n % 10;
+                n = parseInt(n / 10);
+                if(n == 0 && luckyNum > 9)
+                {
+                    n = luckyNum;
+                    luckyNum = 0;
+                }
+
+            }
+        console.log(`Hey! I find your lucky number , its ${luckyNum}`);
+    </script>
+</body>
+</html>

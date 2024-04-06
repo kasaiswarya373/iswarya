@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Table</title>
+    <style>
+        .header {
+            border: 1px solid;
+            text-align: center;
+        }
+        .table_container {
+            border: 1px solid;
+            height: 600px;
+            margin: 10px auto;
+        }
+        .footer {
+            border: 1px solid;
+            text-align: center;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .main_table {
+            text-align: center;
+            border: 1px solid;
+            margin: 10px auto;
+            border-collapse: collapse
+        }
+
+        .progress_table {
+            text-align: center;
+            border: 1px solid;
+            margin: 10px 5px;
+        }
+
+        .main_table_body>tr>td, .main_table_header th, .progress_table_header th, .progress_table_body>tr>td{
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Student Details</h2>
+    </div>
+    <div class="table_container">
+        <table class="main_table">
+            <thead class="main_table_header">
+                <th>S.no.</th>
+                <th>Student Name</th>
+                <th>Age</th>
+                <th>Student Photo</th>
+                <th>Class</th>
+                <th>Stream</th>
+                <th>Location</th>
+                <th>Progress Card</th>
+            </thead>
+            <tbody class="main_table_body" >
+                <tr>
+                    <td>01</td>
+                    <td>Virat Kohli</td>
+                    <td>35</td>
+                    <td>
+                        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316605.png" alt="kohli">
+                    </td>
+                    <td>Degree</td>
+                    <td>MPC</td>
+                    <td>Delhi</td>
+                    <td>
+                        <table class="progress_table">
+                            <thead class="progress_table_header">
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Obtained Marks</th>
+                                <th>Status</th>
+                            </thead>
+                            <tbody class="progress_table_body">
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>85</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Physics</td>
+                                    <td>100</td>
+                                    <td>82</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Electronics</td>
+                                    <td>100</td>
+                                    <td>75</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>    
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Smriti Mandhana</td>
+                    <td>27</td>
+                    <td>
+                        <img src="https://i.pinimg.com/originals/5d/04/b9/5d04b98b35f4a7eabe70e748eda6f3f7.jpg" alt="Smriti">
+                    </td>
+                    <td>Degree</td>
+                    <td>BiPC</td>
+                    <td>Mumbai</td>
+                    <td>
+                        <table class="progress_table">
+                            <thead class="progress_table_header">
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Obtained Marks</th>
+                                <th>Status</th>
+                            </thead>
+                            <tbody class="progress_table_body">
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>70</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Physics</td>
+                                    <td>100</td>
+                                    <td>67</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer Science</td>
+                                    <td>100</td>
+                                    <td>62</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>    
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Dhoni</td>
+                    <td>40</td>
+                    <td>
+                        <img src="https://scores.iplt20.com/ipl/playerimages/9qM9iCMiAs168026808457.png" alt="Dhoni">
+                    </td>
+                    <td>Degree</td>
+                    <td>MPC</td>
+                    <td>Jarkhand</td>
+                    <td>
+                        <table class="progress_table">
+                            <thead class="progress_table_header">
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Obtained Marks</th>
+                                <th>Status</th>
+                            </thead>
+                            <tbody class="progress_table_body">
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>80</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Physics</td>
+                                    <td>100</td>
+                                    <td>79</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Chemistry</td>
+                                    <td>100</td>
+                                    <td>75</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>    
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Shreyanka Patil</td>
+                    <td>27</td>
+                    <td>
+                        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/375400/375434.png" alt="Shreyanka">
+                    </td>
+                    <td>Degree</td>
+                    <td>MPC</td>
+                    <td>Bangalore</td>
+                    <td>
+                        <table class="progress_table">
+                            <thead class="progress_table_header">
+                                <th>Subject</th>
+                                <th>Max Marks</th>
+                                <th>Obtained Marks</th>
+                                <th>Status</th>
+                            </thead>
+                            <tbody class="progress_table_body">
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>80</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Physics</td>
+                                    <td>100</td>
+                                    <td>79</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Chemistry</td>
+                                    <td>100</td>
+                                    <td>75</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        <h3>Student Details @ copyright 2023</h3>
+    </div>
+</body>
+</html>

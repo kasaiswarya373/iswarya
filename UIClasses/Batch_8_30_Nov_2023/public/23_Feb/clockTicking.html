@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container {
+                border: 1px solid;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: yellow;
+                margin: 100px auto;
+                position: relative;
+            }
+            .minNeedle {
+                border: 1px solid;
+                width: 100px;
+                position: relative;
+                top: 100px;
+            }
+            .no12 {
+                position: absolute;
+                left: 43%;
+                top: 2px;
+            }
+            .clockNo {
+                font-weight: bold;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <span class="no12 clockNo">12</span>
+            <span class="no6 clockNo">6</span>
+            <div class="minNeedle"></div>
+        </div>
+        <script>
+            var degValue = 0;
+             var applyAnimation = () => {
+                degValue += 1;
+                
+                var angleValue = degValue + 'deg';
+                document.querySelector('.minNeedle').style.transform = `rotate(${angleValue})`;
+                    
+                if (degValue == 360) {
+                    degValue = 0;
+                }
+            }
+            setInterval(() => {
+                applyAnimation();
+            }, 1000);
+        </script>
+    </body>
+</html>

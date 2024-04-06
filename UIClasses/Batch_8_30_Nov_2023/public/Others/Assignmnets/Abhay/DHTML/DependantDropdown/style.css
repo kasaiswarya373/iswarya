@@ -1,0 +1,23 @@
+.main {
+            margin-top: 105px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        label {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        select {
+            width: 200px;
+            height: 30px;
+        }
+
+        label {
+            width: 200px;
+            display: inline-block;
+            margin: 20px;
+        }

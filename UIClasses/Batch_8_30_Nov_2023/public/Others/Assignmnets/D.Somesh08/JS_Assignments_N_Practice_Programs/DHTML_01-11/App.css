@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+#mainDivId {
+    height: 400px;
+    width: 300px;
+    border: 2px solid grey;
+}
+
+.ul1Cls {
+    list-style: none;
+}
+
+#ul1Id>li {
+    width: 70%;
+    border: 1px solid black;
+    padding-left: 38px;
+}
+
+#ul2Id>li {
+    width: 70%;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 4px;
+}
+
+#img1 {
+    height: 120px;
+    width: 150px;
+    margin-left: 53px;
+}
+
+#span2Id{
+    color: green;
+    /* text-decoration: underline; */
+    text-decoration-line: line-through;
+}

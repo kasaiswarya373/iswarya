@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sumOfEvenAndOddInarray</title>
+</head>
+<body>
+    <script>
+        var  findSum = () =>{
+            var arr = [35, 60, 44, 57, 67, 75]
+            var sumOfOdd = 0;
+            var sumOfEven = 0;
+            for(var i = 0; i < arr.length; i++){
+                if(arr[i]%2 == 0){
+                    sumOfEven += arr[i];
+                }
+                if(arr[i]%3 == 0){
+                    sumOfOdd += arr[i];
+                }
+            }
+            console.log(sumOfEven);
+            console.log(sumOfOdd);
+        }
+        findSum();
+        
+    </script>
+</body>
+</html>

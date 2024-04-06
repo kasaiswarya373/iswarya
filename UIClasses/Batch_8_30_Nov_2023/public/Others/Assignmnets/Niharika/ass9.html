@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <script>
+      var Ename = prompt('Enter the Ename');
+      var Eage = prompt('Enter the Eage');
+      var Edept = prompt('Enter the Edept');
+      var Ebasicsal = prompt('Enter the Ebasicsal');
+      Ebasicsal = parseInt(Ebasicsal);
+      var pf,hra,totalsal;
+       pf = prompt('num')/100*Ebasicsal;
+       hra = prompt('hrapersentage')/100*Ebasicsal;
+       totalsal = pf + hra + Ebasicsal;
+       console.log(Ename);
+       console.log(Eage);
+       console.log(Edept);
+       console.log(Ebasicsal);
+       console.log('pf is' + pf);
+       console.log('hra is' +hra);
+       console.log(totalsal);
+
+    
+
+    </script>
+</body>
+</html>

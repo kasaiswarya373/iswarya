@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prob5 Palindrome Num in given range</title>
+</head>
+<body>
+    <h2>WAP To check Palindrome number in given range</h2>
+    <script>
+        // let num1 = parseInt(prompt("Enter The Number from where to start to finding palindrome number" ))
+        // let num2 = parseInt(prompt("Enter The Number  to stop finding palindrome number"))
+
+        let num1 = 1000;
+        let num2 = 22;
+
+        let remainder;
+        let temp;
+        let ReverseNum = 0;
+        
+        
+        for( let i = num1; i >= num2; i-- ){
+            ReverseNum = 0;
+            temp = i;
+
+            while(temp > 0){
+                remainder = temp % 10;
+                ReverseNum = (ReverseNum*10) + remainder;
+                temp = parseInt(temp/10);
+
+            }
+            if(ReverseNum === i){
+                console.log(`Palindrome Number ${i}` );
+                
+            } else {
+                console.log(` NOT Palindrome Number ${i}` +  ' REv of num ' + ReverseNum );
+                
+            }
+        }
+    </script>
+</body>
+</html>

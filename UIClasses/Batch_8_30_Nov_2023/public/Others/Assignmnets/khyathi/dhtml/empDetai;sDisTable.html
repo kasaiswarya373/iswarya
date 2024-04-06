@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Example</title>
+
+    <style>
+        .block{
+            border: 1px solid;
+            margin: 10px auto;
+            width: 500px;
+            padding: 10px;
+        }
+        .inputField{
+            padding: 10px;
+
+        }
+
+        #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+<div class="block">
+    <h3 style="text-align: center;">Enter Employee Details</h3>
+    
+    <div class="inputField">
+        <label>First Name</label>
+        <input type="text" id="firstName"/>
+    </div>
+
+    <div class="inputField">
+        <label>Last Name</label>
+        <input type="text" id="lastName"/>
+    </div>
+
+    <div class="inputField">
+        <label>City</label>
+        <input type="text" id="city"/>
+    </div>
+
+    
+    <div class="inputField">
+        <label>Age</label>
+        <input type="text" id="age"/>
+    </div>
+
+    <div class="inputField">
+        <label>Department</label>
+        <input type="text" id="department"/>
+    </div>
+
+
+    <div class="inputField">
+        <label>Salary</label>
+        <input type="text" id="salary"/>
+    </div>
+
+
+    <input type="button" value="Save" onclick="save()">
+
+
+</div> 
+   <div class="tableSection" id="tableData">
+
+      
+    </div>
+
+      <!-- <table id="customers">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Department</th>
+                    <th>Net Salary</th>
+                    <th>Pf Amount</th>
+                    <th>Tax Amount</th>
+                    <th>Acion</th>
+                </tr>
+            </thead>
+
+            <tbody id="rowData">
+               
+            </tbody>
+        </table> -->
+
+    <script>
+
+        var usersData=[];
+        var isEdit=false;
+        var editObj;
+        var tableHeaders=['Name','Age','Department','Salary','Pf Amount','Tax Amount','Action'];
+
+        var calculateTakeHomeSalary=(personObj)=>{
+           if(personObj.salary>500000){
+            personObj= calculateTaxAmount(personObj);
+           }else{
+            personObj.tax=0;
+           }
+          
+           personObj = calculatePFAmount(personObj);
+
+           return personObj;
+        }
+
+        var calculateTaxAmount=(personObj)=>{
+            personObj.tax=personObj.salary*0.20;
+            personObj.salary= personObj.salary-personObj.tax;
+            return personObj;
+        }
+
+        var calculatePFAmount=(personObj)=>{
+
+            personObj.pf=personObj.salary*0.12;
+            personObj.salary= personObj.salary-personObj.pf;
+            return personObj;
+
+        }
+
+        var resetForm=()=>{
+            document.getElementById('firstName').value='';
+            document.getElementById('lastName').value='';
+            document.getElementById('age').value='';
+            document.getElementById('city').value='';
+            document.getElementById('department').value=''
+            document.getElementById('salary').value='';
+        }
+
+        var addTableDataList=()=>{
+            var tbody= document.getElementById('rowData');
+            tbody.innerHTML='';
+            for(var i=0;i<usersData.length;i++){
+                var tr= document.createElement('tr');
+            var td_name= document.createElement('td');
+            td_name.innerText=`${usersData[i].firstName} ${usersData[i].lastName}`;
+            var td_age= document.createElement('td');
+            td_age.innerText=usersData[i].age;
+            var td_dep= document.createElement('td');
+            td_dep.innerText= usersData[i].department;
+            var td_salary= document.createElement('td');
+            td_salary.innerText= usersData[i].salary;
+            var td_pf= document.createElement('td');
+            td_pf.innerText= usersData[i].pf;
+            var td_tax= document.createElement('td');
+            td_tax.innerText=usersData[i].tax;
+            var td_action= document.createElement('td');
+            var editButton=document.createElement('button');
+             editButton.innerText='Edit'
+             editButton.addEventListener('click',function(){
+                editRecord(usersData[i].employeeID)
+             });
+            var deleButto=document.createElement('button');
+            deleButto.innerText='Delete';
+            editButton.addEventListener('click',function(){
+                deleteRecord(usersData[i].employeeID)
+             });
+           // deleButto.setAttribute('data-empId', usersData[i].employeeID)
+           
+
+            td_action.append(editButton);
+            td_action.append(deleButto);
+
+            tr.append(td_name);
+            tr.append(td_age);
+            tr.append(td_dep);
+            tr.append(td_salary);
+            tr.append(td_pf);
+            tr.append(td_tax);
+            tr.append(td_action);
+            tbody.append(tr);
+            }
+           
+            resetForm();
+        }
+
+
+
+       
+        loopTable=()=>{
+         
+            var tableData=document.getElementById('tableData');
+            var createTable=`<table  id="customers"><thead><tr>`;
+                var headers='';
+                for(var j=0; j<tableHeaders.length; j++){
+                    headers =`${headers}<th>${tableHeaders[j]}</th>`;
+                }
+            var tbody=`${headers}</tr></thead><tbody>`
+                var tr='';
+            for(var i=0; i<usersData.length; i++){
+                tr=`${tr}<tr> <td>${usersData[i].firstName} ${usersData[i].lastName}</td>
+                    <td>${usersData[i].age}</td>
+                    <td>${usersData[i].department}</td>
+                    <td>${usersData[i].salary}</td>
+                    <td>${usersData[i].pf}</td>
+                    <td>${usersData[i].tax}</td>
+                    <td>
+                        <button onclick="editRecord(${usersData[i].employeeID})">Edit</button>
+                        <button onclick="deleteRecord(${usersData[i].employeeID})">Delete</button>
+                        </td>
+                    </tr>
+                    `
+            };
+
+           
+
+          
+            tbody= `${tbody} ${tr}</tbody></table>`;
+
+            createTable=`${createTable} ${tbody}`;
+
+           
+            tableData.innerHTML=createTable;
+
+            resetForm();
+
+        }
+
+        function setFormData(inputObj){
+
+            document.getElementById('firstName').value=inputObj.firstName;
+            document.getElementById('lastName').value=inputObj.lastName;
+            document.getElementById('age').value=inputObj.age;
+            document.getElementById('city').value=inputObj.city;
+            document.getElementById('department').value=inputObj.department;
+            document.getElementById('salary').value=getGrossSalary(inputObj);
+
+        }
+
+       function getGrossSalary(obj){
+
+        return obj.salary+ obj.pf+obj.tax;
+
+        }
+
+
+
+      
+
+        function editRecord(employeeID){
+            isEdit=true;
+            for(var i=0;i<usersData.length;i++){
+                if(usersData[i].employeeID===employeeID){
+                    editObj=usersData[i];
+                }
+            }
+            if(editObj){
+                setFormData(editObj)
+            }
+         
+
+        }
+
+        function deleteRecord(employeeID){
+           
+
+            var filterData=[];
+            for(var i=0;i<usersData.length;i++){
+                if(usersData[i].employeeID!==employeeID){
+                    filterData.push(usersData[i])
+                }
+            }
+
+        usersData=filterData;
+        loopTable();
+
+           // alert("delete");
+        }
+
+        function updateData(updateObj){
+        
+
+            for(var i=0;i<usersData.length;i++){
+                if(usersData[i].employeeID===updateObj.employeeID){
+                    usersData[i].firstName=updateObj.firstName;
+                    usersData[i].lastName=updateObj.lastName;
+                    usersData[i].city = updateObj.city;
+                    usersData[i].department= updateObj.department;
+                    usersData[i].pf=updateObj.pf;
+                    usersData[i].tax= updateObj.tax;
+                    usersData[i].salary= updateObj.salary;
+
+                }
+            }
+
+        }
+
+        function save(){
+           if(isEdit){
+            var updateObj={
+                firstName: document.getElementById('firstName').value,
+                lastName:document.getElementById('lastName').value,
+                city: document.getElementById('city').value,
+                age:document.getElementById('age').value,
+                department:document.getElementById('department').value,
+                salary:document.getElementById('salary').value,
+                employeeID:editObj.employeeID
+            }
+
+        
+            var resultUpdateObj=calculateTakeHomeSalary(updateObj);
+            updateData(resultUpdateObj)
+            isEdit=false;
+
+           }else{
+            var personObj={
+                firstName: document.getElementById('firstName').value,
+                lastName:document.getElementById('lastName').value,
+                city: document.getElementById('city').value,
+                age:document.getElementById('age').value,
+                department:document.getElementById('department').value,
+                salary:document.getElementById('salary').value,
+                employeeID:Math.floor(100000 + Math.random() * 900000)
+            }
+            var resultObj=calculateTakeHomeSalary(personObj);
+           usersData.push(resultObj);
+           }
+          
+        //    addTableDataList();
+           loopTable();
+        }
+        
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar </title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            width: 500px;
+        
+        }
+
+        #searchbar {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        #list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+        }
+
+        .animals {
+            font-size: 1.5em;
+            padding: 10px;
+            border-bottom: 1px solid #6ddefa;
+
+        }
+
+        li {
+            border: 1px solid;
+            text-align: left;
+            padding: 5px;
+            margin: 0;
+        }
+        li:hover {
+            background-color: rgb(246, 145, 90);
+            cursor: pointer;
+        }
+
+        ul {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input id="searchbar" onkeyup="search_personality()" type="text" name="search" placeholder="Typing">
+
+        <ul id='list'>
+            <li class="words">Answerable</li>
+            <li class="words">Apperciate</li>
+            <li class="words">Boostup</li>
+            <li class="words">Be ur self</li>
+            <li class="words">Careful</li>
+            <li class="words">Carrying</li>
+            <li class="words">Do </li>
+            <li class="words">Destiny</li>
+            <li class="words">Empower</li>
+            <li class="words">Easy</li>
+            <li class="words">Force</li>
+            <li class="words">First</li>
+            <li class="words">Give up</li>
+            <li class="words">Growth</li>
+            <li class="words">Hurdles</li>
+            <li class="words">Happy</li>
+            <li class="words">Improve</li>
+            <li class="words">Intimation</li>
+            <li class="words">Jackpot</li>
+            <li class="words">Jealous</li>
+            <li class="words">Kid</li>
+            <li class="words">Kind</li>
+            <li class="words">Luck</li>
+            <li class="words">Luxuries</li>
+            <li class="words">Mentality</li>
+            <li class="words">Money</li>
+            <li class="words">Neutral</li>
+            <li class="words">Negetivity</li>
+            <li class="words">Obessed</li>
+            <li class="words">Overthinking</li>
+            <li class="words">Practice</li>
+            <li class="words">Perfection</li>
+            <li class="words">Question</li>
+            <li class="words">Queen</li>
+            <li class="words">Revise</li>
+            <li class="words">Respect</li>
+            <li class="words">Simplicity</li>
+            <li class="words">Search</li>
+            <li class="words">Training</li>
+            <li class="words">Titfortat</li>
+            <li class="words">Unlucky</li>
+            <li class="words">Useless</li>
+            <li class="words">Values</li>
+            <li class="words">virtual</li>
+            <li class="words">Zoo</li>
+            <li class="words">Zoom</li>
+        </ul>
+    </div>
+    <script>
+        var search_personality = () => {
+            var input = document.querySelector("#searchbar").value
+            document.querySelector("#list").style.display = "block";
+            input = input.toLowerCase();
+            var a = document.getElementsByClassName('words');
+
+            for (j = 0; j < a.length; j++) {
+                if (!a[j].innerHTML.toLowerCase().includes(input)) {
+                    a[j].style.display = "none";
+                }
+                else {
+                    a[j].style.display = "block";
+                }
+            }
+            
+        }
+
+    </script>
+</body>
+
+</html>

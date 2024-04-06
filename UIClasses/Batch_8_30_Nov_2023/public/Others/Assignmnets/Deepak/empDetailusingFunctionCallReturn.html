@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var detail = () =>{
+            var empName = prompt('Enter emp name');
+            var empDept = prompt('Enter emp Department');
+            var empSalary = prompt('Enter emp salary');
+            empSalary = parseInt(empSalary);
+            var pf = empPf(empSalary);
+            var hra = empHra(empSalary);
+            var tax = empTax(empSalary, pf, hra);
+            var emp = empDetailDisplay(empName,empDept,empSalary,pf,hra,tax);         
+             }
+            var empPf = (salary) => {
+                pf =(salary*15)/100;
+                return pf;
+            }
+            var empHra = (salary) => {
+                hra = (salary*25)/100;
+                return hra;
+            }
+            var empTax = (salary, pf,hra) => {
+                var taxAmount = ((salary+pf+hra)*15)/100;
+                return taxAmount;
+            }
+           var empDetailDisplay = (empName,empDept,empSalary,pf,hra,tax) => {
+                console.log(empName);
+                console.log(empDept);
+                console.log(empSalary);
+                console.log(pf);
+                console.log(hra);
+                console.log(tax);
+
+            }    
+            
+            detail()
+    </script>
+</body>
+</html>

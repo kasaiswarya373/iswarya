@@ -1,0 +1,19 @@
+!important
+
+css prop !important
+
+div - color black 
+    span 
+        p - color: green
+            h3  - color - blue
+
+
+----------
+
+need to run the resoudrces from the server (webserver)
+
+
+
+    Webserver 
+        1. server the requests - API/RESTAPI 
+        2. server the resources 

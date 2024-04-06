@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating setTimeOut and setInterval Methods
+        </title>
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVtMCf8JkBMwLcNWGAzkRNXoUTyueg7FlDog&usqp=CAU">
+    </head>
+    <body>
+        <div>
+            hello please copy this otp within 5 sec,,otherwise it will be gone...
+            <br>
+            <b>P34509</b>
+        </div>
+        <script>
+
+
+
+            var dispalyThanksMsg  = () => {
+                console.log("Thanks for visiting out webpage...");
+            }
+
+
+            console.log("Start");
+
+                // dispalyThanksMsg();
+
+                // setTimeout(dispalyThanksMsg,  5000);
+
+                setTimeout(() => {
+                    console.log("Thanks for visiting out webpage...");
+                }, 5000);
+
+            console.log("End")
+
+            /* setTimeout(() => {
+                document.querySelector("div").style.display = '
+                ';
+            }, 5000) */
+
+            
+        </script>
+    </body>
+</html>

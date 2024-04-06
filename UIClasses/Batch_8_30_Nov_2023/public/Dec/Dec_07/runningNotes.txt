@@ -1,0 +1,61 @@
+UL and OL Tags
+
+div
+    span 
+        p 
+            h3
+ul 
+    
+    li 
+        ...
+
+    li 
+
+
+    li
+---------------------------------
+div.abc
+    div
+        p 
+
+    span 
+        p 
+            div 
+
+div
+
+.abc > div {
+    color: green
+}
+-----------------------------
+
+Table: 
+    Basic structure of a table 
+
+        table
+            thead 
+                tr 
+                    th 
+                    th 
+                    th 
+            tbody 
+                tr 
+                    td 
+                    td 
+                    td
+            tfoot
+                tr 
+                    td 
+                    td 
+                    td
+-------------------
+
+display: none/inline/block/inline-block/ grid/flex ... ;
+
+----------
+
+visibility
+
+Background images 
+Image spriting
+-----------

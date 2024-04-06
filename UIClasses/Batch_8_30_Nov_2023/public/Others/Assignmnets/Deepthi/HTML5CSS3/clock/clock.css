@@ -1,0 +1,113 @@
+.circle{
+    border-radius: 50% ;
+    border:8px solid gainsboro;
+    width:250px;
+    height:250px;
+    margin:100px auto;
+    background-color: dodgerblue;
+    position:relative;
+    left:5px;
+    top: 60px;
+}
+body{
+    background-image: linear-gradient(270deg,gainsboro,#000000,grey);
+}
+.hand{
+    transform-origin: bottom;
+    position: absolute;
+}
+.hourHand{
+
+    width: 1.8%;
+    height: 25%;
+    background-color: gainsboro;
+    border:3px solid gainsboro;
+    font-weight: bold;
+    border-radius: 10px;
+    top:63px;
+    left: 119px;
+
+}
+.minHand{
+    
+    width: 1.6%;
+    height: 35%;
+    background-color: gainsboro;
+    border:2px solid gainsboro;
+    border-radius: 5px;
+    top:40px;
+    left:120px;
+}
+.secHand{
+    
+    width: 1%;
+    height: 40%;
+    background-color: red;
+    border:1px solid red;
+    border-radius: 2px;
+    top:29px;
+    left:122px;
+}
+.dot{
+    position:absolute;
+    font-weight: bold;
+    color:black;
+    font-size:58px;
+    right:119px;
+    top: 78px;
+    z-index:1;
+
+}
+.clock{
+    position:absolute;
+    font-weight:bold;
+    font-size: x-large;
+}
+.one{
+    left: 178px;
+    top:18px;
+}
+.two{
+    left:211px;
+    top:56px;
+}
+.three{
+    left:228px;
+    top: 108px;
+}
+.four{
+    left:212px;
+    top:161px;
+}
+.five{
+    left:176px;
+    top: 198px;
+}
+.six{
+    left:119px;
+    top:216px;
+}
+.seven{
+    left:64px;
+    top:202px;
+}
+.eight{
+    left:26px;
+    top:162px;
+}
+.nine{
+    left:10px;
+    top:112px;
+}
+.ten{
+    left:19px;
+    top:61px;
+}
+.eleven{
+    left:57px;
+    top:22px;
+}
+.twelve{
+    left:115px;
+    top:4px;
+}

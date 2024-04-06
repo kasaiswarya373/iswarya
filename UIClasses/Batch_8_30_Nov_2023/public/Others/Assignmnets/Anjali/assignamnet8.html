@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Employee Details</title>
+    </head>
+    <body>
+        <script>
+          var ename = prompt("enter the ename");
+          
+          var egender = prompt("enter the egender"); 
+          
+          var ebs = prompt("enter the basic sal");
+          ebs = parseInt(ebs);
+
+          console.log("ename is " +ename);
+          console.log("egender is " +egender);
+          console.log("ebasic salary is " +ebs);
+
+          if(egender="male")
+          {
+            if(ebs >= 200000){
+              console.log("tax is 15%")
+            }
+             else if(ebs < 200000 || ebs >= 100000){
+              console.log("tax is 10%")
+            }
+             else if(ebs <= 100000 || ebs == 50000){
+              console.log("tax is 5")
+            }          
+             else
+            {
+              console.log("No tax")
+            }
+          }
+          
+          else if(egender="female")
+          {
+            if(ebs >= 200000){
+              console.log("tax is 10%")
+            }
+             else if(ebs < 200000 || ebs >= 100000){
+              console.log("tax is 5%")
+            }
+            else
+            {
+            console.log("No tax")
+            }
+          }
+           
+
+
+          
+        </script>
+    </body>
+</html>

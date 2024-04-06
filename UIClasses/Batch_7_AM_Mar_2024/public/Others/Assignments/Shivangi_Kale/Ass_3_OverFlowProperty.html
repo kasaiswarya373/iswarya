@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Using Overflow Property </title>
+</head>
+<style>
+    .header,
+    .footer
+    {
+        padding: 10px;
+        width:70%;
+        border: 1px solid;
+        text-align: center;
+        margin-left: 15%;
+        text-decoration: underline;
+        background-image: url(img/back2.jpg);
+     
+    }
+    .middle
+    {
+        padding: 10px;
+        width:70%;
+        height:540px;
+        border: 1px solid;
+        margin-left: 15%;   
+        background-color:#F5EEF8;     
+    }
+    .mid1
+    {
+        padding: 10px;
+        width:30%;
+        height:520px;
+        border: 1px solid;   
+        float:left;    
+        color:black;
+    }
+
+    .mid2
+    {
+        padding: 10px;
+        width:65%;
+        height:520px;
+        border: 1px solid;   
+        float: right; 
+        overflow: scroll;   
+    
+    }
+    
+    .mid2_1
+    {
+        padding: 10px;
+        width:95%;
+        height:150px;
+        border: 1px solid;    
+        border-radius: 10px;  
+        margin: 10px;        
+    }
+  
+   li{
+    border: 1px solid;
+    padding: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    list-style-position: inside;
+    text-align: center;
+    
+   }
+   
+
+   .mid2_1 li
+    {
+        
+        border: 0px solid;
+        padding: 10px;
+        line-height: 10px;
+        list-style-type: none;
+        text-align: center;
+    }
+   img{
+    width: 40%;
+    height:150px;
+    float:left;
+    margin-right: 60px;
+    border-radius: 10px;
+   }
+
+
+</style>
+<body>
+    <div class="header">
+        <h3>Students Details</h3>
+    </div>
+
+    <div class="middle">
+        <div class="mid1">  
+            <ol>
+                <li><a href="#item1">Darshan</a></li>
+                <li><a href="#item2">Niharika</a></li>
+                <li><a href="#item3">Gayatri</a></li>
+                <li><a href="#item4">Radhika</a></li>
+                <li><a href="#item5">Shlok</a></li>
+                <li><a href="#item6">Advait</a></li>
+            </ol>       
+        </div>   
+       
+        <div class="mid2">  
+           <div class="mid2_1">
+            <img src="img/stud6.png" alt="Student Image">
+            <ul>
+                <li id="item1">Name : Darshan</li>
+                <li>Age : 22</li>
+                <li>Gender : Male</li>
+                <li>Location : Pune</li>
+            </ul> 
+           </div>   
+           
+           
+           <div class="mid2_1">
+            <img src="img/stud5.png" alt="Student Image">
+            <ul>
+                <li id="item2">Name : Niharika</li>
+                <li>Age : 23</li>
+                <li>Gender : Female</li>
+                <li>Location : Nashik</li>
+            </ul> 
+           </div>   
+
+           <div class="mid2_1">
+            <img src="img/stud4.png" alt="Student Image">
+            <ul>
+                <li id="item3">Name : Gayatri</li>
+                <li>Age : 24</li>
+                <li>Gender : Female</li>
+                <li>Location : Nagpur</li>
+            </ul> 
+           </div>   
+
+           <div class="mid2_1">
+            <img src="img/stud9.jpg" alt="Student Image">
+            <ul>
+                <li id="item4">Name : Radhika</li>
+                <li>Age : 21</li>
+                <li>Gender : Female</li>
+                <li>Location : Mumbai</li>
+            </ul> 
+           </div>   
+
+           <div class="mid2_1">
+            <img src="img/stud2.png" alt="Student Image">
+            <ul>
+                <li id="item5">Name : Shlok</li>
+                <li>Age : 24</li>
+                <li>Gender : Male</li>
+                <li>Location : Pune</li>
+            </ul> 
+           </div>   
+
+           <div class="mid2_1">
+            <img src="img/stud3.png" alt="Student Image">
+            <ul>
+                <li id="item6">Name : Advait</li>
+                <li>Age : 23</li>
+                <li>Gender : Male</li>
+                <li>Location : Hyderabad</li>
+            </ul> 
+           </div>   
+        </div>   
+       
+    </div>
+
+    
+  
+    <div class="footer">
+        <h3>@ copy rights 2024</h3>
+    </div>
+    
+</body>
+</html>

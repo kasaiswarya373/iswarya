@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image_Spriting</title>
+    <style>
+        .Header,
+        .Footer{
+            border: 2px solid red;
+            text-align: center;
+            margin: 10px auto;
+            padding: 5px;
+            background-color: gray;
+        }
+        .MainBlock{
+            border: 2px solid red;
+            margin: 10px auto;
+            padding: 5px;
+            background-color: aqua;
+        }
+        .content{
+            border: 2px solid blue;
+            margin: 5px auto;
+            padding: 5px;
+            height: 550px;
+            background-color: lightskyblue;
+        }
+        .LeftBlock{
+            border: 2px solid darkred;
+            width: 250px;
+            margin: 10px;
+            float: left;
+            height: 500px;
+            background-color: aquamarine;
+        }
+        .RightBlock{
+            border: 2px solid darkblue;
+            width: 1080px;
+            height: 500px;
+            margin: 5px auto;
+            padding: 5px;
+            overflow: auto;
+            float: left;
+            background-color: lightseagreen;
+        }
+        .LeftBlock li{
+            border: 1px ;
+            line-height: 40px;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .studentDetails{
+            border: 1px solid;
+            height: 220px;
+            margin: 5px;
+        }
+        .image{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            margin: 10px 10px 0px 10px;
+            background-image: url(image.png);
+            float: left;
+        }
+        .details{
+            border: 1px;
+            float: left;
+            margin: 10px;
+            line-height: 40px;
+        }
+        .Kumar{
+            background-position: -55px -21px;
+        }
+        .Meena{
+            background-position: 832px 1289px;
+        }
+        .Rajesh{
+            background-position: 596px 1289px;
+        }
+        .Teena{
+            background-position: 208px 640px;
+        }
+        .Krish{
+            background-position: 658px 936px;
+        }
+        .Prasad{
+            background-position: -130px 956px;
+        }
+        .Suma{
+            background-position: 263px 1003px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Header">
+        STUDENT DETAILS
+    </div>
+    <div class="MainBlock">
+        <div class="content">
+            <div class="LeftBlock">
+                <ol>
+                    <li>
+                        <a href="#Kumar">KUMAR</a>
+                    </li>
+                    <li>
+                        <a href="#Meena">MEENA</a>
+                    </li>
+                    <li>
+                        <a href="#Rajesh">RAJESH</a>
+                    </li>
+                    <li>
+                        <a href="#Teena">TEENA</a>
+                    </li>
+                    <li>
+                        <a href="#Krish">KRISH</a>
+                    </li>
+                    <li>
+                        <a href="#Prasad">PRASAD</a>
+                    </li>
+                    <li>
+                        <a href="#Suma">SUMA</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="RightBlock">
+                <div class="studentDetails" id="Kumar">
+                    <div class="image Kumar"></div>
+                    <div class="details">
+                        <ul>
+                            <li><span>NAME:</span> KUMAR</li>
+                            <li><span>AGE:</span> 24</li>
+                            <li><span>GENDER:</span> Male</li>
+                            <li><span>LOCATION:</span> Machilipatnam</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studentDetails" id="Meena">
+                    <div class="image Meena"></div>
+                    <div class="details">
+                        <ul>
+                            <li><span>NAME:</span> MEENA</li>
+                            <li><span>AGE:</span> 22</li>
+                            <li><span>GENDER:</span> Female</li>
+                            <li><span>LOCATION:</span> Chennai</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studentDetails" id="Rajesh">
+                    <div class="image Rajesh"></div>
+                    <div class="details">
+                        <ul>
+                            <li><span>NAME:</span> RAJESH</li>
+                            <li><span>AGE:</span> 25</li>
+                            <li><span>GENDER:</span> Male</li>
+                            <li><span>LOCATION:</span> Hyderabad</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studentDetails" id="Teena">
+                    <div class="image Teena"></div>
+                    <div class="details">
+                        <ul>
+                            <li><span>NAME:</span> TEENA</li>
+                            <li><span>AGE:</span> 20</li>
+                            <li><span>GENDER:</span> Female</li>
+                            <li><span>LOCATION:</span> Vizag</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studentDetails" id="Krish">
+                    <div class="image Krish"></div>
+                    <div class="details">
+                        <ul>
+                            <li><span>NAME:</span> KRISH</li>
+                            <li><span>AGE:</span> 21</li>
+                            <li><span>GENDER:</span> Male</li>
+                            <li><span>LOCATION:</span> Vijayawada</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studentDetails" id="Prasad">
+                    <div class="image Prasad"></div>
+                    <div class="details">
+                        <ul>
+                            <li><span>NAME:</span> PRASAD</li>
+                            <li><span>AGE:</span> 23</li>
+                            <li><span>GENDER:</span> Male</li>
+                            <li><span>LOCATION:</span> Vizag</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studentDetails" id="Suma">
+                    <div class="image Suma"></div>
+                    <div class="details">
+                        <ul>
+                            <li><span>NAME:</span> SUMA</li>
+                            <li><span>AGE:</span> 24</li>
+                            <li><span>GENDER:</span> Female</li>
+                            <li><span>LOCATION:</span> Hyderabad</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="Footer">
+        StudentDetails@CoyRights-2024
+    </div>
+</body>
+</html>

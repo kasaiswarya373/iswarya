@@ -1,0 +1,143 @@
+footer{
+    margin: 60px;
+    margin-top: 20px;
+}
+.carouselExampleControls{
+    height: 500px;
+}
+body{
+    
+    background-size: cover;
+    
+    
+    
+}
+#staticBackdropLabel{
+    color: aliceblue;
+    font-weight: bold;
+    opacity: 1;
+}
+.modal-header{
+    background-color: black;
+}
+.modal-body{
+    li{
+        list-style: none;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+#refreshButton{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 180px;
+    top: -29px;
+    cursor: pointer;
+}
+#captchaContainer {
+    border: 1px solid black;
+    width: 150px;
+    height: 80px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+canvas{
+    width: 152px;
+    height: 75px;
+    position: relative;
+    left: -3px;
+}
+li{
+    #checkBox{
+        position: relative;
+        top: 0px;
+    }
+}
+.modal-content{
+    background-image: linear-gradient(#FFFFFF, #6DD5FA, #2980B9);
+    opacity: 1;
+}
+
+.fs-4{
+   font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    color: #4f0c31;
+    width: 345px;
+    height: 70px;
+    position: relative;
+    left: -48px;
+  }
+.fs-4-1{
+    font-family: cursive;
+    color: #493240;
+    font-weight: 300;
+    font-size: medium;
+    color: rgb(30, 4, 65);
+    height: 30px;
+    width: 120px;
+    font-size: 15px;
+  }
+  .fs-icon{
+    img{
+    width: 220px;
+    height: 105px;
+    position: relative;
+    left: -56px;
+  }
+}
+
+
+.Sign-up-Page{
+    border-radius: 10px;
+    border: 1px solid lightslategrey;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 5px 5px 5px;
+    li{
+        list-style: none;
+        margin: 20px;
+        padding: 20px;
+
+    }
+    span{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+.modal-fade{
+    
+}
+
+#ForgotPwdPage{
+    border-radius: 10px;
+    border: 1px solid lightslategrey;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 5px 5px 5px;
+    li{
+        list-style: none;
+        margin: 20px;
+        padding: 20px;
+
+    }
+    span{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+.invalidMsgBlock{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(98, 14, 14);
+    font-size: 17px;
+}
+element.style{
+    overflow: scroll;
+}
+
+

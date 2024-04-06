@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="button" onclick="saveDetails()" value="Save" id="testing">
+        <input type="text" onkeypress="keypressedEvent()" onkeydown="keydownevent()">
+        <div id="test">
+            neW
+            <p>
+                sAMPLE
+                <h3>
+                    hello every one
+                </h3>
+            </p>
+        </div>
+        <span></span>
+        <div id="contaienr"></div>
+        <p></p>
+        <script>
+            var issaveDone = false;
+            document.querySelector("#contaienr").innerHTML = 'HEELO'
+
+            var keypressedEvent = () => {
+                console.log("Key press event")
+            }
+
+            var keydownevent = () => {
+                console.log("Key Down event")
+            }
+
+            console.log(document.querySelector("#test").innerText)
+
+            for (var i = 90; i > 20 ; i--) {
+                
+            }
+
+            var saveDetails =  () => {
+                
+                console.log("details got extracted and saved");
+                // document.querySelector("#testing").removeEventListener("click", () => {
+                //     console.log("listener removed")
+                // });
+                document.querySelector("#testing").removeAttribute("onClick")
+            }
+
+        </script>
+    </body>
+</html>

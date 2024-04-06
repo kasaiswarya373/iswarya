@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = prompt("Enter Number");
+        num = parseInt(num);
+        var sum = 0;
+        var rem;
+        while (num > 0) {
+            rem = num % 10;
+            sum += rem;
+            num = num / 10;
+            num = parseInt(num);
+        }
+        console.log("Sum of the number is " + sum);
+    </script>
+</body>
+
+</html>

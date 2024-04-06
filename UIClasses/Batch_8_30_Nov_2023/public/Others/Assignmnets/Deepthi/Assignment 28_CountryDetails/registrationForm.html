@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Page</title>
+    <link rel = "stylesheet" href="countryDetails.css">
+    <script src = "form.js"></script>
+</head>
+<body>
+    <ul>
+        <li class = "title"> User Registration Page</li>
+        <li>
+            <label for = "username">User Name:</label>
+            <input type = "text" name = "username" id = "uname">
+        </li>
+        <li>
+            <label for = "age">Age:</label>
+            <input type = "text" name = "age" id = "uage">
+        </li>
+        <li>
+            <label for = "country">Country:</label>
+            <select name = "country" id = "countries" onchange="getStates()">
+                <option value = "">Select Country</option>
+                <option>India</option>
+                <option>USA</option>
+            </select>
+        </li>
+        <li>
+            <label for = "state">State:</label>
+            <select name = "state" id = "states" onchange="getDistricts()">
+                <option></option>
+            </select>
+        </li>
+        <li>
+            <label for = "district">District:</label>
+            <select name = "district" id = "districts"></select>
+            <option></option>
+        </li>
+        <li class = "button">
+            <input type = "button" value = "Register" onclick = "getRegister()">
+        </li>
+
+    </ul>
+</body>
+</html>

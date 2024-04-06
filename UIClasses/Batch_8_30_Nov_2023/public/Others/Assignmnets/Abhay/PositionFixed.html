@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg');
+            height: 100%;
+            /* background-size: cover; */
+        }
+
+        .navbar {
+            background-color: #131A22;
+            height: 85px;
+            position: fixed;
+            left: 10px;
+            right: 10px;
+            margin-top: -8px;
+            z-index: 2;
+        }
+
+        .logo img {
+            width: 200px;
+            height: 74px;
+            margin: 10px;
+            float: left;
+        }
+
+        .tab1,
+        .tab2,
+        .tab3,
+        .tab4 {
+            border: 1px solid white;
+            width: 120px;
+            height: 25px;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            margin: 22px 20px 0px 10px;
+            border-radius: 40px;
+        }
+
+        .btn {
+            border: 1px solid yellow;
+            width: 120px;
+            height: 25px;
+            color: orange;
+            text-align: center;
+            padding-top: 10px;
+            margin: 22px 20px 0px 10px;
+            border-radius: 40px;
+        }
+
+        .tab1 {
+            float: right;
+        }
+
+        .tab1:hover {
+            background-color: whitesmoke;
+            color: black;
+            cursor: pointer;
+        }
+
+        .tab2 {
+            float: right;
+        }
+
+        .tab2:hover {
+            background-color: whitesmoke;
+            color: black;
+            cursor: pointer;
+        }
+
+        .tab3 {
+            float: right;
+        }
+
+        .tab3:hover {
+            background-color: whitesmoke;
+            color: black;
+            cursor: pointer;
+        }
+
+        .tab4 {
+            float: right;
+        }
+
+        .tab4:hover {
+            background-color: whitesmoke;
+            color: black;
+            cursor: pointer;
+        }
+
+        .btn {
+            float: right;
+        }
+
+        .btn:hover {
+            background-color: yellow;
+            color: black;
+            cursor: pointer;
+        }
+
+        .parent {
+            clear: both;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .heading {
+            color: black;
+            font-size: 28px;
+        }
+
+        .sub_heading {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .man1,
+        .man2,
+        .man3,
+        .man4,
+        .man5,
+        .man6,
+        .man7,
+        .man8 {
+            border: 1px solid;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            border-radius: 30px;
+            background-image: url("images/image.png");
+            background-size: 80px;
+        }
+
+        .man1 {
+            top: 132px;
+            left: 750px;
+            background-position: 81px 168px;
+        }
+
+        .man2 {
+            top: 132px;
+            left: 899px;
+            background-position: 80px 253px
+        }
+
+        .man3 {
+            top: 132px;
+            left: 1048px;
+            background-position: 80px 342px
+        }
+
+        .man4 {
+            top: 132px;
+            left: 1197px;
+            background-position: 80px 429px
+        }
+
+        .man5 {
+            top: 250px;
+            left: 750px;
+            background-position: 80px 519px
+        }
+
+        .man6 {
+            top: 250px;
+            left: 899px;
+            background-position: 80px 869px
+        }
+
+        .man7 {
+            top: 250px;
+            left: 1048px;
+            background-position: 80px 1042px
+        }
+
+        .man8 {
+            top: 250px;
+            left: 1197px;
+            background-position: 80px 1306px
+        }
+
+        .point {
+            clear: both;
+            margin-top: 280px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            width: 60%;
+        }
+
+        .point h1::first-letter {
+            font-size: 70px;
+            color: #4285F4;
+        }
+
+        .point1 img {
+            position: absolute;
+            left: 870px;
+            top: 350px;
+        }
+
+        .cover {
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            height: 80%;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            border: 2px solid;
+            width: 230px;
+            height: 300px;
+            position: absolute;
+            border-radius: 20px;
+            background-image: url(images/spriting_image.png);
+        }
+
+        .box1 {
+            left: 120px;
+            background-position: -552px -50px;
+            text-align: center;
+        }
+
+        .box2 {
+            left: 535px;
+            background-position: -552px 599px;
+        }
+
+        .box3 {
+            right: 120px;
+            background-position: -537px 1253px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 38px;
+            background-color: whitesmoke;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .names {
+            /* background-color: #131A22; */
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 140px;
+            /* opacity: 0.3; */
+        }
+
+        .stud1,
+        .stud2,
+        .stud3 {
+            border: 1px solid;
+            font-weight: bold;
+            width: 90px;
+            height: 30px;
+            text-align: center;
+            padding-top: 8px;
+            float: left;
+            border-radius: 40px 5px;
+        }
+
+        .stud1 {
+            position: absolute;
+            left: 190px;
+        }
+
+        .stud2 {
+            position: absolute;
+            left: 607px;
+            ;
+        }
+
+        .stud3 {
+            position: absolute;
+            right: 190px;
+        }
+
+        .stud1:hover {
+            background-color: grey;
+            color: white;
+            cursor: pointer;
+        }
+
+        .stud2:hover {
+            background-color: grey;
+            color: white;
+            cursor: pointer;
+        }
+
+        .stud3:hover {
+            background-color: grey;
+            color: white;
+            cursor: pointer;
+        }
+
+        .sticker {
+            /* border: 1px solid; */
+            background-color: #FFC30E;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            padding-top: 10px;
+            border-radius: 30px 0px 0px 30px;
+            position: fixed;
+            bottom: 40px;
+            right: 10px;
+        }
+
+        .sticker a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0px;
+            left: 519px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="https://www.google.com/"> <img
+                        src="https://static.vecteezy.com/system/resources/previews/013/760/950/original/colourful-google-text-logo-on-dark-background-free-vector.jpg"
+                        alt="Google Logo"></a>
+            </div>
+            <div class="tab1">Products</div>
+            <div class="tab2">Solutions</div>
+            <div class="tab3">Customers</div>
+            <div class="tab4">Blog</div>
+            <div class="btn">Request a Demo</div>
+        </div> <br><br><br><br>
+        <div class="parent">
+            <div class="left">
+                <div class="heading" id="logo">
+                    <h1>Power Your Corporate <br> alumni Community Portal</h1>
+                </div>
+                <div class="sub_heading">
+                    All-in-one. Easy to set up. Highly Customizable.
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="man1 pos"></div>
+                <div class="man2"></div>
+                <div class="man3"></div>
+                <div class="man4"></div>
+                <div class="man5"></div>
+                <div class="man6"></div>
+                <div class="man7"></div>
+                <div class="man8"></div>
+            </div>
+        </div>
+        <div class="point">
+            <h1>Key Findings include:</h1>
+            <ul>
+                <li>Fully 85% of companies say they are modernizing their apps to a microservices architecture</li>
+                <li>A majority of companies (53%) report at least half of their production workloads running on
+                    Kubernetes</li>
+                <li>Fully 93% of companies are using or evaluating an API gateway</li>
+                <li>Nearly half of all companies (49%) report using a service mesh at some level with a further 38%
+                    evaluating a service mesh for use</li>
+                <li>A majority of organizations (56%) with at least half of their apps on microservices architectures
+                    have release cycles that are daily or more frequent.</li>
+            </ul>
+            <div class="point1">
+                <img src="https://ittech-news.com/ap/images/Thumbnail-1.png" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">
+                <h1>2022 Service Mesh Adoption Survey
+                </h1>
+            </div>
+            <div class="cover">
+                <div>
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                </div>
+                <div class="names">
+                    <div class="stud1">Lisa</div>
+                    <div class="stud2">Abhay</div>
+                    <div class="stud3">Daven</div>
+                </div>
+                <div class="footer">
+                    <h3>-----Copyrights @Abhay2023-----</h3>
+                </div>
+            </div>
+            
+        </div>
+        <div class="sticker">
+            <a href="#logo">Go Top</a>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>

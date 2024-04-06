@@ -1,0 +1,43 @@
+h3 {
+    text-align: center;
+    color: darkblue;
+    margin: 5px;
+    padding: 5px;
+}
+ul {
+    border: 1px solid;
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    
+}
+
+li {
+    list-style: none;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+    height: 30px;
+}
+
+.labelText, .controller {
+    float: left;
+}
+
+.labelText {
+    width: 160px;
+}
+
+.controller input[type=number]{
+    width: 50px;
+}
+.dispalyDetailsBlock{
+    display: none;
+}
+
+.controller [name=dropDown]{
+    /* for changing dimension of select department drop down menu */
+    width: 120px;
+    height: 23px;
+    font-size: 13px;
+}

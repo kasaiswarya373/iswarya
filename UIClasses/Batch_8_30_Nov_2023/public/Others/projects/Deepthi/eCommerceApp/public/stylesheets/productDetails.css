@@ -1,0 +1,34 @@
+#rightDetailsBlock{
+    display:flex;
+    flex-wrap: wrap;
+}
+.actualPrice{
+    text-align: left;
+    color: orange;
+    text-decoration: line-through;
+    font-weight: bold;
+    position: relative;
+    left:44px;
+    top:-21px;
+
+}
+.discountPrice{
+    color:green;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    left:44px;
+    top:-51px;
+    font-size: 23px;
+}
+.card{
+    margin:5px !important;
+}
+.name{
+    font-weight:bold;
+   
+}
+.name span{
+    text-align: center;
+    color:black;
+}

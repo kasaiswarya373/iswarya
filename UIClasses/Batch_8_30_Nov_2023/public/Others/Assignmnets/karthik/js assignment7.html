@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    student details calculate average
+</head>
+<body>
+    <script>
+    var studentname = prompt(" enter name")
+    var studentage = prompt(" enter age")
+    var studentgender = prompt(" enter gender")
+    var studentlocation = prompt(" enter location")
+    var m1 = prompt("enter sub 1"),m2 = prompt("enter sub 2"), m3 = prompt("enter sub 3"),
+     m4 = prompt("enter sub 4")
+
+     m1 = parseInt(m1);
+     m2 = parseInt(m2);
+     m3 = parseInt(m3);
+     m4 = parseInt(m4);
+
+
+     var total = m1+m2+m3+m4;
+     var avg = total % 5;
+
+     console.log("---------student details---------")
+     console.log("name" + studentname);
+     console.log("age"   + studentage);
+     console.log("gender" + studentgender);
+     console.log("location" + studentlocation);
+     console.log("total"+total);
+     console.log("average"+avg);
+     if(avg >= 40){
+        console.log("pass");
+     if( avg >= 90){
+        
+          console.log("distinction");
+     }
+     else if(avg >= 60){
+        console.log("first class");
+
+     }
+     else{
+        console.log("second class");
+     }
+     } else{
+         console.log("fail");
+     }
+
+
+
+
+
+     
+     
+      
+    </script>
+</body>
+</html>

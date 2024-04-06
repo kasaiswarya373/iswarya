@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(224, 228, 234);
+            color: rgb(220, 8, 100);
+        }
+        .searchbox{
+            width: 600px;
+            background-color: white;
+            margin: 200px auto;
+            border-radius: 5px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        input{
+            flex: 1;
+            height: 50px;
+            background: transparent;
+            border: 0;
+            font-size: 18px;
+            color: purple;
+            outline: 0;
+        }
+        #button{
+            height: 40px;
+            width: 40px;
+        }
+        ::placeholder{
+            color: blue;
+        }
+        .resultbox {
+            color: purple;
+            list-style: none;
+            border-radius: 3px;
+          /*  padding: 15px 10px; */
+            cursor: pointer;
+        }
+        .resultbox {
+            border-top: 1px solid;
+           /* padding: 15px 10px; */
+           font-size: larger;
+        }
+        .resultbox :hover {
+            background-color: rgb(189, 250, 135);
+        }
+        #inputbox{
+            width: 600px;
+            height: 10px;
+            padding: 20px;
+        }
+        #inputbox:hover{
+            background-color: powderblue;
+        }
+        .maindiv{
+            width: 500px;
+            height: 220px;
+            border: 1px solid;
+            margin: 20px auto;
+            margin-top: 300px;
+        }
+        .imgclass{
+            width: 250px;
+            height: 200px; 
+            border: 1px solid;
+            margin: 10px 10px 10px 10px;
+        }
+        .img{
+            width: 250px;
+            height: 200px;
+        }
+        .bookdetails{
+            position: relative;
+            left: 300px;
+            top: -200px;
+        }
+        .block{
+            margin: 20px;
+        }
+    </style>
+  
+    
+</head>
+<body>
+    <div class="searchbox">
+        <div class="row">
+            <input type="text " id="inputbox"  placeholder="search for kids books" autocomplete="off" onkeyup="displayBook(event)">
+            <input type="button" name="search" id="search" value="Search" onclick="displaybooks()" >
+        </div>
+        <div class="resultbox"  onchange="displayonsearch()"></div>
+        <div class="displayblock"></div>
+    </div>
+    <script >
+       var keywords = ['Chandamama Stories' , 'Akbhar-Birbal Stories', 'Tenali RamaKrishna', 'Batti Vikramarka', 'Beauty and the Beast','Doremon','Ramayanam',
+                   'Mahabharatham' , 'The Little Krishna', 'Lilliput','Panchatantram', 'King kachatathapa','Madhura Meenakshi'];
+
+        var displayBook = (event) => {
+            var search = event.target.value.toLowerCase();
+            var books = document.querySelector(".resultbox");
+            books.style.display = search.trim() === '' ? 'none' : 'block' ;
+            books.innerHTML = '';
+            if(search.trim() == ''){
+                return;
+            }
+
+            var matchingbooks = [];
+            matchingbooks = keywords.filter(anybook => anybook.toLowerCase().startsWith(search));
+            //console.log(matchingbooks)
+
+            for(var i = 0 ; i < matchingbooks.length ; i++){
+                var book = matchingbooks[i];
+                var id = "book " + i;
+                var div = document.createElement("div");
+                div.setAttribute("id" , id);
+                div.setAttribute("class" , 'individualbook');
+                div.innerText = book;
+                div.onclick = function(){
+                    displayonsearch(id,book);
+                };
+                books.appendChild(div);
+            }
+        }
+
+        var displayonsearch = (id , book) => {
+                document.querySelector("#inputbox").value = book;
+                document.querySelector(".resultbox").style.display = "none";
+            }
+            
+            var displaybooks = () => {
+                var bookname = document.querySelector("#inputbox").value;
+
+                var bookinfo = null;
+                for(var i = 0 ; i < bookslist.length ; i++){
+                    if(bookname == bookslist[i].name){
+                        bookinfo = bookslist[i];
+                        break;
+                    }
+                }
+                console.log(bookinfo)
+            
+           
+
+           // var bookinfo = null;
+
+         var maindiv = document.createElement("div");
+        maindiv.setAttribute("class", "maindiv");
+
+        var div1 = document.createElement("div");
+        div1.setAttribute("class" , "imgclass");
+        var imgtag = document.createElement("img");
+        imgtag.setAttribute("class" , "img");
+        imgtag.setAttribute("src" , bookinfo.image);
+        div1.append(imgtag);
+        maindiv.append(div1);
+
+        var bookdiv = document.createElement("div");
+        bookdiv.setAttribute("class" , "bookdetails");
+
+        var div2 = document.createElement("div");
+        div2.setAttribute("class" , "block");
+        var b1 = document.createElement("b");
+        b1.innerText = "Name: ";
+        var span1 = document.createElement("span");
+        span1.innerText = bookinfo.name;
+        div2.append(b1);
+        div2.append(span1);
+        bookdiv.append(div2);
+
+        var div3 = document.createElement("div");
+       div3.setAttribute("class" , "block");
+       var b2 = document.createElement("b");
+       b2.innerText = "Publisher: ";
+       var span2 = document.createElement("span");
+       span2.innerText = bookinfo.publishers;
+       div3.append(b2);
+      div3.append(span2);
+      bookdiv.append(div3);
+
+
+      maindiv.append(bookdiv);
+      document.querySelector(".displayblock").append(maindiv);
+            }
+
+     
+    </script>
+     <script src="auto.js"></script>
+</body>
+</html>

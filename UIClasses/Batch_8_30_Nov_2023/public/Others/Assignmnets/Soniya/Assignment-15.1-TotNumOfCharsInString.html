@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total number of chars in string</title>
+</head>
+<body>
+    Program to find total number of characters in a  string
+    <script>
+        var getString = () =>
+        {
+            var string = prompt(`Enter String`);
+            return string;
+        }
+
+        var charCountInString = (str) =>
+        {
+            var charCount = 0;
+            for(var i = 0;i < str.length;i++)
+            {
+                if(str[i] != ' ')
+                {
+                    charCount += 1;
+                }
+            }
+            return charCount;
+        }
+
+        var printChars =() =>
+        {
+        var str = getString();
+        var charCount = charCountInString(str);
+        console.log(`Characters in "${str}" are ${charCount}`);
+        }
+
+        printChars();
+        
+    </script>
+</body>
+</html>

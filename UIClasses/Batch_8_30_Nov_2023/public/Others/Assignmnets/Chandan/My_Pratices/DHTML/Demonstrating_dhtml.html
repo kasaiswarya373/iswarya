@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating Dhtml </title>
+    </head>
+    <body>
+        <h3> Demonstrating dhtml concepts...</h3>
+        <div id="container">
+            
+        </div>
+        <script>
+
+           var msg = "Hello everyone...";
+           var ptag = document.createElement('p')
+           ptag.innerText = msg
+           ptag.setAttribute("id", "sample");
+           ptag.setAttribute("class", "test");
+           ptag.setAttribute("title" , "hello");
+           ptag.style.color = 'green'; // inline css
+           ptag.style['font-size']= '30px'; //inline css
+
+           console.log(ptag)
+
+
+           *// document.getElementById('container'). append(ptag)//
+           document.querySelector('#container').append(ptag)
+        
+           
+        </script>
+    
+    </body>
+</html>

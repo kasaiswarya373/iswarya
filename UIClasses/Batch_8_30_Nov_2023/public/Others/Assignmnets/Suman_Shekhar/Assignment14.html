@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <script>
+        var readEmployeeDetails = () => {
+            var empName, empGender, empAge, empDept, empBasicSal, pfPercentage, hraPercentage, totalSal, totalTax, pf, hra, totalTaxPercentage;
+            empName = prompt("Enter the name");
+            empGender = prompt("Enter the gender");
+            empAge = prompt("Enter the age");
+            empDept = prompt("Enter the Dept");
+            empBasicSal = prompt("Enter the basic sal");
+            pfPercentage = prompt("Enter the pf Percentage");
+            hraPercentage = prompt("Enter the hra Percentage");
+            totalTaxPercentage = prompt("Enter the total Tax Percentage");
+
+            var pf = getpf(pfPercentage, pf, empBasicSal);
+            var hra = gethra(hraPercentage, hra, empBasicSal);
+            var totalTax = getTotalTax(empBasicSal, pf, hra, totalSal, totalTaxPercentage);
+            displayEmployeeDetails(empName, empGender, empAge, empDept, empBasicSal, totalTax, pf, hra);
+            
+        }
+        var getpf = (pfPercentage, pf, empBasicSal) => {
+            pf = (pfPercentage * empBasicSal) / 100;
+            return pf;
+        }
+        var gethra = (hraPercentage, hra, empBasicSal) => {
+            hra = (hraPercentage * empBasicSal) / 100;
+            return hra;
+        }
+        var getTotalTax = (empBasicSal, pf, hra, totalTax, totalTaxPercentage) => {
+            var totalSal = empBasicSal + pf + hra;
+            totalTax = (totalTaxPercentage * totalSal) / 100;
+            return totalTax;
+        }
+        var displayEmployeeDetails = (empName, empGender, empAge, empDept, empBasicSal, totalTax, pf, hra) => {
+            console.log("Employee name : " + empName);
+            console.log("Employee gender : " + empGender);
+            console.log("Employee age : " + empAge);
+            console.log("Employee dept : " + empDept);
+            console.log("Employee basic salary : " + empBasicSal);
+            console.log("Employee pf : " + pf);
+            console.log("Employee hra : " + hra);
+            console.log("Employee total tax : " + totalTax);
+        }
+        readEmployeeDetails();
+    </script>
+</body>
+</html>

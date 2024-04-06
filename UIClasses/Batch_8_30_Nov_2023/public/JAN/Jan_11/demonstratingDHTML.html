@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>
+            Demonstrating dhtml concepts...
+        </h3>
+        <div class="container">
+            
+        </div>
+        <script>
+            var msg = prompt("enter the msg to b eadded")
+            var tagname = prompt("enter the tagname");
+            var ptag = document.createElement(tagname);
+            ptag.innerText = msg;
+            ptag.setAttribute("id", 'sample');
+            ptag.setAttribute("class", 'test');
+            ptag.setAttribute("title", 'hello');
+            ptag.style.color = prompt("Enter text color"); //inline css
+            ptag.style['font-size'] = '20px'; //inline css
+            console.log(ptag);
+            // document.getElementById('container').append(ptag);
+            document.querySelector('DIV').append(ptag);
+
+
+        </script>
+    </body>
+</html>

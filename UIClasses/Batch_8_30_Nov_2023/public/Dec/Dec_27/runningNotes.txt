@@ -1,0 +1,52 @@
+
+
+If Block
+    if (condiiton) {
+        ... 
+        ....
+        .....
+    }
+
+
+While loop 
+for loop syntax:
+
+    for (intialz; cond; inc/dec) {
+        ...
+    }
+
+    ...
+    while(condiiton) {
+        ... 
+        ....
+        .....
+    }
+    ..
+
+-------------
+
+var plateoffood = 'some food';
+while(plateoffood != empty) {
+    take a spoon
+    lift the food
+    put in mouth
+    chew intialz
+}
+
+
+for (var spooncount = 0; plateoffood != empty; spooncount++) {
+    take a spoon
+    lift the food
+    put in mouth
+    chew intialz
+    if (spooncount % 5 == 0) {
+        have some water 
+    }
+    if (spooncount % 10 == 0) {
+        have a small walk
+    }
+}
+
+
+
+spooncount -> 

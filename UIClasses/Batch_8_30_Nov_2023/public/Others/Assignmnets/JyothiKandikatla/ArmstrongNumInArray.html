@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armstrong in a given array</title>
+    </head>
+    <body>
+        <script>
+            var arm = [1, 5, 66, 153];
+         
+            for(var i = 0; i < arm.length; i++){
+                var ArmstrongNo =arm[i].toString();
+                var num = ArmstrongNo.length;
+                ArmstrongNo = parseInt(ArmstrongNo);
+            temp = ArmstrongNo;
+                var sum = 0, rem;
+                while( ArmstrongNo > 0){
+                    rem = ArmstrongNo % 10;
+                    sum += rem ** num;
+                    ArmstrongNo =parseInt(ArmstrongNo / 10);
+                    
+                }
+                if(temp == sum){
+                console.log(temp);
+            }
+            }
+            
+        </script> 
+    </body>
+</html>

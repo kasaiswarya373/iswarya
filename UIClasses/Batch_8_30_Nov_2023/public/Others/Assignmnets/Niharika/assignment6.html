@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Details</title>
+    <style>
+        .heading {
+            border: 2px solid;
+            padding: 10px;
+            margin: 10px;
+            background-color: antiquewhite;
+            text-align: center;
+            text-decoration: underline;
+            color: black;
+            border-radius: 20px;
+        }
+        .leftblock,.rightblock {
+            width: 20%;
+            height: 550px;
+            margin: 10px;
+            padding: 10px;
+            background-color: beige;
+            border: 2px solid;
+            float: left;
+            text-align: center;
+            border-radius: 30px;
+        }
+        .rightblock {
+           width: 70%;
+           background-color: blanchedalmond; 
+           overflow: auto;
+        }
+        .blocks {
+            list-style-position: inside;
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .subheading {
+            background-color: aqua;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid;
+            margin-top: 10px;
+        }
+        .subblock {
+            border: 2px solid;
+            width: 95%;
+            height: 200px;
+            margin: 15px;
+            padding: 10px;
+            border-radius: 50px;
+        }
+        .b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8,.b9,.b10 {
+            background-image: url(images/stripingimage.png);
+            width: 150px;
+            height: 150px;
+            border: 1px solid;
+            margin: 5px;
+            float: left;
+        }
+        .b1 {
+            background-position: -60px 486px;
+        }
+        .b2 {
+            background-position: -400px -117px;
+        }
+        .b3 {
+            background-position: -899px 543px;
+        }
+        .b4 {
+            background-position: -1142px 440px;
+        }
+        .b5 {
+            background-position: -1658px 255px;
+        }
+        .b6 {
+            background-position: -1085px 839px;
+        }
+        .b7 {
+            background-position: -851px 258px;
+        }
+        .b8 {
+            background-position: -610px 253px;
+        }
+        .b9 {
+            background-position: -419px 284px;
+        }
+        .b10 {
+            background-position: -663px 521px;
+        }
+        .names {
+            float: left;
+            list-style: none;
+        }
+        .list {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="heading">Student-Details-Page</h3>
+    <div class="leftblock"><span class="subheading">Student-Names</span>
+        <ol>
+            <li class="blocks"><a href="#1">Ramya</a></li>
+            <li class="blocks"><a href="#2">Niha</a></li>
+            <li class="blocks"><a href="#3">Renu</a></li>
+            <li class="blocks"><a href="#4">Nikki</a></li>
+            <li class="blocks"><a href="#5">Sandy</a></li>
+            <li class="blocks"><a href="#6">Dheeraj</a></li>
+            <li class="blocks"><a href="#7">Ram</a></li>
+            <li class="blocks"><a href="#8">Krish</a></li>
+            <li class="blocks"><a href="#9">Karthik</a></li>
+            <li class="blocks"><a href="#10">Raj</a></li>
+        </ol>
+    </div>
+    <div class="rightblock">
+        <div class="subblock">
+            <div class="b1" id="1"></div>
+            <ol class="names">
+                <li class="list"><b>Name:</b>Ramya</li>
+                <li class="list"><b>Age:</b>20yrs</li>
+                <li class="list"><b>Branch:</b>CSE</li>
+                <li class="list"><b>Location: </b>Hyderabad</li>
+            </ol>
+        </div>
+        <div class="subblock">
+            <div class="b2" id="2"></div>
+            <ol class="names">
+                <li class="list"><b>Name:</b>Niha</li>
+                <li class="list"><b>Age:</b>20yrs</li>
+                <li class="list"><b>Branch:</b>ECE</li>
+                <li class="list"><b>Location: </b>Hyderabad</li>
+            </ol>
+        </div>
+        <div class="subblock">
+            <div class="b3" id="3"></div>
+            <ol class="names">
+                <li class="list"><b>Name:</b>Renu</li>
+                <li class="list"><b>Age:</b>20yrs</li>
+                <li class="list"><b>Branch:</b>IT</li>
+                <li class="list"><b>Location: </b>Hyderabad</li>
+            </ol>
+        </div>
+        <div class="subblock">
+            <div class="b4" id="4"></div>
+            <ol class="names">
+                <li class="list"><b>Name:</b>Nikki</li>
+                <li class="list"><b>Age:</b>21yrs</li>
+                <li class="list"><b>Branch:</b>EEE</li>
+                <li class="list"><b>Location: </b>Delhi</li>
+            </ol>
+        </div>
+        <div class="subblock">
+            <div class="b5" id="5"></div>
+            <ol class="names">
+                <li class="list"><b>Name:</b>Sandy</li>
+                <li class="list"><b>Age:</b>22yrs</li>
+                <li class="list"><b>Branch:</b>Civil</li>
+                <li class="list"><b>Location: </b>Pune</li>
+            </ol>
+        </div>
+        <div class="subblock">
+            <div class="b6" id="6"></div>
+            <ol class="names">
+                <li class="list"><b>Name:</b>Dheeraj</li>
+                <li class="list"><b>Age:</b>22yrs</li>
+                <li class="list"><b>Branch:</b>Civil</li>
+                <li class="list"><b>Location: </b>Mumbai</li>
+            </ol>
+        </div>
+        <div class="subblock">
+            <div class="b7" id="7"></div>
+            <ol class="names">
+                <li class="list"><b>Name:</b>Ram</li>
+                <li class="list"><b>Age:</b>23yrs</li>
+                <li class="list"><b>Branch:</b>Mechanical</li>
+                <li class="list"><b>Location: </b>Chennai</li>
+            </ol>
+        </div>
+        <div class="subblock">
+            <div class="b8" id="8"></div>
+            <ol class="names">
+                <li class="list"><b>Name:</b>Krish</li>
+                <li class="list"><b>Age:</b>21yrs</li>
+                <li class="list"><b>Branch:</b>ECE</li>
+                <li class="list"><b>Location: </b>Bangalore</li>
+            </ol>
+        </div>
+        <div class="subblock">
+            <div class="b9" id="9"></div>
+            <ol class="names">
+                <li class="list"><b>Name:</b>Karthik</li>
+                <li class="list"><b>Age:</b>21yrs</li>
+                <li class="list"><b>Branch:</b>CSE</li>
+                <li class="list"><b>Location: </b>Kolkata</li>
+            </ol>
+        </div>
+        <div class="subblock">
+            <div class="b10" id="10"></div>
+            <ol class="names">
+                <li class="list"><b>Name:</b>Raj</li>
+                <li class="list"><b>Age:</b>24yrs</li>
+                <li class="list"><b>Branch:</b>IT</li>
+                <li class="list"><b>Location: </b>Kerala</li>
+            </ol>
+        </div>
+
+    </div>
+</body>
+</html>

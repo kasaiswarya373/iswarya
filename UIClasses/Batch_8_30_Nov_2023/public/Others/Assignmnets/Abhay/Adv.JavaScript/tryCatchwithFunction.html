@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <h3>Enter a Number between 15 to 25</h3>
+    <div class="main">
+        <input type="text" name="demo" id="inputDemo">
+        <input type="button" value="Click Here" onclick="myFunction()">
+    </div>
+    <p id="msg"></p>
+    <script>
+        var myFunction = () => {
+            var message = document.querySelector("#msg");
+            message.innerHTML = "";
+            let x = document.querySelector("#inputDemo").value;
+            try {
+                if (x.trim() == "") throw new Error("empty");
+                if (isNaN(Number(x))) throw new Error("not a number");
+                x = Number(x);
+                if (x > 25) throw new Error("too big");
+                if (x < 15) throw new Error("too small");
+            } catch (err) {
+                message.innerHTML = `Input is ${err.message}`;
+            } finally {
+                alert("no matter what happens in the try/catch, i will run.")
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Console.log method</title>
+    </head>
+    <body>
+        <h3>
+            Working with student detail....With help of console log method....
+        </h3>
+        <script>
+            console.log("Student dtails.....")
+            var stdName = 'RAJ';
+            var stdAge = 20;
+            var gender = 'Male';
+            var m1 = 70, m2 = 80, m3 = 95, m4 = 78, m5 = 82;
+
+            var total = m1 + m2 + m3 + m4 + m5;
+            var avg = total / 5;
+
+            console.log("-----------Student Details-------------");
+            console.log("Name " + stdName);
+            console.log("Age " + stdAge);
+            console.log("Gender " + gender);
+            console.log("Total " + total);
+            console.log("Avg " + avg);
+
+            /*if (avg >= 40) {
+                console.log("Student Got PAssed");
+            }
+            
+            if (avg < 40) {
+                console.log("Student Got FAiled");
+            } */ 
+
+            if (avg >= 40) {
+                console.log("Student Got PAssed");
+                if (avg >= 75) {
+                    console.log("Student got distiction");
+                } else if (avg >= 60) {
+                    console.log("student got first calss");
+                } else {
+                    console.log("you got second class")
+                }
+            } else {
+                console.log("Student Got FAiled");
+            }
+
+            console.log("END");
+        </script>
+     </body>
+</html>

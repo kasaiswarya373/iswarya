@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating JS classes
+        </title>
+    </head>
+    <body>
+        <script>
+
+            class UniversityDetails {
+                constructor() {
+                    this.unicvName = 'Great Universirty';
+                    this.univLoc = 'Hyderabad';
+                    this.uniRating = '5/10';
+                }
+                displayUnivDetails() {
+                    console.log("Univ name" + this.univName)
+                    console.log("Univ Loc" + this.univLoc)
+                    console.log("Univ Rating" + this.uniRating)
+                }
+            }
+
+            class CollegeDetails extends UniversityDetails {
+                constructor() {
+                    this.collegeName = "ABC College";
+                    this.collegeRating = '4/5';
+                    this.collegeLocation = 'Chennai';
+                }
+                displayCollegeDetails() {
+                    
+                    console.log("\n-------------College detals-----------------")
+                    console.log("College name " + this.collegeName);
+                    console.log("College Rating " + this.collegeRating);
+                    console.log("College Location " + this.collegeLocation);
+
+
+                    
+
+                }
+            }
+
+            class StudentDetails extends UniversityDetails {
+                constructor() {
+                    this.sName = 'Raj';
+                    this.age = 20;
+                    this.course = 'MBA';
+
+                }
+                displayStudentDetails() {
+                    console.log("\n-------------Student detals-----------------")
+                    console.log("Stduent name " + this.sName);
+                    console.log("Stduent Age " + this.age);
+                    console.log("Stduent Course " + this.course);
+
+                    console.log("Univ name" + this.univName)
+                    console.log("Univ Loc" + this.univLoc)
+                    console.log("Univ Rating" + this.uniRating)
+                }
+            }
+
+            var c1 = new CollegeDetails();
+            c1.displayCollegeDetails();
+
+
+            var s1 = new StudentDetails();
+            s1.displayStudentDetails();
+            
+        </script>
+    </body>
+</html>

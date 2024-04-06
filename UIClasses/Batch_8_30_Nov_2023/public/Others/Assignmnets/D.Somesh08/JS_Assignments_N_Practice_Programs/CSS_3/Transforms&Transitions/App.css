@@ -1,0 +1,53 @@
+.container {
+    border: 2px solid;
+    padding: 180px;
+    width: 110px;
+    margin: auto;
+    border-radius: 50%;
+    text-align: center;
+
+    #hours {
+        width: 25px;
+        position: relative;
+        top: -10px;
+        left: 27px;
+        border: 2px solid;
+    }
+
+    #minutes {
+        width: 45px;
+        position: relative;
+        top: -10px;
+        left: 7px;
+        border: 2px solid;
+    }
+
+    #seconds {
+        width: 50px;
+        position: relative;
+        top: -10px;
+        left: 2px;
+        border: 2px solid;
+    }
+
+    #d360 {
+        position: absolute;
+        top: 15px;
+        right: 50%;
+    }
+
+    #d270 {
+        position: absolute;
+    }
+
+    #d180 {
+        position: absolute;
+
+    }
+
+    #d90 {
+        position: absolute;
+
+    }
+
+}

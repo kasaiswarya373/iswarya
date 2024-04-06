@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Assendiing order
+
+    <script>
+        var a=[56,12,85,96,78,2,1,22]
+        console.log(a)
+
+        for(j=0; j<=a.length; j++) {
+            for(i=j+1; i<=a.length; i++){
+            if(a[j]>a[i]){
+            var temp;
+            var temp=a[j];
+            a[j]=a[i]
+            a[i]=temp;
+        }
+        
+        }
+
+        }       
+           
+        console.log(a)
+        
+        
+       
+        
+    </script>
+</body>
+</html>

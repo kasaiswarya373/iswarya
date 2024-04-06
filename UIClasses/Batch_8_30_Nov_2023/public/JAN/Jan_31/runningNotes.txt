@@ -1,0 +1,56 @@
+
+ofc boy 
+    open all doors
+    swith on all the systems 
+    siwth on all the lights and fans
+
+    try {
+        if faculy is in, get the projecter on 
+        ... 
+        ...
+
+        
+    } catch(err) {
+        // update the students and admins , no class
+    } finally {
+         evening 6
+        close doors
+        swith off the sytems/ lights
+        get out
+    }
+    
+    go for tea/ movie
+
+
+Exception
+    1. Sytem generated Runtime eerros
+    2. User defined exceptions 
+
+    ------------
+
+    var data = {
+    
+    age: 20
+}
+
+data.name -> 
+---------
+
+try {
+    ... 
+} 
+catch(FileNotfoundexception e) {
+
+}
+catch (indexoutofbouds ex) {
+
+}
+catch(exception e) {
+    
+}
+
+try {
+    ... 
+}catch(err) {
+    
+}

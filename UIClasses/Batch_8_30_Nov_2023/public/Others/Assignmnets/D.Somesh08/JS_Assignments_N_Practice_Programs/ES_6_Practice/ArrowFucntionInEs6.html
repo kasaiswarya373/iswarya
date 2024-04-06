@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Fucntion In Es6</title>
+</head>
+
+<body>
+    <script>
+
+        normalJsFunction(); //normal functions in JS follows variable hoisting.But functions does'nt!!!
+
+        function normalJsFunction() {
+            console.log("normalJsFunction in javascript!!!");
+        }
+
+        let arrowFn = () => {
+            console.log("inside arrow function!!!!");
+        }
+        arrowFn();
+    </script>
+</body>
+
+</html>

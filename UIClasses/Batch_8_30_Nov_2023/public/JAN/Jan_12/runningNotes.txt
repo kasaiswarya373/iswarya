@@ -1,0 +1,31 @@
+https://www.amazon.in/Puma-Womens-Ultimate-Ease-Black-Lavendar/dp/B0B51GLN51/?_encoding=UTF8&pd_rd_w=LASqT&content-id=amzn1.sym.6a567e3d-fd9a-4932-aa05-d0107e1bcce7&pf_rd_p=6a567e3d-fd9a-4932-aa05-d0107e1bcce7&pf_rd_r=M3N09VCD9N7735Q98ZNX&pd_rd_wg=3HbjK&pd_rd_r=95a552b6-265a-4e70-ae3c-7fe317a29da2&ref_=pd_gw_a2i_gw_cml&th=1&psc=1
+
+
+
+Event handling
+
+    Event:
+
+        event handling 
+
+            2 ways 
+
+                1. static event handling
+
+                    static event attributes to the html elements 
+
+                        onclick 
+                        onfocus
+                        onchange
+                        oncblur
+                        onkeyup
+                        onkeydown
+                        onmouseover
+                        onmousout
+                        ondoubleclick
+                        ondrag
+                        ondragover
+                        etc.. 
+
+                2. Dyanamic Event handling 
+                    addEventListener()

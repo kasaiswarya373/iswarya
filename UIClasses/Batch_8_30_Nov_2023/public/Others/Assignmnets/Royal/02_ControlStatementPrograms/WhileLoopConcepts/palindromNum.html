@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom Number</title>
+</head>
+<body>
+    <h3>WWA to find Palindrom Number</h3>
+    <script>
+        // var num = 123;
+        var num = parseInt(prompt(`Enter a Number, you'll get Palindrome`));
+        var rev = 0;
+        temp = num;
+        console.log("Original Number = "+num)
+
+        while (num !=0){
+            rev = (rev*10) + (num%10);
+            num = parseInt(num/10);
+        }
+        console.log("Reverse Number = "+rev)
+
+        if(temp == rev){
+            console.log("Number is a Palindrom")
+        } else{
+            console.log("Number is not Palindrom")
+        }
+        
+
+    </script>
+    
+</body>
+</html>

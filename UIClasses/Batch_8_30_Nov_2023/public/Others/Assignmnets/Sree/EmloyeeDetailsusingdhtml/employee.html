@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Employee Pay Slip</title>
+    <link rel="stylesheet" href="myapp.css">
+</head>
+<body>
+    <h3> Employement Pay slip</h3>
+    <ul>
+        
+            <li > 
+            <label > Employee Name:</label>
+            <input type="text" id="ename">
+             </li>
+            <li >
+                <label > Age:</label>
+                <input type="text" id="eage">
+            </li>
+            <li >
+                <label > Gender:</label>
+                Male
+                <input type="radio" name="gender" value="Male" />
+                Female
+                <input type="radio" name="gender" value="female" />
+            </li>
+            <li >
+                <label> Department:</label>
+                <select name="" id="Department">
+                    <option value="select"> Select </option>
+                    <option value="it"> IT </option>
+                    <option value="UI"> UI </option>
+                    <option value="HR"> HR </option>
+                    <option value="testing"> Testing </option>
+
+                </select>
+            </li>
+            <li>
+                <label for="salary">Salary:</label>
+                <input type="text" id="salary" />
+              </li>
+              <li>
+                <input type="button" value="Generate Pay Slip" onclick="readData()" />
+              </li>
+         </ul>
+         <div class="paySlipCardHolder"></div>
+
+    <ul id="displayBlock">
+      <li>Employee Name: <span id="d_name"></span></li>
+      <li>Employee Age: <span id="d_age"></span></li>
+      <li>Gender: <span id="d_gender"></span></li>
+      <li>PF: <span id="d_pf"></span></li>
+      <li>HRA: <span id="d_hra"></span></li>
+      <li>Tax: <span id="d_tax"></span></li>
+      <li>Total Salary: <span id="d_salary"></span></li>
+    </ul>
+    <script src="app.js"> </script>
+</body>
+</html>

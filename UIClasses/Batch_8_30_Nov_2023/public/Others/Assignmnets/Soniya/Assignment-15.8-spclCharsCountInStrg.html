@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Symbols count in string</title>
+</head>
+<body>
+    Program to count total special symbols in string
+    <script>
+        var readString = () =>
+        {
+            var string = prompt(`Enter String`);
+            return string;
+        }
+
+        var countSpecialSymbols = (str) =>
+        {
+            var lowerStr = str.toLowerCase();
+            var upperStr = str.toUpperCase();
+            var specialChars = 0;
+            for(var i = 0;i < str.length;i++)
+            {
+                if(lowerStr[i] != " ")
+                {
+                    if(lowerStr[i] == upperStr[i])
+                    {
+                        specialChars++;
+                    }
+                }
+            }
+            return specialChars;
+        }
+        var str = readString();
+        var specialChars = countSpecialSymbols(str);
+        console.log(`Given String "${str}"`);
+        console.log(`Number of Special Characters in String ${specialChars}`);
+    </script>
+</body>
+</html>

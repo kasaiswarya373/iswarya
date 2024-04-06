@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>assignment9 js practice employeeSalary</title>
+</head>
+<body>
+    <script>
+        var name = prompt("enter your name");
+        var gender = prompt("enter your Gender");
+        var age = prompt(" enter your age");
+        var department = prompt("enter your department");
+        var basicSalary = prompt("enter your basic salary");
+
+        basicSalary1 = parseInt(basicSalary);
+        var pf = (basicSalary1 * 14)/100;
+        var hra = (basicSalary1 * 25)/100;
+
+        pf1 = parseInt(pf);
+        hra1 = parseInt(hra);
+        console.log(pf1);
+        console.log(hra1)
+        var total = pf1 + hra1 + basicSalary1;
+
+        console.log(total);
+        console.log(typeof(name));
+        console.log(typeof(gender));
+        console.log(typeof(age));
+        console.log(typeof(department));
+        console.log(typeof(basicSalary));
+        console.log(typeof(total));
+    </script>
+</body>
+</html>

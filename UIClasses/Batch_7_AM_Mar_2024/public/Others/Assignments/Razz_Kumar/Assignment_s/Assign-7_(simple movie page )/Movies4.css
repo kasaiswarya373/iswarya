@@ -1,0 +1,142 @@
+.bar-item:hover {
+    background-color: rgb(208, 129, 84);
+    border-radius: 15px 50px;
+    box-shadow: 4px 4px 6px rgb(110, 224, 214);
+    overflow: hidden;
+
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding-right: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    outline: 3px solid rgb(65, 233, 124);
+}
+
+.sign-in {
+    margin-left: 21px;
+    height: 21px;
+
+
+}
+
+.sign-in:hover {
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 4px 3px 4px rgb(255, 152, 114);
+    padding: 4px 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+/* Style all Font Awesome icons */
+.fa {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 22px;
+    font-size: 80px;
+    width: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    background-position: 221px;
+    text-align: center;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.6;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+
+/* YouTube */
+.fa-youtube {
+    background: #FF0000;
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #f54364;
+    color: white;
+}
+
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin-right: 20px;
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.navbar input {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 3px 50px;
+}
+
+.imgbox {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.imgbox div {
+    width: 265px;
+    height: 320px;
+    overflow: hidden;
+    margin: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.imgbox img {
+    width: 265px;
+    height: 320px;
+    transition: 0.9s ease-in-out;
+}
+
+
+.imgbox .img img:hover {
+    width: 300px;
+    height: 400px;
+    transform: scale(1.2);
+    /* Shadow effect on hover */
+}
+
+
+.img {
+    border: 4px solid;
+    outline: 2px solid rgb(94, 94, 94);
+    cursor: pointer;
+    outline: 2px solid rgb(126, 97, 255);
+    box-shadow: 10px 12px 12px rgb(47, 46, 46);
+}

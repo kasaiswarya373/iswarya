@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: arial;
+    background-color: antiquewhite;
+}
+
+div#wallpaper{
+    margin: 25px auto;
+    width: 100%;
+}
+
+div#wallpaper h1{
+    display: block;
+    background-color: #203d3a;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    width: 140%;
+    border-radius: 10px 10px 10px 10px ;
+    margin: 15px;
+}
+
+div#wallpaper img{
+    width: 150%;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    filter: grayscale(100%);
+
+}
+
+div#block1,div#block2{
+    float:left;
+    margin-top: 25px;
+    padding: 100px;
+
+}

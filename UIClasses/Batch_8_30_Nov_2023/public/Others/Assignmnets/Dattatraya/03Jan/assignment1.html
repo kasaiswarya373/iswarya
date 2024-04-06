@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>
+      WAP to read values into an array & find the sum of even numbers & odd
+      numbers(separate).
+    </h3>
+    <script>
+      var inputArray = [];
+
+      for (var i = 0; i < 2; i++) {
+        var userInput = parseInt(prompt("Enter a number: "));
+        inputArray.push(userInput);
+      }
+      var evenSum = 0;
+      var oddSum = 0;
+
+      for (var i = 0; i < inputArray.length; i++) {
+        if (inputArray[i] % 2 == 0) {
+          evenSum += inputArray[i];
+        } else {
+          oddSum += inputArray[i];
+        }
+      }
+      console.log(evenSum);
+      console.log(oddSum);
+    </script>
+  </body>
+</html>

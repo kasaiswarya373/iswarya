@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment10</title>
+    </head>
+    <body>
+        <h3>Employee Detalis</h3>
+        <script>
+            var empname=prompt("Enter your name");
+            var age=prompt("Enter your age");
+            var gender=prompt("Enter your gender");
+            var department=prompt("Enter your department");
+            var basicsal=prompt("Enter your salary");
+            basicsal=parseInt(basicsal);
+            var totalsal=0,tax=0;
+            var pf=prompt("percentage of pf")*basicsal/100;
+            var hra=prompt("percentage of hra")*basicsal/100;
+            pf=parseFloat(pf);
+            hra=parseFloat(hra);
+
+            console.log("employee name is: " + empname);
+            console.log("age: " + age);
+            console.log("gender: " + gender);
+            console.log("department: "+ department);
+            console.log("basicsal: " + basicsal);
+            console.log("pf: " + pf);
+            console.log("hra: " + hra);
+
+            if(gender=='male'){
+                if(basicsal>200000){
+                     tax = (15*basicsal)/100;
+                     console.log("Tax: " + tax);
+                    totalsal = basicsal+pf+hra-tax;
+                    console.log("employee salary: " + totalsal);
+                }
+                else if(basicsal>100000){
+                     tax = (10*basicsal)/100;
+                     console.log("Tax: " + tax);
+                    totalsal = basicsal+pf+hra-tax;
+                    console.log("employee salary: " + totalsal);
+                }
+                else if(basicsal>50000){
+                    tax = (5*basicsal)/100;
+                    console.log("Tax: " + tax);
+                    totalsal = basicsal+pf+hra-tax;
+                    console.log("employee salary: " + totalsal);
+                }
+                else{
+                    tax = 0;
+                    console.log("Tax: " + tax);
+                    totalsal = basicsal+pf+hra-tax;
+                    console.log("employee salary: " + totalsal);
+                }
+            }
+            else {
+                if(basicsal>200000){
+                    tax = (10*basicsal)/100;
+                    console.log("Tax: " + tax);
+                    totalsal = basicsal+pf+hra-tax;
+                    console.log("employee salary: " + totalsal);
+                }
+                else if(basicsal>100000){
+                    tax = (5*basicsal)/100;
+                    console.log("Tax: " + tax);
+                    totalsal = basicsal+pf+hra-tax;
+                    console.log("employee salary: " + totalsal);
+                }
+                else if(basicsal>50000){
+                    tax = 0;
+                    console.log("Tax: " + tax);
+                    totalsal = basicsal+pf+hra-tax;
+                    console.log("employee salary: " + totalsal);
+                }
+                else{
+                    tax = 0;
+                    console.log("Tax: " + tax);
+                    totalsal = basicsal+pf+hra-tax;
+                    console.log("employee salary: " + totalsal);
+                }
+            }
+        </script>
+    </body>
+</html>

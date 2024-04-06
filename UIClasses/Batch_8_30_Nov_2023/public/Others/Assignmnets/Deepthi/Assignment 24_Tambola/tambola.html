@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambola Game</title>
+    <link rel="styleSheet" href = "game.css">
+</head>
+<body>
+    <div id = "numberDisplay"></div>
+    <input type = "button" value = "click" onclick = "getNumber()">
+    <div class = "mainContainer">
+        
+    </div>
+    <script>
+
+    var numbersDisplay = () => {
+        var divTag1 = document.createElement("div");
+        divTag1.setAttribute("class","container");
+    
+        for (var i = 1; i <= 100; i++) {
+            var divTag2 = document.createElement("div");
+            divTag2.setAttribute("class", "box");
+            divTag2.setAttribute("id",`${i}`);
+            divTag2.innerText = i;
+            divTag1.append(divTag2);
+        }
+        console.log(divTag1);
+        document.querySelector('.mainContainer').append(divTag1);                                                                                                                                                                              
+    }
+    numbersDisplay();
+
+    var box = [];
+    var getNumber = () => {
+                var minRange = 1;
+                var maxRange = 101;
+                var number = Math.floor((Math.random() * (maxRange-minRange)) +minRange);
+                    for( var i = 1; i < box.length; i++ ){
+                        if(number == box[i]){
+                            number = Math.floor((Math.random() * (maxRange - minRange)) + minRange);
+                            i = 0;
+                        }
+                        console.log(number)
+                        }
+
+                document.getElementById('numberDisplay').innerHTML = number;
+                document.getElementById(number).style.backgroundColor='yellow';
+
+                if(box.length == 100 ){
+                    alert("Game-over!!!!!!!");
+                }
+                box.push(number);
+                }
+
+      </script>
+</body>
+</html>

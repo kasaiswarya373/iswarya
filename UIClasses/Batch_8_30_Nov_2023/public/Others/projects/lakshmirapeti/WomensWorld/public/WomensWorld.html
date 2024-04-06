@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/logo.jpg">
+  <link rel="stylesheet" href="./WomensWorld.css">
+  <link rel="stylesheet" href="./libraries/bootstrap/dist/css/bootstrap.min.css">
+  <script src="./libraries/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./libraries/bootstrap-icons/font/bootstrap-icons.min.css">
+  <script src="./libraries/axios.min.js"></script>
+
+  <title>WomensWorld</title>
+</head>
+
+<body id="body">
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <image src="./images/logo.jpg" id="logo" />
+      <div style="width:40%" id="searchblock" class="nav-item">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+          <span id="border">
+            <i class="bi bi-search" id="searchbtn"></i>
+          </span>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-5">
+          <li class="nav-item me-4">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginmodal"
+              id="login">
+              Login
+            </button>
+          </li>
+          <li class="nav-item me-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupmodal"
+              id="signup">
+              Signup
+            </button>
+          </li>
+          <li class="navitem me-4">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#logoutmodal"
+              id="logoutbtn">
+              Logout
+            </button>
+          </li>
+          <li class="nav-item">
+            <i class="bi bi-cart" id="carticon">
+              <span id="cart">Cart</span>
+            </i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br><br><br>
+  <div class="nav2">
+    <ul>
+      <li></li>
+      <li class="me-5" id="groceries">
+        <image src="./images/grocery.jpg" style="width:50px;height:50px" />
+        <p>Groceries</p>
+      </li>
+      <li class="me-5" id="sarees">
+        <image src="./images/sareedisplay.jpg" style="width:50px;height:50px" />
+        <p>Sarees</p>
+      </li>
+      <li class="me-5" id="western">
+        <image src="./images/western wear.jpg" style="width:50px;height:50px" />
+        <p>Western Wear</p>
+      </li>
+      <li class="me-5" id="beauty">
+        <image src="./images/beauty products.jpg" style="width:50px;height:50px" />
+        <p>Beauty</p>
+      </li>
+      <li class="me-5" id="decoratives">
+        <image src="./images/home decoratives.jpg" style="width:50px;height:50px" />
+        <p>Home Decoratives</p>
+      </li>
+      <li class="me-5" id="appliances">
+        <image src="./images/appliances.jpg" style="width:50px;height:50px" />
+        <p>Appliances</p>
+      </li>
+      <li class="me-5" id="mobiles">
+        <image src="./images/mobiles.jpg" style="width:50px;height:50px" />
+        <p>Mobiles</p>
+      </li>
+      <li></li>
+    </ul>
+  </div>
+
+  <!-- modals -->
+
+  <!-- login -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="bi bi-person-circle"></i>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul id="loginform">
+            <li>
+              <input type="text" class="form-control" placeholder="Enter username" id="username" />
+              <i class="bi bi-person-circle"></i>
+            </li>
+            <li>
+              <input type="password" class="form-control" placeholder="Enter Password" id="password">
+              <i class="bi bi-eye" id="eyeicon"></i><span><i class="bi bi-eye-slash" id="hideeyeicon"></i></span>
+              <i class="bi bi-lock"></i>
+              </input>
+            </li>
+            <p id="loginid">Invalid UserId....</p>
+            <p id="loginpass">Invalid Password..</p>
+            <br>
+
+            <div>
+              <li id="block">
+                <span>
+                  <input type="checkbox" />Remember me
+                </span>
+                <a href="#" class="link-primary me-2" data-bs-toggle="modal" data-bs-target="#forgotmodal">Forgot
+                  Password?</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="login">
+          <button type="button" class="btn btn-primary" id="loginbtn" disabled onclick="logindetails()">Login</button>
+        </div>
+        <br>
+        <div id="bottom">
+          <h6>Not a member?</h6>
+          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#signupmodal">Create account</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- signup -->
+  <div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Signup User</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="signupform">
+            <ul>
+              <li>
+                <input type="text" placeholder="Enter Name" class="form-control signupusername" id="signupusername"
+                  value="">
+                <i class="bi bi-person-circle"></i>
+                <p id="errormsg">Username must be between 5-15 charcters</p>
+                <p id="namemsg">Username doesn't have numbers only symbols and charcters</p>
+              </li>
+              <li>
+                <input type="password" placeholder="Create Password" class="form-control signuppassword"
+                  id="signuppassword" value="">
+                <i class="bi bi-key"></i>
+                <i class="bi bi-eye" id="signupeyeicon"></i><i class="bi bi-eye-slash" id="signuphideeyeicon"></i>
+                <p id="pattern">Password should have _ and @ symbols only</p>
+                <p id="passlen">password length is greater than 4 charcters</p>
+              </li>
+              <li>
+                <input type="password" placeholder="Re-enter Password" class="form-control signupreenter"
+                  id="signupreenter" />
+                <i class="bi bi-key"></i>
+                <i class="bi bi-eye" id="signupreentereyeicon"></i><i class="bi bi-eye-slash"
+                  id="signupreenterhideeyeicon"></i>
+                <p id="matchpass">Password not matched</p>
+              </li>
+              <li>
+                <input type="text" placeholder="Enter Email" class="form-control signupemail" id="signupemail"
+                  value="" />
+                <i class="bi bi-envelope"></i>
+                <p id="emailerr">Enter valid email</p>
+              </li>
+              <li>
+                <input type="number" placeholder="Enter Phone number " class="form-control signupnumber"
+                  id="signupnumber" />
+                <i class="bi bi-telephone"></i>
+                <p id="numerr">Enter valid phonenumber</p>
+              </li>
+              <span id="genderbtn" class="ms-3">
+                <span style="color: gray;">Select Gender</span>
+                <span>
+                  <image src="./images/femaleicon.png" id="image" />
+                </span>
+                <input type="radio" name="gender" id="female" value="Female"/>
+                <span class="ms-5">
+                  <image src="./images/maleicon.jpg" id="image" />
+                </span>
+                <input type="radio" name="gender" id="male" value="Male" />
+                <p id="gendererr">Please select gender</p>
+              </span>
+              <li>
+                <span style="display: inline-block;width:40%">
+                  <input type="text" placeholder="Enter  House-no" class="form-control" style="width:155px" id="house">
+                  <p id="houseerr">Enter house number</p>
+                </span>
+                <span style="display: inline-block;width:40%" class="ms-5">
+                  <input type="text" placeholder="Enter village" class="form-control" style="width:155px" id="village">
+                  <p id="villageerr">Enter village</p>
+                </span>
+              </li>
+              <li>
+                <span style="display: inline-block;width:40%">
+                  <input type="text" placeholder="Enter city" class="form-control" style="width:155px" id="city">
+                  <p id="cityerr">Enter city</p>
+                </span>
+                <span style="display: inline-block;width:40%" class="ms-5">
+                  <input type="text" placeholder="Enter district" class="form-control" style="width:155px"
+                    id="district">
+                  <p id="districterr">Enter district</p>
+                </span>
+              </li>
+              <li>
+                <span style="display: inline-block;width:40%">
+                  <input type="text" placeholder="Enter State" class="form-control" style="width:155px" id="state">
+                  <p id="stateerr">Enter state</p>
+                </span>
+                <span style="display: inline-block;width:40%" class="ms-5">
+                  <input type="number" placeholder="Enter Pincode" class="form-control" style="width:155px"
+                    id="pincode">
+                  <p id="pincodeerr">Enter pincode</p>
+                </span>
+              </li>
+              <!-- <p id="adderr">Please enter your address</p> -->
+
+              <li>
+                <input type="text" placeholder="Enter Below Capcha" class="form-control" />
+              </li>
+              <span class="ms-5">
+                <input type="checkbox" id="checkbox">
+                I read and agree <span style="color: blue;cursor: pointer;"><a
+                    href="./images/terms and conditions.htm">Terms&Conditions</a></span>
+                <p id="checkerr">Please read Terms & conditions</p>
+                <div id="button">
+                  <button type="submit" class="btn btn-primary" onclick="signupdetails()" id="clickbtn" disabled>Create
+                    Account</button>
+                </div>
+                <span class="ms-5">Already have an account?
+                  <span>
+                    <a href="#" class="link-primary me-2" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</a>
+                  </span>
+                </span>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- forgotpassword -->
+  <div class="modal fade" id="forgotmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"> Forgot Your Password?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <span class="fpbg">
+
+          </span>
+          <span class="fpd">
+            <h1>
+              <i class="bi bi-person-lock"></i>
+            </h1>
+            <p>Please Enter Your <span>email address</span> or <span>username</span></p>
+            <ul>
+              <li>
+                <input type="text" placeholder="Enter email adress or username" class="form-control" />
+                <i class="bi bi-person-circle"></i>
+              </li>
+              <li>
+                <input type="text" placeholder="Enter Below Capcha" class="form-control" />
+              </li>
+            </ul>
+          </span>
+        </div>
+        <div class="nextbtn">
+          <button type="button" class="btn btn-primary">Next</button>
+        </div>
+        <p class="account_l">
+          Alredy have an account? <span>
+            <a href="#" class="link-primary" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</a>
+          </span>
+        </p>
+        <p class="account_c">
+          Don't have an account? <span>
+            <a href="#" class="link-primary" data-bs-toggle="modal" data-bs-target="#signupmodal">create account</a>
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- logout -->
+  <div class="modal fade" id="logoutmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3>
+            Are You Sure You Want To Logout?
+          </h3>
+          <div class="button">
+            <span style="margin-left: 10px;">
+              <button type="button" class="btn btn-warning">Log me out</button>
+            </span>
+            <span class="ms-5">
+              <button type="button" class="btn btn-success">Stay logged in</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- welcome modal -->
+
+  <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Welcome🥰</h1>
+        </div>
+        <div class="modal-body">
+          Your details has been successfully submited.Thanks!
+          <br>
+          <p>Welcome To WomensWorld💐</p>
+        </div>
+        <div id="wbtn">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sorry modal -->
+
+  <div class="modal fade" id="sorryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sorry😔</h1>
+        </div>
+        <div class="modal-body">
+          This online shopping only for females not for males.
+          <br>
+          <p>Sorry...</p>
+        </div>
+        <div id="sbtn">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- body -->
+  <br>
+  <div id="total">
+    <!-- carousel -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/image1.jpg" class="d-block w-100" alt="..." style="height: 300px;">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/image2.jpg" class="d-block w-100" alt="..." style="height: 300px;" id="groceriescarousel">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/image4.jpg" class="d-block w-100" alt="..." style="height: 300px;">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- display -->
+    <div class="display">
+      <div class="container-fluid">
+        <h1>Best Offers In WomensWorld</h1>
+        <div class="row" id="welcomedisplay">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container-fluid" id="container">
+    <div class="row" id="product">
+
+    </div>
+  </div>
+  <div class="container-fluid" id="container">
+    <div class="row" id="gro">
+
+    </div>
+  </div>
+  <div class="container-fluid" id="container">
+    <div class="row" id="Psaree">
+
+    </div>
+  </div>
+  <div class="container-fluid" id="container">
+    <div class="row" id="Pbeauty">
+
+    </div>
+  </div>
+  <div class="container-fluid" id="container">
+    <div class="row" id="Pmobile">
+
+    </div>
+  </div>
+  <div class="container-fluid" id="container">
+    <div class="row" id="Pappliances">
+
+    </div>
+  </div>
+  <div class="container-fluid" id="container">
+    <div class="row" id="Pdecorative">
+
+    </div>
+  </div>
+  <div id="center">
+    <h1 id="result">No Results Found</h1>
+  </div>
+  <!-- js files -->
+  <script src="./js files/searchproducts.js"></script>
+  <script src="./js files/signup.js"></script>
+  <script src="./js files/eye.js"></script>
+  <script src="./js files/searchproducts.js"></script>
+  <script src="./js files/productslist.js"></script>
+  <script src="./js files/welcomepage.js"></script>
+  <script src="./js files/groceries.js"></script>
+  <script src="./js files/sarees.js"></script>
+  <script src="./js files/beauty.js"></script>
+  <script src="./js files/appliances.js"></script>
+  <script src="./js files/home_decorative.js"></script>
+  <script src="./js files//mobiles.js"></script>
+  <!-- <script src="./js files/login.js"></script> -->
+</body>
+
+</html>

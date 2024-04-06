@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery.js"></script>
+    <script src="../axios.js"></script>
+
+</head>
+<body>
+    <input type="button" value="GET List" onclick="showData()">
+    <table border=" 1px solid" cellpadding="10px" cellmarging="10px">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Space craft name</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        var showData = () => {
+           // axios.get("https://isro.vercel.app/api/spacecrafts").then((response) => {
+           //       console.log(response)
+           //       renderDetails(response.data.spacecrafts)
+           // }).catch((err) => {
+
+           // });
+
+            axios.post("https://isro.vercel.app/api/spacecrafts").then((response) => {
+                  console.log(response)
+                  renderDetails(response.data.spacecrafts)
+            }).catch((err) => {
+
+            });
+        }
+
+        var renderDetails = (list) => {
+            list.forEach((item,index) => {
+               var tr = $("<tr/>")
+               var td1 = $ ("<td/>").text(item.id)
+               var td2 = $("<td/>").text(item.name);
+
+               tr.append(td1);
+               tr.append(td2);
+               $("tbody").append(tr);
+            });
+        }
+
+        
+    </script>
+</body>
+</html>

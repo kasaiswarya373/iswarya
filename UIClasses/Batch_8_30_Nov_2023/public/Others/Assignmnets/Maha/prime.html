@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var a = prompt("enter value: ");
+            a = parseInt(a);
+           // var  count = 0;
+           var sum = 0,counter=0;
+            for(var i=2;i<a;i++){
+                var count = 0;
+                for(var j=2;j<i;j++){
+                    if(i%j==0){
+                        count++;
+                        break;
+                    }
+                }
+                if(count==0){
+                    counter++;
+                    sum+=i;
+                    console.log(i);
+                    //console.log("sum of prime numbers are: " + sum);
+                }
+            }
+            console.log("Number of prime numbers in the given range are: " + counter);
+            console.log("sum of prime numbers are: " + sum);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>RegistrationPage</title>
+            <style>
+                h1{
+                    border: 2px solid green;
+                    background-color: yellow;
+                    text-align: center;
+                    padding: 15px;
+
+                }
+
+                .container{
+                    border: 2px solid blue;
+                    width: 97%;
+                    height: 1200px;
+                    margin: 20px;
+                    background-color: antiquewhite;
+
+                }
+
+                .subcontainer{
+                    border: 1px solid;
+                    height: 300px;
+                    width: 98%;
+                    margin: 50px 13px;
+                    background-color: aquamarine;
+                }
+                .tag {
+                    border: 1px solid;
+                    height: 50px;
+                    width: 200px;
+                    position: absolute;
+                    text-align: center;
+                    padding-bottom: 12px;
+                   
+                    font-size: 18px;
+                   
+                }
+                .t1{
+                    left: 90px;
+                    top: 140px;
+                    background-color: red;
+                }
+                .t2{
+                    left: 90px;
+                    top: 494px;
+                    background-color: red;
+                }
+                .t3{
+                    bottom: -162px;
+                    left: 90px;
+                    background-color: red;
+                }
+                .d{
+                    position: absolute;
+                    font-size: 25px;
+                }
+                .dright{
+                    right: 400px;
+                    top: 260px;
+                }
+                .d1{
+                 left: 100px;
+                    top: 260px;
+                }   
+                .d2{
+                    left: 100px;
+                    top: 600px;
+                    
+                }
+                .d3{
+                    left: 100px;
+                    bottom: -300px;
+
+                }
+                .d4{
+                    float: right;
+                    margin-right: 50px;
+                }
+                h2{
+                    border: 4px solid;
+                    background-color: blue;
+                    color: white;
+                    padding: 20px;
+                    font-style: oblique;
+                    text-align: center;
+                }
+                #big{
+                   position: absolute;
+                   right: -1000px;
+                   width: 350%;
+                   top: -100px;
+                   height: 220px;
+                }
+                .bar{
+                    position: absolute;
+                    height: 35px;
+                    width: 230px;
+                    left: 150px;
+                }
+                .bar1{
+                    top: -12px;
+                }
+                .bar2{
+                    top: 47px;
+                }
+                .bar3{
+                    top: 106px;
+                }
+                .bar4{
+                    top: -6px;
+                    left: 157px;
+                }
+                .bar5{
+                    top: 55px;
+                    width: 400px;
+                    
+                }
+                .barryt{
+                    top: -6px;
+                    left: 157px;
+                }
+                .barryt1{
+                    top: 53px;
+                    left: 157px;
+                    width: 238px;
+                    
+                }
+                .save{
+                    height: 50px;
+                    background-color: blue;
+                    border-radius: 25px;
+                    color: aliceblue;
+
+                }
+                .d input:hover{
+                    width: 250px;
+                    background-color: aqua;
+
+                }
+                .d textarea:hover{
+                   
+                    background-color: aqua;
+                }
+                .save[type="submit"]:active{
+                background-color: red;
+            }
+            
+
+                
+
+            </style>
+        </head>
+        <body>
+
+            <form action="http://test.com/info" method="get">
+
+            <h1>Student-Registration-Page</h1>
+            <div class="container">
+                <div class="subcontainer">
+                        <div class="tag t1"><h3>Personal Details</h3></div>
+                <div class="d d1">
+                        <label for="name">Name:</label>
+                        <input type="text" class="bar bar1" name="name" placeholder="Enter your name"><br><br>
+
+                        <label for="firstname">First name:</label>
+                    <input type="text" class="bar bar2" name="firstname" placeholder="Enter your FirstName"><br><br>
+
+                    <label for="age">Age :</label>
+                    <input type="number" class="bar bar3" name="age" placeholder="Enter your Age" maxlength="2" id="">
+                </div>
+
+                    
+                <div class="d dright">
+
+                    <label for="address">Address:</label>
+                    <input type="text" class="bar barryt" placeholder="Enter your Address" name="address"><br><br>
+
+                    <label for="country">Country:</label>
+                    <select class="bar barryt1" name="country"  id="">
+                        <option value="ind">India</option>
+                        <option value="pak">Pakistan</option>
+                        <option value="chi">China</option>
+                        <option value="nep">Nepal</option>
+                    </select><br><br>
+
+                    
+
+                    </div>
+                </div>
+
+                <div class="subcontainer">
+                    <div class="tag t2"><h3>Education Details</h3></div>
+                    <div class="d d2">
+                        <label for="qualification">Qualification    :</label>
+                        <select name="qualification" class="bar bar4">
+                            <option>Degree</option>
+                            <option>B.Tech</option>
+                            <option>Intermediate</option>
+                            <option>SSC</option>
+                        </select><br><br>
+
+                        <label for="language">Language  :</label><br><br>
+                        <span  class="bar bar5">
+                        <input type="checkbox" name="eng" checked disabled>English
+                        <input type="checkbox" name="tel" id="">Telugu
+                        <input type="checkbox" name="hin" id="">Hindi
+                        <input type="checkbox" name="urd" id="">Urdu<br><br></span>
+
+                        <label for="course">CourseOpted :</label>
+                        <input type="radio" name="mca" id="">MCA
+                        <input type="radio" name="mca" id="">MBA
+                        <input type="radio" name="mca" id="">MSC
+                        <input type="radio" name="mca" id="">Mtech
+
+
+                    </div>
+
+                    <div class="d d3">
+                    <label for="yourself">Few words about yourself    :</label>
+                    <textarea name="yourself" id="big" placeholder="Enter few words about yourself" cols="30" rows="10"></textarea>
+                </div>
+                    
+            </div>
+
+            <div class="subcontainer">
+                <div class="tag t3"><h3>About Yourself</h3></div>
+        </div>
+
+        <input class="d4 save"  type="submit" name="save" value="Register Details" checked >
+        </form>
+    </body>
+</html>

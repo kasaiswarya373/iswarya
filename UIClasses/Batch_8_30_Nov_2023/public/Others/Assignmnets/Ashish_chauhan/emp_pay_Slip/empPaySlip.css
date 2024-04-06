@@ -1,0 +1,35 @@
+h3 {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+ul {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: cadetblue;
+}
+li {
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+  background-color: #fff;
+}
+label {
+  width: 120px;
+  display: inline-block;
+}
+.marks > input {
+  width: 50px;
+}
+#displayBlock {
+  display: none;
+}

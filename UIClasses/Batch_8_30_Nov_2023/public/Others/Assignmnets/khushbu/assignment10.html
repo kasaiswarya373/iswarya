@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Details by Condition</title>
+    </head>
+    <body>
+        <h2>Employees Data ......</h2>
+        <script type="text/javascript">
+
+            var empname=prompt("enter the employee name");
+            var Age=prompt("enter the employee age");
+            var empgender=prompt("enter the employee Gender");
+            var Department=prompt("enter the employee department");
+            var empBasicSal=prompt("enter the employee basic salary");
+            
+            empBasicSal=parseInt(empBasicSal);
+
+            var pf=14/100*empBasicSal;
+            var hra=25/100*empBasicSal;
+            var totalSal=pf+hra+empBasicSal;
+            
+            console.log("Name="+empname);
+            console.log("Age="+Age);
+            console.log("Gender="+empgender);
+            console.log("PF="+pf);
+            console.log("Hra="+hra);
+            console.log("Salary="+empBasicSal)
+            console.log("total Salary="+totalSal);
+            
+            if(empgender == 'Male'){
+               if(totalSal > 200000){
+                    var taxPercent = 15 ;
+               }else if(totalSal > 100000){
+                    var taxPercent = 10;
+               }else if(totalSal > 50000){
+                    var taxPercent =5;
+               }else{
+                    var taxPercent =0;
+               }
+            }
+            else{
+                if(totalSal > 200000){
+                    var taxPercent = 10 ;
+               }else if(totalSal > 100000){
+                    var taxPercent = 5;
+               }else if(totalSal > 50000){
+                    var taxPercent =0;
+               }else{
+                    var taxPercent = 0;
+               }
+            }
+            var taxAmount = (totalSal * taxPercent) / 100;
+            console.log("Tax Amount: "+taxAmount);
+
+            var onHandSal = totalSal -taxAmount;
+            console.log("On Hand Salary="+onHandSal);
+
+        </script>
+        
+    </body>
+</html>

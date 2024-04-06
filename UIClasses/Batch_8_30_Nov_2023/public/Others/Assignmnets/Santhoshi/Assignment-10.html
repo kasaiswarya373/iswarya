@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-10</title>
+</head>
+<body>
+    <script>
+        var empName=prompt("Enter your Name:");
+        var empAge=prompt("Enter your age:");
+        var empGender=prompt("Enter your Gender:");
+        var empBasicsalary=prompt("Enter your Basic Salary");
+        empBasicsalary=parseFloat(empBasicsalary);
+        var pf=(14*empBasicsalary)/100;
+        pf=parseFloat(pf);
+        var hra=(25*empBasicsalary)/100;
+        hra=parseFloat(hra);
+        var totalsalary=pf+hra+empBasicsalary;
+        console.log("Name=" +empName );
+        console.log( "Age" +empAge);
+        console.log("Gender=" +empGender);
+        console.log( "Basic salary=" +empBasicsalary);
+        console.log("pf="+pf);
+        console.log("hra="+hra );
+        console.log("Employee Total Salary=" +totalsalary);
+
+        if(empGender=="male"){
+            if(totalsalary>=200000){
+                console.log("15% Tax will be applied");
+            }
+            else if( totalsalary>=100000){
+                console.log("10% Tax will be applied");
+            }
+            else( totalsalary>=50000);
+            {
+                console.log("No Tax will be applied");
+            }
+                
+            }
+           
+        
+       else {
+            if(totalsalary>=200000){
+                console.log("10% Tax will be applied");
+            }
+            else if( totalsalary>=100000){
+                console.log("5% Tax will be applied");
+            }
+            else( totalsalary>=50000);
+             {
+                console.log("No Tax will be applied");
+            }
+                }
+    </script>
+</body>
+</html>

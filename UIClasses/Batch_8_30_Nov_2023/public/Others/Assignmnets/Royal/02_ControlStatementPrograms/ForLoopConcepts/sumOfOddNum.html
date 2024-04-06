@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Odd (5 to 95)</title>
+</head>
+<body>
+    <h3>WAP to check sum of all Odd number between 5 to 95</h3>
+    <script>
+
+        var count = 0;
+         for(var i = 5; i <= 95; i++){
+            if(i % 2 != 0){
+                console.log(i);
+                count = i + count;
+            }
+        }    
+        console.log(`Sum of 5 to 95 odd number is ${count}`);
+    </script>
+</body>
+</html>

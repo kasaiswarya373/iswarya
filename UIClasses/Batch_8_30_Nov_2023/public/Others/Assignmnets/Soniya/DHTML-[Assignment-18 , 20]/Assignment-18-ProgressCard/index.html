@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Progress Card</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <ul class="card">
+        <li>
+            <h2>Student Progress Card</h2>
+        </li>
+        <li>
+            <label for="name">Name :</label>
+            <input type="text" id="name"> 
+        </li>
+        <li>
+            <label for="age">Age :</label>
+            <input type="text" id="age">
+        </li>
+        <li>
+            <label for="gender">Gender: </label>
+            Male <input type="radio" name="gender" value="Male">
+            Female <input type="radio" name="gender" value="Female">
+        </li>
+        <li>
+            <label for="class">Class:</label>
+            <select id="class">
+                <option value="Class-1">1st Class</option>
+                <option value="Class-2" selected>2nd class</option>
+                <option value="Class-3">3rd Class</option>
+                <option value="Class-4">4th Class</option>
+            </select>
+        </li>
+        <li>
+            <label for="marks">Marks:</label>
+            <input type="number" id="m1">
+            <input type="number" id="m2">
+            <input type="number" id="m3">
+            <input type="number" id="m4">
+            <input type="number" id="m5">
+        </li>
+        <li id="btn1">
+            <input type="button" value="Generate Progress Card" id="btn" onclick= displayStudentDetails()>
+        </li>
+    </ul>
+
+    <ul class="card"  id="progressCard">
+        <li><h2>Progress Card</h2></li>
+        <li>Name :<span id="dName"></span></li>
+        <li>Age : <span id="dAge"></span></li>
+        <li>Class : <span id="dClass"></span></li>
+        <li>Gender : <span id="dGender"></span></li>
+        <li>Total : <span id="dTotal"></span></li>
+        <li>Average : <span id="dAvg"></span></li>
+        <li>Result : <span id="dResult"></span></li>
+    </ul>
+    <script src="app.js"></script>
+</body>
+</html>

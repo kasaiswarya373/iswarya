@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Demonstrating Second-Largest value using Arrays</title>
+    </head>
+        <body>
+            <script>
+                var values = [213, 45, 67, 90, 32, 200, 89, 34];
+
+                var largestvalue = values[0];
+                var secondLargest = 0;
+
+                for (var i = 1; i < values.length; i++) {
+                    if (largestvalue < values[i]) {
+                        secondLargest = largestvalue;
+                        largestvalue = values[i];
+
+                    } else if (secondLargest < values[i]) {
+                                secondLargest = values[i];
+
+                } 
+
+
+            }
+                console.log(largestvalue);
+                console.log(secondLargest);
+                        
+
+            </script>
+        </body>
+</html>

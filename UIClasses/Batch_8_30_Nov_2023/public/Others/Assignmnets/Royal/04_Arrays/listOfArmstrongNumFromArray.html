@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Armstrong Number in an Array</title>
+</head>
+<body>
+    <script>
+        
+        var checkArmstrongNum = (n) => {
+            var temp = n;
+            var result = 0;
+            var variableLengh = n.toString().length;
+            var rem;
+
+            while (n > 0){
+                rem = n % 10;
+                result = result + (rem ** variableLengh);
+                n = n/10;
+                n = parseInt(n);
+            }
+            if (result == temp){
+                    return true;
+            } else {
+                return false;
+            }
+        }
+        
+        checkForArmstrongNumbers = () => {
+            var data = [23, 4, 153, 45, 234, 234];
+            
+            for (var i = 0; i < data.length; i++){
+                var result = checkArmstrongNum(data[i]);
+                console.log(`${data[i]} is an Armstrong Number ?? ${result}`);
+            }
+        }
+
+        checkForArmstrongNumbers();
+
+
+    </script>
+    
+</body>
+</html>

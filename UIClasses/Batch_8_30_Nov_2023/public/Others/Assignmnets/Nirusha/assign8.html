@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment8</title>
+    </head>
+    <style>
+        .header{
+            border:1px solid black;
+            padding:10px;
+            text-align: center;
+            color: red;
+            width:1000px;
+            margin-left: auto;
+            margin-right: auto;
+            text-decoration: underline;
+        }
+        .footer{
+            border:1px solid black;
+            padding:10px;
+            text-align: center;
+            color:red;
+            margin-left: auto;
+            margin-right: auto;
+            width:1000px;
+            margin-top: 10px;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .container{
+            border:1px solid;
+            margin-left: auto;
+            margin-right: auto;
+            width:1000px;
+            height: 850px;
+            padding:10px;
+        }
+        .block{
+            border:1px solid;
+            width: 990px;
+            height: 240px;
+            margin-top: 20px;
+        }
+        .block1{
+            border:1px solid;
+            position: absolute;
+            width: 200px;
+            height: 40px;
+            float: left;
+            padding-top: 20px;
+            margin: 20px;
+            top: 80px;
+            background-color: lightsalmon;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .block2{
+            border:1px solid;
+            position: absolute;
+            width: 200px;
+            height: 40px;
+            float:left;
+            top: 350px;
+            padding-top: 20px;
+            margin: 20px;
+            background-color: lightsalmon;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .block3{
+            border:1px solid;
+            position: absolute;
+            width: 200px;
+            height: 40px;
+            float:left;
+            top: 610px;
+            padding-top: 20px;
+            margin: 20px;
+            background-color: lightsalmon;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .block4{
+            border:1px solid;
+            margin:20px;
+            padding: 10px;
+            float:right;
+            font-weight: bold;
+            background-color: lightcoral;
+        }
+        .name{
+            padding-left: 40px;
+            position: absolute;
+            top: 180px;
+        }
+        .name2{
+            padding-left: 40px;
+            padding-top: 10px;
+            position: absolute;
+            top: 220px;
+        }
+        .age{
+            padding-left: 40px;
+            padding-top: 20px;
+            position: absolute;
+            top:250px;
+        }
+        .gender{
+            padding-left: 40px;
+            padding-top: 20px;
+            position: absolute;
+            top:300px;
+        }
+        .address{
+            position: absolute;
+            padding-left: 580px;
+            top:160px;
+        }
+        .country{
+            position: absolute;
+            padding-left: 580px;
+            top: 280px;
+        }
+        .qualification{
+            position: absolute;
+            padding-left: 40px;
+            padding-top:20px;
+            top: 450px;
+        }
+        .languages{
+            position: absolute;
+            padding-left: 40px;
+            padding-top:20px;
+            top:500px;
+        }
+        .course{
+            position:absolute;
+            padding-left: 40px;
+            padding-top: 20px;
+            top:550px;
+        }
+        .about{
+            position: absolute;
+            padding-left: 40px;
+            padding-top: 20px;
+            top: 680px;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <h2 class="header">Student Registration Form</h2>
+        <div class="container">
+            <div class="block">
+                <div class="block1">Personal Details</div>
+                <div class="name"><label for="userName">First Name: </label>
+                    <input type="text" name="userName" maxlength="30" >
+                </div>
+                <div class="name2"><label for="userName">Last Name: </label>
+                    <input type="text" name="userName" maxlength="30" >
+                </div>
+                <div class="age"><label for="userage">Age: </label>
+                    <input type="number " age="userage">
+                </div>
+                <div class="gender"><label for="gender">Gender: </label>
+                    <input type="radio" name="gender" > Male
+                    <input type="radio" name="gender" > Female
+                </div>
+                <div class="address"><label>Address:</label>
+                    <textarea name="" id="" cols="20" rows="5" maxlength="1000"> </textarea>
+                </div>
+                <div class="country"><label>Country: </label>
+                    <select>
+                        <option>India</option>
+                        <option>China</option>
+                        <option>Japan</option>
+                        <option>USA</option>
+                        <option>Afghanistan</option>
+                        <option>Brazil</option>
+                        <option>France</option>
+                    </select>
+                </div>
+            </div>
+            <div class="block">
+                <div class="block2">Education Details</div>
+                    <div class="qualification"><label>Qualification:</label>
+                        <select>
+                            <option>Btech</option>
+                            <option>Mtech</option>
+                            <option>Degree</option>
+                        </select>
+                    </div>
+                    <div class="languages"><label>Languages:</label>
+                        <input type="checkbox"> Telugu
+                        <input type="checkbox"> Hindi
+                        <input type="checkbox"> English
+                    </div>
+                    <div class="course"><label>Courseopted:</label>
+                        <input type="radio" name="course">MBA
+                        <input type="radio" name="course">MCA
+                        <input type="radio" name="course">Btech
+                        <input type="radio" name="course">MSC
+                    </div>
+            </div>
+            <div class="block">
+                <div class="block3">About yourself</div>
+                <div class="about"><label>Few words about yourself:</label>
+                    <textarea name="" id="" cols="80" rows="10" maxlength="5000"> </textarea>
+                </div>
+            </div>
+            <div class="block4">
+                <input type="button" value="register Details">
+            </div>
+        </div>
+        <div class="footer">@Copyrights2023</div>
+    </body>
+</html>

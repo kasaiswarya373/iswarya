@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment8</title>
+    <style>
+      h3 {
+        text-align: center;
+        border: 1px solid;
+        padding: 10px;
+        margin: 10px;
+      }
+      .mainBlock {
+        border: 1px solid;
+        height: 950px;
+        padding: 10px;
+        margin: 10px;
+      }
+      .block1,
+      .block2,
+      .block3 {
+        border: 1px solid;
+        height: 250px;
+        margin: 30px;
+      }
+      .box1,
+      .box2,
+      .box3 {
+        border: 1px solid;
+        background-color: white;
+        text-align: center;
+        position: relative;
+        width: 150px;
+        height: 40px;
+        left: 50px;
+        top: -23px;
+      }
+      li {
+        list-style: none;
+      }
+      .address {
+        position: relative;
+        left: 600px;
+        top: -90px;
+      }
+      .address > textarea {
+        position: relative;
+        top: 35px;
+        width: 240px;
+      }
+      .firstname {
+        position: relative;
+        top: -40px;
+      }
+      .country {
+        position: relative;
+        left: 600px;
+        top: -50px;
+      }
+      select {
+        position: relative;
+        left: 5px;
+        width: 247px;
+      }
+      input[type="number" i] {
+        writing-mode: horizontal-tb !important;
+        padding-block: 1px;
+        padding-inline: 2px;
+      }
+      .age {
+        position: relative;
+        top: -15px;
+      }
+      .languages {
+        position: relative;
+        top: 45px;
+      }
+      .course {
+        position: relative;
+        top: 85px;
+      }
+      .about {
+        position: relative;
+        top: -80px;
+      }
+      .about > textarea {
+        position: relative;
+        top: 70px;
+        width: 800px;
+      }
+      .registerBtn {
+        position: relative;
+        left: 1150px;
+      }
+      .footer {
+        text-align: center;
+        border: 1px solid;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Student Registration Page</h3>
+    <div class="mainBlock">
+      <div class="block1">
+        <div class="box1">Personal Details</div>
+        <ul>
+          <li>
+            <label for="username">Name:</label>
+            <input type="text" name="username" />
+          </li>
+          <li class="address">
+            <label for="">Address:</label>
+            <textarea name="Address" cols="30" rows="5"></textarea>
+          </li>
+          <li class="firstname">
+            <label for="username">First Name</label>
+            <input type="text" name="username" />
+          </li>
+          <li class="country">
+            <label for="country">Country</label>
+            <select name="" id="">
+              <option value="">India</option>
+              <option value="">Japan</option>
+              <option value="">Russia</option>
+              <option value="">China</option>
+              <option value="">Usa</option>
+            </select>
+          </li>
+          <li class="age">
+            <label for="age">Age:</label>
+            <input type="number" id="age" />
+          </li>
+        </ul>
+      </div>
+
+      <div class="block2">
+        <div class="box2">Education Details</div>
+        <ul>
+          <li>
+            <label for="qualification">Qualification:</label>
+            <select name="qualification" id="qualification">
+              <option value="">Btech</option>
+              <option value="">Bca</option>
+              <option value="">Mca</option>
+              <option value="">Msc</option>
+            </select>
+          </li>
+          <li class="languages">
+            <label for="languages">Languages:</label>
+            <input type="checkbox" />English <input type="checkbox" />Hindi
+            <input type="checkbox" />Tamil <input type="checkbox" />Telugu
+          </li>
+          <li class="course">
+            <label for="courseopted">CourseOpted</label>
+            <input type="radio" name="course" />MBA
+            <input type="radio" name="course" />MCA
+            <input type="radio" name="course" />Btech
+            <input type="radio" name="course" />Msc
+          </li>
+        </ul>
+      </div>
+
+      <div class="block3">
+        <div class="box3">About Yourself</div>
+        <ul>
+          <li class="about">
+            <label>Few Words about your career:</label>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              maxlength="350"
+            ></textarea>
+          </li>
+        </ul>
+      </div>
+      <div class="registerBtn">
+        <input type="button" value="Register Details" />
+      </div>
+    </div>
+    <div class="footer">© 2023 Naresh IT.</div>
+  </body>
+</html>

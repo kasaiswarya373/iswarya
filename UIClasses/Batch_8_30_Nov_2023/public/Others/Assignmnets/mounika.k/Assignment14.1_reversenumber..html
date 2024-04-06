@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reverse number</title>
+</head>
+<body>
+   <script>
+    var num = 76543;
+    var reverse = 0;
+   document .write("Original Number : "+num+"<br>");
+   while(num != 0){
+    reverse = (reverse*10)+(num % 10);
+    num = parseInt(num/10);
+   }
+   document.write("Reverse Number :"+reverse);
+   </script> 
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating js classes
+    </title>
+</head>
+<body>
+    <script>
+        class studentDetails {
+            constructor(sname,sage,sloc,smarks) {
+                this.sname = sname;
+                this.age = sage;
+                this.location = sloc;
+                this.marks = smarks;
+            }
+            displaystudentDetails() {
+                this.getTotalAndAvg() ;
+                console.log("----------student details--------------")
+                console.log("student name" + this.sname);
+                console.log("Age is " + this.age);
+                console.log("Total is " + this.total);
+                console.log("Avg" + this.avg);
+            }
+            getTotalAndAvg() {
+                this.total = 0 ;
+                for (var i = 0; i < this.marks.length; i++) {
+                    this.total += this.marks[i];
+                }
+                this.avg = this.total/ this.marks.length;
+            }
+        }
+
+        var s1 = new studentDetails( "chandan", 23, 'odisha',[64,76,78,54,32]);
+        s1.displaystudentDetails();
+
+        var s2 = new studentDetails( "Sushree", 21, 'hyd',[89,98,75,99,78]);
+        s2.displaystudentDetails();
+
+
+        var s3 = new studentDetails( "puspalata", 22, 'chennai',[78,93,78,67,89]);
+        s3.displaystudentDetails();
+
+        console.log(s1)
+        console.log(s2)
+        console.log(s3)
+    </script>
+</body>
+</html>

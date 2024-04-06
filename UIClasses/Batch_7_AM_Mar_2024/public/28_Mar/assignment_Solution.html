@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .header, .container, .footer {
+                border: 1px solid maroon;
+                margin: 10px;
+                padding: 10px;
+            }
+            .mainBlock {
+                width: 700px;
+                margin: 10px auto;
+            }
+            .header {
+                text-align: center;
+                text-decoration: underline;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            .footer {
+                text-align: center;
+                font-size: 12px;
+                color: aqua;
+            }
+            .container {
+                height: 500px;
+            }
+            .leftBlock, .rightBlock {
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+                float: left;
+                height: 470px;
+                overflow: auto;
+            }
+            .leftBlock {
+                width: 25%;
+            }
+            .rightBlock {
+                width: 65%;
+                
+            }
+            .leftBlock li,
+            .detailsList > li {
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                list-style-position: inside;
+            }
+            .detailsList > li {
+                list-style: none;
+                height: 130px;
+            }
+            .imgContainer, .subDetailsContainer {
+                float: left;
+            }
+            .detailsList {
+                
+                padding: 5px;
+            }
+            .detailsList li {
+                list-style: none;
+                padding: 5px;
+            }
+            
+            .imgContainer img  {
+                width: 100px;
+                height: 110px;
+                margin-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mainBlock">
+            <div class="header">
+                Student Details
+            </div>
+
+            <div class="container">
+                <div class="leftBlock">
+                    <ol>
+                        <li>Raj</li>
+                        <li>
+                            <a href="#teenaDetails">
+                                Teena
+                            </a>
+                        </li>
+                        <li>Krish</li>
+                        <li>Meena</li>
+                        <li>
+                            <a href="#student5">Suresh</a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="rightBlock">
+                    <ul class="detailsList">
+                        <li>
+                            <div class="imgContainer"> 
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiwTP-KFG8lsKFQQSYn7bnhteoZTLDAEhqPA&usqp=CAU" alt="">
+                            </div>
+                            <div class="subDetailsContainer">
+                                <ul>
+                                    <li>Name: Raj</li>
+                                    <li>Gender: Male</li>
+                                    <li>Location: Hyderabad</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="teenaDetails">
+                            <div class="imgContainer"> 
+                                <img src="https://static.toiimg.com/photo/101548198.cms" alt="">
+                            </div>
+                            <div class="subDetailsContainer">
+                                <ul>
+                                    <li>Name: Teena</li>
+                                    <li>Gender: Female</li>
+                                    <li>Location: Delhi</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgContainer"> 
+                                <img src="images/std3.PNG" alt="">
+                            </div>
+                            <div class="subDetailsContainer">
+                                <ul>
+                                    <li>Name: Krish</li>
+                                    <li>Gender: Male</li>
+                                    <li>Location: Hyderabad</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgContainer"> 
+                                <img src="images/std4.PNG" alt="">
+                            </div>
+                            <div class="subDetailsContainer">
+                                <ul>
+                                    <li>Name: Meena</li>
+                                    <li>Gender: Male</li>
+                                    <li>Location: Hyderabad</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="student5">
+                            <div class="imgContainer"> 
+                                <img src="one/two/images/std5.PNG" alt="">
+                            </div>
+                            <div class="subDetailsContainer">
+                                <ul>
+                                    <li>Name: Suresh</li>
+                                    <li>Gender: Male</li>
+                                    <li>Location: Hyderabad</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer">
+                @copy rights 2024
+            </div>
+        </div>
+    </body>
+</html>
+

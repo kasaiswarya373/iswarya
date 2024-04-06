@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="./jquery.js"></script>
+        <link rel="stylesheet" href="BootStrap.css">
+        <script src="./handlebar.js"></script>
+        <script src="bootstrap_Lib/js/bootstrap.min.js"></script>
+        <script src="slideshow.js"></script>
+        <style>
+            .carousel-caption{
+                h5{
+                    color: rgb(247, 255, 194) !important;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: bold;
+                    font-size: 38px;
+                }
+                p{
+                    color: rgb(248, 249, 217) !important;
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+                #carouselExampleCaptions{
+                    height: 300px;
+                }
+                img{
+                    height: 500px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+       <h3>
+        Image Sliding  
+    </h3> 
+       <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators"></div>
+        <div class="carousel-inner"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div id="singleslideimage" style="display: none;">
+        <div class="carousel-item {{active_state}}">
+            <img src="{{imageurl}}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>{{title}}</h5>
+              <p>{{caption}}</p>
+            </div>
+          </div>
+      </div>
+
+      <div id="singleslideimageBtn">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{index}}" 
+        class="{{activeClass}}" aria-current="true" aria-label="Slide {{counter}}"></button>
+      </div>
+    </body>
+</html>

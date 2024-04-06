@@ -1,0 +1,50 @@
+h3{
+    border: 1px solid red;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(83, 14, 23);
+    color: yellow;
+    
+}
+body{
+    background-color: rgba(2, 21, 1, 0.803);
+}
+.box1{
+    border: 3px solid;
+    background-color: rgb(226, 235, 235);
+    text-align: center;
+    height: 300px;
+    width: 500px;
+    top: 200px;
+    left: 500px;
+    position: absolute;
+    color: brown;
+
+
+}
+ul {
+    text-align: center;
+    display: inline-block;
+}
+.title {
+    position: absolute;
+top: 50px;
+left:500px;
+top: 100px;
+color: pink;
+font-size: large;
+}
+li{
+list-style: none;
+}
+#box{
+width: 100px;
+height: 20px;
+border: 1px solid;
+color: navy;
+background-color: rgb(104, 159, 206);
+position: relative;
+left: 5px;
+}

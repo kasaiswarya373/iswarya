@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>calculation of area and perimeter of square</title>
+        </head>
+        <body>
+            <script>
+                var getddetails = () => {
+                    var side;
+                    side = parseInt(prompt("enter side value"));
+                    
+                    var area = getarea (side);
+                    var perimeter = getPerimeter (side);
+                    var result = Result(area, perimeter);
+
+                }
+
+                var getarea = (side) => {
+                    var area = side ** 2;
+                    return area;
+                }
+                
+                var getPerimeter = (side) => {
+                    var perimeter = (4 * side);
+                    return perimeter;
+                }
+
+                var Result = (area, perimeter) => {
+                console.log(`the area of square is ${area}`);
+                console.log(`the perimeter of square is ${perimeter}`);
+                }
+                getddetails();
+            </script>
+        </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details...!</title>
+</head>
+<body>
+    <script>
+        var empName = prompt("Enter Employee name");
+        var empAge = prompt("Enter Employee Age");
+        var empDepart = prompt("Enter Departmnent name");
+        var empBasicSalary = prompt("Enter Employee Salary");
+        empBasicSalary = parseInt(empBasicSalary);
+        hra = (10 * empBasicSalary) / 100;
+        pf = (10 * empBasicSalary) / 100;
+        var sum = hra + pf + empBasicSalary;
+        sum = parseInt(sum);
+        console.log(sum);
+    </script>
+</body>
+</html>

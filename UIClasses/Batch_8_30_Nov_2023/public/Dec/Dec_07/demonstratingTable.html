@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* table, tr, td, th {
+                border: 1px solid;
+            } */
+            td {
+                text-align: center;
+            }
+            tr:nth-child(3) {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Demonstrating Student detail - table</h3>
+        <table border="1px solid " cellspacing="0" cellpadding="10px">
+            <thead>
+                <tr>
+                    <th colspan="6">STudent details list</th>
+                </tr>
+                <tr>
+                    <th>Sno.</th>
+                    <th>Sname</th>
+                    <th>Sage</th>
+                    <th>Crnt Location</th>
+                    <th>Prmnt Location</th>
+                    <th>Qualification</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>1</td>
+                    <td>Krish</td>
+                    <td>20</td>
+                    <td colspan="2">Hyderabad</td>
+                    
+                    <td>MCA</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Teena</td>
+                    <td>15</td>
+                    <td>Chennai</td>
+                    <td>Delhi</td>
+                    <td>MBA</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Prasad</td>
+                    <td>15</td>
+                    <td>Vizag</td>
+                    <td rowspan="2">Hyderabad</td>
+                    <td>MBA</td>
+                </tr
+                <tr>
+                    <td>4</td>
+                    <td>Devid</td>
+                    <td>15</td>
+                    <td>Pune</td>
+                    
+                    <td>Btech</td>
+                </tr
+                <tr>
+                    <td>5</td>
+                    <td>Manish</td>
+                    <td>15</td>
+                    <td>MP</td>
+                    <td>J&K</td>
+                    <td>MSC</td>
+                </tr
+
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </body>
+</html>

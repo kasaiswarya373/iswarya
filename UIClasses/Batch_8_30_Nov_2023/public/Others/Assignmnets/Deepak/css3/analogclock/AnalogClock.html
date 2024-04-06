@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="anlogclock.css">
+    </head>
+    <body>
+        <div class="maincontainer">
+            <div class="container">
+                <div class="position2 rotated1">12</div>
+                <div class="position2 rotated2">11</div>
+                <div class="position2 rotated3">10</div>
+                <div class="position2 rotated4">9</div>
+                <div class="position2 rotated5">8</div>
+                <div class="position2 rotated6">7</div>
+                <div class="position2 rotated7">6</div>
+                <div class="position2 rotated8">5</div>
+                <div class="position2 rotated9">4</div>
+                <div class="position2 rotated10">3</div>
+                <div class="position2 rotated11">2</div>
+                <div class="position1 rotated12">1</div>
+                <div class="dot"></div>
+                <div class="second" id="second"></div>
+                <div class="minute" id="minutes"></div>
+                <div class="hour" id="hour"></div>
+            </div>
+        </div>
+        <script>
+            function time(){
+                var date = new Date();
+                var hour = date.getHours();
+                var mint = date.getMinutes();
+                var second = date.getSeconds();
+            if(hour > 12){
+                hour = hour - 12;
+            }else if(hour == 0){
+                hour = hour + 1;
+            }
+            document.getElementById('hour').style.transform = `rotate(${(hour)*30}deg)`;
+            document.getElementById('minutes').style.transform = `rotate(${mint*6}deg)`;
+            document.getElementById('second').style.transform = `rotate(${second*6}deg)`;
+        }
+        setInterval(time,1000);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+Webserver - 
+    Node js - 
+    Spring boot 
+    apache 
+    jboss 
+
+Database :
+    SQL 
+    Mongodb 
+    MySQL
+    Oracle 
+
+------------------------------------
+
+
+web Server
+    1. Hosting the resources
+    2. Provide the services (web services)
+
+-----------------------------------------------
+
+
+
+NODE JS 
+    1. Free of cost 
+    2. Fast in executing JS instructions... (V8 Js Engine )
+    3. Single Threaded model (callback mechanism )
+    4. Event looping 
+    5. IO based server 
+    6. Support form the univ/world dev community
+
+
+
+    UI  + Angular / React + Node js
+
+----------------------------
+
+
+
+stdio.h 
+#include <stdio.h >
+
+
+import io.* 
+
+<script src="app.j"></script>
+
+
+var abc = require("packname"); 
+

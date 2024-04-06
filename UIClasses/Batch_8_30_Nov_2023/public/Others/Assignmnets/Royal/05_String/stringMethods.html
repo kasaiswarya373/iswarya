@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <script>
+        var msg = 'Hello everyone, this is Royal! ';
+
+        console.log('Total length is : '+msg.length);
+        console.log('Char at particular position : '+msg.charAt(6));
+        console.log('ASCII of particular value : '+msg.charCodeAt(6));
+        console.log('Substring method : '+msg.substring(2, 8));     //start and end index
+        console.log('Substring method : '+msg.slice(2, 8));         //start and end index
+
+        console.log('Substr method : '+msg.substr(2, 8));           //start  index but total char
+
+        console.log('Replace()  without regex : '+msg.replace('', '_'));       //It will replace 1st space with _
+        console.log('Replace()  with regex(g) 1 : '+msg.replace(/ /g, '***'));    //g = global, it will replace all space with given ***
+        console.log('Replace()  with regex 2 : '+msg.replace(/h/g, '@@'));      //g = global, it will replace all the 'l' with '@@' 
+        console.log('Replace()  with regex 3 : '+msg.replace(/h/gi, '@@'));      //g=global & i=ignore the case, It will replace all H/h from string
+        
+        console.log('NOT Convert string into array : '+msg.split());       //It will NOT convert string into invidual array
+        console.log(msg.split());                             //It will convert string into invidual array
+        
+        console.log(msg.split('a'));        //whenever string find 'a', then it will split it
+        console.log('checking guven word is part of string or not : '+msg.includes('Royal'));
+        console.log('To convert string in Upper Case : '+msg.toUpperCase());
+        console.log('To convert string in Lower Case : '+msg.toLowerCase());
+    </script>
+    
+</body>
+</html>

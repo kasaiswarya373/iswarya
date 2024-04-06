@@ -1,0 +1,20 @@
+Position - Relative
+
+    1. It moves from xy axis to Z axis 
+    2. Its capable of moving to any Position with in the zxist through - top, bottom , left and right prop
+    3. While moving to a new Position, it never looses its own default space within the xy axis 
+    4. While moving within the z axis, it always moves relative to its original position (under xy axis)
+
+Position Absolute:
+    1. It moves from xy axis to Z axis 
+    2. Its capable of moving to any Position with in the zxist through - top, bottom , left and right prop
+    3. While moving to a z axis, it never holds its original default space within the xy axis 
+    4. While moving to a new position within the z axis, it always depends on its parent poisition (non static)
+    5. While depending on the parent posiion, it only depends on the non static parent, if none of the parents or its grand parents holds the position as non static, it directly depends on the body tag.
+
+Position Fixed
+    Absolute
+    1. even while scroll, it doest change its position
+
+posiion sticky
+    relative

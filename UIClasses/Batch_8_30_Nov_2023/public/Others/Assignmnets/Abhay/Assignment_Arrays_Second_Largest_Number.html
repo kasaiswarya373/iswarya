@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = parseInt(prompt("Enter length of an Array"));
+        var arr = [num];
+        for (var i = 0; i < num; i++) {
+            arr[i] = prompt("Enter Element in the array");
+            arr[i] = parseInt(arr[i]);
+        }
+        var large = 0;
+        var secondLarge = 0;
+        for (var i = 1; i < num; i++) {
+            if (arr[i] > large) {
+                large = arr[i];
+            }
+        }
+        console.log("Large number in the array is " + large);
+        for (var i = 0; i < num; i++) {
+            if (arr[i] > secondLarge && arr[i] < large) {
+                secondLarge = arr[i];
+            }
+        }
+        console.log("Second Largest number in the array is " + secondLarge);
+    </script>
+</body>
+
+</html>

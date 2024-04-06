@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Assignment_9
+        </title>
+    </head>
+    <body>
+        <script>
+            var empname = prompt("enter name");
+            var empage = prompt("enter age");
+            var gender = prompt("enter gender");
+            var bsalary = prompt("enter basic salary");
+            bsalary = parseFloat(bsalary);
+            var pf = 14*bsalary/100;
+            pf = parseFloat(pf);
+            var hra = 25*bsalary/100;
+            hra = parseFloat(hra);
+
+            var totalsal = bsalary+pf+hra;
+            
+            console.log("Name :" + empname);
+            console.log("Age :" + empage);
+            console.log("Age :" + gender);
+            console.log("Age :" + bsalary);
+            console.log("the total salary : " + totalsal);
+        </script>
+    </body>
+</html>

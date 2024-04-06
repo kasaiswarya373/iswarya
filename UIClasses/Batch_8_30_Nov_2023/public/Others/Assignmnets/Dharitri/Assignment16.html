@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Assignment</title>
+  </head>
+  <body>
+    <script>
+        var currentDate = new Date;
+        console.log(currentDate);
+
+        var FullMonthName = ["January" ,"Feburary" , "March" ,"April" ,"May ","June" ,"July", "August" ,"September ","October ","November ","December"];
+        var HalfMonthName =[" Jan ", "Feb", "Mar", "Apr" ,"May" ,"Jun" ,"Jul", "Aug", "Sep", "Oct" ,"Nov" ,"Dec"];
+        var FullWeekName = ["Monday","Tuesday" ,"Wednesday","Thursday","Friday","Saturday","Sunday"];
+        var HalfWeekName = ["Mon","Tues","Wed","Thur","Fri","Sat","Sun"];
+        var min =["min"];
+        var hrs =["hrs"];
+        var sec =["sec"];
+        var years =[24];
+        var months =[0];
+
+
+        var HalfMonthName= HalfMonthName[currentDate.getMonth()];
+        var design1 = ` ${currentDate.getDate() +"th"} ${HalfMonthName} ${currentDate.getFullYear()}`;
+        console.log(design1);
+      
+
+        var design2 = ` ${currentDate.getDate()} / ${months}${currentDate.getMonth()+1} /${currentDate.getFullYear()}`;
+        console.log(design2);
+
+        var design3 = ` ${currentDate.getDate()} / ${months}${currentDate.getMonth()+1} /${years}`;
+        console.log(design3);
+    
+        var design4 = `${HalfMonthName} ${currentDate.getDate() +"th" +","}  ${currentDate.getFullYear()}`;
+        console.log(design4);
+
+        var FullWeekName = FullWeekName[currentDate.getDay()];
+        var design5 = ` ${FullWeekName} ${HalfMonthName} ${currentDate.getDate() +"th" +","}  ${currentDate.getFullYear()}`;
+        console.log(design5);
+
+        var FullMonthName = FullMonthName[currentDate.getMonth()];
+        var design6 = ` ${FullWeekName} ${FullMonthName} ${currentDate.getDate() +"th" +","}  ${currentDate.getFullYear()}`;
+        console.log(design6);
+
+        var HalfWeekName = HalfWeekName[currentDate.getDay()];
+        var design7 = `${HalfWeekName} ${FullMonthName} ${currentDate.getDate() +"th" +","}  ${currentDate.getFullYear()}`;
+        console.log(design7); 
+
+        var design8 = `${FullWeekName} ${FullMonthName} ${currentDate.getDate() +"th" +","}  ${currentDate.getFullYear()}`;
+        console.log(design8); 
+
+        var design9= `${HalfWeekName} ${HalfMonthName} ${currentDate.getDate() +"th" +","}  ${currentDate.getFullYear()}`;
+        console.log(design9); 
+
+        var design10 = ` ${currentDate.getDate()}/ ${months} ${currentDate.getMonth() +1} / ${years} / ${currentDate.getHours()}: ${currentDate.getMinutes()}: ${currentDate.getSeconds()}`;
+        console.log(design10);
+
+        var Time=`${currentDate.getHours()}: ${currentDate.getMinutes()}: ${currentDate.getSeconds()}`;
+        console.log(Time);
+
+        var Time1=` ${currentDate.getHours()}${hrs}: ${currentDate.getMinutes()}${min}: ${currentDate.getSeconds()}${sec}`;
+        console.log(Time1);
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ouestion :</h2>
+    <p>write a program to work with employee details such as name, age, department, gender, basic salary (read data
+        dynamically from the user) calculate total salary and total tax based on below condition.</p>
+    <p>
+        For Male : <br>
+
+        total sal > 200000
+        tax percentage is 15 <br>
+
+        total sal>100000
+        tax percentage is 10 <br>
+
+        total salary > 50000
+        tax percentage is 5 <br>
+
+        other tax percentage is 0
+    </p>
+    <p>
+        For female: <br>
+
+        total sal > 200000
+        tax percentage is 10 <br>
+
+        total sal > 100000
+        tax percentage is 5 <br>
+
+        total salary > 50000
+        tax percentage is 0
+
+    </p>
+
+
+    <script>
+        
+        var name = prompt("Enter Name : ?");
+        var age  = prompt("Enter age : ?");
+        var gender = prompt("enter gender : ?");
+        var department = prompt("Enter Department : ?");
+        var basicSalary = prompt("Enter Salary : ?");
+        basicSalary = parseFloat(basicSalary);
+
+        var pf = (basicSalary *15)/100;
+        pf = parseFloat(pf);
+        var hra = (basicSalary *25)/100;
+        hra = parseFloat(hra);
+        var totalSalary = pf+hra+basicSalary;
+        totalSalary = parseFloat(totalSalary);
+
+        var g = gender.charAt(0);
+
+
+        console.log("Name : " + name);
+        console.log("Gender : " + gender);
+        console.log("Age : " + age);
+        console.log("Department : " + department);
+        console.log("Basic Salary : " + basicSalary);
+        console.log("Your PF is " + pf);
+        console.log("Your HRA is " + hra);
+        console.log("Your total Salary is " + totalSalary);
+
+        if (g==="m") {
+            if (totalSalary >= 200000) {
+                console.log("15% Tax will applied.");
+            }
+            else if (totalSalary >= 100000) {
+                console.log("10% Tax will applied.");
+            }
+            else if (totalSalary >= 50000) {
+                console.log("5% Tax will applied.");
+            }
+            else {
+                console.log("No Tax is applied.")
+            }
+
+        } else {
+            if (totalSalary >= 200000) {
+                console.log("10% Tax will applied.");
+            }
+            else if (totalSalary >= 100000) {
+                console.log("5% Tax will applied.");
+            }
+            else {
+                console.log("No Tax is applied.");
+            }
+        }
+            
+
+        
+
+        
+    </script>
+</body>
+</html>

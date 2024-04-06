@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Numbers Sum in Array</title>
+</head>
+<body>
+    <script>
+        var odd=[];
+        for ( var i = 1; i < 1000; i++){
+        if ( i % 2 != 0    ){
+         odd.push(i)
+        }
+     }
+     console.log(odd);
+     
+      var sum=0
+      for (var i = 0; i < odd.length; i++){
+         sum += odd[i]
+      }
+     console.log(sum)
+    </script>
+</body>
+</html>

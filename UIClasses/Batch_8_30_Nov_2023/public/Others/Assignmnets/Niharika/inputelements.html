@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-Elements</title>
+    <style>
+        li {
+            list-style: none;
+            border: 2px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            background-color: aliceblue;
+        }
+        ul {
+            border: 2px solid;
+            width: 500px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        .gender {
+            display: block;
+        }
+        h2 {
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        body {
+            background-image: url(https://static.vecteezy.com/system/resources/previews/020/693/799/non_2x/subtle-gradient-background-with-pastel-colour-free-vector.jpg);
+            background-size: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+      <h2>Student Registration-Form</h2>
+      <ul>
+        <li>
+            <label for="firstname"><b>Enter firstname:</b></label>
+            <input type="text" name="firstname" id="firstname" placeholder="maxlength of 15">
+        </li>
+        <li>
+            <label for="lastname"><b>Enter lastname:</b></label>
+            <input type="text" name="lastname" id="lastname" placeholder="maxlength of 15">
+        </li>
+        <li>
+            <label for="dob"><b>Enter Date of Registration:</b></label>
+            <input type="date" name="dob" id="dob">
+        </li>
+        <li>
+            <label for="age"><b>Enter Age:</b></label>
+            <input type="number" id="age" name="age" maxlength="2">
+        </li>
+        <li>
+            <label for="gender"><b>Enter Gender: </b></label>
+            <input type="radio" name="gender" id="gender">Male
+            <input type="radio" name="gender" id="gender" checked>Female
+        </li>
+        <li>
+            <label for="phnumber"><b>Enter Contact Number:</b></label>
+            <input type="number" name="number" maxlength="10">
+        </li>
+        <li>
+            <label for="country"><b>Enter country:</b></label>
+            <select>
+                <option>India</option>
+                <option>China</option>
+                <option>Japan</option>
+                <option>USA</option>
+            </select>
+        </li>
+        <li>
+            <label for="course"><b>Select the course: </b></label>
+            <select>
+                <option>Core Java</option>
+                <option>UI-FullStack</option>
+                <option>SQL</option>
+                <option>Selenium</option>
+                <option>Python</option>
+            </select>
+        </li>
+        <li>
+            <label for="Submit Details"></label>
+            <div style="text-align: center;"><input type="submit"></div>
+        </li>
+      </ul>
+</body>
+</html>

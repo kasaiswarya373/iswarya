@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Finding second largest value.
+        </title>
+    </head>
+    <body>
+        <script>
+            /*var n = [34, 44, 78, 90, 12, 3, 123, 345,3,45];
+
+            var largestValue = n[0];
+
+            for (var i = 1; i < n.length; i++) {
+                if (largestValue < n[i]) {
+                    largestValue = n[i];
+                }
+            } */
+
+            var n = [99, 100, 50];
+
+            var largestValue = n[0];
+            var secondLargest = 0;
+
+            for (var i = 1; i < n.length; i++) {
+                if (n[i] != largestValue) {
+                    if (largestValue < n[i]) {
+                        secondLargest = largestValue;
+                        largestValue = n[i];
+                    } else if (secondLargest < n[i]) {
+                        secondLargest = n[i]
+                    }
+                }
+            }
+
+            console.log(largestValue)
+            console.log(secondLargest)
+        </script>
+    </body>
+</html>

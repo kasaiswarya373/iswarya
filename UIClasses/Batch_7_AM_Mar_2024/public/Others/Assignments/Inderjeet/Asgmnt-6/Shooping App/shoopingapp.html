@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul>li {
+            list-style: none;
+            display: inline;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: calibri;
+            margin-right: 25px;
+            text-align: center;
+        }
+
+        .navdiv {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(40, 38, 38);
+            color: white;
+        }
+
+        .navicon {
+            display: flex;
+            justify-content: left;
+        }
+
+        input {
+            margin-top: 9px;
+            height: 33px;
+            width: 245px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .divbutton>button {
+            height: 37px;
+            width: 78px;
+            border-radius: 5px;
+        }
+
+        #btn1 {
+            background-color: rgb(0, 102, 255);
+            color: white;
+        }
+
+        #btn2 {
+            background-color: yellow;
+        }
+        #carosle>img{
+            overflow: auto;
+            align-items: center;
+            background-size: auto;
+        }
+        .table
+        {
+            text-align: center;
+        }
+        #carosle{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="navdiv">
+                <div class="navicon">
+                    <div><img src="../Images/icon.png" alt=""></div>
+                    <div>
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Feature</li>
+                            <li>FAQs</li>
+                            <li>Pricing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="divbutton">
+                    <input type="text" placeholder="Search...">
+                    <button id="btn1">Login</button>
+                    <button id="btn2">Sing-up</button>
+                </div>
+            </div>
+        </nav>
+        <hr>
+        <main>
+            <div id="carosle">
+                <img src="../Images/carosal.png" alt="">
+            </div>
+            <hr>
+            <div class="table">
+                <img src="../Images/card-1.png" alt="">
+                <img src="../Images/card-2.png" alt="">
+                <img src="../Images/card-3.png" alt="">
+                <img src="../Images/card-4.png" alt="">
+                <img src="../Images/card-5.png" alt="">
+                <img src="../Images/card-6.png" alt="">
+            </div>
+            <div>
+                <span><img src="" alt=""></span>
+            </div>
+        </main>
+        <div class="foot">
+           <img src="../Images/foot.png" style="text-align: center;" alt="">
+        </div>
+    </div>
+</body>
+</html>

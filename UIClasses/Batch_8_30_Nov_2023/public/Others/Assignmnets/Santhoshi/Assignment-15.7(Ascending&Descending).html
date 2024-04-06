@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+       <script>
+        var readdata = ( ) =>{
+        var data = [];
+        
+        var values = parseInt(prompt("enter no.of values of array"));
+        for( var i = 0; i < values; i++){
+                 data[i] = parseInt(prompt("enter values in array"));
+            }
+            console.log( data);
+            /*ascending(data, values);
+            descending(data, values); */
+           
+           
+
+            var Aswap = ascending(data, values);
+            console.log("ascending order " , Aswap);
+            var Dswap = descending(data , values);
+            console.log("descending order " , Dswap); 
+
+        }
+
+       
+       
+        
+         var ascending = (data, values ) => {
+            for (var i = 0; i < values; i++){
+                    for( var j = i; j < values ; j++){
+                        if( data[i] > data[j+1]){
+                            var temp = data[i];
+                            data[i] = data[j+1];
+                            data[j+1] = temp;
+                        }
+                    }
+            }
+           return data;
+           
+        }
+
+        var descending = (data, values ) => {
+                for (var i = 0; i < values; i++){
+            for( var j = i; j < values ; j++){
+                if( data[i] < data[j+1]){
+                    var temp = data[i];
+                    data[i] = data[j+1];
+                    data[j+1] = temp;
+                    }
+                }
+            }
+            return data;
+        }
+                 
+        readdata();
+       </script> 
+    </body>
+</html>

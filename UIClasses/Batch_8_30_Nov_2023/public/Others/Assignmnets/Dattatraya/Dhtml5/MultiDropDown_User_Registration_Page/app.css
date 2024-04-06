@@ -1,0 +1,18 @@
+ul {
+  border: 2px solid;
+  padding: 20px;
+  margin: 20px auto;
+  width: 500px;
+}
+li {
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+}
+h3 {
+  text-align: center;
+}
+label {
+  width: 100px;
+  display: inline-block;
+}

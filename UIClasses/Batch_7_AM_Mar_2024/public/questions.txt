@@ -1,0 +1,43 @@
+Questions:
+    UI Dev, web dev, Front end dev - DONE
+    UI and UX diff - DONE
+    LISt of tech/topics coverd in training program - DONE
+
+
+    Any pre-requisites for the course? - ZERO 
+    Are we going with Basics ? - DONE
+    Course Duration - 85 - 90 Classes 
+    
+    Notes & Assignments - Done
+    Recordings ? - DONE
+    is this course for experience guys only - DONE
+    What is the market share and opportunities, easy to learn... - - DONE
+    Diff btwn JAVA and Java script - DONE
+    Diff btwn Java , REact and UI - DONE
+    REgarding project ? - DONE 
+    Modern UI Fullstack - Whats new ? - DONE 
+    Regarding Reac Native & Redux  - DONe
+    MERN & MEAN - DONE
+    How AI effects web development  - DONE
+    Course Duration - 85 + 50 - DONE  
+    is Java Needed in web development - DONE 
+    Ui full stack vs java full stack - DONE
+
+    Market demand for UI Fullstack dev/web dev - DONE
+    React vs Angular? - DONE 
+    what level of JS will be learning here  - MAX 
+    Is JavaScript replacing Java completely in next 3 years? 
+
+    
+    In this training,can we cover jQuery? 
+
+    Recordings:
+    Day 1 - https://youtu.be/27V9XTnEra8
+    Day 2 - https://youtu.be/SDyd5vNexXw
+
+    Assignments:
+        1. Download and install VS code 
+        2. Signup with Github 
+        3. GITdesktop 
+        4. Telegram ID 
+        

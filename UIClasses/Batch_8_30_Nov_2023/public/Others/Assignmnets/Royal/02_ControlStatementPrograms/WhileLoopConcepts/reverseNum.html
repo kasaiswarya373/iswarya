@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+</head>
+<body>
+    <h3>WAP to find Reverse of a Number</h3>
+    <script>
+        // var num = 12345;
+        var num = parseInt(prompt(`Enter a Number, you'll get Reverse of it`));
+        var rev = 0;
+        document.write("Original Number = "+num+ "<br>")
+
+        while(num != 0){
+            rev = (rev*10) + (num%10);
+            num = parseInt(num/10);
+        }
+        document.write("Reverse Number = "+rev)
+
+    </script>
+    
+</body>
+</html>

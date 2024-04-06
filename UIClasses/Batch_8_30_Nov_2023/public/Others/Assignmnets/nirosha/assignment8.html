@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        #header
+        {
+            text-align: center;
+            border: 2px solid rgb(12, 11, 12);
+            font-size: 23px;
+            padding: 10px;
+            color:rgb(17, 14, 17);
+        }
+        #headContainer
+        {
+            border: 2px solid rgb(17, 7, 17); 
+            list-style: none;
+            margin:10px 0px 10px 0px;
+            padding: 53px;
+        }
+        ol
+        {
+            list-style:none;
+
+        }
+        #subContainer-1,#subContainer-2,#subContainer-3
+        {
+            border: 1px solid rgb(22, 19, 22);
+            width: 1230px;
+            margin-top: 40px ;
+            padding:12px;
+            font-size: 18px;
+        }
+        #subContainer-1
+        {
+            margin-top:0px;
+            
+        }
+        .containerTitle
+        {
+            border:1px solid plum;
+            display: inline;
+            padding:10px;
+            position:relative;
+            left: 48px;
+            top: -19px;
+            background-color: plum;
+            text-decoration: underline;
+        }
+        #register
+        {
+            margin-top: 40px;
+            position: relative;
+            left: 1196px;
+            width: 110px;
+            padding: 6px;
+            background-color: plum;
+            border-radius: 5px;
+            
+        }   
+        #footer
+        {
+            border:2px solid rgb(22, 21, 22);
+            text-align: center;
+            font-size: 18px;
+            padding:10px;
+            color:rgb(15, 14, 15);
+        }
+        li
+        {
+            margin:10px;
+        }
+        #subContainer-1 li
+        {
+            font-size: 18px;
+            margin:20px;
+            
+        }
+        .leftContent
+        {
+            /* border:1px solid plum; */
+            width: 318px;
+            padding:50px;
+            position: relative;
+            left: 123px;
+
+        }
+        .rightContent
+        {
+            /* border:1px solid plum; */
+            width: 318px;
+            position: absolute;
+            right: 338px;
+            top: 152px;
+        }
+        #address
+        {
+            position:relative;
+            top:-143px;
+        }
+        #name,#firstName,#age
+        {
+            position:relative;
+            margin:5px;
+        }
+        #firstName
+        {
+            left:22px;
+        }
+        #name
+        {
+            left:61px;
+        }
+        #age
+        {
+            left:74px;
+        }
+        #container-2
+        {
+            padding:24px;
+        }
+        select,#lang,#course
+        {
+            margin:10px;
+        }
+        #urself
+        {
+            position: relative;
+            top: -142px;
+            left: 20px;
+        }
+        #txtContainer
+        {
+            position:relative;
+            left:30px;
+        }
+    </style>
+</head>
+<body>
+    <div  id="header">STUDENT &nbsp REGISTRATION &nbsp PAGE</div>
+    <div id="headContainer">
+        <ol id="subContainer-1">
+            <label class="containerTitle">Personal Details</label>
+            <div class="leftContent" >
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" maxlength="20">
+                </li>
+                <li>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstname" maxlength="20">
+                </li>
+                <li>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="number">
+                </li>
+            </div>
+            <div class="rightContent">
+                <li>
+                    <label id="address">Address:</label>
+                    <textarea cols="20" rows="10" maxlength="300"></textarea>
+                </li>
+                <li>
+                    <label>Country:</label>
+                        <select>
+                            <option >India</option>
+                            <option>China</option>
+                            <option>America</option>
+                            <option>Banglore</option>
+                            <option>Korea</option>
+                            <option>Pune</option>
+                            <option selected>Hyderabad</option>
+                        </select>
+                </li>
+            </div>
+        </ol>
+        <ol id="subContainer-2">
+            <label class="containerTitle">Education Details</label>
+            <div id="container-2">
+            <li>
+            <label>Qualification:</label>
+            <select>
+                <option>Bsc Computer Science</option>
+                <option>Bsc Mathematics</option>
+                <option>Bsc Physics</option>
+                <option>Bsc Chemistry</option>
+                <option>Bsc Biotechnology </option>
+            </select>
+            </li>
+            <li>
+            <label>Languages: &nbsp</label>
+            <input type="checkbox" id="lang" checked>English
+            <input type="checkbox" id="lang">Hindi
+            <input type="checkbox" id="lang">Telugu
+            <input type="checkbox" id="lang">Urdu
+            </li>
+            <li>
+            <label>Course Opted: &nbsp</label>
+            <input type="checkbox" id="course">MBA
+            <input type="checkbox" id="course">MCA
+            <input type="checkbox" id="course">BTech
+            <input type="checkbox" id="course" checked>MSC
+            </li>
+            </div>
+        </ol>
+
+        <ol id="subContainer-3">
+             <label class="containerTitle">About Yourself</label>
+             <li>
+                <label id="urself">Few About your Career: &nbsp</label>
+                <textarea cols="100" rows="10" id="txtContainer"></textarea>
+             </li>
+        </ol>
+
+        <ol >
+            <button id="register">Register Details</button>
+        </ol>
+    </div>
+    
+    <div id="footer">@Copy rights 2023</div>
+</body>
+</html>

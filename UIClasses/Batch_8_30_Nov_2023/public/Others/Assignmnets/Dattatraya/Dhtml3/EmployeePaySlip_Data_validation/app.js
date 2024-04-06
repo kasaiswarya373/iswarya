@@ -1,0 +1,86 @@
+var getValues = (event) => {
+  var name = document.querySelector("ename").value;
+  name = name.trim();
+  if (name == "") {
+    document.querySelector("enameErr").style.display = "block";
+    return;
+  } else {
+    document.querySelector("enameErr").style.display = "none";
+  }
+};
+var validateData = (event) => {
+  var stdname = document.querySelector("#ename").value;
+  if (event.keyCode >= 65 && event.keyCode <= 90) {
+    return true;
+  } else if (event.keycode >= 97 && event.keyCode <= 122) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+var validateNumber = (event) => {
+  var num = document.querySelector("#eage").value;
+  if (event.keyCode >= 48 && event.keyCode <= 57) {
+    return true;
+  } else {
+    return false;
+  }
+};
+var employeeDetails = {
+  readEmpData() {
+    employeeDetails.name = document.querySelector("#ename").value;
+    employeeDetails.age = document.querySelector("#eage").value;
+    employeeDetails.gender = document.querySelector(
+      "input[name=gender]:checked"
+    ).value;
+    employeeDetails.department = document.querySelector("#edepartment").value;
+    employeeDetails.basicsalary = parseInt(
+      document.querySelector("#ebasicSalary").value
+    );
+    this.calculatePfandHra();
+  },
+  calculatePfandHra() {
+    this.pf = parseInt((this.basicsalary * 14) / 100);
+
+    this.hra = parseInt((this.basicsalary * 25) / 100);
+
+    this.totalsalary = parseInt(this.basicsalary + this.pf + this.hra);
+    this.calculateTax();
+  },
+  calculateTax() {
+    if (this.basicsalary > 100000) {
+      this.taxPercent = 10;
+    } else if (this.basicsalary > 50000) {
+      this.taxPercent = 5;
+    } else {
+      this.taxPercent = 0;
+    }
+    this.taxAmount = parseInt((this.totalsalary * this.taxPercent) / 100);
+    this.totalsalary = this.totalsalary - this.taxAmount;
+    this.totalsalary = parseInt(this.totalsalary);
+    this.displayEmployeeDetails();
+  },
+  displayEmployeeDetails() {
+    resetFields();
+    document.querySelector("#displayBlock").style.display = "block";
+    document.querySelector("#d_name").innerText = this.name;
+    document.querySelector("#d_age").innerText = this.age;
+    document.querySelector("#d_gender").innerText = this.gender;
+    // document.querySelector("d-department").innerText = this.department;
+    document.querySelector("#d_pf").innerText = this.pf;
+    document.querySelector("#d_hra").innerText = this.hra;
+    document.querySelector("#d_tax").innerText = this.taxAmount;
+    document.querySelector("#d_totalSalary").innerText = this.totalsalary;
+  },
+};
+
+var readData = () => {
+  employeeDetails.readEmpData();
+};
+
+var resetFields = () => {
+  document.querySelector("#ename").value = "";
+  document.querySelector("#eage").value = "";
+  document.querySelector("#ebasicSalary").value = "";
+};

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>clock</title>
+       <link rel="stylesheet" href="clock.css">
+    </head>
+    <body>
+        <div class="clockContainer">
+            <div class="no1 no">1</div>
+            <div class="no2 no">2</div> 
+            <div class="no3 no">3</div> 
+            <div class="no4 no">4</div> 
+            <div class="no5 no">5</div>
+            <div class="no6 no">6</div>
+            <div class="no7 no">7</div> 
+            <div class="no8 no">8</div> 
+            <div class="no9 no">9</div> 
+            <div class="no10 no">10</div>
+            <div class="no11 no">11</div>
+            <div class="no12 no">12</div>
+        <div class="hands_box">
+            <div class="hoursHand hand"><i></i></div>
+            <div class="minHand hand"><i></i></div>
+        <div class="secHand hand"><i></i></div>
+    </div> 
+</div>
+        <script>
+             var degValue = 0
+             var minclockRotation = () => {
+                degValue += 1;
+              var angleValue = degValue + 'deg';
+                document.querySelector('.secHand').style.transform = `rotate(${angleValue}) `;
+
+                if(degValue == 360){
+                    degValue = 0;
+                }
+            }
+            setInterval(() => {
+                minclockRotation();
+            },1000);
+         
+            
+        </script>
+       
+    </body>
+    </html>

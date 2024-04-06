@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        HTML 5 input elements
+    </title>
+    <style>
+        ul {
+            border: 1px solid;
+            margin: 20px auto;
+            width: 500px;
+            background-color: rgb(23, 193, 23);
+        }
+        li{
+            list-style: none;
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+        }
+        .title {
+            text-align: center;
+            font-size: 20px;
+            color: rgb(237, 18, 69);
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="title">
+            Registration Page
+        </li>
+        <li>
+            User Name: <input type="text">
+        </li>
+
+        <li>
+          password : <input type="password">
+        </li>
+        <li>
+          Age: <input type="number" min="10" max="200" maxlength="3" step="10">
+        </li>
+        <LI>
+            <span class="sprice"></span>
+            price Range: <input type="range" min="1000" max="10000" step="2" id="priceRange" onchange="showSelectedRange()">
+        </LI>
+        <li>
+            Upload picture: <input type="file">
+        </li>
+        <li>
+            DOB:
+            <input type="date">
+            <input type="datetime-local">
+        </li>
+        <li>
+            time:
+            <input type="time">
+        </li>
+        <li>
+            Fav color": <input type="color">
+        </li>
+        <li>
+            Email: 
+            <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+        </li>
+        <li>
+            PHONE: 
+            <input type="tel" >
+        </li>
+        <li>
+            Search: 
+            <input type="search" >
+        </li>
+        <li>
+            <button>
+                Submit
+            </button>
+        </li>
+    </ul>
+    <script>
+        var showSelectedRange = () => {
+            var selectedPriceRange = document.querySelector("#priceRange").value;
+            console.log(selectedPriceRange);
+
+            document.querySelector(".sprice").innerHTML = selectedPriceRange;
+        }
+    </script>
+</body>
+</html>

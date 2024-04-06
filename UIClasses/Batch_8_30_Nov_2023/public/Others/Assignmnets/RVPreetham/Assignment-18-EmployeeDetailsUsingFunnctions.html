@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          
+        var readEmployeeDetails = () => {
+        
+            var name = prompt("Enter Name : ?");
+            var age  = prompt("Enter age : ?");
+            var gender = prompt("enter gender : ?");
+            var department = prompt("Enter Department : ?");
+            var basicSalary = prompt("Enter Salary : ?");
+            basicSalary = parseFloat(basicSalary);
+            var pf = getpf(basicSalary);
+            var hra = gethra(basicSalary);
+
+            displayEmployeeDetails(name,age,gender,department,basicSalary,pf,hra);
+            getTotalTax(basicSalary,pf,hra,gender);
+        }
+        
+        
+        var displayEmployeeDetails = (name,age,gender,department,basicSalary,pf,hra) => {
+
+            console.log("Name : " + name);
+            console.log("Gender : " + gender);
+            console.log("Age : " + age);
+            console.log("Department : " + department);
+            console.log("Basic Salary : " + basicSalary);
+            console.log("Your PF is " + pf);
+            console.log("Your HRA is " + hra);
+            console.log("Your total Salary is " + parseFloat(basicSalary+pf+hra));
+        
+        }
+       
+        var getpf = (basicSalary) => { 
+        
+            return  parseFloat((basicSalary *15)/100); 
+        
+        }
+    
+        var gethra = (basicSalary) => { 
+        
+            return parseFloat((basicSalary *25)/100);
+        
+        }
+        
+        var getTotalTax = (basicSalary,pf,hra,gender) => {
+        
+            var g = gender.toLowerCase().charAt(0);        
+            var totalSalary = pf+hra+basicSalary;
+            totalSalary = parseFloat(totalSalary);
+            if (g==="m") {
+                if (totalSalary >= 200000) {
+                    console.log("15% Tax will applied.");
+                }
+                else if (totalSalary >= 100000) {
+                    console.log("10% Tax will applied.");
+                }
+                else if (totalSalary >= 50000) {
+                    console.log("5% Tax will applied.");
+                }
+                else {
+                    console.log("No Tax is applied.")
+                }
+
+            } else {
+                if (totalSalary >= 200000) {
+                    console.log("10% Tax will applied.");
+                }
+                else if (totalSalary >= 100000) {
+                    console.log("5% Tax will applied.");
+                }
+                else {
+                    console.log("No Tax is applied.");
+                }
+            }
+        }
+
+        readEmployeeDetails();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isro Apis Test</title>
+    <script src="../axios.js"></script>
+</head>
+
+<body>
+    <button onclick="showData()">Get Isro spacecrafts data</button>
+    <table id="tabeData" border="2px solid" cellpadding="10px" cellspacing="5px">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>SpaceCraftName</th>
+            </tr>
+        </thead>
+    </table>
+    <script>
+        var url = 'https://isro.vercel.app/api/spacecrafts';
+        async function showData() {
+            await axios.get(url)
+                .then((resp) => {
+                    console.log("resp : ", resp.data.spacecrafts);
+                    renderData(resp.data.spacecrafts);
+                })
+                .catch((err) => {
+                    console.log('err', err);
+                })
+        }
+
+        function renderData(spaceCrafsData) {
+            spaceCrafsData.forEach(data => {
+                var trTag = document.createElement('tr');
+                trTag.setAttribute('class', 'trTag');
+
+                var tdTag = document.createElement('td');
+                tdTag.setAttribute('class', 'tdTagIdData');
+                tdTag.innerText = data.id;
+
+                var nameData = document.createElement('td');
+                nameData.setAttribute('class', 'nameData');
+                nameData.innerText = data.name;
+
+                trTag.append(tdTag);
+                trTag.append(nameData);
+
+                var tblTag = document.querySelector('#tabeData');
+                tblTag.append(trTag);
+
+            });
+
+        }
+    </script>
+</body>
+
+</html>

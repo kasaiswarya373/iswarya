@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ulandol list</title>
+        <style>
+            .header,.footer{
+                border: 1px solid rgb(193, 188, 188);
+                font-size: 20px;
+                text-align: center;
+                margin: 10px;
+                padding: 10px;
+
+                background-color: rgb(115, 121, 115);
+            }
+            .heallthyfood,.unhealthyfood{
+                border: 1px solid rgb(190, 41, 190);
+                width: 500px;
+                height: 500px;
+                margin: 10px;
+                padding: 10px;
+            background-color: blanchedalmond;
+              float: left;  
+            }
+            .footer{
+                clear: both;
+            }
+       ol > li {
+        border: 1px solid grey;
+        width: 100px;
+        height: 20px;
+        margin: 5px;
+        padding: 5px;
+        
+       }
+       ol{
+        list-style-position: inside;
+       }
+       ul{
+        list-style-type: none;
+       }
+        
+       .details{
+        border: 1px solid grey;
+        width: 400px;
+        height: 100px;
+        margin: 5px;
+        padding: 5px;
+       }
+
+        </style>
+    </head>
+    <body>
+        <div class="header"> Ul and Ol with student details</div>
+        <div class="heallthyfood">
+        <ol>
+            <li>jyothi</li>
+            <li>Rajesh</li>
+            <li>Viraj</li>
+        </ol>
+        </div>
+        <div class="unhealthyfood">
+            <ul class="details">
+                <li>
+                    <ul>
+                        <li>Name:Jyothi</li>
+                          <li>Age:20</li>
+                          <li>Gender:Female</li>
+                      </ul>
+                </li>
+            </ul>
+              <ul class="details">
+                <li>
+                    <ul>
+                    <li>Name:Jyothi</li>
+                      <li>Age:20</li>
+                      <li>Gender:Female</li>
+                  </ul></li>
+              </ul>
+              <ul class="details">
+                <li>
+                    <ul>
+                    <li>Name:Rajesh</li>
+                      <li>Age:30</li>
+                      <li>Gender:Male</li>
+                  </ul></li>
+              </ul>
+              <ul class="details">
+                <li>
+
+              <ul>
+                <li>Name:Rani</li>
+                  <li>Age:25</li>
+                  <li>Gender:Female</li>
+              </ul>
+              </li>
+            </ul>
+        </div>
+        <div class="footer"> @Copyright 2023</div>
+    </body>
+    </html>

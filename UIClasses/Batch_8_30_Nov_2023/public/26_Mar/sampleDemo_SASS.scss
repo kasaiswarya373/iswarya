@@ -1,0 +1,34 @@
+$base-color: red;
+$border-dark: rgba($base-color, 0.88);
+
+.alert {
+  border: 1px solid $border-dark;
+}
+#pqr {
+    background-color: $base-color;
+}
+
+.container {
+    color: $border-dark;
+}
+
+.abc {
+    color: green;
+    .pqr{
+
+    }
+}
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --mycolor: green;
+  }
+  
+  body { background-color: var(--blue); }
+  
+  h2 { border-bottom: 2px solid var(--blue); }
+
+  #abc {
+    background-color: var(--mycolor);
+  }

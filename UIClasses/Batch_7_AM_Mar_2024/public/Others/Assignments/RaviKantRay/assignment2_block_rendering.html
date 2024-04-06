@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model by floating method</title>
+</head>
+<body>
+    <style>
+        .blocks {
+            text-align: center;
+            border: 3px solid black;
+            padding: 12px 14px;
+        
+        }
+           
+        .block1,
+        .block2,
+        .block3,
+        .block4,
+        .block5,
+        .block6,
+        .block7,
+        .block8,
+        .block9,
+        .block10,
+        .block11,
+        .block12,
+        .block13
+        {
+            width: 120px;
+            height: 130px;
+            margin: 10px;
+            text-align: center;
+        }
+        .block1 {
+            background-color: violet;
+            float: left;
+        }
+        .block2 {
+            background-color: green;
+            float: left;
+        }
+        .block3 {
+            background-color: orange;
+            float: right;
+        }
+        .block4 {
+            background-color: purple;
+            float: right;
+            clear:left;
+        }
+        .block5 {
+            background-color: crimson;
+            float: left;
+            clear:both;
+        }
+        .block6 {
+            background-color: saddlebrown;
+            float: left;
+            /*clear:both;*/
+        }
+        .block7 {
+            /*clear: both;*/
+            background-color: aqua;
+            
+            float: right;
+        }
+        .block8 {
+            background-color: skyblue;
+            float: left;
+            clear: left;
+        }
+        .block9 {
+            background-color: lightcoral;
+            float: right;
+
+        }
+        .block10 {
+            background-color: red;
+            float: left;
+            clear: both;
+        }
+        .block11 {
+            background-color: gold;
+            float: right;
+        }
+        .block12 {
+            background-color: darkgreen;
+            float: right;
+            clear: both;
+
+        }
+        .block13 {
+            background-color: cornflowerblue;
+            float: right;
+        }
+
+    </style>
+
+    <div class="blocks"><b>BLOCK RENDERING</b></div>
+    <div class="block1">BLOCK 1</div>
+    <div class="block2">BLOCK 2</div>
+    <div class="block3">BLOCK 3</div>
+    <div class="block4">BLOCK 4</div>
+    <div class="block5">BLOCK 5</div>
+    <div class="block6">BLOCK 6</div>
+    <div class="block7">BLOCK 7</div>
+    <div class="block8">BLOCK 8</div>
+    <div class="block9">BLOCK 9</div>
+    <div class="block10">BLOCK 10</div>
+    <div class="block11">BLOCK 11</div>
+    <div class="block12">BLOCK 12</div>
+    <div class="block13">BLOCK 13</div>
+</body>
+</html>

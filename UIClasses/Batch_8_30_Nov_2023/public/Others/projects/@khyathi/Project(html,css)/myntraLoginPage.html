@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Myntra</title>
+    <link rel="icon" href="images/Capture.PNG">
+
+    </head>
+
+    <style>
+        body{
+            background-color: rgba(12, 12, 48, 0.884);
+        }
+        .myntraLogin{
+            /* padding: 50px; */
+            /* margin: 20px 50px; */
+            height: 80vh;
+            width: 800px;
+            background-color: white;
+            margin: 70px auto;
+        }
+        .myntraLogin .form{
+            background-color: white;
+            padding: 20px 40px;
+            width: 40%;
+            /* height: 100%; */
+            float: left;
+        }
+         .myntraLogin .poster{
+            background-image: url(images/casual-dressing.jpg);
+            background-size:cover;
+            width: 50%;
+            height: 100%;
+            float: right;
+        } 
+        .field{
+            padding: 10px;
+        }
+        .field .subField{
+            border-bottom: 2px solid black;
+            padding: 5px;
+            /* border-style: hidden; */
+        }
+        .field input{
+            border-style:hidden;
+        }
+        .checkbox{
+            padding: 20px;
+        }
+        .buttons{
+            padding: 20px;
+            width: 100%;
+        }
+        .buttons input{
+            width: 130px;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 5px 2px gainsboro;
+            
+            
+        }
+        .buttons input:first-child{
+            background-color: rgb(224, 42, 73);
+            width: 50%;
+
+            
+        }
+
+input[type="button"] {}
+
+    </style>
+    <body>
+        <div class="myntraLogin">
+            <div class="form">
+                <img src="images/myntralogoimage.png" alt="myntra" width="100px">
+                <h2  class="header"> welcome to Indias Largest Online Fashion Store</h2>
+                <p>please login to your account </p>
+              <div class="field">
+                <div><label for="email">Email Id</label></div>
+               <div class="subField"> <input type="email"></div>
+             </div>
+             <div class="field">
+               <div> <label for="Password">Password</label></div>
+              <div class="subField">  <input type="password"></div>
+             </div>
+             <div class="checkbox">
+                <input type="checkbox">keep me signed In
+                <a href="Forget Password">Forget Password?</a>
+
+             </div>
+             <div class="buttons">
+
+                <input type="button" value="Login">
+                <input type="button" value="SignUp">
+             </div>
+            </div>
+            <div class="poster">
+            
+            </div>
+            
+        </div>
+    </body>
+</html>

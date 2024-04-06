@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <style>
+            h3{
+                text-align: center;
+            }
+            ul{
+                border: 3px solid;
+                background-color:#ccc;
+                width: 600px;
+                margin: 20px auto;
+                padding: 10px;
+            }
+            li{
+                list-style: none;
+                background-color:#fff;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid  #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="http://jyothi.com/info" method="GET">
+            <h3>Student Details</h3>
+            <ul>
+                <li>
+                    <label for="UserName"> EnterUserName:</label>
+                    <input  type="text" name="UserName" maxlength="15" id="txtname"/>
+                </li>
+                <li>
+                    <label for="Password">EnterPassword:</label>
+                    <input  type="password" name="Password" id="txtPassword" maxlength="8"/>
+                </li>
+                <li>
+                    <label for="gender"> Gender:</label>
+                    <input  type="radio" name="gender" value="Male "/>Male
+                    <input type="radio" name="gender" checked value="Female">Female
+                </li>
+                <li>
+                    <label >Country:</label>
+                    <select name="Country" >
+                        <option value="india">India</option>
+                        <option value="Usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="Afrika">Afrika</option>
+                    </select>
+                </li>
+                <li>
+                    Language:
+                    <input type="checkbox" name="lng-known" value="English" id="">English
+                    <input type="checkbox" name="lng-known"  value="Hindi">Hindi
+                    <input type="checkbox" name="lng-known" id="" value="Telugu">Telugu
+                    <input type="checkbox" name="lng-known" id="" value="Urdu">Urdu
+
+                    
+                </li>
+                <li>What about you:
+                    <textarea name="aboutYou" id="txtarea" cols="30" rows="10"></textarea>
+                </li>
+                <li>
+                    <input type="submit">
+                </li>
+            </ul>
+        </form>
+    </body>
+</html>

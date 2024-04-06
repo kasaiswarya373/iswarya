@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee salary using control structures</title>
+    </head>
+    <body>
+        <script>
+            var netsalary,taxpercent;
+            var ename = prompt("Enter the employee name");
+            var age= prompt("Enter the age");
+            var dept = prompt("Enter the employee department");
+            var gender = prompt("Enter the employee gender");
+
+            var basicSalary = prompt("Enter the basic salary ");
+            basicSalary = parseInt(basicSalary);
+
+            console.log("Enter the Employee name:" +ename);
+            console.log("Enter the employee age:" +age);
+            console.log("Enter the employee department:" +dept);
+            console.log("Enter the employee gender:" +gender);
+
+            var pf = (basicSalary*14)/100;
+            console.log("pf of employee is:" +pf);
+
+            var hra = (basicSalary*25)/100;
+            console.log("hra of employee is:" +hra);
+
+            var totsal = basicSalary+pf+hra;
+            console.log("Total salary of employee is:" +totsal);
+
+            if(gender == 'male')
+            {
+                if(totsal>200000)
+                {
+                    console.log("Male employees whose tax falls under 15% slab");
+                    taxpercent = (totsal*15)/100;
+                    console.log("The total tax of employee is:" +taxpercent);
+
+                    netsalary = totsal - taxpercent;
+                    console.log("The netsalary of employee is:" +netsalary);
+                }
+                else if(totsal>100000)
+                {
+                    console.log("Male employees whose tax falls under 10% slab");
+                    taxpercent = (totsal*10)/100;
+                    console.log("The total tax of employee is:" +taxpercent);
+
+                    netsalary = totsal - taxpercent;
+                    console.log("The netsalary of employee is:" +netsalary);
+                }
+                else if(totsal>50000)
+                {
+                    console.log("Male employees whose tax falls under 5% slab");
+                    taxpercent = (totsal*5)/100;
+                    console.log("The total tax of employee is:" +taxpercent);
+
+                    netsalary = totsal - taxpercent;
+                    console.log("The netsalary of employee is:" +netsalary);
+                }
+                
+                else
+                {
+                    taxpercent = totsal;
+                    netsalary = totsal - taxpercent;
+                    console.log("The tax percent is" + taxpercent);
+                    console.log("The netsalary of employee is"+ netsalary);                }
+            }
+            else
+            {
+                if(totsal>200000)
+                {
+                    console.log("Female employees whose tax falls under 10% slab");
+                    taxpercent = (totsal*10)/100;
+                    console.log("The total tax of employee is:" +taxpercent);
+
+                    netsalary = totsal - taxpercent;
+                    console.log("The netsalary of employee is:" +netsalary);
+                }
+                else if(totsal>100000)
+                {
+                    console.log("Female employees whose tax falls under 5% slab");
+                    taxpercent = (totsal*5)/100;
+                    console.log("The total tax of employee is:" +taxpercent);
+                    
+                    netsalary = totsal - taxpercent;
+                    console.log("The netsalary of employee is:" +netsalary);
+                }
+                else if(totsal>50000) 
+                {
+                    taxpercent = totsal;
+                    console.log("The total tax and net salary of employee is:" +totsal);
+                }
+            }
+           
+
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+    <title> FORM Assignment </title>
+    <style> 
+
+      h3 {
+        border: 1px solid;
+        width:100% auto;
+        margin:10px;
+        padding:10px;
+        text-align: center;
+      }
+      .container {
+        border:1px solid;
+        height:100% auto;
+        width:100% auto;
+
+      }
+
+      ul {
+        border:1px solid #CCC;
+        width:100% auto;
+        margin:10px;
+        padding:10px;
+        height:100% auto;
+        list-style: none;
+
+      }
+      .li {
+        border:1px solid;
+        width:10%;
+        margin:10px;
+        padding:10px;  
+        list-style: none;   
+
+      }
+      
+      .personal, .Educational {
+        border:1px solid;
+        height:170px;
+        width:100% auto;
+        position:relative;
+        margin:20px;
+        padding:10px;
+        z-index:1;
+        opacity:1;
+        display:block;
+        
+      }
+     
+      .LPD, .LED{
+        border:1px solid;
+        width:100px;
+        height:100px;
+        
+        padding:20px;
+        margin-top:-20px;
+        position: relative;
+        
+        text-align: center;
+        z-index:2;
+        Opacity:1.5;
+      }
+      body {
+        margin:0;
+        padding:0;
+        /*overflow-x: hidden;*/
+      }
+      .pd1, .ed1 {
+        margin:20px;
+        padding:20px;
+        float:left;
+      }
+      .QL {
+        left:20px;
+        margin:5px;
+      }
+      .Course {
+        left:20px;
+        margin:10px;
+      }
+      .Address {
+        top:260px;
+        left:400px;
+
+      }
+      
+
+      
+      
+      
+    </style>
+</head>
+<body>
+    <h3> Student Registration Page </h3>
+    <div class="container">
+    <ul class="personal">
+        <li>
+            <label class="LPD" for="Personal Details"> Personal Details </label>
+        </li>
+        <li class="pd1"> 
+         Name
+         <div class="pleft">
+          <input type="text" name="name" maxlength="12"><br> FirstName 
+          <input tye="text" name="firstname" maxlength="12" > <br>Age
+          <input type="text" name="age" maxlength="2"> 
+          </div>
+         <div class="Address"> Address
+          <textarea name="" id="" cols="10" rows="2">  </textarea> </div>
+          Country <select>
+          <option> India</option>
+          <option> Japan </option>
+          <option> Austria </option>
+          </select>
+
+          
+        </li>
+    </ul>
+    <ul class="Educational">
+        <li >
+            <label class="LED" for="Educational Details"> Educational Details </label>
+        </li>
+        <li class="ed1">
+          Qualification
+          <select>
+            <option> MSC </option>
+            <option> BTECH</option>
+            <option>MCA </option>
+            <option> MBA </option>
+          </select>
+          <div class="QL">
+        <label> Languages </label>  
+          <input type="checkbox"> English 
+          <input type="checkbox"> Hindi 
+          <input type="checkbox"> Telugu 
+          <input type="checkbox"> Urdu 
+          </div>
+          <div class="Course">
+            <label> Courses Opted</label>
+            <input type="checkbox"> MBA 
+            <input type="checkbox">MSC 
+            <input type="checkbox">BTECT 
+            <input type="checkbox">MCA
+          </div>
+
+        </li>
+
+        
+
+    </ul>
+    </div>  
+
+
+</body>
+</html>    
+    

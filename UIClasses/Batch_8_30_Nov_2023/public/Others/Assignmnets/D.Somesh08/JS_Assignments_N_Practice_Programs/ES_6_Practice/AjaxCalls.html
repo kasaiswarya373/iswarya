@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Calls in JS</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <!-- locally, under public folder we have created a minified axios code .js file, so even if we dont have internet we can make use of axios features. -->
+    <script src="../axios.js"></script>
+</head>
+
+<body>
+    <button onclick="getData()">Click here</button>
+    <script>
+
+        async function getData() {
+            await axios.get('https://fakestoreapi.com/products')
+                .then((resp) => {
+                    console.log(resp);
+                }).catch((err) => {
+                    console.log(err);
+                });
+        }
+        fetch('http://localhost:8082/DHTML/Data/Details.json')
+            .then((resp) => resp.json())
+            .then((res) => {
+                console.log(res);
+            }).catch((err) => {
+                console.log(err);
+            });
+
+        axios.get('http://localhost:8082/DHTML/Data/Details.json')
+            .then((resp) => {
+                console.log(resp.data);
+            }).err((err) => {
+                console.log(err);
+            });
+
+    </script>
+</body>
+
+</html>

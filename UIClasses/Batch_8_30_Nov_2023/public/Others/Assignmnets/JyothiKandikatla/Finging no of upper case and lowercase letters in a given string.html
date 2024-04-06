@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upper and lower</title>
+</head>
+<body>
+    <script>
+         var text = "This IS My TEXT StrinG";
+         var uppercount = 0;
+         var lowercount = 0;
+         for(var i = 0 ; i <= text.length;i++){
+            if(text.charCodeAt(i) >=60 &&text.charCodeAt(i) <=90) {
+                uppercount++;
+            }else if(text.charCodeAt(i) >=97 &&text.charCodeAt(i) <=122){
+                lowercount++;
+            }
+         }
+         console.log('Uppercase letters are '+uppercount);
+         console.log('Lowecase letters  are '+lowercount);
+
+    </script>
+</body>
+</html>

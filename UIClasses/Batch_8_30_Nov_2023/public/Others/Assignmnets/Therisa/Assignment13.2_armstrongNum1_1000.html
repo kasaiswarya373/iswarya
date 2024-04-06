@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>
+           WAP to list out all the armstrong numbers between 1 to 1000? 
+        </h2>
+        <script>
+            for( i = 1; i <= 1000; i++){
+                var num = i;
+                var count = 0;
+                var temp = num;
+                var result = num;
+                while(num > 0){
+                var rem = num % 10;
+                count++;
+                num = num / 10;
+                num = parseInt(num);
+                } 
+                var original = 0;
+                while(temp > 0){
+                    var rem = temp % 10;
+                    original += rem ** count;
+                    temp = temp / 10;
+                    temp = parseInt(temp);
+                }
+                if(original == result){
+                    console.log(i);
+                }
+            } 
+        </script>
+    </body>
+</html>

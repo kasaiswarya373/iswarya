@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Assignment 10 </h3>
+    <script>
+        var empname=prompt('Enter Employee Name');
+        var  age=prompt('Enter Employee Age');
+        var gender=prompt('Enter Employee Gender');
+        var department=prompt('Enter Employee department');
+        var basicsal=prompt('Enter Employee basic salary');
+        basicsal = parseInt(basicsal);
+        var pf=prompt('Enter pf percentage');
+        var hra=prompt('Enter hra percentage');
+        var pfamount=(basicsal*pf)/100;
+        pfamount = parseInt(pfamount); 
+        var hraamount=(basicsal*hra)/100;
+        hraamount = parseInt(hraamount);
+        var totalsal=basicsal+pfamount+hraamount;
+        console.log("Empname:"+empname);
+        console.log("age:"+age);
+        console.log("gender: "+gender);
+        console.log("department:"+department);
+        console.log('Basicsalary: '+basicsal);
+        console.log("pf:"+pf+"%");
+        console.log("hra:"+hra+"%");
+        console.log("totalsal:"+totalsal);
+        var tax = 0 , salary ,taxamount;
+        if(gender == 'male'){
+            if(totalsal >= 200000){
+                tax = 15;
+                console.log('Tax reduction salary:'+salary);
+            }else if(totalsal >= 100000){
+                tax = 10;
+                taxamount = (totalsal * tax)/100;
+                salary = totalsal - taxamount;
+                console.log('Tax reduction salary:'+salary);            }
+            else {
+                tax = 5;
+                taxamount = (totalsal * tax)/100;
+                salary = totalsal - taxamount;
+                console.log('Tax reduction salary:'+salary);
+             }
+            }else{
+                if(totalsal >= 200000){
+                    tax = 10;
+                    taxamount = (totalsal * tax)/100;
+                    salary = totalsal - taxamount;
+                console.log('Tax reduction salary:'+salary);
+             }else if(totalsal >= 100000){
+                tax = 5;
+                taxamount = (totalsal * tax)/100;
+                salary = totalsal - taxamount;
+                console.log('Tax reduction salary:'+salary);
+            }else{
+                tax = 0;
+                taxamount = (totalsal * tax)/100;
+                salary = totalsal - taxamount;
+                console.log('Tax reduction salary:'+salary);
+            }
+        }
+    </script>
+</body>
+</html>

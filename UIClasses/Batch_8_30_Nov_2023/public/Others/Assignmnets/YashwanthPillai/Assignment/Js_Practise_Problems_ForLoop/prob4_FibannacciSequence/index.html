@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prob4 Fibonacci Sequence</title>
+  </head>
+  <body>
+    <h2>WAP To display Fibonacci Sequence</h2>
+
+    <script>
+      let nterm = parseInt(
+        prompt("Enter nth Term(number) to stop the sequence")
+      );
+      let n1 = 0;
+      let n2 = 1;
+      let nth;
+
+      console.log(`${n1} , ${n2}`);
+      for (let i = 1; i <= nterm; i++) {
+        nth = n1 + n2;
+        n1 = n2;
+        n2 = nth;
+    
+      }
+      console.log(nth);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    color: yellow;
+}
+
+ul {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #bb9a9a;
+}
+li {
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    background-color: #70815e;
+}
+.rblock {
+    display: none;
+}
+
+h3 {
+    text-align: center;
+    border: 5px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+label {
+    width: 140px;
+    display: inline-block;
+}
+
+.msg {
+    display: none;
+}
+
+.marks > input {
+    width: 50px;
+}
+
+.passed {
+    color: green;
+    font-weight: bold;
+}
+
+.surprise {
+    color: red;
+    font-weight: bold;
+}
+
+#displayBlock {
+    display: none;
+}

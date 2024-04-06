@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RANDOM NUMBER GENERATOR</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h2>RANDOM OTP GENERATOR</h2>
+    <div class="container">
+      <li class="head1">OTP GENERATOR</li>
+      <li>
+        <label for="size">ENTER SIZE OR DIGITS OF OTP : </label>
+        <input type="text" name="size" id="SIZE">
+    </li>
+      <li>OTP :     <span class="otp"></span></li>
+      <li class="buttons">
+        <input type="button" name="generate" value="GENERATE" onclick="otp()">
+        <input type="button" name="refresh" value="REFRESH" onclick="refresh()">
+      </li>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prob3 Multiplication Table in a given range</title>
+</head>
+<body>
+    <h2>WAP To display Multiplication table in given range</h2>
+    <script>
+        let num1 = parseInt(prompt("Enter Starting number to start mulTable"))
+        let num2 = parseInt(prompt("Enter Ending number to end mulTable"))
+
+        for(let i = num1 ; i <= num2 ; i++){
+            for(let j = 1; j <= 10 ; j++){
+                console.log(`${i} * ${j} = ${i*j}`);
+            }
+            console.log("\n");
+        }
+    </script>
+</body>
+</html>

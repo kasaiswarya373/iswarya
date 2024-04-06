@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+      <script>
+         var index = "UI full stack web development";
+         console.log(index);
+
+         // total no.of characters within a string==========>>>>>>>>>>>>>
+
+         console.log(" the length of the string is " , index.length);
+
+         // upper and lowercase within a string================>>>>>>>>>>>
+
+         console.log(index.toLocaleLowerCase());
+
+         console.log(index.toLocaleUpperCase());
+
+         console.log(index.split(' '));
+         
+         var totalWords = index.split(" ").length;
+         console.log("the total no.of words = " , totalWords);
+
+         // reverse of string===>>>>>>>>>>>>>>>>>
+
+         var store = " ";
+         for( var i = index.length - 1 ; i > 0 ; i--){
+            store += index[i];
+
+         }
+         console.log("the reverse of the number is : " , store);
+
+         // total no.of vowels in a string========>>>>>>>>>
+
+         var count = 0;
+        for (var i = 0; i < index.length ; i++) {
+            if (index[i] == "a" || index[i] == "e" || index[i] == "i" || index[i] == "o" || index[i] == "u") {
+                count = count + 1;
+            }
+        }
+        console.log("no.of vowels in this string is " , count);
+
+        //comparision of 2 strings ==========>>>>>>>>>.
+         var first = " sri ";
+         var second = " siri ";
+         if( first == second){
+            console.log( "both are same ");
+         }else{
+            console.log(" both are not same ");
+         }
+      </script>  
+    </body>
+</html>

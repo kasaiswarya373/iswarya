@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //WAP to read values into an array and find sum of all the even numbers and odd numbers sepeartely.
+            var n = parseInt(prompt("enter size of array: "));
+            var array =  [n];
+            for(var i=0;i<n;i++){
+                array[i] = prompt("enter value: ");
+                array[i] = parseInt(array[i]);
+            }
+            var evensum = 0;
+            var oddsum = 0;
+            var calculatevensum = (array , evensum) => {
+                for(var i = 0; i < n; i++){
+                    if(array[i] % 2 == 0){
+                        evensum += array[i];
+                    }
+                }
+                return evensum;
+            }
+            var calculatoddsum = (array , oddsum) => {
+                for(var i = 0; i < n; i++){
+                    if(array[i] % 2 != 0){
+                        oddsum += array[i];
+                    }
+                }
+                return oddsum;
+            }
+            console.log("sum of even elements is " + calculatevensum(array , evensum));
+            console.log("sum of odd elements is " + calculatoddsum(array , oddsum));
+        </script>
+    </body>
+</html>

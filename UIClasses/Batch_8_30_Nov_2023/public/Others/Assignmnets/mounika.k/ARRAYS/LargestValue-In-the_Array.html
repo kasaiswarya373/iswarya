@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LargestValueInArray</title>
+</head>
+<body>
+    <script>
+        var largestNumFind = () => {
+            var arr = [11, 40, 23, 77, 50, 91, 64, 75, 89, 91, 110, 41, 111, 42 ,333, 543, 434, 41, 800, 30, 43, 37]
+            var largestNum = 0;
+            var secondLargestNum = 0;
+            for(i = 0; i < arr.length; i++){
+                if(largestNum < arr[i]){
+                    largestNum = arr[i];
+                }else{
+                    largestNum = largestNum;
+                }
+            }
+            console.log(`Largest Number is ${largestNum}`)
+    }
+        largestNumFind();
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var details = () => {
+            var name, age, gender, m1, m2, m3, m4, m5;
+            name = 'shravan';
+            age = 25;
+            gender = "male";
+            // m1 = 56;
+            // m2 = 85;
+            // m3 = 47;
+            // m4 = 69;
+            // m5 = 32;
+
+            var marks = [56, 85,  47, 69, 32];
+
+            // var total = gettotal(m1, m2, m3, m4, m5);
+            var total = gettotal(marks);
+            var avg = getavg(total);
+            var inf = info(name, age, gender, total, avg);
+
+        }
+
+        // var gettotal = (m1, m2, m3, m4, m5) => {
+        //     total = m1 + m2 + m3 + m4 + m5;
+        //     return total;
+        // }
+
+        var gettotal = (marks) => {
+            var total = 0;
+            for (var i = 0; i < marks.length; i++) {
+                total += marks[i];
+            }
+            return total;
+        }
+
+        var getavg = (total) => {
+             avg = total / 5;
+             return avg;
+        }
+
+        var info = (name, age, gender, total, avg) => {
+            console.log(`name is ${name}`);
+            console.log(`age is ${age}`);
+            console.log(`gender is ${gender}`);
+            console.log(`total is ${total}`);
+            console.log(`avg is ${avg}`);
+        }
+
+        details();
+    </script>
+    
+</body>
+</html>

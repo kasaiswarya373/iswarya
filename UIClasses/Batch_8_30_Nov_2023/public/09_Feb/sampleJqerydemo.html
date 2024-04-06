@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <style>
+            .container {
+                border: 1px solid;
+                width: 280px;
+                height: 100px;
+            }
+            .highlight {
+                background-color: aqua;
+                text-align: center;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="Highlight" onclick="highlightElement()">
+        <div id="content" class="container">Hello</div>
+        <script>
+            var highlightElement = () => {
+                
+
+                // var existingClass =  document.querySelector("#content").getAttribute("class");
+                // existingClass = existingClass + ' highlight';
+                // document.querySelector("#content").setAttribute("class", existingClass);
+
+                // $("#content").addClass('highlight')
+
+                document.querySelector("#content").classList.add('highlight');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var cdate = new Date();
+        var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        var monthNamesFull = ['January', 'February', 'March', 'April', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        var daysNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+        var daysNamesShort = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+        var userOption = prompt("Enter Date Format Number");
+        switch (userOption) {
+            case '1':
+                var monthName = monthNames[cdate.getMonth()];
+                var myformat1 = `${cdate.getDate() + "th"} / ${monthName} / ${cdate.getFullYear()}`;
+                console.log(`Format number one is -->   ${myformat1}`);
+                break;
+            case '2':
+                var myformat2 = `${cdate.getDate()}/ ${cdate.getMonth() + 1}/ ${cdate.getFullYear()}`;
+                console.log(`Format number Two is -->   ${myformat2}`);
+                break;
+            case '3':
+                var myformat3 = `${cdate.getDate()}/ ${cdate.getMonth() + 1}/ ${cdate.getFullYear() % 100}`;
+                console.log(`Format number Three is -->   ${myformat3}`);
+                break;
+            case '4':
+                var myformat4 = monthNames[cdate.getMonth()] + ' ' + [cdate.getDate()] + 'th,' + ' ' + cdate.getFullYear();
+                console.log(`Format number Four is -->   ${myformat4}`);
+                break;
+            case '5':
+                var days = daysNames[cdate.getDay()];
+                var myformat5 = daysNames[cdate.getDay()] + ' ' + monthNames[cdate.getMonth()] + ' ' + [cdate.getDate()] + 'th' + ' ' + cdate.getFullYear();
+                console.log(`Format number Five is -->   ${myformat5}`);
+                break;
+            case '6':
+                var myformat6 = daysNames[cdate.getDay()] + ' ' + monthNamesFull[cdate.getMonth()] + ' ' + [cdate.getDate()] + 'th,' + ' ' + cdate.getFullYear();
+                console.log(`Format number Six is -->   ${myformat6}`);
+                break;
+            case '7':
+                var myformat7 = daysNamesShort[cdate.getDay()] + ' ' + monthNamesFull[cdate.getMonth()] + ' ' + [cdate.getDate()] + 'th,' + ' ' + cdate.getFullYear();
+                console.log(`Format number Seven is -->   ${myformat7}`);
+                break;
+            case '8':
+                var myformat8 = daysNamesShort[cdate.getDay()] + ' ' + monthNames[cdate.getMonth()] + ' ' + [cdate.getDate()] + 'th,' + ' ' + cdate.getFullYear();
+                console.log(`Format number Eight is -->   ${myformat8}`);
+                break;
+            case '9':
+                var myformat9 = `${cdate.getDate()}/${cdate.getMonth() + 1}/${cdate.getFullYear()} ${cdate.getHours()}:${cdate.getMinutes()}:${cdate.getSeconds()}`;
+                console.log(`Format number Nine is-- > ${myformat9}`);
+                break;
+            case '10':
+                var myformat10 = `${cdate.getHours()} Hr: ${cdate.getMinutes()} Min: ${cdate.getSeconds()} sec`;
+                console.log(`Format number Ten is-- > ${myformat10}`);
+                break;
+            case '11':
+                var myformat11 = `${cdate.getMinutes()} Min : ${cdate.getSeconds()} sec`;
+                console.log(`Format number Eleven is-- > ${myformat11}`);
+                break;
+            default:
+                console.log("Wrong Input");
+        }
+    </script>
+</body>
+
+</html>

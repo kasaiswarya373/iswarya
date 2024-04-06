@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //WAP working with employee details using functions
+            var empname,empage,gender,empbasicsalary,pf,hra,tax,totalsalary;
+            function empdetails() {
+                 empname = prompt("enter empname: ");
+                 empage = prompt("enter empage: ");
+                 gender = prompt("enter gender: ");
+                 empbasicsalary = prompt("enter empbasicsalary: ");
+                empbasicsalary = parseInt(empbasicsalary);
+                calculatepf();
+            }
+            function calculatepf() {
+                 pf = (empbasicsalary*14)/100;
+                calculatehra();
+            }
+            function calculatehra() {
+                 hra = (empbasicsalary * 25) / 100;
+                calculatetax();
+            }
+            function calculatetax() {
+                 tax = 0;
+                if(empbasicsalary>=100000){
+                    tax = 15;
+                }
+                else if(empbasicsalary>=50000){
+                    tax = 10;
+                }
+                totalsalary = empbasicsalary+pf+hra;
+                tax = (totalsalary*tax)/100;
+                totalsalary = totalsalary-tax;
+            }
+            function displaydetails() {
+                empdetails();
+                console.log("name: " + empname);
+                console.log("age: " + empage);
+                console.log("gender: " + gender);
+                console.log("empsalary: " + empbasicsalary);
+                console.log("totalsalary: " + totalsalary);
+                
+            }
+            displaydetails();
+        </script>
+    </body>
+</html>

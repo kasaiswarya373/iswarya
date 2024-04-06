@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Employee details using parameter and returning values
+        var readingValues = () => {
+            var ename = prompt("Enter name");
+            var age = parseInt(prompt("Enter age"));
+            var basicsal = parseInt(prompt("Enter Basic salary"));
+            var temp = getpf(basicsal);
+            var temp1 = gethra(basicsal);
+            var temp2 = totalSal(basicsal, temp, temp1);
+            displayDetails(ename, age, basicsal, temp, temp1, temp2);
+
+        }
+        var getpf = (basicsal) => {
+            var pf = (15 * basicsal) / 100;
+            pf = parseInt(pf);
+            return pf;
+        }
+        var gethra = (basicsal) => {
+            var hra = (25 * basicsal) / 100;
+            hra = parseInt(hra);
+            return hra;
+        }
+        var totalSal = (basicsal, pf, hra) => {
+            var total = basicsal + pf + hra;
+            total = parseInt(total);
+            return total;
+        }
+        var displayDetails = (ename, age, basicsal, temp, temp1, temp2) => {
+            console.log(`Name : ${ename}`);
+            console.log(`Age : ${age}`);
+            console.log(`Basic Salary : ${basicsal}`);
+            console.log(`PF Amount : ${temp}`);
+            console.log(`HRA Amount : ${temp1}`);
+            console.log(`Total Salary : ${temp2}`);
+        }
+        readingValues();
+    </script>
+</body>
+
+</html>

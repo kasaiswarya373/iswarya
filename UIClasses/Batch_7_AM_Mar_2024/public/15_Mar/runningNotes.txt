@@ -1,0 +1,38 @@
+color:  direct color / rgb / hashcode /hsl 
+        rgb ()
+
+        hashcode : # ab 2c 01 -- --
+
+
+        border: size type color;
+
+        border: 2px solid red;
+        border-left: 
+        border-right
+        border-top 
+        border-bottom 
+
+Limitation of Inline CSS : 
+
+Inline css are never ever recommended in css 
+
+
+CSS Classes:
+        
+        .newsHeading {
+                background-color: pink;
+                color: green;
+                width: 120px;
+        }
+
+        Syntax:
+
+                .classname {
+                        set of css porp 
+                }
+
+
+        <h3 name="newsHeading" class="newsHeading" id="sample" title="abc">News Item 1:</h3>
+
+
+        @durgaprasad158

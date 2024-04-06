@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>total salary</title>
+</head>
+<body>
+    <h3>Calculating employee total salary  with promt,console.log,type casting </h3>
+    <script>
+        var empname=prompt('Enter Employee Name');
+        var  age=prompt('Enter Employee Age');
+        var gender=prompt('Enter Employee Gender');
+        var basicsal=prompt('Enter Employee Basical');
+        basicsal=parseInt(basicsal);
+        var pfpers=prompt('Enter pf percentage');
+        var pf=(basicsal*14)/100;
+        pf=parseFloat(pf);
+        var hrapers=prompt('Enter hra persentage');
+        var hra=(basicsal*25)/100;
+        hra=parseFloat(hra);
+        var totalsal=pf+hra+basicsal;
+        console.log("Empname:"+empname);
+        console.log("age:"+age);
+        console.log("basicsal:"+basicsal);
+        console.log("pf:"+pf);
+        console.log("hra:"+hra);
+        console.log("totalsal:"+totalsal);
+
+    </script>
+</body>
+</html>

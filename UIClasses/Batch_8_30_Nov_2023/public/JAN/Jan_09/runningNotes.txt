@@ -1,0 +1,89 @@
+Objects with methods:
+
+    var empDetails = {
+        name
+        age
+        dep 
+        gender 
+        displaydetalis() {
+
+        },
+        getpf() {
+            
+        }
+    }
+
+.... Arrays with Objects
+
+    var sdetails1 = {
+        name: 'Raj',
+        age: 20,
+        dispalyinfo() {
+
+        }
+    }
+
+    var sdetails2 = {
+        name: 'Teena',
+        age: 22,
+        dispalyinfo() {
+            
+        }
+    }
+
+    var sdetails3 = {
+        name: 'Meena',
+        age: 19,
+        dispalyinfo() {
+            
+        }
+    }
+
+    var studentDetails = [ 
+        {
+            name: 'Raj',
+            age: 20,
+            dispalyinfo() {
+
+            }
+        },
+        {
+            name: 'Meena',
+            age: 20,
+            dispalyinfo() {
+
+            }
+        },
+        {
+            name: 'Teena',
+            age: 20,
+            dispalyinfo() {
+
+            }
+        }
+    ]
+
+
+    var studentDetailsObj = {
+        'std_01': {
+            name: 'Raj',
+            age: 20,
+            dispalyinfo() {
+
+            }
+        },
+        'std_02': { 
+            name: 'Meena',
+            age: 20,
+            dispalyinfo() {
+
+            }
+        },
+        'std_03': {
+            name: 'Teena',
+            age: 20,
+            dispalyinfo() {
+
+            }
+        }
+    }

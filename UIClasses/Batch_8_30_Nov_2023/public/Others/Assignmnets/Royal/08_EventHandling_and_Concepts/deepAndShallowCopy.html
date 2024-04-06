@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep and Shallow Copy</title>
+</head>
+<body>
+    <h3>Demonstratating Deep Copy and Shallow Copy concepts</h3>
+    <script>
+        // Concept of deep copying (in primitive data type like string, number, boolean etc)
+        /*
+        var a = 90;
+        var b = a;
+        console.log('a value is : '+a);
+        console.log('b value is : '+b);
+        a++;
+        console.log('_________________');
+        console.log('a value is : '+a);
+        console.log('b value is : '+b);
+        a++;
+        a++, b--;
+        console.log('_________________');
+        console.log('a value is : '+a);
+        console.log('b value is : '+b);
+        */
+
+        //Concept of Shallow copying (In non primitive data type like array, object,  )
+        var data1 = {
+            name : 'Raj',
+            age : 20
+        }
+        var data2 = data1;
+
+        console.log(data1);
+        console.log(data2);
+        
+        data1.age++;
+
+        console.log(data1);         
+        console.log(data2);
+
+
+    </script>
+    
+</body>
+</html>

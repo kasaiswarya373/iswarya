@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of individual numbers </title>
+</head>
+<body>
+    <script>
+        alert("Finding The Sum Of The Individual number")
+        var  N1 = parseInt(prompt("Enter a Value"));
+        var  N2 = N1;
+        var Sum = 0;
+
+        while(N1 > 0) {
+            var NUM = N1 % 10;
+            Sum += NUM;
+            N1 = parseInt(N1/10);
+        }
+        console.log("Sum of the Individual Digit in ",(N2)," is ",(Sum));
+    </script>
+</body>
+</html>

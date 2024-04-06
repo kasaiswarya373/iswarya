@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Zeros</title>
+</head>
+<body>
+    <h3>WAP to find number of zeros in a given number</h3>
+    <script>
+        var num = parseInt(prompt('Enter a Number'));
+        var zeroCount = 0, rem;
+        while (num > 0){
+            rem = num % 10;
+            if(rem == 0){
+                zeroCount++;
+            }
+            num = parseInt(num/10);
+        }
+        console.log(zeroCount);
+    </script>
+    
+</body>
+</html>

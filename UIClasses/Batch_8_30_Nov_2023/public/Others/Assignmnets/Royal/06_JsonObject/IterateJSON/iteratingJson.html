@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterating JSON</title>
+</head>
+<body>
+    <script>
+        var empData = {
+            "Name" : "Royal",
+            "Age" : 25,
+            "Gender" : "Male",
+            "Location" : 'Maharashtra'
+        }
+
+        //for in loop will only use in case of JSON only
+
+        for(var tempkey in empData){
+            console.log(tempkey);
+            // console.log(empData.tempkey)         //dot operator will not work
+            console.log(empData[tempkey])           //this will work to itarate "for in loop"
+        }
+    </script>
+    
+</body>
+</html>

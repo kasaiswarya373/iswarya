@@ -1,0 +1,22 @@
+
+      <li class="MproductDetails">
+        <ul> 
+            <li>product Name: Mobile</li>
+            <li>
+                price:
+                <span class="actualprice">21000</span>
+                <span class="discountedprice">18765</span>
+            </li>
+            <li>
+                manufacturer: sony
+            </li>
+            <li>
+                seller name: cds electronics
+            </li>
+            <li>
+                rating: 4.5
+            </li>
+        </ul>
+      </li>
+      </ul>
+       

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page For new user click on Sign Up</title>
+    <style>
+        h1{
+            color: white;
+            text-align: center;
+            font-size: 50px;
+        }
+         body {
+        background-color: #262626;
+    }
+        ul{
+            width: 500px;
+            border: 1px solid;
+            margin:  100px auto;
+            padding: 10px;
+            background-color: #121212;
+            border-radius: 10px;
+            
+        }
+        li{
+            list-style-type: none;
+            color: white;
+            /* margin-top: 90px; */
+            
+           
+        }
+        .details{
+          margin: 20px;
+          
+          
+        }
+        .details ::after{
+            content: ' *';
+            color: rgb(11, 151, 41);
+        }
+        #user1{
+            padding: 10px;
+            border: 1px solid white;
+            background-color: transparent;
+        }
+        #button{
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto 30px;
+    background-color: #1ed760;
+    
+    border-radius: 10px;
+    border: 1px solid #1ed760;
+    
+}
+.login{
+     color: black;
+     font-weight: bold;
+     font-size: 15px;
+     text-decoration: none;
+}
+footer{
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 15px;
+   width: 100%;
+   overflow-x: hidden;
+    
+}
+header{
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 15px;
+   width: 100%;
+    overflow-x: hidden;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+      <img src="">
+    </header>
+   
+      <form>
+        <ul>
+            <h1>
+                Log in to Spotify
+            </h1>
+ <div style="margin: auto 120px;">
+            <li class="details" >
+                <label for="username">Email or username:</label>
+                <div>
+                    <input id="user1" type="text" name="username" placeholder="Email or username" maxlength="50" required>
+                </div>
+                
+                
+            </li>    
+            <li class="details" >
+                <label for="actpsw" > Password:</label>
+                <div>
+                    <input id="user1" type="password" name="actpsw" placeholder=" Password"  maxlength="10" required>
+                </div>
+               
+            </li>
+            <li >
+                
+                <button id="button" type="button"><a class="login" href="HomePage.html" >Log in</a></button>
+            </li>
+            <li>
+               <span><a href="signuppage.html" style="color: white; margin: 60px; padding: 10px;" >sign Up</a></span>
+            </li>
+            <li>
+                <span><a href="Forgot Password.html" style="color: white; margin: 30px; ">Forgot your Password</a></span>
+            </li>
+           </ul>
+      </form>
+</div>
+<footer>
+    <div>
+        <h6>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</h6>
+    </div>
+    
+</footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHTML intro</title>
+</head>
+<body>
+    <h3>Demonstrating DHTML concepts...</h3>
+
+    <div id="container"></div>
+
+    <script>
+        // console.log(window);     &     console.log(document);
+
+        var msg = prompt('Provide a well wishesh...');
+        var ptag = document.createElement(prompt('Enter which HTML tag you want to create'));
+        console.log(ptag);
+        ptag.innerText = msg;
+        ptag.setAttribute('id', 'sample');
+        ptag.setAttribute('class', 'test');
+        ptag.setAttribute('title', 'hello');
+        ptag.style.color = prompt('Enter In which color you want');             //inline CSS
+        ptag.style['font-size'] = '20px'        //inline CSS
+
+        // document.getElementById('container').append(ptag);
+        document.querySelector('#container').append(ptag);          //here we need to provide . # etc
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details With Condition</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter emp name ");
+        var age = prompt("Enter emp age ");
+        var gender = prompt("Enter emp gender ");
+        var dept = prompt("Enter emp dept ");
+        var basicSal = prompt("Enter emp basicSal ");
+        var basicSal = parseInt(basicSal);
+
+        var pf = prompt("Enter emp pf");
+        var pf = parseInt(pf);
+        var pf = pf * basicSal / 100;
+
+        var hra = prompt("Enter emp hra");
+        var hra = parseInt(hra);
+        var hra = hra * basicSal / 100;
+
+        var totalSalary = pf + hra + basicSal;
+        var totalSalary = parseInt(totalSalary);
+
+        console.log("enter emp name " + name);
+        console.log("enter emp age " + age);
+        console.log("enter emp gender " + gender);
+        console.log("enter emp dept " + dept);
+        console.log("enter emp basicSal " + basicSal);
+        console.log("enter emp pf " + pf);
+        console.log("enter emp hra " + hra);
+        console.log("employee TotalSalary " + totalSalary);
+
+        if (gender == 'Male'){
+            if(totalSalary >= 20000){
+                console.log("15% Tax will be Applied");
+            }
+            else if(totalSalary >= 10000){
+                console.log("10% Tax will be Applied");
+            }
+            else if(totalSalary >= 5000){
+                console.log("5% Tax will be Applied");
+            }
+            else {
+                console.log("No Tax is Applied");
+            }
+
+        }
+
+        else {
+            if(totalSalary >= 20000){
+                console.log("10% Tax will be Applied");
+            }
+           else if(totalSalary >= 10000){
+                console.log("5% Tax will be Applied");
+            }
+            else {
+                console.log("No Tax is applied");
+            }
+
+        }
+        
+    </script>
+</body>
+</html>

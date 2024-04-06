@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong number or not</title>
+</head>
+<body>
+    <script>
+        //check whether number is armstrong or not
+        var num = prompt("Enter number");
+        var totalno = num.lenght;
+        num = parseInt(num);
+        var temp = num;
+        var ArmstrongNumber = 0;
+        var rem;
+        while (num > 0) {
+            rem = num % 10;
+            armStrongNumber += rem ** totalNo;
+            num = num / 10;
+            num = parseInt(num);
+        } if (temp == ArmstrongNumber) {
+            console.log("It Is an Armstrong number");
+        } else {
+            console.log("It Is Not Armstrong number");
+        }
+
+    </script>
+</body>
+</html>

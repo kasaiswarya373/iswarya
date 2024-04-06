@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spriting Image Example</title>
+  <style>
+    .mainHeading{
+      border:3px solid;
+      padding: 15px;
+      text-align: center;
+      background-color: bisque;
+    }
+    .container{
+      border: 3px solid;
+      height:800px;
+      width: 100%;
+      overflow: auto;
+    }
+    h2{
+      border:1px solid;
+      padding:10px;
+      background-color: rgb(251, 210, 147);
+      margin: 10px;
+    }
+    .image_container{
+      height: 240px;
+      width:180px;
+      border:1px solid;
+      background-image: url(Assignment_Images/Icecream_Image.png);
+      margin: 5px;
+    }
+    li{
+      list-style: none;
+      border: 1px solid;
+      margin:10px;
+      padding:10px;
+      background-color: gainsboro;
+      margin-left: 0;
+    }
+    .flavour1{
+      background-position: 5px 9px;
+    }
+    .flavour2{
+      background-position: -158px -9px;
+    }
+    .flavour3{
+      background-position: -330px 3px;
+    }
+    .flavour4{
+      background-position: -540px -2px;
+    }
+    .flavour5{
+      background-position: -766px -6px;
+    }
+    .flavour6{
+      background-position: 3px -241px;
+    }
+    .flavour7{
+      background-position: -160px -255px;
+    }
+    .flavour8{
+      background-position: -359px -256px;
+    }
+    .content{
+      font-weight: bold;
+      font-size: larger;
+      color: brown;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="mainHeading">Welcome to our world of icecream</h1>
+  <div class="container">
+    <h2>Popular Icecreams</h2>
+    <ul>
+      <li>
+        <div class="image_container flavour1"></div>
+        <div class="content">Chocolate Cone</div>
+        <div class="content"> Price: 60</div>
+      </li>
+      <li>
+        <div class="image_container flavour2"></div>
+        <div class="content">Triple Chocolate</div>
+        <div class="content"> Price: 50</div>
+      </li>
+      <li>
+        <div class="image_container flavour3"></div>
+        <div class="content">Belgium Chocolate</div>
+        <div class="content"> Price: 80</div>
+      </li>
+      <li>
+        <div class="image_container flavour4"></div>
+        <div class="content">Rasberry Chocolate</div>
+        <div class="content"> Price: 90</div>
+      </li>
+      <li>
+        <div class="image_container flavour5"></div>
+        <div class="content">Almond Chocolate</div>
+        <div class="content"> Price: 100</div>
+      </li>
+      <li>
+        <div class="image_container flavour6"></div>
+        <div class="content">Cotton Candy</div>
+        <div class="content"> Price: 60</div>
+      </li>
+      <li>
+        <div class="image_container flavour7"></div>
+        <div class="content">Kesar Pista</div>
+        <div class="content"> Price: 100</div>
+      </li>
+      <li>
+        <div class="image_container flavour8"></div>
+        <div class="content">Red Velvet</div>
+        <div class="content"> Price: 80</div>
+      </li>
+    </ul>
+  </div> 
+</body>
+</html>

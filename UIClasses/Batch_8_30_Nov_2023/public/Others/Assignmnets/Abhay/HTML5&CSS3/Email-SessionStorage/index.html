@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Session Storage Concept</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrappper">
+        <div class="block">
+            <div class="emailField">
+                <label for="email">Enter Your Email </label> :
+                <input type="email" id="emailInput">
+            </div>
+            <div class="passwordField">
+                <label for="password">Enter Your Password </label> :
+                <input type="password" id="passwordInput">
+            </div>
+            <div class="submitbtn">
+                <label for="checkbox" id="remember">Remember Me</label> :
+                <input type="checkbox" name="checkbox" id="checkbox" onclick="setUserDetails()"> <br>
+                <button class="btn btn-warning" onclick="getUserDetails()" id="autoBtn">Auto Fill</button>
+                <button class="btn btn-primary" id="loginBtn" onclick="diaplayMessage()">Login</button>
+                <button class="btn btn-light" onclick="clearDetails()" id="reset">Reset</button>
+                <span></span>
+            </div>
+
+        </div>
+        <div class="footer">
+            ---- Abhay Patil 2024 ----
+        </div>
+
+    </div>
+
+    <script>
+        var setUserDetails = () => {
+            var userDetails = {};
+            userDetails.email = document.querySelector("#emailInput").value;
+            userDetails.password = document.querySelector("#passwordInput").value;
+            sessionStorage.setItem("data", JSON.stringify(userDetails));
+        }
+        var getUserDetails = () => {
+
+            var storeData = sessionStorage.getItem("data");
+            if (storeData) {
+                var userDetails = JSON.parse(storeData);
+                document.querySelector("#emailInput").value = userDetails.email;
+                document.querySelector("#passwordInput").value = userDetails.password;
+            }
+            document.querySelector("#autoBtn").style.display = "none";
+            document.querySelector("#loginBtn").style.display = "inline-block";
+
+        }
+        var clearDetails = () => {
+            document.querySelector("#emailInput").value = ""
+            document.querySelector("#passwordInput").value = ""
+            document.querySelector("#loginBtn").style.display = "inline-block";
+        }
+        var diaplayMessage = () => {
+            document.querySelector("span").innerText = `You are logged in now`
+            document.querySelector("#loginBtn").style.display = "none";
+            document.querySelector("#reset").style.display = "none";
+             document.querySelector("#emailInput").value = ""
+            document.querySelector("#passwordInput").value = "";
+
+        }
+    </script>
+</body>
+
+</html>

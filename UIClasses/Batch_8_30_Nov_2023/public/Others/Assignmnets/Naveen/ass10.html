@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employe Details</title>
+</head>
+<body>
+    <h1>Ouestion :</h1>
+    <p>write a program to work with employee details such as name, age, department, gender, basic salary (read data dynamically from the user) calculate total salary and total tax based on below condition.
+    </p>
+    <div>
+        For Male :
+total sal > 200000 tax percentage is 15
+total sal>100000 tax percentage is 10
+total salary > 50000 tax percentage is 5
+other tax percentage is 0
+
+For female:
+total sal > 200000 tax percentage is 10
+total sal > 100000 tax percentage is 5
+total salary > 50000 tax percentage is 0
+    </div>
+    <script>
+        var Ename = prompt('Enter the Name :');
+        var Eage = prompt('enter the age');
+        var Egender = prompt('enter the gender');
+        var Ebasicsal = prompt('enter the basicsal');
+        Ebasicsal = parseInt(Ebasicsal);
+        var Epf,Ehra,Etotal;
+        Epf = prompt('Epf')/100*Ebasicsal;
+        Ehra = prompt('Ehra')/100*Ebasicsal;
+        Etotal = Epf + Ehra + Ebasicsal;
+        var Etax = prompt('enter the tax')/100*Etotal;
+        console.log(Ename);
+       console.log(Eage);
+       console.log(Egender);
+       console.log(Ebasicsal);
+       console.log('Epf is' + Epf);
+       console.log('Ehra is' + Ehra);
+       console.log(Etotal);
+       console.log(Etax);
+       if(Egender == 'Male'){
+            if(Etotal >= 200000){
+                console.log("15% tax will be applies");
+            }
+            else if(Etotal >= 100000){
+                console.log('10% tax will be applied');
+            }
+            else if(Etotal >= 50000){
+                console.log('5% tax will applies');
+            }
+            else{
+                console.log('No tax will be applied');
+            }
+            }
+            if(Egender == 'Female'){
+            if(Etotal >= 200000){
+                console.log("10% tax will be applies");
+            }
+            else if(Etotal >= 100000){
+                console.log('5% tax will be applied');
+            }
+            else{
+                console.log('No tax will be applied');
+            }
+        }
+
+
+
+
+
+        
+        </script>
+    
+</body>
+</html>

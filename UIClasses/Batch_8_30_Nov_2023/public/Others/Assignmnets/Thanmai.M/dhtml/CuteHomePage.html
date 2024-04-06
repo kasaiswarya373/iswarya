@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <style>
+        body {
+            background-image: url('C:\Users\thanm\Downloads\wallpage.avif'); 
+            font-family:cursive;
+            margin: 0;
+            padding: 0;
+            background-color: aqua;        
+        }
+
+        header {
+            background-color: #f01fbc;
+            color: #5ebcef;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #3dd6f1;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #e324f5;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #1aa1e5;
+            padding: 5px;
+            text-align: center;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Homepage</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('about')">About</a>
+        <a href="#" onclick="showPage('contact')">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to My Homepage!</h2>
+        <p>This is Thanmai</p>
+    </section>
+
+    <section id="about" style="display: none;">
+        <h2>About Me</h2>
+        <p>I had completed MY POSTGRAUDUATION Of MCA at NECG. Which make me learn a lot things in IT sector.
+            I had Participated Some of the events like National Conferences of AI and ML.I got 1 and 2nd prizes for that Presentations and that was my one of the great achievements as a student. 
+        </p>
+    </section>
+
+    <section id="contact" style="display: none;">
+        <h2>Contact Me</h2>
+        <p>Gmail:.........@gmail.com</p>
+        <p>Ph.no:123456789</p>
+    </section>
+
+    <footer>
+        <p>&copy; Thanu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

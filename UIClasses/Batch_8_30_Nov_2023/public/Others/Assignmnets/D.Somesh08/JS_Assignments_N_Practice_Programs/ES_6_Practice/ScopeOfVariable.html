@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope Of Variable</title>
+</head>
+
+<body>
+    <script>
+        var global_var = "this is declared using var!!!"
+        const const_var = "this is a const varibale, we can't modify it once after declaring";
+        
+        //const_var="trying to modify const var, if we try to modify it, v'll get Uncaught TypeError: Assignment to constant variable.";
+        console.log("const_var : "+const_var);
+
+        let scopeTest = () => {
+            var global_var_withIn_function = "global_var_declared_withIn_function";
+            console.log("global_var_withIn_function : " + global_var_withIn_function);
+            console.log("global_var : " + global_var);
+
+        }
+        //we can't access a var declared inside a funciton from out side, even if we declare it using var.
+        //console.log("global_var_withIn_function outside of a function : " + global_var_withIn_function);
+        console.log("global_var : " + global_var);
+
+
+        if (true) {
+            var var_declared_in_If_block = "var_declared_with_in_If_block";
+            let var_declared_in_If_block_using_let = "var_declared_in_If_block_using_let_we can't use it out of if block like var.";
+            console.log("var_declared_in_If_block : " + var_declared_in_If_block);
+            console.log("var_declared_in_If_block_using_let : "+var_declared_in_If_block_using_let);
+           
+            try {
+           // console.log("global_var_withIn_function_inside_If_block : " + global_var_withIn_function)
+                
+            } catch (err) {
+                console.log(err.message);
+                throw "we can't access global_var_withIn_function here.";
+            }
+        }
+        console.log("var_declared_in_If_block_out of if block : " + var_declared_in_If_block);
+        scopeTest();
+    </script>
+
+
+</body>
+
+</html>

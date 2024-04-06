@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Odd numbers and MIN and MAX numbers</title>
+    </head>
+    <body>
+        <script>
+
+            // Displaying odd numbers from 99 to 31
+            // for(var i=99 ; i>=31 ; i=i-2)
+            // {
+            // console.log("odd numbers :" +i);
+            // }
+            
+            for(var i=99 ; i>=31 ; i=i-1)
+            {
+                if(i%2==1)
+                {
+                console.log("odd numbers :" +i);
+                }
+            }
+            console.log("******* END OF PROGRAM********");
+
+            //Displaying min and max numbers
+
+            var min = prompt("enter the min number:");
+            min = parseInt(min);
+            var max = prompt("enter the max number:");
+            max = parseInt(max);
+
+            console.log("Numbers between min and max numbers");
+            console.log("min number is:" +min);
+            console.log("max number is:" +max);
+            for(i=min ; i<=max ; i++)
+            {
+               
+                console.log(i);
+            }
+
+        </script>
+        
+    </body>
+</html>

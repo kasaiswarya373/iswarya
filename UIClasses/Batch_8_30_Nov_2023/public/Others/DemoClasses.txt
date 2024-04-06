@@ -1,0 +1,112 @@
+
+9542994289
+
+UI FullSTack with React Library
+
+    UI
+
+    UI developer 
+
+    UX designer
+
+    Roles and responsiblities of a ui dev - 
+
+    webdev/uidev /forntned dev 
+
+    diff btwn ui dev and fullstack dev
+
+
+    Static webpages & dynamic Webpages
+
+
+
+    Nodejs along with Express framework
+
+    prerequiest for this traning program, - ZERO
+
+    Diff between client and server
+
+    Diff btwn Lib and Frameworks 
+
+    Diff btwn MEAN and MERN
+
+UI FullSTack + React - 10k
+
+
+
+List Of Tech we cover
+
+UI FullSTack - 85 classes
+
+    Fornt end Tech
+        HTML 4 - Presentation/ showing the content on page
+        CSS 2 - Add the beatufication to page
+        Javascript core DHTML
+        Adv JS - , DS, JSONm, xml, AJAX.....OOPS
+        ECMA 6 + latest 
+
+
+        HTML 5
+        CSS 3 (display flex, grid,) layouts, positions, ... Responsive webpages (media queries)
+        Bootstrap
+        Sass and LESS CSS lib
+        JS Lib 
+            AXIOS
+            Jquery
+    Server/Backend
+        Node JS  Server - Socket, GET/POSt, REST, SOAP, Webservices , data encry, data decr, mongodb connection , uploading and downling files to server ,.etc.
+        Express framework
+    Database
+        Mongodb
+    Tools:
+        POSTMAN
+        MongodbCompass 
+        Debugging TOOL 
+        GITHUB deskotop
+        VS CODE Editior
+        Sublime 
+    Project 
+
+    +
+
+JS Library - REACT -> 45 to 55 classes  + Typescript + Meterial UI 
+    Project
+
+@durgaprasad158
+
+Mr Ramesh ..,.-
+
+
+softwares:
+
+    Browser 
+    Editor - nodepad, editplus, notepad++, - VScode / sublime
+    Debugger tools 
+    Node js server
+    Mongo db server
+    Mongocompass 
+    postman 
+    Sass and LESS
+
+Libraries
+    Jquery
+    AXIOS
+    Handlebar - template lib 
+    Bootstrap Lib 
+
+    REact Js Lib
+
+UI Full Stack Web with React JS @ 8:30 AM (IST) By Mr.Durga Prasad
+Day-1 https://youtu.be/FqSp0s5aAPs
+Day-2 https://youtu.be/ntagCjHQeIs
+Day-3 https://youtu.be/iiWrrUW_Ajg
+Day-4 https://youtu.be/eBEax5lVaJc
+Day-5 https://youtu.be/ArZ76qt3xaE
+Day-6 https://youtu.be/5hHqngIcT4Y
+Day-7 https://youtu.be/W4whAh38YY0
+Day-8 https://youtu.be/gf8HCYHGAUg
+Day-9 https://youtu.be/2ihOBaVSFcE
+
+@durgaprasad158
+
+Mr Ramesh 9542994289

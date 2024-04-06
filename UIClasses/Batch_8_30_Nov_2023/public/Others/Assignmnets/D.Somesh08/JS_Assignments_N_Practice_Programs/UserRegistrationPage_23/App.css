@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+#header {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    color: green;
+}
+
+#registrationPage {
+    border: 2px solid;
+    width: 500px;
+    margin-left: 20px;
+    margin-top: 20px;
+    list-style: none;
+    float: left;
+    margin-right: 15px;
+    box-shadow: 10px 5px 15px grey;
+}
+
+#registrationPage>li {
+    margin: 10px;
+}
+
+#registrationPage>li>label {
+    display: inline-block;
+    width: 80px;
+}
+
+.detailsContainer {
+    float: left;
+    margin-top: 20px;
+}
+
+th,tr {
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+}
+
+#update{
+    display: none;
+}

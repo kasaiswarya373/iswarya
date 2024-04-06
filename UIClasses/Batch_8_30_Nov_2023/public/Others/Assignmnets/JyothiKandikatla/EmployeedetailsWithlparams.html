@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee details with params</title>
+    </head>
+    <body>
+        <script>
+            var readEmployeeData = () => {
+                var name , age , gender , deparment , basicsal , pfpers , hrapers;
+                name = prompt('Enter employee name');
+                age = prompt('Enter employee age');
+                gender = prompt('Enter employee gender');
+                deparment = prompt('Enter employee department');
+                basicsal =parseInt(prompt('Enter employee basicsalary'));
+                pfpers = parseInt(prompt('Enter employee pf'));
+                hrapers = parseInt(prompt('Enter employee hra'));
+                var pfAmount = pfcal(basicsal , pfpers);
+                var hraAmount = hracal(basicsal , hrapers);
+                var totsal = totalSalary( pfAmount , hraAmount , basicsal);
+                var tax = taxpersentage(gender , totsal);
+                var taxAmount = taxa(totsal,tax);
+                var taxReductionAmount = taxreduction(totsal,taxAmount);
+                employeeInfo(name, age, gender, deparment,basicsal, pfAmount, hraAmount,totsal , tax,taxAmount,taxReductionAmount);
+            }
+            //Calucating the pf 
+            var pfcal = (basicsal , pf) => {// formal parms
+                var pfamount;
+                pfamount = (basicsal * pf) / 100;
+                return pfamount; // return a value of pf amount
+            }
+            // calculating the hra
+             var hracal = ( basicsal , hra) => {
+                var hraamount;
+                hraamount = (basicsal * hra) / 100;
+                return hraamount;
+            }
+            // cla total salary
+            var totalSalary = (pf , hra , basicsal) => {
+                var totalsal;
+                totalsal = pf + hra + basicsal; 
+                return totalsal;
+            }
+            //finding tax percentage
+            var taxpersentage = (gender, totalSal) =>{
+                var tax = 0 ;
+                if( (gender =='male') || (gender =='m')){
+                    if(totalSal >= 200000){
+                        tax = 15;
+                        return tax;
+                    }else if(totalSal >= 100000){
+                        tax = 10;
+                        return tax;
+                    }else if(totalSal >= 50000){
+                        tax = 5;
+                        return tax;
+                    }else{
+                        tax = 0;
+                        return tax;
+                    }
+                }else if (gender == 'female' || gender == 'f'){
+                    if(totalSal >= 200000){
+                        tax = 10;
+                        return tax;
+                    }else  if(totalSal >= 100000){
+                        tax = 5;
+                        return tax;
+                    }else {
+                        tax = 0;
+                        return tax;
+                    }
+                }
+            }
+            // calculating tax aaamount
+            var taxa = ( totalSalary, taxp ) => {
+                var taxamount = (totalSalary * taxp ) / 100;
+                return taxamount;
+            }//calculating  after reduction of total salary
+            var taxreduction = (totalSalary, taxamount) => {
+               var taxreductionAmount = totalSalary - taxamount;
+               return taxreductionAmount;
+            }
+            var employeeInfo = (name, age, gender, deparment,basicsal, pfAmount, hraAmount,totsal , tax,taxAmount,taxReductionAmount) => {
+                console.log(`.....Employee Details.....`);
+                console.log(`Name: ${name}`);
+                console.log(`Age: ${age}`);
+                console.log(`Gender: ${gender}`);
+                console.log(`Department: ${deparment}`);
+                console.log(`basicSalary: ${basicsal}`);
+                console.log(`Pf: ${pfAmount}`);
+                console.log(`hra: ${hraAmount}`);
+                console.log(`Total salary: ${totsal}`);
+                console.log (`Tax persentage ${tax}`);
+                console.log (`Tax Amount ${taxAmount}`);
+                console.log(`After  tax reduction total salary is: ${taxReductionAmount}`);            
+            }
+            readEmployeeData();
+        </script>
+    </body>
+</html>

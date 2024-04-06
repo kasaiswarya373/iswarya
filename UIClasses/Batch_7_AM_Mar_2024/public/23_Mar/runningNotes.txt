@@ -1,0 +1,33 @@
+Inline and block level
+
+    when to use div and when to span
+
+Margin and padding properties:
+
+
+    margin 
+        margin: 10px; // all 4 directions 
+
+        margin-top 
+        margin-bottom
+        margin-left 
+        margin-right 
+
+        margin: 20px                   30px;
+                top and bottom         left and right 
+
+        margin: 20px 40px 21px 45px;  (top right bottom left )
+
+
+
+        padding-top 
+        padding-bottom
+        padding-left 
+        padding-right 
+
+        padding: 20px                   30px;
+                top and bottom         left and right 
+
+        padding: 20px 40px 21px 45px;  (top right bottom left )
+
+    padding 

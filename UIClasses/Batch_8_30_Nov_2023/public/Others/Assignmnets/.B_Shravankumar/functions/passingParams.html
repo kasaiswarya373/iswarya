@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Accesing from  local scope to another function scope
+
+
+    <script>
+        //Passing the values throught parameters    
+
+        function passingparms(){
+            var a =10;
+            var b=30;
+            passparms(a,b);//we should give above same character a,b   --->Actual parms
+        }
+        function passparms(a,b){ //we can give any characters ex: b,c   --->Formal parms
+            var c=a+b; //we should give above characters ex: b,c
+            console.log(c)
+        }
+        passingparms();
+
+
+      
+    </script>
+</body>
+</html>

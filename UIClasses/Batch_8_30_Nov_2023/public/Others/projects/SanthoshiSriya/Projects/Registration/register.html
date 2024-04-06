@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+        <link rel="icon" href="img/galaxy2edit.jpg">
+        <style>
+            body{
+                background-image: url(img/new2.jpg);
+                background-size: 100%;
+                margin: 0;
+            }
+            .tag{
+                width: auto;
+                height: 80px;
+                background-color:rgb(4, 19, 17);
+            }
+            .name{
+                width: 100px;
+                height: 50px;
+                color: darkorange;
+                text-align: center;
+                position: relative;
+                left: 60px;
+                top: 10px;
+                font-size: large;
+                font-family: cursive;
+            }
+            .name1{
+                font-size: xx-large;
+            }
+            .logo{
+                position: absolute;
+                left: 200px;
+                top: 0px;
+            }
+            .head,.head1,.head2 , .head3 , .head4 , .head5{
+                color: mintcream;
+                font-size: x-large;
+                display: flex;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .head1{
+                position: absolute;
+                left: 800px;
+                top: 30px;
+            }
+            .head2{
+                position: absolute;
+                left: 900px;
+                top: 30px;
+            }
+            .head3{
+                position: absolute;
+                left: 1050px;
+                top: 30px;
+            }
+            .head4{
+                position: absolute;
+                left: 1250px;
+                top: 30px;
+            }
+            .head5{
+                position: absolute;
+                left: 1400px;
+                top: 30px;
+                background-color: yellow;
+                color: navy;
+            }
+            .head5:hover{
+                background-color: plum;
+            }
+            ul{
+               margin: 50px auto;
+               width: 200px;
+               padding: 0px;
+               background-color: transparent;
+               color: darkorange;
+           }
+           li{
+               list-style: none;
+               color:cyan;
+               display: inline-block;
+               font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+               padding: 10px;
+           }
+           label{
+               font-size: large;
+           }
+           .wlc{
+            font-size: xx-large;
+            font-weight: bolder;
+            color:bisque;
+            text-align: center;
+           }
+           .success{
+            font-size: xx-large;
+            font-weight: bolder;
+            color: purple;
+            text-align: center;
+            position: absolute;
+            top: 250px;
+            left: 500px;
+            display: none;
+            width: 300px;
+            height: 100px;
+            background-color: rgb(206, 246, 6);
+            text-align: center;
+            border-radius: 40px;
+           }
+           .footer{
+                width: 100%;
+                height: 200px;
+                background-color: rgb(2, 18, 20);
+                color: aliceblue;
+                font: bold;
+                position: absolute;
+                bottom: 0;
+            }
+            .footer1{
+                position: absolute;
+                left: 100px;
+                top: 20px;
+                /* background-color:rgb(3, 3, 23) ; */
+            }
+            .footer2{
+                position: absolute;
+                left: 500px;
+                top: 15px;
+                /*background-color: rgb(3, 3, 23); */
+            }
+            .footer3{
+                 position: absolute;
+                left: 800px;
+                top: 15px;
+                /* background-color: rgb(3, 3, 23); */
+            }
+            .footer4{
+                position: absolute;
+                left: 1200px;
+                top: 15px;
+            /* background-color: rgb(3, 3, 23); */
+            }
+
+
+
+        </style>
+            <link rel="stylesheet" href="register.css">
+    </head>
+    <body>
+        <div class="tag">
+            <div class="name">
+                CartWheel <span class="name1"> GALAXY</span>
+            </div>
+            <div class="logo"><img src="img/galaxy2edit.jpg" alt=""></div>
+            <div class="head">
+                <div class="head1">Home</div> 
+                <div  class="head2">About</div> 
+                <div  class="head3">Services</div> 
+                <div  class="head4">Contact</div> 
+                <div class="head5"> Login </div>
+            </div>
+        </div>
+        <div class="wlc"> WELCOME TO CartWheel GALAXY</div>
+        <div class="success">Registered successfully!!!!!!! <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="darkorange" class="bi bi-emoji-sunglasses-fill" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v.116A4.2 4.2 0 0 1 8 5c.35 0 .69.04 1 .116V5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-1.994-1.839A3 3 0 0 0 8 6c-.393 0-.74.064-1.006.161A2 2 0 0 1 5 8h-.438a2 2 0 0 1-1.94-1.515zM4.969 9.75A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .866-.5z"/>
+          </svg></div>
+
+        <div class="register"> <h1> Register</h1>
+            <ul>
+                <li>
+                    <label for="Username"> Username: </label><br>
+                    <input type="text" name="" id="" class="entry" onkeyup="save()"> 
+                </li>
+                <li>
+                    <label for="Password"> Password: </label> <br>
+                    <input type="password" class="entry" onkeyup="save()" > 
+                </li>
+                <li>
+                    <label for="reenter"> Re-enter Password:</label><br>
+                    <input type="password" class="entry"  onkeyup="save()">
+                </li>
+                <li>
+                    <button class="saved" onclick="press( )" disabled = "disabled"> Sign in </button>
+                </li>
+            </ul>
+            </ul>
+        </div>
+        
+            <div class="footer">
+                <div class="footer1"> <b> Get to Know Us </b> <br> <br>
+                                    About Us <br> <br>
+                                    Careers   <br> <br>
+                                    Press Releases <br> <br>
+                                    GALAXY Science
+                                </div>
+                                <div class="footer2">
+                                   <b> Connect with Us </b><br><br>
+                                    Facebook <br> <br>
+                                    Twitter <br> <br>
+                                    Instagram <br> <br>
+                                </div>
+                                <div class="footer3">
+                                    <b>Make Money with Us </b> <br> <br>
+                                    Sell on Galaxy <br>
+                                    Sell under Galaxy Accelerator <br>
+                                    Protect and Build Your Brand <br>
+                                    Galaxy Global Selling <br>
+                                    Become an Affiliate <br>
+                                    Fulfilment by Galaxy <br>
+                                    Advertise Your Products <br>
+                                    Galaxy Pay on Merchants <br>
+                                </div>
+                                <div class="footer4">
+                                    <b>Let Us Help You </b> <br> <br>
+                                    COVID-19 and GALAXY <br>
+                                    Your Account <br>
+                                    Returns Centre <br> 
+                                    100% Purchase Protection <br>
+                                    GALAXY App Download <br>
+                                    Help <br>
+                                </div>
+            </div>
+        
+
+        <script>
+
+            var press = ( ) => {
+                var x = document.querySelector(".register")
+                if(x.style.display === "none"){
+                    x.style.display = "block";
+                }else{
+                    x.style.display = "none";
+                }
+
+                var y = document.querySelector(".success");
+                if(y.style.display === "none"){
+                    y.style.display = "none";
+                }else{
+                    y.style.display = "block";
+                }
+            }
+
+            var save = () => {
+                var p = document.querySelector(".entry");
+                var q = document.querySelector(".saved");
+                if(p.value.trim() != ""){
+                    q.disabled = false ; 
+                   // q.style.display = "none"
+                }else{
+                    q.disabled = true;
+                   // q.style.display = "block"
+                }
+            }
+            
+        </script>
+    </body>
+</html>

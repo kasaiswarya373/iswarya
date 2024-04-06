@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            h3 {
+                border: 1px solid;
+                text-align: center;
+                padding: 10px;
+                background-color: aqua;
+                color: rgb(47, 0, 255);
+                font-size: bold;
+            }
+            .leftblock, .Rightblock {
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                float: left;
+                height: 500px;
+            }
+            .leftblock {
+                width: 25%;
+                background-color: cadetblue;
+            }
+            .Rightblock {
+                width: 65%;
+                overflow: auto;
+                background-color: aquamarine;
+            }
+            .studentlist div {
+                border: 1px solid;
+                width: 100px;
+                margin: 10px;
+                padding: 10px;
+                background-color: lightblue;
+            }
+            .block {
+                border: 1px solid;
+                margin: 10px;
+                height: 150px;
+                background-color: grey;
+            }
+            .imgblock, .detailsblock {
+                float: left ;
+                margin: 10PX;
+            }
+            .imgblock {
+                width: 120px;
+                border: 1px solid;
+            }   
+            img {
+                width: 120px;
+                height: 120px;
+            }
+            .label,
+            .content,
+            .colonholder {
+                float: left;
+            }
+            .label {
+                width: 100px;
+            }
+            .colonholder {
+                width: 50px;
+            }
+            .detailsblock .row {
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Employee Details</h3>
+        <div class="leftblock">
+            <div class="studentlist">
+                <div>1. Raj</div>
+                <div>1. Krish</div>
+                <div>1. Kiran</div>
+                <div>1. Rajesh</div>
+            </div>
+        </div>
+        <div class="Rightblock">
+            <div class="block" id="student_details_1">
+                <div class="imgblock">
+                    <img src="https://media.istockphoto.com/id/1354898581/photo/shot-of-a-young-businessman-using-a-laptop-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=dDDNcvIoG-4VdO01ZlENqODBoNocT434vIFp0duuTZM=">
+                </div>
+                <div class="detailsblock">
+                    <div class="row">
+                        <div class="label">Name</div>
+                        <div class="colonholder">:</div>
+                        <div class="content">Raj</div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Age</div>
+                        <div class="colonholder">:</div>
+                        <div class="content">20</div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Location</div>
+                        <div class="colonholder">:</div>
+                        <div class="content">Vizag</div>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="imgblock">
+                    <img src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                </div>
+                <div class="detailsblock">
+                    <div class="row">
+                        <div class="label">Name</div>
+                        <div class="colonholder">:</div>
+                        <div class="content">Krish</div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Age</div>
+                        <div class="colonholder">:</div>
+                        <div class="content">22</div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Location</div>
+                        <div class="colonholder">:</div>
+                        <div class="content">Guntor</div>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="imgblock">
+                    <img src="https://img.freepik.com/free-photo/close-up-happy-executive_1098-768.jpg">
+                </div>
+                <div class="detailsblock">
+                    <div class="row">
+                        <div class="label">Name</div>
+                        <div class="colonholder">:</div>
+                        <div class="content">Kiran</div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Age</div>
+                        <div class="colonholder">:</div>
+                        <div class="content">22</div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Location</div>
+                        <div class="colonholder">:</div>
+                        <div class="content">Vizag</div>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="imgblock">
+                    <img src="https://uschamber-co.imgix.net/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fco-assets%2Fassets%2Fimages%2FLegal-Requirements-Hiring-Employees.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.4754&fp-y=0.3321&h=415&q=88&w=622&s=de4e8920342f8a282aadb2e0aef49ef6">
+                </div>
+                <div class="detailsblock">
+                    <div class="row">
+                        <div class="label">Name</div>
+                        <div class="colonholder">:</div>
+                        <div class="content">Raj</div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Age</div>
+                        <div class="colonholder">:</div>
+                        <div class="content">20</div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Location</div>
+                        <div class="colonholder">:</div>
+                        <div class="content">Chennai</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

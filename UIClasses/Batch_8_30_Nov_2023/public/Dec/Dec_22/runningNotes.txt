@@ -1,0 +1,34 @@
+Looping CS
+    for 
+=, ==, ===
+
+if with multiple conditions
+
+Conditional CS -> 
+    ..
+    ..
+    if (<condiion>) {
+        .... 
+        ...
+        ..
+    }
+    ...
+    ....
+
+
+
+Looping:
+
+    for ( initialization   ; condition     ;  inc/decrementation   ) {
+        ..... 
+        ... 
+        .. 
+    }
+
+
+
+    for (var stepcount = 5; stepcount <= 45; stepcount = stepcount + 1) {
+        take the left foot put on next step 
+        lift ur body, and 
+        right foot on next step 
+    }

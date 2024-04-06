@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read data from user</title>
+    <link rel="icon"
+        href="https://as1.ftcdn.net/v2/jpg/00/34/05/68/1000_F_34056811_BZ7ATxrCHfFEmUco9HNvmTu07YrkHOQJ.jpg"
+        type="image/x-icon">
+
+    <link rel="stylesheet" href="App.css">
+
+    <script src="App.js"> </script>
+</head>
+
+<body>
+
+    <ul class="container" id="readDataUl">
+        <h3>Student Details</h3>
+        <li>
+            <label for="userName">UserName </label> <input type="text" id="userName">
+        </li>
+
+        <li>
+            <label for="age">Age</label> <input type="number" id="age">
+        </li>
+
+        <li>
+            <label for="gender">Gender</label>
+            Male <input type="radio" name="gender" value="male" checked>
+            Female <input type="radio" name="gender" value="female">
+        </li>
+
+        <li>
+            <label for="course">course</label>
+            <select name="" id="course">
+                <option value="java">java</option>
+                <option value="python" selected>python</option>
+                <option value="js">js</option>
+            </select>
+        </li>
+
+        <li>
+            <label for="marks">Marks</label>
+            <div class="marksContainer">
+                <input type="text" id="m1">
+                <input type="text" id="m2">
+                <input type="text" id="m3">
+                <input type="text" id="m4">
+            </div>
+        </li>
+
+        <li>
+            <button onclick="userData.readData()">Submit</button>
+            <button onclick="clearInputFields()">reset</button>
+        </li>
+
+    </ul>
+    <div class="container" id="displayDetails">
+
+    </div>
+
+</body>
+
+</html>

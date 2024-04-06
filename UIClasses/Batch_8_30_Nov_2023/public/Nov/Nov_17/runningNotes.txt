@@ -1,0 +1,43 @@
+HTML 
+    ML 
+        TAGS 
+            tag -> 
+            
+            <abc>
+            </abc>
+
+
+html 
+body 
+div 
+span 
+ul 
+li
+pre 
+header
+...
+..
+..
+....
+-----------------
+
+HTML Page Structure:
+
+
+    <html>
+        <head>
+            <title>
+                jshdkfjsdhkfjsdhk
+            </title>
+        </head>
+        <body>
+            
+            sdgsdfgsdfg
+        </body>
+    </html>
+
+    ------------------
+
+    <body></body>
+
+    <br>

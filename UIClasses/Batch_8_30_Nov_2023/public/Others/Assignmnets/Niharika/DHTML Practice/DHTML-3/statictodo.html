@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maindiv {
+            width: 300px;
+            border: 1px solid;
+            border-radius: 5px;
+            margin: 10px auto;
+        }
+
+        .fdiv {
+            width: 200px;
+            border: 1px solid;
+            border-radius: 5px;
+            margin: 10px auto;
+            background-color: pink;
+        }
+
+        h4 {
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .sdiv {
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid;
+            border-radius: 5px;
+            margin: 10px auto;
+            transition: border-color 0.3s; /* Add transition for a smooth effect */
+        }
+        .highlight {
+            border: 2px solid;
+            border-color: white; /* Highlight color */
+            background-color: #42b72a;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="fdiv">
+            <h4>MY-TASKS</h4>
+        </div>
+        <div class="sdiv">
+            <input type="checkbox" id="task1" class="checkbox"  onclick="highlightBorder('task1')">
+            <label for="task1"></label>
+            <span class="check">Should go for temple</span>
+        </div>
+        <div class="sdiv">
+            <input type="checkbox" id="task2" class="checkbox" " onclick="highlightBorder('task2')">
+            <label for="task2"></label>
+            <span class="check">Should Start DP</span>
+        </div>
+        <div class="sdiv">
+            <input type="checkbox" id="task3" class="checkbox" " onclick="highlightBorder('task3')">
+            <label for="task3"></label>
+            <span class="check">Should complete To-Do List app</span>
+        </div>
+        <div class="sdiv">
+            <input type="checkbox" id="task4" class="checkbox" " onclick="highlightBorder('task4')">
+            <label for="task4"></label>
+            <span class="check">Should revise Javascript</span>
+        </div>
+    </div>
+    <script>
+        function highlightBorder(checkboxId) {
+    var checkbox = document.getElementById(checkboxId);
+    var sdiv = checkbox.closest('.sdiv');
+    
+    if (checkbox.checked) {
+        sdiv.classList.add('highlight');
+    } else {
+        sdiv.classList.remove('highlight');
+    }
+}
+    </script>
+</body>
+</html>

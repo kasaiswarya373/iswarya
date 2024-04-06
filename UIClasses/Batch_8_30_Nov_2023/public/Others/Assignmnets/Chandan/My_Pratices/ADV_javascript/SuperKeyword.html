@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class A {
+            constructor(p1,p2,p3) {
+                console.log("from class A constructor");
+            }
+        }
+        class B extends A {
+            constructor() {
+                super(30,40,60);
+                console.log("from class B constructor");
+            }
+        }
+        
+        var  a1 = new B();
+        
+    </script>
+</body>
+</html>

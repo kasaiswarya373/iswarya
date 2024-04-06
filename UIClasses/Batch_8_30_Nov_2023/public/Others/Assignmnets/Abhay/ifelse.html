@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else statement</title>
+</head>
+
+<body>
+    <script>
+        var ename = prompt("Name :");
+        var eage = prompt("Age :");
+        var edepart = prompt("Department :");
+        var annualSal = prompt("Annual Salary :");
+        annualSal = parseInt(annualSal);
+        var gender = prompt("Gender :");
+        var pf = (15 * annualSal) / 100;
+        pf = parseFloat(pf);
+        var hra = (20 * annualSal) / 100;
+        hra = parseFloat(hra);
+
+        var totalSalary = annualSal + pf + hra;
+        totalSalary = parseFloat(totalSalary);
+        var taxPercent = 0;
+        
+        if (gender == "male") {
+            if (totalSalary >= 200000) {
+                taxPercent = 15;
+                var Taxamount = (totalSalary * taxPercent) / 100;
+            } else if (totalSalary >= 100000) {
+                taxPercent = 10;
+                var Taxamount = (totalSalary * taxPercent) / 100;
+            } else if (totalSalary >= 50000) {
+                taxPercent = 5;
+                var Taxamount = (totalSalary * taxPercent) / 100;
+            }
+
+        } else {
+            if (totalSalary >= 200000) {
+                taxPercent = 10;
+                var Taxamount = (totalSalary * taxPercent) / 100;
+            }
+            else if (totalSalary >= 100000) {
+                taxPercent = 5;
+                var Taxamount = (totalSalary * taxPercent) / 100;
+            }
+        }
+        Taxamount = parseFloat(Taxamount);
+        var SalaryafterTax = totalSalary - Taxamount;
+        SalaryafterTax = parseFloat(SalaryafterTax); 
+        console.log("Name : " + ename);
+        console.log("Age : " + eage);
+        console.log("Department :" + edepart);
+        console.log("Annual Salary : " + annualSal);
+        console.log("Gender : " + gender);
+        console.log("PF amount :" + pf);
+        console.log("HRA amount :" + hra);
+        console.log("Total Salary " + totalSalary);
+        console.log("Tax Amount : " + Taxamount);
+        console.log("On Hand Salary : " + SalaryafterTax);
+
+
+    </script>
+</body>
+
+</html>

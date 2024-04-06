@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .header{
+         border: 1px solid;
+         text-align: center;
+         padding: 10px;
+         margin: 10px;
+         background-color: blanchedalmond;
+        
+      }
+      .block{
+         height: 150px;
+         margin: 10px;
+      }
+      .leftBlock, .rightBlock{
+         border: 1px solid;
+         margin: 10px;
+         padding: 10px;
+         margin: 10px;
+         padding: 10px;
+         float: left;
+         background-color: aqua;
+      }
+      .leftBlock{
+         width: 20%;
+         height: 500px;
+      }
+      .rightBlock{
+         width: 70%;
+         height: 500px;
+         overflow: scroll;
+      }
+      
+      .nametag{
+         border: 1px solid;
+         text-align: center;
+         padding: 10px;
+         margin: 10px;
+         font-weight: bold;
+         background-color: antiquewhite;
+      }
+      .studentList li{
+         border: 1px solid;
+         width: 200px;
+         padding: 5px;
+         margin: 5px;
+         list-style-position: inside;
+         background-color: darkgrey;
+      }
+      .studentList li :hover{
+         background-color: brown;
+      }
+      .label,
+      .colonholder,
+      .content{
+         float: left;
+      }
+        
+      .label{
+         width: 100px;
+         color: red;
+         font-size: larger;
+      }
+      .colonholder{
+         width: 50px;
+      }
+      footer{
+         clear: both;
+         text-align: center;
+         border: 1px solid;
+         padding: 10px;
+         margin: 10px;
+         background-color: blanchedalmond;
+      }
+      .imgBlock, .StudentDetailsBlock{
+         float: left;
+         margin: 10px;
+         padding: 10px;
+         font-weight: bolder;
+      }
+      .StudentDetailsBlock{
+         background-color: blanchedalmond;
+         width: 700px;
+
+      }
+      .imgBlock{
+         border: 2px solid black;
+         width: 150px;
+         height: 100px;
+         text-align: center;
+         
+      }
+      img{
+         width: 150px;
+         height: 100px;
+      }
+      .StudentDetailsBlock li{
+         list-style: none ;
+      }
+      .StudentDetailsBlock .row{
+         clear: both;
+      }
+   </style>
+</head>
+<body>
+  <h3 class="header"> 
+     Student Details Page 
+  </h3>
+   <div class="leftBlock">
+      <div class="nametag"> Students Name </div>
+      <ol class="studentList">
+        <li> <a href="#std1">  Mahesh    </a>  </li>
+        <li> <a href="#std2">  Nilagiri  </a>  </li>
+        <li> <a href="#std3">  Rohith    </a>  </li>
+        <li> <a href="#std4">  Ramesh    </a>  </li>
+        <li> <a href="#std5">  Shiva     </a>  </li>
+      </ol>
+   </div>
+
+   <div class="rightBlock">
+      <div class="nametag"> Student Details </div>
+      <div class="block" id="std1">
+      <div class="imgBlock">
+
+         <img src="Images/std1.png" alt="">
+         
+      </div>
+      <div class="StudentDetailsBlock">
+         <ul>
+            <li class="row">
+             <div class="label"> Name  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Mahesh  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Age  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> 22  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Gender  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Male  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Address  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Hyderabad  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> course  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> UI full stack  </div>
+            </li>
+         </ul>
+         
+      </div>
+    </div>
+    <div class="block" id="std2">
+      <div class="imgBlock">
+
+         <img src="Images/std2.png" alt="">
+         
+      </div>
+      <div class="StudentDetailsBlock">
+         <ul>
+            <li class="row">
+             <div class="label"> Name  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Nilagiri  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Age  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> 25  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Gender  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Male  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Address  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Hyderabad  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> course  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> python full stack  </div>
+            </li>
+         </ul>
+         
+      </div>
+    </div>
+    <div class="block" id="std3">
+      <div class="imgBlock">
+
+         <img src="Images/std3.png" alt="">
+         
+      </div>
+      <div class="StudentDetailsBlock">
+         <ul>
+            <li class="row">
+             <div class="label"> Name  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Rohith  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Age  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> 15  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Gender  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Male  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Address  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Hyderabad  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> course  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Java full stack  </div>
+            </li>
+         </ul>
+         
+      </div>
+    </div>
+    <div class="block" id="std4">
+      <div class="imgBlock">
+
+         <img src="Images/std4.png" alt="">
+         
+      </div>
+      <div class="StudentDetailsBlock">
+         <ul>
+            <li class="row">
+             <div class="label"> Name  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Neha  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Age  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> 12  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Gender  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Female  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Address  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Hyderabad  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> course  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content">  Devoops  </div>
+            </li>
+         </ul>
+         
+      </div>
+    </div>
+    <div class="block" id="std5">
+      <div class="imgBlock">
+
+         <img src="Images/std5.png" alt="">
+         
+      </div>
+      <div class="StudentDetailsBlock">
+         <ul>
+            <li class="row">
+             <div class="label"> Name  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Kajal  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Age  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> 18  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Gender  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Female  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> Address  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> Hyderabad  </div>
+            </li>
+         </ul>
+         <ul>
+            <li class="row">
+             <div class="label"> course  </div>
+             <div class="colonholder"> :  </div>
+             <div class="content"> UI full stack with react </div>
+            </li>
+         </ul>
+         
+      </div>
+    </div>
+   </div>
+      <footer> @Copy Right Code </footer>
+</body>
+</html>

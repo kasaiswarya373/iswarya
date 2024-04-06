@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demostrating og DHTML</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script>
+      // var pTag = document.createElement("ul");
+      // pTag.innerText = "Hello world";
+      // pTag.style.color = "orange";
+      //   pTag.setAttribute("id", "sample");
+      //   pTag.setAttribute("class", "test");
+      //   pTag.setAttribute("title", "hello");
+      //   pTag.style.color = prompt("Enter text color"); //inline css
+      //   pTag.style["font-size"] = "20px"; //inline css
+
+      // console.log(pTag);
+      // document.querySelector("DIV").append(pTag);
+
+      var msg = prompt("Enter msg");
+      var tagName = prompt("Enter tag name");
+      var ptag = document.createElement(tagName);
+      ptag.innerText = msg;
+      ptag.setAttribute("id", "sample");
+      ptag.setAttribute("class", "test");
+      ptag.style.color = prompt("Enter color name");
+      ptag.style.fontSize = "200px";
+
+      // document.getElementById("container").append(ptag);
+      document.querySelector("#container").append(ptag);
+
+      console.log(ptag);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+
+<!DOCTYPE htm>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var msg = "Hello every one, hope all are doing great";
+
+            console.log(msg)
+
+            // console.log(msg.length);
+
+            // console.log(msg[2]);
+            // console.log(msg.charAt(2));
+            // console.log(msg.charCodeAt(2));
+            // console.log(msg.charCodeAt(0));
+
+            console.log(msg.substring(2, 9));
+            console.log(msg.slice(2, 9));  // start , end index
+
+
+            console.log(msg.substr(2, 9)); // start index, total chars
+
+            msg = msg.replace("every", 'many')
+
+            console.log(msg);
+
+            /*msg = msg.replace(" ", '***');
+            console.log(msg); */
+
+           //  msg = msg.replace(/H/gi, '^^^')
+
+
+
+            // console.log(msg.split('a'));
+            console.log(msg.includes("great12"))
+
+            console.log(msg.indexOf('great'))
+
+            console.log(msg.toUpperCase())
+            
+
+            
+
+
+
+            
+        </script>
+    </body>
+</html>

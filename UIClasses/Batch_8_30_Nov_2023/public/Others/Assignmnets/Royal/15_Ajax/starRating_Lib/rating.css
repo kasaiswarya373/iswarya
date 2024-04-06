@@ -1,0 +1,17 @@
+.starContainer{
+    display: flex;
+}
+
+.starContainer div {
+    background-image: url("Image/starImage.png");
+    width: 63px;
+    height: 78px;
+}
+
+.halfStar{
+    background-position: 133px;
+}
+
+.disableStar{
+    background-position: 68px;
+}

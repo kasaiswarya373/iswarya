@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prob4 Palindrome Number</title>
+</head>
+<body>
+    <h2>WAP To check given number is palindrome number</h2>
+    <h3>Palindrome Number = after reversing of the number, the number should be same as given number.   ex : 121 => 121 , 16461 => 16461, 13531 => 13531</h3>
+
+    <script>
+        let num = parseInt(prompt("Enter A Number To Check is it palindrome"))
+
+        let remainder;
+        let ReverseNum = 0;
+        let temp = num;
+
+        while(temp > 0){
+            remainder = temp%10;
+
+            ReverseNum = (ReverseNum*10) + remainder;
+
+            temp = parseInt(temp/10);
+        }
+        console.log(`Given Number : ${num}, Reverse Number : ${ReverseNum}`);
+        if(ReverseNum == num){
+            console.log(`${num} is a Palindrome Number`);
+        }else{
+            console.log(`${num} is not a Palindrome Number`);
+        }
+    </script>
+</body>
+</html>

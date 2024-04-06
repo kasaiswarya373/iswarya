@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" onkeypress="return test()">
+    <script>
+        let count=0;
+        let test = function () {
+            console.log(event)
+            if (event.keyCode >= 48 && event.keyCode <= 57) {
+                count++;
+                if(count>2){
+                    return false;
+                }
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>

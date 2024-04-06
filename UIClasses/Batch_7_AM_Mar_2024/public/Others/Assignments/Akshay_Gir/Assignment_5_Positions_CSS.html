@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions_CSS</title>
+    <style>
+        .header{
+            text-align: center;
+            border: 1px solid;
+            color:blue;
+            background-color: yellow;
+            padding: 15px;
+            margin:5px auto;
+            font-weight: bold;
+        }
+        .body{
+            border: 1px solid;
+            color:blue;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/006/941/002/non_2x/small-hexagon-shape-with-light-white-and-grey-color-seamless-pattern-background-free-vector.jpg);
+            height: 603px;
+            width: 1500px;
+            margin:auto;
+            position:relative;
+        }
+        .footer{
+            border: 1px solid;
+            color:blue;
+            background-color: none;
+            margin:5px auto;
+            text-align: center;
+            border: 1px solid;
+            padding: 15px;
+            background-color:#E6E6FA;
+        }
+        .block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8, .block9, .block10, .block11, .block12, .block13{
+            text-align: center;
+            color: white;
+            border: 1px solid;
+            border-color:blue;
+            padding: 15px;
+            margin:5px;
+        }
+        .block1{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT27UtmTUHdjc1h2EvafakeAX-yqpqNyynSZnaVaoRZ2Q-SHiWKKr6pzd_ps6Fo8JsuxZ8&usqp=CAU);
+            width:60px;
+            height:60px;
+            position:relative;
+        }
+        .block2{
+            background-image: url(https://e1.pxfuel.com/desktop-wallpaper/230/719/desktop-wallpaper-iphone-11-pro-in-2020-abstract-iphone-11.jpg);
+            width:60px;
+            height:60px;
+            position:absolute;
+            left: 43px;
+            top: 45px;
+            z-index: 1;
+        }
+        .block3{
+            background-image: url(https://i.pinimg.com/236x/eb/c7/cb/ebc7cb5ee5b4fc32742ba0293f39b61b.jpg);
+            width:60px;
+            height:60px;
+            position:absolute;
+            top: 501px;
+        }
+        .block4{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvObP1NPTO7shLH6ofHlmHso73_5zCcUkEPgyiY7lOpVT8wpdjibRrTg5lD2jh2qbSTEQ&usqp=CAU);
+            width:60px;
+            height:60px;
+            position:absolute;
+            top: 458px;
+            left: 41px;
+            z-index: 2;
+        }
+        .block5{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToKUg4MeMWgXaXT3oYGV41TKbaOM877oWaBJYBgjhtkbN3BSKLDzmisdoyh8-n-wTotdo&usqp=CAU);
+            width:60px;
+            height:60px;
+            position:absolute;
+            top: 0px;
+            left: 1398px;
+        }
+        .block6{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbIIGH3__eTfpxrhVVYAUu_2l3kcrcPzplPum3Ak9Hhg&s);
+            width:60px;
+            height:60px;
+            position:absolute;
+            top: 44px;
+            left: 1358px;
+            z-index: 3;
+        }
+        .block7{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhTjJ11yoffpUsR7NUjh-ippkKVOjs0IIccIb9k7XRWrB5v6U_CLNOopbRgtF85OaxxLU&usqp=CAU);
+            width:60px;
+            height:60px;
+            position:absolute;
+            top: 501px;
+            left: 1398px
+        }
+        .block8{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQTaA_r5iJqqCx-4syOz2HEPvbz3lgfBE1yDzoahC9JzGzNq96yx41Go-rIJNHwdLvDe8&usqp=CAU);
+            width:60px;
+            height:60px;
+            position:absolute;
+            top: 458px;
+            left: 1358px;
+            z-index: 4;
+        }
+        .block9{
+            width:120px;
+            height:120px;
+            position:absolute;
+            bottom: 240px;
+            left: 690px;
+            z-index: 5;
+            background-image: url(https://st.depositphotos.com/1007017/1359/v/450/depositphotos_13591068-stock-illustration-waves-background.jpg);
+        }
+        .block10{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxj-EpWAZiux-zY-PxpC6LpvcmZmVeFENy8BZbOkZvweRkvFgcCVshhgedIUsZJqTQMlM&usqp=CAU);
+            width:60px;
+            height:60px;
+            position:absolute;
+            bottom: 345px;
+            left: 645px;
+        }
+        .block11{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeeZ0tfz_lM0xsvG499TSRIs4HEwSza4U_Q4ut9Qp3fuBnwJTfeUgegk_VXLtaSIbQu8s&usqp=CAU);
+            width:60px;
+            height:60px;
+            position:absolute;
+            bottom: 198px;
+            left: 645px;
+        }
+        .block12{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ-9zSMbu0Q2qGmCq5pemxBoahQ24dJHV-r5FhtehaoFv9j_mWohTjsZCPcMrx1hmUjJ0&usqp=CAU);
+            width:60px;
+            height:60px;
+            position:absolute;
+            bottom: 198px;
+            left: 793px;
+        }
+        .block13{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFAKCnWWs38aO2AO8z9ernXcDL-IILl53O87VKlBAGJg&s);
+            width:60px;
+            height:60px;
+            position:absolute;
+            bottom: 345px;
+            left: 793px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">ASSIGNMENT_5_Positions_CSS</div>
+    <div class="body">
+        <div class="block1">BLOCK 1</div>
+        <div class="block2">BLOCK 2</div>
+        <div class="block3">BLOCK 3</div>
+        <div class="block4">BLOCK 4</div>
+        <div class="block5">BLOCK 5</div>
+        <div class="block6">BLOCK 6</div>
+        <div class="block7">BLOCK 7</div>
+        <div class="block8">BLOCK 8</div>
+        <div class="block9">BLOCK 9</div>
+        <div class="block10">BLOCK 10</div>
+        <div class="block11">BLOCK 11</div>
+        <div class="block12">BLOCK 12</div>
+        <div class="block13">BLOCK 13</div>
+
+    </div>
+    <div class="footer"><b>Copyright @ 2024 | </b> All Rights Reserved</div>
+</body>
+</html>

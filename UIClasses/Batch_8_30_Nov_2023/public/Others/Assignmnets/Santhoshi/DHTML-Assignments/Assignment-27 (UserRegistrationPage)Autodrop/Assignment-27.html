@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> USER REGISTRATION PAGE</title>
+    <style>
+        h1{
+            text-align: center;
+            color: purple;
+        }
+        body{
+            background-color: lavender;
+        }
+        li{
+            list-style: none;
+            color: white;
+           
+           
+        }
+        ul{
+            width: 500px ;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: darkslategrey;  
+             
+        }
+        label{
+            display: inline-block;
+            width: 120px;
+            margin: 10px;
+        }
+        #saved{
+            display: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1> User Registration page</h1>
+    <ul>
+        <li>
+            <label for="name"> Name:</label>
+            <input type="text" placeholder="enter name">
+        </li>
+        <li>
+            <label for="age"> Age:</label>
+            <input type="text" placeholder="enter age">
+        </li>
+        <li>
+            <label for="country"> Country:</label>
+
+            <select name="country" id="countryname"  onchange="updateState()">
+
+                <option value="" >Select country</option>
+            </select>
+        </li>
+        <li>
+            <label for="states">State</label>
+            <select name="state" id="state"  onchange="updateDistrict()" >
+                <option value="" >Select state</option>
+            </select>
+        </li>
+        <li>
+            <label for="district">District</label>
+            <select name="district" id="district">
+                <option value="" >Select District</option>
+            </select>
+        </li>
+        <li>
+            <button style="position: relative; left: 200px;top:30px; width:100px; background-color: darkorange;
+            height: 40px; font-size: larger;"  onclick= "last()" > Save </button>
+        </li>
+    </ul>
+
+    <br><br><br>
+
+    <div id="saved"> <h1>  Saved !!!!!!!!!!!!! </h1></div>
+    <script src="script2.js"></script>
+</body>
+</html>

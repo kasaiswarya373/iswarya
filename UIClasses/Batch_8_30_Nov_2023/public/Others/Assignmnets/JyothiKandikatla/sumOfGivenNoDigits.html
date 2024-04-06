@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sum of digits</title>
+    </head>
+    <body>
+        <script>
+            //Write a program to find the sum of indivisiual digits of given number
+            var rem, sum = 0;
+            var n = parseInt(prompt('Enter a number'));
+            while(n > 0){
+                rem = n % 10;//It calculating the remainder of the given no
+                sum += rem;
+                n = parseInt(n / 10);// Queficient of the given no
+                
+            }
+            console.log(sum);
+        </script>
+    </body>
+</html>

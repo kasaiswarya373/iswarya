@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Finding Given number is a lucky number or not
+        </title>
+    </head>
+    <body>
+        <script>
+            var luckynum = prompt("enter a number");
+            luckynum = parseInt(luckynum);
+
+            var sum = 0;
+            var remainder;
+            while (luckynum > 0) {
+                remainder = luckynum % 10;
+                sum += remainder;
+                luckynum = luckynum / 10;
+                luckynum = parseInt(luckynum)
+                if(luckynum == 0 && sum >= 10)
+                {
+                luckynum = sum;
+                sum = 0;
+                }
+            }
+            console.log(sum);
+         
+        </script>
+    </body>
+</html>

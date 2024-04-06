@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Binding a Multiple data or methods into the single unit (Class)</h3>
+    <script>
+        class BankAccount {                                       // create class
+            constructor(accountNumber, accountHolder, balance) {
+                this.anumber = accountNumber;
+                this.aholder = accountHolder;
+                this.abalance = balance;
+            }
+            showDetails() {
+                console.log(`Account Number is : ${this.anumber}`);
+                console.log(`Account Name is : ${this.aholder}`);
+                console.log(`Account Balance is : ${this.abalance} rs`);
+            }
+
+            deposit(amount) {                                               // 1st method
+                this.abalance += amount;
+                this.showDetails();
+            }
+
+            withdraw(amount) {                                             // 2nd method 
+                if (this.abalance >= amount) {
+                    this.abalance -= amount;
+                    this.showDetails();
+                } else {
+                    alert("Insufficient Balance");
+                }
+            }
+        }
+        var person1 = new BankAccount(49626264, "Abhay Patil", 15000);  // display details
+        person1.deposit(16000); // initialy balance is 15000 after depositing 16000 it will show 31000rs                                   
+    </script>
+</body>
+
+</html>

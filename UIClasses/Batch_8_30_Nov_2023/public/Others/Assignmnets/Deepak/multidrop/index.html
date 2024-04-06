@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showing</title>
+    <script src="NewData.js"></script>
+    <link rel="stylesheet" href="data.css">
+</head>
+<body onload="check()">
+    <div class="container">
+        <h1>User Registration</h1>
+        <div>
+            <label for="u_name">Username</label>
+            <input type="text" id="u_name" onkeypress="return checkuserinput()"  maxlength="11">
+        </div>
+        <div>
+            <label for="u_age">Age</label>
+            <input type="text" id="u_age" size="4" maxlength="2" onkeypress="return checkuserage()">
+        </div>
+        <div>
+            <label for="country">Country Name</label>
+            <select name="" id="country" onchange="showState(this.value)"></select>
+        </div>
+        <div>
+            <label for="state">State Name</label>
+            <select name="" id="state" onchange="showdist(this.value)" ></select>
+        </div>
+        <div>
+            <label for="district">District Name</label>
+            <select name="" id="distict"></select>
+        </div>
+        <p id="errormsg"></p>
+        <input type="button" value="Register" onclick="userRegister()" >
+    </div>
+    <div class="container" id="detailcont">
+        <h1>User Details</h1>
+        <div>
+            <label for="ur_name">Username</label>
+            <span id="ur_name"></span>
+        </div>
+        <div>
+            <label for="ur_age">Age</label>
+            <span id="ur_age"></span>
+        </div>
+        <div>
+            <label for="ur_country">Country</label>
+            <span id="ur_country"></span>
+        </div>
+        <div>
+            <label for="ur_state">State</label>
+            <span id="ur_state"></span>
+        </div>
+        <div id="shwdist">
+            <label for="ur_dist">District</label>
+            <span id="ur_dist"></span>
+        </div>
+    </div>
+</body>
+</html>

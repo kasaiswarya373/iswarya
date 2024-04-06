@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserRegistrationPage</title>
+    <link rel="stylesheet" href="App.css">
+    <script src="App.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body onload="setSNo()">
+
+    <h3 id="header">User Registration Page</h3>
+
+    <ul id="registrationPage">
+        <li>
+            <label for="SNo">S.No.</label> <input type="text" id="SNo" readonly>
+        </li>
+        <li>
+            <label for="name">Name</label> <input type="text" id="name">
+        </li>
+        <li>
+            <label for="age">Age</label> <input type="text" id='age'>
+        </li>
+        <li>
+            <label for="gender">Gender</label>
+            Male <input type="radio" name="gender" value='male' checked>
+            Female <input type="radio" name="gender" value='female'>
+        </li>
+        <li>
+            <label for="country">Country</label>
+            <select id="country">
+                <option value="Ind" selected>India</option>
+                <option value="Pak">Pakistan</option>
+                <option value="Us">America</option>
+            </select>
+        </li>
+        <li>
+            <button id="save" onclick="saveUserDetails()">Save</button>
+            <button id="update" onclick="showSaveBtn()">Update</button>
+        </li>
+
+    </ul>
+
+    <div class="detailsContainer">
+
+        <table id="userInfo" border="2" cellspacing="0">
+            <thead>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Country</th>
+                <th>Action</th>
+            </thead>
+
+            <tbody id="tBodyEl">
+
+            </tbody>
+            <!-- Add your table body content here if needed -->
+        </table>
+
+    </div>
+</body>
+
+</html>

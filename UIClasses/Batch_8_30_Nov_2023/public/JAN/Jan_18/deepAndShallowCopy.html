@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var a = 90;
+            var b = a;
+            console.log("a value is " + a)
+            console.log("b value is " + b)
+            a++;
+            console.log("a value is " + a)
+            console.log("b value is " + b)
+
+            var data1 = {
+                name: 'Raj',
+                age: 20
+            };
+            var data2 = JSON.stringify(data1);
+            data2 = JSON.parse(data2);
+            console.log(data1)
+            console.log(data2);
+
+            data1.age++;
+            console.log(data1)
+            console.log(data2);
+        </script>
+    </body>
+</html>

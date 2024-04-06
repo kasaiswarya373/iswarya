@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Finding Number of ZEROS in a given number
+        </title>
+    </head>
+    <body>
+        <script>
+            var number = prompt("enter a number");
+            number = parseInt(number);
+            console.log("Given number is:" +number);
+            
+            var count = 0;
+            var remainder;
+
+            while (number > 0) {
+                remainder = number % 10;
+                if(remainder == 0){
+                count++;
+                }
+                number = number / 10;
+                number = parseInt(number);
+            }
+            console.log("Total number of zeros in a given number:" +count);
+            
+        </script>
+    </body>
+</html>

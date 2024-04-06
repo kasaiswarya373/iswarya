@@ -1,0 +1,41 @@
+h3 {
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: blueviolet;
+    font-size: 40px;
+}
+.MproductDetails > ul > li {
+    list-style: none;
+    border: 1px solid;
+    width: 250px;
+    padding: 10px;
+}
+.MproductDetails > ul {
+    border: 1px solid rgb(82, 222, 11);
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+li {
+    list-style: none;
+}
+.MproductDetails > ul {
+    margin: 5px;
+    padding: 5px;
+
+}
+.actualprice {
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+    text-decoration-line: line-through;
+}
+.discountedprice{
+    color: orange;
+    font-weight: bold;
+}
+img {
+    width: 160px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration Page</title>
+        <link rel="stylesheet" href="styles.css">         
+    </head>
+    <body>
+        <h3>Student Registration Page</h3>
+        <div class="container">
+            <div class="detailsBlock">
+                <div class="personalDetails">
+                    <div>Personal Details</div>
+                </div>
+                
+                <div class="address">
+                    <label style="position: relative; top:-38px;">Address:</label>
+                    <textarea name="" cols="25" rows="5"></textarea>
+                </div>
+                <div class="name">
+                    <label for="firstName"> First Name:  </label>
+                    <input type="text" name="firstName" maxlength="12">
+                </div>
+                <div class="name">
+                    <label for="lastName"> Last Name: </label>
+                    <input type="text" name="lastName" maxlength="12">  
+                </div>
+                <div class="ctry">
+                    <label for="country">Country:</label>
+                    <select name="country">
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>Canada</option>
+                        <option>Japan</option>
+                        <option>China</option>
+                        <option>Switzerland</option>
+                    </select>
+                </div>
+                <div class="name">
+                    <label for="age">Age:</label>
+                    <input type="text" name="age">
+                </div>
+                
+                
+
+            </div>
+            <div class="detailsBlock">
+                <div class="educationDetails">
+                    <div>Education Details</div>
+                </div>
+                <div class="name">
+                    <label for="qualification">Qualification:</label>
+                    <select name="qualification">
+                        <option>BTech</option>
+                        <option>MTech</option>
+                        <option>MBA</option>
+                        <option>MCA</option>
+                        <option>BPharm</option>
+                        <option>MPharm</option>
+                        <option>Bsc</option>
+                        <option>Msc</option>
+                                   
+                    </select>
+                </div>
+                <div class="name">
+                    <label for="language">Languages Known:</label>
+                    <input type="checkbox" name="langauge">English
+                    <input type="checkbox" name="langauge">Hindi
+                    <input type="checkbox" name="langauge">Telugu
+                    <input type="checkbox" name="langauge">Urdu
+                </div>
+                <div class="name">
+                    <label for="course">CourseOpted: </label>
+                    <input type="radio" name="course">MBA
+                    <input type="radio" name="course">MCA
+                    <input type="radio" name="course">BTech
+                    <input type="radio" name="course">Msc
+                </div>
+
+            </div>
+            <div class="detailsBlock">
+                <div class="personalDetails">
+                    <div>About Yourself</div>
+                </div>
+                <label style="position: relative; top:-85px;">Few words about your career:</label>
+                <textarea name="" cols="60" rows="8" maxlength="50"></textarea>
+            </div>
+            <div class="button">
+                <input type="button" value="Register Details">
+            </div>
+
+        </div>
+        <div class="footer">@CopyRights 2023</div>
+        
+    </body>
+</html>

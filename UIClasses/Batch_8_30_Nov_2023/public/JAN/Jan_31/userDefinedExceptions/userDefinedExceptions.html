@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating user defined exceptions
+        </title>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+        <script src="app.js"></script>
+        <style>
+            ul {
+                border: 1px solid;
+                margin: 20px auto;
+                padding: 10px;
+                background-color: #ccc;
+                width: 500px;
+                
+            }
+            li {
+                border: 1px solid #ddd;
+                margin: 10px;
+                padding: 10px;
+                list-style: none;
+            }
+            h3 {
+                text-align: center;
+                margin: 20px;
+            }
+            #resultBlock {
+                text-align: center;
+                color: green;
+                font-weight: bold;
+                display: none;
+            }
+            .error {
+                color: red;
+                font-size: 10px;
+                display: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h3>
+            Student registraton page - Demonstrating User defined exception
+        </h3>
+        <ul>
+            <li>
+                Enter user Name:
+                <input type="text" id="uname">
+                <div class="error name_err">Name is mandate</div>
+            </li>
+            <li>
+                Enter user Age:
+                <input type="text" id="uage">
+                <div class="error age_err">Age should be greater than 21</div>
+            </li>
+            <li id="resultBlock" >
+
+            </li>
+            <li>
+                <input type="button" value="Save Details" onclick="saveDetails()">
+            </li>
+        </ul>
+    </body>
+</html>

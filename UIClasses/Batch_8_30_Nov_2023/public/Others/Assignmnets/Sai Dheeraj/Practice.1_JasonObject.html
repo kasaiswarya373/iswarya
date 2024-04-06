@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+        <body>
+                <h2>
+                    Demonstrating Jason-Object using diffenrent ways
+                </h2>
+                    <script>
+                       var StudentDetails = {
+                            name : 'Ravi',
+                            age : 24,
+                            gender : 'male',
+                            location : 'hyderabad',
+                            marks : [50, 40, 56, 70, 79, 23] 
+                    } 
+
+                    console.log(StudentDetails);
+
+                    console.log('============');
+
+                    console.log(StudentDetails.marks);
+
+                    console.log('============');
+
+                   // console.log(StudentDetails[age]);
+
+                    console.log('===========');
+
+                    console.log(StudentDetails['age']);
+
+                    console.log('============');
+
+                    console.log(StudentDetails['gender']);
+
+                    console.log('==========================='); 
+
+
+                var keyword = 'name';
+                    
+
+              //  console.log(keyword); // So here we need to take the syntax as "console.log(Object[keyword])"
+
+                console.log(StudentDetails[keyword]);
+
+                    </script>
+        </body>
+</html>

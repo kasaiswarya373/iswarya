@@ -1,0 +1,64 @@
+body
+{
+    display: grid;
+    grid-template-rows: 44px 400px;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 80px;
+    background-color: #f7f7ca;
+}
+.title
+{
+    font-size: 31px;
+    border: 3px solid #4b7575;
+    background: #dede98;
+    text-align: center;
+    grid-column: 1/4;
+}
+.userForm
+{
+    border: 3px solid #4b7575;
+    text-align: left;
+    width: 395px;
+    padding: 20px;
+    font-size: 20px;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    height: 400px;
+}
+.userForm div
+{
+    margin:30px;
+}
+label
+{
+    width:100px;
+    display: inline-block;
+}
+input[type=text],input[type=number]
+{
+    width:200px;
+    height:23px;
+}
+#countryList,#stateList,#districtList
+{
+    width:150px;
+    height: 23px;
+}
+#doneBtn
+{
+    width: 80px;
+    height: 30px;
+    border-radius: 18px;
+    background-color: #cef395;
+    position: relative;
+    left:130px;
+}
+#successMsg
+{
+    color: green;
+    font-size: 30px;
+    position: absolute;
+    left: 610px;
+    top: 81px;
+    display:none;
+}

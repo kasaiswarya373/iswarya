@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block arrangement</title>
+    <style>
+        header{
+            border: 1px solid black;
+            font-weight: bold;
+            line-height: 10px;
+            text-align: center;
+            padding: 10px;
+            font-size: 25px;
+        }
+       
+        .block1,.block2,.block3,.block4{
+            height: 150px;
+            width: 100px;
+            border: 1px solid black;
+        }
+        .block5,.block6,.block7,.block8{
+            height: 150px;
+            width: 100px;
+            border: 1px solid black;
+            position: absolute;
+        }
+        .block1{
+            margin: 10px 5px;
+            background-color: orange;
+        }
+        .block2{
+            position: relative;
+            top: -80px;
+            left: 50px;
+            background-color: #00a8f3;
+        }
+        .block3{
+            position: absolute;
+            bottom: 0px;
+            background-color: green;
+        }
+        .block4{
+            position: relative;
+            top: 280px;
+            left: 40px;
+            background-color: #b43fcc;
+        }
+       .block5{
+        bottom: 0px;
+        right: 10px;
+        background-color: #b43fcc;
+       }
+       .block6{
+        right: 10px;
+        top: 50px;
+        background-color: red;
+       }
+       .block7{
+        bottom: 60px;
+        right: 60px;
+        background-color: orange;
+       }
+       .block8{
+        right: 60px;
+        top: 110px;
+        background-color:  #00a8f3;
+       }
+       .block9,.block10,.block11,.block12{
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        border: 1px solid black;
+        z-index: 2;
+       }
+       .block9{
+        top: 340px;
+        left: 745px;
+        background-color: #b43fcc;
+       }
+       .block10{
+        top:340px ;
+        left:890px ;
+        background-color:indigo;
+       }
+       .block11{
+        top: 480px;
+        left: 745px;
+        background-color: darkgray;
+       }
+       .block12{
+        top:480px ;
+        left:890px ;
+        background-color: RED;
+       }
+       .main{
+        height: 150px;
+        width: 150px;
+        position:absolute;
+        border: 1px solid black;
+        left: 800px ;
+        top: 400px;
+        background-color: orange;
+       }
+    </style>
+</head>
+<body>
+    <header>block arrangement</header>
+    <div id="block1">
+    <div class="block1"></div>
+    <div class="block2"></div>
+    <div class="block3"></div>
+    <div class="block4"></div>
+    <div class="block5"></div>
+    <div class="block6"></div>
+    <div class="block7"></div>
+    <div class="block8"></div>
+    <div class="block9"></div>
+    <div class="block10"></div>
+    <div class="block11"></div>
+    <div class="block12"></div>
+    <div class="main"></div>
+</div>
+</body>
+</html>

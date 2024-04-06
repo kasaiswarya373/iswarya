@@ -1,0 +1,76 @@
+Object
+Class 
+Polymorphism
+DataEncapsulation 
+Data abstraction 
+Inheritace
+
+
+    Java
+        access Specifiers
+
+            public 
+            private
+            Protected 
+
+
+                class ABC {
+                    Protected int a = 90;
+                }
+
+    JAvascript
+        no support for keywords like private,public, and Protected
+
+            class ABC {
+                constructor() {
+                    var name = 'Raj'
+                    this.a = 10;
+                }
+                displayInfo() {
+                    var z = 90;
+                }
+            }
+
+
+Class A { // Parent | Base clsss
+    .. 
+    constructor() {
+        
+    }
+}
+
+class B extends A {   // Child | Derived 
+    ...
+    constructor() {
+        super();
+    }
+}
+
+
+
+
+Exception Handling:
+    
+        Compilation 
+            ALL SYTANCTICAL ERRORS
+        Execution process 
+
+    Error
+
+    Exception / Runtime error 
+
+
+        Exception Handling
+            try
+            catch 
+            finally 
+            throw 
+            throws
+
+            Syntax:
+
+                try {
+                    ... 
+                    .... 
+                    ..... // Set of instrcutions in which there is a chance of getting run time erros.
+                }

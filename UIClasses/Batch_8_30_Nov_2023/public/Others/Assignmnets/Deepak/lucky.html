@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var userInputNumber = prompt('enter a number');
+        userInputNumber = parseInt(userInputNumber);
+        var  sum = 0;
+        var n = 0;
+        for(var i = 0; i <= n; i++){
+            // console.log(userInputNumber);
+                while(userInputNumber > 0){
+                    remenderNumber = userInputNumber % 10;
+                    sum = sum + remenderNumber;
+                    userInputNumber = userInputNumber / 10;
+                    userInputNumber = parseInt(userInputNumber);
+                    // console.log(userInputNumber);
+                    // console.log(sum);
+                }
+                if(sum > 9){
+                    userInputNumber = sum;
+                    sum = 0;
+                    n++
+
+                }else{
+                   console.log('Lucky number is'+ " " + sum);
+                   
+                }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+[{
+  "_id": {
+    "$oid": "65f2c1dc0977d1fba7917ea6"
+  },
+  "username": "Viraj123",
+  "password": "$2b$05$KJjSVeOKZMrQ52RqcGUQFOYopel03L79oymKCmverSzox92jif1uK",
+  "emailid": "rajesh.sabbani2020@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "65f2c2b45324adac2d7c7a72"
+  },
+  "username": "Viraj1234",
+  "password": "$2b$05$gKD/wfBhcxTqAIuWRQkLR.rl42woLoW/b.J0gQyYuMN06erb3cQNa",
+  "emailid": "rajesh.sabbani2020@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "65f2c2dc5324adac2d7c7a73"
+  },
+  "username": "viraj123",
+  "password": "$2b$05$1d29BbmUpopyChSlWG/sQ.Nd0iR5fP2WDLLpjmNt57/wGWNnsz37u",
+  "emailid": "rajesh.sabbani2020@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "65f2c2ef5324adac2d7c7a74"
+  },
+  "username": "viraj1234",
+  "password": "$2b$05$C9oXBiIsDGhPXjVcLPKzZ.OvtlBxZGPvkaMEXUrBFTjIBTKRpaRjS",
+  "emailid": "rajesh.sabbani2020@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "65f2c2f65324adac2d7c7a75"
+  },
+  "username": "viraj12345",
+  "password": "$2b$05$OgxGUPzHkJjSJuFpJ74Y9.s/eylhEGurrR8Uh.B.wlwiMjYLYbJrS",
+  "emailid": "rajesh.sabbani2020@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "65f2c3435324adac2d7c7a76"
+  },
+  "username": "jyothi",
+  "password": "$2b$05$/gMTc.BrOhgftJlEldZveOY1Opd9ou6hXdamqpSfLzkCQbGXs8S26",
+  "emailid": "rajesh.sabbani2020@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "65f2cab35324adac2d7c7a77"
+  },
+  "username": "viraj",
+  "password": "$2b$05$gImDUzGW6r5h6L5T.wlPkeDiPVdgcnwMsFyUGzSuNqvyJo5mS3S3u",
+  "emailid": ""
+},
+{
+  "_id": {
+    "$oid": "65f2caba5324adac2d7c7a78"
+  },
+  "username": "viraj9",
+  "password": "$2b$05$v8zrU9L3lPTRpydbiz4mfufwvDFBjJiFFl4TEmQDTG2c/Z41I9Qpm",
+  "emailid": ""
+},
+{
+  "_id": {
+    "$oid": "65f2d9265324adac2d7c7a79"
+  },
+  "username": "rajesh",
+  "password": "$2b$05$fGetOj9MjlkQh7/a.VbukOLDxI6W5H.5UKiJyi0SbL1jwLjzCr7U6",
+  "emailid": "rajesh.sabbani2020@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "65f2d9b15324adac2d7c7a7a"
+  },
+  "username": "rajesh123",
+  "password": "$2b$05$JAT947Ccq5iVf9bc92xcCuYbcFg9N/ogWiiFs9WztPUKopUL.m9lO",
+  "emailid": "rajesh.sabbani2020@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "65f2da2a5324adac2d7c7a7b"
+  },
+  "username": "raj",
+  "password": "$2b$05$zGusQUU2Kk59wZxV2bN53.1i8F65DjHwVrGqdI8mPIS1r1aHMOzpC",
+  "emailid": "11"
+}]

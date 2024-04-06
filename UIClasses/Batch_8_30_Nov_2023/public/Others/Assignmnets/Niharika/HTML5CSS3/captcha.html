@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 2px solid;
+            margin: 20px auto;
+            width: 300px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvastag"></canvas>
+    <button id="reloadButton">Reload</button>
+    <script>
+        var canvas = document.querySelector("#canvastag");
+        var ctx = canvas.getContext("2d");
+
+        // Function to generate random alphanumeric string
+        function generateRandomString(length) {
+            var result = '';
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            var charactersLength = characters.length;
+            for (var i = 0; i < length; i++) {
+                result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            }
+            return result;
+        }
+
+        function drawCaptcha() {
+            var captchaText = generateRandomString(6); // Generate a random string of length 6
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height); 
+            
+            ctx.beginPath();
+            for (var i = 0; i <= 300; i += 10) {
+                ctx.moveTo(10 + i, 0); 
+                ctx.lineTo(300, 150); 
+            }
+            ctx.stroke();
+            ctx.beginPath();
+            for (var i = 0; i <= 300; i += 10) {
+                ctx.moveTo(0, 10 + i); 
+                ctx.lineTo(300, 0); 
+            }
+            ctx.stroke();
+            ctx.fill();
+
+        
+            ctx.font = '30px Arial';
+            ctx.fillStyle = '#000';
+            ctx.textBaseline = 'middle'; 
+            ctx.fillText(captchaText, 20 , 50); 
+        }
+
+        document.getElementById("reloadButton").addEventListener("click", function() {
+            drawCaptcha(); 
+        });
+        drawCaptcha();
+    </script>
+</body>
+</html>

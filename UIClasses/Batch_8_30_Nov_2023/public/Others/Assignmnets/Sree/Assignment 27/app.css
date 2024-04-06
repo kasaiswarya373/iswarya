@@ -1,0 +1,56 @@
+h3{
+    text-align: center;
+}
+.main {
+   
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+}
+
+.country,
+.states,
+.district,
+.user,
+.uage {
+    margin: 20px;
+    
+    font-weight: bold;
+}
+
+.country select {
+    width: 200px;
+    height: 35px;
+    
+}
+
+.states select {
+    width: 200px;
+    height: 35px;
+    
+}
+
+.district select {
+    width: 200px;
+    height: 35px;
+    
+}
+
+.user input {
+    width: 200px;
+    height: 35px;
+   
+}
+
+.age input {
+    width: 200px;
+    height: 35px;
+    
+}
+.register{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}

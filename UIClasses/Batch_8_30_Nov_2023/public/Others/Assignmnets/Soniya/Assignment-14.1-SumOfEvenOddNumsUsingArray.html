@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SumOfEvenOddUsingArray</title>
+</head>
+<body>
+    Program to display sum of even and odd numbers using array
+    <script>
+        var readingValues = () =>
+        {
+        var valStore = [];
+        var n = parseInt(prompt("Enter size of array"));
+            for(var i = 0;i < n;i++)
+            {
+                valStore[i] = parseInt(prompt(`Enter ${i+1} value in array`));
+            }
+            return valStore;
+        }
+
+       
+        var CheckingEvenOrOdd = (store) =>
+        {
+            var evenSum = 0;
+            var oddSum = 0;
+            for(var j = 0;j < store.length ;j++)
+            {
+                if(store[j] % 2 == 0)
+                {
+                    evenSum += store[j];
+                }
+                else
+                {
+                    oddSum += store[j];
+                }
+            }
+            printingSumOfEvenOddValues(evenSum, oddSum);
+        }
+
+        var printingSumOfEvenOddValues = (eSum,oSum) =>
+        {
+            console.log(`Sum of Even Numbers in Array is ${eSum}`);
+            console.log(`Sum of Odd Numbers in Array is ${oSum}`);
+        }
+        var store = readingValues();
+        CheckingEvenOrOdd(store);
+
+        
+    </script>
+</body>
+</html>

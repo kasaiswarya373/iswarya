@@ -1,0 +1,43 @@
+.container{
+    height: 2050px;
+    width: 100%;
+    border: 2px solid;
+    /* position: relative;  */
+
+    
+}
+.subcontainer{
+    height: 2050px;
+    width: 100%;
+    border: 2px solid;
+    background-color: blanchedalmond;
+    margin-top: 20px;
+}
+h1{
+    margin:10px auto;
+    border: 3px solid;
+    text-align: center;
+
+}
+.shot img{
+    height: 230px;
+    width: 230px;
+    border: 1px solid;
+    float: left;
+    margin: 5px;
+}
+.shot4{
+    position: fixed;
+    left: 735px;
+
+}
+.shot2{
+    position: sticky;
+    top: 350px;
+}
+
+.notes{
+font-size: larger;
+font-weight: bolder;
+margin-top: 200px;
+}

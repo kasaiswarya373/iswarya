@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        .box{
+            width: 700px;
+            height: 400px;
+            border: 3px solid;
+            margin: 20px auto;
+            margin-top: 100px;
+            text-align: center;
+            color: rgb(49, 4, 27);
+        }
+        .box1{
+            width: 350px;
+            height: 150px;
+            margin-top: 30px;
+            border: 1px solid;
+            font-weight: bolder;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: x-large;
+        }
+        .box2{
+            width: 350px;
+            height: 150px;
+            border: 1px ;
+            text-align: center;
+            font-weight: bolder;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: x-large;
+        }
+        #taskOrder{
+            position: relative;
+            top: 70px;
+        }
+        .box3{
+            width: 250px;
+            height: 222px;
+            border: 1px solid;
+            text-align: center; 
+            position: relative;
+            top: -302px;
+            left: 350px;
+            padding: 50px;
+            font-weight: bolder;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: x-large;
+        }
+        input:hover{
+            color: hotpink;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Assignment</h2>
+    <div class="box"> <h2>Tasks</h2>
+        <div class="box1">
+            <input type="text" id="inputTask" placeholder="Enter a task" style="position: relative; left: 30px;top: 40px;width: 200px;border: 2px solid; height: 25px;">
+            <button onclick="addTask()" style="position: relative; left: 20px;top: 40px; background-color: bisque; height: 30px;">Add Task</button>
+        </div>
+        <div class="box2" id="taskOrder"></div>
+        <div class="box3" id="completedTasks"> </div>
+        <button onclick="resetTasks()" style="position: absolute; top: 500px;left: 850px; background-color: rgb(45, 137, 12);
+        width: 80px; height: 30px;border: 1px transparent; color: aliceblue;">Reset </button>
+        <button onclick="deleteTasks()" style="position: absolute; top: 500px; left: 1000px;
+        background-color: red; width: 80px; height: 30px;border: 1px transparent; color: aliceblue;"> END</button>
+
+    </div>
+
+    <script>
+        var taskslines = [];
+        var completedTasks = [];
+
+        var addTask = () => {
+            var inputTask = document.querySelector("#inputTask");
+            var task = inputTask.value;
+               taskslines.push(task);
+                displayTasks();
+                inputTask.value = '';
+            }
+
+        var displayTasks = () => {
+            var taskOrderElement = document.querySelector("#taskOrder");
+            taskOrderElement.innerHTML = "";
+            taskslines.forEach((value, index) => {
+                var divTag = document.createElement("div");
+                divTag.textContent = value;
+                taskOrderElement.appendChild(divTag);
+            });
+        }
+
+        var displayCompletedTasks = () => {
+            var completedTasksElement = document.querySelector("#completedTasks");
+            completedTasksElement.innerHTML = "";
+            completedTasks.forEach((value, index) => {
+                var divTag = document.createElement("div");
+                divTag.textContent = value;
+                completedTasksElement.appendChild(divTag);
+            });
+        }
+
+        var pollTasks = () => {
+            if (taskslines.length > 0) {
+                var shiftTask = taskslines.shift();
+                completedTasks.push(shiftTask);
+                displayTasks();
+                displayCompletedTasks();
+            }
+            setTimeout(pollTasks, 10000);
+        }
+        pollTasks();
+
+        var resetTasks = () => {
+            completedTasks.length = 0;
+            taskslines.length = 0;
+            displayTasks();
+            displayCompletedTasks();
+        }
+
+        var deleteTasks = () => {
+            if(completedTasks.length == 0){
+                alert("SUCCESS");
+            }
+        }
+    </script>
+</body>
+</html>

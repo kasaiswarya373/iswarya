@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Event Hadling
+        </title>
+        <style>
+            div {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="click me" onfocus="showMsg();">
+
+        <div onclick="getUpdate()">Hello</div>
+        <script>
+            var showMsg = () => {
+                console.log("heyt i got invoked");
+            }
+
+            var getUpdate = () => {
+                console.log("frm get udpated")
+            }
+
+            
+        </script>
+    </body>
+</html>

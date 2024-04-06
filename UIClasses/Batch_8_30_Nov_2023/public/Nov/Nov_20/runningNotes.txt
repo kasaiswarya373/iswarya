@@ -1,0 +1,40 @@
+
+@durgaprasad158
+
+""
+
+''
+
+
+Heading tags:
+
+    h1 
+    h2 
+    h3 
+    .... 
+    h6 
+
+HTML Attributes:
+    id 
+    name 
+    ttile 
+    style 
+    class 
+    src 
+    href 
+    ...
+    ..
+
+    Syntax:
+
+        <tagname attrname1="value" attr2 = "value2" ... .. .. ..>
+            .... 
+            .....
+        </tagname>
+
+    Example:
+
+        <p id="test" name='sample' class='testing'>
+            .... 
+            ....
+        </p>

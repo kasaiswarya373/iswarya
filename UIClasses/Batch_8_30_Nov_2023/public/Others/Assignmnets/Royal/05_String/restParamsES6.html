@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameters</title>
+</head>
+<body>
+    <h3>use of Rest Parameters which will be supporting in latest ECMA-6</h3>
+    <script>
+        var addValues = (a, b, ...args) => {
+            var result = a + b;
+
+            for (var i = 0; i < args.length; i++){
+                result += args[i];
+            }
+            console.log('The sum is : '+result);
+        }
+
+        addValues(5, 5);
+        addValues(10, 5, 5);
+        addValues(5, 5, 5, 10);;
+    </script>
+    
+</body>
+</html>

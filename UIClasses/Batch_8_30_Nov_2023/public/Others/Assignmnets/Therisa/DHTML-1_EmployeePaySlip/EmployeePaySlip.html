@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EmployeePaySlip</title>
+        <link rel="stylesheet" href="payslip.css">
+        <script src="payslip.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li class="Heading">
+                <h2>Employee Salary Form</h2> 
+            </li>
+            <li>
+                <label for="fname">Employee Name :</label>
+                <input type="text" id="Ename">
+            </li>
+            <li>
+                <label for="fage">Employee Age :</label>
+                <input type="text" id="age">
+            </li>
+            <li>
+                <label for="gender">Employee Gender :</label>
+                Male <input type="radio" name="gender" value="male" >
+                Female <input type="radio" name="gender" value="female">
+            </li>
+            <li>
+                <label>Employee Department :</label>
+                <select name="Department" id="dep">
+                    <option value="IT">IT</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Developer">Developer</option>
+                    <option value="HR">HR</option>
+                    <option value="Recruiter">Recruiter</option>
+                </select>
+            </li>
+            <li>
+                <label for="BasicSalary">Basic Salary :</label>
+                <input type="text" id="basicsal">
+            </li>
+            <li>
+                <input type="button" value="GetPaySlip" id="button" onclick="displayDetails()"/>
+            </li>
+        </ul>
+        <ul class="displayDetails">
+            <li class="Head">
+                <h2>Pay Slip</h2>
+            </li>
+            <li>
+                <label for="ename">Employee Name :</label><span id="d_name"></span>
+            </li>
+            <li>
+                <label for="age">Employee Age :</label><span id="d_age"></span>
+            </li>
+            <li>
+                <label for="gender">Employee Gender :</label><span id="d_gender"></span>
+            </li>
+            <li>
+                <label for="dep">Employee Department :</label><span id="d_department"></span>
+            </li>
+            <li>
+                <label for="basic">Basic Salary :</label><span id="d_basicsal"></span>
+            </li>
+            <li>
+                <label for="pf">PF :</label><span id="d_pf"></span>
+            </li>
+            <li>
+                <label for="hra">Hra :</label><span id="d_hra"></span>
+            </li>
+            <li>
+                <label for="Tax">Tax Amount :</label><span id="d_tax"></span>
+            </li>
+            <li>
+                <label for="TotalSalary">Total Salary :</label><span id="d_totalsalary"></span>
+            </li>
+        </ul>
+    </body>
+</html>

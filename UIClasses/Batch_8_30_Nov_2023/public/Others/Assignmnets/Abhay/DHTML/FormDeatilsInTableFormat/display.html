@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Details In Table format</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="#" method="get" id="formDetails">
+            <div class="name">
+                <span>Name :</span>
+                <input type="text" id="myName">
+            </div>
+            <div class="age">
+                <span>Age :</span>
+                <input type="text" id="myAge" maxlength="2">
+            </div>
+            <div class="state">
+                <span>State :</span>
+                <select name="state" id="myState">
+                    <option value="" selected hidden>Select</option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Madhya Paradesh">Madhya Paradesh</option>
+                    <option value="Telangana">Telangana</option>
+                </select>
+            </div>
+            <div class="button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <ul id="displayData">
+            <li>Name</li>
+            <li>Age</li>
+            <li>State</li>
+        </ul>
+        <input type="button" value="Reload" onclick="reloadPage()">
+    </div>
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>

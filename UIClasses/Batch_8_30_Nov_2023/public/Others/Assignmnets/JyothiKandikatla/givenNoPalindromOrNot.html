@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //Write a program to finding the given number palindrom or not
+            var rem,revNumber = 0;
+        
+            var n = parseInt(prompt('Enter a number'));
+            var temp = n;
+            console.log('User Given Number is : '+ n);
+            while(n > 0 ){
+                rem = n % 10;
+                revNumber = revNumber * 10 + rem;
+                n = parseInt(n / 10);
+                
+            }
+            if(temp == revNumber){
+                    console.log('Given no is palindrom ');
+                }else{
+                    console.log('Given no is not palindrom');
+                }
+        
+        </script>
+    </body>
+</html>

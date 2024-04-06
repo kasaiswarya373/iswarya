@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        h3{
+            border: 2px solid;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            background-color: antiquewhite;
+        }
+        .container{
+            border: 1px solid;
+            margin: 10px;
+            height: 1100px;
+            background-color:blanchedalmond;
+        }
+        .std-detailsbox{
+            border: 1px solid;
+            height: 250px;
+            margin: 35px 10px 10px 10px;
+            position: relative;
+            background-color:aquamarine;
+            
+        }
+        .studentdetails{
+            border: 1px solid;
+            width: 200px;
+            
+            margin: 10px;
+            padding: 10px;
+            position: absolute;
+            top: -35px;
+            font-size: 25px;
+            background-color: aliceblue;
+            text-align: center;
+            text-decoration: underline;
+            
+
+        }
+        li{
+            list-style: none;
+            
+            margin: 30px 10px 10px 10px;
+            width: 40%;
+            padding: 10px;
+        }
+        .right-sidebar{
+            position:absolute ;
+            top: 10px;
+            right: 0px;
+            left: 50%;          
+        }
+        .right-sidebar li{
+            margin: 10px;
+            width: 90%;
+        }
+        #Address{
+            position: relative;
+            top: -50px;
+        }
+        #Education{
+            margin: 15px 10px 10px 10px ;
+        }
+        #about{
+            position: relative;
+            top: -70px;
+        }
+        .footer{
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            background-color: bisque;
+        }
+        .submit{
+            position: absolute;
+            right: 10px; 
+            left: 70%;
+          
+        }
+    
+    </style>
+</head>
+<body>
+    <h3>Student Registration Page</h3>
+    <div class="container">
+        <form>
+         <ul class="std-detailsbox">
+            
+            <label class="studentdetails">
+                Personaldetails
+            </label>
+            <li>
+                <label for="Name">Name:</label>
+                <input type="text" name="Name">
+
+
+            </li>
+            <li>
+                <label for="firstname">
+                    First Name:
+                </label>
+                <input type="text" name="firstname">
+            </li>
+            <li>
+                <label for="age">Age:</label>
+                <input type="age" name="age" id="" rows="2" cols="4">
+            </li>
+            <ul class="right-sidebar">
+
+              <li>
+                <label for="addrs" id="Address">Address:</label>
+                <textarea type="text" name="addrs" rows="4" cols="40" maxlength="300"> </textarea>
+              </li>
+              <li>
+                <label for="country">Country:</label>
+                <select name="country" id="">
+                    <option value="select" selected>Select</option>
+                    <option value="ind">India</option>
+                    <option value="usa">USA</option>
+                    <option value="New-york">New-york</option>
+                    <option value="UK">UK</option>
+                    <option value="aus">Australia</option>
+                   
+                </select>
+              </li>
+
+            </ul>
+         </ul>
+
+         <ul class="std-detailsbox">
+               
+            <label class="studentdetails">
+                Education Details
+            </label>
+            <li>    
+                <label for="qualification">Qualification</label>
+                <select name="qualification" id="Education">
+                    <option value="select" selected>Select</option>
+                    <option value="Mca">MCA</option>
+                    <option value="Bca">BCA</option>
+                    <option value="B-tech">B-Tech</option>
+                    <option value="Msc">Msc</option>
+                    
+                </select>
+            </li>
+            <li>
+                <label for="lang">Language:</label>
+                <input type="checkbox">Telugu
+                <input type="checkbox">Hindi
+                <input type="checkbox" checked disabled>English
+                <input type="checkbox">Urdu
+            </li>
+            <li>
+                <label for="course"> Choice Course </label>
+                <input type="radio">MCA
+                <input type="radio">BCA
+                <input type="radio">B-Tech
+                <input type="radio">Msc
+            </li>
+         </ul>
+        
+        <ul class="std-detailsbox">
+            
+                <label class="studentdetails">About Yorself</label>
+                <li>
+                    <label for="text" id="about">Few Words About Your Career:</label>
+                    <textarea name="text" id="" cols="30" rows="10"></textarea>
+
+                </li>
+
+
+        </ul>
+        <ul class="submit">
+            
+            <li>
+                <input type="submit" value="Submit Registration">
+            </li>
+        
+        </ul>
+        </form>
+        
+       
+    </div>
+    <div class="footer">
+        @copy rights NIT 2023
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prob5 ArmstrongNumber</title>
+  </head>
+  <body>
+    <h2>WAP to display armstrong number</h2>
+
+    <script>
+      let numberToCheck = parseInt(prompt("Enter A 3-Digit Positive Number"));
+
+      let temp = numberToCheck;
+      let sum = 0;
+
+      while (temp > 0) {
+        let remainder;
+        remainder = temp % 10;
+
+        sum = sum + remainder * remainder * remainder;
+
+        temp = parseInt (temp / 10);
+      }
+
+      if (sum == numberToCheck) {
+        console.log(`Given Number ${numberToCheck} is Armstrong Number`);
+      } else {
+        console.log(`Given Number ${numberToCheck} is Not a Armstrong Number`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating Key Frame</title>
+    <style>
+        @keyframes mystyles {
+            2% {
+                background-color: aqua;
+                border-radius: 2px solid;
+                width: 590px;
+                border-radius: 50px;
+            }
+            12% {
+                background-color: blueviolet;
+                border-radius: 50px;
+                border: 1px solid;
+                width: 120px;
+            }
+            26%{
+                border: 5px solid;
+                background-color: yellow;
+                width: 50px;
+                left: 70%;
+            }
+            64%{
+                background-color: violet;
+                top: 30px;
+                width: 99px;
+                bottom: 43%;
+            }
+            87%{
+                left: 40%;
+                width: 76px;
+                background-color: burlywood;
+            }
+            98%{
+                background-color: aquamarine;
+                border: 2px solid;
+                border-radius: 50%;
+            }
+        }
+        h1{
+            border: 1px solid violet;
+            padding: 15px;
+            margin: 15px;
+            background-color: greenyellow;
+            text-align: center;
+            font-style: italic;
+        }
+        .container {
+            text-align: center;
+            width: 150px;
+            height: 150px;
+            background-color: gold;
+            border: 1px solid red;
+            position: absolute;
+        
+          /*  animation: name duration timing-function delay iteration-count direction fill-mode; */
+          animation:  mystyles 15s infinite;
+        }
+        .rotateContainer{
+            width: 200px;
+            padding: 50px;
+            text-align: center;
+            border: 1px solid;
+            margin: 150px auto;
+            animation: rotateelement 10s infinite;
+            background-color: aqua;
+        }
+        @keyframes rotateelement {
+            5%{
+                transform: rotate(2deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Demonstrating Key Frame
+    </h1>
+    <!--<div class="container">Hello</div> -->
+
+    <div class="rotateContainer"></div>
+</body>
+</html>

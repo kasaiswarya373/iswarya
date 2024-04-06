@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .block{
+        width: 200px;
+        border: 1px solid;
+        border-radius: 8px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .container {
+        width: 250px;
+        border: 1px solid;
+        border-radius: 10px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    input[type="button"] {
+        margin: 10px;
+        width: 50px;
+        border-radius: 5px;
+        border: 2px solid;
+        font-weight: bold;
+        
+    }
+    #b1 {
+        background-color: pink;
+    }
+    #b2 {
+        background-color: lightblue;
+    }
+    #b3 {
+        background-color: lightgreen;
+    }
+    #b4 {
+        background-color: orange;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="block">
+            <label for="firstvalue"><b>Enter a value : </b></label>
+        <input type="text" name="firstvalue" id="fvalue">
+        </div>
+        <div class="block">
+            <label for="secvalue"><b>Enter b value : </b></label>
+        <input type="text" name="secvalue" id="svalue">
+        </div>
+        <div class="block">
+            <b>The sum of Values is :</b>
+            <span id="result"></span>
+        </div>
+        <div class="block">
+            <b>The subtraction is :</b>
+            <span id="result1"></span>
+        </div>
+        <div class="block">
+            <b>The Multiplication is :</b>
+            <span id="result2"></span>
+        </div>
+        <div class="block">
+            <b>The Division is :</b>
+            <span id="result3"></span>
+        </div>
+        <div class="block">
+                <input type="button" id="b1" value="+" onclick="getvalues()">
+                <input type="button" id="b2" value="-" onclick="getvalues1()">
+                <input type="button" id="b3" value="x" onclick="getvalues2()">
+                <input type="button" id="b4" value="/" onclick="getvalues3()">
+           
+        </div>
+    </div>
+    <script>
+        var getvalues = () => {
+    var a1 = document.querySelector("#fvalue").value;
+    a1 = parseInt(a1);
+    var a2 = document.querySelector("#svalue").value;
+    a2 = parseInt(a2);
+    var result = a1+a2;
+    document.querySelector("#result").innerText = result;
+    document.querySelector(".resultclass").style.display = 'block';
+}
+var getvalues1 = () => {
+    var a1 = document.querySelector("#fvalue").value;
+    a1 = parseInt(a1);
+    var a2 = document.querySelector("#svalue").value;
+    a2 = parseInt(a2);
+    var result = a1 - a2;
+    document.querySelector("#result1").innerText = result;
+    document.querySelector(".result1class").style.display = 'block';
+    //clearvalues();
+
+}
+var getvalues2 = () => {
+    var a1 = document.querySelector("#fvalue").value;
+    a1 = parseInt(a1);
+    var a2 = document.querySelector("#svalue").value;
+    a2 = parseInt(a2);
+    var result = a1*a2;
+    document.querySelector("#result2").innerText = result;
+    document.querySelector(".result2class").style.display = 'block';
+    //clearvalues();
+}
+var getvalues3 = () => {
+    var a1 = document.querySelector("#fvalue").value;
+    a1 = parseInt(a1);
+    var a2 = document.querySelector("#svalue").value;
+    a2 = parseInt(a2);
+    var result = a1/a2;
+    document.querySelector("#result3").innerText = result;
+    document.querySelector(".result3class").style.display = 'block';
+    //clearvalues();
+}
+setTimeout(() => {
+        document.querySelector("#fvalue").value = "";
+        document.querySelector("#svalue").value = "";
+        document.querySelector("#result").innerText = "";
+        document.querySelector("#result1").innerText = "";
+        document.querySelector("#result2").innerText = "";
+        document.querySelector("#result3").innerText = "";
+    }, 10000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.student{
+    text-align: center;
+    border: 3px solid;
+    background-color: hsl(87, 64%, 53%);
+    margin: 14px auto;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+.under{
+text-decoration: underline;
+
+}

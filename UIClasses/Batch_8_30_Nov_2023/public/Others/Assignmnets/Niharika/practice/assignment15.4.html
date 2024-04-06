@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //WAP to list out all the prime numbers within the given array.
+            var n = parseInt(prompt("enter size of array: "));
+            var arr = [n];
+            for(var i = 0 ; i < n ; i++){
+                arr[i] = parseInt(prompt("enter values: "));
+            }
+            var primearray = [];
+            var isprimenumber = (num , primearray) => {
+                for(var i = 2; i < num ; i++){
+                    if(num % 2 == 0){
+                        return false;
+                    }
+                }
+                return true;
+            }
+            for(var i = 0 ; i < n ;i++){
+                if(isprimenumber(arr[i] , primearray)){
+                    primearray.push(arr[i]);
+                }
+                else{
+                    primearray.push("No prime numbers are found in the array");
+                    break;
+                }
+            }
+            console.log("The prime numbers in the array are: " + primearray);
+        </script>
+    </body>
+</html>

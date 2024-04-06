@@ -1,0 +1,25 @@
+{
+  "name": "batch-8-30-novermber-2023",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-generator": "^4.16.1",
+    "handlebar": "^1.0.0",
+    "http-errors": "~1.6.3",
+    "icons": "^1.0.0",
+    "jade": "~1.11.0",
+    "jquery": "^3.7.1",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}

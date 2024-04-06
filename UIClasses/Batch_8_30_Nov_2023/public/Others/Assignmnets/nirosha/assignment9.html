@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Details JavaScript Example</title>
+</head>
+<body> 
+  <script>
+    var empname = prompt("Enter Employee Name");
+    var empgender = prompt("Enter Employee Gender");
+    var empage = prompt("Enter Employee Age");
+    var empdep =prompt("Enter Employee Department");
+    var empbasicsal = prompt("Enter Employee Basic Salary");
+    empbasicsal = parseInt(empbasicsal);
+    var PFper = prompt("Enter PF percentage")
+    PFper = parseInt(PFper);
+    PF = (PFper*empbasicsal)/100;
+    var Hraper = prompt("Enter HRA percentage")
+    Hraper = parseInt(Hraper);
+    hra = (Hraper*empbasicsal)/100;
+    var sum;
+    sum= empbasicsal + PF + hra;
+    alert ("Employee sum is : " + sum);
+    console.log("Employee Name  is " + empname);
+    console.log("Employee Gender is " + empgender);
+    console.log("Employee Age is " + empage);
+    console.log("Employee Department is " + empdep);
+    console.log("Employee Basic salary is " + empbasicsal);
+    console.log("Employee PF amount is " + PF);
+    console.log("Employee HRA amount is " + hra);
+    console.log("Employee sum is " + sum);
+    </script>
+</body>
+</html>

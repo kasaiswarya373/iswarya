@@ -1,0 +1,47 @@
+.container {
+    width: 400px;
+    margin: 30px auto;
+    border: 1px solid;
+    
+}
+.detailsblock {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    min-height: 50px;
+    background-color: #dddddd47;
+    padding: 10px;
+}
+h3 {
+    text-align: center;
+    color: blue;
+    font-size: 25px;
+}
+label {
+    margin: 10px;
+    padding: 10px;
+}
+.msgblock {
+    margin: 50px auto;
+    width: 250px;
+    height: 250px;
+    border: 1px solid;
+    border-radius: 10px;
+   display: none;
+}
+
+.content {
+    font-size: 20px;
+    color: #0a7c0a;
+    text-align: center;
+    position: relative;
+    top: 64px;
+}
+.imageblock {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: 31px;
+    left: 82px;
+}

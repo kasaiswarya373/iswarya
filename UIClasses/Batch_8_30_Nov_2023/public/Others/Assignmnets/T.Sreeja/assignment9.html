@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empolyee details</title>
+</head>
+<body>
+    <h3>EMPOLYEE DETAILS</h3>
+    <script>
+        var EmpName = prompt('Enter The name:');
+        var Age = prompt('Enter The age:');
+        var Gender = prompt('Enter The gender:');
+        var Department = prompt('Enter The department:');
+        var Basicsalary = prompt('Enter your basic salary');
+        Basicsalary = parseInt(Basicsalary);
+        var pf= prompt(' pf percentage');
+        pf = parseFloat(pf);
+        pf=(pf*Basicsalary)/100;
+        var hra=prompt('hra percentage');
+        hra=parseFloat(hra);
+        hra=(hra*Basicsalary)/100;
+        var TotalSalary=pf+hra+Basicsalary;
+        TotalSalary= parseFloat(TotalSalary);
+        console.log("Empolyee details");
+        console.log("name"+EmpName);
+        console.log("age"+Age);
+        console.log("gender"+Gender);
+        console.log("department"+Department);
+        console.log('pf percentage'+pf);
+        console.log('hra percentage'+hra);
+        console.log('empolyee total salary'+TotalSalary);
+        console.log("END");
+        
+    </script>
+    
+</body>
+</html>

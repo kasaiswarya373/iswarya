@@ -1,0 +1,36 @@
+h3 {
+    text-align: center;
+    color: brown;
+    background-color: yellow;
+    margin: 5px;
+    padding: 5px;
+}
+li {
+    list-style: none;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+    height: 30px;
+}
+ul {
+    border: 1px solid;
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    
+}
+
+.smarks input[type=text]{
+    width: 40px;
+}
+
+.dispalyDetailsBlock {
+    display: none;
+}
+
+.labelText, .controller {
+    float: left;
+}
+.labelText {
+    width: 150px;
+}

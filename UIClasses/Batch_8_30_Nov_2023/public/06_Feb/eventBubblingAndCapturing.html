@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating event bubbling and capturing
+        </title>
+        <script src="app.js"></script>
+        <style>
+
+            div {
+                font-weight: bold;
+                border: 2px solid;
+                .parent {
+                    padding: 20px;
+                    background-color: yellow;
+                }
+                .child {
+                    padding: 20px;
+                    background-color: aqua;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="parent">
+                Parent Content
+                <div class="child">
+                    Child Content
+                </div>
+            </div>
+        </div>
+
+       
+    </body>
+</html>

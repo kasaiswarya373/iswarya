@@ -1,0 +1,713 @@
+{
+  "Bands": {
+    "nike": {
+      "mens": [
+        {
+          "pid": 1819000101,
+          "name": "nike Air Force 1 '07",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "sneakers",
+          "description": "The radiance lives on in the Nike Air Force 1 '07, the basketball original that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
+          "price": "7495",
+          "product_details": [
+            "Foam midsole",
+            "Perforations on the toe",
+            "Rubber sole",
+            "Colour Shown: White/White",
+            "Style: CW2288-111",
+            "Country/Region of Origin: Vietnam,India"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes1_1.png",
+            "/images/productImages/nike_menShoes1_2.jpeg",
+            "/images/productImages/nike_menShoes1_3.png",
+            "/images/productImages/nike_menShoes1_4.png",
+            "/images/productImages/nike_menShoes1_5.png",
+            "/images/productImages/nike_menShoes1_6.png"
+          ],
+          "inStock": "2"
+        },
+        {
+          "pid": 1819000102,
+          "name": "Nike Air Max Dn",
+          "colorName": "Sail and Coconut Milk",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "sneakers",
+          "description": "Say hello to the next generation of Air technology. The Air Max Dn features our Dynamic Air unit system of dual-pressure tubes, creating a reactive sensation and smooth transition with every step. This results in a futuristic design that's comfortable enough to wear from day to night. Go ahead—Feel the Unreal.",
+          "price": "13995.00",
+          "product_details": [
+            "SKU: DV3337-100",
+            "Country/Region of Origin: Vietnam,India"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes2_1.jpg",
+            "/images/productImages/nike_menShoes2_2.jpg",
+            "/images/productImages/nike_menShoes2_3.jpg",
+            "/images/productImages/nike_menShoes2_4.jpg",
+            "/images/productImages/nike_menShoes2_5.jpg",
+            "/images/productImages/nike_menShoes2_6.jpg"
+          ],
+          "inStock": "4"
+        },
+        {
+          "pid": 1819000103,
+          "name": "Nike Air Max Dn",
+          "colorName": "Black and Dark Smoke Grey",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "sneakers",
+          "description": "Say hello to the next generation of Air technology. The Air Max Dn features our Dynamic Air unit system of dual-pressure tubes, creating a reactive sensation and smooth transition with every step. This results in a futuristic design that's comfortable enough to wear from day to night. Go ahead—Feel the Unreal.",
+          "price": "13995.00",
+          "product_details": [
+            "SKU: DV3337-002",
+            "Country/Region of Origin: Vietnam,India"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes3_1.jpg",
+            "/images/productImages/nike_menShoes3_2.jpg",
+            "/images/productImages/nike_menShoes3_3.jpg",
+            "/images/productImages/nike_menShoes3_4.jpg",
+            "/images/productImages/nike_menShoes3_5.jpg",
+            "/images/productImages/nike_menShoes3_6.jpg"
+          ],
+          "inStock": "2"
+        },
+        {
+          "pid": 1819000104,
+          "name": "Nike Air Max Dn",
+          "colorName": "Black/Dark Smoke",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "sneakers",
+          "description": "Say hello to the next generation of Air technology. The Air Max Dn features our Dynamic Air unit system of dual-pressure tubes, creating a reactive sensation and smooth transition with every step. This results in a futuristic design that's comfortable enough to wear from day to night. Go ahead—Feel the Unreal.",
+          "price": "13995.00",
+          "product_details": [
+            "SKU: DV3337-008",
+            "Matt accents",
+            "Foam midsole",
+            "Rubber outsole",
+            "Country/Region of Origin: Vietnam,India"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes4_1.png",
+            "/images/productImages/nike_menShoes4_2.png",
+            "/images/productImages/nike_menShoes4_3.png",
+            "/images/productImages/nike_menShoes4_4.png",
+            "/images/productImages/nike_menShoes4_5.png",
+            "/images/productImages/nike_menShoes4_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000105,
+          "name": "Nike Air Max Dn",
+          "colorName": "Pure Platinum/White/Black/Hyper Royal",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "sneakers",
+          "description": "Say hello to the next generation of Air technology. The Air Max Dn features our Dynamic Air unit system of dual-pressure tubes, creating a reactive sensation and smooth transition with every step. This results in a futuristic design that's comfortable enough to wear from day to night. Go ahead—Feel the Unreal.",
+          "price": "13995.00",
+          "product_details": [
+            "SKU:  DV3337-005",
+            "Matt accents",
+            "Foam midsole",
+            "Rubber outsole",
+            "Not intended for use as personal protective equipment (PPE)",
+            "Country/Region of Origin: Vietnam,India"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes5_1.png",
+            "/images/productImages/nike_menShoes5_2.png",
+            "/images/productImages/nike_menShoes5_3.png",
+            "/images/productImages/nike_menShoes5_4.png",
+            "/images/productImages/nike_menShoes5_5.png",
+            "/images/productImages/nike_menShoes5_6.png"
+          ],
+          "inStock": "2"
+        },
+        {
+          "pid": 1819000106,
+          "name": "Nike Air Max Dn",
+          "colorName": "Volt/Volt Glow/Sequoia/Black",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "sneakers",
+          "description": "Say hello to the next generation of Air technology. The Air Max Dn features our Dynamic Air unit system of dual-pressure tubes, creating a reactive sensation and smooth transition with every step. This results in a futuristic design that's comfortable enough to wear from day to night. Go ahead—Feel the Unreal.",
+          "price": "13995.00",
+          "product_details": [
+            "SKU:  DV3337-700",
+            "Matt accents",
+            "Foam midsole",
+            "Rubber outsole",
+            "Not intended for use as personal protective equipment (PPE)",
+            "Country/Region of Origin: Vietnam,Indonesia"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes6_1.png",
+            "/images/productImages/nike_menShoes6_2.png",
+            "/images/productImages/nike_menShoes6_3.png",
+            "/images/productImages/nike_menShoes6_4.png",
+            "/images/productImages/nike_menShoes6_5.png",
+            "/images/productImages/nike_menShoes6_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000107,
+          "name": "Nike Dunk Low",
+          "colorName": "Photon Dust/White/Phantom/Obsidian",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "sneakers",
+          "description": "Created for the hardwood but taken to the streets, this '80s basketball icon returns with classic details and throwback hoops flair. The synthetic leather overlays help the Nike Dunk channel vintage style while its padded, low-cut collar lets you take your game anywhere—in comfort.",
+          "price": " 11895.00",
+          "product_details": [
+            "SKU:  HF4299-001",
+            "The upper ages to soft perfection and features durable construction reminiscent of '80s basketball.",
+            "Foam midsole offers lightweight, responsive cushioning.",
+            "Low-cut, padded collar looks sleek and feels comfortable.",
+            "Rubber outsole with classic hoops pivot circle adds durability, traction and heritage style.",
+            "Country/Region of Origin: Indonesia"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes7_1.png",
+            "/images/productImages/nike_menShoes7_2.png",
+            "/images/productImages/nike_menShoes7_3.png",
+            "/images/productImages/nike_menShoes7_4.png",
+            "/images/productImages/nike_menShoes7_5.png",
+            "/images/productImages/nike_menShoes7_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000108,
+          "name": "Nike Dunk Low Retro SE",
+          "colorName": "Phantom/Light Bone/Summit White/Khaki",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "sneakers",
+          "description": "The '80s b-ball icon returns with classic colours, crisp leather and throwback hoops flair. Channelling vintage style back onto the streets, its padded collar lets you take your game anywhere—in comfort.",
+          "price": "10795.00",
+          "product_details": [
+            "SKU:  FJ4188-001",
+            "Leather upper softens and gains vintage character with wear.",
+            "Foam midsole offers lightweight, responsive cushioning.",
+            "Rubber outsole with classic hoops pivot circle adds durability and traction.",
+            "Country/Region of Origin: Vietnam"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes8_1.png",
+            "/images/productImages/nike_menShoes8_2.png",
+            "/images/productImages/nike_menShoes8_3.png",
+            "/images/productImages/nike_menShoes8_4.png",
+            "/images/productImages/nike_menShoes8_5.png",
+            "/images/productImages/nike_menShoes8_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000109,
+          "name": "Nike Dunk Low Retro SE",
+          "colorName": "White/Platinum Tint/Pure Platinum/Light Carbon",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "sneakers",
+          "description": "The '80s b-ball icon returns with classic colours, crisp leather and throwback hoops flair. Channelling vintage style back onto the streets, its padded collar lets you take your game anywhere—in comfort.",
+          "price": "10795.00",
+          "product_details": [
+            "SKU:  FJ4188-100",
+            "Suede Swoosh logo",
+            "Foam midsole offers lightweight, responsive cushioning.",
+            "Rubber outsole with classic hoops pivot circle adds durability and traction.",
+            "Country/Region of Origin: Vietnam"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes9_1.png",
+            "/images/productImages/nike_menShoes9_2.png",
+            "/images/productImages/nike_menShoes9_3.png",
+            "/images/productImages/nike_menShoes9_4.png",
+            "/images/productImages/nike_menShoes9_5.png",
+            "/images/productImages/nike_menShoes9_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000110,
+          "name": "Nike Dunk Low",
+          "colorName": " Sail/Cream II/Limestone/Pacific Moss",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "sneakers",
+          "description": "The '80s b-ball icon returns with classic colours, crisp leather and throwback hoops flair. Channelling vintage style back onto the streets, its padded collar lets you take your game anywhere—in comfort.",
+          "price": "9695.00",
+          "product_details": [
+            "SKU: HF4262-133",
+            "Leather upper softens and gains vintage character with wear.",
+            "Foam midsole offers lightweight, responsive cushioning.",
+            "Rubber outsole with classic hoops pivot circle adds durability and traction.",
+            "Country/Region of Origin: Vietnam"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes10_1.png",
+            "/images/productImages/nike_menShoes10_2.png",
+            "/images/productImages/nike_menShoes10_3.png",
+            "/images/productImages/nike_menShoes10_4.png",
+            "/images/productImages/nike_menShoes10_5.png",
+            "/images/productImages/nike_menShoes10_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000111,
+          "name": "Air Jordan 1 Low",
+          "colorName": "Black/Cement Grey/White/Fire Red",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "Jordan",
+          "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low offers a clean, classic look that's familiar yet always fresh. With an iconic design that pairs perfectly with any 'fit, these kicks ensure you'll always be on point.",
+          "price": "8995.00",
+          "product_details": [
+            "SKU:  553558-060",
+            "Encapsulated Air-Sole unit provides lightweight cushioning.",
+            "Genuine leather in the upper offers durability and a premium look.",
+            "Solid rubber outsole enhances traction on a variety of surfaces.",
+            "Country/Region of Origin: Vietnam"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes11_1.png",
+            "/images/productImages/nike_menShoes11_2.png",
+            "/images/productImages/nike_menShoes11_3.png",
+            "/images/productImages/nike_menShoes11_4.png",
+            "/images/productImages/nike_menShoes11_5.png",
+            "/images/productImages/nike_menShoes11_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000112,
+          "name": "Jordan Nu Retro 1 Low",
+          "colorName": "Black/White/Varsity Red",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "Jordan",
+          "description": "Twenty years later and these low tops are back. Inspired by the original Wings logo and design of the Jordan 1, these all-day, everyday shoes are ready for whatever. Rock 'em with some baggy jeans, skate in 'em or just look fly—it's up to you. Smooth leather uppers and a big embossed logo will help you stand out whether you're dressed up or down.",
+          "price": "9195.00",
+          "product_details": [
+            "SKU: DV5141-006",
+            "Nike Air technology absorbs impact for cushioning with every step.",
+            "Low-cut, cushioned collar fits comfortably around your ankle.",
+            "Rubber sole gives you ample traction.",
+            "Country/Region of Origin: Vietnam"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes12_1.png",
+            "/images/productImages/nike_menShoes12_2.png",
+            "/images/productImages/nike_menShoes12_3.png",
+            "/images/productImages/nike_menShoes12_4.png",
+            "/images/productImages/nike_menShoes12_5.png",
+            "/images/productImages/nike_menShoes12_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000113,
+          "name": "Jordan Stadium 90",
+          "colorName": "White/Wolf Grey/Industrial Blue",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "Jordan",
+          "description": "Comfort is king, but that doesn't mean you have to sacrifice style. Taking design inspiration from the AJ1 and AJ5, the Stadium 90 is ready for everyday wear. The upper is made from leather and airy woven, so you get both breathability and durability, and Nike Air cushioning in the sole keeps your every step light and cushioned.",
+          "price": " 12795.00",
+          "product_details": [
+            "SKU: DX4397-114",
+            "Rubber outsole pays homage to the AJ1",
+            "Flame details and heel branding reference the AJ5",
+            "Country/Region of Origin: China"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes13_1.png",
+            "/images/productImages/nike_menShoes13_2.png",
+            "/images/productImages/nike_menShoes13_3.png",
+            "/images/productImages/nike_menShoes13_4.png",
+            "/images/productImages/nike_menShoes13_5.png",
+            "/images/productImages/nike_menShoes13_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000114,
+          "name": "Jordan Stadium 90",
+          "colorName": "White/Black/Gym Red",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "Jordan",
+          "description": "Comfort is king, but that doesn't mean you have to sacrifice style. Taking design inspiration from the AJ1 and AJ5, the Stadium 90 is ready for everyday wear. The upper is made from leather and airy woven, so you get both breathability and durability, and Nike Air cushioning in the sole keeps your every step light and cushioned.",
+          "price": " 12795.00",
+          "product_details": [
+            "SKU: DX4397-116",
+            "Rubber outsole pays homage to the AJ1",
+            "Flame details and heel branding reference the AJ5",
+            "Country/Region of Origin: China"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes14_1.png",
+            "/images/productImages/nike_menShoes14_2.png",
+            "/images/productImages/nike_menShoes14_3.png",
+            "/images/productImages/nike_menShoes14_4.png",
+            "/images/productImages/nike_menShoes14_5.png",
+            "/images/productImages/nike_menShoes14_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000115,
+          "name": "Luka 2 PF",
+          "colorName": " Olive Aura/Oil Green/Sea Glass/Vivid Orange",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "Jordan/Basketball",
+          "description": "You bring the speed. We'll bring the stability. The Luka 2 is built to support your skills, with an emphasis on step-backs, side-steps and quick-stop action. A stacked midsole features firm, flexible cushioning for added responsiveness as you shift back and forth on the court. Up top, the full-foot wrapped cage design helps you stay contained whether you're faking out a defender or driving down the lane. With all that tech in a lightweight package, we've got efficiency covered. The rest is up to you.",
+          "price": "12795.00",
+          "product_details": [
+            "SKU:  DX9034-308",
+            "The PF edition is designed with a wider fit and optimised for play on outdoor courts.",
+            "Country/Region of Origin: Vietnam"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes15_1.png",
+            "/images/productImages/nike_menShoes15_2.png",
+            "/images/productImages/nike_menShoes15_3.png",
+            "/images/productImages/nike_menShoes15_4.png",
+            "/images/productImages/nike_menShoes15_5.png",
+            "/images/productImages/nike_menShoes15_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000116,
+          "name": "Luka 2 'Caves' PF",
+          "colorName": "Smoke Grey/Light Smoke Grey/Dark Smoke Grey/Laser Orange",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "Jordan/Basketball",
+          "description": "Slovenia—Luka's home country—is the first nation to be declared a Green Destination of the World in its entirety. Celebrate its status with this special-edition Luka 2. The colourway is inspired by Slovenia's stunning underground caves. The shoe's mindful construction (each pair is made from at least 20% recycled material by weight) honours the country's ongoing dedication to sustainability.",
+          "price": "12157.00",
+          "product_details": [
+            "SKU:   DX9034-008",
+            "The PF edition is designed with a wider fit and optimised for play on outdoor courts.",
+            "Country/Region of Origin: Vietnam"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes16_1.jpeg",
+            "/images/productImages/nike_menShoes16_2.png",
+            "/images/productImages/nike_menShoes16_3.jpeg",
+            "/images/productImages/nike_menShoes16_4.jpeg",
+            "/images/productImages/nike_menShoes16_5.jpeg",
+            "/images/productImages/nike_menShoes16_6.jpeg"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000117,
+          "name": "Air Jordan 1 Low SE",
+          "colorName": "White/Lightning/Chlorophyll",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "Jordan/sneakers",
+          "description": "Fresh colours give you an updated AJ1 without losing its iconic silhouette and familiar feel. Made from premium leather, this all-time favourite comes decked out with comfortable Nike Air cushioning and subtle design details (check out that embroidered heel) to give you a staple sneaker with a modern look.",
+          "price": "10295.00",
+          "product_details": [
+            "SKU: HF4823-100",
+            "Perforations on the toe",
+            "Wings logo on heel",
+            "Embroidered Jumpman logo on the tongue",
+            "Country/Region of Origin: Vietnam"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes17_1.jpeg",
+            "/images/productImages/nike_menShoes17_2.jpeg",
+            "/images/productImages/nike_menShoes17_3.jpeg",
+            "/images/productImages/nike_menShoes17_4.png",
+            "/images/productImages/nike_menShoes17_5.png",
+            "/images/productImages/nike_menShoes17_6.png"
+          ],
+          "inStock": "2"
+        },
+        {
+          "pid": 1819000118,
+          "name": "Jordan Max Aura 5",
+          "colorName": "White/Black/Gym Red",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "Jordan/sneakers",
+          "description": "Whenyou need a shoe that's ready 24/7, it's gotta be the Max Aura 5. Inspired by the AJ3, this pair of kicks puts a modern spin on the classic. They're made from durable leather and textiles that sit atop a heel of Nike Air cushioning so you can walk, run or skate all day and still have fresh-feeling soles.",
+          "price": "11895.00",
+          "product_details": [
+            "SKU: DZ4353-106",
+            "Jumpman label on tongue",
+            "Eyelets reference the AJ3",
+            "Sturdy plastic on heel inspired by AJ3 mould",
+            "Country/Region of Origin: Vietnam"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes18_1.png",
+            "/images/productImages/nike_menShoes18_2.png",
+            "/images/productImages/nike_menShoes18_3.png",
+            "/images/productImages/nike_menShoes18_4.png",
+            "/images/productImages/nike_menShoes18_5.png",
+            "/images/productImages/nike_menShoes18_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000119,
+          "name": "Jordan Max Aura 5",
+          "colorName": "Yellow Ochre/Black/White",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "Jordan/sneakers",
+          "description": "Whenyou need a shoe that's ready 24/7, it's gotta be the Max Aura 5. Inspired by the AJ3, this pair of kicks puts a modern spin on the classic. They're made from durable leather and textiles that sit atop a heel of Nike Air cushioning so you can walk, run or skate all day and still have fresh-feeling soles.",
+          "price": "11297.00",
+          "product_details": [
+            "SKU: DZ4353-701",
+            "Jumpman label on tongue",
+            "Eyelets reference the AJ3",
+            "Sturdy plastic on heel inspired by AJ3 mould",
+            "Country/Region of Origin: Vietnam"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes19_1.jpeg",
+            "/images/productImages/nike_menShoes19_2.png",
+            "/images/productImages/nike_menShoes19_3.png",
+            "/images/productImages/nike_menShoes19_4.png",
+            "/images/productImages/nike_menShoes19_5.png",
+            "/images/productImages/nike_menShoes19_6.jpeg"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000120,
+          "name": "Jordan Max Aura 5",
+          "colorName": "Black/Black/University Red",
+          "cateogry": "mens Shoes",
+          "sub-cateogry": "Jordan/sneakers",
+          "description": "Whenyou need a shoe that's ready 24/7, it's gotta be the Max Aura 5. Inspired by the AJ3, this pair of kicks puts a modern spin on the classic. They're made from durable leather and textiles that sit atop a heel of Nike Air cushioning so you can walk, run or skate all day and still have fresh-feeling soles.",
+          "price": "11297.00",
+          "product_details": [
+            "SKU: DZ4353-006",
+            "Jumpman label on tongue",
+            "Eyelets reference the AJ3",
+            "Sturdy plastic on heel inspired by AJ3 mould",
+            "Country/Region of Origin: Vietnam"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes20_1.png",
+            "/images/productImages/nike_menShoes20_2.png",
+            "/images/productImages/nike_menShoes20_3.png",
+            "/images/productImages/nike_menShoes20_4.jpeg",
+            "/images/productImages/nike_menShoes20_5.png",
+            "/images/productImages/nike_menShoes20_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000121,
+          "name": "Nike Calm",
+          "colorName": "Black/Black",
+          "cateogry": "mens",
+          "sub-cateogry": "Men's Flip-Flops",
+          "description": "Enjoy a calm, comfortable experience—wherever your day off takes you. Made from soft yet responsive foam, these lightweight flip-flops are easy to style and easy to pack. While the water-friendly design makes them ideal for the beach or pool, the minimalist look is elevated enough to wear around the city. Time to slide in and check out.",
+          "price": "3895.00",
+          "product_details": [
+            "SKU: FD4119-001",
+            "Contoured design is made from a single piece of foam for a smooth, seamless feel.",
+            "Subtle texture pattern on the footbed adds grip even when wet.",
+            "Outer shell is made from water-friendly foam that is easy to clean",
+            "Rubber outsole gives you excellent traction even on slippery surfaces.",
+            "Country/Region of Origin: Indonesia"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes21_1.png",
+            "/images/productImages/nike_menShoes21_2.png",
+            "/images/productImages/nike_menShoes21_3.png",
+            "/images/productImages/nike_menShoes21_4.png",
+            "/images/productImages/nike_menShoes21_5.jprg",
+            "/images/productImages/nike_menShoes21_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000122,
+          "name": "Nike Calm",
+          "colorName": " Khaki/Khaki",
+          "cateogry": "mens",
+          "sub-cateogry": "Men's Flip-Flops",
+          "description": "Enjoy a calm, comfortable experience—wherever your day off takes you. Made from soft yet responsive foam, these lightweight flip-flops are easy to style and easy to pack. While the water-friendly design makes them ideal for the beach or pool, the minimalist look is elevated enough to wear around the city. Time to slide in and check out.",
+          "price": "3895.00",
+          "product_details": [
+            "SKU: FD4119-200",
+            "Contoured design is made from a single piece of foam for a smooth, seamless feel.",
+            "Subtle texture pattern on the footbed adds grip even when wet.",
+            "Outer shell is made from water-friendly foam that is easy to clean",
+            "Rubber outsole gives you excellent traction even on slippery surfaces.",
+            "Country/Region of Origin: Indonesia"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes22_1.png",
+            "/images/productImages/nike_menShoes22_2.png",
+            "/images/productImages/nike_menShoes22_3.png",
+            "/images/productImages/nike_menShoes22_4.png",
+            "/images/productImages/nike_menShoes22_5.png",
+            "/images/productImages/nike_menShoes22_6.png"
+          ],
+          "inStock": "1"
+        },
+        {
+          "pid": 1819000123,
+          "name": "Nike Calm",
+          "colorName": "Black/Black",
+          "cateogry": "mens",
+          "sub-cateogry": "Men's Slides",
+          "description": "Enjoy a calm, comfortable experience—wherever your day off takes you. Made from soft yet responsive foam, these lightweight flip-flops are easy to style and easy to pack. While the water-friendly design makes them ideal for the beach or pool, the minimalist look is elevated enough to wear around the city. Time to slide in and check out.",
+          "price": "3895.00",
+          "product_details": [
+            "SKU: FD4116-001",
+            "Contoured design is made from a single piece of foam for a smooth, seamless feel.",
+            "Subtle texture pattern on the footbed adds grip even when wet.",
+            "Outer shell is made from water-friendly foam that is easy to clean",
+            "Rubber outsole gives you excellent traction even on slippery surfaces.",
+            "Country/Region of Origin: Indonesia"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes23_1.png",
+            "/images/productImages/nike_menShoes23_2.png",
+            "/images/productImages/nike_menShoes23_3.png",
+            "/images/productImages/nike_menShoes23_4.png",
+            "/images/productImages/nike_menShoes23_5.png",
+            "/images/productImages/nike_menShoes23_6.jpeg"
+          ],
+          "inStock": "2"
+        },
+        {
+          "pid": 1819000124,
+          "name": "Nike Calm",
+          "colorName": "Sail/Sail",
+          "cateogry": "mens",
+          "sub-cateogry": "Men's Slides",
+          "description": "Enjoy a calm, comfortable experience—wherever your day off takes you. Made from soft yet responsive foam, these lightweight flip-flops are easy to style and easy to pack. While the water-friendly design makes them ideal for the beach or pool, the minimalist look is elevated enough to wear around the city. Time to slide in and check out.",
+          "price": "3895.00",
+          "product_details": [
+            "SKU: FD4116-100",
+            "Contoured design is made from a single piece of foam for a smooth, seamless feel.",
+            "Subtle texture pattern on the footbed adds grip even when wet.",
+            "Outer shell is made from water-friendly foam that is easy to clean",
+            "Rubber outsole gives you excellent traction even on slippery surfaces.",
+            "Country/Region of Origin: Indonesia"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes24_1.png",
+            "/images/productImages/nike_menShoes24_2.png",
+            "/images/productImages/nike_menShoes24_3.png",
+            "/images/productImages/nike_menShoes24_4.png",
+            "/images/productImages/nike_menShoes24_5.png",
+            "/images/productImages/nike_menShoes24_6.png"
+          ],
+          "inStock": "2"
+        },
+        {
+          "pid": 1819000125,
+          "name": "Nike Calm",
+          "colorName": " Khaki/Khaki",
+          "cateogry": "mens",
+          "sub-cateogry": "Men's Slides",
+          "description": "Enjoy a calm, comfortable experience—wherever your day off takes you. Made from soft yet responsive foam, these lightweight flip-flops are easy to style and easy to pack. While the water-friendly design makes them ideal for the beach or pool, the minimalist look is elevated enough to wear around the city. Time to slide in and check out.",
+          "price": "3895.00",
+          "product_details": [
+            "SKU: FD4116-201",
+            "Contoured design is made from a single piece of foam for a smooth, seamless feel.",
+            "Subtle texture pattern on the footbed adds grip even when wet.",
+            "Outer shell is made from water-friendly foam that is easy to clean",
+            "Rubber outsole gives you excellent traction even on slippery surfaces.",
+            "Country/Region of Origin: Indonesia"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes25_1.png",
+            "/images/productImages/nike_menShoes25_2.png",
+            "/images/productImages/nike_menShoes25_3.png",
+            "/images/productImages/nike_menShoes25_4.png",
+            "/images/productImages/nike_menShoes25_5.png",
+            "/images/productImages/nike_menShoes25_6.png"
+          ],
+          "inStock": "2"
+        },
+        {
+          "pid": 1819000126,
+          "name": "Nike Calm",
+          "colorName": "Volt/Volt",
+          "cateogry": "mens",
+          "sub-cateogry": "Men's Slides",
+          "description": "Enjoy a calm, comfortable experience—wherever your day off takes you. Made from soft yet responsive foam, these lightweight flip-flops are easy to style and easy to pack. While the water-friendly design makes them ideal for the beach or pool, the minimalist look is elevated enough to wear around the city. Time to slide in and check out.",
+          "price": "3895.00",
+          "product_details": [
+            "SKU: FD4116-700",
+            "Contoured design is made from a single piece of foam for a smooth, seamless feel.",
+            "Subtle texture pattern on the footbed adds grip even when wet.",
+            "Outer shell is made from water-friendly foam that is easy to clean",
+            "Rubber outsole gives you excellent traction even on slippery surfaces.",
+            "Country/Region of Origin: Indonesia"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes26_1.png",
+            "/images/productImages/nike_menShoes26_2.png",
+            "/images/productImages/nike_menShoes26_3.png",
+            "/images/productImages/nike_menShoes26_4.png",
+            "/images/productImages/nike_menShoes26_5.png",
+            "/images/productImages/nike_menShoes26_6.png"
+          ],
+          "inStock": "2"
+        },
+        {
+          "pid": 1819000127,
+          "name": "Nike Offcourt Adjust",
+          "colorName": " University Red/Black/White",
+          "cateogry": "mens",
+          "sub-cateogry": "Men's Slides",
+          "description": "Post game, errands and more—adjust your comfort on the go. The adjustable, padded strap lets you perfect your fit, while the lightweight foam midsole brings first-class comfort to your feet",
+          "price": "3037.00",
+          "product_details": [
+            "SKU: DQ9624-600",
+            "Contoured footbed cradles your foot to help keep it in place.",
+            "Dual-density foam provides lightweight cushioning.",
+            "Hook-and-loop strap is lined with soft fabric for extra comfort.",
+            "Logo label doubles as a pull tab to help open the strap.",
+            "Outsole features a pivot circle pattern for durability and traction.",
+            "Country/Region of Origin: Vietnam"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes27_1.png",
+            "/images/productImages/nike_menShoes27_2.png",
+            "/images/productImages/nike_menShoes27_3.png",
+            "/images/productImages/nike_menShoes27_4.png",
+            "/images/productImages/nike_menShoes27_5.png",
+            "/images/productImages/nike_menShoes27_6.png"
+          ],
+          "inStock": "2"
+        },
+        {
+          "pid": 1819000128,
+          "name": "Nike Offcourt Adjust",
+          "colorName": "Black/Black/White",
+          "cateogry": "mens",
+          "sub-cateogry": "Men's Slides",
+          "description": "Post game, errands and more—adjust your comfort on the go. The adjustable, padded strap lets you perfect your fit, while the lightweight foam midsole brings first-class comfort to your feet",
+          "price": "3195.00",
+          "product_details": [
+            "SKU:  DQ9624-001",
+            "Contoured footbed cradles your foot to help keep it in place.",
+            "Dual-density foam provides lightweight cushioning.",
+            "Hook-and-loop strap is lined with soft fabric for extra comfort.",
+            "Logo label doubles as a pull tab to help open the strap.",
+            "Outsole features a pivot circle pattern for durability and traction.",
+            "Country/Region of Origin: Vietnam"
+          ],
+          "images": [
+            "/images/productImages/nike_menShoes28_1.png",
+            "/images/productImages/nike_menShoes28_2.png",
+            "/images/productImages/nike_menShoes28_3.png",
+            "/images/productImages/nike_menShoes28_4.png",
+            "/images/productImages/nike_menShoes28_5.png",
+            "/images/productImages/nike_menShoes28_6.jpeg"
+          ],
+          "inStock": "2" 
+        }
+      ],
+      "womens": [{}],
+      "kids": [{}],
+      "accessories": [{}]
+    },
+    "adidas": {}
+  }
+}

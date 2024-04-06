@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Position Absolute Example</title>
+    <style>
+.Block{
+border:1px solid;
+width:100px;
+height: 100px;
+
+}
+.Block1{
+
+    background-color: aqua;
+    margin-top: 30px;
+  position:relative;
+  z-index: 3;
+}
+
+.Block2{
+
+background-color:gold;
+position: relative;
+top:30px;
+left:50px;
+}
+.Block3{
+
+background-color:green;
+position: absolute;
+top:30px;
+left:70px;
+opacity: 0.34;
+z-index: 2;
+
+}
+
+.Block4{
+
+background-color:red;
+position: sticky;
+top:10px;
+bottom: 100px;
+}
+.HeadingDecor{
+    border:1px solid;
+    background-color: chocolate;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+    </style>
+</head>
+<div>
+<h3 class="HeadingDecor">Nav bar for all Menu</h3>
+<body>
+    <div class="Block Block1">Block1</div>
+
+    <div class="Block Block2">Block2</div>
+    <div class="Block Block3">Block3</div>
+
+    <div class="Block Block4">Block4</div>
+    <div class="Block Block1">Block1</div>
+    <div class="Block Block2">Block2</div>
+    <div class="Block Block3">Block3</div>
+    <div class="Block Block4">Block4</div>
+    <div class="Block Block1">Block1</div>
+    <div class="Block Block2">Block2</div>
+    <div class="Block Block3">Block3</div>
+    <div class="Block Block4">Block4</div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+    <style>
+        .Stt_det, .Main_cont, .Footer {
+        border:1px solid maroon; 
+        margin:10px Auto;
+        width:1000px;
+
+        }
+        .Stt_det {
+            height:50px;  
+        }
+        .Main_cont{
+            height:700px;
+            
+        }
+        .Footer{
+            height:50px;
+        }
+        .Footer_cont{
+            text-align: center;
+            text-decoration: underline;
+            font-weight: bolder;
+            color:purple;
+            margin:8px;
+        }
+        .Header {
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+            margin:5px;
+        }
+        .Main_cont_Det {
+         border:1px solid; 
+         width: 20%; 
+         float:left;
+         height:650px;
+         margin:10px;
+        }
+        .Main_cont_descr {
+            border:1px solid; 
+            width:75%;  
+            float:right; 
+            border:1px solid;  
+            margin:10px; 
+            height:650px;
+            overflow: auto;
+
+        }
+        .Ind_std_Descr1, .Ind_std_Descr2, .Ind_std_Descr3, .Ind_std_Descr4, .Ind_std_Descr5 {
+            border:1px solid;
+            width:100%;
+            height:150px;
+            clear:both
+        }
+        
+        .Sub_cont_descr > li {
+            list-style-type: none;
+            margin:5px;
+        }
+        .Ind_std_Descr1 {
+            
+            
+            float:left;
+        }
+        .Img_wDec li, .Img_Description li  {
+            list-style-type: none;
+            text-decoration: none;
+        }
+       
+        .Img_Description {
+            float:right;
+            margin:10px;
+            font-weight: bold;
+            width:60%;
+          
+        }
+        img {
+            width:100px;
+            height:100px;
+            float:left;
+            margin:10px;
+            border:1px solid purple;
+        }
+       .std_sub_cont_1,.std_sub_cont_2,.std_sub_cont_3,.std_sub_cont_4,.std_sub_cont_5 {
+        padding:10px;
+        margin-top:10px;
+       }
+
+    </style>
+</head>
+
+<body>
+     <div class="Stt_det">
+        <div class="Header"> 
+            Student Details
+        </div>
+        
+     </div>
+     <div class="Main_cont">
+        <div class="Main_cont_Det">
+            <ol class="std_sub_cont">
+                <a href="#Ajay"> <li class="std_sub_cont_1">Ajay</li></a>
+                <a href="#Harika"><li class="std_sub_cont_2">Harika</li></a>
+                <a href="#Nagasekhar"><li class="std_sub_cont_3">Nagasekhar</li></a>
+                <a href="#Saikiran"><li class="std_sub_cont_4">Saikiran</li></a>
+                <a href="#Mahesh"><li class="std_sub_cont_5">Mahesh</li></a>
+            </ol>
+        </div>
+        <div class="Main_cont_descr">
+            <ul class="Sub_cont_descr">
+                <li class="Ind_std_Descr1">
+                    <ul class="Img_wDec">
+                       <li> <img src="./Images/Std1M.png" alt="Ajay"></li>
+                        
+                    </ul>
+                    <ul class="Img_Description" id="Ajay">
+                        <li>Name:Ajay</liy>
+                            <li>Age:27</li>
+                            <li>Location:Chennai</li>
+                            <li>Designation:Specialist</li>
+                    </ul>
+                    
+                </li>
+                <li class="Ind_std_Descr2">
+                    <ul class="Img_wDec">
+                        <li> <img src="./Images/Std2f.png" alt="Harika"></li>
+                         
+                     </ul>
+                     <ul class="Img_Description" Id="Harika">
+                         <li>Name:Harika</liy>
+                             <li>Age:27</li>
+                             <li>Location:Chennai</li>
+                             <li>Designation:HomeMaker</li>
+                     </ul>
+                </li>
+                <li class="Ind_std_Descr3">
+                    <ul class="Img_wDec">
+                        <li> <img src="./Images/Std1M.png" alt="Nagasekhar" ></li>
+                         
+                     </ul>
+                     <ul class="Img_Description" Id="Nagasekhar">
+                         <li>Name:Nagasekhar</liy>
+                             <li>Age:25</li>
+                             <li>Location:Hyderabad</li>
+                             <li>Designation:Systems Engineer</li>
+                     </ul>
+                </li>
+                <li class="Ind_std_Descr4">
+                    <ul class="Img_wDec">
+                        <li> <img src="./Images/std3m.png" alt="Saikiran"></li>
+                         
+                     </ul>
+                     <ul class="Img_Description" Id="Saikiran">
+                         <li>Name:Saikiran</liy>
+                             <li>Age:22</li>
+                             <li>Location:Hyderabad</li>
+                             <li>Designation:Post Graduate</li>
+                     </ul>
+                </li>
+                <li class="Ind_std_Descr5">
+                    <ul class="Img_wDec">
+                        <li> <img src="./Images/std3m.png" "alt="Mahesh"></li>
+                         
+                     </ul>
+                     <ul class="Img_Description" Id="Mahesh">
+                         <li>Name:Mahesh</liy>
+                             <li>Age:18</li>
+                             <li>Location:Khammam</li>
+                             <li>Designation:Student</li>
+                     </ul>
+                </li>
+            </ul>
+
+        </div>
+
+     </div>
+     <div class="Footer">
+        <div class="Footer_cont">
+            @CopyRight:2024
+        </div>
+     </div>    
+</body>
+</html>

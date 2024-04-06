@@ -1,0 +1,53 @@
+h3 {
+    text-align: center;
+    border: 1px solid;
+    background-color: lightsalmon;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+}
+body {
+    background-color: lightcyan;
+}
+.bookdetails {
+    width: 80%;
+    height: 500px;
+    overflow: auto;
+}
+.bdetails {
+    border-radius: 10px;
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 20px;
+    
+}
+.imgdetails {
+    width: 250px;
+    border: 2px solid brown;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: lightpink;
+}
+.idetails {
+    width: 150px;
+    height: 150px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 50px;
+}
+.details {
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.actualprice {
+    text-decoration: underline;
+     text-decoration-line: line-through;
+    color: orange;
+}
+.discountprice {
+    color: green;
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum = prompt("enter a number");
+        sum = parseInt(sum);
+        var zerocount = 0;
+        var rem;
+        while (sum > 0) {
+            rem = sum % 10;
+            if (rem == 0) {
+            zerocount++;
+        } 
+        sum = sum / 10;
+        sum = parseInt(sum);
+        }
+        console.log(zerocount);
+    </script>  
+</body>
+</html>

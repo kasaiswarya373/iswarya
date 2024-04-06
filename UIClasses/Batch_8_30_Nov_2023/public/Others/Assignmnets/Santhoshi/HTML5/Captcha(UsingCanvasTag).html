@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>captcha generation</title>
+        <style>
+            h1{
+                text-align: center;
+                color: rgb(229, 5, 5);
+            }
+            body{
+                background-color:rgb(123, 87, 116);
+            }
+            input{
+                background: transparent;
+                border: 2px transparent;
+                border-bottom:3px solid rgb(0, 1, 18) ;
+                color: rgb(224, 224, 233);
+                outline: none;
+                position: relative;
+                left: 100px;
+            }
+            .box{
+                width: 400px;
+                margin: 20px auto;
+                margin-top: 150px;
+                height: 400px;
+                border: 2px solid;
+                background-color:lavender;
+                
+            }
+            svg{
+                position: relative;
+                left: 65px;
+                top: 10px;
+                background-color: deepskyblue;
+            }
+            canvas{
+                border: 1px solid;
+                background-color: yellow;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h1> Captcha!!!!!!! </h1>
+
+            <canvas id="myCanvas" width="200" height="70" style="border:1px solid #000000; margin-left: 100px; margin-top: 40px;"> </canvas>
+            <div class="entercaptcha" > 
+                <input type="text"  id="answer" style="color: black; font-size: larger; margin-top: 40px;" >
+
+                 <input type="button" ;style="width: 30px; height: 30px; background-color: blue; position: relative; top: 10px;border: 3px ;"> <svg xmlns="http://www.w3.org/2000/svg"  onclick= "getcaptcha()" width="30" height="30" fill="currentColor" class="bi bi-bootstrap-reboot" viewBox="0 0 16 16">
+                    <path d="M1.161 8a6.84 6.84 0 1 0 6.842-6.84.58.58 0 1 1 0-1.16 8 8 0 1 1-6.556 3.412l-.663-.577a.58.58 0 0 1 .227-.997l2.52-.69a.58.58 0 0 1 .728.633l-.332 2.592a.58.58 0 0 1-.956.364l-.643-.56A6.8 6.8 0 0 0 1.16 8z"/>
+                    <path d="M6.641 11.671V8.843h1.57l1.498 2.828h1.314L9.377 8.665c.897-.3 1.427-1.106 1.427-2.1 0-1.37-.943-2.246-2.456-2.246H5.5v7.352zm0-3.75V5.277h1.57c.881 0 1.416.499 1.416 1.32 0 .84-.504 1.324-1.386 1.324z"/>
+                  </svg>
+             
+            </div>
+        </div>
+        <script>
+    
+                    var ctxBox = document.getElementById('myCanvas');
+                        var ctx = ctxBox.getContext('2d');
+                    var getcaptcha = () => {
+                        var CaptchaValue = randomuppercase() + randomnum() + randomlowercase() + randomuppercase() + randomnum() + randomlowercase();
+                        setCaptcha(CaptchaValue);
+                        console.log(CaptchaValue);
+                    }
+
+                    var setCaptcha = (captchatext) => {
+                       ctx.clearRect(0, 0, ctxBox.width, ctxBox.height);
+                        ctx.font = '30px Garamond';
+                        ctx.strokeStyle = 'red';                                        
+                        ctx.lineWidth = 2 ;       
+                        ctx.letterSpacing = "10px";
+                      ctx.fillText(captchatext, 40, 90);                                   
+                      ctx.strokeText(captchatext, 50, 50);
+
+                      ctx.beginPath();
+                        ctx.moveTo(-30, 0);
+                        ctx.lineTo(300, 150);
+                        ctx.strokeStyle = "green"
+                        ctx.stroke();
+
+                        ctx.beginPath();
+                        ctx.moveTo(-60, 0);
+                        ctx.lineTo(300, 150);
+                        ctx.strokeStyle = "green"
+                        ctx.stroke();
+
+
+                        ctx.beginPath();
+                        ctx.moveTo(0, 0);
+                        ctx.lineTo(300, 150);
+                        ctx.strokeStyle = "green"
+                        ctx.stroke();
+
+                        ctx.beginPath();
+                        ctx.moveTo(10, 0);
+                        ctx.lineTo(400, 150);
+                        ctx.strokeStyle = "green"
+                        ctx.stroke();
+
+                        ctx.beginPath();
+                        ctx.moveTo(20, 0);
+                        ctx.lineTo(600, 150);
+                        ctx.strokeStyle = "green"
+                        ctx.stroke();
+
+                        ctx.beginPath();
+                        ctx.moveTo(40, 0);
+                        ctx.lineTo(800, 150);
+                        ctx.strokeStyle = "green"
+                        ctx.stroke();
+
+                        ctx.beginPath();
+                        ctx.moveTo(60, 0);
+                        ctx.lineTo(900, 150);
+                        ctx.strokeStyle = "green"
+                        ctx.stroke();
+
+
+                        ctx.beginPath();
+                         ctx.arc(5, 50, 40, 0, 2 * Math.PI);
+                         ctx.strokeStyle = 'plum';
+                         ctx.strokeText
+                        ctx.beginPath();
+                         ctx.arc(25, 50, 40, 0, 2 * Math.PI);
+                         ctx.strokeStyle = 'yellow';
+                        ctx.beginPath();
+                         ctx.arc(35, 50, 40, 0, 2 * Math.PI);
+                         ctx.strokeStyle = 'blue';
+                    
+                        ctx.beginPath();
+                         ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+                        ctx.stroke();
+
+                        ctx.beginPath();
+                         ctx.arc(110, 50, 40, 0, 2 * Math.PI);
+                        ctx.stroke();
+
+                        ctx.beginPath();
+                         ctx.arc(130, 50, 40, 0, 2 * Math.PI);
+                        ctx.stroke();
+
+                        ctx.beginPath();
+                         ctx.arc(150, 50, 40, 0, 2 * Math.PI);
+                        ctx.stroke();
+
+                       ctx.fillStyle = 'black'; // Set dot color
+                            for (var i = 0; i < 40; i++) {
+                                var x = Math.random() * ctxBox.width;
+                                var y = Math.random() * ctxBox.height;
+                                ctx.beginPath();
+                                ctx.arc(x, y, 2, 0, Math.PI * 2);
+                                ctx.fill();
+                            } 
+                        } 
+
+                            
+
+                    var randomuppercase = () => {
+                        var mincapital = 65;
+                        var maxcapital = 90;
+                        var uppercase = (Math.floor(Math.random() * (maxcapital - mincapital + 1)) + mincapital);
+                        var capitalletter = String.fromCharCode(uppercase);
+                        console.log(capitalletter);
+                        return (capitalletter);
+                    }
+
+                    var randomlowercase = () => {
+                        var minlower = 97;
+                        var maxlower = 122;
+                        var lowercase = (Math.floor(Math.random() * (maxlower - minlower + 1)) + minlower);
+                        var lowerletter = String.fromCharCode(lowercase);
+                        console.log(lowerletter);
+                        return (lowerletter);
+                    }
+
+                    var randomnum = () => {
+                        var num = 10;
+                        var randomNum = Math.floor(Math.random() * num);
+                        console.log(randomNum);
+                        return (randomNum);
+                    }
+
+                    getcaptcha(); 
+
+  
+
+
+        </script>
+    </body>
+</html>
+

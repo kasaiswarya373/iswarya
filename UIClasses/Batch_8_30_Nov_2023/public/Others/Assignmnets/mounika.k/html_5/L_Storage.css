@@ -1,0 +1,42 @@
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+#detailcontainer{
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgb(188, 14, 185);
+    background-color: rgb(106, 177, 117);
+}
+label{
+    display: inline-block;
+    width: 100px;
+}
+#detailcontainer{
+    div{
+       margin-top: 40px; 
+       font-size: 20px;
+       button{
+        border-radius: 5px;
+        width: 100px;
+        height: 30px;
+        font-size: 19px;
+        background-image: linear-gradient(rgb(122, 232, 251), rgb(233, 15, 249));
+        float: right;
+       }
+       input{
+        font-size: 20px;
+       }
+       #msg{
+        font-size: 15px;
+        color: rgb(0, 213, 255);
+       }
+       #reDetail{
+        font-size: 15px;
+        color: rgb(255, 0, 221);
+       }
+    }
+}

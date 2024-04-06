@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ouestion :</h2>
+    <p>write a program to work with employee details such as name, age, department, gender, basic salary (read data
+        dynamically from the user) calculate total salary and total tax based on below condition.</p>
+    <p>
+        For Male : <br>
+
+        total sal > 200000
+        tax percentage is 15 <br>
+
+        total sal>100000
+        tax percentage is 10 <br>
+
+        total salary > 50000
+        tax percentage is 5 <br>
+
+        other tax percentage is 0
+    </p>
+    <p>
+        For female: <br>
+
+        total sal > 200000
+        tax percentage is 10 <br>
+
+        total sal > 100000
+        tax percentage is 5 <br>
+
+        total salary > 50000
+        tax percentage is 0
+
+    </p>
+    <script>
+        var name = prompt("enter the name :");
+        var age = prompt("Enter Age");
+        age = parseInt(age);
+        var depart = prompt("Enter Department");
+        var basicsal = prompt("Enter Annual Salary");
+        basicsal = parseFloat(basicsal);
+        var gender = prompt("Enter Gender");
+        var pf = (10 * basicsal )/ 100;
+        pf = parseFloat(pf);
+        var hra = (15 * basicsal) / 100;
+        hra = parseFloat(hra);
+        var totalSalary = basicsal + pf + hra;
+        totalSalary = parseFloat(totalSalary);
+
+        console.log("Name : " + name);
+        console.log("Age : " + age);
+        console.log("Department :" + depart);
+        console.log("Basic Salary : " + basicsal);
+        console.log("Gender : " + gender);
+        console.log("PF amount :" + pf);
+        console.log("HRA amount :" + hra);
+        console.log("Total Salary " + totalSalary);
+        if(gender == 'male'){
+            if (totalSalary >= 200000) {
+                taxpercent = 15;
+            }else if (totalSalary >= 100000) {
+                taxpercent = 10;
+            } else if (totalSalary >= 50000) {
+                taxpercent = 5;
+            }
+                
+            }else if (gender == 'female') {
+                if (totalSalary >= 200000) {
+                    taxpercent = 10;
+                }else if (totalSalary >= 100000) {
+                    taxpercent = 5;
+                }else if (totalSalary >= 50000) {
+                    taxpercent = 0;
+                }
+            }
+            var taxAmount = (totalSalary*taxpercent)/100;
+            console.log("taxAmount:"+taxAmount);
+        
+         </script>
+
+
+</body>
+</html>

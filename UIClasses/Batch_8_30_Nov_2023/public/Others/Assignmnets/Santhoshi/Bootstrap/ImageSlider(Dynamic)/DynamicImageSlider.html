@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Dynamic ImageSlider</title>
+            <link rel="stylesheet" href="bootstrapCSS.css">
+            <script src="jquery.js"></script>
+            <script src="handlebar.js"></script>
+            <script src="bootstrapJS.js"></script>
+            <script src="dynamic.js"></script>
+            <style>
+                h2{
+                    text-align: center;
+                    background-color: powderblue;
+                    font-family: 'Courier New', Courier, monospace;
+                }
+                img{
+                    height: 600px;
+                    width: 400px !important;
+                }
+                h5 ,p {
+                    color: red;
+                    background-color: rgb(222, 222, 70);
+                }
+            </style>
+        </head>
+        <body>
+            <h2> Space Galaxy Interiors</h2>
+            <h7>(Dynamic ImageSlider)</h7>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators"></div>
+                <div class="carousel-inner"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+                <div id="singleSlideImage" style="display: none;">
+                  <div class="carousel-item {{active_state}}">
+                      <img src="{{imageurl}}" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>{{title}}</h5>
+                        <p>{{caption}}</p>
+                      </div>
+                    </div>
+              </div>
+              </div>
+
+              <div id="singleSlideImageBtn"  style="display: none;">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{index}}" class="{{activeClass}}" aria-current="true" aria-label="Slide {{counter}}"></button>
+              </div>
+        </body>
+</html>

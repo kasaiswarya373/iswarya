@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<style>
+    body{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    h1{
+        text-align: center;
+        font-style:italic;
+        color:springgreen;
+    }
+    .back{
+        width: 400px;
+        margin: 10px auto;
+        border: 2px solid;
+    }
+    .top {
+        background-color:red
+                margin: 20px;
+                padding: 15px;
+                color:black;
+    }
+   .details {
+    margin: 10px auto;
+   }
+    text{
+    font-weight: bolder;
+    color: black;
+    }
+   body{
+     background-color: palevioletred;
+     background-repeat: no-repeat;
+ }
+            
+
+.ftr{
+     text-align: center;
+     font-style: oblique;
+     font-weight:bolder ;
+     color: orange;
+       }
+</style>
+   <body>
+    <h1>Registration</h1>
+<div>
+    <div class="back">
+        <div class="top">
+           <label for="name" id="text">Name</label>
+           <input type="text" name="name">   
+    </div>
+    <div class="top">
+        <label for="UserName" id="text">UserName</label>
+        <input type="text" name="UserName" maxlength="15">  
+    </div>
+
+    <div class="top">
+       <label for="Password" id="password">Password</label>
+       <input type="text" name="name" maxlength="8">   
+   </div>
+
+   <div class="top">
+      <label for="Age" id="text">Age </label>
+       <input type="number" name="Age"maxlength="2">  
+  </div>
+
+    <div class="top">
+      <label for="MobileNumber" id="text">MobileNumber</label>
+      <input type="text" name="MobileNumber" maxlength="10">   
+</div>
+
+  <div class="top">
+       <label for="Location" id="text">Location</label>
+       <input type="text" name="Location">  
+           <select name="Location">
+        <option>Mumbai</option> 
+        <option>Pune</option> 
+        <option>Sainagar</option> 
+        <option>Hydrabad</option> 
+    </select>
+    <div class="top">
+        <label for="gender" id="text">Gender  :</label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Others
+</div>
+    </div>
+    <div class="top submit">
+        <input type="submit" name="submit">
+        </div>
+        </div>
+</body>
+</html>

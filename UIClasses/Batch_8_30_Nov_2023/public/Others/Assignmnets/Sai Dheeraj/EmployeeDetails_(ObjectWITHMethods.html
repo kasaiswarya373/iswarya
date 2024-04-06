@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating Emp-Details ObjectMethods</title>
+    </head>
+            <h3>
+            Emp-Data Using ObjectMethods
+            </h3>
+        <body>
+              <script>
+                var EmployeeDetails = {
+                    };
+
+                    EmployeeDetails.readEmpData = () => {
+                        EmployeeDetails.empname = prompt("enter employee name");
+                        EmployeeDetails.gender = prompt("enter gender");
+                        EmployeeDetails.Location = prompt("enter location");
+                        EmployeeDetails.Qualification = prompt("enter empQualifi");
+                        EmployeeDetails.basicSal = prompt("entr basic sal");
+                        EmployeeDetails.basicSal = parseInt(EmployeeDetails.basicSal);
+                        EmployeeDetails.getPfAndHra();
+           }
+
+                    EmployeeDetails.getPfAndHra = () => {
+                        EmployeeDetails.pf = (12 * EmployeeDetails.basicSal) / 100;
+                        EmployeeDetails.hra = (24 * EmployeeDetails.basicSal) / 100;
+                        EmployeeDetails.getTotalSal();
+           }
+
+                    EmployeeDetails.getTotalSal = () => {
+                        EmployeeDetails.totalSal = EmployeeDetails.pf + EmployeeDetails.hra + EmployeeDetails.basicSal;
+                        EmployeeDetails.getTotalTax();
+           }
+
+                    EmployeeDetails.getTotalTax = () => {
+                        EmployeeDetails.taxPercent = 0;
+                        if (EmployeeDetails.gender == 'Male') {
+                            if (EmployeeDetails.totalSal >= 90_000) {
+                                EmployeeDetails.taxPercent = 12;
+            }
+                } else { // Female
+                    if (EmployeeDetails.totalSal >= 10_000) {
+                        EmployeeDetails.taxPercent = 6;
+                }
+            }
+                    EmployeeDetails.totalTax = EmployeeDetails.totalSal - (EmployeeDetails.totalSal * EmployeeDetails.taxPercent) / 100;
+           }
+
+                var displayEmpData = () => {
+                    EmployeeDetails.readEmpData();
+               
+                    console.log("name is " + EmployeeDetails.empname);
+                    console.log(`Gender is ${EmployeeDetails.gender}`);
+                    console.log(`location is ${EmployeeDetails.Location}`);
+                    console.log(`Qualification is ${EmployeeDetails.Qualification}`);
+                    console.log(`total Sal  ${EmployeeDetails.totalSal}`);
+                    console.log(`Totaltax is ${EmployeeDetails.totalTax}`);                   
+           }
+                displayEmpData();
+              </script>  
+        </body>
+</html>

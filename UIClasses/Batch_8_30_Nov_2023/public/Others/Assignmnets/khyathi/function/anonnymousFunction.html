@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anonymous function </title>
+</head>
+<body>
+    <!-- anonymous function -->
+    <!-- a function which is defined withoutany name  -->
+    <script>
+        ()=>{  // not any use of this funcion *
+            console.log("hello every one")
+        
+        }
+        
+// define a function it will be invoked only 
+        var personDetails=(a, display)=>{ //anonymous function used for the passed as a parameters
+            display();
+        }
+        personDetails(20,()=>{
+            console.log("person details");
+        })
+    </script>
+</body>
+</html>

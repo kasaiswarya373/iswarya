@@ -1,0 +1,31 @@
+Nonstatic -> -+othern than static -> relative / asbsolute / fixed / sticky
+
+
+    ANY DOM ELEMENT WHOSE POSIITION IS STATIC, IT WILL ONLY REMAINS WITHIN X-Y AXIS
+
+    ANY DOM ELEMENT WITH POSIITION NON STATIC, ALWAYS JUMPS FROM XY AXIS TO Z AXIS BY DEFAULT 
+
+    relative -> 
+
+    asbsolute
+        1. While am moving to a new position, i always depended on the position of my parent element 
+        2. while i am depend on the parent element position, i only depend on the parent/grand parent, whose position is non static
+
+
+        ------------
+
+        POSIITION: static / relative / asbsolute / sticky  / fixed 
+
+        position: static;
+        position: sticky
+-------------------------------------------------
+
+CSS z-index property :
+
+------------
+
+diplay, background images, imagespriting
+
+----------------
+
+background images

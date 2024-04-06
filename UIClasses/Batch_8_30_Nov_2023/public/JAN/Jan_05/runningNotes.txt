@@ -1,0 +1,38 @@
+String methods
+    predefined methods
+
+Date object:
+    predefined methods
+
+arguments keyword
+
+rest parameter
+
+Arrays hetrognisdata
+
+    var studentDetails1 = ["raj", 20, 'Male', 'Hyd', [34, 44, 55, 67, 90], 0, 0, ''];
+    var studentDetails2 = ["raj", 20, 'Male', 'Hyd', [34, 44, 55, 67, 90], 0, 0, ''];
+    var studentDetails3 = ["raj", 20, 'Male', 'Hyd', [34, 44, 55, 67, 90], 0, 0, ''];
+
+    var studentDetails = [
+        ["raj", 20, 'Male', 'Hyd', [34, 44, 55, 67, 90], 0, 0, ''],
+        ["raj", 20, 'Male', 'Hyd', [34, 44, 55, 67, 90], 0, 0, ''];,
+        ["raj", 20, 'Male', 'Hyd', [34, 44, 55, 67, 90], 0, 0, ''];
+    ]
+
+var data = [34, 456, 78] -> data[2]
+
+var info = ['raj', 20, [34, 456, 78]] -> info[2][2]
+
+
+
+JSON 
+
+
+    data storagte is in the form of key and value pairs 
+
+        : seprataor btwn key and value 
+
+
+        key : value -> key is allway a string 
+

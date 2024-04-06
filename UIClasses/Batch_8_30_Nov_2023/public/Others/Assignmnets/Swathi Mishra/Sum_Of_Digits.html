@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title> Sum of the digits </title>
+</head>
+<body>
+    <h1> Sum Of the digits </h1>
+    <script>
+    var rem,sum=0;
+    var n=prompt("enter a number");
+    n=parseInt(n);
+    while(n>0) {
+        rem=n%10;
+        sum=sum+rem;
+        n=parseInt(n/10);
+    }
+    console.log(sum);
+    </script>
+</body>
+</html>    

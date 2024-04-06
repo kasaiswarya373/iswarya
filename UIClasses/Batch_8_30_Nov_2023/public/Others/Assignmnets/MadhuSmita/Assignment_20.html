@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check the number armstrong </title>
+</head>
+
+<body>
+    <script>
+        // display armstong number between 1 to 1000
+        for (var i = 1; i <= 1000; i++) {
+            var num = i;
+            var count = 0;
+            while (num != 0) {
+                var rem = num % 10;
+                count++;
+                num = num / 10;
+                num = parseInt(num);
+            }
+            num = i;
+            //var result = 1;
+            var n = 0;
+            while (num != 0) {
+                var result = 1;
+                var rem = num % 10;
+                for (var j = 0; j < count; j++) {
+                    result = result * rem;
+                }
+                num = num / 10;
+                num = parseInt(num);
+                n += result;
+            }
+            if (n == i) {
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+
+</html>

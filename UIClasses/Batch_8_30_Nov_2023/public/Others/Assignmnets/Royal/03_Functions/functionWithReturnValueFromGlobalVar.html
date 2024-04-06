@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function with Return value from globar variables</title>
+</head>
+<body>
+    <script>
+        
+        var a1, a2;             //global variables
+        var readValues = () => {
+            a1 = parseInt(prompt('Enter first value'));
+            a2 = parseInt(prompt('Enter second value'));
+
+            var temp = getSum(a1, a2)
+            console.log('The sum is : '+temp);
+        }
+
+        var getSum = () => {
+            var result = a1 + a2;
+            return result;
+        }
+
+        readValues();
+
+    </script>
+</body>
+</html>

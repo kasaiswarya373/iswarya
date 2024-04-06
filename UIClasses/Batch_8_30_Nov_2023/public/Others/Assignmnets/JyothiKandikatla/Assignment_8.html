@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 8</title>
+        <style>
+            .heading,.footer{
+                border:1px solid ;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .bodypart{
+                border:1px solid;
+                height:1000px;
+                margin: 30px 17px 20px 10px;
+            }
+            .persanalDetails,.EducationalDetails,.yourself{
+                border:1px solid;
+                height:250px;
+                margin: 38px 16px 36px -15px;
+        
+            }
+            .headpersonal,.edupersonal,.about{
+                border: 1px solid;
+                width: 130px;
+                background-color: white;
+                height:20px;
+                padding: 10px;
+                text-align: center;
+            }
+            .headpersonal{
+                position: absolute;
+                top: 119px;
+                left: 163px;
+            }
+            .edupersonal{
+                position: absolute;
+                top: 427px;
+                left: 163px;
+            }
+            .about{
+                position: absolute;
+                top:737px ;
+                left: 163px;
+            }
+            ul{
+                list-style: none;
+            }
+            .left,.right{
+                border: 1px solid white;
+                padding: 20px;
+                width: 404px;
+            }
+            .right{
+                position: absolute;
+                top: 147px;
+                left: 559px;
+            }
+            li{
+                margin: 10px;
+                padding: 10px;
+            }
+            .self{
+                border: 1px solid white ;
+                height: 230px;
+                width: 487px;
+                margin-left: -91px;
+            }
+            #lblself{
+                position: absolute;
+                top: 52px;
+                left: -109px;
+            }
+            .button1{
+                background-color:cornflowerblue;
+                color: white;
+                position: absolute;
+                bottom: -340px;
+                right: 83px;
+                font-size: 20px;
+            }
+            #lblAddress{
+                position: absolute;
+                top: 39px;
+                left: -29px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="localhost://test.com/info" method="POST">
+            <div class="heading">
+                <h3>Student Registartion Page</h3>
+            </div>
+            <ul class="bodypart">
+                <li class="persanalDetails">
+                    <div class="headpersonal">
+                        PersanalDetails
+                    </div>
+                    <ul class="left">
+                        <li>
+                            <label for="">FirstName:</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label for="">Last Name:</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label for="">Enter Age:</label>
+                            <input type="text">
+                        </li>
+                    </ul>
+                    <ul class="right">
+                        <li><label for="" id="lblAddress">Address:</label>
+                            <textarea name="" id="" cols="15" rows="4"></textarea>
+                        </li>
+                        <li>
+                            <label for="">Country:</label>
+                            <select name="" id="">
+                                <option value="">India</option>
+                                <option value="">USA</option>
+                                <option value="">UK</option>
+                            </select>
+                        </li>
+                    </ul>
+                </li>
+                <li class="EducationalDetails">
+                    <div class="edupersonal">
+                        EducationalDetails
+                    </div>
+                    <ul class="left">
+                        <li>
+                            <label for="">Qualification:</label>
+                            <select name="" id="">
+                                <option value="">B.Tech</option>
+                                <option value="">Mba</option>
+                                <option value="">Mca</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="">Language:</label>
+                            <input type="checkbox">English
+                            <input type="checkbox">Hindi
+                            <input type="checkbox">Telugu
+                            <input type="checkbox">Urdu
+                        </li>
+                        <li>
+                            <label for="">CourseOpted:</label>
+                            <input type="radio" name="course">MBA
+                            <input type="radio" name="course">MCA
+                            <input type="radio" name="course">BTech
+                            <input type="radio" name="course">MSC
+                        </li>
+                    </ul>
+                </li>
+                <li class="yourself">
+                    <div class="about">
+                        About yourself
+                        <ul class="self">
+                            <li><label id="lblself" for="">Few Words About Your Self:</label>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><input type="submit" value="RegisterDetails" class="button1"></li>
+            </ul>
+            <div class="footer">
+                <h3>@Copy Right 2023</h3>
+            </div> 
+        </form> 
+    </body>
+</html>

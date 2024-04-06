@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student details with functions</title>
+</head>
+<body>
+  <script>
+    var readStudentDetails = () =>{
+        var name = prompt('Enter Name');
+        var age = prompt('Enter age');
+        var m1 = parseInt(prompt('Enter sub1 marks'));
+        var m2 =parseInt(prompt('Enter sub2 marks'));
+        var m3 = parseInt(prompt('Enter sub3 marks'));
+        var totalmarks = total(m1, m2, m3);//called func/m1.m2.m3 are actual parms
+        var avgmarks = avg (totalmarks);
+        studentInfo(name, age, totalmarks, avgmarks);// name ,age ,totalmarks,avgmarks are actual parms
+    }
+    /** this function is finding total
+     * @p is 1st parms
+     * @q is 2nd parms
+     * @r is 3rd parms 
+     * */
+    var total = (p, q, r) => { //called func & p,q,r are duplicate or formal params
+      var  total = p + q + r;
+      return total;
+    }
+    /** this function is finding avg
+     * @total is  parms
+     * */
+    var avg = (total) => {//called func & total is duplicate or formal params
+        var avg = total / 3;
+        return avg;
+    }
+    /** this function is finding studentinformtion
+     * @name is 1st parms
+     * @age is 2nd parms
+     * @totalm is 3rd parms
+     * @avgm is 4th parms
+     * */
+    var studentInfo = (name, age,totalm, avgm) =>{//called func & name,age,tatalm,avgm are duplicate or formal params
+        console.log(`---Student details---`);
+        console.log(`Name: ${name}`);
+        console.log(`Age: ${age}`);
+        console.log(`Total: ${totalm}`);
+        console.log(`Avg: ${avgm}`);
+    }
+    readStudentDetails();//Calling function
+  </script>  
+</body>
+</html>

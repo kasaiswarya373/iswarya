@@ -1,0 +1,315 @@
+body{
+    background-color: black;
+}
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+.cont{
+    background-color: rgb(48, 45, 45);
+    width: 380px;
+    height: 170px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 30px rgb(48, 47, 47);
+}
+.subt{
+    display: grid;
+    grid-template-rows: 25px 120px;
+    row-gap: 10px;
+
+}
+.subcont{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+}
+.contflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+}
+#contdiv{
+    column-gap: 20px;
+    row-gap: 20px;
+}
+#contdiv div{
+    width: 100px;
+    height: 50px;
+}
+.topdiv{
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2px;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin-left: 15px;
+    margin-top: 2%;
+}
+.topcol{
+    width: 2%;
+    height: 7px;
+    border: 2px solid;
+    border-radius: 20px;
+    /* color: rgb(255, 167, 4); */
+}
+.topexp{
+    width: 86%;
+    height: 10px;
+    border-radius: 3px;
+    background-color: white;
+    /* margin-left: 5px; */
+}
+.colOrn{
+    background-color: coral;
+}
+.colgre{
+    background-color: rgb(57, 145, 57);
+}
+.colred{
+    background-color: rgb(241, 37, 37);
+}
+.colligOr{
+    background-color: rgb(212, 151, 85);
+}
+.colligre{
+    background-color: rgb(96, 131, 96);
+}
+.colligCol{
+    background-color: rgb(192, 241, 192);
+}
+.secDivMain{
+    display: grid;
+    grid-template-rows: 2fr 7fr;
+}
+.divsecod{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    column-gap: 10px;
+    width: 90%;
+    height: 90%;
+    margin-left: 15px;
+}
+.topdvadj{
+    position: relative;
+    bottom: 6px;
+}
+.divscodiv{
+    display: grid;
+    grid-template-rows: auto auto ;
+    row-gap: 10px;
+}
+.sdiv{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+}
+.checkdiv{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px;
+    /* border: 2px solid white; */
+    width:90%;
+    /* /* margin-bottom: 10px; */
+    margin-left: 20px;
+}
+.checkdiv div{
+    /* height: auto; */
+    width: 100%;
+    /* border: 2px solid white; */
+
+}
+.divsec{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    column-gap: 10px;
+}
+.adjs{
+    margin: 10px;
+}
+.takdiv{
+    height: 28px;
+}
+.divsed{
+    height: 45px;
+}
+.btdiv{
+    display: grid;
+    grid-template-rows: 4fr 6fr 2fr;
+    row-gap: 7px;
+    margin: 10px;
+    width: 90%;
+    margin-left: 20px;
+}
+.divst{
+    /* border: 2px solid white; */
+    height: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 35px;
+    column-gap: 5px;
+    /* justify-content: space-around; */
+}
+.divst2{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    column-gap: 5px;
+    height: 55px; 
+}
+.flexcontdiv{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.flexcontdiv div{
+    width: 50px;
+    height: 35px;
+    margin: 4px;
+}
+.conterAdj{
+    display: grid;
+    grid-template-rows: 4fr 4fr 4fr;
+    height: 90%;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 10px;
+    row-gap: 5px;
+}
+.flecont{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+}
+.flecont div{
+    width: 90px;
+    height: 22px;
+    margin: 2px;
+}
+.codiv{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    column-gap: 5px;
+}
+.sizecont{
+    width: 100%;
+    height: 95%;
+}
+.adjcont{
+    display: flex;
+    flex-wrap: wrap;
+}
+.adjcont div{
+    width: 78px;
+    height: 20px;
+    margin: 0px 4px 1px 2px;
+}
+.divgrid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.divgrid{
+    height: 20px;
+}
+.gridcont{
+    display: grid;
+    grid-template-rows: 3fr 9fr ;
+    row-gap: 4px;
+    margin-top: 10px;
+}
+.sizediv{
+    display: flex;
+    margin-left: 15px;
+
+}
+.sizediv div{
+    width: 164px;
+    height: 30px;
+    margin: 4px;
+}
+.sizedivcont{
+    display: flex;
+    margin-left: 18px;
+}
+.sizedivcont div{
+    height: 87px;
+    width: 160px;
+}
+.ddvicont{
+    display: grid;
+    grid-template-rows: 6fr 6fr;
+    padding: 4px;
+    background-color: cadetblue;
+    row-gap: 5px;
+}
+#contadj{
+    height: 78px;
+    position: relative;
+    left: 9px;
+}
+.cndiv div{
+    width: 50px;
+    height: 50px;
+}
+#divchng{
+    width: 100%;
+    height: 40px;
+}
+.cndiv{
+    display: flex;
+}
+.cndiv div{
+    width: 85px;
+    height: 32px;
+    margin-left: 3px;
+}
+.felxcont{
+    display: grid;
+    grid-template-rows: 9fr 3fr;
+    row-gap: 5px;
+    margin: 8px;
+}
+.divsizing{
+    display: flex;
+    flex-wrap: wrap;
+}
+.divsizing div{
+    width: 64.5px;
+    height: 40px;
+    margin: 4px;
+}
+.adjscont{
+    display: grid;
+    grid-template-rows: 3fr 9fr;
+    row-gap: 10px;
+    margin: 10px 4px 0px 15px;
+}
+.flexcontainer{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    column-gap: 5px;
+}
+.dshowCol div{
+    width: 100%;
+    height: 97%;
+}
+.coldivAdj div{
+    width: 95%;
+    height: 30px;
+}
+.flexcondiv div{
+    width: 90px;
+    height: 40px;
+    margin: 0px 5px 5px 5px;
+}
+.flexcondiv{
+    display: flex;
+    flex-wrap: wrap;
+}

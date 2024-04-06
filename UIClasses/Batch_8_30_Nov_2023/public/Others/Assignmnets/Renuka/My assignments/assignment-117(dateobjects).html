@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //date objects//
+      var cdate = new Date();
+      console.log( new Date)
+      console.log(cdate.getDay());
+      console.log(cdate.getMonth());
+      console.log(cdate.getFullYear());
+      console.log(cdate.getMinutes());
+      console.log(cdate.getSeconds());
+      console.log(cdate.getDay());
+      //assignment//
+      var date1 = `${cdate.getDay()}th ${cdate.getMonth()} ${cdate.getFullYear()}`
+      console.log(date1)
+
+
+      var date2 = `${cdate.getDay()}/ ${cdate.getMonth()+1}/ ${cdate.getFullYear()}`
+         console.log(date2)
+
+      var Month = ["jan","feb","march"];
+      var Month = Month[cdate.getMonth()];
+      var date3 =`${Month} ${cdate.getDay()}th ${cdate.getFullYear()}`;
+      console.log(date3)
+
+      
+         
+     
+
+     
+
+    </script>
+    
+</body>
+</html>

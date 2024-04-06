@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocks_Floating</title>
+</head>
+<style>
+    h1{
+        border: 3px solid;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        margin: 0px 0px 0px -3px;   
+    }
+    .block1 ,.block2 , .block3{
+       border: 2px solid;
+       height: 100px;
+       width: 100px;
+       text-align: center;
+       margin: 5px;
+       padding: 5px;
+       
+    }
+    .block1{
+        background-color: red;
+        float: left;
+    }
+    .block2{
+        background-color:yellow;
+        float: left;
+       
+    }
+    .block3{
+        background-color: purple;
+        float: right;
+        
+     
+    }
+    .container{
+        border: 2px solid;
+        height: 200px;
+        width: 250px;
+        clear: both;
+        float: right;
+        padding: 12px; 
+        margin: 12px; 
+    }
+    .block44, .block45, .block46, .block47{
+        border: 1px solid;
+       height: 70px;
+       width: 70px;
+       text-align: center;
+       margin: 3px;
+       padding: 3px;  
+    }
+    .block44{
+        background-color: aqua;
+        float: left;
+    }
+    .block45{
+        background-color: pink;
+        float: right;
+    }
+    .block46{
+        background-color: yellowgreen;
+        float: left;
+        clear: right;
+    }
+    .block47{
+        background-color: peru;
+        float: left;
+    }
+    .block57, .block58, .block59,.block60,.block61,.block62,.block63{
+        border: 1px solid;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+    }
+    .block57{
+        background-color: goldenrod;
+        clear: both;
+    }
+    .block58{
+        background-color: palevioletred;
+        float: left;
+    }
+    .block59{
+        background-color: rgb(51, 32, 218);
+        float: right;
+       
+    }
+    .block60{
+        background-color: rgb(32, 218, 103);
+        float: right;
+    }
+    .block61{
+        background-color: rgb(32, 218, 218);
+        float: left;
+        clear: right;
+    }
+    .block62{
+        background-color: rgb(70, 57, 26);
+        float: left;
+        clear: right;
+    }
+    .block63{
+        background-color: rgb(110, 44, 44);
+        float: left;
+        clear: right;
+    }
+</style>
+<body>
+    <h1>Blocks-Floating</h1>
+    <div class="block1">1</div>
+    <div class="block2">2</div>
+    <div class="block3">3</div>
+
+    <div class="container">
+    <div class="block44">44</div>
+    <div class="block45">45</div>
+    <div class="block46">46</div>
+    <div class="block47">47</div>
+    </div>
+    <div class="content">
+        <div class="block57">57</div>
+        <div class="block58">58</div>
+        <div class="block59">59</div>
+        <div class="block60">60</div>
+        <div class="block61">61</div>
+        <div class="block62">62</div>
+        <div class="block63">63</div> 
+    </div>
+</body>
+</html>

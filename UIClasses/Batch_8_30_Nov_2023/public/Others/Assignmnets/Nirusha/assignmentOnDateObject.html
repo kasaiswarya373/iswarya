@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>assignmentOnDateObject</title>
+    </head>
+    <body>
+        <script>
+            var cdate = new Date();
+            /*console.log(cdate);
+            console.log(cdate.getDay());
+            console.log(cdate.getHours());*/
+
+            var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June'];
+            var monthNamesList = ['January','Feburary', 'March', 'April', 'May'];
+            var weekNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Friday', 'Saturday'];
+            var weekNamesList = ['Sun','Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+            
+            var weekName = weekNames[cdate.getDay()];
+            var monthName = monthNames[cdate.getMonth()];
+            var monthNameList = monthNamesList[cdate.getMonth()];
+            var weekNameList = weekNamesList[cdate.getDay()];
+            var myformat = `${cdate.getDate()}th  ${monthName}  ${cdate.getFullYear()}`;
+            var myformat2 = ` 0${cdate.getDate()} / 0${cdate.getMonth() + 1} / ${cdate.getFullYear()}`;
+            var myformat3 = `0${cdate.getDate()} / 0${cdate.getMonth() + 1} / ${cdate.getYear()}`;
+            var myformat4 = `${monthName}  ${cdate.getDate()}th , ${cdate.getFullYear()}`;
+            var myformat5 = `${weekName}  ${monthName}  ${cdate.getDate()}th , ${cdate.getFullYear()}`;
+            var myformat6 = `${weekName} ${monthNameList} ${cdate.getDate()}th , ${cdate.getFullYear()}`;
+            var myformat7 = `${weekNameList} ${monthNameList} ${cdate.getDate()}th , ${cdate.getFullYear()}`;
+            var myformat8 = `${weekNameList} ${monthName}  ${cdate.getDate()}th , ${cdate.getFullYear()}`;
+            var myformat9 = ` 0${cdate.getDate()}/0${cdate.getMonth() + 1}/${cdate.getFullYear()} ${cdate.getHours()}-${cdate.getMinutes()}-${cdate.getSeconds()}`;
+            var myformat10 = `${cdate.getHours()}/${cdate.getMinutes()}/${cdate.getSeconds()}`;
+
+            console.log(myformat);
+            console.log(myformat2);
+            console.log(myformat3);
+            console.log(myformat4);
+            console.log(myformat5);
+            console.log(myformat6);
+            console.log(myformat7);
+            console.log(myformat8);
+            console.log(myformat9);
+            console.log(myformat10);
+              
+        </script>
+    </body>
+</html>

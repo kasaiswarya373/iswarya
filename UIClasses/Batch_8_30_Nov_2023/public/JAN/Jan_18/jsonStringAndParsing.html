@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var userInfo = {
+                name: 'Raj',
+                age: 20,
+                gender: 'Male',
+                isfeepaid: true,
+                displayInfo() {
+
+                },
+                marks: [34, 5, 6]
+            };
+
+
+            console.log(userInfo);
+            console.log(typeof(userInfo));
+            var data = JSON.stringify(userInfo)
+            console.log(data);
+
+            console.log(JSON.parse(data))
+            
+        </script>
+    </body>
+</html>

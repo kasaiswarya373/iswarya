@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>RegistrationPage</title>
+            <style>
+                h1{
+                    border: 2px solid black;
+                    background-color: blue;
+                    text-align: center;
+                    padding: 15px;
+
+                }
+
+                .container{
+                    border: 2px solid black;
+                    width: 97%;
+                    height: 1200px;
+                    margin: 20px;
+                    background-color: rgb(117, 150, 155);
+
+                }
+
+                .subcontainer{
+                    border: 1px solid;
+                    height: 300px;
+                    width: 98%;
+                    margin: 50px 13px;
+                    background-color: rgb(43, 151, 43);
+                }
+                .tag {
+                    border: 1px solid;
+                    height: 50px;
+                    width: 200px;
+                    position: absolute;
+                    text-align: center;
+                    padding-bottom: 12px;
+                   
+                    font-size: 18px;
+                   
+                }
+                .t1{
+                    left: 90px;
+                    top: 140px;
+                    background-color: aquamarine;
+                }
+                .t2{
+                    left: 90px;
+                    top: 494px;
+                    background-color: aquamarine;
+                }
+                .t3{
+                    bottom: -162px;
+                    left: 90px;
+                    background-color: aquamarine;
+                }
+                .d{
+                    position: absolute;
+                    font-size: 25px;
+                }
+                .dright{
+                    right: 100px;
+                    top: 260px;
+                }
+                .d1{
+                 left: 100px;
+                    top: 260px;
+                }   
+                .d2{
+                    left: 100px;
+                    top: 600px;
+                    
+                }
+                .d3{
+                    left: 100px;
+                    bottom: -400px;
+
+                }
+                .d4{
+                    float: right;
+                    margin-right: 50px;
+                }
+                h2{
+                    border: 4px solid;
+                    background-color: blue;
+                    color: black;
+                    padding: 20px;
+                    font-style: oblique;
+                    text-align: center;
+                }
+                
+
+            </style>
+        </head>
+        <body>
+
+            <form action="http://test.com/info" method="get">
+
+            <h1>Student-Registration-Page</h1>
+            <div class="container">
+                <div class="subcontainer">
+                        <div class="tag t1"><h3>Personal Details</h3></div>
+                <div class="d d1">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" value="Madhusmita"><br><br>
+
+                        <label for="firstname">First name:</label>
+                    <input type="text" name="firstname"><br><br>
+
+                    <label for="age">Age :</label>
+                    <input type="number" name="age" id="">
+                </div>
+
+                    
+                <div class="d dright">
+
+                    <label for="address">Address:</label>
+                    <input type="text" name="address"><br><br>
+
+                    <label for="country">Country:</label>
+                    <select name="country" id="">
+                        <option value="ind">India</option>
+                        <option value="pak">Japan</option>
+                        <option value="chi">UK</option>
+                        <option value="nep">Nepal</option>
+                        <option value="nep">Pakistan</option>
+                    </select><br><br>
+
+                    
+
+                    </div>
+                </div>
+
+                <div class="subcontainer">
+                    <div class="tag t2"><h3>Education Details</h3></div>
+                    <div class="d d2">
+                        <label for="qualification">Qualification    :</label>
+                        <select name="qualification">
+                            <option>Degree</option>
+                            <option>B.Tech</option>
+                            <option>BSE</option>
+                            <option>CHSE</option>
+                        </select><br><br>
+
+                        <label for="language">Language  :</label>
+                        <input type="checkbox" name="eng" checked disabled>English
+                        <input type="checkbox" name="Odia" id=""> Odia
+                        <input type="checkbox" name="hin" id="">Hindi
+                        <input type="checkbox" name="urd" id="">Urdu<br><br>
+
+                        <label for="course">CourseOpted :</label>
+                        <input type="radio" name="mca" id="">BTech
+                        <input type="radio" name="mca" id="">BCA
+                        <input type="radio" name="mca" id="">MCA
+                        <input type="radio" name="mca" id="">MSC
+
+
+                    </div>
+
+                    <div class="d d3">
+                    <label for="yourself">Few words about yourself    :</label>
+                    <textarea name="yourself" id="" cols="30" rows="10"></textarea>
+                </div>
+                    
+            </div>
+
+            <div class="subcontainer">
+                <div class="tag t3"><h3>About Yourself</h3></div>
+        </div>
+
+        <input class="d4"  type="submit" name="save" value="Register Details" checked >
+
+
+
+            </div>
+            
+            
+            <h2> @Copyright 2023 </h2>
+
+        </form>
+        </body>
+</html>

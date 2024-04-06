@@ -1,0 +1,198 @@
+.backgroundColor{
+    background-color: black;
+}
+.floatcontent{
+    float: left;
+}
+.container_size{
+    height: 40px;
+    padding: 15px;
+}
+.content_float{
+    float: left;
+    margin-left: 20px;
+    color: white;
+}
+.sizing_div{
+    width: 100px;
+}
+.backgroundColorSecondContainer{
+    background-color: rgb(63, 61, 61);
+    padding: 4px;
+    height: 37px;
+}
+.adjustContent{
+    color: white;
+    float: left;
+    margin-left: 24px;
+}
+.secondnavBar{
+    background-color: white;
+    border-bottom: 2px solid rgb(187, 183, 183);
+    height: 40px;
+    padding: 3px;
+}
+.moveContent{
+    float: left;
+    margin-left: 95px;
+    margin-top: 3px;
+}
+#secondEndcontent{
+    width: 200px; 
+    position: relative;
+    bottom: 7px;
+    left: 50px;
+}
+.floatLedtcontent{
+    float: left;
+    margin-left: 100px;
+}
+#thirdrowContent{
+    padding: 9px;
+    background-color: white;
+    border-bottom: 2px solid rgb(187, 183, 183);
+    height: 40px;
+}
+.divBorder{
+    width: 70px;
+    height: 60px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+.imgsizing{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.cornerdiv{
+    float: left;
+    border: 2px solid rgb(240, 234, 234);
+    width: 260px;
+    height: 460px;
+    margin-left: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.paraPosition{
+    position: relative;
+    bottom: 6px;
+}
+.borderCornerdiv{
+    border: 2px solid rgb(230, 224, 224);
+    width: 200px;
+    height: 160px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.buttonstyling{
+    display: inline-block; 
+    background-color: yellow; 
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 12px;
+    margin-left: 15px;
+}
+.spaceDiv{
+    margin-top: 12px;
+}
+.fontcol{
+    color: #36ecec;
+}
+.marginlft{
+    margin-left: 20px;
+    text-wrap: wrap;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.contAdj{
+    margin-left: 30px; 
+    font-size: 23px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.textcolor{
+    color: rgb(54, 236, 236);
+}
+.contentstyle{
+    font-weight: 600; 
+    font-size: 18px; 
+}
+.containerstyle{
+    width: 140px; 
+    position: relative; 
+    bottom: 14px; 
+    left: 20px;
+}
+.timerAdj{
+    font-size: 30px; position: relative; bottom: 14px; left: 25px;
+}
+.posRel{
+    position: relative;
+}
+.primecolor{
+    background-color: rgb(212, 36, 36); 
+    color: white;
+    width: 130px;
+    text-align: center;
+}
+.offerDec{
+    position: relative;
+    bottom: 14px;
+    left: 30px;
+    font-weight: 600;
+}
+.contentdec{
+    float: left; 
+    margin-right: 13px;
+    position: relative;
+    top: 7px;
+}
+.lastcont{
+    color: chartreuse;
+    font-size: 20px; 
+    position: relative;
+    bottom: 5px;
+}
+.nextcont{
+    width: 400px; 
+    float: left; 
+    margin-left: 40px;
+}
+.contNT{
+    font-size: 24px; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+.contnt{
+    position: relative; 
+    left: 40px; 
+    bottom: 20px;
+}
+.primeEarly{
+    color: red; 
+    font-size: 20px;
+}
+.contchng{
+    background-color: red; 
+    padding: 4px; 
+    color: white;
+}
+.secondlastcont{
+    font-weight: 600;
+    font-size: 16px;
+}
+.contDec{
+    font-size: 25px; 
+    font-weight: 600;
+}
+.freeDel{
+    float: left; 
+    margin-right: 13px;
+}

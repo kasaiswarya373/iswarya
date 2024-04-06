@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    var details = () => {
+        var sname, sclass, m1, m2, m3;
+        sname = prompt("enter a name");
+        sclass = prompt("enter a class");
+        m1 = prompt("enter a mrks1");
+        m1 = parseInt(m1);
+        m2 = prompt("enter a mrks1");
+        m2 = parseInt(m2);
+        m3 = prompt("enter a mrks1");
+        m3 = parseInt(m3);
+
+        var ttl = total(m1, m2, m3);
+       
+        var avge = avg(ttl);
+       
+        var grde = grade(avg);
+
+        var inf = info(sname, sclass, ttl, avge, grde);
+
+
+        console.log("end");
+
+    }
+
+    var total = (m1, m2, m3) => {
+        result = m1 + m2 + m3;
+        return result;
+    }
+
+    var avg = (ttl) => {
+       avarage = ttl/3;
+       return avarage;
+    }
+
+    var grade = (avg) => {
+        var grde;
+        if (avg >= 40){
+            grde = "passed";
+        } else{
+            grde = "failed";
+        }
+        return grde;
+    }
+
+    var info = (sname, sclass, ttl, avge, grde) => {
+        console.log(`${sname}`);
+        console.log(`class ${sclass}`);
+        // console.log(`${sclass}`);
+        console.log(`the total is ${ttl}`);
+        console.log(`the avg is ${avge}`);
+        console.log(`the result is ${grde}`);
+
+    }
+    details();
+
+
+
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analog Clock!</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+
+      #clock {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border: 6px solid #333;
+        border-radius: 50%;
+      }
+
+      .hour {
+        position: absolute;
+        width: 30%;
+        margin-left: 40px;
+        height: 2px;
+        background-color: #333;
+        top: 50%;
+        transform-origin: 100%;
+      }
+
+      .minute {
+        position: absolute;
+        width: 35%;
+        margin-left: 30px;
+        height: 2px;
+        background-color: #666;
+        top: 50%;
+        transform-origin: 100%;
+      }
+
+      .second {
+        position: absolute;
+        width: 45%;
+        margin-left: 10px;
+        height: 1px;
+        background-color: red;
+        top: 50%;
+        transform-origin: 100%;
+      }
+      .no1 {
+        position: absolute;
+        left: 70%;
+        top: 15px;
+      }
+      .no2 {
+        position: absolute;
+        left: 84%;
+        top: 42px;
+      }
+      .no3 {
+        position: absolute;
+        left: 89%;
+        top: 86px;
+      }
+      .no4 {
+        position: absolute;
+        left: 86%;
+        top: 130px;
+      }
+      .no5 {
+        position: absolute;
+        left: 70%;
+        top: 163px;
+      }
+      .no6 {
+        position: absolute;
+        left: 45%;
+        top: 177px;
+      }
+      .no7 {
+        position: absolute;
+        right: 70%;
+        top: 163px;
+      }
+      .no8 {
+        position: absolute;
+        right: 80%;
+        top: 130px;
+      }
+      .no9 {
+        position: absolute;
+        right: 90%;
+        top: 86px;
+      }
+      .no10 {
+        position: absolute;
+        right: 84%;
+        top: 42px;
+      }
+      .no11 {
+        position: absolute;
+        right: 67%;
+        top: 15px;
+      }
+      .no12 {
+        position: absolute;
+        left: 45%;
+        top: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="clock">
+      <div class="hour" id="hour"></div>
+      <div class="minute" id="minute"></div>
+      <div class="second" id="second"></div>
+      <span class="no1">I</span>
+      <span class="no2">II</span>
+      <span class="no3">III</span>
+      <span class="no4">IV</span>
+      <span class="no5">V</span>
+      <span class="no6">VI</span>
+      <span class="no7">VII</span>
+      <span class="no8">VIII</span>
+      <span class="no9">IX</span>
+      <span class="no10">X</span>
+      <span class="no11">XI</span>
+      <span class="no12">XII</span>
+    </div>
+
+    <script>
+      setInterval(() => {
+        var currentDate = new Date();
+        var hour = currentDate.getHours();
+        var minute = currentDate.getMinutes();
+        var second = currentDate.getSeconds();
+
+        hour_rotation = 30 * hour + minute / 2;
+        minute_rotation = 6 * minute;
+        second_rotation = 6 * second;
+
+        document.querySelector(
+          ".hour"
+        ).style.transform = `rotate(${hour_rotation}deg)`;
+        document.querySelector(
+          ".minute"
+        ).style.transform = `rotate(${minute_rotation}deg)`;
+        document.querySelector(
+          ".second"
+        ).style.transform = `rotate(${second_rotation}deg)`;
+      }, 1000);
+    </script>
+  </body>
+</html>

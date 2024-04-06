@@ -1,0 +1,64 @@
+Mordrn UI Fullstack With React
+
+    UI FullSTack (85 Classes) + REact (50 Classes)
+
+        6K  + 5K + 3k for react rec
+        
+
+    1:30 min - 6 days wk
+
+LIST of TECH:
+    UI / Frontend 
+        HTML 4
+        CSS 2
+        Core/Basic JS (datatypes, process of compilation, error handling, functions, CS, DS ,DHTML)
+        Adv JS (JSON, AJAX, closures, EXception handling, XML, etc )
+        OOPS 
+        DHTML
+        HTML 5
+        CSS 3 ()
+        Bootstrap 5
+        External Lib 
+            Axios 
+            Handle bars - templating 
+            jquery 
+            SASS 
+            LESS CSS 
+
+        ECMA 6 
+
+    Backend 
+        Web server - NODE JS (webservecies, hosting resources, Sessions, Scoket io, Clusters, GET/POST data, connection with DB, Multer, uploading files, enc/dec etc...)
+        Express JS 
+        MONGO Database with Compass Tool
+
+    Tools:
+        GIT desktop
+        Postman 
+        MongodbCompass 
+        VsCode
+        Browser Debgugging Tool
+
+
+    2 Projects
+
+    Modern - UI 
+        Logical Program solving 
+        GIT hub - Repo 
+        Git potfolio 
+        Resume building
+        DS in JS 
+
+    JS Lib
+
+        React Latest 
+
+
+tps://youtu.be/27V9XTnEra8
+Day-2 https://youtu.be/SDyd5vNexXw
+Day-3 https://youtu.be/IdIGMCe6l7g
+Day-4 https://youtu.be/coHHUZm8aZw
+
+
+@durgaprasad158 
+

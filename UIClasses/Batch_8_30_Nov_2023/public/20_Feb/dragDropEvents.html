@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Drag drop events from html5
+        </title>
+        <style>
+            .container {
+                border: 1px solid;
+                margin: 20px auto;
+                padding: 10px;
+                height: 400px;
+                width: 600px;
+                overflow: auto;
+            }
+            img {
+                width: 120px;
+                height: 150px;
+                float: left;
+            }
+            div span {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" ondrop="onElementDrop(event)" ondragover="onElementDragOver(event)"></div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH2zMQwtAyybZyv7f8sj6S812ksopvUR_bEg&usqp=CAU" alt="" ondragstart="onElementDragStart(event)" id="product_1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfR0wGAET8AY4kY1j0pUkua13HCsJ_b5iNKg&usqp=CAU" ondragstart="onElementDragStart(event)" id="product_2">
+        <script>
+
+            /*var productId;
+            var onElementDrop = (event) => {
+                event.preventDefault();
+                var imgElement = document.querySelector(productId);
+                document.querySelector(".container").append(imgElement);
+            }
+
+            var onElementDragOver = (event) => {
+                event.preventDefault();
+                console.log("Element drag over");
+                
+            }
+            var onElementDragStart = (event) => {
+                console.log("Element drag started");
+                
+                productId = event.target.getAttribute("id");
+                productId = '#' + productId;
+                console.log(productId);
+            } */
+
+            var imageSrc;
+            var onElementDrop = (event) => {
+                event.preventDefault();
+                var divTag = document.createElement("div");
+                var imgElement = document.createElement("img");
+                imgElement.setAttribute("src", imageSrc);
+                divTag.append(imgElement);
+                
+                var deleteTag = document.createElement("span");
+                deleteTag.innerText = 'X';
+                divTag.append(deleteTag);
+                deleteTag.addEventListener('click', (event) => {
+                    event.target.parentElement.remove();
+                });
+
+                document.querySelector(".container").append(divTag);
+            }
+
+            var onElementDragOver = (event) => {
+                event.preventDefault();
+                console.log("Element drag over");
+                
+            }
+            var onElementDragStart = (event) => {
+                console.log("Element drag started");
+                
+                imageSrc = event.target.getAttribute("src");
+                console.log(imageSrc);
+            }
+        </script>
+    </body>
+</html>

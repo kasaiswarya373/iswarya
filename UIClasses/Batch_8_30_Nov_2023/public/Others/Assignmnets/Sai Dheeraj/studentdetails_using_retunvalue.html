@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+        <script>
+            
+            var gettingstudentetails = () => {
+
+                var studname = prompt("enter studname");
+                var studage = parseInt(prompt("enter studage"));
+                var studdep = prompt("enter studdep");
+                var m1 = parseInt(prompt("enter m1 value"));
+                var m2 = parseInt(prompt("enter m2 value"));
+
+                var avg = getTotalandAvg(m1, m2);
+                
+                console.log(`the sum is ${getsum}`);
+            
+            }
+        
+
+                
+
+            var getTotalandAvg = (m1, m2) => {
+                total = m1 + m2;
+                avg = total / 2;
+                return avg;
+            }
+          
+
+            gettingstudentetails ();
+            var displayDetails = () => {
+
+                console.log(studname);
+                console.log(studage);
+                console.log(studdep);
+                console.log(m1);
+                console.log(m2);
+
+            }
+
+        </script> 
+</body>
+</html>

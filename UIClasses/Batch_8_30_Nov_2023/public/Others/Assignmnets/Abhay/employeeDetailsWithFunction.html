@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ename, age, gender, pf, hra, basicSal, totalSal, tax;    //global varibales
+        var getEmpDetails = () => {
+            ename = prompt("Enter Name");
+            age = prompt("Enter Age");
+            age = parseInt(age);
+            gender = prompt("Enter Gender");
+            basicSal = prompt("Enter Basic Salary");
+            basicSal = parseInt(basicSal);
+            getPfAndHra();
+        }
+        var getPfAndHra = () => {
+            pf = (15 * 25000) / 100;
+            hra = (25 * 25000) / 100;
+            getTotalSal();
+        }
+        var getTotalSal = () => {
+            totalSal = basicSal + pf + hra;
+            getTotalTax();
+        }
+        var getTotalTax = () => {
+            if (gender == "male") {
+                if (totalSal >= 200000) {
+                    tax = "15% Tax applied";
+                }
+                else if (totalSal >= 100000) {
+                    tax = "10% Tax applied";
+                }
+                else if (totalSal >= 50000) {
+                    tax = "5% Tax applied";
+                }
+                else {
+                    tax = "No Tax applied";
+                }
+
+            } else (gender == "female") 
+            {
+                if (totalSal >= 200000) {
+                    tax = "10% Tax applied";
+                }
+                else if (totalSal >= 100000) {
+                    tax = "5% Tax applied";
+                }
+                else {
+                    tax = "No Tax applied";
+                }
+            }
+        }
+        var displayEmpDetails = () => {
+            getEmpDetails();
+            console.log(`Employee Name : ${ename}`);
+            console.log(`Employee Age : ${age}`);
+            console.log(`Gender : ${gender}`);
+            console.log(`Basic Salary : ${basicSal}`);
+            console.log(`PF : ${pf}`);
+            console.log(`HRA : ${hra}`);
+            console.log(`Total Salary : ${totalSal}`);
+            console.log(`Tax : ${tax}`);
+
+        }
+        displayEmpDetails();
+
+    </script>
+</body>
+
+</html>

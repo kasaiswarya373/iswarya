@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncapsEmpDetailsUsingJson</title>
+</head>
+<body>
+    Encapsulating Employee Details Using Json
+    <script>
+        var emp = () =>
+        {
+        var empData = 
+        {
+            Name : prompt("Enter Employee Name"),
+            Age :  prompt("Enter Employee Age"),
+            Gender :  prompt("Enter Employee Gender"),
+            Department :  prompt("Enter Employee Department"),
+            Qualification :  prompt("Enter Employee Qualification"),
+            Basic_Salary :  parseInt(prompt("Enter Employee Salary")),
+
+            calcPfHraTotSal : () =>
+            {
+                var pf = (empData.Basic_Salary * 20) / 100;
+                var hra = (empData.Basic_Salary * 30) / 100;
+                var totalSalary = empData.Basic_Salary + pf + hra;
+                return totalSalary;
+            },
+
+            calcTax : (totSal) =>
+            {
+                var tax = (totSal * 10) / 100;
+                empData.totalSalary = totSal - tax;
+            }
+        };
+        var totSal = empData.calcPfHraTotSal();
+        empData.calcTax(totSal);
+        console.log(empData);
+        }
+        emp();
+    </script>
+</body>
+</html>

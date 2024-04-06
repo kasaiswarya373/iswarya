@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises In JS</title>
+</head>
+
+<body>
+
+    <input type="text" id="userName">
+
+    <script>
+        var age = 20;
+
+        var prom = new Promise((resolve, reject) => {
+            if (age < 21) {
+                setTimeout(() => {
+                    resolve("age should be greater than 21");
+                }, 4000);
+            } else {
+                reject('age is set');
+            }
+        });
+        console.log("before")
+
+        async function asyncTest() {
+            //1st way.
+            document.querySelector('#userName').value = await prom.then((msg) => {
+                console.log(msg);
+                return msg;
+            }).catch((err) => {
+                console.log(err);
+            });
+        }
+        asyncTest();
+        console.log("after");
+
+
+        //2nd way.
+        //prom.then((msg) => { console.log(msg) }, (err) => { console.log(err) });
+
+
+
+
+    </script>
+</body>
+
+</html>

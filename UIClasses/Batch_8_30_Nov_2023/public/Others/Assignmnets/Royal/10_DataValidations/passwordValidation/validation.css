@@ -1,0 +1,21 @@
+ul {
+    width: 500px;
+    border: 1px solid;
+    margin: 20px auto;
+    padding: 20px;
+}
+li {
+/* border: 1px solid #ccc; */
+margin: 10px;
+padding: 10px;
+list-style: none;
+}
+h3{
+text-align: center;
+color: green;
+}
+svg{
+position: relative;
+left: -25px;
+top: 3px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentDetailsWithoutForm</title>
+    <style>
+        body
+        {
+            background-color: rgb(90, 201, 245);
+        }
+        #header
+        {
+            font-size: 25px;
+            color:darkblue;
+            text-align: center;
+        }
+        ul
+        {
+            border: 2px solid rgb(70 82 222);
+            width: 531px;
+            position: absolute;
+            left: 487px;
+            padding: 10px;
+            list-style: none;
+        }
+        li
+        {
+            background-color: rgba(255, 255, 255, 0.972);
+            padding:5px;
+            margin:10px;
+        }
+        #multitext
+        {
+            position:relative;
+            bottom:135px;
+        }
+        #btn
+        {
+            position:relative;
+            left:224px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="header">STUDENT DETAILS</div>
+    <form action="http://test.com/data/info/userdetails" method="get">
+    <ul>
+        <li>
+            <lablel for="userName">Name: &nbsp</lablel>
+            <input type="text" id="userName" name="name">
+        </li>
+        <li>
+            <label for="passWord">Password: &nbsp</label>
+            <input type="password" id="passWord" name="password" maxlength="15">
+        </li>
+        <li>
+            <label for="gender">Gender: &nbsp</label>
+            <input type="radio" id="gender" name="gender">Male 
+            <input type="radio" id="gender" name="gender" checked>female
+        </li>
+        <li>
+            <label for="country">Country: &nbsp</label>
+            <select>
+                <option>India</option>
+                <option>China</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>Spain</option>
+            </select>
+        </li>
+        <li>
+            <label for="lang">Languages: &nbsp</label>
+            <input type="checkbox" id="lang" name="language">English
+            <input type="checkbox" id="lang" name="language">Telugu
+            <input type="checkbox" id="lang" name="language">Spanish
+            <input type="checkbox" id="lang" name="language">Chinese
+            <input type="checkbox" id="lang" name="language">Hindi
+        </li>
+        <li>
+            <label id="multitext">Tell About Yourself: &nbsp</label>
+            <textarea  cols="20" rows="10" maxlength="500"></textarea>
+        </li>
+        <li>
+            <input type="submit" value="submit" id="btn">
+        </li>
+    </ul>
+</form>
+</body>
+</html>

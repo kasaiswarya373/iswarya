@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>student details with json object</title>
+    </head>
+    <body>
+        <script>
+            var studentDetails = {
+                name : 'Jyothi',
+                age : 20,
+                marks : [44,55,66,77,88],
+                gender : 'Female',
+                Location : 'Hyd',
+                total : 0,
+                avg : 0,
+                grade : ''
+            }
+            for(var i = 0; i <studentDetails. marks.length; i++){
+               studentDetails.total +=studentDetails.marks[i];
+            }
+           studentDetails.avg = studentDetails.total / studentDetails.marks.length;
+            if(studentDetails.avg >= 45){
+                console.log('pass');
+            }
+            else{
+                console.log('you r surpriced');
+            }
+        </script>
+    </body>
+</html>

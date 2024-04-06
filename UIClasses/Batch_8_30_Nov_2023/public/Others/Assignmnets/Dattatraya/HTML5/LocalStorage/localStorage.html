@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage & Session Storage</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="ThemeBlock">
+      Choose Theme:
+      <input type="color" id="ThemeSelector" onchange="getSelectedTheme()" />
+    </div>
+    <div class="MainContainer">
+      <div class="Credentials-container">
+        <form action="#">
+          <input type="text" id="user_name" placeholder="Username" /><br />
+
+          <input type="text" id="pass_word" placeholder="password" /><br />
+
+          <button onclick="saveUserDetails()">Save User Credentials</button>
+        </form>
+      </div>
+    </div>
+    <div class="WelcomeBlock">
+      Thanks for visiting my webpage Mr. <span id="login_name"></span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>another way</title>
+</head>
+<body>
+    <script>
+        var empDetails = {
+            readDeatails : ()=>{
+            empDetails.name = prompt("enter a name");
+            empDetails.age = prompt('emter age');
+            empDetails.department = prompt("enter department");
+            empDetails.basicSal = parseInt(prompt("enter basic salary"));
+            empDetails.pf = parseInt(prompt("enter pf"));
+            empDetails.hra = parseInt(prompt("enter hra"));
+            empDetails.Taxper = 14;
+            empDetails.TotalSal = " ";
+            empDetails.TotalTax = " ";
+            }
+        };
+    
+        empDetails.getTotalSal = () =>{
+            empDetails.TotalSal = empDetails.basicSal + (empDetails.pf * empDetails.basicSal)/100 +  (empDetails.hra * empDetails.basicSal) /100 ;
+            console.log ("TotalSal " + empDetails.TotalSal);
+        }
+        empDetails.getTotalTax = () =>{
+            empDetails.TotalTax =   empDetails.TotalSal - (empDetails.TotalSal* empDetails.Taxper)/100;
+            console.log ("TotalTax " + empDetails.TotalTax);
+        }
+        empDetails.displayDeatails = () => {
+            empDetails.readDeatails();
+            empDetails.getTotalSal ();
+            empDetails.getTotalTax();
+            console.log ("name " + empDetails.name);
+            console.log ("age " + empDetails.age);
+            console.log ("department " + empDetails.department);
+            console.log ("basicSal " + empDetails.basicSal);
+            console.log ("pf " + empDetails.pf);
+            console.log ("hra " + empDetails.hra);
+            console.log ("taxper " + empDetails.taxper);
+        }
+        empDetails.displayDeatails();
+    </script>
+</body>
+</html>

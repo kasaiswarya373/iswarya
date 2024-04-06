@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="Stud.CSS">
+            <title>Progress Card</title>
+        </head>
+    <body>
+           <script src="Stud.JS"></script>
+           
+           <h1>Student Result</h1>
+        <ul>
+            <li class="StudentDetails"></li>
+
+            <li>
+                <label for="Name"> Student Name: </label>
+                <input type="text" id="studname" onkeypress="return getValidation(event)">
+                <div id="errA">it is requried</div>
+            </li>
+
+            <li>
+                <label for="Age"> Age: </label>
+                <input type="text" id="studage" onkeypress="return getValidationnumber(event)">
+                <div id="errB">it is required</div>
+            </li>
+            
+            <li>
+                <label for="gender"> Gender </label>
+                <input type="radio" name="gender" value="male" checked>Male
+                <input type="radio" name="gender" value="female">female
+            </li>
+
+            <li>
+                <label for="">Class:</label>
+                <select name="" id="studclass">
+                    <option value="CLASS-I">CLASS-I</option>
+                    <option value="CLASS-II">CLASS-II</option>
+                    <option value="CLASS-III">CLASS-III</option>
+                    <option value="CLASS-IV">CLASS-IV</option>
+                    <option value="CLASS-V">CLASS-V</option>
+                    <option value="CLASS-VI" selected>CLASS-VI</option>
+                </select>
+            </li>
+
+            <li class="marks">
+                <label for="">Marks</label>
+                <input type="text" id="m1">
+                <input type="text" id="m2">
+                <input type="text" id="m3">
+                <input type="text" id="m4">
+                <input type="text" id="m5">
+                <input type="text" id="m6">
+                
+            </li>
+            <li>
+                <input type="button" value="ProgressCard" onclick="Sdetails.showStudentDetails()">
+                <input type="reset" value="Reset" onclick="Resetfields()">
+            </li>
+        </ul>
+        <div class="StudResultBlock"></div>
+
+        <ul id="Show">
+            <li>
+                Student Name: <span id="sname"></span>
+            </li>
+            <li>
+                 Age: <span id="sage"></span>
+            </li>
+            <li>
+                Class: <span id="sclass"></span>
+            </li>
+            <li>
+                Gender: <span id="sgender"></span>
+            </li>
+            <li>
+                Total: <span id="stotal"></span>
+            </li>
+            <li>
+                Average: <span id="savg"></span>
+            </li>
+        </ul>
+    </body>
+</html>

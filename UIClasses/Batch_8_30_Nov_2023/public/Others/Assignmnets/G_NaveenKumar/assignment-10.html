@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details using javascript</title>
+    <script>
+        console.log(".........Employee Details.............")
+
+        var EmployeeName = prompt("enter your Name");
+        console.log("Employee name :" + EmployeeName);
+
+
+        var EmployeeAge = prompt("enter your Age");
+        console.log("Employee Age :" + EmployeeAge);
+
+
+        var EmployeeGender = prompt("enter your Gender");
+        console.log("EmployeeGender :" + EmployeeGender);
+
+
+        var EmployeeDepartment = prompt("enter your Department");
+        console.log("Employee Department:" + EmployeeDepartment);
+
+
+        var basicsalary = prompt("enetr a basic salary");
+        basicsalary = parseInt(basicsalary);
+        console.log("Employee basicSalary: " + basicsalary);
+
+
+        var pfpercantage = prompt("enter the pf percentage");
+        pfpercantage = parseInt(pfpercantage) / 100;
+        console.log("Employee pf percentage: " + pfpercantage);
+        var pf = pfpercantage * basicsalary
+        console.log("Employee pf: " + pf);
+
+        var HRApercentage = prompt("enter HRA percentage");
+        HRApercentage = parseInt(HRApercentage) / 100;
+        console.log("Employee HRA percentage:" + HRApercentage);
+        var HRA = HRApercentage * basicsalary;
+        console.log("Employee HRA:" + HRA);
+
+        var totalsalary = 12 * (pf + HRA + basicsalary);
+        console.log("Employee total salary :" + totalsalary);
+
+        if (EmployeeGender == "Male") {
+            if (totalsalary > 200000) {
+                tax = (0.15 * totalsalary);
+                console.log("tax amount :" + tax);
+            }
+            else if (totalsalary > 100000) {
+                tax = (0.10 * totalsalary);
+                console.log("tax amount :" + tax);
+            }
+            else if (totalsalary > 50000) {
+                tax = (0.05 * totalsalary);
+                console.log("tax amount :" + tax);
+            }
+            else {
+                console.log("end")
+            }
+        }
+        else if (EmployeeGender == "Female") {
+            if (totalsalary > 200000) {
+                tax = (0.10 * totalsalary);
+                console.log("tax amount :" + tax);
+            }
+            else if (totalsalary > 100000) {
+                tax = (0.05 * totalsalary);
+                console.log("tax amount :" + tax);
+            }
+            else if (totalsalary > 50000) {
+                tax = (0 * totalsalary);
+                console.log("tax amount :" + tax);
+            }
+            else {
+                console.log("end")
+            }
+        }
+        else {
+            console.log("the end")
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Employee Details in Javascript</h1>
+
+</body>
+
+</html>

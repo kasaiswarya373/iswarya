@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+    <style>
+        ul {
+            width: 500px;
+            border: 1px solid;
+            margin: 5px auto;
+            padding: 5px;
+            background-color: yellow;
+            color: blueviolet;
+        }
+        li {
+            list-style: none;
+            border: 1px solid brown;
+            background-color: aqua;
+            padding: 5px;
+            margin: 5px;
+            color: purple;
+        }
+        h3 {
+            text-align: center;
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <h3>Student Registration Page</h3>
+    <ul>
+        <li>
+            <label for="userName">Enter user name:</label>
+            <input type="text" name="userName" maxlength="20" id="user_name">
+        </li>
+        <li>
+            <label for="actpwd">Enter Account Password:</label>
+            <input type="password" name="actpwd" maxlength="20" value="INDIA123" id="accountpwd">
+        </li>
+        <li>
+            <label for="gender" style="color: purple;">Gender:</label>
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" checked value="female">Female
+        </li>
+        <li>
+            <label style="color: crimson ;">country:</label>
+            <select>
+                <option style="color: chartreuse;">India</option>
+                <option style="color: gold;">Usa</option>
+                <option selected style="color: blueviolet;">Australia</option>
+                <option style="color: purple;">Germany</option>
+            </select>
+        </li>
+        <li>
+            <label>
+                Languages
+            </label>
+            <input type="checkbox" style="color: green;">Telugu
+            <input type="checkbox" style="color: magenta;">English
+            <input type="checkbox" style="color: brown;">Maths
+            <input type="checkbox " style="color: red;">Science
+        </li>
+        <li>
+            <label>Tell About Yourself </label>
+            <textarea name="" id="" cols="20" rows="15" maxlength="500"></textarea >
+        </li>
+        <li>
+            <input type="button" value="save Details" onclick="readUserData()">
+        </li>
+    </ul>
+    <script>
+        var readUserData=()=> {
+            userData.name=document.querySelector("#user.name").value;
+            userData.pwd=document.querySelector("#accountpwd").value;
+            userData.gender=document.querySelector("nput[name=gender]:checked").value;
+            console.log(userData);
+        }
+        
+
+        
+    </script>
+    
+</body>
+</html>

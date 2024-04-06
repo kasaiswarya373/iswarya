@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="index.js"></script>
+        <style>
+            .container {
+                width: 400px;
+                height: 400px;
+                border: 1px solid;
+                border-radius: 10px;
+                margin: 20px auto;
+            }
+            .block {
+                margin: 20px;
+                padding: 10px;
+                border: 1px solid;
+                border-radius: 10px;
+                border-color: blueviolet;
+                width: 80%;
+                text-align: center;
+                
+            }
+            input {
+                width: 70%;
+                height: 15px;
+                padding: 10px;
+                outline: none;
+            }
+            #check {
+                width: 20%;
+                height: 15px;
+                position: relative;
+                left: -100px;
+            }
+            #text {
+                position: relative;
+                left: 64px;
+                top: -3px;
+            }
+            h3 {
+                text-align: center;
+                color: red;
+                font-weight: bold;
+                font-size: 25px;
+            }
+            .button {
+                width: 60%;
+                text-align: center;
+                background-color: lightgreen;
+                color: white;
+                font-weight: bold;
+                font-size: 25px;
+                border: none;
+                position: relative;
+                left: 64px;
+                top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h3>
+                Sign-in
+            </h3>
+            <div class="block">
+                <input type="text" name="" id="u_name" placeholder="Enter UserName">
+            </div>
+            <div class="block">
+                <input type="password" name="" id="u_pwd" placeholder="Enter Password">
+            </div>
+            <div>
+                <label for="checkbox" id="text">Remember Me</label>
+                <input type="checkbox" id="check" onclick="rememberDetails()">
+            </div>
+            <button class="button">
+                Log-In
+            </button>
+        </div>
+    </body>
+</html>

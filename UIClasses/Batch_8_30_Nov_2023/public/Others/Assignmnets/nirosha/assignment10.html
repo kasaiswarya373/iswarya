@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>salary with employee details</title>
+    </head>
+    <script>
+        var empname = prompt("Enter employee name");
+        var empGender = prompt("Enter employee gender");
+        var empbascisalary = prompt("Enter employee basicsalary");
+        basicsalary = parseInt(basicsalary);
+        var pf = (14 * basicsalary) / 100;
+        var hra = (20 * basicsalary) / 100;
+        var totalSalary = basicsalary + pf + hra;
+        var taxPercent = 0;
+        if (empgender == Male);{
+            if (totalSalary >= 200000) {
+                    taxPercent = 15;
+                } else  if (totalSalary >= 150000) {
+                    taxPercent = 10;
+                } else if (totalSalary >= 100000) {
+                    taxPercent = 5
+                }
+            } 
+            else { // female
+                if (totalSalary >= 200000) {
+                    taxPercent = 10;
+                } else  if (totalSalary >= 150000) {
+                    taxPercent = 5;
+                }
+        }
+        var taxAmount = (totalSalary * taxPercent) / 100;
+        var onHandSal = totalSalary - taxAmount;
+        document.write(empname);
+        document.write(emppage);
+        document.write(empsalary);
+    </script>
+</html>

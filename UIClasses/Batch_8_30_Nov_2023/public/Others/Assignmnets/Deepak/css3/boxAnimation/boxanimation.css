@@ -1,0 +1,29 @@
+.container{
+    width: 10vh;
+    height: 10vh;
+    background-color: red;
+    position: relative;
+    animation: move 10s infinite;
+}
+@keyframes move {
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 0px;
+        left: 95%;
+    }
+    50%{
+        top: 650px;
+        left: 95%;
+    }
+    75%{
+        top: 650px;
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}

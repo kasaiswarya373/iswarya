@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descending  and asending order</title>
+</head>
+<body>
+    <script>
+        //*********ASCENDING ORDER*******
+
+        //temp = a[0],a[0]=a[2],a[2]=temp==>[12,16,15,45,25,23]
+  /*     var n = [15,16,12,45,25,23];
+        for(var i = 0;i<n.length;i++){
+            for(j = i;j<n.length;j++){
+                if(n[i] > n[j]){
+                var temp = n[i];
+                n[i] = n[j];
+                n[j] = temp;
+             }
+          }
+        }
+        console.log(n);*/
+//*******DECENDING ORDER ********
+        var num = [15,16,12,45,25,23];
+        for (var i = 0;i < num.length;i++){
+            for (j = i+1;j < num.length;j++){
+                    if(num[i] < num[j]){
+                        var temp = num[i];
+                    num[i] = num[j];
+                    num[j] = temp;
+                    }
+            }    
+    }
+        console.log(num); 
+    </script>
+</body>
+</html>

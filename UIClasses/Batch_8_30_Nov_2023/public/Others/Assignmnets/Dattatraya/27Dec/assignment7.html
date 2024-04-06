@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>WAP to check whether a given number is Armstrong.</h3>
+    <script>
+      var n = parseInt(prompt("Enter a number: "));
+      var originalNumber = n;
+      var sum = 0;
+      var result = 0;
+      var tempNumber = originalNumber;
+      while (tempNumber != 0) {
+        tempNumber = tempNumber / 10 - (tempNumber % 10) / 10;
+        result++;
+      }
+      tempNumber = originalNumber;
+      while (tempNumber > 0) {
+        var result = tempNumber % 10;
+      }
+    </script>
+  </body>
+</html>

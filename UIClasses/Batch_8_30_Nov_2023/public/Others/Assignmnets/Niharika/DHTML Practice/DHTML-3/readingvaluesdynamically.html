@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container {
+                width: 350px;
+                margin: 20px auto;
+                border: 1px solid;
+                border-radius: 10px;
+                background-color: lightblue;
+            }
+            .calc {
+                border: 1px solid;
+                border-radius: 5px;
+                background-color: #ccc;
+                text-align: center;
+                margin: 20px auto;
+                padding: 10px;
+                width: 200px;
+            }
+            .resultclass {
+                display: none;
+            }
+            #result {
+                font-weight: bold;
+                color: darkmagenta;
+                text-decoration: underline;
+            }
+            #result1 {
+                font-weight: bold;
+                color: darkolivegreen;
+                text-decoration: underline;
+            }
+            #result2 {
+                font-weight: bold;
+                color: darkgoldenrod;
+                text-decoration: underline;
+            }
+            #result3 {
+                font-weight: bold;
+                color: darkorchid;
+                text-decoration: underline;
+            }
+            .result1class {
+                display: none;
+            }
+            .result2class {
+                display: none;
+            }
+            .result3class {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="calc">CALCULATOR</div>
+            <div class="calc">
+                <label for="firstvalue">Enter First Value : </label>
+                <input type="text" name="firstvalue" id="fvalue">
+            </div>
+            <div class="calc">
+                <label for="secvalue">Enter second Value : </label>
+                <input type="text" name="secvalue" id="svalue">
+            </div>
+            <div class="resultclass calc">
+                The sum of Values is :
+                <span id="result"></span>
+            </div>
+            <div class="result1class calc">
+                The subtraction is :
+                <span id="result1"></span>
+            </div>
+            <div class="result2class calc">
+                The Multiplication is :
+                <span id="result2"></span>
+            </div>
+            <div class="result3class calc">
+                The Division is :
+                <span id="result3"></span>
+            </div>
+            <div class="calc">
+                <input type="button" value="Get Sum" onclick="getvalues()">
+            </div>
+            <div class="calc">
+                <input type="button" value="Get Sub" onclick="getvalues1()">
+            </div>
+            <div class="calc">
+                <input type="button" value="Get Mul" onclick="getvalues2()">
+            </div>
+            <div class="calc">
+                <input type="button" value="Get Div" onclick="getvalues3()">
+            </div>
+        </div>
+       <script>
+        var getvalues = () => {
+    var a1 = document.querySelector("#fvalue").value;
+    a1 = parseInt(a1);
+    var a2 = document.querySelector("#svalue").value;
+    a2 = parseInt(a2);
+    var result = a1+a2;
+    document.querySelector("#result").innerText = result;
+    document.querySelector(".resultclass").style.display = 'block';
+}
+var getvalues1 = () => {
+    var a1 = document.querySelector("#fvalue").value;
+    a1 = parseInt(a1);
+    var a2 = document.querySelector("#svalue").value;
+    a2 = parseInt(a2);
+    var result = a1 - a2;
+    document.querySelector("#result1").innerText = result;
+    document.querySelector(".result1class").style.display = 'block';
+    //clearvalues();
+
+}
+var getvalues2 = () => {
+    var a1 = document.querySelector("#fvalue").value;
+    a1 = parseInt(a1);
+    var a2 = document.querySelector("#svalue").value;
+    a2 = parseInt(a2);
+    var result = a1*a2;
+    document.querySelector("#result2").innerText = result;
+    document.querySelector(".result2class").style.display = 'block';
+    //clearvalues();
+}
+var getvalues3 = () => {
+    var a1 = document.querySelector("#fvalue").value;
+    a1 = parseInt(a1);
+    var a2 = document.querySelector("#svalue").value;
+    a2 = parseInt(a2);
+    var result = a1/a2;
+    document.querySelector("#result3").innerText = result;
+    document.querySelector(".result3class").style.display = 'block';
+    //clearvalues();
+}
+/*var clearvalues = () => {
+    document.querySelector("#fvalue").value = '';
+    document.querySelector("#svalue").value = '';
+}*/
+       </script>
+    </body>
+</html>

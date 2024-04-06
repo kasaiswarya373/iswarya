@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Even Numbers from Array and Copy to Another Array</title>
+</head>
+
+<body>
+    <script>
+
+        var readEvenValues = () => {
+            var even = [];
+            var n = prompt("Enter the number of even values:");
+            n = parseInt(n);
+
+            for (var i = 0; i < n; i++) {
+                even[i] = prompt(`Enter the ${i + 1} position`);
+                even[i] = parseInt(even[i]);
+                console.log(`The ${i + 1} value is : ${even[i]}`);
+            }
+            console.log("The Even Numbers are:");
+            getNewArray(even);
+        }
+
+        var getNewArray = (even) => {
+            var j = 0;
+            var temp = [];
+            for (var i = 0; i < even.length; i++) {
+                if (even[i] % 2 == 0) {
+                    console.log(even[i]);
+                    temp[j] = even[i];
+                    j++;
+                }
+            }
+
+            console.log("The New Array of Even Numbers is:");
+
+            for (var j = 0; j < temp.length; j++) {
+                console.log(temp[j]);
+            }
+        }
+
+        readEvenValues();
+    </script>
+</body>
+
+</html>

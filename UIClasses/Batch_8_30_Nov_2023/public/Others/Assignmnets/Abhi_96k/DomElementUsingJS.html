@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="demo">Hello mr abhi</p>
+    <script>
+        var demotTag = document.createElement("div");
+        demotTag.setAttribute("class","divtag");
+        demotTag.setAttribute("id","test");
+        demotTag.style.border = "2px solid";
+        demotTag.style.borderradius = "15px";
+        demotTag.style.backgroundColor = "yellow";
+        demotTag.innerText = "hello how are u?";
+        document.querySelector(".demo").append(demotTag);
+    </script>
+</body>
+</html>

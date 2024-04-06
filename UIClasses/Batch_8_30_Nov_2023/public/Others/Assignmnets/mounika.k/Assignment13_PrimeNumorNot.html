@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeNumorNot</title>
+</head>
+<body>
+    <h2>
+        WAP to check whether a given number is prime or not.
+    </h2>
+    <script>
+        var n = parseInt(prompt("Enter a number : "));
+        var sum = 0;
+        for(var i = 1;  i <= n; i++){
+            var rem = n % i;
+            console.log(rem);
+            if(rem == 0){
+                sum++;
+            }
+        }
+            console.log(sum);
+            if(sum == 2){
+                console.log("Its prime Number");
+            } else {
+                console.log("Its not a prime number");
+            }
+    </script>
+</body>
+</html>

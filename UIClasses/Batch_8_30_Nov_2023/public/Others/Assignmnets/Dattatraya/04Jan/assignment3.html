@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>WAP to findout total number of VOWEL in string.</h3>
+    <script>
+      var inputString = "Hello sunshine";
+
+      var vowelCount = 0;
+      for (var i = 0; i < inputString.length; i++) {
+        var currentChar = inputString[i].toLowerCase();
+        if (
+          currentChar == "a" ||
+          currentChar == "e" ||
+          currentChar == "i" ||
+          currentChar == "o" ||
+          currentChar == "u"
+        ) {
+          vowelCount++;
+        }
+      }
+      console.log(vowelCount);
+    </script>
+  </body>
+</html>

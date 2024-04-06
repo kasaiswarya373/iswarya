@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payslip</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h2>Employee Payslip Generator</h2>
+    <div class="container">
+        <div class="content">
+            <label for="userName">Name </label>
+            <input type="text" id="userName" name="userName" placeholder="Enter your name">
+        </div>
+        <div class="content"> 
+            <label for="age">Age </label>
+            <input type="text" id="age" placeholder="Enter your age">
+        </div>
+        <div class="content"> 
+            <label for="gender">Gender</label><div id="colon">:</div>
+            Female<input type="radio"  name="gender" value="Female" >
+            Male<input type="radio"  name="gender"  value="Male">
+        </div>
+        <div class="content"> 
+            <label for="department">Department </label><div id="colon">:</div>
+            <select id="department">
+                <option>Accouts</option>
+                <option>Testing</option>
+                <option>IT</option>
+                <option>Non-IT</option>
+                <option>Analysis</option>
+            </select>
+        </div>
+        <div class="content">
+            <label for="basicSal">Basic Salary </label><div id="colon">:</div>
+            <input type="number"  id="basicSal">
+        </div>
+        <div class="content">
+            <input type="button" value="Get Payslip" onclick="generatePaySlip()" id="payslip">
+        </div>
+    </div>
+
+    <div class="container2" >
+        <div id="payslipTitle">PAYSLIP</div>
+        <div class="subContainer">
+            <label>Name </label><div id="colon">:</div><span id="Name"></span>
+        </div>
+        <div class="subContainer">
+            <label>Age </label><div id="colon">:</div><span id="Age"></span>
+        </div>
+        <div class="subContainer">
+            <label>Gender </label><div id="colon">:</div><span id="Gender"></span>
+        </div>
+        <div class="subContainer">
+            <label>Department </label><div id="colon">:</div><span id="Department"></span>
+        </div>
+        <div class="subContainer">
+            <label>Basic Salary </label><div id="colon">:</div><span id="BasicSal"></span>
+        </div>
+        <div class="subContainer">
+            <label>PF </label><div id="colon">:</div><span id="Pf"></span>
+        </div>
+        <div class="subContainer">
+            <label>HRA </label><div id="colon">:</div><span id="Hra"></span>
+        </div>
+        <div class="subContainer">
+            <label>Tax </label><div id="colon">:</div><span id="Tax"></span>
+        </div>
+        <div class="subContainer">
+            <label>Total Salary </label><div id="colon">:</div><span id="TotalSalary"></span>
+        </div>
+    </div> 
+    <script src="app.js"></script>
+</body>
+</html>

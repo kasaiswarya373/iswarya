@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body>
+    <input type="button" value="1. click me (onclick)" onclick="showMsg1()">             //onclick event
+    <br>
+    <input type="button" value="2. click me (mouse- over)" onmouseover="showMsg2()">     //on mouseover event
+    <br>
+    <input type="button" value="3. click me (onFocus)" onfocus="showMsg3()">             //on focus event (either focus or press tab)
+    <script>
+        var showMsg1 = () => {
+            console.log('1. Clicked on the button...');
+        }
+        // showMsg1();
+
+        var showMsg2 = () => {
+            console.log('2. Mosue-over on the button...');
+        }
+
+        var showMsg3 = () => {
+            console.log('3. onFocus on the button...');
+        }
+
+        
+        
+    </script>
+    
+</body>
+</html>

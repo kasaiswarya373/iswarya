@@ -1,0 +1,92 @@
+ body {
+            background-color: #4DB1EB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        .main {
+            border-radius: 10px;
+            width: 450px;
+            height: 250px;
+            background-color: white;
+        }
+
+        .text {
+            width: 200px;
+            height: 40px;
+            border: 2px solid;
+            font-size: 1.5rem;
+            padding-top: 10px;
+            padding-left: 10px;
+            border-radius: 10px;
+        }
+
+        .button input {
+            width: 100px;
+            height: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            background-color: #4DB1EB;
+            border-style: none;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .button :hover {
+            cursor: pointer;
+            background-color: black;
+        }
+
+        .title {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 20px;
+            color: #4DB1EB;
+        }
+
+        .com {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 34px;
+        }
+
+        .enter {
+            border: 2px solid #4DB1EB;
+            margin: 20px;
+            margin-top: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .element input {
+            height: 38px;
+            margin-top: 0px;
+            border-style: none;
+            font-size: 1rem;
+
+        }
+
+        .btn input {
+            width: 100px;
+            height: 35px;
+            margin: 2px;
+            margin-right: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            background-color: #4DB1EB;
+            border-style: none;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .btn input:hover {
+            cursor: pointer;
+            background-color: red;
+        }

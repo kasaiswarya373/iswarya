@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Position</title>
+    <style>
+        .heading {
+            text-align: center;
+            background-color: turquoise;
+        }
+
+        .container {
+            border: 1px solid;
+            margin: 10px;
+            position: relative;
+        }
+
+        .image {
+            background-image: url('https://www.w3schools.com/css/img_5terre_wide.jpg');
+            opacity: 0.3;
+        }
+
+        .top-left {
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 5% 25% 25% 5%;
+            position: absolute;
+            top: 5px;
+            left: 15px;
+            background-color: yellow;
+        }
+
+        .bottom-left {
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 5% 25% 25% 5%;
+            position: absolute;
+            bottom: 5px;
+            left: 15px;
+            background-color: orangered;
+        }
+
+        .top-right {
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 25% 5% 5% 25%;
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            background-color: wheat;
+        }
+
+        .bottom-right {
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 25% 5% 5% 25%;
+            position: absolute;
+            bottom: 5px;
+            right: 15px;
+            background-color: springgreen;
+        }
+
+        .footer {
+            text-align: center;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Absolute position</h1>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="" width="1327" height="400px">
+        </div>
+        <div class="top-left">
+            <h1> Top Left</h1>
+        </div>
+        <div class="top-right">
+            <h1>Top Right</h1>
+        </div>
+        <div class="bottom-right">
+            <h1>Bottom Right</h1>
+        </div>
+        <div class="bottom-left">
+            <h1>Bottom Left</h1>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>-----Copyrights @Abhay2023-----</h3>
+    </div>
+</body>
+
+</html>

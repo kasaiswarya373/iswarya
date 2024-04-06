@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee dteils with Dhtml and input tags</title>
+        <link rel="stylesheet" href="app.css">
+        <script src="validation.js"></script>
+
+    </head>
+
+    <body>
+        <h2>Employee Form</h2>
+        <ul>
+            <li class="head">
+                Employee Salary Details
+            </li>
+            <li><label for="fname">FirstName:</label>
+                <input type="text" name="fname" id="fname" onkeypress="return empDetails.validatestring(event)">
+                <div class="error" id="efname">Enter FirstName</div>
+            </li>
+            <li><label for="lname">LastName:</label>
+                <input type="text" name="lname" id="lname" onkeypress="return empDetails.validatestring(event)">
+                <div class="error" id="elname">Enter LastName</div>
+
+            </li>
+            <li>
+                <label for="age">Age:</label>
+                <input type="text" name="age" id="age" onkeypress=" return empDetails.validatenum(event)">
+                <div class="error" id="eage">Enter age</div>
+
+            </li>
+            <li>
+                    <label for="gender">Gender:</label>
+              Male  <input type="radio" name="gender" value="Male">
+              Female<input type="radio" name="gender" value="Female" checked>
+
+            </li>
+            <li>
+                <label for="department">Department:</label>
+                <select name="department" id="empdepartment">
+                    <option value="It">It</option>
+                    <option value="Devloper" selected>Devloper</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Testing">Testing</option>
+                    <option value="Finance">Finance</option>
+                </select>
+                </li>
+                <li>
+                    <label for="basicsal">BasicSalary:</label>
+                    <input type="text" name="basicsal" id="basicsalary" onkeypress="return empDetails.validatenum(event)">
+                    <div class="error" id="ebasicsal">Enter basic salary</div>
+
+                </li>
+                <li>
+                    <label for="pf">PF:</label>
+                    <input type="text" name="pf" id="pf" onkeypress="return empDetails.validatenum(event)">
+                    <div class="error" id="epf">Enter pf</div>
+
+                </li>
+                <li>
+                    <label for="hra">Hra:</label>
+                    <input type="text" name="hra" id="hra" onkeypress="return empDetails.validatenum(event)">
+                    <div class="error" id="ehra">Enter hra</div>
+
+                </li>
+               
+                <li>
+                    <input type="button" value="GetSalary" id="button" onclick="empDetails.empdetails(event)">
+                </li>
+                
+
+        </ul>
+        <ul class="displayBlock">
+            <li class="head">Employee pay slip </li>
+        </li>
+        <li><label for="name">Name:</label><span id="d_name"></span>
+        </li>
+        <li>
+            <label for="age">Age:</label><span id="d_age"></span>
+        </li>
+        <li>
+                <label for="gender">Gender:</label><span id="d_gender"></span>
+        </li>
+        <li>
+            <label for="department">Department:</label><span id="d_department"></span>
+            </li>
+            <li>
+                <label for="basicsal">BasicSalary:</label><span id="d_basicsalary"></span>
+            </li>
+            <li>
+                <label for="pf">PF:</label><span id="d_pf"></span>
+            </li>
+            <li>
+                <label for="hra">Hra:</label><span id="d_hra"></span>
+            </li>
+            <li>
+                <label for="totsalary">Totalsalary:</label><span id="d_totsalary"></span>
+            </li>
+            <li>
+                <label for="tax">Tax:</label><span id="d_tax"></span>
+            </li>
+            <li>
+                <label for="taxreduction">Final Salary:</label><span id="d_taxreduction"></span>
+            </li>
+           
+        </ul>
+    </body>
+</html>

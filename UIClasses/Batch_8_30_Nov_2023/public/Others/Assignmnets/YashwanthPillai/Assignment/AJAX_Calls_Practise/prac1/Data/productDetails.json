@@ -1,0 +1,36 @@
+{
+  "details": [
+    {
+      "name": "Asus VivoBook 16 Laptop",
+      "manu": "Asus",
+      "actualPrice": 50000,
+      "discountPercent": 12,
+      "rating": "4.5/5",
+      "image": "https://d2xamzlzrdbdbn.cloudfront.net/products/313fcf41-a3a7-4c2b-a86f-5c52d5b7dde224180647.jpg"
+    },
+    {
+      "name": "HP Pavilion Laptop",
+      "manu": "HP",
+      "actualPrice": 72000,
+      "discountPercent": 10,
+      "rating": "4.3/5",
+      "image": "https://5.imimg.com/data5/MJ/FD/KN/SELLER-34843688/hp-pavallion-laptop.jpg"
+    },
+    {
+      "name": "Lenovo Yoga Laptop",
+      "manu": "Lenovo",
+      "actualPrice": 80000,
+      "discountPercent": 13,
+      "rating": "3.8/5",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdTjSuisNt1Q7laquPf2VfykqyIeZmNEJYvA&usqp=CAU"
+    },
+    {
+      "name": "Dell Inspiron Laptop",
+      "manu": "Dell",
+      "actualPrice": 80000,
+      "discountPercent": 15,
+      "rating": "4/5",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHdcTkt7IwDi-5XDIw_epKlqVvVYcOUnLcxpORxPnOOUJtmvytInbg2DzD98b3GFPx_mU&usqp=CAU"
+    }
+  ]
+}

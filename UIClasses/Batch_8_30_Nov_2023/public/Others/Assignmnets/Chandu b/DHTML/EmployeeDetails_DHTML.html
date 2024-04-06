@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Form</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <h3>Employee Form</h3>
+        <ul>
+            <li class="head">
+                Employee Details
+            </li>
+            <li><label for="fname">FirstName:</label>
+                <input type="text" name="fname" id="fname">
+            </li>
+            <li>
+                <label for="sname">SecondName:</label>
+                <input type="text" name="sname" id="sname">
+            </li>
+            <li>
+                <label for="age">Age:</label>
+                <input type="text" name="age" id="age">
+            </li>
+            <li>
+                <label for="gender">Gender:</label>
+                Male<input type="radio" name="gender" value="Male">
+                Female<input type="radio" name="gender" value="Female">
+            </li>
+            <li>
+                <label for="department">Department:</label>
+                <select name="department" id="empdepartment">
+                    <option value="It">It</option>
+                    <option value="developer">Devloper</option>
+                    <option value="software">Software</option>
+                    <option value="Designer">Designer</option>
+                    <option value="testing">Testing</option>
+                </select>
+            </li>
+            <li>
+                <label for="basicsalary">BasicSalary</label>
+                <input type="text" name="basicsalary" id="basicsalary">
+            </li>
+            <li>
+                <label for="pf">PF:</label>
+                <input type="text" name="pf" id="pf">
+            </li>
+            <li>
+                <label for="hra">Hra:</label>
+                <input type="text" name="hra" id="hra">
+            </li>
+            <li class="output">
+                Employee total salary is  <span></span>
+            </li>
+            <li>
+                <input type="button" value="GetSalary" id="button" onclick="empdetails()">
+            </li>
+        </ul>
+        <script src="app.js"></script>
+    </body>
+</html>

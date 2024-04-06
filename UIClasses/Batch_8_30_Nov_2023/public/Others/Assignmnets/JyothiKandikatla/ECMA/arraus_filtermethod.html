@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter Method</title>
+</head>
+<body>
+    <script>
+    var string = ['Jyothi','Welcome','Welcome Jyothi','How r u'];
+    var s = "W";
+    var p = '';
+    var temp = string.filter((value) => {
+    if(value.substring(0,s.length) == s){
+        console.log(value)
+        p += value +'<br>';
+        document.querySelector('body').innerHTML = p ;
+     }
+   });
+     </script>
+</body>
+</html>

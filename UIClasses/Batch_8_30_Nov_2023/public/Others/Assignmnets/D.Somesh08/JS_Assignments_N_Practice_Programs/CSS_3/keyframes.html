@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes demo</title>
+    <style>
+
+        @keyframes myKeyFrame {
+            1%{
+                background-image: linear-gradient(red, blue, gold);
+                left: 10%;
+            }
+            10%{
+               border-radius: 50%;
+               background-image: radial-gradient(maroon, gray);
+               left: 20%;
+            }
+
+            35%{
+                border-radius: 90px 0px;
+                background-image: conic-gradient(green, blue, gold);
+                top: 45%
+            }
+            
+            50%{
+                border-radius: 0px 90px;
+                top : 2%;
+                left: 60%;
+
+            }
+        }
+        .container{
+            border: 2px solid;
+            width: 200px;
+            height: 200px;
+            background-color: cyan;
+            
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: myKeyFrame 10s infinite;
+
+            position: absolute;
+            /* left: 60%; */
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+    </div>
+    
+</body>
+</html>

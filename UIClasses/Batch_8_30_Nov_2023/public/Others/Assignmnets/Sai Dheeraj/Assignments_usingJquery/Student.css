@@ -1,0 +1,34 @@
+ul {
+    width: 450px;
+    border: 5px solid;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgb(222, 138, 36);
+    border-radius: 10px;
+}
+li {
+    list-style: none;
+    border: 3px solid #231818;
+    margin: 5px;
+    padding: 5px;
+    background-color: #1ac851;
+    border-radius: 10px;
+}
+
+.Studentmarks > input {
+    width: 50px;
+}
+
+#heading {
+    text-align: center;
+    color: rgb(30, 18, 117);
+    font-size: 30px;
+    font-weight: bold;
+}
+body{
+    background-color: rgb(222, 238, 130);
+}
+.StudentResult{
+    display: none;
+    border-radius: 10px;
+}

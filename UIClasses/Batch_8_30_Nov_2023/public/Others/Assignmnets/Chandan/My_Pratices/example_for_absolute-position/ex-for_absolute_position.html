@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        demonstrating absolute position
+
+    </title>
+    <style>
+        .block{
+            border: 1px solid;
+            height: 120px;
+            width: 120px;
+            text-align: center;
+        }
+        .block1{
+            background-color: aqua;
+        }
+        .block2{
+            background-color: green;
+            left: 330px;
+            top: 220px;
+            position: absolute;
+        }
+        .block3{
+            background-color: blueviolet;
+        }
+        .parent {
+                border: 1px solid;
+                margin: 50px;
+                padding: 100px;
+                height: 150px;
+                position: relative;
+        }       
+        .grandparent{
+            border: 1px solid violet;
+            padding: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="block block1" >block1</div>
+    <div class="grandParent">
+        <div class="parent">
+           <div class="block block2">block2</div>
+       </div>
+    </div>
+    <div class="block block3">
+        block3
+
+    </div>
+
+</body>
+</html>

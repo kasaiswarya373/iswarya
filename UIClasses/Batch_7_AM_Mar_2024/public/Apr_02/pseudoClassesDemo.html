@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Pseudo Classes
+        </title>
+        <style>
+           
+            .block {
+                cursor: progress;
+            }
+            .block {
+                border: 1px solid;
+                width: 150px;
+                height: 140px;
+                
+            }
+
+            .block:hover {
+                background-color: yellow;
+                text-align: center;
+                font-size: 20px;
+            }
+            a:visited {
+                color: green;
+
+            }
+            a {
+                text-decoration: none;
+                color: blue !important;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            p:empty {
+                border: 1px solid;
+                width: 150px;
+                height: 20px;
+            }
+            a:active {
+                font-weight: bold;
+                border: 1px solid;
+                background-color: aqua;
+            }
+            a:focus {
+                background-color: rebeccapurple;
+            }
+            li:first-child {
+                border: 1px solid;
+                background-color: red;
+            }
+            li:last-child {
+                border: 1px solid;
+                background-color: red;
+            }
+            li:nth-child(2) {
+                background-color: yellow;
+            }
+            li:nth-child(6) {
+                background-color: yellow;
+            }
+
+            li:nth-child(odd) {
+                background-color: yellow;
+            }
+            div:first-of-type {
+                background-color: rgb(40, 13, 104);
+            } 
+             span:first-of-type {
+                background-color: yellow;
+            }
+
+            .abc:first-of-type {
+                background-color: yellow;
+            }
+
+            li:only-child {
+                background-color: green;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="block">Content</div>
+        <a href="http://www.google.com">Google link</a>
+        <a href="http://www.Amazon.com">Amazon link</a>
+        <a href="http://www.flipkart.com">Flipkart link</a>
+        <a href="http://www.shopclues.com">Shopclues link</a>
+        <p>One</p>
+        <p>One</p>
+        <p>One</p>
+        <p>34</p>
+        <p>One</p>
+        <p></p>
+        <ul>
+            <li>Item 2</li>
+            <li>Item 1</li>
+            
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+        <p>
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </p>
+
+
+        <div>
+            <p>test</p>
+            <span class="abc">ITem 1</span>
+            <span class="abc">ITem 1</span>
+            <span class="abc">ITem 1</span>
+            <span class="abc">ITem 1</span>
+        </div>
+        <ol>
+            <li>Item 1</li>
+            
+        </ol>
+
+    </body>
+</html>

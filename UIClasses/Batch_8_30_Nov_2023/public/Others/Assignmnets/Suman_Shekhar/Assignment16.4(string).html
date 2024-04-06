@@ -1,0 +1,19 @@
+<!-- WAP to find the reverse of a string without predefined methods. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = prompt("enter string : ");
+            var revstr = "";
+            for(var i = str.length;i>=0;i--) {
+                revstr += str.charAt(i);
+            }
+            console.log("reverse of string is : " + revstr);
+    </script>
+</body>
+</html>

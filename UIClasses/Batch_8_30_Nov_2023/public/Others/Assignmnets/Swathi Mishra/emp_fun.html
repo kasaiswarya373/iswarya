@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title> Function examples </title>
+</head>
+<body>
+    <script>
+    var readData = () => {
+        var empName= prompt("enter EmpName");
+        var sal=parseInt(prompt("enter sal"));
+        var age=parseInt(prompt("enter age"));
+        //displayData(empName,age,sal);
+        var q = readPF(sal);
+        var r=readHRA(sal);
+        var tax=totalTax(sal,q,r);
+        displayData(empName,age,sal,q,r,tax);
+        
+
+    }
+    var readPF = (sal) => {
+        var pf = sal*10/100;
+        return pf;
+
+    }
+
+    var readHRA = (sal) => {
+        var hra = sal*20/100;
+        return hra;
+    }
+
+    var totalTax = (sal,r,q) => {
+    var basicSal=r+q+sal;
+        if(sal>500000)
+           tax = 15;
+        else
+            tax=5
+        return tax;
+    }
+
+    
+
+    var displayData = (x,y,z,q,r,tax) => {
+        console.log(x);
+        console.log(y);
+        console.log(z);
+        console.log(q);
+        console.log(r);
+        console.log(tax);
+    }
+    
+
+    readData();
+
+    
+    </script>
+</body>
+</html>
+
+

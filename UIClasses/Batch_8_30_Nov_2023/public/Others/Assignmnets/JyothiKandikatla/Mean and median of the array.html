@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mean and median</title>
+</head>
+<body>
+    <script>
+        var mean = (n, p) => {//called function,n,p are formal params
+            var sum = 0 ,mean ;
+            for(var i = 0; i < p.length; i++){
+                sum += p[i] ;
+                mean = sum / p.length;
+            }
+            console.log(`The mean value of an array ${mean}`);
+        }
+        var median = (n, p) => {//called function , n, p are formal params
+            /**n = 5
+             * n+1/2=>5+1/2=>
+             * 6/2=>3
+             **/var median;
+                if(n % 2 != 0){
+                 var  i = ((n + 1) / 2 ) - 1;//th term
+                   median = p[i]; 
+                console.log('The median value of an array '+median);
+                }
+                else{
+                    var i = parseInt((n + 1) / 2);
+                    var j = parseInt(((n + 1) / 2 )) - 1;
+                    median = (p[i]+ p[j]) / 2;//th term
+                   console.log('The median value of an array '+median);
+                }
+            }
+           var array = () =>{
+                var n = parseInt(prompt('Enter length of the array'));
+                var p = [];
+              /**
+               * read the values from prompt
+               **/
+               for(var j = 0; j < n; j++){
+                    p[j] = parseInt(prompt(`Enter position  ${j+1} value`))
+                }
+                console.log('The given array'+p);
+                 /**
+               * Sorting array to finding the maedian value
+               **/
+                for(var i = 0; i < n; i++){
+                    for(var j = i + 1; j < n; j++){
+                        if(p[i] > p[j]){
+                            var temp = p[i];
+                            p[i] = p[j];
+                            p[j] = temp; 
+                        }
+                    }
+                }
+                console.log(' after sorting array'+p);//after sorting p array
+                console.log(z);
+                mean(n, p);//calling function,p is actual parmas
+                median(n, p);
+
+            }
+            array();
+    </script>
+</body>
+</html>

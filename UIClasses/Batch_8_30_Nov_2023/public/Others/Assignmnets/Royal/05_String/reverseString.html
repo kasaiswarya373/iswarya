@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>
+</head>
+<body>
+    <head>WAP to find Reverse of the String without using predefined  method</head>
+    <script>
+        var str = 'Hello My Bro';
+        var rev = "";
+
+        // var newStr = str.split("").reverse().join("");           //by using predifned method
+        // console.log(newStr);
+
+        for(var i = str.length-1; i >= 0; i--){
+            rev += str[i];
+        }
+        console.log('Given String is : '+str)
+        console.log('Reverse String is : '+rev);
+    </script>
+    
+</body>
+</html>

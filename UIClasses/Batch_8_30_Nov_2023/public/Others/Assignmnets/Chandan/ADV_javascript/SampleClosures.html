@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test" > click me</div>
+    <script>
+
+
+
+     (() => {
+        class ABC {
+
+        }
+        var data = {};
+        function testing() {
+
+        }
+        console.log("closure got invoked");
+        var sample = () => {
+            var a = 90;
+            console.log("value of a is " + a);
+        }
+        sample();
+
+        document.querySelector("#test").addEventListener("click", () => {
+                    sample();
+                })
+     })();
+    </script>
+</body>
+</html>

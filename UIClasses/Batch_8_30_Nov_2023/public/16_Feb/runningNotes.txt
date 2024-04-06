@@ -1,0 +1,47 @@
+AJAX
+
+    JSON
+        [
+            {
+                name: 'RAj',
+                age: 20,
+                gender: 'male,
+                id: 's_01'
+            },
+            {
+                name: 'Teena',
+                age: 10,
+                gender: 'Female',
+                id: 's_02'
+            }
+        ]
+    
+    XML
+        
+        <?xml version="1.0" encoding="UTF-8"?>
+        <studentDetails>
+            <details id="s_01">
+                <name>Raj</name>
+                <age>20</age>
+                <gender>Male</gender>
+            </details>
+            <details id="s_02">
+                <name>Teena</name>
+                <age>10</age>
+                <gender>Female</gender>
+            </details>
+        </studentDetails>
+
+
+
+    HTML    
+        <div></div>
+        span
+        HTML
+        body 
+-------------
+
+GET
+    axios.get('url').then()
+
+    axios.post('url, {data send from client to server}).then(())

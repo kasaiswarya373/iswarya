@@ -1,0 +1,44 @@
+{
+    "pDetails" :[
+    {
+        "Name":"laptop",
+        "actualPrice":250000,
+        "DiscountPercent":15,
+        "company":"Lenovo",
+        "rating":4.2,
+        "imgurl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJNYNlHTt5qDxbNrBPlifMGNF0ZL5lVxBpA&usqp=CAU"
+    
+    
+    },
+    {
+        "Name":"laptop",
+        "actualPrice":250000,
+        "DiscountPercent":15,
+        "company":"Lenovo",
+        "rating":4.2,
+        "imgurl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJNYNlHTt5qDxbNrBPlifMGNF0ZL5lVxBpA&usqp=CAU"
+    
+    
+    },
+    {
+        "Name":"laptop",
+        "actualPrice":250000,
+        "DiscountPercent":15,
+        "company":"Lenovo",
+        "rating":4.2,
+        "imgurl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJNYNlHTt5qDxbNrBPlifMGNF0ZL5lVxBpA&usqp=CAU"
+    
+    
+    },
+    {
+        "Name":"laptop",
+        "actualPrice":250000,
+        "DiscountPercent":15,
+        "company":"Lenovo",
+        "rating":4.2,
+        "imgurl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJNYNlHTt5qDxbNrBPlifMGNF0ZL5lVxBpA&usqp=CAU"
+    
+    
+    }
+]
+}

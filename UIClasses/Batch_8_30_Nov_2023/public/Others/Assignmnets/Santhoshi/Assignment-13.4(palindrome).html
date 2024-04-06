@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          //write a programme to list out all the palindrome numbers between 1000 to 22?
+           
+          /*for( var i = 1000; i >= 22; i--){
+            var reverse = 0;
+            var num = i;
+            while( num > 0){
+                var rem = i % 10;
+                reverse = (reverse * 10) + rem;
+               
+                num = num / 10;
+                num = parseInt(num);
+            }
+            if(reverse == i){
+                console.log(i);
+                }
+            } */
+
+            // write a programme to list out all the palindrom numbers between 100 to11 ?
+
+            for( var a = 100; a >= 11; a--){
+                var rem;
+                var num = a;
+                var reverse = 0;
+                while( num > 0){
+                    rem = num % 10;
+                    reverse = ( reverse * 10) + rem ;
+                    num = num / 10;
+                    num = parseInt(num);
+
+                    if( reverse == a){
+                         console.log("palindrome numbers between 100 to 11 are:" + a);
+                    }
+                }
+            }
+
+            // write palindrom numbers between 200 to 500 ? 
+            console.log("These are the palindrom numbers between 200 to 500")
+            for( var p = 200; p <= 500; p++){
+                var rem;
+                var rev = 0;
+                var number = p;
+                while( number > 0){
+                    rem = number % 10;
+                    rev = (rev * 10) + rem;
+                    number = number / 10;
+                    number = parseInt(number);
+                }
+                if( rev == p){
+                    console.log(p)
+                }
+            }
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment9</title>
+</head>
+<body>
+    <h3>....EmployeeDetails.......</h3>
+    <script>
+        var empName = prompt("Enter Employee Name:  ");
+        var empAge = prompt("Enter your Age:   ");
+        var empGender = prompt("Enter your Gender:  ");
+        var empDepartment = prompt("Enter your Depatment: ");
+
+        var BasicSalary = prompt("Enter your Basic Salary:  ");
+        BasicSalary=parseInt(BasicSalary);
+
+        var pf = prompt("PF Percentage ");
+        pf = parseFloat(pf);
+        pf = (pf * BasicSalary)/100;
+
+        var hra = prompt("hra Percentage ");
+        hra = parseFloat(hra);
+        hra = (hra * BasicSalary)/100;
+
+        var totalSalary = (pf + hra + BasicSalary);
+        totalsalary = parseFloat(totalSalary);
+
+        console.log("....Employee Details.....");
+        console.log("Employee Name"+empName);
+        console.log("Employee Age"+empAge);
+        console.log("Employee Gender"+empGender);
+        console.log("Employee Department"+empDepartment);
+        console.log("Employee PF"+pf);
+        console.log("Employee hra"+hra);
+        console.log("Employee total salary"+totalSalary);
+
+        console.log(".....END.....")
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataValidation for DHTML Sum Of Two Nums</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="app.js"></script>
+
+</head>
+<body>
+    <h2>SUM OF TWO NUMS</h2>
+    <div class="container">
+        <div class="sum-container">
+            <li class="head1">SUM OF TWO NUMS</li>
+            <li>
+                <label for="fval">NUM1 : </label>
+                <input type="text" name="fval" id="Fval" onkeypress="return validateData(event)">
+                <div class="error" id="num1">num1 is mandatory</div>
+            </li>
+            <li>
+                <label for="sval">NUM2 : </label>
+                <input type="text" name="sval" id="Sval" onkeypress="return validateData(event)" >
+                <div class="error" id="num2">num2 is mandatory</div>
+
+            </li>
+            <li class="summ">
+                SUM : <span id ="result"></span>
+                
+            </li>
+            <li class="result-block">
+                  <input type="button" value="SUM" onclick="getSum()">
+            </li>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

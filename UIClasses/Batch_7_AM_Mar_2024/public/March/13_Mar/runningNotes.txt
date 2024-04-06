@@ -1,0 +1,29 @@
+
+predefined tag -> p tag 
+    <p>
+    </p> -> used to render multi line of text content 
+
+
+Predefined heading tags 
+
+    h1
+    h2 
+    .. 
+    h6
+----------------------
+
+HTML Attributes
+
+    
+
+List of predefined HTML Attributes:
+
+    id - Used to add unique identity for any html tag 
+    name - To add a name to a tag 
+    style - To inject one or more set of inline css to any html element 
+    src - to specify the path for img tag 
+    href - > to specify the link path for external page for a tag 
+    alt - to specify the alternative text for img tag 
+    class - Used to inject one or more css classes to the tags 
+    etc. 
+

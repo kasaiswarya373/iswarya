@@ -1,0 +1,36 @@
+label{
+    font-size: large;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    color: yellow;
+    font-size: x-large;
+    font-family:'Courier New', Courier, monospace
+}
+input{
+    background: transparent;
+    border: 2px transparent;
+    border-bottom:3px solid mintcream ;
+    color: aliceblue;
+    outline: none;
+}
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: plum;
+    color: darkgreen;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.register{
+    width: 400px;
+    height: 370px;
+    border: 1px solid greenyellow;
+    border-radius: 20px;
+    position: absolute;
+    left: 500px;
+    top: 150px;
+}

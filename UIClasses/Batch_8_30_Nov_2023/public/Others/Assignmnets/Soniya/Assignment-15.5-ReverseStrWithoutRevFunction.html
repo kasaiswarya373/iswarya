@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse a String Without Reverse Function</title>
+</head>
+<body>
+    Program to reverse a string without reverse Function
+    <script>
+        var readingString = () =>
+        {
+            var string = prompt(`Enter string`);
+            return string;
+        }
+
+        var reversingString = (str) =>
+        {
+            var revString = '';
+            for(var i = str.length-1;i >= 0;i--)
+            {
+                revString += str[i];
+            }
+            return revString;
+        }
+
+        var printReversedString = () =>
+        {
+        var str = readingString();
+        var reversedString = reversingString(str);
+        console.log(`String Before Reversed : "${str}"`);
+        console.log(`String After Reversed : "${reversedString}"`);
+        }
+
+        printReversedString();
+    </script>
+</body>
+</html>

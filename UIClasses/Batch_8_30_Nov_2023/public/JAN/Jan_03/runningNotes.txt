@@ -1,0 +1,60 @@
+Arrays:
+    Data Structures:
+        Arrays  (Stack, queue)
+        Json 
+        Set 
+        Map 
+
+        var a = 10;
+        a = 90;
+        a = 100;
+
+        ------------------
+
+        var m1 = 90;
+        var m2 = 99
+        va m3 = 98
+        var m4 = 89
+
+        var marks = ... 
+
+        -----------------------
+
+        C lng:
+        int a[5];
+        a = [34, 55, 66, 77, 'abc']
+
+        float b[1000];
+
+        char c[10]
+        ---
+
+        var a = 90; 
+        var a = [30, 34, 56, 77,7,7,7,7,7,7,7,7,7,7,7];
+
+
+        var a = [];
+
+        var studentDetails = ['raj', 20, 'male', true, 45.6];
+
+        ------------------
+
+        var a = 90;
+        var b = 20;
+
+
+        var temp;
+        temp = a;
+        a = b;
+        b = temp;
+
+
+a = 10;
+b = 3
+ 
+ 
+
+
+a = 13
+b = 10
+a = 3

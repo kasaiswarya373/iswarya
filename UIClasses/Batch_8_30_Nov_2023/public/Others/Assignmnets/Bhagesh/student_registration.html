@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            height:25px;
+            border: 1px solid black;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .main{
+            height: 800px;
+            border:1px solid black;
+            margin-top: 10px;
+        
+        }
+        .personal,.education,.about{
+            height: 200px;
+            border: 1px solid black;
+            margin: 15px;
+
+        }
+        .box,.box2,.box3{
+            height: 20px;
+            left: 20px;
+            width: 100px;
+            border: 1px solid black;
+            background-color: white;
+            position: relative;
+            top: -10px;
+            font-size: 12px;
+            text-align: center;
+        }
+        footer{
+            border: 1px solid black;
+            height: 20px;
+            text-align: center;
+            margin: 10px;
+            position: relative;
+            top: 110px;
+            font-weight: bold;
+        }
+        .personal input{
+            margin: 0px 80px;
+            position: relative;
+            left: 20px;
+        }
+        label{
+            position: relative;
+            left: 4px;
+        }
+        textarea{
+            position: relative;
+            left: 20px;
+        }
+        select{
+            position: relative;
+            left: 0px;
+        }
+        .submit{
+            left: 700px;
+            position: relative;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>Student Registration</header>
+    <div class="main">
+        <div class="personal">
+            <div class="box">Student Registration</div>
+            <label for="username">name</label>  
+            <input type="text" name="username"> 
+
+            <label for="">address</label>
+            <textarea name="" id="" cols="" rows=""></textarea><br>
+            <br>
+
+            <label for="username">first name</label>  
+            <input type="text" name="username">
+
+            <label for="country">country</label>  
+            <select name="" id="">
+                <option value="">india</option>
+                <option value="">china</option>
+                <option value="">amerik</option>
+                <option value="">japan</option>
+                <option value="">germany</option>
+            </select>         
+           <br><br>
+            <label for="username">age</label>  
+            <input type="number" name="username">         
+        </div>
+        <div class="education">
+            <div class="box2">Education details</div>
+            <label for="">Qualification:</label>
+            <select name="" id="">
+                <option value="">BA</option>
+                <option value="">Bsc</option>
+                <option value="">Bcom</option>
+                <option value="">puc</option>
+            </select>
+            <br><br>
+            <label for="">language:</label>
+            <input type="checkbox">English
+            <input type="checkbox">Hindi
+            <input type="checkbox">Telugu
+            <input type="checkbox">Urdu
+            <br><br>
+            <label for="">Course opted</label>
+            <input type="radio" name="education">MBA
+            <input type="radio" name="education">MCA
+            <input type="radio" name="education">BTECH
+            <input type="radio" name="education">Msc
+        </div>
+        <div class="about">
+            <div class="box3">About yourself:</div>
+            <label for="">few words about your career</label>
+            <textarea name="" id="" cols="60" rows="9"></textarea>
+        </div>
+        <div class="submit">
+        <input type="button" value="Registration details">
+        </div>
+        <footer>&copy; copy right 2023</footer>
+    </div>
+</body>
+</html>

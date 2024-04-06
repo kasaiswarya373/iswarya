@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+       var n = prompt("enter the value");
+       var n = parseInt(n);
+       var count =0;
+       for(var i =0;i<n;i++){
+        var rem=n%i;
+        if(rem==0){
+            count++;
+            break;
+
+        }
+       }
+       console.log(count);
+       if(rem==0){
+        console.log("its a prime")
+          }else{
+            console.log("its not a prime")
+          }
+
+    </script>
+    
+</body>
+</html>

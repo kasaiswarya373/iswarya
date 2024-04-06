@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data = [34, 5 , 23 , 67, 8, 9];
+        console.log(data);
+       /* for (var i = 0; i < data.length; i++) {
+            for (var j = i + 1; j < data.length; j++) {
+                if (data[i] < data[j]) {
+                    temp = data[i];
+                    data[i] = data[j];
+                    data[j] = temp
+                }
+            }
+        }
+
+        console.log(data); */
+
+        data = data.sort((a, b) => {
+
+            console.log(a)
+            console.log(b)
+             if ( a > b) {
+                 return true;
+             } else {
+                return -1;
+             }
+            
+        });
+        console.log(data)
+    </script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignemnt 6 Student Registration Page</title>
+    </head>
+
+    <style>
+
+        .header{
+            border:3px solid black;
+            text-align: center;
+            font-size: 30px;
+            padding: 5px;
+        }
+
+        .footer{
+            border:3px solid black;
+            text-align: center;
+            font-size: 25px;
+            padding: 5px;
+        }
+
+        li{
+            list-style: none;
+            font-size: 27px;
+            padding: 5px;
+        }
+
+        .mainContainer{
+            border:3px solid black;
+            margin: 5px 0px;
+        }
+        
+
+        .container1,
+        .container2,
+        .container3,
+        .container4{
+            border: 1px solid  black;
+            margin: 35px 10px;
+            padding:10px;
+            position: relative;
+        }
+        .container1{
+            height: 165px;
+        }
+        .personalDetails,
+        .educationDetails,
+        .courseDetails,
+        .aboutYourself{
+            font-size: 27px;
+            border: 1px solid black;
+            width: 200px;
+            position: relative;
+            top: -25px;
+            left: 70px;
+            text-decoration: underline;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .container1Left{
+            position: relative;
+            top: -25px;
+            left: -35px;
+        }
+        .container1Right{
+            position: relative;
+            left: 750px;
+            top: -160px;
+        }
+
+        .underLine{
+            text-decoration: underline;
+        }
+        .textbox{
+            font-size: 20px;
+        }
+        .gender{
+            width: 20px;
+            height: 20px;
+        }
+      
+        .classOption{
+            width: 80px;
+            height: 30px;
+            font-size: 20px;
+        }
+        .ageInput{
+            font-size: 20px;
+            width: 50px;
+            height: 20px;    
+        }
+        .countryOption{
+            width: 130px;
+            height: 30px;
+            font-size: 20px;
+        }
+        .checkbox{
+            width: 30px;
+            height: 20px;
+        }
+        .courseOption{
+            width: 200px;
+            height: 30px;
+            font-size: 20px;
+        }
+        .languageOption{
+            width: 120px;
+            height: 30px;
+            font-size: 20px;
+        }
+        .about{
+            font-size: 27px;
+        }
+        .aboutBox{
+            position: relative;
+            left: 400px;
+            top: -30px;
+        }
+    </style>
+
+    <body>
+
+        <div class="header">
+            Student Registraion Page
+        </div> 
+
+        <div class="mainContainer">
+            
+            <div class="container1">
+
+                <div class="personalDetails">
+                    Personal Details
+                </div>
+                    
+                <div class="container1Left">
+                    <ul>
+                        <li>
+                             <label class="underLine">Name:</label>
+                              <input type="text" maxlength="25" class="textbox">
+                        </li>
+                        <li>
+                            <label class="underLine">Gender:</label>
+                            <input type="radio" name="gender" class="gender">Male
+                            <input type="radio" name="gender" class="gender">Female
+                        </li>
+                        <li>
+                            <label class="underLine">Class:</label>
+                            <select value="" class="classOption">
+                                <option name="" id="">1st</option>
+                                <option name="" id="">2nd</option>
+                                <option name="" id="">3rd</option>
+                                <option name="" id="">4th</option>
+                                <option name="" id="">5th</option>
+                                <option name="" id="">6th</option>
+                                <option name="" id="">7th</option>
+                                <option name="" id="">8th</option>
+                                <option name="" id="">9th</option>
+                                <option name="" id="">10th</option>
+                            </select>
+                        </li>
+                    <ul>
+                        
+                </div>
+                
+                <div class="container1Right">
+                    <ul>
+                        <li>
+                            <label for="" class="underLine">Age:</label>
+                            <input type="number" maxlength="2" id="" class="ageInput">
+                        </li>
+                        <li>
+                            <label for="" class="underLine">Country Name:</label>
+                            <select name="" id="" class="countryOption">
+                                <option value="">India</option>
+                                <option value="">Pakistan</option>
+                                <option value="">Dubai</option>
+                                <option value="">USA</option>
+                                <option value="">China</option>
+                                <option value="">Africa</option>
+                                <option value="">Singapore</option>
+                                <option value="">Qatar</option>
+                                <option value="">Philippines</option>
+                                <option value="">South Korea</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <div class="container2">
+
+                <div class="educationDetails">
+                    Education Details
+                </div>
+
+                <ul>
+                    <li>
+                        <label class="underLine">Languages Known:</label>
+                        <input type="checkbox"checked class="checkbox">English
+                        <input type="checkbox" class="checkbox">Hindi
+                        <input type="checkbox" class="checkbox">Arabic
+                    </li>
+                    <li>
+                        <label class="underLine">Education Qualification:</label>
+                        <input type="checkbox" checked disabled class="checkbox">Graduation
+                        <input type="checkbox" class="checkbox">BTech/BE
+                        <input type="checkbox" class="checkbox">MTech/ME
+                        <input type="checkbox" class="checkbox">BCA
+                        <input type="checkbox" class="checkbox">MCA
+                        <input type="checkbox" class="checkbox">BSC
+                    </li>
+                </ul>
+    
+            </div>
+
+            <div class="container3">
+                <div class="courseDetails">
+                    Course Details
+                </div>
+
+                <ul >
+                    <li>
+                        <label for="" class="underLine">Course Option for:</label>
+                        <select value="" class="courseOption">
+                            <option name="" id="">UI Full Stack</option>
+                            <option name="" id="">Java Full Stack</option>
+                            <option name="" id="">AWS</option>
+                            <option name="" id="">DevOps</option>
+                            <option name="" id="">Pyhton Full Stack</option>
+                            <option name="" id="">Data Science</option>
+                            <option name="" id="">.Net Full Stack</option>
+                            <option name="" id="">ReactJS</option>
+                            <option name="" id="">NodeJS</option>
+                            <option name="" id="">PowerBI</option>
+                        </select>
+                    </li>
+    
+                    <li>
+                        <label for="" class="underLine">Language:</label>
+                        <select name="" id="" class="languageOption">
+                            <option value="">English</option>
+                            <option value="">Hindi</option>
+                            <option value="">Telugu</option>
+                        </select>
+                    </li>        
+                </ul>
+    
+            </div>
+    
+            <div class="container4">
+                <div class="aboutYourself">
+                    About Yourself
+                </div>
+
+                <ul >
+                    <label for="" class="about">Few Words About Yourself:</label> <br>
+                    <textarea name="" id="" cols="100" rows="15" class="aboutBox"></textarea>
+                </ul>
+            
+            </div>
+            
+        </div>
+
+        <div class="footer">
+            @copyright 2023
+        </div>
+
+    </body>
+</html>

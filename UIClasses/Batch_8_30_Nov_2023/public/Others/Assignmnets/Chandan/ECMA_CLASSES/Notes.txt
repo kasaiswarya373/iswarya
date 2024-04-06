@@ -1,0 +1,6 @@
+scopes of variables
+   i. global scope
+   ii. module scope
+   iii. local scope
+
+   callstack ---

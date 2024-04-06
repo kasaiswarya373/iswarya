@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        this operator 
+        <script>
+            var empname = {
+                name: 'Krish',
+                displayempinfo() {
+                    console.log("naem is " + this.name)
+                }
+            }
+
+            var sDetails = {
+                instituteName: 'NIT',
+                getTotalAndAvg() {
+                    this.total = 0;
+                    for (var i = 0 ; i < this.marks.length; i++) {
+                        sDetails.total += this.marks[i];
+                    }
+                    this.avg = this.total / this.marks.length;
+                    console.log(this);
+                },
+                displayDetails() {
+                    sDetails.readStudentDetails()
+                    console.log("name is " + this.name);
+                    console.log("Toptal is " + sDetails.total)
+                    console.log("Avg is " + this.avg);
+
+                    console.log(sDetails)
+                },
+                readStudentDetails() {
+
+                    this.name = prompt("enter value fo name");
+                    sDetails.age = prompt("enter value for age");
+                    this.marks = [];
+
+                    for (var i = 0 ; i < 5; i++) {
+                        this.marks[i] = prompt("enter value for " + (i + 1));
+                        this.marks[i] = parseInt(this.marks[i]);
+                    }
+                    sDetails.getTotalAndAvg();
+                }
+                
+            };
+           
+
+         
+            sDetails.displayDetails();
+
+        </script>
+    </body>
+</html>

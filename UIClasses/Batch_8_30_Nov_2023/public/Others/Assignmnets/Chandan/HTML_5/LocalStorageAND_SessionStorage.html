@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="App.js"></script>
+    <style>
+        .themeBlock {
+            text-align: right;
+            margin-right: 20px;
+        }
+        .WelcomeBlock {
+               /* display: none; */
+                position: absolute;
+                top: 50%;
+                left: 30%;
+                border: 2px solid greenyellow;
+                color: maroon;
+                padding: 40px;
+                text-align: center;
+                width: 300px;
+            }
+    </style>
+</head>
+<body>
+    <div class="themeBlock">
+        Choose Theme:
+        <input type="color" id="themeSelector" onchange="getSelectedTheme()">
+        <!-- <select name=""  >
+            <option>Red</option>
+            <option>Green</option>
+            <option>Yellow</option>
+            <option>Blue</option>
+        </select> -->
+    </div>
+    <div>
+        <input type="text" placeholder="Enter User Name" id="userName">
+        <button onclick="saveUserDetails()">
+            Save
+        </button>
+
+    </div>
+    <div class="WelcomeBlock">
+        Thanks for visiting our webpage - MR <span id="u_name"></span>
+    </div>
+        
+      
+    </div>
+</body>
+</html>

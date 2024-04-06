@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        
+        .box {
+            position: relative;
+            width: 1000px; 
+            height: 500px; 
+          
+        }
+        
+        img {
+            position: relative;
+            animation: movebox 9s infinite;
+            animation-duration: 15s;
+        }
+
+        @keyframes movebox {
+            0% {left: 0px; top: 0px;}
+            25% {left: 1000px; top: 0px;}
+            50% {left: 1000px; top: 500px;}
+            75% {left: 1000px; top: 500px;}
+            100% {left: 0px; top: 500px;}
+           
+        }
+    </style>
+</head>
+<body>
+    <h2>KeyFrames</h2>
+    <div class="box">
+        <img src="https://www.shutterstock.com/shutterstock/videos/1016450806/thumb/1.jpg?ip=x480" alt="">
+    </div>
+</body>
+</html>

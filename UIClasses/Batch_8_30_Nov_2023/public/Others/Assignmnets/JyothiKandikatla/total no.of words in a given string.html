@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>no.of words</title>
+</head>
+<body>
+    <script>
+         var text = "My name is jyothi kandikatla";
+         var count = 0;
+        for(var i = 0; i <= text.length; i++){
+            if(text.charAt(i) == ' '){
+                count++;
+            }
+        }
+        console.log(`the given string is "${text}"`);
+        console.log(`Total words in a given string is ${count + 1}`);
+    </script>
+</body>
+</html>

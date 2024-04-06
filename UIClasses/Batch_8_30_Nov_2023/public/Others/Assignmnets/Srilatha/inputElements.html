@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Input Elements Example</title>
+</head>
+<style>
+    h3 {
+        border: 1px solid;
+        width: 100%;
+        text-align: center;
+    }
+
+    ul {
+        margin: auto;
+        border: 1px solid;
+        width: 500px;
+        height: 400px;
+        background-color: antiquewhite;
+    }
+
+    li {
+        margin-top: 10px;
+        border: 2px solid;
+        width: 300px;
+        height: 50px;
+        text-align: center;
+        padding-top: 15px;
+        list-style: none;
+        background-color: aliceblue;
+    }
+</style>
+
+<body>
+    <h3>Student form Registration</h3>
+    <form action="http://test.com/data/info/userdetails" method="get">
+        <ul>
+            <li>
+                <label for="stdntname" >Student name</label>
+                <input type="text" name="stdntname">
+            </li>
+            <li>
+                <label for="stdntage">Age</label>
+                <input type="number" value="stdntage">
+            </li>
+            <li>
+                <label for="gender">Student Gender</label>
+                <input type="radio" name="gender" value="male"> male
+                <input type="radio" name="gender" value="female">female
+            </li>
+            <li>
+                <label for="paswrd">password</label>
+                <input type="text" name="paswrd" >
+            </li>
+
+            <li>
+                <input type="submit" value="save details">
+            </li>
+        </ul>
+    </form>
+   
+</body>
+
+</html>

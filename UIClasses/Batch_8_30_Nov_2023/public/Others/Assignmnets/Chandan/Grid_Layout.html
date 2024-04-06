@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maincontainer {
+            border: 1px solid orangered;
+            height: 600px;
+            display: grid;
+            grid-template-columns: 200px auto 300px auto;
+            grid-template-rows: 200px auto 300px;
+            /*column-gap: 30px;
+            row-gap: 30px;*/
+            gap: 15px 30px;
+           
+        }
+        .maincontainer div {
+            border: 1px solid;
+            margin: 5px;
+            /*height: 40px;*/
+            /*width: 120px;*/
+            
+        }
+        .Item2{
+            grid-column-start: 2;
+            grid-column-start: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+             grid-column: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div>1</div>
+        <div class="Item2">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+</html>

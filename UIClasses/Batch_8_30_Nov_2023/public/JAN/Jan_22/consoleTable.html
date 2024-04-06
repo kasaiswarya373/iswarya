@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var userDetails = [
+                {
+                    name: 'Teena',
+                    age: 20,
+                    gender:'female'
+
+                },
+                {
+                    name: 'Krish',
+                    age: 20,
+                    gender:'female'
+
+                },
+                {
+                    name: 'Prasad',
+                    age: 20,
+                    gender:'female'
+
+                }
+                
+            ]
+            var userInfo = {
+                name: 'Teena',
+                age: 22,
+                loc: 'Hyd',
+                pincode: 22222,
+                country: "india",
+                office: {
+                    designation: 'HR',
+                    sal: 10000
+                }
+            }
+
+            // console.log(userInfo);
+            // console.table(userInfo);
+            // console.table(userInfo, ['name', 'country']);
+            console.table(userDetails)
+            console.table(userDetails, ['name', 'age'])
+        </script>
+    </body>
+</html>

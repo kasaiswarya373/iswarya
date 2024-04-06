@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //WAP to find out lucky number for every number in the array
+
+        var n = parseInt(prompt("enter size of the array : "));
+            var arr = [n];
+            for(var i = 0 ; i < n ; i++){
+                arr[i] = parseInt(prompt("enter elements: "));
+            }
+            var findluckynumber = (num) => {
+                var sum = 0;
+            while(num!=0){
+                var rem = num % 10;
+                 sum = sum+rem;
+                num = num / 10;
+                num = parseInt(num);
+               if(num==0&&sum>=10){
+                    num = sum;
+                    sum = 0;
+               }
+            }
+                return sum;
+            }
+            for(var i = 0 ; i < n ; i++){
+                arr[i] = findluckynumber(arr[i]);
+            }
+            console.log("lucky numbers of every numbers are : " +arr);
+    </script>
+</body>
+</html>

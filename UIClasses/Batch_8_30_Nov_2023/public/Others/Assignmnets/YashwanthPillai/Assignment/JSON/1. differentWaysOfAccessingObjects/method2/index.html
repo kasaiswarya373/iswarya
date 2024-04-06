@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Ways Of Accessing Json</title>
+</head>
+<body>
+
+    <h2>Different Ways Of Accessing Json method2</h2>
+
+    <script>
+        
+let obj = {
+    Name : "Yashwanth Pillai",
+    Age : 22,
+    HeightInCms : 177,
+    BloodGroup : "B-ve",
+    weightInKgs : 125
+}
+
+console.log(obj.Name); // gives value of the keys
+console.log(obj.Age); // gives value of the keys
+console.log(obj.HeightInCms); // gives value of the keys
+console.log(obj.BloodGroup); // gives value of the keys
+console.log(obj.weightInKgs); // gives value of the keys
+
+// We can store the key in a variable and access the values
+var keyname = 'Name';
+
+console.log(obj.Name)
+console.log(obj[keyname])
+
+    </script>
+    
+</body>
+</html>

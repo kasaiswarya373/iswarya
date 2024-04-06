@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 1000px; 
+            height: 500px; 
+        }
+        .img {
+            position: relative;
+            animation: moveboy 10s infinite;
+        }
+        @keyframes moveboy {
+            0% {left: 0px; top: 0px;}
+            25% {left: 1000px; top: 0px;}
+            50% {left: 1000px; top: 500px;}
+            75% {left: 1000px; top: 500px;}
+            100% {left: 0px; top: 500px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img class="img" src="https://thumbs.dreamstime.com/b/young-boy-jumping-isolated-white-background-36653252.jpg" alt="">
+    </div>
+</body>
+</html>

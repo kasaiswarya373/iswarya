@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Index</title>
+            <link rel="stylesheet" href="Student.css">
+            <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+            <script src="Student.js"></script>
+        </head>
+        <body>
+            <ul>
+                <li id="heading">Student Progress Card</li>
+
+                <li>
+                    <input type="text" placeholder="Student Name" id="sname">
+                </li>
+                <li>
+                    <input type="text" placeholder=" Student Age" id="sage"> 
+                </li>
+                <li>
+                    <input type="radio" name="gender" value="male" checked>Male
+                    <input type="radio" name="gender" value="female">Female
+                </li>
+                <li>
+                    <label for="">Class:</label>
+                    <select name="" id="Sclass">
+                        <option value="1st Class"> I</option>
+                        <option value="2nd Class"> II</option>
+                        <option value="3rd Class" selected> III</option>
+                        <option value="4th Class"> IV</option>
+                        <option value="5th Class"> V</option>
+                        <option value="6th Class"> VI</option>
+                        <option value="7th Class"> VII</option>
+                        <option value="8th Class"> VIII</option>
+                    </select>
+                </li>
+                <li class="Studentmarks">
+                    <input type="text" id="m1" placeholder="Telugu">
+                    <input type="text" id="m2" placeholder="Hindi">
+                    <input type="text" id="m3" placeholder="English">
+                    <input type="text" id="m4" placeholder="Maths">
+                    <input type="text" id="m5" placeholder="Science">
+                </li>
+                <li>
+                    <input type="button" value="GetProgressCard" onclick="ReadStudentdetails()">
+                    <input type="button" value="reset" onclick="resetfields()">
+                </li>
+            </ul>
+            <ul class="StudentResult">
+                <li>
+                    Student Name : <span id="d_name"></span>
+                </li>
+                <li>
+                    Age : <span id="d_age"></span>
+                </li>
+                <li>
+                    Class : <span id="d_class"></span>
+                </li>
+                <li>
+                    Total : <span id="d_total"></span>
+                </li>
+                <li>
+                    Avg : <span id="d_avg"></span>
+                </li>
+                <li>
+                    Grade : <span id="d_grade"></span>
+                </li>
+            </ul>
+        </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maincontainer {
+            width: 400px;
+            height: 370px;
+            border: 1px solid;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding: 20px;
+            border: none;
+        }
+        .subcontainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            border-radius: 1rem;
+            border: none;
+            background-color: blue;
+            margin: 10px;
+            font-size: 45px;
+            color: white;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h3 {
+            text-align: center;
+            color: red;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        #reset {
+            text-align: center;
+            border: none;
+            width: 100px;
+            height: 50px;
+            background-color: green;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>TIC-TAC-TOE GAME</h3>
+    <div class="maincontainer">
+        <div class="subcontainer"></div>
+        <div class="button">
+            <input type="button" value="PLAY-AGAIN" id="reset" onclick="resetValues()">
+        </div>
+    </div>
+    <script>
+        var turn = true;
+        for (let i = 0; i < 9; i++) {
+            let button = document.createElement("button");
+            button.setAttribute("class", "box");
+            button.setAttribute("id", i);
+            button.onclick = () => {
+                showValues(i);
+            }
+            document.querySelector(".subcontainer").append(button);
+        }
+        let showValues = (id) => {
+            if (turn == true) {
+                document.getElementById(id).innerText = "X"
+                turn = false;
+            } else {
+                document.getElementById(id).innerText = "0"
+                turn = true;
+            }
+            let button = document.getElementById(id);
+            button.disabled = true;
+            checkWinner();
+        }
+        let checkWinner = () => {
+    // Rows
+    for (let i = 0; i < 3; i++) {
+        if (
+            (document.getElementById(i * 3).innerText !== "") &&
+            (document.getElementById(i * 3).innerText === document.getElementById(i * 3 + 1).innerText) &&
+            (document.getElementById(i * 3 + 1).innerText === document.getElementById(i * 3 + 2).innerText) &&
+            (document.getElementById(i * 3).innerText === document.getElementById(i * 3 + 2).innerText)
+        ) {
+            console.log("Winner");
+            displayWinner();
+            return;
+        }
+    }
+
+    // Columns
+    for (let i = 0; i < 3; i++) {
+        if (
+            (document.getElementById(i).innerText !== "") &&
+            (document.getElementById(i).innerText === document.getElementById(i + 3).innerText) &&
+            (document.getElementById(i + 3).innerText === document.getElementById(i + 6).innerText) &&
+            (document.getElementById(i).innerText === document.getElementById(i + 6).innerText)
+        ) {
+            console.log("Winner");
+            displayWinner();
+            return;
+        }
+    }
+
+    // Diagonals
+    if (
+        (document.getElementById(0).innerText !== "") &&
+        (document.getElementById(0).innerText === document.getElementById(4).innerText) &&
+        (document.getElementById(4).innerText === document.getElementById(8).innerText) &&
+        (document.getElementById(0).innerText === document.getElementById(8).innerText)
+    ) {
+        console.log("Winner");
+        displayWinner();
+        return;
+    }
+
+    if (
+        (document.getElementById(2).innerText !== "") &&
+        (document.getElementById(2).innerText === document.getElementById(4).innerText) &&
+        (document.getElementById(4).innerText === document.getElementById(6).innerText) &&
+        (document.getElementById(2).innerText === document.getElementById(6).innerText)
+    ) {
+        console.log("Winner");
+        displayWinner();
+        return;
+    }
+}
+let displayWinner = () => {
+    alert("Game is Finished");
+}
+    var resetValues = () => {
+        for(let i = 0 ; i < 9 ; i++){
+            document.getElementById(i).innerText = "";
+        }
+    }
+
+    </script>
+</body>
+</html>

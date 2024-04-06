@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Lucky Number In Given Array</title>
+</head>
+
+<body>
+    <script>
+
+        var readLuckyNumbers = () => {
+            var luckynums = [];
+            var number = prompt("Enter the total number values:");
+            number = parseInt(number);
+
+            for (var i = 0; i < number; i++) {
+                luckynums[i] = prompt(`Enter the ${i + 1} position`);
+                luckynums[i] = parseInt(luckynums[i]);
+                console.log(`The ${i + 1} value is : ${luckynums[i]}`);
+            }
+            console.log("The lucky numbers are:");
+            getLuckyNumbers(luckynums);
+        }
+
+        var getLuckyNumbers = (luckynums) => {
+            var remainder;
+            for (i = 0; i < luckynums.length; i++) {
+                var sum = 0;
+                while (luckynums[i] > 0) {
+                    remainder = luckynums[i] % 10;
+                    sum += remainder;
+                    luckynums[i] = luckynums[i] / 10;
+                    luckynums[i] = parseInt(luckynums[i]);
+                    if (luckynums[i] == 0 && sum >= 10) {
+                        luckynums[i] = sum;
+                        sum = 0;
+                    }
+                }
+                console.log(sum);
+            }
+        }
+        readLuckyNumbers();
+    </script>
+</body>
+
+</html>

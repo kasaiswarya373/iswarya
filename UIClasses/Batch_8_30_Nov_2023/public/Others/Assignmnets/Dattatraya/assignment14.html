@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var readEmployeeDetails = () => {
+        var empName = prompt("Enter name");
+        var empAge = prompt("Enter Age");
+        var empGender = prompt("Enter Gender");
+        var empBasicSalary = parseInt(prompt("Enter Employee basic salary"));
+
+        var empPF = getPF(empBasicSalary);
+        var empHRA = getHRA(empBasicSalary);
+        var empTax = getTotalTax(empBasicSalary, empPF, empHRA);
+        displayEmployeeDetails(empName, empPF, empHRA, empTax);
+      };
+      var getPF = (empBasicSalary) => {
+        var PF = (14 / 100) * empBasicSalary;
+        PF = parseFloat(empBasicSalary);
+        return PF;
+      };
+      var getHRA = (empBasicSalary) => {
+        var HRA = (25 / 100) * empBasicSalary;
+        return HRA;
+      };
+      var getTotalTax = (empBasicSalary, PF, HRA) => {
+        var TotalSalary = empBasicSalary + PF + HRA;
+        var empTax = (TotalSalary * 15) / 100;
+        return empTax;
+      };
+      var displayEmployeeDetails = (empName, empPF, empHRA, empTax) => {
+        console.log("EmpName : " + empName);
+        console.log("EmpPF : " + empPF);
+        console.log("EmpHRA : " + empHRA);
+        console.log("Emp Tax : " + empTax);
+      };
+      readEmployeeDetails();
+    </script>
+  </body>
+</html>

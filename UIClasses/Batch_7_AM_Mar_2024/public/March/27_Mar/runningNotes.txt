@@ -1,0 +1,47 @@
+table
+tbody 
+thead
+tfoot
+tr 
+td 
+th 
+
+basic structure of a table is 
+
+    tabel 
+        tr 
+            td
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>...</th>
+                <th>...</th>
+                <th>...</th>
+                ...
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                ....
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                ..
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                ..
+            </tr>
+        </tfoot>
+    </table>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=prompt("enter number");
+    
+        numLength=num.length;
+        sum=0;
+        var temp=num;
+        console.log("given number:"+num)
+        while(num>0){
+            var rem=num%10;
+            num=parseInt(num/10);
+            sum+=rem**numLength;
+            // sum=sum+rem*rem*rem;
+
+        }
+        if(sum==temp){
+            console.log(" given number is a armstrong number");
+        }
+        else{
+            console.log(" given number is not armstrong number");
+        }
+    </script>
+</body>
+</html>

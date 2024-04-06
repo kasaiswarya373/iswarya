@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //Demonstrating "THIS" Keyword.
+            var details = {
+                readdetails: () => {
+                    this.name = prompt("enter name : ");
+                    this.age = prompt("enter age : ");
+                    this.gender = prompt("enter gender : ");
+                    this.petname = prompt("enter petname : ");
+                },
+                displaydetails: () => {
+                    details.readdetails();
+                    console.log("name : " + this.name);
+                    console.log("age : " + this.age);
+                    console.log("gender : " + this.gender);
+                    console.log("petname : " + this.petname);
+                }
+            }
+            details.displaydetails();
+        </script>
+    </body>
+</html>

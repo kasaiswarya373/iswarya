@@ -1,0 +1,109 @@
+                                                                 *      Hello...Iam your Class Tracker :-)        *
+                                                                 *     I can help you to track daily topics       *
+                                                                 **************************************************
+
+Class 01 : (12-03-2024)
+-----------------------
+   Introduction class
+
+
+Class 02 : (13-03-2024)
+------------------------
+   Predefined Tags
+   Predefined Attributes
+
+
+Class 03 : (14-03-2024)
+------------------------
+   HTML Attributes
+   Diiferent Ways of Adding Colors using attribute
+
+
+Class 04 : (15-03-2024)
+------------------------
+   CSS Properties
+   CSS Classes
+
+
+Class 05 : (16-03-2024)
+------------------------
+   What is Repository?
+   Diifernt Types of Repositories
+
+
+Class 06 : (20-03-2024)
+------------------------
+   Debugging Tool
+   CSS Priority Order
+
+
+Class 07 : (21-03-2024)
+------------------------
+   BlockLevel & Inline Elements
+   Assignment_1
+
+
+Class 08 : (22-03-2024)
+------------------------
+   img And anchor tag
+
+
+Class 09 : (23-03-2024)
+------------------------
+   Inline & BlockLevel
+   Margin Property
+   Padding Property
+
+
+Class 10 : (25-03-2024)
+------------------------
+   CSS Box Model
+   CSS Float Property
+   Assignment_2
+
+
+Class 11 : (26-03-2024)
+------------------------
+   UL & OL Tags
+   Floating With Inline Elements
+
+
+Class 12 : (27-03-2024)
+------------------------
+   Table Tag
+   Table Using Div Tag
+   CSS Overflow Property
+   Assignment_3
+   Assignment_4
+
+
+Class 13 : (28-03-2024)
+------------------------
+   CSS Positions
+   Assignment_3 Solution
+
+
+Class 14 : (29-03-2024)
+------------------------
+   CSS Positions
+   Z - Index Value
+   Background image Property
+   Assignment_5
+
+
+Class 15 : (30-03-2024)
+------------------------
+   Deploying static content to webserver
+   Installation Of webserver
+
+
+Class 16 : (01-04-2024)
+------------------------
+   Image Spriting
+
+
+Class 17 : (02-04-2024)
+------------------------
+   CSS Display Properties
+   Pseudo Classes
+   Pseudo Elements

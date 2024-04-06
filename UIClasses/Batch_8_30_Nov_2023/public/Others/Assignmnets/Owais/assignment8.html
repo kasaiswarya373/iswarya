@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <title>Assignment-8</title>
+    </head>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+
+        h3 {
+            border: 2px solid;
+            text-align: center;
+            width: 90%;
+            margin: auto;
+            background-color: teal;
+        }
+
+        .ftr {
+            text-align: center;
+            border: 2px solid;
+            width: 90%;
+            margin: auto;
+            background-color: teal;
+        }
+
+        .container {
+            border: 2px solid;
+            width: 90%;
+            height: 900px;
+            margin: 20px auto;
+            background-color: palevioletred;
+        }
+
+        .subcontainer {
+            border: 1px solid;
+            margin: 10px;
+            height: 220px;
+            margin-top: 40px;
+            background-color: white;    
+        }
+
+        .tag {
+            border: 1px solid;
+            text-align: center;
+            text-decoration: underline;
+            width: 150px;
+            height: 30px;
+            padding: 15px;
+            position: absolute;
+        }
+
+         .t1 {
+            top: 65px;
+            left: 150px;
+            background-color: teal;
+         }
+
+         .t2 {
+            top: 328px;
+            left: 150px;
+            background-color: teal;
+         }
+         
+         .t3 {
+            bottom: 45px;
+            left: 150px;
+            background-color: teal;
+         }
+
+         li {
+            list-style: none;
+            margin-left: 10px;
+         }
+
+         .a {
+            position: absolute;
+            font-size: 18px;
+         }
+
+         .a1 {
+            top: 150px;
+         }
+
+         .right {
+            right: 155px;
+            top: 150px;
+         }
+
+         .a2 {
+            top: 400px;
+         }
+
+         .a3 {
+            bottom: -130px;
+         }
+
+         .aboutyou {
+            bottom: -50px;
+         }
+
+         .a4 {
+            float: right;
+            margin-right: 50px;
+            margin-top: 50px;
+         }
+       
+    </style>
+    <body>
+        <h3>Student Registeration Page</h3>
+        <div class="container">
+            <div class="subcontainer">
+                <div class="tag t1">Personal Details</div>
+                <div class="a a1">
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" value="Owais">
+                    </li> <br><br>
+                    <li>
+                        <label for="name">First Name:</label>
+                        <input type="text" name="First name">
+                    </li><br><br>
+                    <li>
+                        <label for="name">Age:</label>
+                        <input type="text" name="Age">
+                    </li>
+                </div>
+                <div class="a right">
+                    <li>
+                        <label for="address">Address:</label>
+                        <input type="text" name="address">
+                    </li><br><br>
+                    <li>
+                        <label for="country">country:</label>
+                        <select>
+                            <option selected>India</option>
+                            <option>China</option>
+                            <option>Pakistan</option>
+                            <option>Bangladesh</option>
+                            <option>Srilanka</option>
+                        </select>
+                    </li>
+                </div>
+            </div>
+    
+    
+            <div class="subcontainer">
+                <div class="tag t2">Education Details</div>
+                <div class="a a2">
+                    <li>
+                        <label for="qualification">Qualification:</label>
+                        <select>
+                            <option>PH.D</option>
+                            <option>Masters</option>
+                            <option>B.TECH</option>
+                            <option>Diploma</option>
+                        </select>
+                    </li><br><br>
+                    <li>
+                        <label for="">CourseOpted:</label>
+                        <input type="radio" name="Mechanical">Mechanical
+                        <input type="radio" name="Computer Science">Computer Science
+                        <input type="radio" name="Electrical">Electrical
+                        <input type="radio" name="IT">IT
+                    </li><br><br>
+                    <li>
+                        <label>Languages:</label>
+                        <input type="checkbox">English
+                        <input type="checkbox">Hindi
+                        <input type="checkbox">Urdu
+                        <input type="checkbox">Telugu
+                        <input type="checkbox">other
+                    </li>
+                </div>
+            </div>
+            <div class="subcontainer">
+                <div class="tag t3">About Yourself Details</div>
+                <div class="a a3">
+                    <li>
+                        <label>Tell About Yourself:</label>
+                        <textarea name="aboutyou" id="" cols="50" rows="10" maxlength="700"></textarea>
+                    </li>
+                </div>
+    
+            </div>
+            <div>
+                <input class="a4" type="submit" name="save" value="Register Details" checked>
+            </div>
+        </div>
+    
+    
+        <h3 class="ftr">@copyright 2023</h3>
+    
+    </body>
+</html>

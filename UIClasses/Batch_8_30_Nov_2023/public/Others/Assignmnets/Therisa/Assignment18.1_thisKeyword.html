@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // using this keyword....
+            var empdata = {
+                readEmpData: () => {
+                    this.ename = prompt("Enter Employee name : ");
+                    this.age = prompt("Enter Employee age : ");
+                    this.gender = prompt("Enter Employee Gender: ");
+                    this.department = prompt("Enter Department: ");
+                    this.basicSalary = parseInt(prompt("Enter Bassic Salary: "));  
+                },
+                getPfHra: () => {
+                    this.pf = parseInt(prompt("Enter PF percentage: "));
+                    this.Pf = (this.basicSalary*this.pf)/100;
+                    this.hra = parseInt(prompt("Enter Hra percentage: "));
+                    this.Hra = (this.basicSalary*this.hra)/100;   
+                },
+                calTotalSal: () => {
+                    this.TotalSal = this.basicSalary + this.Pf + this.Hra 
+                },
+                displayData: () => {
+                    empdata.readEmpData();
+                    empdata.getPfHra();
+                    empdata.calTotalSal();
+                    console.log("Employee name is :  " +this.ename);
+                    console.log("Employee age is :  " +this.age);
+                    console.log("Employee gender is : " +this.gender);
+                    console.log("Employee department is : " +this.department);
+                    console.log("Employee basic salary is : " +this.basicSalary);
+                    console.log("Employee pf is :  " +this.Pf);
+                    console.log("Employee hra is :  " +this.Hra);
+                    console.log("Employee Total salary is : " +this.TotalSal);
+                }
+            }
+            empdata.displayData();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag & Drop!</title>
+    <style>
+      h3 {
+        text-align: center;
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+      }
+      .img {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        cursor: grab;
+      }
+      .container {
+        width: 600px;
+        height: 300px;
+        margin: 20px;
+        border: 1px solid black;
+        float: left;
+        position: relative;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-left: 20px;
+        position: relative;
+      }
+
+      .delete-icon {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: #ff6464;
+        color: #fff;
+        padding: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .counter {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Drag & Drop!</h3>
+
+    <div class="imagesBlock">
+      <img
+        class="img"
+        src="https://is4.fwrdassets.com/images/p/fw/45/MNDF-ML4_V1.jpg"
+        alt=""
+        ondragstart="onElementDragStart(event)"
+        id="product_1"
+      />
+      <img
+        class="img"
+        src="https://m.media-amazon.com/images/I/71WnXKqq7WL._SX679_.jpg"
+        alt=""
+        ondragstart="onElementDragStart(event)"
+        id="product_2"
+      />
+      <img
+        class="img"
+        src="https://m.media-amazon.com/images/I/51XGrwhczrL._SX300_SY300_QL70_FMwebp_.jpg"
+        alt=""
+        ondragstart="onElementDragStart(event)"
+        id="product_3"
+      />
+    </div>
+    <div
+      class="container"
+      ondrop="onElementDrop(event)"
+      ondragover="onElementDragOver(event)"
+    ></div>
+    <script>
+      var imageSrc;
+      var imageId;
+      var imageCount = {};
+
+      var onElementDrop = (event) => {
+        event.preventDefault();
+        if (imageCount[imageId]) {
+          imageCount[imageId]++;
+        } else {
+          imageCount[imageId] = 1;
+        }
+
+        var existingImage = document
+          .querySelector(".container")
+          .querySelector("#" + imageId);
+        if (existingImage) {
+          existingImage.parentElement.querySelector(".counter").innerText =
+            imageCount[imageId];
+          return;
+        }
+
+        console.log(imageCount);
+
+        var divTag = document.createElement("div");
+        var imgElement = document.createElement("img");
+        imgElement.setAttribute("class", "img");
+        imgElement.setAttribute("src", imageSrc);
+        imgElement.setAttribute("id", imageId);
+        imgElement.setAttribute("data-count", imageCount[imageId]);
+        divTag.append(imgElement);
+
+        var deleteTag = document.createElement("div");
+        deleteTag.classList.add("delete-icon");
+        deleteTag.innerText = "X";
+        deleteTag.addEventListener("click", (event) => {
+          event.target.parentElement.remove();
+        });
+        divTag.append(deleteTag);
+
+        var counter = document.createElement("div");
+        counter.setAttribute("class", "counter");
+        counter.innerText = imageCount[imageId];
+        divTag.append(counter);
+
+        divTag.addEventListener("mouseenter", () => {
+          counter.style.display = "block";
+        });
+
+        divTag.addEventListener("mouseleave", () => {
+          counter.style.display = "none";
+        });
+
+        document.querySelector(".container").append(divTag);
+      };
+
+      var onElementDragOver = (event) => {
+        event.preventDefault();
+        console.log("Element drag over");
+      };
+
+      var onElementDragStart = (event) => {
+        console.log("Element drag started");
+        imageSrc = event.target.getAttribute("src");
+        imageId = event.target.getAttribute("id");
+        console.log(imageSrc);
+        console.log(imageId);
+      };
+    </script>
+  </body>
+</html>

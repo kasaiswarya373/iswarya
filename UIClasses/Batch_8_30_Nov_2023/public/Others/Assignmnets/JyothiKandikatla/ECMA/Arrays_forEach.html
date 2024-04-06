@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreach</title>
+</head>
+<body>
+    
+    <script>
+        var string = ['Jyothi','Welcome','Welcome Jyothi','How r u  '];
+        var val = "";
+        var string = string.forEach((value,index) => {
+            val += value + '<br>';
+            console.log(value); 
+        });
+        document.querySelector('body').innerHTML = val;
+    </script>
+</body>
+</html>

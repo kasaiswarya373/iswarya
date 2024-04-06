@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment8</title>
+    <style>
+        h2{
+            border: 1px solid;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            background-color: bisque;
+        } 
+        
+        .Grandparents {
+            border: 2px solid;
+            height:990px;
+            margin:10px ;
+            padding: 10px;
+        }
+
+        .Parents ,.parents2, .parents3 {
+            border:1px solid;
+            margin:30px;
+            height: 300px;
+        }
+
+        .Std1,.Std2 ,.Std3 {
+             border: 1px solid;
+             text-align: center;
+             background-color: beige;
+             height: 40px;
+             width: 190px;
+             position: relative;
+             left:50px;
+             top:-20px;
+        }
+
+         li {
+            list-style: none;
+         }
+
+         .registerbtm{
+            position: relative;
+            left:1200px;
+         }
+
+         .footer{
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid;
+         }
+
+         .firstname{
+            position: relative;
+            top:20px;
+         }
+         
+         .Age{
+            position: relative;
+            top:40px;
+
+         }
+
+         .address{
+            position: relative;
+            left:600px;
+            top:-85px;
+         }
+
+         .country{
+            position: relative;
+            left: 600px;
+            top:-48px;
+         }
+
+         .course{
+            position: relative;
+            top:85px;
+         }
+
+         .languages{
+            position: relative;
+            top:45px;
+         }
+
+    </style>
+   </head>
+     <body>
+        <h2>Student Registration Page</h2>
+        <div class="Grandparents">
+         <div class="Parents">
+             <div class="Std1">Personal Details</div>
+           <ul> 
+            <li>
+                <label for="Username">Name:</label>
+                <input type="text" name="Username" maxlength="20">
+            </li>
+            <li class="firstname">
+                <label for="Username">First Name:</label>
+                <input type="text" name="Username">
+            </li>
+            <li class="Age">
+                <label for="Age">Age:</label>
+                <input type="number" id="Age">
+            </li>
+            <li class="address">
+                <label>Address:</label>
+                <textarea name id cols="20" rows="5" maxlength="60"> </textarea>
+            </li>
+            <li class="country"> 
+                <label>Country:</label>
+                <select>
+                    <option>India</option>
+                    <option>Korea</option>
+                    <option>USA</option>
+                    <option>London</option>
+                    <option>America</option>
+                    <option>Nepal</option>
+                    <option>Canada</option>
+                </select>
+
+            </li>
+          </ul>
+        </div>
+
+          <div class="parents2">
+            <div class="Std2">Education Details</div>
+            <ul>
+                <li>
+                    <label for="qualification">Qualification:</label>
+                    <select name="qualification" id="qualification">
+                        <option value>Btech</option>
+                        <option value>MCA</option>
+                        <option value>Mtech</option>
+                        <option value>BCA</option>
+                        <option value>MSC</option>
+                    </select>
+                 </li>
+                 <li class="languages">
+                    <label for="languages">Languages:</label>
+                    <input type="checkbox">
+                    English
+                    <input type="checkbox">
+                    Hindi
+                    <input type="checkbox">
+                    Urdu
+                    <input type="checkbox">
+                    Odia
+                </li>
+                <li class="course">
+                    <label for="courseopted">CourseOpted:</label>
+                    <input type="radio" name="course">
+                    Btech
+                    <input type="radio" name="course">
+                    MCA
+                    <input type="radio" name="course">
+                    Mtech
+                    <input type="radio" name="course">
+                    BCA
+                    <input type="radio" name="course">
+                    MSC
+                </li>
+            </ul>
+        </div>
+
+            <div class="parents3">
+                <div class="Std3"> About Yourself</div>
+                <ul>
+                 <li>
+                    <label>Few words about your Career:</label>
+                    <textarea name id cols="30" rows="10" maxlength="300" > </textarea>
+                 </li>
+                </ul>
+            </div>
+        </div>
+    
+
+            <div class="registerbtm">
+                <input type="botton" value="Register Details"> 
+            </div>
+
+            <div class="footer">@copy rights 2023</div>
+            
+    
+     </body>
+</html>

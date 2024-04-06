@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prob1 functions for employee details</title>
+</head>
+<body>
+    <h2>WAP to display employee details using function with returning values</h2>
+
+    <script>
+        let readEmployeeDetails = ()=>{
+
+        let E_name = prompt("Enter Your Name");
+        let E_gender = prompt("Enter Your Gender");
+        let E_age = parseInt(prompt("Enter Age"));
+        let E_dept = prompt("Enter your Dept")
+        let E_basicSal = parseInt(prompt("Enter your Basic Salary"))
+
+        let PF = getPf(E_basicSal);
+        let HRA= getHra(E_basicSal);
+        let totalSal = getTotalSal(E_basicSal,PF,HRA);
+        let totalTax = getTotalTax(totalSal);
+        
+
+       let displayEmployeeDetails = display(E_name,E_gender,E_age,E_dept,E_basicSal);
+    
+
+       console.log(`PF = ${PF}`)
+       console.log(`HRA = ${HRA}`)
+       console.log(`totalSal = ${totalSal}`)
+       console.log(`totalTax = ${totalTax}`)
+
+       
+
+    }
+
+
+        
+
+        let getPf= (E_basicSal)=>{
+           let pf = (25*E_basicSal)/100
+            return pf
+        }
+
+        let getHra = (E_basicSal)=>{
+           let hra = (14*E_basicSal)/100
+            return hra
+
+        }
+        let getTotalSal  = (E_basicSal,PF,HRA)=>{
+            let totalSalary = E_basicSal + PF + HRA
+            return totalSalary
+        }
+        let getTotalTax = (totalSal,E_gender)=>{
+            let tax
+            if(E_gender == 'male' || E_gender == 'MALE'){
+            if(totalSal > 250000){
+              tax = (totalSal*20)/100  
+            }
+            else if(totalSal > 20000){
+                tax = (totalSal*15)/100 
+            }
+            else if(totalSal > 150000){
+                tax = (totalSal*10)/100 
+            }
+            else if(totalSal > 10000){
+                tax = (totalSal*5)/100 
+            }
+            else{
+                tax = 0;
+            }
+            return tax
+        }else{
+            if(totalSal > 250000){
+              tax = (totalSal*15)/100  
+            }
+            else if(totalSal > 20000){
+                tax = (totalSal*10)/100 
+            }
+            else if(totalSal > 150000){
+                tax = (totalSal*5)/100 
+            }
+            else{
+                tax = 0;
+            }
+            
+            return tax
+        }
+        }
+        let display =  (E_name,E_gender,E_age,E_dept,E_basicSal) =>{
+            console.log(`Employee-Name = ${E_name}`)
+            console.log(`Employee-Age = ${E_age}`)
+            console.log(`Employee-Gender = ${E_gender}`)
+            console.log(`Employee-Dept = ${E_dept}`)
+            console.log(`Employee-basicsal = ${E_basicSal}`)
+        }
+        readEmployeeDetails()
+    </script>
+</body>
+</html>

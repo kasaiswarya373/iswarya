@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generating OTP Value</title>
+        <style>
+             span {
+                border: medium solid black;
+                padding: 5px;
+                margin: 15px;
+                text-align: center;
+                font-weight: bold;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+
+        <input type="button" value="Reset" onclick="generate_OTP(5);">
+
+        <div>
+            OTP : <span></span> 
+        </div>
+
+        <script>
+
+            var generate_OTP = (size) => {
+                var otpValue = '';
+                for (var i = 1; i <= size; i++){
+                    var randomNumber = Math.round(Math.random() * 9); 
+                    otpValue += randomNumber;
+                }
+                console.log(otpValue);
+                document.querySelector("span").innerText = otpValue;
+            }
+            generate_OTP(5);
+
+        </script>        
+    </body>
+</html>
+

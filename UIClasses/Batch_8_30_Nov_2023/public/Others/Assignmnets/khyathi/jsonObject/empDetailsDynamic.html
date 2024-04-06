@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+         empDetails={
+
+            }
+            var empInfo=()=>{
+                empDetails.Name=prompt("enter name");
+                empDetails.age=prompt("enter age");
+                empDetails.gender=prompt("enter gender");
+                empDetails.basicSalary=parseInt(prompt("basicSalary"));
+                employeSalaryCal();
+            }
+            var employeSalaryCal=()=>{
+                empDetails.pf=(empDetails.basicSalary*12)/100;
+                empDetails.hra=(empDetails.basicSalary*15)/100;
+                empDetails.tax=(empDetails.basicSalary*30)/100;
+                empDetails.totalSalary=(empDetails.pf+empDetails.hra+empDetails.basicSalary-empDetails.tax);
+
+
+            }
+            empInfo();
+            console.log(empDetails);
+
+        </script>
+    </body>
+</html>

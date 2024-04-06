@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <script src="app.js"> </script>
+    <style>
+        h2{
+            color: blue;
+        }
+        div{
+            width: 400px;
+            height: 350px;
+            border: 1px solid black;
+            margin: 150px auto;
+        }
+        ul{
+            margin: 15px;
+            padding: 10px;
+        }
+        li{
+            list-style: none;
+            font-size: 20px;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+    </style>
+    </head>
+    <body>
+        <!-- Local Storage Assignment -->
+        <div>
+            <ul>
+                <h2>
+                    Sign In
+                </h2>
+                <li>
+                    Enter UserName:
+                    <input type="text" id="uname">
+                </li>
+                
+                <li>
+                    Enter Password:
+                    <input type="password" id="upassword">
+                </li>
+
+                <li>
+                    <input type="button" value="Login" id="btn">
+                    <input type="checkbox" onclick="loginDetails()">
+                    Remember Me
+                </li>   
+                
+            </ul>
+        </div>
+    </body>
+</html>

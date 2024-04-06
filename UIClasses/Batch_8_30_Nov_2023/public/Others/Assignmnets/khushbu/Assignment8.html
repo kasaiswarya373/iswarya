@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration Page</title>
+        <style>
+        ul{
+            width: 1300px;
+            border: 2px solid;
+            margin: 20px auto;
+            padding: 5px;
+            background-color: white;
+            text-align: center;
+            font-size: 25px;
+        }
+        li{
+            list-style: none;
+            padding: 13px;
+            margin: -13px;
+        }
+        .block{
+            border: 2px solid;
+            width: 160px;
+            height: 20px;
+            text-align:center;
+            font-size: 19px;
+        }
+        .block3{
+            width: 1300px;
+            height: 484px;
+            border: 1px solid;
+            margin: -12px auto;
+            padding: 10px;
+            background-color: white;
+        }
+        .block2,.block5,.block7{
+            width: 1280px;
+            height: 110px;
+            border: 2px solid;
+            margin: 2px auto;
+            padding: 10px;
+            background-color: white;
+        }
+       .block1,.block6,.block8{        
+            background-color: white;
+            position:relative;
+            left:23px;
+            top: -18px;
+       }
+       .block4{
+            width: 1319px;
+            border: 2px solid;
+            margin: 20px auto;
+            height: 23px;
+            background-color: white;
+            text-align: center;
+            font-size: 20px;
+       }
+       
+       .block5{
+        margin: 10px auto;
+       }
+     
+        .button1{
+                background-color:rgb(171, 187, 216);
+                color: white;
+                position: absolute;
+                bottom: 120px;
+                right: 40px;
+                font-size: 20px;
+       }
+         
+        </style>
+    </head>
+    <body>
+        <ul>
+            <b>Student Registration Page</b>
+        </ul>
+        <div class="block3">
+
+            <div class="block2">
+                <div class="block block1"><u><b>Personal Details</b></u></div>
+                <li>
+                    <label for="userName">First Name: </label>
+                    <input type="text" name="username" maxlength="30" size="50" >
+                    <label for="Address"> Address: </label>
+                    <input type="text" name="address" maxlength="50" size="40">
+                </li>
+
+                <li>
+                    <label for="userName">Last Name: </label>
+                    <input type="text" name="username" maxlength="100" size="50">
+                    <label for="usercountry"> Country: </label>
+                    <select>
+                        <option>Japan</option>
+                        <option selected>India</option>
+                        <option>china</option>
+                        <option>Uk</option>
+                        <option>US</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="age">Age: </label>
+                    <input type="text" maxlength="2" >
+                    <label for="mob">Mob.No.</label>
+                    <input type="text" name="mobile" maxlength="12">
+                </li>
+            </div>
+
+            <div class="block5">
+                <div class="block block6"><u><b>Education Details</b></u></div>
+                <li>
+                    <label for="qualificat">Qualification: </label>
+                    <select>
+                        <option>MCA</option>
+                        <option>BCA</option>
+                        <option>CS</option>
+                        <option>IT</option>
+                        <option>Non-IT</option>
+                    </select>
+                </li>
+                <li>
+                    <label> Languages: </label>
+                    <input type="checkbox">Marathi
+                    <input type="checkbox">Hindi
+                    <input type="checkbox">English     
+                    <input type="checkbox">Telgu
+                </li>
+                <li>
+                    <label for="course">CourseOption:</label>
+                    <input type="radio" name="course">MBA
+                    <input type="radio" name="course">MCA
+                    <input type="radio" name="course">Btech
+                    <input type="radio" name="course">Msc
+                </li>
+            </div>
+
+            <div class="block7">
+                <div class="block block8"><u><b>About Yourself</b></u></div>
+                <li>
+            
+                    <label for="information" style="position: relative;top: -21px;">
+                           Few words about your career
+                    </label>
+                    <textarea name="area" id="" cols="50" rows="4" maxlength="500"></textarea>
+                </li>
+
+                
+            </div>
+            <li>
+                <input type="button" class="button1" value="Register details"  >
+                
+            </li>
+
+        </div>
+
+        <div class="block4"><b>@copy rights 2023</b></div>
+        
+    </body>
+</html>

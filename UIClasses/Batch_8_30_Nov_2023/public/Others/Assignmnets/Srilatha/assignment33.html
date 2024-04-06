@@ -1,0 +1,199 @@
+<!-- Example program for Assignment3 with overflow concept-->
+<html>
+    <head>
+        <title>
+css float and overflow
+        </title>
+        <style>
+            .MainHeading{
+                border:1px solid;
+                text-align: center;
+                font-weight: 50px;
+            }
+
+            .leftContainer{
+                border:1px solid;
+                width: 20%;
+                height:500px;
+float:left;
+margin-left: 2px;
+
+
+        }
+        .leftContainer div{
+                border:1px solid;
+                width: 100px;
+                height:50px;
+                margin-left: 2px;
+                clear: both;
+                margin-bottom: 10px;
+                margin-left: 10px;
+                margin-top: 10px;
+
+
+        }
+          
+            .rightContainer{
+                border:1px solid;
+                width: 78%;
+                height: 500px;
+                float: right;
+                margin-left: 1px;
+                overflow: auto;
+
+
+            }
+            .NameAlignment{
+                margin:auto;
+                width: 60px;
+                border:1px solid;
+                margin-bottom: 10px;
+                margin-left:100px;
+                margin-right:50px;
+                margin-top: 25px;
+                text-align: center;
+            }
+            .Block1,.Block2,.Block3,.Block4{
+                padding-right: 80px;
+                padding-left: 100px;
+                width: 700px;
+                height: 100px;
+                border:1px solid;
+                margin-top: 30px;
+                margin-bottom: 3px;
+                margin-left: 50px;
+                margin-right: 50px;
+
+            }
+            .Block1{
+                float:left;
+            }
+            .Block2{
+            clear: both;
+            float: left;
+            }
+            .Block3{
+            clear: both;
+            float: left;
+            }
+            .Block4{
+            clear: both;
+            float: left;
+            }
+            .imageBlock{
+                width: 200px;
+                height: auto;
+                float:left;
+            }
+            .detailsBlock{
+                
+                float:right;
+            }
+            .EmpName,.colonHolder,.content{
+                float:left;
+            }
+            .EmpName{
+                width: 150px;
+            }
+            .colonHolder{
+                width: 50px;
+            }
+            .footer{
+               
+                width: 100%;
+                height:100px;
+                border:1px solid;
+                margin-bottom: 10px;
+                margin-left:10px;
+                margin-right:10px;
+                margin-top: 25px;
+                text-align: center ;
+                clear: both;
+                float:left;
+            }
+            
+
+           
+        </style>
+    </head>
+    <body>
+<h3 class="MainHeading">Employee Details page</h3>
+<div >
+    <div class="leftContainer"> 
+    <div><a href="#EmployeeDetails1">1.Raj</div>
+    <div >2.Krish</div>
+    <div>3.Teena</div>
+    <div >4.Keerthi</div>
+</div>
+   
+    <div class="rightContainer">
+        <div class="Block1" id="EmployeeDetails1">
+            <div class="imageBlock"><img src="C:\UI_Full_Stack_Training\WebApplication\public\Images\download.jpg"></div>
+            <div class="detailsBlock">
+                <div class="row"  >
+                <div class="EmpName">EmployeeName</div>
+                    <div class="colonHolder">:</div> 
+                    <div class="content">Raj</div>
+            </div>
+            <div class="row">
+                <div class="EmpName">EmployeeAge</div>
+                <div class="colonHolder">:</div>
+                <div class="content">30</div>
+            </div>
+            <div class="row">
+                <div class="EmpName">Employee Departmnet</div>
+                <div class="colonHolder">:</div> 
+                <div class="content">Finance</div>
+                </div>
+                <div class="row">
+
+                <div class="EmpName">Employee contact</div>
+                    <div class="colonHolder">:</div>
+                    <div class="content">+91 987654321</div>
+                    </div>
+            </div>
+
+        </div>
+        <div class="Block2">
+            <div class="imageBlock"><img src="file:///C:/Users/latha/Downloads/download.jpg"></div>
+            <div class="detailsBlock">
+                <div>Employee Name: Krish</div>
+                <div>Employee Age: 37</div>
+                <div>Employee Departmnet: Account</div>
+                <div>Employee contact: +91 9876565531</div>
+            </div>
+
+        </div>
+        <div class="Block3">
+            <div class="imageBlock"><img src="file:///C:/Users/latha/Downloads/download.jpg"></div>
+            <div class="detailsBlock">
+                <div>Employee Name: Teena</div>
+                <div>Employee Age: 37</div>
+                <div>Employee Departmnet: Account</div>
+                <div>Employee contact: +91 9876565531</div>
+            </div>
+
+        </div>
+        <div class="Block4">
+            <div class="imageBlock"><img src="file:///C:/Users/latha/Downloads/download.jpg"></div>
+            <div class="detailsBlock">
+                <div>Employee Name: Keerthi</div>
+                <div>Employee Age: 37</div>
+                <div>Employee Departmnet: Account</div>
+                <div>Employee contact: +91 9876565531</div>
+            </div>
+           
+        </div>
+       
+        
+
+</div>
+<div class="footer">
+    @ Copy Rights NIT
+
+ </div>
+
+    
+</div>
+    </body>
+</html>

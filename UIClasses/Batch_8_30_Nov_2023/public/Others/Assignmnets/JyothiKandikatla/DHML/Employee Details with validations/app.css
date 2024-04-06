@@ -1,0 +1,55 @@
+h2{
+    border: 1px solid;
+    text-align: center;
+    color: white;
+    background-color: rgb(74, 80, 92);
+    margin: 10px auto;
+    padding: 10px;
+    width:500px;
+   
+}
+.displayBlock{
+    display: none;
+    background-color: 
+    pink;
+    
+}
+.error{
+color: red;
+font-size: 15px;
+display: none;
+
+}
+    
+
+ul{
+    background-color: aliceblue;
+    margin: 10px auto;
+    width: 500px;
+    padding: 10px;
+   }
+li{
+    border: 1px solid rgb(101, 104, 104);
+    padding: 10px;
+    margin: 10px;
+    width: 460px;
+    font-size: 20px;
+
+    list-style: none;
+}
+.head{
+    background-color: rgb(220, 73, 98);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+label{
+    width: 150px;
+    font-size: 20px;
+    display: inline-block;
+}
+#button{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 20px;
+}

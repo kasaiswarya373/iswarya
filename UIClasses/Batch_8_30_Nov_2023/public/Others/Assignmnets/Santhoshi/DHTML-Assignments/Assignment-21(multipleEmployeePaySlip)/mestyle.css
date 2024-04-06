@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    color: darkolivegreen;
+}
+body{
+    background-color: white;
+}
+.title {
+    text-align: center;
+    font-weight: bold;
+    color: maroon;
+    font-size: x-large;
+    margin: 10px;
+}
+li{
+    list-style: none;
+}
+ul {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(228, 221, 18);
+    color: rgb(9, 9, 29);
+}
+label{
+    display: inline-block;
+    width: 120px;
+    margin: 10px;
+}
+.displayblock{
+    display: none;
+}

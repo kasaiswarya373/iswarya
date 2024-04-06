@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Two Values</title>
+    <link rel="stylesheet" href="app.css">
+    
+</head>
+<body>
+    <ul class="Sum">
+        <li>
+         <h2 style="text-align: center">Sum of Two Values</h2>
+         </li>
+
+         <li>
+         <label for="fVal">Enter First Number :</label>
+         <input type="text"  id="fVal"> 
+        </li>
+        
+        <li>
+            <label for="sVal">Enter Second Number :</label>
+            <input type="text" id="sVal">
+        </li>
+        
+        <li id="resultState">
+           Sum of given numbers is :
+            <span id="resultVal"></span>
+        </li>
+        
+        <li>
+            <input type="button" value="Add" id="addBtn" onclick="sum()">
+        </li>
+    </ul>
+    <script src="app.js"></script>
+</body>
+</html>

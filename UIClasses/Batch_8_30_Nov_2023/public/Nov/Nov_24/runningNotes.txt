@@ -1,0 +1,8 @@
+Inline and Block level elements:
+
+
+    Block level elements :
+
+        div tag 
+        1. By default, while rendering on the page, they automatically come to new line and gets render, the element which is following this block level lement also comes to new line. 
+        2. 

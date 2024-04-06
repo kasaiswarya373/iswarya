@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramic Pattern</title>
+</head>
+<body>
+    <script>
+        var n = 5;
+        for (var i = 1; i <= n; i++){
+            spce = '';
+            for( var j = n; j > i; j--){
+                spce +=' ';
+            }
+            for (var k = 1; k <= i; k++){
+                spce += '* ';
+            }
+            console.log(spce); 
+        }
+        for (var i = 4; i >= n-4; i--){
+            spce = '';
+            for( var j = n; j > i; j--){
+                spce +=' ';
+            }
+            for (var k = 1; k <= i; k++){
+                spce += '* ';
+            }
+            console.log(spce); 
+        }
+
+
+    </script>  
+</body>
+</html>

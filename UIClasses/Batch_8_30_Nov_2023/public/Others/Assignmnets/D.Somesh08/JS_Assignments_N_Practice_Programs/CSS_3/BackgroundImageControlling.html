@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Controlling using CSS3</title>
+    <style>
+        .container{
+              border: 1px solid;
+              width: 500px;
+              height: 400px;
+              font-weight: bold;
+              margin: 50px auto;
+              text-align: center;
+
+              box-shadow: 5px 13px 6px maroon;
+              border-radius: 5px 30px;
+             
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ziMs3Ga-JJTgv5ULzKVXXhZ3t2Os2QbrZw&usqp=CAU'), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ziMs3Ga-JJTgv5ULzKVXXhZ3t2Os2QbrZw&usqp=CAU');
+              background-repeat: no-repeat;
+              /* Till CSS2 */
+              /* background-position: 5px 40px; */
+              /* from CSS3 */
+              /* background-position: center; */
+              /* background-size: 100% 90%; */
+              background-position: left top, bottom right;
+              background-size: 220px 170px, 220px 170px;
+
+              /* background-image: url('https://e0.pxfuel.com/wallpapers/563/542/desktop-wallpaper-demon-slayer-top-75-best-demon-slayer-background-demon-slayer-tanjiro.jpg');
+              background-repeat: no-repeat; */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+          Background image Controlling!!
+    </div>
+</body>
+</html>

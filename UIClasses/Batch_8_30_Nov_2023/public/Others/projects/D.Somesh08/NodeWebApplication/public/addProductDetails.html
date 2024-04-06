@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sellar web application/index.html</title>
+  <link rel="icon" href="./images/favIcon.png">
+  <link rel="stylesheet" href="./lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/index.css">
+  <link rel="stylesheet" href="./CSS/signUp.css">
+  <link rel="stylesheet" href="./CSS/productDetails.css">
+  <link rel="stylesheet" href="./CSS/descriptiveProductDetailsPage.css">
+  <link rel="stylesheet" href="./CSS/cartRelated.css">
+  <link rel="stylesheet" href="./stylesheets/uploadProductDetails.css">
+  <script src="./lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./lib/handlebars/dist/handlebars.min.js"></script>
+  <script src="./lib/jquery/dist/jquery.min.js"></script>
+  <script src="./lib/axios.min.js"></script>
+  <script src="./javascripts/SellarRelated/uploadProductDetails.js"></script>
+  <script src="./javascripts/signUp.js"></script>
+  <script src="./javascripts/OnLoadPage.js"></script>
+  <script src="./javascripts/LoginValidation.js"></script>
+  <script src="./javascripts/Util.js"></script>
+  <script src="./javascripts/index.js"></script>
+  <script src="./javascripts/ProductDetails.js"></script>
+  <script src="./javascripts/UserRegistrationDetails.js"></script>
+  <script src="./javascripts/addItemsToCart.js"></script>
+  <script src="./javascripts/cartItemsData.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="p-3 bg-dark text-white">
+      <div id="alertMessageBlock" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><img id="HeaderLogo" src="./images/HeaderLogos/logo-no-background.png" alt=""></li>
+            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+          </ul>
+
+          <form id="searchFormOnTheHeader" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+          </form>
+
+          <!--Login Button trigger modal & Sign-up button-->
+          <div class="text-end" id="headerLoginSignUp">
+            <button onclick="setUserPreferences()" type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#LoginPage" id="headerloginbutton">
+              Login
+            </button>
+            <button id="headerSignUpBtn" type="button" class="btn btn-warning"
+              onclick="loadSelectedPage('signUp')">Sign-up</button>
+          </div>
+
+          <div class="accountUserNameDisplay">
+            Welcome <span id="accountUserName"></span>
+          </div>
+          <span onclick="loadSelectedPage('viewCart')">
+            <span id="cartItemsCount" title="view cart items"></span>
+            <svg id="cartIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-bag" viewBox="0 0 16 16">
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+            </svg>
+          </span>
+          <div id="Headerlogout">
+            <button onclick="logOutUser()" type="button" class="btn btn-primary" id="headerLogoutbutton">
+              Logout
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+    </header>
+    <!--Login & Sign-up BootStrap Modal -->
+    <div class="container" id="pageContainer">
+      <div class="modal fade" id="LoginPage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- username & password -->
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="User Name...">
+                <label for="floatingInput">Email/User Id</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password!">
+                <label for="floatingPassword">Password</label>
+                <svg id="openEye" onclick="showPassword()" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                  <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                </svg>
+                <svg id="closedEye" onclick="hidePassword()" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+                  <path
+                    d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z" />
+                  <path
+                    d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z" />
+                </svg>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Remember me
+                </label>
+              </div>
+              <div id="LoginForgotPassword">
+                <a href="">Forgot password?</a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="validateUserCredentials()">Login</button>
+            </div>
+            <div class="responseMessageBlock mb-4">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main body -->
+    <div class="container">
+      <ul class="uploadContainer">
+        <li id="msgBlock"></li>
+        <li>
+          <input type="text" placeholder="productId" class="form-control" id="productId">
+        </li>
+        <li>
+          <select id="category" class="form-control">
+            <option value="Fashion">Fashion</option>
+            <option value="Electronics">Electronics</option>
+          </select>
+        </li>
+        <li>
+          <input type="text" placeholder="Product Name" class="form-control" id="name">
+        </li>
+        <li>
+          <input type="text" placeholder="Product Large Name" class="form-control" id="name_lrg">
+        </li>
+        <li>
+          <input type="number" placeholder="Price" class="form-control" id="price">
+        </li>
+        <li>
+          <input type="number" placeholder="Discount Percent" class="form-control" id="discountPercent">
+        </li>
+        <li>
+          <input type="number" placeholder="Rating" class="form-control" id="rating">
+        </li>
+        <li>
+          <input type="text" placeholder="Manufacturer" class="form-control" id="manu">
+        </li>
+        <!-- <li>
+          <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="prodImage" multiple>
+            <input type="button" value="Upload image" onclick="sendImageToServer()">
+          </form>
+        </li> -->
+        <li>
+          <form method="POST" enctype="multipart/form-data">
+            <input type="file" id="productImg" name="prodImg" multiple>
+            <input type="button" value="Upload" onclick="uploadResource()">Upload
+          </form>
+        </li>
+        <!-- <li>
+          <input type="text" placeholder="Product image" class="form-control" id="prodImg">
+        </li> -->
+        <li>
+          <input type="text" placeholder="Product Description" class="form-control" id="description">
+        </li>
+        <li>
+          <input type="number" placeholder="Items in Stock" class="form-control" id="itemsInStock">
+        </li>
+        <li>
+          <input type="button" value="Save Details" class="btn btn-primary" onclick="saveProductDetails()">
+        </li>
+      </ul>
+    </div>
+    <!-- Footer -->
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>©2024 Somesh.Inc, All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <div id="categoryTemplate">
+      <div class="carousel-item {{active}}">
+        <img src={{imgUrl}} alt="">
+      </div>
+    </div>
+
+    <div id="categoryFilterBlockTemplate">
+      <div class="col-md-4">
+        <img src={{imgUrl}} alt="">
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

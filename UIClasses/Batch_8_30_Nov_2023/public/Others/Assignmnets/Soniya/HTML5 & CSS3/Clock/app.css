@@ -1,0 +1,120 @@
+.clock
+{
+    background-color: #fefef0;
+    width: 600px;
+    height: 550px;
+    border-radius: 50%;
+    position: absolute;
+    left: 425px;
+    top: 100px;
+    border: 15px solid #550404;
+    filter: drop-shadow(7px 5px 7px #808080);
+}
+
+body
+{
+    background-color: #c2e8a7; 
+}
+.clock div ,#junctionPoint
+{
+    font-size: 50px;
+    position: absolute;
+}
+#one
+{
+    top: 27px;
+    right: 153px;
+}
+#two
+{
+    top: 120px;
+    right: 46px;
+}
+#three
+{
+    top: 242px;
+    right: 8px;
+}
+#four
+{
+    top: 371px;
+    right: 45px;
+}
+#five
+{
+    top: 464px;
+    right: 147px;
+}
+#six
+{
+    bottom: -5px;
+    left: 288px;
+}
+#seven
+{
+    bottom: 25px;
+    left: 144px;
+}
+#eight
+{
+    bottom: 128px;
+    left: 38px;
+}
+#nine
+{
+    top: 251px;
+    left: 6px;
+}
+#ten
+{
+    top: 128px;
+    left: 38px;
+}
+#eleven
+{
+    top: 34px;
+    left: 127px;
+}
+#twelve
+{
+    bottom: 497px;
+    left: 270px;
+}
+#junctionPoint 
+{
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    border: 2px solid #0b0b0b;
+    top: 270px;
+    left: 290px;
+    background-color: #808080;
+}
+#minHand,#secHand,#hourHand
+{
+    border: 2px solid #808080;
+    position: absolute;
+    transform-origin: 50% 100%;
+}
+#minHand
+{
+    width: 3px;
+    height: 181px;
+    top: 91px;
+    left: 293px;
+}
+#secHand
+{
+    width: 3px;
+    height: 217px;
+    top: 53px;
+    left: 294px;
+}
+#hourHand
+{
+    width: 3px;
+    height: 140px;
+    top: 132px;
+    left: 293px;
+    
+}

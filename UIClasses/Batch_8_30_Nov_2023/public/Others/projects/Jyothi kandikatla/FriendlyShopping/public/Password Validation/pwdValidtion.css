@@ -1,0 +1,20 @@
+ul{
+    border: 1px solid  rgb(162, 150, 150);
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    padding:20px
+}
+li{
+    list-style: none;
+    border: 1px solid  rgb(162, 150, 150);
+    margin: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+    
+}
+
+.validation{
+    display: none;
+    font-size: small;
+}

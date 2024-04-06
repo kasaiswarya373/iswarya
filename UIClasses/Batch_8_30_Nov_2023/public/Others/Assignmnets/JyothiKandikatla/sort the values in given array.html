@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sort the values in given array</title>
+    </head>
+    <body>
+        <script>
+            var sortArray = () => {
+                var no = [23, 56, 45, 87 ,65];
+                for(var i = 0; i < no.length; i++){
+                    for(var j = i + 1; j < no.length; j++){
+                      
+                        if( no[i] > no[j]){
+                            var temp = no[i];
+                            no[i] = no[j];
+                            no[j] = temp; 
+
+                        }
+                    }
+                }
+                console.log( `The asending order array is ${no}`);
+            }
+            sortArray();
+            var DecendingArray = () => {
+                var no = [23, 56, 45, 87 ,65];
+                for(var i = 0; i < no.length; i++){
+                    for(var j = i + 1; j < no.length; j++){
+                      
+                        if( no[i] < no[j]){
+                            var temp = no[i];
+                            no[i] = no[j];
+                            no[j] = temp; 
+
+                        }
+                    }
+                }
+                console.log( `The decending order array is ${no}`);
+            }
+            DecendingArray();
+        </script>
+    </body>
+</html>

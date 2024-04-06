@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-registration-page</title>
+    <style>
+        .container {
+            text-align: center;
+            background-color: aqua;
+            border: 3px solid;
+            margin: 10px;
+            padding: 10px;
+        }
+        .container1 {
+            text-align: center;
+            background-color: aqua;
+            border: 3px solid;
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+            top: 41px;
+        }
+
+        .student {
+            border: 3px solid;
+            width: auto;
+            /* height: 800px; */
+            margin: 10px;
+            background-color: #fff;
+            padding-top: 35px;
+        }
+
+        .block1,.block2,.block3{
+            border: 3px solid;
+            text-align: center;
+            background-color: aqua;
+            width: 200px;
+            padding: 10px;
+            /* margin: 10px; */
+        }
+        .block1{
+            position: relative;
+            left: 80px;
+            top: -416px;
+        }
+        .block2{
+            position: relative;
+            left: 80px;
+            top: -180px;
+        }
+        .block3{
+            position: relative;
+            left: 80px;
+            top: -301px;
+        }
+        .block {
+            border: 3px solid;
+            margin: 10px;
+            padding: 36px;
+            position: relative;
+            top: 19px;
+        }
+
+        .form1 {
+            position: relative;
+            top: 30px;
+            /* height: 600px; */
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        .text-area {
+            position: relative;
+            top: -105px;
+        }
+        .submit{
+            float:right;
+            position:relative;
+            right:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2 class="container ">Student-Redistration-Page</h2>
+    </div>
+    <div class="block">
+        <div class="student">
+            <form action="www.sample.com/info/data" method="get">
+                <ul>
+                    <li>
+                        <lasbel>Name:</lasbel>
+                        <input type="text" name="studentname" maxlength="20">
+                    </li>
+                    <li>
+                        <lasbel>First-Name:</lasbel>
+                        <input type="text" name="studentname" maxlength="20">
+                    </li>
+                    <li>
+                        <lasbel>Age:</lasbel>
+                        <input type="number" name="studentpassword" maxlength="3">
+                    </li>
+                    <li>
+                        <lasbel>Gender:</lasbel>
+                        <input type="radio" name="Gender">Male
+                        <input type="radio" name="Gender">FeMale
+                    </li>
+                    <li>
+                        <label class="text-area">Address:</label>
+                        <textarea name="" id="" cols="20" rows="10" maxlength="500"></textarea>
+                    </li>
+                    <li><label>Country</label>
+                        <select>
+                            <option>India</option>
+                            <option>china</option>
+                            <option>Malesiya</option>
+                            <option>Indonesia</option>
+                            <option>singapur</option>
+                        </select>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="block1">Personal-Details</div>
+
+        <div class="student">
+            <form action="www.sample.com/info/data" method="get">
+                <ul>
+                    <li><label>Qualification</label>
+                        <select>
+                            <option>PG</option>
+                            <option>B.tech</option>
+                            <option>DEGREE</option>
+                            <option>INTER</option>
+                            <option>SSC</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>Languages:</label>
+                        <input type="checkbox" name="language[]">English
+                        <input type="checkbox" name="language[]">Hindi
+                        <input type="checkbox" name="language[]">Telugu
+                        <input type="checkbox" name="language[]">Urdu
+                    </li>
+                    <li>
+                        <lasbel>Course-Opted:</lasbel>
+                        <input type="radio" name="Course">MBA
+                        <input type="radio" name="Course">MCA
+                        <input type="radio" name="Course">B.Tech
+                        <input type="radio" name="Course">MSc
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="block2">Education-Details</div>
+
+        <div class="student">
+            <form action="www.sample.com/info/data" method="get">
+                <ul>
+                    <li>
+                        <label class="text-area">Few Words about your Carrer:</label>
+                        <textarea name="" id="" cols="100" rows="12" maxlength="1000"></textarea>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="block3">About-Yourself</div>
+        <div class="submit">
+            <input type="submit" value="save the details">
+        </div>
+    </div>
+
+    <div>
+        <h3 class="container1 ">Copy-Right@2023</h3>
+    </div>
+
+</body>
+
+</html>

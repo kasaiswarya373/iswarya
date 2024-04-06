@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // find the largest number from the arrays
+        var readingValues = () => {                             // function defination
+            var num = parseInt(prompt("Enter Array length"));   // reading arrays element from the user
+            var arr = [num];                                    // asssume variable arr = num                    
+            for (var i = 0; i < num; i++) {                     // for loop for initialization, condition, increment
+                arr[i] = parseInt(prompt("Enter Values"));      // reading and converting string value into number
+            }
+            findingLargest(num, arr);                           // function calling  
+        }
+        var findingLargest = (num, arr) => {                    // second function defination
+            var large = 0;                                      // asssume variable large = 0 
+            for (var i = 0; i < num; i++) {                     // for loop for initialization, condition, increment
+                if (arr[i] > large) {                           // if statement for condition checking 
+                    max = arr[i];                               // if the above condition becomes true, store into this
+                }
+            }
+        }
+        readingValues();                                        // function calling    
+        console.log("Largest number from the given array is " + max); //printing largest number
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checking armstrong no</title>
+    </head>
+    <body>
+        <script>
+            //WAP to check the given no is armstrong no or not
+            var n = prompt('Enter a Number');
+            var number = n.length;
+            n = parseInt(n);
+            var armStrongNo = 0;
+            var rem;
+            var temp = n;
+            while(n > 0){
+                rem = n % 10;
+                armStrongNo += rem ** number;
+                n = parseInt(n / 10);
+            }
+            if (temp == armStrongNo){
+                console.log('The given no is armStrongNo');
+            }else{
+                console.log('The given number is not armStrongNo');
+            }
+        </script>
+    </body>
+</html>

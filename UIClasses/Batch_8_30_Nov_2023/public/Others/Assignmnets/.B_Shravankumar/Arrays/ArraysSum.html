@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum = () => {
+            var mrks = [12, 63, 65, 95, 98, 96, 58, 59, 32, 63];
+
+            console.log(`${mrks[0]}`);
+            console.log(`${mrks[1]}`);
+            console.log(`${mrks[2]}`);
+            console.log(`${mrks[3]}`);
+            console.log(`${mrks[4]}`);
+
+            console.log(`${mrks}`);
+
+            var total = 0;
+            for (var i = 0; i < mrks.length; i++) {
+                total += mrks[i];
+            }
+
+            console.log(`total ${total}`);
+
+        }
+        sum();
+    </script>
+    
+</body>
+</html>

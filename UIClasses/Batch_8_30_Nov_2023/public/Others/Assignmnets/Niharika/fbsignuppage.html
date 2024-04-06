@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .block {
+            height: 500px;
+            width: 100%;
+            background-color: #f0f2f5;
+        }
+        .logo {
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 13%;
+            left: 74px;
+        }
+        .text {
+            font-size: 25px;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            position: absolute;
+            top: 56%;
+            left: 103px;
+            width: 450px;
+        }
+        .signupform {
+            width: 350px;
+            height: 300px;
+            border: 2px solid #f0f2f5;
+            border-radius: 10px;
+            position: absolute;
+            right: 100px;
+            top: 20%;
+            background-color: white;
+            cursor: pointer;
+        }
+        input[type=text], select {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 10px 15px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 17px;
+}
+input[type=password], select {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 10px 15px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 17px;
+}
+.login {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 10px 15px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 17px;
+  background-color: #1877f2;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+.forgotpassword {
+    color: #1877f2;
+    text-align: center;
+    margin: 10px;
+    margin-top: 5px;
+}
+hr {
+    border: 1px solid #ccc;
+}
+.creataccount {
+   width: 52%;
+   border: 1px solid #ccc;
+   padding: 12px 10px;
+   display: inline-block;
+   border-radius: 4px;
+   background-color: #42b72a;
+   margin: 10px 15px;
+   position: absolute;
+   left: 20%;
+   bottom: 1%;
+   text-align: center;
+   font-size: 17px;
+   font-weight: bold;
+   color: white;
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div><img class="logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt=""></div>
+        <div class="text">Facebook helps you connect and share with the people in your life.</div>
+        <div class="signupform">
+            <input type="text" placeholder="Email address or phone number">
+            <input type="password" placeholder="Password">
+            <input type="button" class="login" value="Log in">
+           <div class="forgotpassword">Forgotten password?</div>
+           <hr>
+           <input type="button" class="creataccount" value="Create new account">
+        </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Assignment_10
+    </title>
+</head>
+<body>
+    <h2>Employee details </h2>
+    <h3>Control structures</h3>
+    <script>
+        var empName = prompt("Enter Employee Name:");
+        var empAge = prompt("Enter Employee Age:");
+        var empGender = prompt("Enter Employee Gender:");
+        var empDept = prompt("Enter Employee Department:");
+        var empBasicsal = prompt("Enter employee Basic Salary:");
+        empBasicsal = parseInt(empBasicsal);
+        var PF = prompt("Enter PF Percentage");
+        PF = parseFloat(PF);
+        PF = (PF * empBasicsal) / 100;
+
+        var HRA = prompt("Enter HRA Percentage");
+        HRA = parseFloat(HRA);
+        HRA = (HRA * empBasicsal) / 100;
+
+           totalSal = empBasicsal + PF + HRA;
+         console.log("Employee name is " + empName);
+         console.log("Employee Age is " + empAge);
+         console.log("Employee Gender is " + empGender);
+         console.log("Employee Department is " + empDept);
+         console.log("Employee Basic Salary is " + empBasicsal);
+         console.log("Employee PF Amount is " + PF);
+         console.log("Employee HRA Amount is " + HRA);
+         console.log("Employee Total salary is " + totalSal);
+
+        if (empGender == "Male") {
+        if (totalSal > 300000) {
+          console.log("12% tax will be applied from your salary");
+        } else if (totalSal > 100000) {
+          console.log("10% tax will be applied from your salary");
+        } else if (totalSal > 40000) {
+          console.log("5% tax will be applied from your salary");
+        } else {
+          console.log("No tax will be applied");
+        }
+      }   else {
+        if (totalSal > 300000) {
+          console.log("10% tax will be applied from your salary");
+        } else if (totalSal > 100000) {
+          console.log("5% tax will be applied from your salary");
+        } else {
+          console.log("No tax will be applied");
+        }
+      }
+    </script>
+</body>
+</html>

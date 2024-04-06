@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            CSS z-index property
+        </title>
+        <style>
+            .block {
+                border: 1px solid;
+                width: 130px;
+                height: 130px;
+                text-align: center;
+            }
+            .block1 {
+                background-color: gray;
+                position: absolute;
+                top: 20px;
+                left: 220px;
+                z-index: 33232;
+            }
+            .block2 {
+                background-color: yellow;
+                position: relative;
+                left: 30px;
+                top: 70px;
+                z-index: 590;
+                opacity: 0.2;
+
+            }
+            .block3 {
+                background-color: blueviolet;
+                z-index: 591;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="block block1">BLOCK 1</div>
+        <div class="block block2">BLOCK 2</div>
+        <div class="block block3">BLOCK 3</div>
+
+    </body>
+</html>

@@ -1,0 +1,86 @@
+.body
+{
+    background-color: gray;
+}
+.header, 
+.container, 
+.footer {
+    border: 1px solid orangered;
+    margin: 10px;
+    padding: 10px;
+}
+
+.Block {
+    width: 700px;
+    margin: 10px auto;
+}
+
+.header {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: black;
+}
+
+.container {
+    height: 500px;
+}
+
+.leftBlock, 
+.rightBlock {
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    height: 470px;
+    overflow: auto;
+}
+
+.leftBlock {
+    width: 25%;
+}
+
+.rightBlock {
+    width: 65%;
+    
+}
+
+.leftBlock li,
+.detailsList > li {
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    list-style-position: inside;
+}
+
+.detailsList > li {
+    list-style: none;
+    height: 130px;
+}
+
+.imgContainer, 
+.subDetailsContainer {
+    float: left;
+}
+
+.detailsList {
+    
+    padding: 5px;
+}
+
+.detailsList li {
+    list-style: none;
+    padding: 5px;
+}
+    
+.imgContainer img  {
+    width: 100px;
+    height: 110px;
+    margin-right: 20px;
+}

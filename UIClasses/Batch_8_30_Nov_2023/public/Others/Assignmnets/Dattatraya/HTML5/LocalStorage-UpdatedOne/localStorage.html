@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage & Session Storage</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="Credentials-container">
+      <form>
+        <input type="text" id="user_name" placeholder="Username" /><br />
+        <input type="password" id="pass_word" placeholder="Password" /><br />
+
+        <label for="rememberMe">
+          <input type="checkbox" id="rememberMe" />RememberMe
+        </label>
+
+        <button onclick="saveUserCredentials()">Save User Credentials</button>
+      </form>
+    </div>
+  </body>
+</html>

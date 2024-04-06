@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PalindromeNumbersOfArray</title>
+</head>
+<body>
+    Program to print palindrome numbers of an array
+    <script>
+        var readingArrayValues = () =>
+        {
+            var arrayValues = [];
+            var size = parseInt(prompt(`Enter size`));
+            for(var i = 0;i < size;i++)
+            {
+                arrayValues[i] = prompt(`Enter ${i+1} value`);
+            }
+            return arrayValues;
+        }
+
+        var findingPalindromeNum = (arrayVals) =>
+        {
+            var k = 0;var palindromeArray = [];
+            for(var i = 0;i < arrayVals.length;i++)
+            {
+                var temp = '';
+                var actualVal = arrayVals[i];
+                actualVal = parseInt(actualVal);
+                while(arrayVals[i] > 0)
+                {
+                    temp += arrayVals[i] % 10;
+                    arrayVals[i]=parseInt(arrayVals[i] / 10); 
+                }
+
+                if(temp == actualVal)
+                {
+                    palindromeArray[k] = temp;
+                    k += 1;
+                }
+            }
+            return palindromeArray;
+        }
+
+        var printingPalindromes = () =>
+        {
+        var arrayVals = readingArrayValues();
+        console.log(`Given Array :${arrayVals}`);
+        var palindromes = findingPalindromeNum(arrayVals);
+        console.log(`Palindromes in given array \n ${palindromes}`);     
+        }
+
+        printingPalindromes();
+           
+    </script>
+</body>
+</html>

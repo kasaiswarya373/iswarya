@@ -1,0 +1,17 @@
+.procuctDetailsContainer .card{
+ margin: 10px;
+ float: left;
+ .leftSideContainer{
+    border: 1px solid;
+    width: 100px ;
+    height: 500px;
+    
+}
+
+}
+
+
+#rightsideContent{
+    display: flex;
+    flex-wrap: wrap;
+}

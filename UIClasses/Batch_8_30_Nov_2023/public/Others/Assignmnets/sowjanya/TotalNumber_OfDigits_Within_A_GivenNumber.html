@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Total Number of digits within a Given number</title>
+</head>
+<body>
+  <script>
+    var num = prompt("enter a Number");
+    num = parseInt(num);
+    var count = 0;
+    var n = num;
+    while(num > 0)
+    {
+      num = num/10;
+      num = parseInt(num);
+      count++;
+    }
+    console.log(`Total Number of digits within a Given number ${n} is ${count} `);
+  </script>
+</body>
+</html>

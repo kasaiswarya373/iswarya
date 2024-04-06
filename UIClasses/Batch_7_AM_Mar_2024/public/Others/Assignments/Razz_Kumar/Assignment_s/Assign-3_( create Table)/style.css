@@ -1,0 +1,23 @@
+.stu{
+    border: 3px solid;
+    text-align: center;
+    width: 950px;
+    margin: 20px auto;
+    padding: 18px;
+    text-decoration: underline;
+    border-style: dashed;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.container{
+    border: 2px solid;
+    width: 900px;
+    height: 550px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+.row header{
+    float: right;
+}

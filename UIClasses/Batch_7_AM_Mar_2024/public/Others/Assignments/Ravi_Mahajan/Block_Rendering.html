@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .mainblock{
+                width: 700px;
+                margin: 10px auto;
+            }
+            .header, .container,.footer{                
+                border: 2px solid;
+                margin: 10px;
+                padding: 5px;
+            }
+            .header{
+                text-align: center;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .container{
+                height: 500px;
+            }
+            .leftBlock, .rightBlock {
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+                float: left;
+                height: 470px;
+                overflow: auto;
+            }
+            .leftBlock{
+                width: 25%;
+            }
+            .rightBlock{
+                width: 65%;
+            }
+            .leftBlock li{
+                border: 1px solid;
+                list-style-position: inside;
+                padding: 10px;
+                margin: 10px;
+            }  
+            .imgContainer, .subDetailsContainer{
+                float: left;
+            } 
+            .imgContainer img{
+                width: 100px;height: 100px;
+                margin-right: 10px;
+
+            }    
+            .detailsList li{
+                padding: 5px;
+                list-style: none;
+            }  
+            .detailsList >li{
+                height: 130px;
+                list-style: none;
+                border: 1px solid;
+                margin: 5px;
+            }
+        </style>
+    </head>
+<body>
+    <div class="mainBlock">
+        <div class="header">
+            Students Details
+        </div>
+    </div>
+    <div class="container">
+        <div class="leftBlock">
+            <ol>
+                <li>                  
+                    mahesh</li>
+                <li>
+                    <a href="#no2"> 
+                        teena
+                    </a>   
+                </li>
+                <li> Meena</li>
+                <li> aniket</li>
+                <li>
+                    <a href="#no5">
+                        kiran
+                    </a>
+                     </li>
+            </ol>
+        </div>   
+        <div class="rightBlock">
+            <ul class="detailsList">
+                <li>                   
+                    <div class="imgContainer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiwTP-KFG8lsKFQQSYn7bnhteoZTLDAEhqPA&usqp=CAU" alt="seema">
+                    </div>
+                     <div class="subDetailsContainer">
+                         <ul>
+                            <li>name ravi</li>
+                            <li>age 15</li>
+                            <li>Location pune</li>
+                         </ul>
+                     </div>                    
+                </li>
+                <li id="no2">                   
+                    <div class="imgContainer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiwTP-KFG8lsKFQQSYn7bnhteoZTLDAEhqPA&usqp=CAU" alt="seema">
+                    </div>
+                     <div class="subDetailsContainer">
+                         <ul>
+                            <li>name ravi</li>
+                            <li>age 15</li>
+                            <li>Location pune</li>
+                         </ul>
+                     </div>                    
+                </li>
+                <li>                   
+                    <div class="imgContainer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiwTP-KFG8lsKFQQSYn7bnhteoZTLDAEhqPA&usqp=CAU" alt="seema">
+                    </div>
+                     <div class="subDetailsContainer">
+                         <ul>
+                            <li>name ravi</li>
+                            <li>age 15</li>
+                            <li>Location pune</li>
+                         </ul>
+                     </div>                    
+                </li>
+                <li>                   
+                    <div class="imgContainer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiwTP-KFG8lsKFQQSYn7bnhteoZTLDAEhqPA&usqp=CAU" alt="seema">
+                    </div>
+                     <div class="subDetailsContainer">
+                         <ul>
+                            <li>name kiran</li>
+                            <li>age 15</li>
+                            <li>Location pune</li>
+                         </ul>
+                     </div>                    
+                </li>
+                <li id="no5">                   
+                    <div class="imgContainer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiwTP-KFG8lsKFQQSYn7bnhteoZTLDAEhqPA&usqp=CAU" alt="seema">
+                    </div>
+                     <div class="subDetailsContainer">
+                         <ul>
+                            <li>name ravi</li>
+                            <li>age 15</li>
+                            <li>Location pune</li>
+                         </ul>
+                     </div>                    
+                </li>
+            </ul>            
+        </div>  
+    </div>
+   
+</body>
+</html>

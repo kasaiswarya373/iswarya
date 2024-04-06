@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title> To check palendrome </title>
+</head>
+<body>
+    <h1> To check the given number is palendrom or not </h1>
+    <script>
+        var n=parseInt(prompt("enter a number"));
+        var n1=n;
+        var sum=0;
+        while(n>0) {
+            rem=n%10;
+            sum=(sum*10)+rem;
+            n=parseInt(n/10);
+        }
+        if(n1==sum) 
+            console.log("given number is palendrome");
+        else
+            console.log("not a palendrome");
+    </script>
+</body>
+</html>        
+
+
+        
+

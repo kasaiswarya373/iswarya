@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>WAP to check whether a given no. is pallindrome or not ?</h3>
+    <script>
+      var n = parseInt(prompt("Enter a number: "));
+      var originalNumber = n;
+      var reversedNumber = 0;
+      while (n > 0) {
+        reversedNumber = reversedNumber * 10 + (n % 10);
+        n = n / 10 - (n % 10) / 10;
+      }
+      if (originalNumber === reversedNumber) {
+        console.log("Pallindrome");
+      } else {
+        console.log("Not a Pallidrome");
+      }
+    </script>
+  </body>
+</html>

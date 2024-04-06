@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // WAP to find out reverse of a given number
+        var n = prompt("Enter number");
+        n = parseInt(n);
+        var revno = 0;
+
+        while (n > 0) {
+            rem = n % 10;
+            revno = revno * 10 + rem;
+            n = n / 10;
+            n = parseInt(n);
+        }
+        console.log(revno);
+
+
+    </script>
+</body>
+
+</html>

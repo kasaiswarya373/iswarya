@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Functions</title>
+    </head>
+    <body>
+       <script>
+        // WAP Working with Employee Details using Functions.....
+        var EmpName, Age, Gender, Department, basicSalary, pf, hra, totalSalary
+
+        function employeeDetails() {
+            EmpName = prompt("Enter Employee Name: ");
+            Age = prompt("Enter Employee Age: ");
+            Gender = prompt("Enter Employee Gender: ");
+            Department = prompt("Enter Employee Department: ");
+            basicSalary = parseInt(prompt("Enter basic salary : "));
+            pfCalculation()
+        };
+        function pfCalculation() {
+            pf = parseInt(prompt("Enter PF percentage: "));
+            pf = (pf * basicSalary)/100;
+            hraCalculation()
+        };
+        function hraCalculation() {
+            hra = parseInt(prompt("Enter hra percentage: "));
+            hra = (hra * basicSalary)/100;
+            totalSalaryCalculation()
+        }
+        function totalSalaryCalculation() {
+            totalSalary = hra + pf + basicSalary;
+            totalSalary = parseInt(totalSalary);
+        }
+        function displayEmpDetails() {
+            employeeDetails()
+            console.log("Employee name is : " + EmpName);
+            console.log("Age is : " + Age);
+            console.log("Gender is : "  + Gender);
+            console.log("Department is : " + Department);
+            console.log("Basic Salary is : " + basicSalary);
+            console.log("PF is : " + pf);
+            console.log("Hra is : " + hra);
+            console.log("Total Salary is : " + totalSalary);
+        };
+        displayEmpDetails()
+       </script>
+    </body>
+</html>

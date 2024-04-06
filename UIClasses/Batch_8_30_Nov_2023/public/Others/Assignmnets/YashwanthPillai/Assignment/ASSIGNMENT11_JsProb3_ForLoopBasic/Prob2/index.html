@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForLoop Prob2</title>
+</head>
+<body>
+    <h2>WAP To display odd numbers in agiven range</h2>
+
+    <script>
+        let num_start = parseInt(prompt("Enter a value, from where to begin, to identify odd numbers"))
+        let num_end = parseInt(prompt("Enter a value to end or stop identifying odd numbers"))
+
+        console.log(`NUMBER_START = ${num_start} NUMBER_END = ${num_end}`);
+
+        for(var i = num_start; i<=num_end ; i++ ){
+
+            if(i%2 != 0){
+
+                console.log(`NUMBER ${i} is ODD`);
+            }
+
+        }
+    </script>
+</body>
+</html>

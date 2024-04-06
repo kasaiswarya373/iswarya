@@ -1,0 +1,11 @@
+.card-footer{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.card{
+    img{
+    width: 100px;
+    height: 100px;
+    }
+}

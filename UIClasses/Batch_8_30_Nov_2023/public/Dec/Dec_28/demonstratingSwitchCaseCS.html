@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Switch Case CS
+        </title>
+    </head>
+    <body>
+        <script>
+            var p1 = parseInt(prompt("enter first  value"));
+            var p2 = parseInt(prompt("enter second value"));
+
+            var userOption = prompt("Choose from add/mul/div/sub");
+
+            /*if (userOption == 'add') {
+                // find sum
+                var sum = p1 + p2;
+                console.log("The sum is " + sum);
+            } else if (userOption == 'mul') {
+                //mul
+                var mul = p1 * p2;
+                console.log(`The mul is ${mul}`);
+            } else if (userOption == 'sub') {
+                //Sub
+                var sub = p1 - p2;
+                console.log(`The Sub is ${sub}`);
+            } else if (userOption == 'div') {
+                // Div
+                var div = p1 / p2;
+                console.log(`The Division is ${div}`);
+            } else {
+                console.log("u choose wrng option")
+            } */
+
+            switch (userOption) {
+                case 'add':
+                    var sum = p1 + p2;
+                    console.log("The sum is " + sum);
+                    break;
+                case 'mul':
+                    var mul = p1 * p2;
+                    console.log(`The mul is ${mul}`);
+                    break;
+                case 'div':
+                    var div = p1 / p2;
+                    console.log(`The Division is ${div}`);
+                    break; 
+                case 'sub':
+                    var sub = p1 - p2;
+                    console.log(`The Sub is ${sub}`);
+                    break;
+                default:
+                    console.log("u choose wrng option")
+            }
+        </script>
+    </body>
+</html>

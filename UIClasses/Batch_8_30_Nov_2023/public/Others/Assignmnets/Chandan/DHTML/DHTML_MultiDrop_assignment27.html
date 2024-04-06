@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment </title>
+    <link rel="stylesheet" href="Multidrop.css">
+</head>
+<body>
+    <h3>User Registration page</h3>
+    <div class="container">
+        <h2> User Registration</h2>
+    <div>
+            <label for="uname">Username</label>
+            <input type="text" id="uname" onkeypress="return checkuserinput()"  maxlength="8">
+    </div>    
+    <div>
+        <label for="uage">Age</label>
+        <input type="text" id="uage" size="4" maxlength="2" onkeypress="return checkuserage()">
+    </div>
+    <div>
+        <label for="country">Country Name</label>
+        <select name="" id="country" onchange="showState(this.value)"></select>
+    </div>
+    <div>
+        <label for="state">State Name</label>
+        <select name="" id="state" onchange="showdist(this.value)" ></select>
+    </div>
+    <div>
+        <label for="district">District Name</label>
+        <select name="" id="distict"></select>
+    </div>
+    <input type="button" value="Register" onclick="userRegister()" >
+</div>
+<div class="container" id="detailcont">
+    <h1>User Details</h1>
+    <div>
+        <label for="name">Username</label>
+        <span id="name"></span>
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <span id="age"></span>
+    </div>
+    <div>
+        <label for="country">Country</label>
+        <span id="country"></span>
+    </div>
+    <div>
+        <label for="state">State</label>
+        <span id="state"></span>
+    </div>
+    <div id="shwdist">
+        <label for="dist">District</label>
+        <span id="dist"></span>
+    </div>
+</body>
+</html>

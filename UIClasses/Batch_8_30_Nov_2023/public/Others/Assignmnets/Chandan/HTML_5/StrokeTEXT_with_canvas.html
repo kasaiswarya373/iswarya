@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stroked Text with Canvas</title>
+<style>
+    h2{
+        border: 2px solid rgb(248, 186, 186);
+        background-color: antiquewhite;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
+    body{
+        background-color: rgb(223, 223, 142);
+    }
+  canvas {
+    border: 1px solid #000;
+  }
+</style>
+</head>
+<body>
+    <h2>
+        Stroked Text with Canvas
+    </h2>
+<canvas id="myCanvas" width="600" height="300"></canvas>
+
+<script>
+  var canvas = document.getElementById('myCanvas');
+  var ctx = canvas.getContext('2d');
+
+  // Function to draw text with stroke
+  function drawStrokedText(text, x, y, fontSize, strokeColor, strokeWidth) {
+    ctx.font = fontSize + 'px Arial';
+    ctx.strokeStyle = strokeColor;
+    ctx.lineWidth = strokeWidth;
+    ctx.strokeText(text, x, y);
+  }
+
+  // Function to randomly displace characters
+  function displaceCharacters(text, x, y, fontSize, displacement) {
+    for (var i = 0; i < text.length; i++) {
+      var character = text.charAt(i);
+      var newX = x + Math.random() * displacement - displacement / 2;
+      var newY = y + Math.random() * displacement - displacement / 2;
+      drawStrokedText(character, newX, newY, fontSize, 'blue', 2);
+      // Update x position for the next character
+      x += ctx.measureText(character).width;
+    }
+  }
+
+  // Call the function to draw text with strokes and displace characters
+  drawStrokedText('Hello World', 50, 100, 30, 'blue', 2);
+  displaceCharacters('Hello World', 50, 100, 30, 10);
+</script>
+</body>
+</html>

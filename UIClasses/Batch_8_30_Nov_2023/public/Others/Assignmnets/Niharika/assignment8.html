@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            border: 2px solid;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        .maincontent {
+            width: 97%;
+           height: 650px;
+            border: 2px solid;
+            margin: 10px;
+           
+        }
+        .footer {
+            border: 2px solid;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        .subblock {
+            width: 95%;
+            height: 170px;
+            border: 2px solid;
+            margin: 25px;
+        }
+        .heading {
+            display: inline;
+            border: 1px solid;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            position: relative;
+            top: -1%;
+            background-color: lightgreen;
+            font-weight: bold;
+        }
+        .name {
+            position: absolute;
+            top: 30%;
+            margin: 10px;
+        }
+        .fname {
+            position: absolute;
+            top: 39%;
+            margin: 10px;
+        }
+        .age {
+            position: absolute;
+            top: 48%;
+            margin: 10px;
+        }
+        .address {
+            position: absolute;
+            right: 70px;
+        }
+        .country {
+            position: absolute;
+            top: 220px;
+            right: 235px;
+        }
+        .qualifications {
+            position: absolute;
+            top: 75%;
+            margin: 10px;
+        }
+        .languages {
+            position: absolute;
+            top: 88%;
+            margin: 10px;
+        }
+        .courseopted {
+            position: absolute;
+            right: 100px;
+        }
+        .career {
+            position: absolute;
+           bottom: -47%;
+           margin: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <h3>Student Registration Page</h3>
+<div class="maincontent">
+    <div class="subblock">
+            <div class="heading">Personal-Details</div>
+           <div class="name"><label for="name"><b>Name:</b> </label>
+            <input type="text"></div>
+            <div class="fname"><label for="fname"><b>First-Name : </b></label>
+                <input type="text">
+            </div>
+            <div class="age"><label for="age"><b>Age:</b></label>
+                <input type="number" maxlength="3">
+            </div>
+            <div class="address">
+                <label for="text"><b>Address: </b></label>
+                <textarea name="text" id="text" cols="30" rows="5"></textarea>
+            </div>
+            <div class="country">
+                <label for="country"><b>Country: </b></label>
+                <select>
+                    <option>Australia</option>
+                    <option>China</option>
+                    <option>India</option>
+                    <option>Sri Lanka</option>
+                    <option>UAE</option>
+                    <option>Canada</option>
+                </select>
+            </div>
+    </div>
+    <div class="subblock">
+        <div class="heading">Education-Details</div>
+        <div class="qualifications">
+            <label for="qualifications"><b>Qualifications: </b></label>
+            <select>
+                <option>Btech</option>
+                <option>BSC</option>
+                <option>Diplomo</option>
+            </select>
+        </div>
+        <div class="languages">
+            <label for="languages"><b>Languages Known: </b></label>
+            <input type="checkbox" value="telugu">
+            <label for="telugu">Telugu</label>
+            <input type="checkbox" value="hindi">
+            <label for="telugu">Hindi</label>
+            <input type="checkbox" value="English">
+            <label for="telugu">English</label>
+            <input type="checkbox" value="Urdu">
+            <label for="telugu">Urdu</label>
+        </div>
+        <div class="courseopted">
+            <label for="course"><b>Course Opted: </b></label>
+            <input type="radio">
+            <label for="mca">MCA</label>
+            <input type="radio">
+            <label for="mca">MSC</label>
+            <input type="radio">
+            <label for="mca">MBA</label>
+            <input type="radio">
+            <label for="mca">Btech</label>
+        </div>
+    </div>
+    <div class="subblock">
+        <div class="heading">About-Yourself</div>
+        <div class="career">
+            <label for="career"><b>Few Words About Your Career<b></label>
+            <textarea name="career" id="career" cols="50" rows="10"></textarea>
+        </div>
+    </div>
+</div>
+    <div class="footer">@Copyrights 2023</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.outerBlock{
+    border: 1px solid;
+    list-style: none;
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: brown;
+}
+li{
+    list-style: none;
+}
+.outerBlock>li{
+    width: 250px;
+    height: 20px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: bisque;
+}
+#btedit,#btnSave{
+    margin: 5px;
+}

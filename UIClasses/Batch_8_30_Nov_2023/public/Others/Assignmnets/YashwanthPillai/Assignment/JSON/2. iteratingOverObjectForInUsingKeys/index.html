@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IteratingOverJsonUsingForIn</title>
+  </head>
+  <body>
+    <h2>Iterating Over Json Using ForIn</h2>
+    <script>
+      let myGradSubjects = {
+        1 : "C",
+        2 : "C++",
+        3 : "Java",
+        4 : "JavaScript",
+        5 : "DSA",
+        6 : "ComputerNetworksAndSecurity",
+        7 : "DBMS"
+      };
+
+      for (const key in myGradSubjects ) {
+        
+        console.log(key)         //iterating over keys one by one
+        console.log(myGradSubjects[key]) //iterating over values one by one
+        
+
+      }
+    </script>
+  </body>
+</html>

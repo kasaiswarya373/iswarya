@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Problem1 Calculate Employee Total Salary </title>
+</head>
+<body>
+    <h2>WAP to work with employee details like Employee name, gender, age, Dept, basic salary, calculate total salary of employee where total salary is sum of pf, hra, and basic salary. <br> pf = 14% of basic salary <br>hra = 25% of basic salary </h2>
+
+
+    <script>
+        let E_Name = prompt("Enter Employee Name");
+        let E_Gender = prompt("Enter Gender");
+        let E_Age = parseInt(prompt("Enter Age"));
+        let E_Dept = prompt("Enter Department of Work");
+        let E_BasicSalary = parseFloat(prompt("Enter Basic Salary Amount"));
+        let pf = (14 * E_BasicSalary)/100;
+        let hra = (25 * E_BasicSalary)/100;
+
+        console.log(`E_Name : ${E_Name}, E_Age : ${E_Age}, E_Gender : ${E_Gender}, E_Dept : ${E_Dept}, E_BasicSalary : ${E_BasicSalary}, pf : ${pf}, hra : ${hra}`);
+
+        let E_TotalSalary = (E_BasicSalary + pf + hra);
+
+        console.log("EmployeeTotalSalary : ", E_TotalSalary);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Scope variables
+    <script>
+        var a=20 //Global scope 
+        
+        let b="anil" //Global scope
+        
+        function abc(){//module
+            console.log(a)
+        }
+        abc()
+        console.log(b);
+
+
+    function local(){ //module
+        var c=30; //local scope
+        let d="Gayathri"  //local scope
+        console.log(d)
+    }
+    local();
+   // console.log(c){we get error beacause can'r acces local scope outside of the function}
+    
+    
+
+    if(true){//block
+        var M=5; //global scope
+        let k=2;//block scope
+      
+        console.log(M)
+        console.log(k)
+        
+    }
+    console.log(M)
+    console.log(k)
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep vs shallow cloning</title>
+</head>
+
+<body>
+    <script>
+        let a = 8;
+        let b = a;
+
+        b = 9;
+
+        console.log(a);
+        console.log(b);
+
+        let obj = {
+            id: 1,
+            name: 'abc'
+        }
+
+
+
+        let arr = [];
+
+        arr.push(obj);
+
+        arr.push(obj);
+
+        console.log(arr);
+
+        //let obj2 = obj;
+
+        let stringifyObj = JSON.parse(JSON.stringify(obj));
+        stringifyObj.name = 'lmn';
+
+        //obj2.name='xyz';
+        console.log(obj);
+        //console.log(obj2);
+        console.log(stringifyObj);
+
+
+    </script>
+
+</body>
+
+</html>

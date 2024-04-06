@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            var getNumberLength = (n) => {
+                var len = 0;
+                while(n > 0) {
+                    n = n / 10;
+                    n = parseInt(n);
+                    len++;
+                }
+                return len;
+            }
+            
+            var checkArmstrongNumber = (n) => {
+                 // n = 234
+                var temp = n;
+                var result = 0;
+                // var variableLength = n.toString().length;
+                var variableLength = getNumberLength(n) ;
+                var rem;
+                while (n > 0) {
+                    rem = n % 10;
+                    result = result + (rem ** variableLength);
+                    n = n / 10;
+                    n = parseInt(n);
+                }
+                if (result == temp) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            var checforArmstrongNumbers = () => {
+                var data = [ 23, 4 , 153, 45, 234, 407];
+
+                for (var i = 0; i < data.length; i++) {
+                    var result = checkArmstrongNumber(data[i])
+                    console.log(`${data[i]} is Armstrong - ${result}`);
+                }
+            }
+
+            checforArmstrongNumbers();
+        </script>
+    </body>
+</html>

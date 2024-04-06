@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function As Params</title>
+</head>
+<body>
+    <script>
+        var displayDetails = (rg, showDetails) => {
+            console.log(rg);
+            showDetails();
+        }
+
+        displayDetails(20, () => {
+            console.log('From passed function');
+        });
+
+    </script>
+    
+</body>
+</html>

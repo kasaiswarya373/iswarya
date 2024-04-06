@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DHTML ASSIGNMENT3 DISPLAY AND STORE MULTIPLE EMPLOYEE PAYSLIP</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h2>EMPLOYEE PAYSLIP WITH CLASSES</h2>
+    <div class="container">
+      <div class="input-container">
+        <li class="head1">EMPLOYEE PAYSLIP</li>
+        <li>
+          <label for="ename">NAME : </label>
+          <input type="text" name="ename" id="Ename" />
+        </li>
+        <li>
+          <label for="eid">E-ID : </label>
+          <input type="text" name="eid" id="Eid" />
+        </li>
+        <li>
+          <label for="eage">AGE : </label>
+          <input type="text" name="eage" id="Eage" />
+        </li>
+        <li>
+          <label for="e">GENDER : </label>
+          <input type="radio" name="egender" value="Male" checked />Male
+          <input type="radio" name="egender" value="Female" />Female
+        </li>
+        <li>
+          <label for="edept">DEPARTMENT : </label>
+          <select name="edept" id="Edept">
+            <option value="GOVT SERVICE">GOVT SERVICE</option>
+            <option value="BANKING">BANKING</option>
+            <option value="TEACHER/PROFESSOR">TEACHER/PROFESSOR</option>
+            <option value="IT SOFTWARE/HARDWARE">IT SOFTWARE/HARDWARE</option>
+            <option value="SALES & MARKETING">SALES & MARKETING</option>
+            <option value="NON IT VOICE-PROCESS">NON IT VOICE-PROCESS</option>
+            <option value="SELF-EMPLOYEED/BUSINESS">
+              SELF-EMPLOYEED/BUSINESS
+            </option>
+          </select>
+        </li>
+        <li>
+          <label for="ebasicsal">BASIC SALARY : </label>
+          <input type="text" name="ebasicsal" id="Ebasicsal" />
+        </li>
+        <li>
+          <label for="month">MONTH AND YEAR</label>
+          <input type="date" name="month" id="Emonth" />
+        </li>
+        <li class="buttons">
+          <input type="button" name="submit" value="GENERATE PAYSLIP" onclick="empInfo()"/>
+          <input type="button" name="submit" value="RESET" onclick="resetFields()"/>
+          <!-- <input type="button" name="submit" value="SHOW ALL PAYSLIP" onclick="showAllPaySlip()"> -->
+        </li>
+      </div>
+
+      <div class="display-container">
+        <li class="head1">PAYSLIP OF THE MONTH</li>
+        <li>NAME : <span class="DE_name"></span></li>
+        <li>ID : <span class="DE_id"></span></li>
+        <li>AGE : <span class="DE_age"></span></li>
+        <li>GENDER : <span class="DE_gender"></span></li>
+        <li>DEPARTMENT : <span class="DE_dept"></span></li>
+        <li>BASICSALARY : <span class="DE_bs"></span></li>
+        <li>PF : <span class="DE_pf"></span></li>
+        <li>HRA : <span class="DE_hra"></span></li>
+        <li>TAX : <span class="DE_tax"></span></li>
+        <li>TOTALSALARY : <span class="DE_ts"></span></li>
+        <li>PAYSLIP DATE : <span class="DE_date"></span></li>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

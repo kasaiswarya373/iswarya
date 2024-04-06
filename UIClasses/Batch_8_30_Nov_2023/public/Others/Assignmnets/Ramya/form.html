@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registation Form</title>
+    <style>
+        ul{
+            width: 500px;
+            border: 2px solid blueviolet;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: lightgray;
+        }
+        li{
+            list-style: none;
+            border: 1px solid lightblue;
+            background-color: blue;
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 300;
+        }
+        h3{
+            text-align: center;
+        }
+        #comment{
+            position: relative;
+            top: -70px;
+        }
+        #submit{
+            position: relative;
+            left: 200px;
+            border-radius: 20px;
+            padding: 10px;
+            color: blue;
+            font-size: 15px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <h3>Registation Form</h3>
+    <form action="http://test1.com/data/info/userdetails" method="get">
+        <ul>
+            <li>
+                <label>Full Name:</label>
+                <input type="text" name="fname" value="first name">
+                <input type="text" name="lname" value="last name"><br>
+            </li>
+            <li>
+                <label>Company Name:</label>
+                <input type="text" name="cname"><br>
+            </li>
+            <li>
+                <label>Phone Number:</label>
+                <input type="numbers" name="pnum" value="1-0123456789"><br>
+            </li>
+            <li>
+                <label>Country:</label>
+                <select name="country">
+                    <option>India</option>
+                    <option>England</option>
+                    <option>China</option>
+                    <option>Bangladesh</option>
+                    <option>America</option>
+                </select>
+            </li>
+            <li>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" checked value="Female">Female   
+            </li>
+            <li>
+                <label>Languages Known:</label>
+                <input type="checkbox" name="lang-tel">Telugu
+                <input type="checkbox" checked disabled name="lang-English">English
+                <input type="checkbox" name="lang-urdu">urdu
+                <input type="checkbox" name="lang-tamil">tamil
+            </li>
+            <li>
+                <label>Email id:</label>
+                <input type="email" name="email" value="enter your email">
+            </li>
+            <li>
+                <label>Password</label>
+                <input type="password" name="password" maxlength="10" value="India234">
+            </li>
+            <li>
+                <label id="comment">Comment:</label>
+                <textarea name="about" rows="10" cols="40">Enter your comment here</textarea>
+            </li>
+            <li>
+                <input id="submit" type="submit" value="Save Details" onclick="readdata()">
+            </li>
+        </ul>
+    </form>
+    <script>
+        readdata =() => {
+            registationData = {};
+            registationData.
+        }
+    </script>
+</body>
+</html>

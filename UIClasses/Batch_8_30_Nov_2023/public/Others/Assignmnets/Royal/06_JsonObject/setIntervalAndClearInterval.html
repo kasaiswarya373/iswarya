@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval & clearInterval methods</title>
+    <style>
+        #test{
+            width: 150px;
+            height: 150px;
+            background: plum;
+        }
+    </style>
+</head>
+<body>
+    <div id="test"> </div>
+    <script>
+        var a = 0;
+
+        var id = setInterval(() => {
+            a = a + 10;
+
+            if (a == 300){
+                clearInterval(id);
+            } else{
+                var target = document.getElementById("test");
+                target.style.marginLeft = a + 'px';
+            }
+        }, 200);
+
+        /*
+        Note : Below we created separate funtion, above we use callback funtion
+
+         var anime = () => {
+            a = a + 10;
+
+            if (a == 300){
+                clearInterval(id);
+            } else{
+                var target = document.getElementById("test");
+                target.style.marginLeft = a + 'px';
+            }
+        }
+        */
+    </script>
+
+    
+</body>
+</html>

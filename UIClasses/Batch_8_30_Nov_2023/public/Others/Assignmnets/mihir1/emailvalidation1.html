@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>email form validation</title>
+    </head>
+    <body>
+        <script>
+            function myfun()
+            {
+            var a=    document.myname.email.value; 
+            if(a.indexof('0')<=0){
+                document.getElementById("message").innerHTML="* * invalid 0 position";
+                return false;
+            }
+            if(a.charAt(a.length-4)!='.')
+            {
+                document.getElementById("message").innerHTML="** invalid.position at4";
+                return false;
+            }
+            if(a.charAt(a.length-4)!='.')
+            {
+                document.getElementById("message").innerHTML="* * invalid . position at 4";
+                return false;
+            }
+            }
+        </script>
+        <form name="my name" onsubmit="return myfun"()>
+            email: <input type="text" name="email" value="">
+            <span id="message"></span>
+            <br></br>
+            <input type="submit" value="submit"> </input>
+        </form>
+    </body>
+</html>

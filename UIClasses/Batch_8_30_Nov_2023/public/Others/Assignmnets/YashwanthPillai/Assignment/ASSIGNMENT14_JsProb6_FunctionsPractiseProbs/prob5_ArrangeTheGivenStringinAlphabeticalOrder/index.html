@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sort given string in alphabetical order</title>
+  </head>
+  <body>
+    <h2>WAP To display the given string in alphabetical order</h2>
+
+    <script>
+              let sortStringInAlphabeticalOrder = () =>{
+                   let str = prompt("Enter A String")
+
+                   let stringInAlphaOrder = getSortedStr(str);
+                   console.log(`GIVEN STRING = ${str} and Sorted String in Alphabetical Order = ${stringInAlphaOrder} `)
+              }
+              let getSortedStr = (str) =>{
+                   let alphabeticalOrder = str.split("").sort().join("")
+                   return alphabeticalOrder;
+              }
+
+              sortStringInAlphabeticalOrder()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //WAP to find out the largest value from the given numbers.
+            var n = parseInt(prompt("enter value: "));
+            var arr = [n];
+            for(var i=0;i<n;i++){
+                arr[i] = parseInt(prompt("enter values: "));
+            }
+            var max = 0;
+            var maxvalue = (array , max) => {
+                for(var i=0;i<n;i++){
+                if(arr[i]>max){
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+            console.log("the largest number in the given array is " + maxvalue(arr , max));
+        </script>
+    </body>
+</html>

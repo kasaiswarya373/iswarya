@@ -1,0 +1,895 @@
+.img{
+    position: relative;
+    top: 11px;
+    left: 387px;
+    width: 449px;
+    height: 112px;
+    opacity: 1;
+}
+
+.FristBox {
+    top: 871px;
+    left: 0px;
+    width: 1920px;
+    height: 869px; 
+    opacity: 1;
+    background-color: #FFFFFF 0% 0% no-repeat padding-box;
+    list-style: none;
+    
+}
+.img1{
+    
+        top: 43px;
+       
+        background: transparent;
+        
+        position: absolute;
+       
+        left: 1260px;
+}
+
+
+
+.logo{
+    top: 0px;
+left: 0px;
+width: 1920px;
+height: 146px;
+}
+#head{
+    
+      position: relative;
+      left: 551px;
+      top: -34px;    
+      font: normal normal 900 23px/27px Noto Sans;
+      letter-spacing: 0px;
+      color: #003D68;
+      opacity: 0.9;
+  
+}
+ #span{
+    position: relative;
+    left: 947px;
+    top: -28px;
+    font: normal normal 900 23px/27px Noto Sans;
+    letter-spacing: 0px;
+    color: #003D68;
+    opacity: 0.9;
+}
+    
+    
+
+.rectange{
+    width: 1903px;
+    height: 48px;
+    border: 1px;
+    background: #003D68 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+   
+    padding-left: 17px;
+}
+
+.r1{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    position: relative;
+    top: 14px;
+    left: -49px;
+    font-size: 18px;
+}
+
+.r2{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    position: relative;
+    top: 14px;
+    left: -2px;
+    font-size: 18px;
+}
+.r3{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    position: relative;
+    top: 14px;
+    left: 45px;
+    font-size: 18px;
+}
+.r4{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    position: relative;
+    top: 14px;
+    left: 92px;
+    font-size: 18px;
+}
+.r5{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    position: relative;
+    top: 14px;
+    left: 139px;
+    font-size: 18px;
+}
+.r6{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    position: relative;
+    top: 14px;
+    left: 186px;
+    font-size: 18px;}
+.r7{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    position: relative;
+    top: 14px;
+    left: 233px;
+    font-size: 18px;
+}
+.r8{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    position: relative;
+    top: 14px;
+    left: 280px;
+    font-size: 18px;
+    
+}
+.logo1{
+    top: 231px;
+left: 0px;
+width: 1920px;
+height: 640px;
+background: transparent url('img/home-page-banner-image.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.row1{
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    top: 0px;
+
+   
+    height: 38px;
+    /* background: #003255 0% 0% no-repeat padding-box;  */
+    opacity:1; 
+    position: relative;
+    left: 457px;
+    width: 23px;
+    
+}
+.row2{
+    
+    font: normal normal medium 14px/19px Noto Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    top: 0px;
+    height: 38px;
+    /* background: transparent linear-gradient(90deg, #FF5700 0%, #FF000A 61%, #D10207 100%) 0% 0% no-repeat padding-box;
+    opacity: 1; */
+    position: relative;
+    left: 485px;
+    width: 23px;
+    /* font-size: 12px; */
+}
+.row_1{
+    background: #003255 0% 0% no-repeat padding-box; 
+}
+.row_2{
+    background: transparent linear-gradient(90deg, #FF5700 0%, #FF000A 61%, #D10207 100%) 0% 0% no-repeat padding-box; 
+}
+.rectange1{
+    display: flex;
+}
+/* ------------------------------------------------------ */
+.bodypart1{
+    /* /* top: 931px; */
+    left: 390px;
+    /* width: 573px; */
+    height: 46px; 
+    /* UI Properties */
+    /* text-align: left; */
+    font: normal normal 800 34px/50px Noto Sans;
+    letter-spacing: 0px;
+    color: #003D68;
+    opacity: 1;
+    list-style: none;
+    position: relative;
+}
+.bodypart2{
+    /* /* top: 983px; */
+    left: 390px;
+    /* width: 479px; */
+    height: 46px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 34px/50px Noto Sans;
+    letter-spacing: 0px;
+    color: #003D68;
+    opacity: 1;
+    list-style: none;
+    position: relative;
+}
+.img3{
+   
+        display: flex;
+        top: -67px;
+        left: 1001px;
+        width: 651px;
+        height: 465px;
+        position: relative;
+    
+}
+.img4{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 20px #00000029;
+opacity: 1;
+
+    top: -394px;
+    left: 297px;
+    width: 600px;
+    height: 353px;
+    background: transparent url(img/sport-meet-2021-image.png) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: relative;
+    display: flex;}
+.img_5{
+    top: 900px;
+    left: 971px;
+    width: 559px;
+    height: 352px;
+    background: transparent url('img/arts-and-games-meet-2020-image.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 20px #00000029;
+opacity: 1;
+
+    
+}
+.textbox1{
+    /* top: 1470px; */
+    left: 477px;
+    /* width: 286px; */
+    height: 45px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal 800 33px/45px Noto Sans;
+    letter-spacing: 0px;
+    color: #003D68;
+    opacity: 1;
+    position: relative;
+}
+.textbox_1{
+    /* top: 1540px; */
+    left: 432px;
+    /* width: 475px; */
+    height: 52px;
+    text-align: left;
+    font: normal normal normal 18px/26px Noto Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    position: relative;
+}
+.textbox2{
+    /* top: 1470px; */
+    left: 1058px;
+    /* width: 406px; */
+    height: 45px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 800 33px/45px Noto Sans;
+    letter-spacing: 0px;
+    color: #003D68;
+    opacity: 1;
+    position: relative;
+}
+.textbox_2{
+    /* top: 1540px; */
+    left: 1013px;
+    /* width: 475px; */
+    height: 52px;
+    text-align: left;
+    font: normal normal normal 18px/26px Noto Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+     position: relative; 
+}
+#nn {
+ display: flex;
+ height: 24px;
+}
+#line {
+    text-align: center;
+    font: normal normal bold 15px/20px Noto Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 19px;
+    width: 30%;
+    background: #003255 0% 0% no-repeat padding-box;
+}
+#ccc  {
+    position: relative;
+    left: 210px;
+}
+#open {
+    font: normal normal medium 14px/19px;
+    
+    color: #FFFFFF;
+    opacity: 1;
+    background: transparent linear-gradient(90deg, #FF5700 0%, #FF000A 61%, #D10207 100%) 0% 0% no-repeat padding-box;
+    position: relative;
+    position: relative;
+    display: flex;
+   
+    width: 1350px;
+}
+
+div {
+    display: block;
+}
+.FristBox {
+    top: 871px;
+    left: 0px;
+
+}
+.mmm {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+   
+
+}
+#hhhh {
+    position: relative;
+    left: 45px;
+  
+
+}
+.CONTACT{
+    top: 1740px;
+left: 50px;
+width: 1920px;
+height: 847px;
+position: absolute;
+background: #003D68 0% 0% no-repeat padding-box;
+opacity: 1;
+clear: both;
+
+
+}
+
+.img5{
+    top: -394px;
+    left: 275px;
+    width: 560px;
+    height: 353px;
+    background: transparent url(img/arts-and-games-meet-2020-image.png) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    position: relative;
+}
+.rest{
+    
+        top: 96px;
+        left: 322px;
+        width: 532px;
+        text-align: left;
+        font: normal normal 300 22px/31px Noto Sans;
+        letter-spacing: 0.18px;
+        color: #FFFFFF;
+        opacity: 1;
+        position: absolute;
+        display: flex;
+        clear: both;
+        float: left;
+
+}
+p{
+    font: normal normal medium 14px/19px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    position: relative;
+    top: -16px;
+    left: 11px;
+    display: flex;
+    font-size: 18px;
+    position: relative;
+display: flex;
+}
+.row{
+    text-align: center;
+font: normal normal 300 20px/50px Noto Sans;
+letter-spacing: 0px;
+color: #FFFFFF;
+}
+.contact_2{
+    text-align: left;
+font: normal normal 200 44px/60px Noto Sans;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+    position: absolute;
+    top: 597px;
+    left: -2px;
+}
+    /* position: static;
+    float: right;
+    clear: both; */
+
+
+  .block_1{
+    background: transparent url('img/behara-engg-clg-logo-b-and-w.png') 0% 0% no-repeat padding-box;
+mix-blend-mode: luminosity;
+position: relative;
+left: 130px;
+top: 10px;
+}
+.roll_3{
+    width: 50px;
+height: 32px;
+position: relative;
+background: transparent url('img/forward-arrow-icon.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+
+display: flex;
+clear: both;
+
+    top: 660px;
+    left: -75px;
+
+}
+.see{
+    width: 391px;
+height: 62px;
+text-align: left;
+font: normal normal 800 46px/70px Noto Sans;
+letter-spacing: 0px;
+color: #003D68;
+opacity: 1;
+position: relative;
+display: flex;
+
+left: 364px;
+    top: 70px;
+}
+
+    .grid {
+        left: 351px;
+        position: relative;
+        display: flow;
+        top: 3px;
+    }
+.grid_1{
+width: 312px;
+height: 43px;
+text-align: left;
+font: normal normal normal 32px/43px Noto Sans;
+letter-spacing: 0px;
+color: #003D68;
+opacity: 1;
+left: 370px;
+display: flex;
+top: 11px;
+}
+.ele{
+    width: 217px;
+height: 322px;
+display: contents;
+position: relative;
+background: transparent url('img/cse-image.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+/* justify-content: center; */
+clear: both;
+}
+#part{
+    top: 3243px;
+left: 0px;
+width: 1920px;
+height: 895px;
+ background-color: #00000033;
+opacity: 1;
+/* border: 2px solid; */
+}
+.arrow{
+    width: 59px;
+  
+        top: 18px;
+        display: flex;
+        height: 60px;
+        background: transparent url(img/circled-forward-indication-arrow.png) 0% 0% no-repeat padding-box;
+        opacity: 1;
+        left: -3px;
+        position: relative;
+  
+}
+.A2{
+    top: 139px;
+    width: 869px;
+    height: 500px;
+    background: transparent url(img/laboratories-image.png) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    position: relative;
+    left: 304px;
+}
+.A3{
+    top: -169px;
+    width: 793px;
+    height: 127px;
+    text-align: left;
+    font: normal normal normal 22px/32px Noto Sans;
+    letter-spacing: 0px;
+    color: #676767;
+    opacity: 1;
+    left: 388px;
+    display: flex;
+    position: relative;
+}
+
+.B1{
+    width: 246px;
+height: 52px;
+text-align: left;
+font: normal normal 800 38px/52px Noto Sans;
+letter-spacing: 0px;
+color: #003D68;
+opacity: 1;
+}
+.B3{
+    width: 195px;
+    height: 38px;
+    
+    text-align: left;
+    font: normal normal normal 28px/38px Noto Sans;
+    letter-spacing: 0px;
+    color: #003D68;
+    opacity: 1;
+}
+.B2{
+    width: 92px;
+height: 38px;
+text-align: left;
+font: normal normal normal 28px/38px Noto Sans;
+letter-spacing: 0px;
+color: #003D68;
+opacity: 1;
+}
+.B4{
+    width: 85px;
+height: 38px;
+text-align: left;
+font: normal normal normal 28px/38px Noto Sans;
+letter-spacing: 0px;
+color: #003D68;
+opacity: 1;
+}
+.B5{
+    width: 73px;
+height: 38px;
+text-align: left;
+font: normal normal normal 28px/38px Noto Sans;
+letter-spacing: 0px;
+color: #003D68;
+opacity: 1;
+}
+.fact{
+    top: 105px;
+    text-align: left;
+    font: normal normal 800 46px/70px Noto Sans;
+    letter-spacing: 0px;
+    color: #003D68;
+    opacity: 1;
+    display: flex;
+    position: relative;
+    left: 388px;}
+    
+
+  .A4 {
+          display: flow;
+            float: right;
+            position: relative;
+            left: 78px;
+            top: -790px;
+        }
+    .A5{
+        display: flow;
+        float: right;
+        position: relative;
+        top: -404px;
+        left: 251px;
+        width: 171px;
+        height: 226px;
+        background: transparent url('img/lab-microscope-icon.png') 0% 0% no-repeat padding-box;
+            } 
+       .place{
+              width: 1920px;
+            height: 620px;
+            background: transparent url('img/placements-bg-image-colored.png') 0% 0% no-repeat padding-box;
+            opacity: 1;
+            display: flex;
+            position: relative;
+            top: -520px;
+            
+}
+.place1{
+  
+width: 162px;
+height: 85px;
+text-align: center;
+font: normal normal bold 70px/104px Massilia;
+letter-spacing: 2.1px;
+color: #FFFFFF;
+text-shadow: 0px 3px 6px #00000029;
+opacity: 1;
+position: absolute;
+left: 374px;
+top: 44px;
+}
+.place2{
+    width: 134px;
+height: 85px;
+text-align: center;
+font: normal normal bold 70px/104px Massilia;
+letter-spacing: 2.1px;
+color: #FFFFFF;
+text-shadow: 0px 3px 6px #00000029;
+opacity: 1;
+position: absolute;
+left: 925px;
+top: 44px;
+
+}
+.place3{
+    width: 158px;
+    height: 85px;
+    text-align: center;
+    font: normal normal bold 70px/104px Massilia;
+    letter-spacing: 2.1px;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    position: absolute;
+    left: 1311px;
+top: 44px;
+}
+.place4{
+    width: 166px;
+    height: 55px;
+    text-align: center;
+    font: normal normal 300 40px/61px Noto Sans;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    position: absolute;
+    left: 370px;
+    top: 123px;
+}
+.place5{
+    width: 152px;
+    height: 55px;
+    text-align: center;
+    font: normal normal 300 40px/61px Noto Sans;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    position: absolute;
+    left: 923px;
+    top: 123px;
+}
+.place6{
+    width: 248px;
+    height: 55px;
+    text-align: center;
+    font: normal normal 300 40px/61px Noto Sans;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    position: absolute;
+    left: 1267px;
+    top: 123px;
+}
+
+
+.place7{
+    width: 51px;
+    height: 103px;
+    background: transparent url('img/forward-indication-arrow-icon.png') 0% 0% no-repeat padding-box;
+  
+    opacity: 1;
+    position: absolute;
+    left: 379px;
+    top: 293px;
+}
+.place8{
+    width: 270px;
+    height: 270px;
+    background: transparent url('img/placed-image-viswalekha-k.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+    left: 832px;
+    top: 232px;
+}
+.place9{
+    width: 225px;
+    height: 45px;
+    text-align: left;
+    font: normal normal 600 32px/48px Poppins;
+    letter-spacing: 0.74px;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 2px #00000033;
+    opacity: 1;
+    position: absolute;
+    left: 1178px;
+    top: 293px;
+}
+.place10{
+    width: 340px;
+    height: 28px;
+    text-align: left;
+    font: normal normal 300 20px/30px Poppins;
+    letter-spacing: 0.46px;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 2px #00000033;
+    opacity: 1;
+    position: absolute;
+    left: 1156px;
+    top: 340px;
+}
+.place11{
+    
+width: 211px;
+height: 85px;
+/* background: transparent url('img/tcs-logo.png') 0% 0% no-repeat padding-box; */
+opacity: 1; position: absolute;
+left: 1132px;
+top: 429px;
+background: transparent linear-gradient(90deg, #FFFFFF08 0%, #FFFFFFBD 34%, #FFFFFF 49%, #FFFFFFE9 70%, #FFFFFF9C 84%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+}
+.place12{
+    width: 120px;
+    height: 63px;
+    text-align: left;
+    font: normal normal 600 45px/68px Poppins;
+    letter-spacing: 1.03px;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    
+    position: relative;
+    left: 213px;
+    top: -74px;
+}
+.fixed{
+    /* position: fixed; */
+    border: 6px solid;
+}
+.photo{
+   left: 329px;
+    width: 1920px;
+    height: 277px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: relative;
+    top: -417px;
+}
+.photo1{
+    width: 456px;
+    height: 39px;
+    text-align: left;
+    font: normal normal normal 29px/39px Noto Sans;
+    letter-spacing: 0.67px;
+    color: #777777;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.photo2{
+    width: 200px;
+    height: 150px;
+    background: transparent url('img/asianpaints-logo.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    /* clear: both;
+    position: relative;
+    display: contents; */
+}
+
+    .M1 {
+        left: 367px;
+        width: 300px;
+        height: 45px;
+        text-align: center;
+        font: normal normal 800 33px/45px Noto Sans;
+        letter-spacing: 0px;
+        color: #003D68;
+        opacity: 1;
+        top: -396px;
+    }
+.M2{
+    width: 556px;
+    height: 52px;
+    text-align: left;
+    font: normal normal normal 18px/26px Noto Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    top: -419px;
+    left: 295px;
+
+}
+.H1{
+    width: 406px;
+    height: 45px;
+    text-align: left;
+    font: normal normal 800 33px/45px Noto Sans;
+    letter-spacing: 0px;
+    color: #003D68;
+    opacity: 1;
+    top: -396px;
+    left: 367px;
+    /* width: 559px;
+height: 562px; */
+
+}
+
+.H2{
+    width: 556px;
+    height: 52px;
+    text-align: left;
+    font: normal normal normal 18px/26px Noto Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    top: -419px;
+    left: 295px;
+    width: 559px;
+height: 562px;
+/* background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 20px #00000029;
+opacity: 1; */
+}
+.H3{
+    width: 22px;
+height: 45px;
+background: #E61A22 0% 0% no-repeat padding-box;
+opacity: 1;
+position: absolute;
+    display: flex;
+    top: -9px;
+    left: 320px;
+
+}
+.H4{
+    width: 22px;
+height: 45px;
+background: #E61A22 0% 0% no-repeat padding-box;
+opacity: 1;
+position: absolute;
+    display: flex;
+    top: 1470px;
+    left: 388px;
+
+}
+
+
+

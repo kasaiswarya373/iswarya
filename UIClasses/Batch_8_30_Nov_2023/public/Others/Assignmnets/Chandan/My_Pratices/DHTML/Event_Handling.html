@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Event Handling
+    </title>
+    <style>
+        div {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="click me" onfocus="showmsg();">
+    <div onclick="getupdate()">Hello</div>
+    <script>
+        var showmsg = () =>{
+            console.log("hyy i got invoked");
+        }
+
+        var getupdate = () => {
+            console.log("from get updated")
+        }
+        
+    </script>
+</body>
+</html>

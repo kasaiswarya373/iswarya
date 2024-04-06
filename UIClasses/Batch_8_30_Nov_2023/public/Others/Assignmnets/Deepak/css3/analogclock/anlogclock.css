@@ -1,0 +1,144 @@
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid;
+    border-radius: 80%;
+    background-image: linear-gradient(rgb(174, 129, 44), rgb(33, 118, 126));
+    div{
+        position: absolute;
+        font-size: 20px;
+        color: white;
+    }
+}
+.rotated1{
+    left: 45.5%;
+    top: 2%;
+}
+.rotated2{
+    left: 22%;
+    top: 11%;
+}
+.rotated3{
+    left: 9%;
+    top: 26%;
+}
+.rotated4{
+    left: 5%;
+    top: 46.5%;
+}
+.rotated5{
+    left: 10%;
+    top: 69%;
+}
+.rotated6{
+    left:26%;
+    top: 85%;
+}
+.rotated7{
+    left: 51%;
+    top: 92%;
+}
+.rotated8{
+    left: 72%;
+    top: 83%;
+}
+.rotated9{
+    left: 86%;
+    top: 67%;
+}
+.rotated10{
+    left: 92%;
+    top: 45%;
+}
+.rotated11{
+    left: 83%;
+    top: 25%;
+}
+.rotated12{
+    left: 72%;
+    top: 10%;
+}
+.second{
+    position: absolute;
+    width: 0.3vh;
+    height: 15.5vh;
+    border: 1px solid white;
+    background-color: white;
+    top: 14%;
+    left: 47.8%;
+    z-index: 90;
+    transform-origin: bottom center;
+    
+    /* animation: second 60s infinite ease-in-out; */
+    /* animation-delay: -1000ms; */
+}
+/* @keyframes second {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+.minute{
+    position: absolute;
+    width: 0.3vh;
+    height: 12.5vh;
+    border: 1px solid rgb(52, 15, 171);
+    background-color: rgb(52, 15, 171);
+    z-index: 70;
+    top: 22%;
+    left: 47.8%;
+    transform-origin: bottom center; 
+    /* animation: minutes 3600s infinite ease-in-out; */
+}
+/* @keyframes minutes {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+#hour{
+    position: absolute;
+    width: 0.3vh;
+    height: 10.5vh;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    top: 27.3%;
+    left: 47.8%;
+    transform-origin: bottom center;
+    z-index: 0;
+    /* animation: hours 43200s infinite ease-in-out;  */
+}
+/* @keyframes hours {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+.dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    top: 50.9%;
+    left: 46.5%;
+    border: 2px solid;
+    position: absolute;
+    z-index: 100;
+
+}

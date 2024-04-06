@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+    <html>
+        <title>Student Registration</title>
+        <header class="header">Student Registration Page</header>
+        <body>
+            <style>
+                .header{
+                    position: sticky;
+                    top: 2px;
+                    border: 1px solid black;
+                    text-align: center;
+                    font-weight: bold;
+                    background-color: khaki;
+                    width: 1350px;
+                    height: 40px;
+                    padding-top: 2px;
+                }
+                .detailsContainer{
+                    border: 1px solid black;
+                    position: absolute;
+                    top: 60Px;
+                    height: 1000px;
+                    width: 1350px;
+                    background-color: whitesmoke;
+                }
+                .details{
+                    border: 1px solid black;
+                    position: absolute;
+                    left: 5px;
+                    right: 5px;
+                    height: 250px;
+                    background-color: cadetblue;
+                }
+                .personel{
+                   top: 40px;        
+                }
+                .educational{                    
+                    top:350px;
+                }
+                .yourself{
+                    top:660px;   
+                }
+                .detailsHeader{
+                    position: absolute;
+                    border: 1px solid black;
+                    top: -15px;
+                    left:20px;
+                    background-color: burlywood;
+                    height: 30px;
+                    width: 160px;
+                    text-align: center;
+                    padding-top: 10px;
+                }
+                .inp{
+                    position: absolute;
+                    top: 40px;
+                    left: 10px;
+                }
+                li{
+                    list-style: none;
+                    padding: 10px;
+                    margin: 5px;
+                }
+                .leftPanel{
+                    position: absolute;
+                    left: 20px;
+                    width: 500px;
+                }
+                .rightPanel{
+                    position: absolute;
+                    left: 700px;
+                    width: 500px;
+                }
+                .centrePanel{
+                    position: absolute;
+                    left: 300px;
+                    width: 500px;
+                }
+                .submit{
+                    position: absolute;
+                    bottom: -1px;
+                    right: 100px;
+                    width: 40px;
+                    height: 40px;
+                }
+                .footer{
+                    position: absolute;
+                    border: 1px solid black;
+                    bottom: -420px;
+                    text-align: center;
+                    font-weight: bold;
+                    background-color: darkolivegreen;
+                    width: 1350px;
+                    height: 40px;
+                    padding-top: 2px;
+                }
+            </style>
+            <div class="detailsContainer">
+                <div class="details personel">
+                    <div class="detailsHeader">Personnel Details</div>
+                    <div class="inp">
+                        <div class="leftPanel">
+                            <ul>
+                                <li>
+                                    <label for="studentname">Name :</label>
+                                    <input type="text" name="studentname">
+                                </li>
+                                <li>
+                                    <label for="mobNo">Mobile No :</label>
+                                    <input type="text" name="mobNo">
+                                </li>
+                                <li>
+                                    <label for="age">Age :</label>
+                                    <input type="text" name="age">
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="rightPanel">
+                            <ul>
+                                <li>
+                                    <label for="address">Address :</label>
+                                    <textarea name="address" cols="20" rows="3"> </textarea>
+                                </li>
+                                <li>
+                                    <label for="country">Country :</label>
+                                    <select>
+                                        <option>India</option>
+                                        <option>US</option>
+                                        <option>UK</option>
+                                    </select>   
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="details educational">
+                    <div class="detailsHeader">Educational Details</div>
+                    <div class="inp">
+                        <div class="centrePanel">
+                                <ul>
+                                    <li>
+                                        <label>Qualification : </label>
+                                            <select>
+                                                <option>BE</option>
+                                                <option>BCA</option>
+                                                <Option>B.Tech</Option>
+                                                <option>BCS</option>
+                                            </select>
+                                    </li>
+                                    <li>
+                                        <label>Languages : </label>
+                                        <input type="checkbox">English</input>
+                                        <input type="checkbox">Hindi</input>
+                                        <input type="checkbox">Telugu</input>
+                                        <input type="checkbox">Urdu</input>
+                                    </li>
+                                    <li>
+                                        <label>Cource Opted : </label>
+                                        <input type="radio" name="course">MBA</input>
+                                        <input type="radio" name="course">MBA</input>
+                                        <input type="radio" name="course">MTech</input>
+                                        <input type="radio" name="course">Msc</input>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="details yourself">
+                    <div class="detailsHeader">About Yourself</div>
+                    <div class="inp">
+                        <div class="centrePanel">
+                            <ul>
+                                <label>Few Words About your career : </label>
+                                <textarea cols="20" rows="10"></textarea>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="button" value="Register Details"></input>
+                </div>
+            </div>
+            <div class="footer"> @copy rights2023 </div>
+        </body>
+    </html>

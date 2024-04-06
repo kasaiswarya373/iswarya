@@ -1,0 +1,96 @@
+<!-- WAP to work with an emp details like name, age, gender, dept, basic salary(Read data dynamically from the user ),
+calculate total salary and total tax based on below conditions.
+
+gender = male
+total sal > 200000
+    tax percent is 15
+total sal > 100000
+    tax percent is 10
+total sal > 50000
+    tax percent is 5
+other case 
+    tax percent is 0
+
+gender = female
+total sal > 200000
+    tax percent is 10
+total sal > 100000
+    tax percent is 5
+total sal > 50000
+    tax percent is 0   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Employee Details</h3>
+    <h4>Control Structure</h4>
+    <script>
+        var empname = prompt("Enter the name");
+        var empage = prompt("Enter the age");
+        var empgender = prompt("Enter the gender");
+        var empdept = prompt("Enter the dept");
+        var basicsal = prompt("Enter the basicsal");
+        basicsal = parseFloat(basicsal);
+        var male;
+
+        var pfpercentage = prompt("Enter the percerntage of pf");
+        pf = (basicsal * pfpercentage) / 100;
+        pf = parseFloat(pf);
+
+        var hrapercentage = prompt("Enter the percentage of hra");
+        hra = (basicsal * hrapercentage) / 100;
+        hra = parseFloat(hra);
+
+        var totalsal = basicsal + pf + hra;
+        totalsal = parseFloat(totalsal);
+
+        console.log("Employee name is" + empname);
+        console.log("Employee age is" + empgender);
+        console.log("Employee gender is" + empage);
+        console.log("Employee dept is" + empdept);
+        console.log("Employee basicsal is" + basicsal);
+        console.log("Employee pf is" + pf);
+        console.log("Employee hra is" + hra);
+        console.log("Employee totalsal is" + totalsal);
+
+        if (empgender == "male") {
+            if (totalsal > 200000) 
+            {
+                console.log("tax amount is(15%)" + (totalsal*15)/100);
+            } 
+            else if (totalsal > 100000) 
+            {
+                console.log("tax amount is(10%)" + (totalsal*10)/100);
+            }
+            else if (totalsal > 50000)
+            {
+                console.log("tax amount is(5%)" + (totalsal*5)/100);
+            }
+            else
+            {
+                console.log("No amount of tax need to pay");
+            }
+            
+        } 
+        else {
+            if(totalsal > 200000)
+            {
+                console.log("tax amount is(10%)" + (totalsal*10)/100);
+            }
+            else if(totalsal > 100000)
+            {
+                console.log("tax amount is(5%)" + (totalsal*5)/100);
+            }
+            else
+            {
+                console.log("No amount of tax need to pay");
+            }
+            
+        }
+    </script>
+</body>
+</html>

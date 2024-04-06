@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Number</title>
+</head>
+<body>
+    <h3>WAP to find the Lucky Number of a given number</h3>
+    <script>
+        var num = 55553;
+        var rem;
+        var sum = 0;
+
+        while (num > 0){
+            rem = num%10;
+            sum +=rem;
+            num = num/10;
+            num = parseInt(num);
+            if(num == 0 && sum > 9){
+                console.log("Sum of given number is "+sum);
+                num = sum;
+                sum = 0;
+            }
+        }
+        console.log("Lucky Number is "+sum);
+    </script>
+    
+</body>
+</html>
